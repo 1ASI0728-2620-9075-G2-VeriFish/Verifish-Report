@@ -45,11 +45,11 @@
 
 | Código | Apellidos y Nombres |
 | :--- | :--- |
-|u202125968  | Escobar Palomino , Sebastian Matias |
-|  | |
-|  | |
-| |  |
-|  |  |
+| U202125968 | Escobar Palomino , Sebastian Matias |
+| U20231d390 | Bendezu Navarro, Rúbens Fitzgerald |
+| U202319431 | Choquehuanca Nuñez, Luciana Carolina |
+| U202311053 | Cruz Ibarra, Victor Andres  |
+| U202224619 | Peralta Chipa, Ronald Joel  |
 
 </div>
 
