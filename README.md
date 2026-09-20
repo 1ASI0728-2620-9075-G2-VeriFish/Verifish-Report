@@ -609,7 +609,6 @@ A continuación se presenta el registro de las entrevistas realizadas a represen
 | **Fecha de entrevista** | 14/04/2026  |
 | **Timing** |00:00 - 5:06|
 | **Video** | [Ver entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202224135_upc_edu_pe/IQD_n1XULMGfT6r-7wQq0cSKAfO03q99yTZ4waqc5zAL-3Y?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=2sdw7s) |
-| **Captura** | ![Captura entrevista piscicultor](./assets/images/screenshots/interview-screenshot-pisci1.png) |
 | **Resumen** | Martín trabaja en una piscigranja familiar en Cieneguilla donde se dedica al cultivo de tilapia. Ha recibido capacitaciones básicas en acuicultura, manejo de tilapia y control de agua por parte del Ministerio de la Producción. Su jornada comienza a las 6 am revisando los estanques, limpiando bordes, controlando el nivel del agua y verificando el funcionamiento general de los sistemas. Los parámetros que monitorea con mayor frecuencia son el pH y la temperatura; el oxígeno solo lo mide cuando detecta algo fuera de lo normal, como peces que dejan de comer o suben a la superficie. Registra los datos en un cuaderno o en su celular. Ante situaciones críticas como turbidez o cambios en el nivel del agua, restringe la alimentación y regula el flujo de agua. Señala que el costo de los equipos es un factor limitante importante a considerar. Le gustaría contar con una solución que le brinde información sobre el estado del agua, alertas claras ante anomalías y el ciclo de alimentación de los peces. Su principal criterio para adoptar una herramienta es que sea simple y fácil de usar. |
 
 **Entrevistado 2**
@@ -624,7 +623,6 @@ A continuación se presenta el registro de las entrevistas realizadas a represen
 | **Fecha de entrevista** | 14/04/2026 |
 | **Timing** | 05:07 - 11:16 |
 | **Video** | [Ver entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202224135_upc_edu_pe/IQD_n1XULMGfT6r-7wQq0cSKAfO03q99yTZ4waqc5zAL-3Y?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=2sdw7s) |
-| **Captura** | ![Captura entrevista piscicultor 2](./assets/images/screenshots/interview-screenshot-pisci2.png) |
 | **Resumen** | Gabriel aprendió el oficio de forma empírica trabajando en campo. Su rutina diaria incluye revisar los estanques, alimentar los peces, verificar el flujo de agua y realizar limpieza y sedimentación, que considera fundamental. Monitorea principalmente temperatura y en ocasiones oxígeno; no siempre mide pH por falta de equipo. Registra datos en un cuaderno o en Excel. Ha tenido situaciones críticas cuando baja el oxígeno, detectándolo porque los peces suben a la superficie. Menciona el nivel de estrés de las truchas como indicador importante. Considera que una herramienta con alertas le permitiría reaccionar antes y evitar pérdidas. Prioriza que sea simple y fácil de usar, y le gustaría ver datos del agua en tiempo real desde su celular. |
  
 **Entrevistado 3**
@@ -639,7 +637,6 @@ A continuación se presenta el registro de las entrevistas realizadas a represen
 | **Fecha de entrevista** | 14/04/2026 |
 | **Timing** | 11:17 - 14:16 |
 | **Video** | [Ver entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202224135_upc_edu_pe/IQD_n1XULMGfT6r-7wQq0cSKAfO03q99yTZ4waqc5zAL-3Y?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=2sdw7s) |
-| **Captura** | ![Captura entrevista piscicultor 3](./assets/images/screenshots/interview-screenshot-pisci3.png) |
 | **Resumen** | Marcelo aprendió el oficio ayudando a su hermano Gabriel, sin capacitación formal. Sus tareas diarias incluyen alimentación, limpieza de estanques y revisión de peces enfermos o muertos. Monitorea principalmente temperatura y solo revisa otros parámetros cuando hay problemas. No registra datos de forma sistemática, a veces solo lo tiene en mente o lo comenta con su hermano. Ha tenido problemas cuando el agua se ensucia o cambia el clima, causando estrés y mortalidad en los peces. No utiliza ninguna aplicación digital, solo el celular para llamadas. Considera que una herramienta con alertas les avisaría antes de que ocurra algo grave. Prioriza que sea rápida y no complicada, y le gustaría ver alertas, estado de estanques y recomendaciones desde su celular. |
  
 ---
@@ -658,7 +655,6 @@ A continuación se presenta el registro de las entrevistas realizadas a represen
 | **Fecha de entrevista** | 12/04/2026 |
 | **Timing** | 14:17 - 25:40 |
 | **Video** | [Ver entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202224135_upc_edu_pe/IQD_n1XULMGfT6r-7wQq0cSKAfO03q99yTZ4waqc5zAL-3Y?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=2sdw7s) |
-| **Captura** | ![Captura entrevista administrador](./assets/images/screenshots/interview-screenshot-admin1.png) |
 | **Resumen** | Rafael administra una piscigranja donde produce truchas y paiches para venta directa a mercados, sin procesar ni filetear el producto. Actualmente recibe información del estado de sus estanques a través de reportes físicos entregados por sus trabajadores de campo, con uso mínimo de WhatsApp. Los factores más importantes para su gestión son el volumen y la calidad del agua, especialmente la turbidez y densidad, ya que de estos depende directamente la rentabilidad del negocio. Ha sufrido pérdidas significativas por el Fenómeno del Niño debido a sequías que redujeron el caudal de agua y afectaron la calidad de sus cultivos. Certifica que sus especies estén bien alimentadas, libres de enfermedades y que no representen riesgo para la salud del consumidor. Considera que un software ideal sería aquel que le permita predecir la disponibilidad de agua a futuro, detectar contaminación con químicos y enviarle alertas automáticas. Priorizaría contratar la solución según su costo y el tamaño de su producción, y en una primera instancia le bastaría con monitorear el volumen del agua en tiempo real. |
  
 **Entrevistado 2**
@@ -673,7 +669,6 @@ A continuación se presenta el registro de las entrevistas realizadas a represen
 | **Fecha de entrevista** | 12/04/2026 |
 | **Timing** | 25:41 - 34:38 |
 | **Video** | [Ver entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202224135_upc_edu_pe/IQD_n1XULMGfT6r-7wQq0cSKAfO03q99yTZ4waqc5zAL-3Y?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=2sdw7s) |
-| **Captura** | ![Captura entrevista administrador 2](./assets/images/screenshots/interview-screenshot-admin2.png) |
 | **Resumen** | Bruno administra una piscigranja de truchas en Huancayo, cerca de Concepción, Junín. Revisa los parámetros diariamente a las 6 o 7 de la noche en su computadora, recibiendo información a través de fotos de cuadernos o audios de WhatsApp enviados por su personal de campo, lo que genera problemas porque a veces la letra no se entiende. Los indicadores más importantes para él son el nivel de oxígeno y la temperatura. Tuvo una pérdida de aproximadamente 20,000 soles cuando al mediodía, mientras el personal almorzaba, la temperatura subió drásticamente y encontraron peces flotando. Usa Excel y WhatsApp como únicas herramientas. Considera que el costo es el principal factor para adoptar una solución y que esta debe ser fácil de aprender y usar. |
  
 **Entrevistado 3**
@@ -688,7 +683,6 @@ A continuación se presenta el registro de las entrevistas realizadas a represen
 | **Fecha de entrevista** | 21/04/2026 |
 | **Timing** | 34:39 - 40:03 |
 | **Video** | [Ver entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202224135_upc_edu_pe/IQD_n1XULMGfT6r-7wQq0cSKAfO03q99yTZ4waqc5zAL-3Y?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=2sdw7s) |
-| **Captura** | ![Captura entrevista administrador 3](./assets/images/screenshots/interview-screenshot-admin3.png) |
 | **Resumen** | Harvey administra una piscigranja en la comunidad campesina de Mantacra, Pampas, Huancavelica. La gestión es empírica y reactiva: la información llega de forma semanal o cuando ocurre mortandad. Los indicadores más importantes para él son la oxigenación, densidad y temperatura del agua. Tiene problemas en invierno con parasitosis y turbidez por lodo proveniente del riachuelo. El personal de campo solo informa cuando la mortandad ya ocurrió. Prefiere el celular como dispositivo principal ya que a veces no cuentan ni con laptop. Está dispuesto a invertir lo necesario en una solución tecnológica si esta le facilita la producción, reduce la mortandad y mejora su rentabilidad. |
  
 <div style="page-break-after: always;"></div>
