@@ -6,14 +6,14 @@
     <h3 style="text-align: center;">Universidad Peruana de Ciencias Aplicadas</h3>
     <h4 style="text-align: center;">Carrera de Ingeniería de Software</h4>
     <h4 style="text-align: center;"><b>1ASI0572</b></h4>
-    <h4 style="text-align: center;"><b>Desarrollo de Soluciones IoT</b></h4>
+    <h4 style="text-align: center;"><b>Arquitecturas De Software Emergentes</b></h4>
 </div>
 
 <br>
 
 <div style="text-align: center;">
     <p>NRC</p>
-    <h4 style="text-align: center;"><b>17755</b></h4>
+    <h4 style="text-align: center;"><b>9075</b></h4>
 </div>
 
 <div style="text-align: center;">
@@ -24,12 +24,12 @@
 
 <div style="text-align: center;">
     <p>Docente</p>
-    <h4 style="text-align: center;"><b>León Baca, Marco Antonio</b></h4>
+    <h4 style="text-align: center;"><b>Wilder Aurelio Vega Calero</b></h4>
 </div>
 
 <div style="text-align: center;">
     <p>Equipo</p>
-    <h4 style="text-align: center;"><b>AcuaNode</b></h4>
+    <h4 style="text-align: center;"><b>Verifish</b></h4>
 </div>
 
 <div style="text-align: center;">
@@ -63,15 +63,12 @@
 
 | Versión | Fecha | Autor | Descripción de modificación |
 | :--- | :--- | :--- | :--- |
-| **1.0** | 09/04/2026 | Ronald Peralta | Creación inicial de la estructura del informe y definición de lineamientos. |
-| **2.0** | 12/04/2026 | S. Escobar, R. Bendezu, L. Choquehuanca, V. Cruz, R. Peralta | Se completó el Capítulo I: Presentación del proyecto y Background |
-| **3.0** | 15/04/2026 | S. Escobar, R. Bendezu, L. Choquehuanca, V. Cruz, R. Peralta | Finalización del Capítulo II: Obtención y análisis de requisitos |
-| **4.0** | 18/04/2026 | S. Escobar, R. Bendezu, L. Choquehuanca, V. Cruz, R. Peralta | Se completó el Capítulo III: Especificación de requisitos |
-| **5.0** | 21/04/2026 | S. Escobar, R. Bendezu, L. Choquehuanca, V. Cruz, R. Peralta | Se completó el Capítulo IV: Diseño y arquitectura de la solución |
-| **6.0** | 24/04/2026 | S. Escobar, R. Bendezu, L. Choquehuanca, V. Cruz, R. Peralta | Revisión, levantamiento de observaciones y entrega preliminar del informe. |
-| **7.0** | 24/04/2026 | S. Escobar, R. Bendezu, L. Choquehuanca, V. Cruz, R. Peralta | Documentación del segundo sprint |
-| **8.0** | 19/06/2026 | S. Escobar, R. Bendezu, L. Choquehuanca, V. Cruz, R. Peralta | Despliegue y ejecución de aplicaciones, avance de iot, embedded y edge app|
-| **9.0** | 05/07/2026 | S. Escobar, R. Bendezu, L. Choquehuanca, V. Cruz, R. Peralta | Despliegue y ejecución de vercion final de aplicaciones, finalizacin de iot, embedded y edge app|
+| **1.0** | 20/09/2026 | Ronald Peralta | Creación inicial de la estructura del informe y definición de lineamientos. |
+| **2.0** | 20/09/2026 | S. Escobar, R. Bendezu, L. Choquehuanca, V. Cruz, R. Peralta | Se completó el Capítulo I: Presentación del proyecto y Background |
+| **3.0** | 20/09/2026 | S. Escobar, R. Bendezu, L. Choquehuanca, V. Cruz, R. Peralta | Finalización del Capítulo II: Obtención y análisis de requisitos |
+| **4.0** | 20/09/2026 | S. Escobar, R. Bendezu, L. Choquehuanca, V. Cruz, R. Peralta | Se completó el Capítulo III: Especificación de requisitos |
+| **5.0** | 20/09/2026 | S. Escobar, R. Bendezu, L. Choquehuanca, V. Cruz, R. Peralta | Se completó el Capítulo IV: Diseño y arquitectura de la solución |
+
 <div style="page-break-after: always;"></div>
 
 # Project Report Collaboration Insights
@@ -107,7 +104,7 @@ Se usó el flujo de trabajo **GitFlow**, que incluye las siguientes ramas princi
 
 **Tareas**
 
-Iniciando actividades el **09/04/2026**, el equipo distribuyó las responsabilidades de la siguiente manera:
+Iniciando actividades el **20/09/2026**, el equipo distribuyó las responsabilidades de la siguiente manera:
 
 | Integrantes | Tarea asignada |
 | :--- | :--- |
@@ -117,36 +114,7 @@ Iniciando actividades el **09/04/2026**, el equipo distribuyó las responsabilid
 | Cruz Ibarra, Victor Andres | - Software Architecture (Context, Container & Deployment Diagrams) <br> - Configuración del Repositorio <br> - Tactical Level DDD (IAM Context) |
 | Peralta Chipa, Ronald Joel | - Registro de versiones del informe <br> - Project Report Collaboration Insights <br> - Student Outcome documentation <br> - Objetivos SMART <br> - Bounded Context Canvases <br> - Tactical Level DDD (Notification Context) |
 
-## TB1 
 
-**Tareas**
-
-Iniciando actividades el **10/05/2026**, el equipo distribuyó las responsabilidades de la siguiente manera:
-
-| Integrantes | Tarea asignada |
-| :--- | :--- |
-| Escobar Palomino, Sebastian Matias | - Investigación y aplicación de estándares de diseño de dispositivos IoT- Arquitectura de información (sistemas de organización y etiquetado)- Optimización web mediante SEO Tags y Meta Tags |
-| Bendezu Navarro, Rúbens Fitzgerald | - Desarrollo de sistemas de búsqueda y navegación en el FrontEnd- Implementación de técnicas de visibilidad web mediante SEO Tags |
-| Choquehuanca Nuñez, Luciana Carolina | - Liderazgo del diseño UX/UI de la solución- Creación de Wireframes, Mock-ups y diagramas de flujo de usuario- Prototipado interactivo para la Landing Page y la aplicación móvil |
-| Cruz Ibarra, Victor Andres | - Implementación de la gestión de configuración de software (SCM)- Configuración inicial del entorno de desarrollo- Establecimiento de las bases para el manejo del código fuente en el BackEnd |
-| Peralta Chipa, Ronald Joel | - Especialización e implementación técnica del Sprint 1- Desarrollo de componentes del BackEnd según 
-requerimientos funcionales |
-
-
-
-## TB2
-
-**Tareas**
-
-Iniciando actividades el **02/07/2026**, el equipo distribuyó las responsabilidades de la siguiente manera:
-
-| Integrantes | Tarea asignada |
-| :--- | :--- |
-| Escobar Palomino, Sebastian Matias | - Ensamblaje del prototipo final de hardware (sensores y actuadores en la carcasa definitiva)- Implementación del Edge API- Documentación técnica del Edge API |
-| Bendezu Navarro, Rúbens Fitzgerald | - Validación del funcionamiento de sensores y actuadores en conjunto con el prototipo físico- Conexión del Frontend con los datos reales de telemetría provenientes del Edge- Recopilación de Execution Evidence con datos reales |
-| Choquehuanca Nuñez, Luciana Carolina | - Consolidación y estructuración general del Sprint Backlog 3 -Pruebas del harware - Consolidación de evidencias finales del informe |
-| Cruz Ibarra, Victor Andres | - Desarrollo del Edge API con broker Mosquitto, Flask y Redis- Configuración del pipeline de despliegue del Edge en Railway- Documentación del Software Deployment Evidence del Sprint 3 |
-| Peralta Chipa, Ronald Joel | - Desarrollo del código embebido final (firmware C++ bajo arquitectura ModestIoT)- Calibración y pruebas de lazo cerrado de sensores (DS18B20, turbidez) y actuadores - Consolidación de Team Collaboration Insights |
 
 **GitHub Collaboration Insights**
 
@@ -398,8 +366,8 @@ Todo este panorama evidencia la importancia crítica y el respaldo necesario par
       <td><strong>Bendezu Navarro, Rúbens Fitzgerald - U20231d390</strong><br>Mi nombre es Rúbens Bendezu, tengo 21 años y soy estudiante de la carrera de Ingeniería de Software. Actualmente estoy en séptimo ciclo de la carrera de Ingeniería de Software. Tengo conocimientos en varios lenguajes de programación principalmente en Python y Typescrip, me gusta trabajar en equipo tratando de aportar en lo que pueda y compartiendo mis conocimientos. Me interesa aprender sobre gerencia en proyectos de software.</td>
   </tr>
   <tr>
-      <td style="text-align:center;"><img width="1200" height="200" alt="Ronald Peralta" src="./assets/images/ruben.jpg" /></td>
-      <td><strong>Peralta Chipa, Ronald Joel - U202224619 </strong><br>Estudiante del octavo ciclo,tengo 25 años y soy estudiante de la carrera de ingeniera de Software con experiencia en C++, Node.js, TypeScript, Java, Angular,Vue.js y frameworks como springboot y .Net Core. Me especializo en eficiencia de equipo, arquitectura limpia y desarrollo bajo principios SOLID.
+      <td style="text-align:center;"><img width="1200" height="200" alt="Ronald Peralta" src="./assets/images/joel.png" /></td>
+      <td><strong>Peralta Chipa, Ronald Joel - U202224619 </strong><br>Mi nombre es Ronald, tengo 23 años y soy una persona comprometida con el orden, con un estilo de liderazgo democrático y una gran capacidad para escuchar y comprender. Disfruto crecer en equipo y aprender constantemente de los demás. Además, tengo interés en la cultura DevSecOps y la gestión de proyectos, lo que me permite tener un enfoque integral orientado a la seguridad, organización y mejora continua.
       </td>
   </tr>
   <tr>
