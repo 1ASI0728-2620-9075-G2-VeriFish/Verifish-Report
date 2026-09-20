@@ -996,8 +996,34 @@ Link Trello: https://trello.com/invite/b/69ddbac5fb1fb4d9bc57783e/ATTI6aaf075e45
 ## 4.1. Strategic-Level Attribute-Driven Design
 ### 4.1.1. Design Purpose
 
+El presente ejercicio de diseño arquitectónico corresponde al desarrollo de **YakuControl**, un sistema *greenfield* (diseñado desde cero, sin arquitectura preexistente que migrar o extender) que constituye el producto central de la startup **AcuaNode**. El propósito de este diseño es definir la arquitectura de software que soportará el MVP (Minimum Viable Product) descrito en el Product Backlog del Capítulo III, priorizando las User Stories y Technical Stories de mayor valor de negocio: la ingesta y validación de telemetría IoT (pH, temperatura, turbidez), la emisión de alertas críticas en tiempo real, el control remoto de actuadores de emergencia y la gestión del modelo de suscripción SaaS.
+
+Se aplica el método **Attribute-Driven Design (ADD)** en esta etapa temprana del proyecto con el fin de que las decisiones estructurales de alto nivel —la definición de los Bounded Contexts, los estilos y patrones arquitectónicos, y la distribución de responsabilidades entre el hardware Edge, el backend en la nube y los clientes Web/Mobile— respondan directamente a los atributos de calidad críticos para el negocio, y no únicamente a la funcionalidad. En particular, la arquitectura debe garantizar:
+
+- **Disponibilidad y resiliencia operativa**, dado que la pérdida de conectividad en zonas rurales andinas no debe impedir la reacción autónoma ante una anomalía crítica del agua (soporte vital vía Edge Computing).
+- **Rendimiento en tiempo real**, ya que el tiempo transcurrido entre la detección de una lectura fuera de rango y la activación de una alerta o actuador es determinante para evitar la mortalidad masiva de truchas.
+- **Escalabilidad**, para soportar el crecimiento proyectado de estanques conectados y piscigranjas suscritas sin degradar el servicio.
+- **Seguridad**, al tratarse de una plataforma multi-tenant (múltiples piscigranjas y roles: Administrador y Piscicultor) que además procesa pagos recurrentes.
+
+El alcance de este diseño abarca la arquitectura completa del sistema (hardware Edge, backend modular, aplicaciones cliente e integraciones externas como Stripe, Firebase Cloud Messaging y servicios meteorológicos), siendo esta la primera iteración arquitectónica del producto y la base sobre la cual se sustentará el diseño táctico (DDD) y la implementación de los sucesivos sprints del proyecto.
+
 ### 4.1.2. Attribute-Driven Design Inputs
 #### 4.1.2.1. Primary Functionality (Primary User Stories)
+
+A partir del Product Backlog definido en el Capítulo III (sección 3.3), se seleccionó el siguiente subconjunto de User Stories y Technical Stories como **funcionalidad primaria**: aquellas que resultan arquitectónicamente significativas por representar el flujo central de valor de YakuControl (ingesta de telemetría, emisión de alertas, control remoto de actuadores, autenticación y facturación) y que, en conjunto, ejercitan a los cinco Bounded Contexts identificados (IAM, Telemetry, Notification, Equipment y Payment).
+
+| ID - US | Descripción |
+| :--- | :--- |
+| **US05** | Como piscicultor, deseo acceder a la app con mis credenciales para ver mis estanques. |
+| **US06** | Como piscicultor, deseo ver el pH y temperatura actual en mi celular para evitar rondas físicas. |
+| **US07** | Como piscicultor, deseo recibir notificaciones si el agua está fuera de rango para actuar rápido. |
+| **US08** | Como piscicultor, deseo prender los aireadores desde la app para oxigenar el agua. |
+| **US17** | Como piscicultor, deseo activar filtros de limpieza desde el móvil para remover residuos. |
+| **US13** | Como administrador, deseo definir los límites de alerta en la web para personalizar el control. |
+| **US10** | Como administrador, deseo crear cuentas para mis operarios en la web para darles acceso. |
+| **US14** | Como administrador, deseo pagar mi suscripción con Stripe para mantener el servicio activo. |
+| **US12** | Como administrador, deseo ver gráficos de pH de todo el año para planificar el próximo ciclo. |
+| **US16** | Como administrador, deseo ver el tiempo que tarda un operario en atender una alerta. |
 
 #### 4.1.2.2. Quality Attribute Scenarios
 
