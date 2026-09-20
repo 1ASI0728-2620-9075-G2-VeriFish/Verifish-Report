@@ -1,19 +1,19 @@
 <div style="text-align: center;">
-  <img src="https://i.imgur.com/4ytfhVm.png" alt="Logo UPC" width="80"/>
+  <img src="./assets/images/logo_upc.png" alt="Logo UPC" width="80"/>
 </div>
 
 <div style="text-align: center;">
     <h3 style="text-align: center;">Universidad Peruana de Ciencias Aplicadas</h3>
     <h4 style="text-align: center;">Carrera de Ingeniería de Software</h4>
-    <h4 style="text-align: center;"><b>1ASI0728</b></h4>
-    <h4 style="text-align: center;"><b>Arquitecturas De Software Emergentes</b></h4>
+    <h4 style="text-align: center;"><b>1ASI0572</b></h4>
+    <h4 style="text-align: center;"><b>Desarrollo de Soluciones IoT</b></h4>
 </div>
 
 <br>
 
 <div style="text-align: center;">
     <p>NRC</p>
-    <h4 style="text-align: center;"><b>9075</b></h4>
+    <h4 style="text-align: center;"><b>17755</b></h4>
 </div>
 
 <div style="text-align: center;">
@@ -24,12 +24,12 @@
 
 <div style="text-align: center;">
     <p>Docente</p>
-    <h4 style="text-align: center;"><b>Wlder Aurelio Vega Calero</b></h4>
+    <h4 style="text-align: center;"><b>León Baca, Marco Antonio</b></h4>
 </div>
 
 <div style="text-align: center;">
     <p>Equipo</p>
-    <h4 style="text-align: center;"><b>Verifish</b></h4>
+    <h4 style="text-align: center;"><b>AcuaNode</b></h4>
 </div>
 
 <div style="text-align: center;">
@@ -45,16 +45,16 @@
 
 | Código | Apellidos y Nombres |
 | :--- | :--- |
-| U202125968 | Escobar Palomino , Sebastian Matias |
+| U202125968 | Escobar Palomino, Sebastian Matias |
 | U20231d390 | Bendezu Navarro, Rúbens Fitzgerald |
 | U202319431 | Choquehuanca Nuñez, Luciana Carolina |
-| U202311053 | Cruz Ibarra, Victor Andres  |
-| U202224619 | Peralta Chipa, Ronald Joel  |
+| U202311053 | Cruz Ibarra, Victor Andres |
+| U202224619 | Peralta Chipa, Ronald Joel |
 
 </div>
 
 <div style="text-align: center;">
-    <h4 style="text-align: center;"><b>Período 202620</b></h4>
+    <h4 style="text-align: center;"><b>Período 202610</b></h4>
 </div>
 
 <div style="page-break-after: always;"></div>
@@ -63,30 +63,120 @@
 
 | Versión | Fecha | Autor | Descripción de modificación |
 | :--- | :--- | :--- | :--- |
-| **1.0** | 19/09/2026 | | Creación inicial de la estructura del informe y definición de lineamientos. |
-| **2.0** |  |  |  |
-| **3.0** |  |  |  |
-| **4.0** |  |  |  |
-| **5.0** |  |  |  |
+| **1.0** | 09/04/2026 | Ronald Peralta | Creación inicial de la estructura del informe y definición de lineamientos. |
+| **2.0** | 12/04/2026 | S. Escobar, R. Bendezu, L. Choquehuanca, V. Cruz, R. Peralta | Se completó el Capítulo I: Presentación del proyecto y Background |
+| **3.0** | 15/04/2026 | S. Escobar, R. Bendezu, L. Choquehuanca, V. Cruz, R. Peralta | Finalización del Capítulo II: Obtención y análisis de requisitos |
+| **4.0** | 18/04/2026 | S. Escobar, R. Bendezu, L. Choquehuanca, V. Cruz, R. Peralta | Se completó el Capítulo III: Especificación de requisitos |
+| **5.0** | 21/04/2026 | S. Escobar, R. Bendezu, L. Choquehuanca, V. Cruz, R. Peralta | Se completó el Capítulo IV: Diseño y arquitectura de la solución |
+| **6.0** | 24/04/2026 | S. Escobar, R. Bendezu, L. Choquehuanca, V. Cruz, R. Peralta | Revisión, levantamiento de observaciones y entrega preliminar del informe. |
+| **7.0** | 24/04/2026 | S. Escobar, R. Bendezu, L. Choquehuanca, V. Cruz, R. Peralta | Documentación del segundo sprint |
+| **8.0** | 19/06/2026 | S. Escobar, R. Bendezu, L. Choquehuanca, V. Cruz, R. Peralta | Despliegue y ejecución de aplicaciones, avance de iot, embedded y edge app|
+| **9.0** | 05/07/2026 | S. Escobar, R. Bendezu, L. Choquehuanca, V. Cruz, R. Peralta | Despliegue y ejecución de vercion final de aplicaciones, finalizacin de iot, embedded y edge app|
 <div style="page-break-after: always;"></div>
 
 # Project Report Collaboration Insights
 
 En esta sección se presenta un resumen de las actividades de colaboración realizadas para la elaboración del informe del proyecto.
 
-Se utilizó **GitHub** como plataforma de control de versiones y colaboración en equipo. Se incluye el enlace para acceder al repositorio para el reporte del proyecto: [Ver en Github]
+Se utilizó **GitHub** como plataforma de control de versiones y colaboración en equipo. Se incluye el enlace para acceder al repositorio para el reporte del proyecto: [Ver en Github](https://github.com/AcuaNode/yaku-report)
+
 Los integrantes del equipo y sus nombres de usuario en GitHub son los siguientes:
 
 | Integrantes | Nombre en GitHub |
 | :--- | :--- |
-| ||
-|  |  |
-||  |
-|  |  |
-|  |  |
+| Escobar Palomino, Sebastian Matias | iconicmiau |
+| Bendezu Navarro, Rúbens Fitzgerald | tertegen |
+| Choquehuanca Nuñez, Luciana Carolina | SrtaYeis |
+| Cruz Ibarra, Victor Andres | RafaelVivanco |
+| Peralta Chipa, Ronald Joel | RooDev10 |
+
+Se usó el flujo de trabajo **GitFlow**, que incluye las siguientes ramas principales:
+
+* **main:** Rama principal que contiene la versión estable y consolidada del documento.
+* **develop:** Rama de integración utilizada para fusionar los cambios realizados en las ramas de características.
+* **feature/chapter-I:** Rama para el desarrollo del Capítulo I (Startup Profile, Solution Profile, Lean UX Process y Segmentos objetivo).
+* **feature/chapter-II:** Rama para el desarrollo del Capítulo II (Análisis competitivo, Entrevistas, Needfinding, EventStorming de alto nivel y Ubiquitous Language).
+* **feature/chapter-III:** Rama para el desarrollo del Capítulo III (User Stories, Impact Mapping y estructuración del Product Backlog).
+* **feature/chapter-IV:** Rama para el desarrollo del Capítulo IV (Diseño estratégico y táctico con Domain-Driven Design, Context Mapping y Arquitectura de Software C4).
+* **release/v1.0.0:** Rama de preparación para la entrega final del 24/04.
+* **hotfix/urgent-fix:** Rama para correcciones críticas de último minuto sobre `main`.
 
 <div style="page-break-after: always;"></div>
 
+## AV1
+
+**Tareas**
+
+Iniciando actividades el **09/04/2026**, el equipo distribuyó las responsabilidades de la siguiente manera:
+
+| Integrantes | Tarea asignada |
+| :--- | :--- |
+| Escobar Palomino, Sebastian Matias | - Diseño y análisis de entrevistas <br> - User Personas, Task Matrix y Journey Mapping <br> - Empathy Mapping <br> - Domain Message Flow Modeling <br> - Tactical Level DDD (Equipment Context) |
+| Bendezu Navarro, Rúbens Fitzgerald | - Startup & Solution Profile <br> - Segmentos objetivo y Competidores <br> - Ubiquitous Language <br> - Impact mapping <br> - Context Mapping <br> - Tactical Level DDD (Payment Context) |
+| Choquehuanca Nuñez, Luciana Carolina | - User stories y Product Backlog <br> - Event Storming documentation <br> - Candidate Context Discovery <br> - Tactical Level DDD (Telemetry Context) |
+| Cruz Ibarra, Victor Andres | - Software Architecture (Context, Container & Deployment Diagrams) <br> - Configuración del Repositorio <br> - Tactical Level DDD (IAM Context) |
+| Peralta Chipa, Ronald Joel | - Registro de versiones del informe <br> - Project Report Collaboration Insights <br> - Student Outcome documentation <br> - Objetivos SMART <br> - Bounded Context Canvases <br> - Tactical Level DDD (Notification Context) |
+
+## TB1 
+
+**Tareas**
+
+Iniciando actividades el **10/05/2026**, el equipo distribuyó las responsabilidades de la siguiente manera:
+
+| Integrantes | Tarea asignada |
+| :--- | :--- |
+| Escobar Palomino, Sebastian Matias | - Investigación y aplicación de estándares de diseño de dispositivos IoT- Arquitectura de información (sistemas de organización y etiquetado)- Optimización web mediante SEO Tags y Meta Tags |
+| Bendezu Navarro, Rúbens Fitzgerald | - Desarrollo de sistemas de búsqueda y navegación en el FrontEnd- Implementación de técnicas de visibilidad web mediante SEO Tags |
+| Choquehuanca Nuñez, Luciana Carolina | - Liderazgo del diseño UX/UI de la solución- Creación de Wireframes, Mock-ups y diagramas de flujo de usuario- Prototipado interactivo para la Landing Page y la aplicación móvil |
+| Cruz Ibarra, Victor Andres | - Implementación de la gestión de configuración de software (SCM)- Configuración inicial del entorno de desarrollo- Establecimiento de las bases para el manejo del código fuente en el BackEnd |
+| Peralta Chipa, Ronald Joel | - Especialización e implementación técnica del Sprint 1- Desarrollo de componentes del BackEnd según 
+requerimientos funcionales |
+
+
+
+## TB2
+
+**Tareas**
+
+Iniciando actividades el **02/07/2026**, el equipo distribuyó las responsabilidades de la siguiente manera:
+
+| Integrantes | Tarea asignada |
+| :--- | :--- |
+| Escobar Palomino, Sebastian Matias | - Ensamblaje del prototipo final de hardware (sensores y actuadores en la carcasa definitiva)- Implementación del Edge API- Documentación técnica del Edge API |
+| Bendezu Navarro, Rúbens Fitzgerald | - Validación del funcionamiento de sensores y actuadores en conjunto con el prototipo físico- Conexión del Frontend con los datos reales de telemetría provenientes del Edge- Recopilación de Execution Evidence con datos reales |
+| Choquehuanca Nuñez, Luciana Carolina | - Consolidación y estructuración general del Sprint Backlog 3 -Pruebas del harware - Consolidación de evidencias finales del informe |
+| Cruz Ibarra, Victor Andres | - Desarrollo del Edge API con broker Mosquitto, Flask y Redis- Configuración del pipeline de despliegue del Edge en Railway- Documentación del Software Deployment Evidence del Sprint 3 |
+| Peralta Chipa, Ronald Joel | - Desarrollo del código embebido final (firmware C++ bajo arquitectura ModestIoT)- Calibración y pruebas de lazo cerrado de sensores (DS18B20, turbidez) y actuadores - Consolidación de Team Collaboration Insights |
+
+**GitHub Collaboration Insights**
+
+A continuación, se presentan las evidencias del trabajo colaborativo en el repositorio, gestionado bajo el flujo GitFlow desde el inicio del proyecto el 09 de abril hasta la última fecha de entrega final el 19 de junio.
+
+<div style="text-align: center; margin-top: 1rem; margin-bottom: 1rem;">
+
+*Gráfico de red (network graph) de ramas en el repositorio de GitHub.*
+
+![Insights - Contributors](./assets/images/network.png)
+
+</div>
+
+<div style="text-align: center; margin-top: 1rem; margin-bottom: 1rem;">
+
+*Análisis de líneas de código añadidas por contribuyente (Escobar, Bendezu, Choquehuanca, Cruz, Peralta).*
+
+![Insights - Network Graph](./assets/images/insights.png)
+
+</div>
+
+<div style="text-align: center; margin-top: 1rem; margin-bottom: 1rem;">
+
+*Análisis de actividad de commits registrada durante el periodo del 14/03 al 13/06.*
+
+![Insights - Commits](./assets/images/commits.png)
+
+</div>
+
+<div style="page-break-after: always;"></div>
 
 # Contenido
 
@@ -172,6 +262,71 @@ Los integrantes del equipo y sus nombres de usuario en GitHub son los siguientes
     - [4.2.5.4. Infrastructure Layer](#4254-infrastructure-layer)
     - [4.2.5.5. Bounded Context Software Architecture Component Level Diagrams](#4255-bounded-context-software-architecture-component-level-diagrams)
     - [4.2.5.6. Bounded Context Software Architecture Code Level Diagrams](#4256-bounded-context-software-architecture-code-level-diagrams)
+
+### Capítulo V: Solution UI/UX Design
+- [5.1. Style Guidelines](#51-style-guidelines)
+  - [5.1.1. General Style Guidelines](#511-general-style-guidelines)
+  - [5.1.2. Web, Mobile and IoT Style Guidelines](#512-web-mobile-and-iot-style-guidelines)
+- [5.2. Information Architecture](#52-information-architecture)
+  - [5.2.1. Organization Systems](#521-organization-systems)
+  - [5.2.2. Labeling Systems](#522-labeling-systems)
+  - [5.2.3. SEO Tags and Meta Tags](#523-seo-tags-and-meta-tags)
+  - [5.2.4. Searching Systems](#524-searching-systems)
+  - [5.2.5. Navigation Systems](#525-navigation-systems)
+- [5.3. Landing Page UI Design](#53-landing-page-ui-design)
+  - [5.3.1. Landing Page Wireframe](#531-landing-page-wireframe)
+  - [5.3.2. Landing Page Mock-up](#532-landing-page-mock-up)
+- [5.4. Applications UX/UI Design](#54-applications-uxui-design)
+  - [5.4.1. Applications Wireframes](#541-applications-wireframes)
+  - [5.4.2. Applications Wireflow Diagrams](#542-applications-wireflow-diagrams)
+  - [5.4.3. Applications Mock-ups](#543-applications-mock-ups)
+  - [5.4.4. Applications User Flow Diagrams](#544-applications-user-flow-diagrams)
+- [5.5. Applications Prototyping](#55-applications-prototyping)
+- [5.6. IoT Device Design](#56-iot-device-design)
+
+### Capítulo VI: Product Implementation, Validation & Deployment
+- [6.1. Software Configuration Management](#61-software-configuration-management)
+  - [6.1.1. Software Development Environment Configuration](#611-software-development-environment-configuration)
+  - [6.1.2. Source Code Management](#612-source-code-management)
+  - [6.1.3. Source Code Style Guide & Conventions](#613-source-code-style-guide--conventions)
+  - [6.1.4. Software Deployment Configuration](#614-software-deployment-configuration)
+- [6.2. Landing Page, Services & Applications Implementation](#62-landing-page-services--applications-implementation)
+  - [6.2.1. Sprint 1](#621-sprint-n)
+    - [6.2.1.1. Sprint Planning 1](#6211-sprint-planning-n)
+    - [6.2.1.2. Aspect Leaders and Collaborators](#6212-aspect-leaders-and-collaborators)
+    - [6.2.1.3. Sprint Backlog 1](#6213-sprint-backlog-n)
+    - [6.2.1.4. Development Evidence for Sprint Review](#6214-development-evidence-for-sprint-review)
+    - [6.2.1.5. Testing Suite Evidence for Sprint Review](#6215-testing-suite-evidence-for-sprint-review)
+    - [6.2.1.6. Execution Evidence for Sprint Review](#6216-execution-evidence-for-sprint-review)
+    - [6.2.1.7. Services Documentation Evidence for Sprint Review](#6217-services-documentation-evidence-for-sprint-review)
+    - [6.2.1.8. Software Deployment Evidence for Sprint Review](#6218-software-deployment-evidence-for-sprint-review)
+    - [6.2.1.9. Team Collaboration Insights during Sprint](#6219-team-collaboration-insights-during-sprint)
+  - [6.2.2. Sprint 2](#622-sprint-2)
+    - [6.2.2.1. Sprint Planning 2](#6221-sprint-planning-2)
+    - [6.2.2.2. Aspect Leaders and Collaborators](#6222-aspect-leaders-and-collaborators)
+    - [6.2.2.3. Sprint Backlog 2](#6223-sprint-backlog-2)
+    - [6.2.2.4. Development Evidence for Sprint Review](#6224-development-evidence-for-sprint-review)
+    - [6.2.2.5. Testing Suite Evidence for Sprint Review](#6225-testing-suite-evidence-for-sprint-review)
+    - [6.2.2.6. Execution Evidence for Sprint Review](#6226-execution-evidence-for-sprint-review)
+    - [6.2.2.7. Services Documentation Evidence for Sprint Review](#6227-services-documentation-evidence-for-sprint-review)
+    - [6.2.2.8. Software Deployment Evidence for Sprint Review](#6228-software-deployment-evidence-for-sprint-review)
+    - [6.2.2.9. Team Collaboration Insights during Sprint](#6229-team-collaboration-insights-during-sprint)
+  - [6.2.3. Sprint 3](#623-sprint-3)
+    - [6.2.3.1. Sprint Planning 3](#6231-sprint-planning-3)
+    - [6.2.3.2. Aspect Leaders and Collaborators](#6232-aspect-leaders-and-collaborators)
+    - [6.2.3.3. Sprint Backlog 2](#6233-sprint-backlog-2)
+    - [6.2.3.4. Development Evidence for Sprint Review](#6234-development-evidence-for-sprint-review)
+    - [6.2.3.5. Testing Suite Evidence for Sprint Review](#6235-testing-suite-evidence-for-sprint-review)
+    - [6.2.3.6. Execution Evidence for Sprint Review](#6236-execution-evidence-for-sprint-review)
+    - [6.2.3.7. Services Documentation Evidence for Sprint Review](#6237-services-documentation-evidence-for-sprint-review)
+    - [6.2.3.8. Software Deployment Evidence for Sprint Review](#6238-software-deployment-evidence-for-sprint-review)
+    - [6.2.3.9. Team Collaboration Insights during Sprint](#6239-team-collaboration-insights-during-sprint)
+- [6.3. Validation Interviews](#63-validation-interviews)
+  - [6.3.1. Diseño de Entrevistas](#631-diseño-de-entrevistas)
+  - [6.3.2. Registro de Entrevistas](#632-registro-de-entrevistas)
+  - [6.3.3. Evaluaciones según heurísticas](#633-evaluaciones-según-heurísticas)
+- [6.4. Video About the Product](#64-video-about-the-product)
+    
 - [Conclusiones](#conclusiones)
 - [Bibliografía](#bibliografia)
 - [Anexos](#anexos)
@@ -184,8 +339,8 @@ En el siguiente cuadro se describen las acciones realizadas y enunciados de conc
 
 | Criterio específico | Acciones realizadas | Conclusiones |
 | :--- | :--- | :--- |
-| **Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software.** | |
-| **Reconoce la necesidad del aprendizaje permamente para el desempeño profesional y el desarrollo de proyectos en soluciones de software.** |  |  |
+| **Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software.** | **Escobar Palomino, Sebastian Matias**<br>*AV1*: Actualizó conceptos sobre técnicas de elicitación de requerimientos, diseño de entrevistas y modelado de flujos de dominio (Domain Message Flow) aplicados al diseño estratégico.<br>*TB1*: Investigó y aplicó estándares de diseño de dispositivos IoT, arquitectura de información (sistemas de organización y etiquetado) y optimización mediante SEO Tags y Meta Tags.<br>*AV2:* <br> Actualizó conocimientos en la programación del EDGE para dispositivos IoT y en la gestión de configuración de software (SCM), además de especializarse en metodologías de validación de campo mediante entrevistas estructuradas y la aplicación de evaluaciones según heurísticas masivas (x20) para optimizar la usabilidad del sistema.<br>*TB2:* <br> Actualizó conocimientos en procesamiento de señales aplicado a IoT, profundizando en la Ley de Beer-Lambert modificada para el cálculo de la transmitancia de luz a partir de las lecturas del sensor de turbidez, y su implementación como lógica de negocio dentro del Edge API en Python.<br><br>**Bendezu Navarro, Rúbens Fitzgerald**<br>*AV1*: Investigó y actualizó conocimientos sobre análisis competitivo y metodologías Lean UX para estructurar el perfil de la solución y mapear el contexto (Context Mapping).<br>*TB1*: Profundizó en el desarrollo de sistemas de búsqueda y navegación en el FrontEnd, aplicando técnicas de visibilidad web mediante SEO Tags.<br>*AV2:* <br> Actualizó conceptos avanzados sobre el desarrollo de interfaces cliente-servidor y el consumo eficiente de APIs RESTful en entornos de producción, profundizando en el diseño de instrumentos de recolección de datos para entrevistas de validación con usuarios finales. <br>*TB2:* <br> Amplió sus conocimientos en el consumo de datos agregados desde un servicio Edge hacia las aplicaciones cliente, integrando el Web Dashboard y la App Móvil con las métricas en tiempo real (ICA, transmitancia y estado del estanque) mediante filtros de granularidad temporal.<br><br>**Choquehuanca Nuñez, Luciana Carolina**<br>*AV1*: Profundizó en la dinámica de EventStorming y el descubrimiento de contextos candidatos, actualizando sus bases teóricas para la correcta redacción de User Stories.<br>*TB1*: Lideró el diseño UX/UI de la solución, actualizando conocimientos en la creación de Wireframes, Mock-ups, diagramas de flujo de usuario y prototipado interactivo tanto para la Landing Page como para la aplicación. <br>*AV2:* <br> Profundizó en el diseño físico y lógico de dispositivos IoT y en metodologías de validación cualitativa, actualizando conocimientos técnicos en la recopilación y estructuración de evidencias de ejecución (Execution Evidence) requeridas para el Sprint Review durante el desarrollo del Sprint 2. <br>*TB2:* <br> Actualizó sus competencias en documentación técnica y consolidación de evidencias de cierre de proyecto, estructurando de forma coherente los artefactos de desarrollo, testing, ejecución y despliegue generados a lo largo de los tres sprints del ciclo de vida de YakuControl.<br><br>**Cruz Ibarra, Victor Andres**<br>*AV1*: Actualizó conceptos sobre diseño de arquitectura de software utilizando el modelo C4 y patrones tácticos de DDD aplicados a la configuración inicial del proyecto.<br>*TB1*: Implementó la gestión de configuración de software (SCM), configurando el entorno de desarrollo y estableciendo las bases para el manejo del código fuente en el BackEnd. <br>*AV2:* <br> Actualizó conceptos sobre el desarrollo robusto de componentes BackEnd y la administración avanzada del repositorio de código fuente (Source Code Management), especializándose en el diseño e implementación de suites de pruebas automatizadas (Testing Suite Evidence) para asegurar la entrega en el Sprint Review. <br>*TB2:* <br> Profundizó en el cálculo de señales PWM de 8 bits para el control de actuadores lumínicos, así como en la automatización de flujos de integración y despliegue continuo (CI/CD) mediante GitHub Actions hacia Railway, Azure y Firebase App Distribution.<br><br>**Peralta Chipa, Ronald Joel**<br>*AV1*: Actualizó conocimientos en la estructuración de Bounded Context Canvases y la interpretación de métricas de colaboración en GitHub (Insights) para documentar el progreso.<br>*TB1*: Se especializó en la implementación técnica del primer Sprint, enfocándose en el desarrollo del BackEnd para cumplir con los requerimientos funcionales establecidos. <br>*AV2:* <br> Amplió sus conocimientos en la construcción técnica de servicios BackEnd y la ejecución del Sprint 2, adquiriendo competencias clave en el despliegue de soluciones en la nube y en la generación de evidencias técnicas de infraestructura (Software Deployment Evidence) para el Sprint Review. <br>*TB2:* <br> Amplió sus conocimientos en programación embebida de bajo nivel en C++, implementando el firmware final en lazo cerrado que gestiona la lectura sincronizada de sensores (DS18B20, pH, turbidez) y el accionamiento de actuadores físicos (relé y MOSFET) bajo la arquitectura ModestIoT. | *AV1:*<br>Consideramos que durante esta primera etapa logramos cumplir un alto nivel de actualización técnica. Como equipo, tuvimos que investigar y afianzar nuestros conocimientos sobre Domain-Driven Design (DDD), arquitectura de software bajo el modelo C4 y metodologías de ideación (Lean UX, EventStorming). Esta asimilación de nuevos conceptos fue fundamental para estructurar correctamente las bases arquitectónicas y los requerimientos de nuestra solución de software, aportando directamente a nuestro desarrollo profesional.<br><br>*TB1:*<br>En esta fase, el equipo consolidó la actualización técnica mediante la implementación práctica. La integración de estándares de diseño IoT, gestión de configuración y prototipado UX/UI permitió materializar los conceptos teóricos en artefactos de software funcionales y escalables, demostrando una alineación directa con las necesidades tecnológicas de la startup. <br>*AV2:* <br> Durante el avance AV2, el equipo consolidó su actualización técnica enfocándose en la integración de componentes del ecosistema de software: el desarrollo y despliegue del BackEnd en la nube, la programación EDGE de dispositivos IoT y la automatización de flujos de control de versiones. Asimismo, la adopción de rigurosos estándares para la recolección de evidencias técnicas de testing y despliegue para el Sprint Review, junto con auditorías de usabilidad mediante entrevistas y evaluaciones heurísticas, permitieron alinear el proyecto con las exigencias de calidad de la ingeniería de software profesional.<br><br>*TB2:* <br> Durante esta última etapa, el equipo demostró la capacidad de integrar de forma coherente los distintos componentes tecnológicos que conforman el ecosistema completo de YakuControl: el procesamiento físico-matemático en el Edge, la automatización del hardware embebido, la conexión de datos con las aplicaciones cliente y la orquestación de despliegues continuos. Esta fase evidenció que el desarrollo de soluciones IoT integrales exige no solo dominio técnico individual, sino una comprensión transversal de cómo cada capa del sistema (hardware, edge, backend y frontend) impacta en la confiabilidad global de la solución, reafirmando el compromiso del equipo con la actualización tecnológica constante.|
+| **Reconoce la necesidad del aprendizaje permamente para el desempeño profesional y el desarrollo de proyectos en soluciones de software.** | **Escobar Palomino, Sebastian Matias**<br>*AV1*: Reconoció la necesidad de investigar constantemente nuevas técnicas de mapeo de empatía y diseño de experiencia de usuario para comprender a profundidad las necesidades del cliente.<br>*TB1*: Identificó la importancia de mantenerse al día en tendencias de diseño de hardware (IoT) y sistemas de organización de información para garantizar interfaces intuitivas y modernas.<br>*AV2:* Reconoció que la programación en entornos EDGE y el análisis de usabilidad mediante evaluaciones heurísticas masivas exigen un autoaprendizaje constante de nuevas librerías y estándares de diseño para mantener la eficiencia del hardware y la interfaz. <br>*TB2:* Reconoció que la traducción de principios físicos y matemáticos (como la Ley de Beer-Lambert) a lógica de software ejecutable exige una investigación constante en la intersección entre ciencia de datos y hardware, indispensable para escalar soluciones de Edge Computing. <br> <br><br>**Bendezu Navarro, Rúbens Fitzgerald**<br>*AV1*: Identificó la importancia de mantenerse actualizado sobre las tendencias del mercado y modelos de negocio de competidores para poder definir un Ubiquitous Language preciso y competitivo.<br>*TB1*: Reconoció que el desarrollo FrontEnd exige un aprendizaje constante sobre algoritmos de búsqueda y técnicas de indexación para mejorar la accesibilidad del producto.<br>*AV2:* <br> Comprendió que los mecanismos de integración con servicios en producción y las metodologías de validación con clientes mutan rápidamente, haciendo indispensable la investigación continua de patrones de diseño de software y técnicas de experiencia de usuario. <br>*TB2:* <br> Identificó que la integración fluida entre servicios distribuidos (Edge, Backend y aplicaciones cliente) requiere un aprendizaje continuo sobre patrones de comunicación asíncrona y consumo eficiente de APIs bajo condiciones reales de conectividad variable.<br><br>**Choquehuanca Nuñez, Luciana Carolina**<br>*AV1*: Comprendió la necesidad de instruirse continuamente en metodologías ágiles y gestión de Backlog para adaptarse a la complejidad del descubrimiento de dominios del software.<br>*TB1*: Evidenció la necesidad de perfeccionar habilidades en herramientas de prototipado y flujos de usuario, reconociendo que el diseño centrado en el usuario evolociona con el feedback del mercado.<br>*AV2:* <br> Identificó la necesidad de mantenerse al día en las mejores prácticas de gobernanza ágil y presentación de incrementos de producto (Sprint Review), reconociendo que los ciclos de feedback del mercado obligan a una actualización permanente de las soluciones IoT. <br>*TB2:* <br> Reconoció que la documentación técnica de un producto de software es un proceso vivo que exige actualización constante, y que la trazabilidad de las decisiones tomadas a lo largo del proyecto es una habilidad tan importante como el desarrollo mismo.<br><br>**Cruz Ibarra, Victor Andres**<br>*AV1*: Identificó la necesidad vital de seguir aprendiendo sobre estándares de flujos de trabajo colaborativos (GitFlow) y evolución de arquitecturas para garantizar un diseño escalable.<br>*TB1*: Comprendió que la gestión de configuración de software requiere una actualización permanente frente a nuevas herramientas de automatización y despliegue.<br>*AV2:* <br> Comprendió que la gestión avanzada del código fuente y el aseguramiento de la calidad mediante suites de pruebas automatizadas requieren un estudio perpetuo de nuevas herramientas de testing para mitigar la deuda técnica del BackEnd. <br>*TB2:* <br> Comprendió que la automatización de despliegues mediante prácticas DevOps y CI/CD es una competencia en constante evolución, siendo indispensable mantenerse actualizado sobre nuevas herramientas de orquestación para garantizar entregas continuas y confiables.<br><br>**Peralta Chipa, Ronald Joel**<br>*AV1*: Reconoció la relevancia de mantenerse al día con los estándares de documentación (ABET) y las mejores prácticas para delimitar contextos (Bounded Contexts) en proyectos complejos.<br>*TB1*: Reconoció la necesidad de aprender continuamente sobre lógica de servidor y optimización de bases de datos para afrontar los desafíos técnicos de cada Sprint. <br>*AV2:* <br> Reconoció que el entorno cloud y el despliegue continuo de software evolucionan constantemente bajo el enfoque DevOps, lo que demanda un aprendizaje autónomo y continuo sobre aprovisionamiento de infraestructura para garantizar la disponibilidad de la API del proyecto. <br>*TB2:* <br> Reconoció que el desarrollo de sistemas embebidos exige una actualización permanente frente a las limitaciones de hardware real (voltaje, memoria, estabilidad de conexión WiFi), aprendiendo a depurar y optimizar el firmware bajo condiciones de campo no simuladas. | *AV1:*<br>A nivel grupal, reconocemos que el desarrollo de software exige una mentalidad de formación continua. Al enfrentarnos a la definición estratégica y táctica de nuestro dominio, evidenciamos que las metodologías y herramientas cambian y evolucionan. Entendimos que investigar de manera autónoma, validar nuevas fuentes de información y adaptar nuestro enfoque no es solo un requisito académico, sino una habilidad indispensable para mantener la calidad y vigencia en el ámbito profesional a largo plazo.<br><br>*TB1:*<br>El equipo reafirma su compromiso con el aprendizaje autónomo al gestionar diversas áreas del ciclo de vida del desarrollo. Desde el diseño de IoT hasta la administración del código fuente, el TB1 demostró que la versatilidad profesional depende de la capacidad de asimilar nuevos estándares industriales de forma permanente. <br><br>*AV2:* El equipo reafirma que el desarrollo de soluciones de software integrales exige una cultura de aprendizaje continuo y autónomo. Al enfrentar desafíos concurrentes que conectan lógica de servidores (BackEnd), hardware físico (IoT/EDGE), automatización de despliegues y validación empírica con usuarios, evidenciamos que las herramientas tecnológicas son dinámicas. Entendimos que investigar y asimilar estándares industriales de manera proactiva es una competencia transversal obligatoria para garantizar la resiliencia técnica, la escalabilidad y el éxito de la arquitectura del sistema en el entorno profesional. <br><br>*TB2:* <br> El equipo reafirma que el cierre de un proyecto de software IoT exige tanto rigor técnico como capacidad de síntesis: integrar hardware, edge computing, servicios en la nube y automatización de despliegues bajo un mismo ecosistema requiere un aprendizaje continuo y multidisciplinario. Esta última fase consolidó la convicción de que la actualización permanente no es solo una exigencia académica, sino una condición necesaria para sostener la calidad técnica de una solución de software a lo largo de todo su ciclo de vida. |
 
 <div style="page-break-after: always;"></div>
 
@@ -193,19 +348,19 @@ En el siguiente cuadro se describen las acciones realizadas y enunciados de conc
 
 A continuación, cada integrante del equipo presenta sus objetivos SMART, enfocados en su desarrollo profesional luego de culminar la carrera universitaria.
 
-**Aponte Cruzado, Andrea Marielena (UX/UI & Research)**
+**Escobar Palomino, Sebastian Matias (UX/UI & Research)**
 Diseñar y documentar un mínimo de 3 perfiles de usuario (User Personas) y sus respectivos flujos (User Journey Maps) basándose en los hallazgos de las entrevistas iniciales. Este mapeo de empatía debe estar finalizado e integrado en el reporte antes del cierre de la segunda semana del sprint, garantizando que el diseño estratégico de la solución esté estrictamente alineado con las necesidades reales del cliente.
 
-**Lopez Acuna, Mario Joaquin (Business & Strategy)**
+**Bendezu Navarro, Rúbens Fitzgerald (Business & Strategy)**
 Elaborar el Lean UX Canvas completo y documentar el análisis de al menos 3 competidores directos en el mercado tecnológico actual. Asimismo, deberá consolidar la primera versión del Lenguaje Ubicuo (Ubiquitous Language) estandarizado para el equipo durante los primeros 10 días del sprint, lo cual servirá como base indispensable para evitar ambigüedades en el modelado del dominio.
 
-**Urrutia Pena, Jasmin Adriana (Requirements & EventStorming)**
+**Choquehuanca Nuñez, Luciana Carolina (Requirements & EventStorming)**
 Estructurar el Product Backlog inicial redactando y estimando un mínimo de 20 Historias de Usuario priorizadas bajo criterios de valor de negocio. Además, completará el diagrama de EventStorming de alto nivel en la plataforma colaborativa al menos 3 días antes de la entrega final del AV1, permitiendo al equipo tener una visión integral del flujo de eventos del sistema.
 
-**Vivanco Salazar, Rafael Andres (Architecture & DevOps)**
+**Cruz Ibarra, Victor Andres (Architecture & DevOps)**
 Diseñar los 4 niveles fundamentales de arquitectura de software (System Landscape, Context, Container y Deployment) utilizando el estándar C4. En paralelo, configurará el repositorio oficial implementando las reglas del flujo GitFlow y protecciones de ramas principales, debiendo cumplir con el despliegue de esta infraestructura y documentación técnica a más tardar el 20 de abril para permitir la revisión grupal.
 
-**Velasquez Chambi, Ruben Genaro (Documentation & Context Mapping)**
+**Peralta Chipa, Ronald Joel (Documentation & Context Mapping)**
 Consolidar la documentación técnica final integrando los 5 Bounded Context Canvases elaborados por el equipo, garantizando la coherencia del Context Mapping. Además, extraerá y maquetará el reporte de métricas de colaboración de GitHub (Insights) con al menos 3 gráficos clave de rendimiento, entregando la versión candidata del documento en la rama *release* 48 horas antes de la presentación oficial para su auditoría final.
 
 <div style="page-break-after: always;"></div>
@@ -235,25 +390,25 @@ Todo este panorama evidencia la importancia crítica y el respaldo necesario par
 ### 1.1.2. Perfiles de integrantes del equipo
 <table border="1">
   <tr>
-      <td style="text-align:center;"><img width="1200" height="200" img alt="Sebastian Escobar" src="https://i.imgur.com/2rRBSM5.jpeg" /></td>
-      <td><strong>Escobar Palomino , Sebastian Matias - U202125968</strong><br>Mi nombre es Sebastián Matías Escobar Palomino, tengo 22 años y soy estudiante de Ingeniería de Software. Mi objetivo es contribuir de manera activa al trabajo en equipo, cumplir con los plazos establecidos y mantener una comunicación fluida y clara con mis compañeros, aplicando mis conocimientos para cumplir con las responsabilidades asignadas en el proyecto.</td>
+      <td style="text-align:center;"><img width="1200" height="200" img alt="Sebastian Escobar" src="./assets/images/andrea_aponte.png" /></td>
+      <td><strong>Escobar Palomino, Sebastian Matias - u202125968</strong><br>Actualmente estoy en el 8vo ciclo de la carrera de Ingeniería de Software. Tengo conocimientos en desarrollo de software, diseño de bases de datos, arquitectura de sistemas y trabajo colaborativo con metodologías ágiles.</td>
   </tr>
   <tr>
-      <td style="text-align:center;"><img width="1200" height="200" alt="M" src="./assets/images/rubenz_img.png" /></td>
-      <td><strong>Bendezu Navarro, Rúbens Fitzgerald - U20231d390</strong><br>COMPLETAR</td>
+      <td style="text-align:center;"><img width="1200" height="200" alt="Rúbens Bendezu" src="./assets/images/Mario.jpeg" /></td>
+      <td><strong>Bendezu Navarro, Rúbens Fitzgerald - U20231d390</strong><br>Mi nombre es Rúbens Bendezu, tengo 21 años y soy estudiante de la carrera de Ingeniería de Software. Actualmente estoy en séptimo ciclo de la carrera de Ingeniería de Software. Tengo conocimientos en varios lenguajes de programación principalmente en Python y Typescrip, me gusta trabajar en equipo tratando de aportar en lo que pueda y compartiendo mis conocimientos. Me interesa aprender sobre gerencia en proyectos de software.</td>
   </tr>
   <tr>
-      <td style="text-align:center;"><img width="1200" height="200" alt="R" src="./assets/images/luciana.png" /></td>
-      <td><strong>Choquehuanca Nuñez, Luciana Carolina - U202319431 </strong><br>Soy estudiante de ing de software, actualmente me encuentro en octavo ciclo. Tengo experiencia en desarrollo y espero fortalecer mis conocimientos sobre diseño de soluciones modernas, escalables y mantenibles, además de aprender nuevas tecnologías y enfoques arquitectónicos que pueda aplicar en proyectos reales.
+      <td style="text-align:center;"><img width="1200" height="200" alt="Ronald Peralta" src="./assets/images/ruben.jpg" /></td>
+      <td><strong>Peralta Chipa, Ronald Joel - U202224619 </strong><br>Estudiante del octavo ciclo,tengo 25 años y soy estudiante de la carrera de ingeniera de Software con experiencia en C++, Node.js, TypeScript, Java, Angular,Vue.js y frameworks como springboot y .Net Core. Me especializo en eficiencia de equipo, arquitectura limpia y desarrollo bajo principios SOLID.
       </td>
   </tr>
   <tr>
-      <td style="text-align:center;"><img width="1200" height="200" alt="R" src="./assets/images/andres.png" /></td>
-      <td><strong>Cruz Ibarra, Victor Andres - U202311053</strong><br> COMPLETAR</td>
+      <td style="text-align:center;"><img width="1200" height="200" alt="Ronald Peralta" src="./assets/images/jasmin_urrutia.png" /></td>
+      <td><strong>Choquehuanca Nuñez, Luciana Carolina - U202319431</strong><br> Estudiante del 7mo ciclo de la carrera de Ingenieria de Software, Tengo experiencia con diferentes lenguajes de programación y desarrollo de aplicaciones web en diversos frameworks ambos en frontend y backend, asimismo considero que cada paso en la universidad contribuye en mi avance como desarollo profesional. Estoy interesado en continuar mi aprendizaje, por lo que estoy dispuesto a participar en la adecuada realizacion de proyectos.</td>
   </tr>
   <tr>
-      <td style="text-align:center;"><img width="1200" height="200" alt="R" src="./assets/images/ronald.png" /></td>
-      <td><strong>Peralta Chipa, Ronald Joel - U202224619</strong><br>COMPLETAR</td>
+      <td style="text-align:center;"><img width="1200" height="200" alt="Victor Cruz" src="./assets/images/rafael_vivanco.png" /></td>
+      <td><strong>Cruz Ibarra, Victor Andres - u202311053</strong><br>Actualmente curso el 7mo ciclo de la carrera de Ingeniería de Software. Me considero una persona responsable con facilidad para adaptarme a distintos entornos y manejar varias tareas a la vez. Tengo conocimientos en desarrollo web y nóvil siguiendo buenas prácticas y arquitecturas bajo metodologías ágiles.</td>
   </tr>
 </table>
 
@@ -1563,7 +1718,24 @@ Detalla la estructura relacional para la gestión de suscripciones y facturació
 
 <div style="page-break-after: always;"></div>
 
+
 # Conclusiones
+El proyecto YakuControl demuestra ser una solución funcional y tecnológicamente robusta para la optimización de la piscicultura. Al integrar el monitoreo de sensores en tiempo real con una gestión de accesos controlada, se mitigan los riesgos de pérdida de producción por parámetros inadecuados del agua. La arquitectura propuesta no solo digitaliza el proceso, sino que transforma datos técnicos en decisiones operativas accionables para el piscicultor, resolviendo la brecha tecnológica en la gestión de criaderos de truchas.
+
+Usar los patrones tácticos de DDD nos ayudó a separar muy bien lo que son las reglas de negocio de los detalles más técnicos. Al definir "Contextos Delimitados" independientes (por ejemplo, para gestionar usuarios o para la telemetría), conseguimos que la lógica de cómo se manejan los usuarios y la de cómo se vigilan los estanques no se mezclaran. Así es mucho más fácil mantener y mejorar el sistema con el tiempo.
+
+Elegir una arquitectura de Monolito Modular nos dio la mezcla perfecta entre lo sencillo que es ponerlo a funcionar y lo bien ordenado que está todo por dentro. Gracias a esta forma de organizarse, cada parte (o módulo) funciona de manera independiente. Esto nos prepara para que, si un día necesitamos, podamos pasar a microservicios, sobre todo si la cantidad de datos de los sensores de las piscifactorías crece mucho, y todo sin tener que cambiar la base principal del programa.
+
+Finalmente, la validación del prototipo físico y del firmware embebido en condiciones reales de campo confirmó que la arquitectura Edge Computing propuesta cumple su objetivo central: reducir la dependencia de una conexión constante a internet sin sacrificar la capacidad de reacción ante eventos críticos. El correcto funcionamiento en conjunto de los sensores, los actuadores y el broker Mosquitto en el Edge API evidencia que YakuControl no es solo una propuesta teórica de software, sino una solución end-to-end viable para su implementación en piscigranjas de zonas rurales andinas, cerrando así la brecha tecnológica identificada al inicio del proyecto.
+
+# Recomendaciones
+
+Se recomienda que, ante un incremento masivo en la cantidad de estanques y la frecuencia de muestreo de los sensores de telemetría, se evalúe la migración del módulo de Telemetry hacia un microservicio independiente. Dado que el diseño actual utiliza Bounded Contexts bien definidos y desacoplados, esta transición permitiría escalar los recursos de procesamiento de datos de forma aislada, sin comprometer la disponibilidad de los módulos en la plataforma, asegurando así un rendimiento óptimo bajo alta demanda.
+
+## Video About-the-Team
+
+
+<div style="page-break-after: always;"></div>
 
 # Bibliografía
 Organización para la Cooperación y el Desarrollo Económicos. (2025). *Políticas para el futuro de la pesca y la acuicultura en Perú.* OECD Publishing. https://www.oecd.org/es/publications/politicas-para-el-futuro-de-la-pesca-y-la-acuicultura-en-peru_712e7084-es/full-report/aquaculture-policies-in-peru_a47e9e62.html
@@ -1575,3 +1747,5 @@ Actualidad Ambiental. (28 de mayo de 2025). *Huarochirí: mueren 200 mil truchas
 Agencia Peruana de Noticias Andina. (29 de abril de 2026). *Junín: OEFA realizó diligencia por muerte masiva de truchas en piscigranjas de Pariahuanca.* Andina. https://andina.pe/agencia/noticia-junin-oefa-realizo-diligencia-muerte-masiva-truchas-piscigranjas-pariahuanca-1073248.aspx
 
 # Anexos
+-Wokwi: 
+- [Ingresar a ver wokwi](https://wokwi.com/projects/467186064937826305)

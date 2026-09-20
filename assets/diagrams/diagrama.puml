@@ -1,0 +1,511 @@
+' ============================================================
+' PAYMENT CONTEXT - YakuControl
+' ============================================================
+' Diagramas en orden:
+'   1. domain_aggregate_payment      → 4.2.5.1 Domain Layer
+'   2. interface_layer_payment       → 4.2.5.2 Interface Layer
+'   3. application_layer_payment     → 4.2.5.3 Application Layer
+'   4. infrastructure_layer_payment  → 4.2.5.4 Infrastructure Layer
+'   5. c3_subscription_yakucontrol   → 4.2.5.5 Component Diagram
+'   6. domain_layer_payment          → 4.2.5.6.1 Class Diagram
+'   7. database_yakucontrol_payment  → 4.2.5.6.2 Database Design
+' ============================================================
+
+
+' ─────────────────────────────────────────────────────────────
+' 1. DOMAIN LAYER  →  domain_aggregate_payment.png
+' ─────────────────────────────────────────────────────────────
+@startuml domain_aggregate_payment
+skinparam packageStyle rectangle
+skinparam linetype ortho
+skinparam classBackgroundColor #FAFAFA
+skinparam classBorderColor #888888
+skinparam stereotypeCBackgroundColor #D5E8D4
+skinparam stereotypeABackgroundColor #DAE8FC
+skinparam stereotypeIBackgroundColor #FFF2CC
+
+title Domain Layer — Payment Context
+
+package "Payment Context · Domain" {
+
+    package "Aggregates" {
+        class Subscription <<Aggregate Root>> {
+            - subscriptionId : UUID
+            - farmId : UUID
+            - plan : SubscriptionPlan
+            - status : SubscriptionStatus
+            - billingPeriod : BillingPeriod
+            - stripeSubscriptionId : String
+            --
+            + create(farmId, plan, tanks) : Subscription
+            + activate(stripePaymentIntentId) : void
+            + suspend() : void
+            + cancel() : void
+            + isActive() : boolean
+        }
+    }
+
+    package "Entities" {
+        class Invoice <<Entity>> {
+            - invoiceId : UUID
+            - subscriptionId : UUID
+            - amount : Money
+            - status : InvoiceStatus
+            - stripeChargeId : String
+            - issuedAt : LocalDate
+            --
+            + markAsPaid(stripeChargeId) : void
+            + markAsFailed() : void
+        }
+    }
+
+    package "Value Objects" {
+        enum SubscriptionPlan <<Value Object>> {
+            BASIC
+            PRO
+            ENTERPRISE
+        }
+
+        enum SubscriptionStatus <<Value Object>> {
+            TRIAL
+            ACTIVE
+            SUSPENDED
+            CANCELLED
+        }
+
+        enum InvoiceStatus <<Value Object>> {
+            PENDING
+            PAID
+            FAILED
+        }
+
+        class Money <<Value Object>> {
+            - amount : BigDecimal
+            - currency : String
+        }
+
+        class BillingPeriod <<Value Object>> {
+            - startDate : LocalDate
+            - endDate : LocalDate
+            --
+            + isExpired() : boolean
+        }
+    }
+}
+
+
+
+@enduml
+
+
+' ─────────────────────────────────────────────────────────────
+' 2. INTERFACE LAYER  →  interface_layer_payment.png
+' ─────────────────────────────────────────────────────────────
+@startuml interface_layer_payment
+skinparam packageStyle rectangle
+skinparam linetype ortho
+skinparam classBackgroundColor #FAFAFA
+skinparam classBorderColor #888888
+
+title Interface Layer — Payment Context
+
+package "Payment Context · Interface" {
+
+    package "REST Controllers" {
+        class SubscriptionController <<RestController>> {
+            + createSubscription(resource) : ResponseEntity
+            + getSubscriptionByFarm(farmId) : ResponseEntity
+            + getInvoicesByFarm(farmId) : ResponseEntity
+        }
+
+        class StripeWebhookController <<RestController>> {
+            + handleStripeEvent(payload, signature) : ResponseEntity
+        }
+    }
+
+    package "DTOs (Resources)" {
+        class CreateSubscriptionResource <<Record>> {
+            + farmId : UUID
+            + plan : String
+            + tankCount : int
+        }
+
+        class SubscriptionResource <<Record>> {
+            + subscriptionId : UUID
+            + farmId : UUID
+            + plan : String
+            + status : String
+            + nextBillingDate : LocalDate
+        }
+
+        class InvoiceResource <<Record>> {
+            + invoiceId : UUID
+            + amount : BigDecimal
+            + currency : String
+            + status : String
+            + issuedAt : LocalDate
+        }
+
+        class CheckoutSessionResource <<Record>> {
+            + checkoutUrl : String
+        }
+    }
+
+    package "Assemblers" {
+        class CreateSubscriptionCommandFromResourceAssembler <<Component>> {
+            + toCommandFromResource(resource) : CreateSubscriptionCommand
+        }
+        class SubscriptionResourceFromEntityAssembler <<Component>> {
+            + toResourceFromEntity(subscription) : SubscriptionResource
+        }
+        class InvoiceResourceFromEntityAssembler <<Component>> {
+            + toResourceFromEntity(invoice) : InvoiceResource
+        }
+    }
+}
+
+SubscriptionController ..> CreateSubscriptionResource : uses
+SubscriptionController ..> SubscriptionResource : returns
+SubscriptionController ..> InvoiceResource : returns
+SubscriptionController ..> CheckoutSessionResource : returns
+SubscriptionController ..> CreateSubscriptionCommandFromResourceAssembler : uses
+SubscriptionController ..> SubscriptionResourceFromEntityAssembler : uses
+SubscriptionController ..> InvoiceResourceFromEntityAssembler : uses
+
+@enduml
+
+
+' ─────────────────────────────────────────────────────────────
+' 3. APPLICATION LAYER  →  application_layer_payment.png
+' ─────────────────────────────────────────────────────────────
+@startuml application_layer_payment
+skinparam packageStyle rectangle
+skinparam linetype ortho
+skinparam classBackgroundColor #FAFAFA
+skinparam classBorderColor #888888
+
+title Application Layer — Payment Context
+
+package "Payment Context · Application" {
+
+    package "Commands" {
+        class CreateSubscriptionCommand <<Command>> {
+            + farmId : UUID
+            + plan : SubscriptionPlan
+            + tankCount : int
+        }
+
+        class ActivateSubscriptionCommand <<Command>> {
+            + subscriptionId : UUID
+            + stripePaymentIntentId : String
+        }
+
+        class SuspendSubscriptionCommand <<Command>> {
+            + subscriptionId : UUID
+        }
+
+        interface SubscriptionCommandService <<interface>> {
+            + handle(command : CreateSubscriptionCommand) : Subscription
+            + handle(command : ActivateSubscriptionCommand) : void
+            + handle(command : SuspendSubscriptionCommand) : void
+        }
+
+        class SubscriptionCommandServiceImpl <<Service>> {
+            + handle(command : CreateSubscriptionCommand) : Subscription
+            + handle(command : ActivateSubscriptionCommand) : void
+            + handle(command : SuspendSubscriptionCommand) : void
+        }
+    }
+
+    package "Queries" {
+        interface SubscriptionQueryService <<interface>> {
+            + getSubscriptionByFarmId(farmId) : Optional<Subscription>
+            + getInvoicesByFarmId(farmId) : List<Invoice>
+        }
+
+        class SubscriptionQueryServiceImpl <<Service>> {
+            + getSubscriptionByFarmId(farmId) : Optional<Subscription>
+            + getInvoicesByFarmId(farmId) : List<Invoice>
+        }
+    }
+
+    package "Event Handlers" {
+        class PaymentConfirmedHandler <<EventHandler>> {
+            + on(event : StripePaymentConfirmed) : void
+        }
+
+        class PaymentFailedHandler <<EventHandler>> {
+            + on(event : StripePaymentFailed) : void
+        }
+    }
+}
+
+SubscriptionCommandServiceImpl ..|> SubscriptionCommandService
+SubscriptionQueryServiceImpl ..|> SubscriptionQueryService
+
+PaymentConfirmedHandler ..> ActivateSubscriptionCommand : creates >
+PaymentFailedHandler ..> SuspendSubscriptionCommand : creates >
+
+@enduml
+
+
+' ─────────────────────────────────────────────────────────────
+' 4. INFRASTRUCTURE LAYER  →  infrastructure_layer_payment.png
+' ─────────────────────────────────────────────────────────────
+@startuml infrastructure_layer_payment
+skinparam packageStyle rectangle
+skinparam linetype ortho
+skinparam classBackgroundColor #FAFAFA
+skinparam classBorderColor #888888
+
+title Infrastructure Layer — Payment Context
+
+package "Payment Context · Infrastructure" {
+
+    package "Persistence" {
+        interface SubscriptionRepository <<interface>> {
+            + findByFarmId(farmId) : Optional<Subscription>
+            + save(subscription) : Subscription
+        }
+
+        interface InvoiceRepository <<interface>> {
+            + findBySubscriptionId(subscriptionId) : List<Invoice>
+            + save(invoice) : Invoice
+        }
+
+        class SubscriptionRepositoryImpl <<Repository>> {
+            + findByFarmId(farmId) : Optional<Subscription>
+            + save(subscription) : Subscription
+        }
+
+        class InvoiceRepositoryImpl <<Repository>> {
+            + findBySubscriptionId(subscriptionId) : List<Invoice>
+            + save(invoice) : Invoice
+        }
+    }
+
+    package "External Services (Stripe)" {
+        interface PaymentGateway <<interface>> {
+            + createCheckoutSession(plan, farmId) : String
+            + createPaymentIntent(amount, currency) : String
+            + getChargeStatus(chargeId) : String
+        }
+
+        class StripePaymentGatewayAdapter <<Adapter>> {
+            - stripeApiKey : String
+            + createCheckoutSession(plan, farmId) : String
+            + createPaymentIntent(amount, currency) : String
+            + getChargeStatus(chargeId) : String
+        }
+
+        class StripeWebhookValidator <<Component>> {
+            - webhookSecret : String
+            + validate(payload, signature) : StripeEvent
+        }
+    }
+}
+
+SubscriptionRepositoryImpl ..|> SubscriptionRepository
+InvoiceRepositoryImpl ..|> InvoiceRepository
+StripePaymentGatewayAdapter ..|> PaymentGateway
+
+@enduml
+
+
+' ─────────────────────────────────────────────────────────────
+' 5. C4 COMPONENT DIAGRAM  →  c3_subscription_yakucontrol.png
+' ─────────────────────────────────────────────────────────────
+@startuml c3_subscription_yakucontrol
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+title Component Diagram — Payment Context (YakuControl)
+
+LAYOUT_WITH_LEGEND()
+
+Person(admin, "Administrador", "Gestiona suscripciones\ndesde el Web Dashboard.")
+System_Ext(stripe, "Stripe API", "Procesador de pagos externo.")
+System_Ext(iam, "IAM Context", "Verifica identidad del administrador.")
+
+Container_Boundary(payment_bc, "Payment Context — Spring Boot Service") {
+
+    Component(sub_ctrl, "SubscriptionController", "Spring MVC", "Endpoints REST para crear y consultar suscripciones.")
+    Component(webhook_ctrl, "StripeWebhookController", "Spring MVC", "Recibe y valida eventos webhook de Stripe.")
+
+    Component(cmd_svc, "SubscriptionCommandService", "Spring Service", "Orquesta comandos: create, activate, suspend, cancel.")
+    Component(qry_svc, "SubscriptionQueryService", "Spring Service", "Consultas de estado de suscripción e historial de facturas.")
+
+    Component(sub_repo, "SubscriptionRepository", "Spring Data JPA", "Persiste el Agregado Subscription en PostgreSQL.")
+    Component(inv_repo, "InvoiceRepository", "Spring Data JPA", "Persiste el historial de facturas en PostgreSQL.")
+    Component(stripe_adapter, "StripePaymentGatewayAdapter", "Java Adapter", "Integra con la API REST de Stripe.")
+    Component(webhook_validator, "StripeWebhookValidator", "Java Component", "Verifica la firma criptográfica de los webhooks.")
+
+    ContainerDb(db, "PostgreSQL", "Base de Datos", "Tablas: subscriptions, invoices.")
+}
+
+Rel(admin, sub_ctrl, "POST /subscriptions, GET /subscriptions/{farmId}", "HTTPS/JSON")
+Rel(stripe, webhook_ctrl, "POST /webhooks/stripe", "HTTPS + Stripe-Signature")
+
+Rel(sub_ctrl, cmd_svc, "Delega comandos")
+Rel(sub_ctrl, qry_svc, "Delega consultas")
+Rel(webhook_ctrl, webhook_validator, "Valida firma")
+Rel(webhook_ctrl, cmd_svc, "Activa / Suspende")
+
+Rel(cmd_svc, sub_repo, "Persiste Subscription")
+Rel(cmd_svc, inv_repo, "Persiste Invoice")
+Rel(cmd_svc, stripe_adapter, "Crea PaymentIntent / Checkout")
+
+Rel(qry_svc, sub_repo, "Consulta")
+Rel(qry_svc, inv_repo, "Consulta historial")
+
+Rel(sub_repo, db, "Lee / Escribe")
+Rel(inv_repo, db, "Lee / Escribe")
+Rel(stripe_adapter, stripe, "HTTPS REST")
+
+Rel(sub_ctrl, iam, "Verifica JWT", "HTTP")
+
+@enduml
+
+
+' ─────────────────────────────────────────────────────────────
+' 6. CLASS DIAGRAM  →  domain_layer_payment.png  (4.2.5.6.1)
+' ─────────────────────────────────────────────────────────────
+@startuml domain_layer_payment
+skinparam classBackgroundColor #FAFAFA
+skinparam classBorderColor #555555
+skinparam linetype ortho
+
+title Domain Layer Class Diagram — Payment Context
+
+class Subscription <<AggregateRoot>> {
+    - subscriptionId : UUID
+    - farmId : UUID
+    - plan : SubscriptionPlan
+    - status : SubscriptionStatus
+    - billingPeriod : BillingPeriod
+    - tankCount : int
+    - stripeSubscriptionId : String
+    --
+    + {static} create(farmId, plan, tankCount) : Subscription
+    + activate(stripePaymentIntentId : String) : void
+    + suspend() : void
+    + cancel() : void
+    + renewBillingPeriod() : void
+    + isActive() : boolean
+    + getInvoices() : List<Invoice>
+}
+
+class Invoice <<Entity>> {
+    - invoiceId : UUID
+    - subscriptionId : UUID
+    - amount : Money
+    - status : InvoiceStatus
+    - stripeChargeId : String
+    - issuedAt : LocalDate
+    - paidAt : LocalDate
+    --
+    + markAsPaid(stripeChargeId : String) : void
+    + markAsFailed() : void
+    + isPending() : boolean
+}
+
+class Money <<ValueObject>> {
+    - amount : BigDecimal
+    - currency : String
+    --
+    + add(other : Money) : Money
+    + equals(other : Money) : boolean
+}
+
+class BillingPeriod <<ValueObject>> {
+    - startDate : LocalDate
+    - endDate : LocalDate
+    --
+    + isExpired() : boolean
+    + daysRemaining() : long
+}
+
+enum SubscriptionPlan <<ValueObject>> {
+    BASIC
+    PRO
+    ENTERPRISE
+    --
+    + pricePerTank() : Money
+}
+
+enum SubscriptionStatus <<ValueObject>> {
+    TRIAL
+    ACTIVE
+    SUSPENDED
+    CANCELLED
+}
+
+enum InvoiceStatus <<ValueObject>> {
+    PENDING
+    PAID
+    FAILED
+}
+
+interface SubscriptionRepository <<Repository>> {
+    + findById(id : UUID) : Optional<Subscription>
+    + findByFarmId(farmId : UUID) : Optional<Subscription>
+    + save(subscription : Subscription) : Subscription
+}
+
+interface InvoiceRepository <<Repository>> {
+    + findBySubscriptionId(id : UUID) : List<Invoice>
+    + save(invoice : Invoice) : Invoice
+}
+
+Subscription "1" *-down- "0..*" Invoice : invoices
+Subscription --> SubscriptionPlan : plan
+Subscription --> SubscriptionStatus : status
+Subscription --> BillingPeriod : billingPeriod
+Invoice --> Money : amount
+Invoice --> InvoiceStatus : status
+SubscriptionRepository ..> Subscription : manages
+InvoiceRepository ..> Invoice : manages
+
+@enduml
+
+
+' ─────────────────────────────────────────────────────────────
+' 7. DATABASE DESIGN  →  database_yakucontrol_payment.png  (4.2.5.6.2)
+' ─────────────────────────────────────────────────────────────
+@startuml database_yakucontrol_payment
+skinparam linetype ortho
+skinparam backgroundColor #FFFFFF
+
+title Database Design — Payment Context
+
+entity "subscriptions" as sub {
+    * subscription_id : UUID <<PK>>
+    --
+    * farm_id : UUID <<FK farms>>
+    * plan : VARCHAR(20)
+    * status : VARCHAR(20)
+    * tank_count : INT
+    stripe_subscription_id : VARCHAR(100)
+    billing_start : DATE
+    billing_end : DATE
+    created_at : TIMESTAMP
+    updated_at : TIMESTAMP
+}
+
+entity "invoices" as inv {
+    * invoice_id : UUID <<PK>>
+    --
+    * subscription_id : UUID <<FK subscriptions>>
+    * amount : DECIMAL(10,2)
+    * currency : CHAR(3)
+    * status : VARCHAR(20)
+    stripe_charge_id : VARCHAR(100)
+    issued_at : DATE
+    paid_at : DATE
+    created_at : TIMESTAMP
+}
+
+sub ||--o{ inv : "subscription_id"
+
+
+
+@enduml
