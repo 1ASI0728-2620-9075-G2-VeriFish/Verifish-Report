@@ -331,7 +331,7 @@ Todo este panorama evidencia la importancia crítica y el respaldo necesario par
 ### 1.1.2. Perfiles de integrantes del equipo
 <table border="1">
   <tr>
-      <td style="text-align:center;"><img width="1200" height="200" img alt="Sebastian Escobar" src="./assets/images/andrea_aponte.png" /></td>
+      <td style="text-align:center;"><img width="1200" height="200" img alt="Sebastian Escobar" src="https://i.imgur.com/UqKbYwJ.jpeg" /></td>
       <td><strong>Escobar Palomino, Sebastian Matias - u202125968</strong><br>Actualmente estoy en el 8vo ciclo de la carrera de Ingeniería de Software. Tengo conocimientos en desarrollo de software, diseño de bases de datos, arquitectura de sistemas y trabajo colaborativo con metodologías ágiles.</td>
   </tr>
   <tr>
