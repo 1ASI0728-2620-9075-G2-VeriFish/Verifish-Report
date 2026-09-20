@@ -63,11 +63,11 @@
 
 | Versión | Fecha | Autor | Descripción de modificación |
 | :--- | :--- | :--- | :--- |
-| **1.0** | 09/04/2026 | | Creación inicial de la estructura del informe y definición de lineamientos. |
-| **2.0** | 12/04/2026 |  | Se completó el Capítulo I: Presentación del proyecto y Background |
-| **3.0** | 15/04/2026 |  | Finalización del Capítulo II: Obtención y análisis de requisitos |
-| **4.0** | 18/04/2026 | | Se completó el Capítulo III: Especificación de requisitos |
-| **5.0** | 21/04/2026 |  | Se completó el Capítulo IV: Diseño y arquitectura de la solución |
+| **1.0** | 19/09/2026 | | Creación inicial de la estructura del informe y definición de lineamientos. |
+| **2.0** |  |  |  |
+| **3.0** |  |  |  |
+| **4.0** |  |  |  |
+| **5.0** |  |  |  |
 <div style="page-break-after: always;"></div>
 
 # Project Report Collaboration Insights
@@ -231,29 +231,28 @@ Todo este panorama evidencia la importancia crítica y el respaldo necesario par
 - **Visión:** Consolidarse para el año 2030 como la plataforma líder en monitoreo y analítica predictiva para la acuicultura en América Latina, siendo reconocidos por nuestra capacidad de integrar ingeniería de software avanzada con la preservación de ecosistemas hídricos.
 
 <div style="page-break-after: always;"></div>
-
 ### 1.1.2. Perfiles de integrantes del equipo
 <table border="1">
   <tr>
-      <td style="text-align:center;"><img width="1200" height="200" img alt="Andrea Aponte" src="./assets/images/andrea_aponte.png" /></td>
-      <td><strong>Aponte Cruzado, Andrea Marielena - u202224135</strong><br>Actualmente estoy en el 8vo ciclo de la carrera de Ingeniería de Software. Tengo conocimientos en desarrollo de software, diseño de bases de datos, arquitectura de sistemas y trabajo colaborativo con metodologías ágiles.</td>
+      <td style="text-align:center;"><img width="1200" height="200" img alt="Andrea Aponte" src="./assets/images/sebastian_img.png" /></td>
+      <td><strong>Escobar Palomino , Sebastian Matias - U202125968</strong><br>COMPLETAR</td>
   </tr>
   <tr>
-      <td style="text-align:center;"><img width="1200" height="200" alt="Mario Lopez" src="./assets/images/Mario.jpeg" /></td>
-      <td><strong>Lopez Acuna, Mario Joaquin - U202116250</strong><br>Mi nombre es Mario Lopez, tengo 21 años y soy estudiante de la carrera de Ingeniería de Software. Actualmente estoy en séptimo ciclo de la carrera de Ingeniería de Software. Tengo conocimientos en varios lenguajes de programación principalmente en Python y Typescrip, me gusta trabajar en equipo tratando de aportar en lo que pueda y compartiendo mis conocimientos. Me interesa aprender sobre gerencia en proyectos de software.</td>
+      <td style="text-align:center;"><img width="1200" height="200" alt="Mario Lopez" src="./assets/images/rubenz_img.png" /></td>
+      <td><strong>Bendezu Navarro, Rúbens Fitzgerald - U20231d390</strong><br>COMPLETAR</td>
   </tr>
   <tr>
-      <td style="text-align:center;"><img width="1200" height="200" alt="Ruben Genaro" src="./assets/images/ruben.jpg" /></td>
-      <td><strong>Velasquez Chambi, Ruben Genaro - U202117342 </strong><br>Estudiante del octavo ciclo,tengo 25 años y soy estudiante de la carrera de ingeniera de Software con experiencia en C++, Node.js, TypeScript, Java, Angular,Vue.js y frameworks como springboot y .Net Core. Me especializo en eficiencia de equipo, arquitectura limpia y desarrollo bajo principios SOLID.
+      <td style="text-align:center;"><img width="1200" height="200" alt="Ruben Genaro" src="./assets/images/luciana.png" /></td>
+      <td><strong>Choquehuanca Nuñez, Luciana Carolina - U202319431 </strong><br>Soy estudiante de ing de software, actualmente me encuentro en octavo ciclo. Tengo experiencia en desarrollo y espero fortalecer mis conocimientos sobre diseño de soluciones modernas, escalables y mantenibles, además de aprender nuevas tecnologías y enfoques arquitectónicos que pueda aplicar en proyectos reales.
       </td>
   </tr>
   <tr>
-      <td style="text-align:center;"><img width="1200" height="200" alt="Ruben Velasquez" src="./assets/images/jasmin_urrutia.png" /></td>
-      <td><strong>Urrutia Pena, Jasmin Adriana - U202310008</strong><br> Estudiante del 7mo ciclo de la carrera de Ingenieria de Software, Tengo experiencia con diferentes lenguajes de programación y desarrollo de aplicaciones web en diversos frameworks ambos en frontend y backend, asimismo considero que cada paso en la universidad contribuye en mi avance como desarollo profesional. Estoy interesado en continuar mi aprendizaje, por lo que estoy dispuesto a participar en la adecuada realizacion de proyectos.</td>
+      <td style="text-align:center;"><img width="1200" height="200" alt="Ruben Velasquez" src="./assets/images/andres.png" /></td>
+      <td><strong>Cruz Ibarra, Victor Andres - U202311053</strong><br> COMPLETAR</td>
   </tr>
   <tr>
-      <td style="text-align:center;"><img width="1200" height="200" alt="Rafael Vivanco" src="./assets/images/rafael_vivanco.png" /></td>
-      <td><strong>Vivanco Salazar, Rafael Andres - u202311064</strong><br>Actualmente curso el 7mo ciclo de la carrera de Ingeniería de Software. Me considero una persona responsable con facilidad para adaptarme a distintos entornos y manejar varias tareas a la vez. Tengo conocimientos en desarrollo web y nóvil siguiendo buenas prácticas y arquitecturas bajo metodologías ágiles.</td>
+      <td style="text-align:center;"><img width="1200" height="200" alt="Rafael Vivanco" src="./assets/images/ronald.png" /></td>
+      <td><strong>Peralta Chipa, Ronald Joel - U202224619</strong><br>COMPLETAR</td>
   </tr>
 </table>
 
