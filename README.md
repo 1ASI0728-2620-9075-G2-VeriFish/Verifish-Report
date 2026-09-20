@@ -75,16 +75,16 @@
 
 En esta sección se presenta un resumen de las actividades de colaboración realizadas para la elaboración del informe del proyecto.
 
-Se utilizó **GitHub** como plataforma de control de versiones y colaboración en equipo. Se incluye el enlace para acceder al repositorio para el reporte del proyecto: [Ver en Github]()
+Se utilizó **GitHub** como plataforma de control de versiones y colaboración en equipo. Se incluye el enlace para acceder al repositorio para el reporte del proyecto: [Ver en Github](https://github.com/1ASI0728-2620-9075-G2-VeriFish/Verifish-Report)
 
 Los integrantes del equipo y sus nombres de usuario en GitHub son los siguientes:
 
 | Integrantes | Nombre en GitHub |
 | :--- | :--- |
-| Escobar Palomino, Sebastian Matias | iconicmiau |
-| Bendezu Navarro, Rúbens Fitzgerald | tertegen |
-| Choquehuanca Nuñez, Luciana Carolina | SrtaYeis |
-| Cruz Ibarra, Victor Andres | RafaelVivanco |
+| Escobar Palomino, Sebastian Matias | sebasepe |
+| Bendezu Navarro, Rúbens Fitzgerald | Lucemz |
+| Choquehuanca Nuñez, Luciana Carolina | Lucianxaaa |
+| Cruz Ibarra, Victor Andres |Elandrehs |
 | Peralta Chipa, Ronald Joel | RooDev10 |
 
 Se usó el flujo de trabajo **GitFlow**, que incluye las siguientes ramas principales:
@@ -1317,13 +1317,6 @@ Usar los patrones tácticos de DDD nos ayudó a separar muy bien lo que son las 
 Elegir una arquitectura de Monolito Modular nos dio la mezcla perfecta entre lo sencillo que es ponerlo a funcionar y lo bien ordenado que está todo por dentro. Gracias a esta forma de organizarse, cada parte (o módulo) funciona de manera independiente. Esto nos prepara para que, si un día necesitamos, podamos pasar a microservicios, sobre todo si la cantidad de datos de los sensores de las piscifactorías crece mucho, y todo sin tener que cambiar la base principal del programa.
 
 Finalmente, la validación del prototipo físico y del firmware embebido en condiciones reales de campo confirmó que la arquitectura Edge Computing propuesta cumple su objetivo central: reducir la dependencia de una conexión constante a internet sin sacrificar la capacidad de reacción ante eventos críticos. El correcto funcionamiento en conjunto de los sensores, los actuadores y el broker Mosquitto en el Edge API evidencia que YakuControl no es solo una propuesta teórica de software, sino una solución end-to-end viable para su implementación en piscigranjas de zonas rurales andinas, cerrando así la brecha tecnológica identificada al inicio del proyecto.
-
-# Recomendaciones
-
-Se recomienda que, ante un incremento masivo en la cantidad de estanques y la frecuencia de muestreo de los sensores de telemetría, se evalúe la migración del módulo de Telemetry hacia un microservicio independiente. Dado que el diseño actual utiliza Bounded Contexts bien definidos y desacoplados, esta transición permitiría escalar los recursos de procesamiento de datos de forma aislada, sin comprometer la disponibilidad de los módulos en la plataforma, asegurando así un rendimiento óptimo bajo alta demanda.
-
-## Video About-the-Team
-
 
 <div style="page-break-after: always;"></div>
 
