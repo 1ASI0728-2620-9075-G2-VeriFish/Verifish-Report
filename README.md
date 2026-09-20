@@ -75,7 +75,7 @@
 
 En esta sección se presenta un resumen de las actividades de colaboración realizadas para la elaboración del informe del proyecto.
 
-Se utilizó **GitHub** como plataforma de control de versiones y colaboración en equipo. Se incluye el enlace para acceder al repositorio para el reporte del proyecto: [Ver en Github](https://github.com/AcuaNode/yaku-report)
+Se utilizó **GitHub** como plataforma de control de versiones y colaboración en equipo. Se incluye el enlace para acceder al repositorio para el reporte del proyecto: [Ver en Github]()
 
 Los integrantes del equipo y sus nombres de usuario en GitHub son los siguientes:
 
@@ -310,7 +310,7 @@ Consolidar la documentación técnica final integrando los 5 Bounded Context Can
 ## 1.1. Startup Profile
 ### 1.1.1. Descripción de la Startup
 
-**AcuaNode** es una startup tecnológica dedicada al desarrollo de soluciones de Smart Farming y monitoreo ambiental, con un enfoque en la modernización de la industria acuícola. La startup nace con el propósito de transformar la gestión tradicional de las piscigranjas en ecosistemas inteligentes y resilientes, utilizando el *Internet de las Cosas (IoT)* y *computación en la nube* para proteger la biodiversidad y la rentabilidad del productor.
+**Verifish** es una startup tecnológica dedicada al desarrollo de soluciones de Smart Farming y monitoreo ambiental, con un enfoque en la modernización de la industria acuícola. La startup nace con el propósito de transformar la gestión tradicional de las piscigranjas en ecosistemas inteligentes y resilientes, utilizando el *Internet de las Cosas (IoT)* y *computación en la nube* para proteger la biodiversidad y la rentabilidad del productor.
 
 **YakuControl** (del quechua *yaku*, "agua") es un ecosistema digital integral que permite a los administradores de piscigranjas monitorear en tiempo real las variables bioquímicas críticas de sus estanques. Mediante el uso de hardware especializado y algoritmos alojados en la nube, el sistema actúa como un soporte vital preventivo par los piscicultores, con el fin de mitigar riesgos de mortalidad masiva causados por variaciones térmicas o intoxicaciones químicas.
 
@@ -990,7 +990,7 @@ Link Trello: https://trello.com/invite/b/69ddbac5fb1fb4d9bc57783e/ATTI6aaf075e45
 ## 4.1. Strategic-Level Attribute-Driven Design
 ### 4.1.1. Design Purpose
 
-El presente ejercicio de diseño arquitectónico corresponde al desarrollo de **YakuControl**, un sistema *greenfield* (diseñado desde cero, sin arquitectura preexistente que migrar o extender) que constituye el producto central de la startup **AcuaNode**. El propósito de este diseño es definir la arquitectura de software que soportará el MVP (Minimum Viable Product) descrito en el Product Backlog del Capítulo III, priorizando las User Stories y Technical Stories de mayor valor de negocio: la ingesta y validación de telemetría IoT (pH, temperatura, turbidez), la emisión de alertas críticas en tiempo real, el control remoto de actuadores de emergencia y la gestión del modelo de suscripción SaaS.
+El presente ejercicio de diseño arquitectónico corresponde al desarrollo de **YakuControl**, un sistema *greenfield* (diseñado desde cero, sin arquitectura preexistente que migrar o extender) que constituye el producto central de la startup **Verifish**. El propósito de este diseño es definir la arquitectura de software que soportará el MVP (Minimum Viable Product) descrito en el Product Backlog del Capítulo III, priorizando las User Stories y Technical Stories de mayor valor de negocio: la ingesta y validación de telemetría IoT (pH, temperatura, turbidez), la emisión de alertas críticas en tiempo real, el control remoto de actuadores de emergencia y la gestión del modelo de suscripción SaaS.
 
 Se aplica el método **Attribute-Driven Design (ADD)** en esta etapa temprana del proyecto con el fin de que las decisiones estructurales de alto nivel —la definición de los Bounded Contexts, los estilos y patrones arquitectónicos, y la distribución de responsabilidades entre el hardware Edge, el backend en la nube y los clientes Web/Mobile— respondan directamente a los atributos de calidad críticos para el negocio, y no únicamente a la funcionalidad. En particular, la arquitectura debe garantizar:
 
@@ -1082,7 +1082,7 @@ En esta sección se detalla la aplicación del EventStorming como herramienta es
 ---
 
 ##### Step 1: Domain Events
-El proceso inicia con la identificación de los **Domain Events** (post-its naranjas), representados en tiempo pasado. En esta etapa, se vuelcan de manera libre todos los sucesos relevantes en el ecosistema de AcuaNode, desde la captura de una métrica de PH hasta la confirmación de una suscripción, permitiendo visualizar la magnitud del sistema sin restricciones jerárquicas.
+El proceso inicia con la identificación de los **Domain Events** (post-its naranjas), representados en tiempo pasado. En esta etapa, se vuelcan de manera libre todos los sucesos relevantes en el ecosistema de Verifish, desde la captura de una métrica de PH hasta la confirmación de una suscripción, permitiendo visualizar la magnitud del sistema sin restricciones jerárquicas.
 
 ![Step 1](assets/images/step1.png)
 
@@ -1112,7 +1112,7 @@ En este paso se definen los **Aggregates** (post-its amarillos grandes), que fun
 ![Step 6](assets/images/step6.png)
 
 ##### Step 7: Policies and Business Rules
-Se establecen las **Policies** (post-its lilas), que definen reacciones automáticas bajo la premisa "Siempre que [Evento], entonces [Comando]". Esto es fundamental para la automatización de AcuaNode, como la regla que activa automáticamente un oxigenador tras detectar una lectura crítica de oxígeno disuelto.
+Se establecen las **Policies** (post-its lilas), que definen reacciones automáticas bajo la premisa "Siempre que [Evento], entonces [Comando]". Esto es fundamental para la automatización de Verifish, como la regla que activa automáticamente un oxigenador tras detectar una lectura crítica de oxígeno disuelto.
 
 ![Step 7](assets/images/step7.png)
 
