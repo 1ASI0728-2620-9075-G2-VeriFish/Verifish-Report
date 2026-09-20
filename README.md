@@ -87,20 +87,10 @@ Los integrantes del equipo y sus nombres de usuario en GitHub son los siguientes
 | Cruz Ibarra, Victor Andres |Elandrehs |
 | Peralta Chipa, Ronald Joel | RooDev10 |
 
-Se usó el flujo de trabajo **GitFlow**, que incluye las siguientes ramas principales:
-
-* **main:** Rama principal que contiene la versión estable y consolidada del documento.
-* **develop:** Rama de integración utilizada para fusionar los cambios realizados en las ramas de características.
-* **feature/chapter-I:** Rama para el desarrollo del Capítulo I (Startup Profile, Solution Profile, Lean UX Process y Segmentos objetivo).
-* **feature/chapter-II:** Rama para el desarrollo del Capítulo II (Análisis competitivo, Entrevistas, Needfinding, EventStorming de alto nivel y Ubiquitous Language).
-* **feature/chapter-III:** Rama para el desarrollo del Capítulo III (User Stories, Impact Mapping y estructuración del Product Backlog).
-* **feature/chapter-IV:** Rama para el desarrollo del Capítulo IV (Diseño estratégico y táctico con Domain-Driven Design, Context Mapping y Arquitectura de Software C4).
-* **release/v1.0.0:** Rama de preparación para la entrega final del 24/04.
-* **hotfix/urgent-fix:** Rama para correcciones críticas de último minuto sobre `main`.
 
 <div style="page-break-after: always;"></div>
 
-## AV1
+## TB1
 
 **Tareas**
 
@@ -118,29 +108,24 @@ Iniciando actividades el **20/09/2026**, el equipo distribuyó las responsabilid
 
 **GitHub Collaboration Insights**
 
-A continuación, se presentan las evidencias del trabajo colaborativo en el repositorio, gestionado bajo el flujo GitFlow desde el inicio del proyecto el 09 de abril hasta la última fecha de entrega final el 19 de junio.
+
 
 <div style="text-align: center; margin-top: 1rem; margin-bottom: 1rem;">
 
-*Gráfico de red (network graph) de ramas en el repositorio de GitHub.*
-
-![Insights - Contributors](./assets/images/network.png)
+![Insights - Contributors](https://i.imgur.com/3HvIb6B.png)
 
 </div>
 
 <div style="text-align: center; margin-top: 1rem; margin-bottom: 1rem;">
 
-*Análisis de líneas de código añadidas por contribuyente (Escobar, Bendezu, Choquehuanca, Cruz, Peralta).*
 
-![Insights - Network Graph](./assets/images/insights.png)
+![Insights - Network Graph](https://i.imgur.com/GqOC9hn.png)
 
 </div>
 
 <div style="text-align: center; margin-top: 1rem; margin-bottom: 1rem;">
 
-*Análisis de actividad de commits registrada durante el periodo del 14/03 al 13/06.*
-
-![Insights - Commits](./assets/images/commits.png)
+![Insights - Commits](https://i.imgur.com/2bKoCJg.png)
 
 </div>
 
@@ -203,71 +188,6 @@ A continuación, se presentan las evidencias del trabajo colaborativo en el repo
   - [4.3.2. Software Architecture Context Level Diagrams](#432-software-architecture-context-level-diagrams)
   - [4.3.3. Software Architecture Container Level Diagrams](#433-software-architecture-container-level-diagrams)
   - [4.3.4. Software Architecture Deployment Diagrams](#434-software-architecture-deployment-diagrams)
-
-### Capítulo V: Solution UI/UX Design
-- [5.1. Style Guidelines](#51-style-guidelines)
-  - [5.1.1. General Style Guidelines](#511-general-style-guidelines)
-  - [5.1.2. Web, Mobile and IoT Style Guidelines](#512-web-mobile-and-iot-style-guidelines)
-- [5.2. Information Architecture](#52-information-architecture)
-  - [5.2.1. Organization Systems](#521-organization-systems)
-  - [5.2.2. Labeling Systems](#522-labeling-systems)
-  - [5.2.3. SEO Tags and Meta Tags](#523-seo-tags-and-meta-tags)
-  - [5.2.4. Searching Systems](#524-searching-systems)
-  - [5.2.5. Navigation Systems](#525-navigation-systems)
-- [5.3. Landing Page UI Design](#53-landing-page-ui-design)
-  - [5.3.1. Landing Page Wireframe](#531-landing-page-wireframe)
-  - [5.3.2. Landing Page Mock-up](#532-landing-page-mock-up)
-- [5.4. Applications UX/UI Design](#54-applications-uxui-design)
-  - [5.4.1. Applications Wireframes](#541-applications-wireframes)
-  - [5.4.2. Applications Wireflow Diagrams](#542-applications-wireflow-diagrams)
-  - [5.4.3. Applications Mock-ups](#543-applications-mock-ups)
-  - [5.4.4. Applications User Flow Diagrams](#544-applications-user-flow-diagrams)
-- [5.5. Applications Prototyping](#55-applications-prototyping)
-- [5.6. IoT Device Design](#56-iot-device-design)
-
-### Capítulo VI: Product Implementation, Validation & Deployment
-- [6.1. Software Configuration Management](#61-software-configuration-management)
-  - [6.1.1. Software Development Environment Configuration](#611-software-development-environment-configuration)
-  - [6.1.2. Source Code Management](#612-source-code-management)
-  - [6.1.3. Source Code Style Guide & Conventions](#613-source-code-style-guide--conventions)
-  - [6.1.4. Software Deployment Configuration](#614-software-deployment-configuration)
-- [6.2. Landing Page, Services & Applications Implementation](#62-landing-page-services--applications-implementation)
-  - [6.2.1. Sprint 1](#621-sprint-n)
-    - [6.2.1.1. Sprint Planning 1](#6211-sprint-planning-n)
-    - [6.2.1.2. Aspect Leaders and Collaborators](#6212-aspect-leaders-and-collaborators)
-    - [6.2.1.3. Sprint Backlog 1](#6213-sprint-backlog-n)
-    - [6.2.1.4. Development Evidence for Sprint Review](#6214-development-evidence-for-sprint-review)
-    - [6.2.1.5. Testing Suite Evidence for Sprint Review](#6215-testing-suite-evidence-for-sprint-review)
-    - [6.2.1.6. Execution Evidence for Sprint Review](#6216-execution-evidence-for-sprint-review)
-    - [6.2.1.7. Services Documentation Evidence for Sprint Review](#6217-services-documentation-evidence-for-sprint-review)
-    - [6.2.1.8. Software Deployment Evidence for Sprint Review](#6218-software-deployment-evidence-for-sprint-review)
-    - [6.2.1.9. Team Collaboration Insights during Sprint](#6219-team-collaboration-insights-during-sprint)
-  - [6.2.2. Sprint 2](#622-sprint-2)
-    - [6.2.2.1. Sprint Planning 2](#6221-sprint-planning-2)
-    - [6.2.2.2. Aspect Leaders and Collaborators](#6222-aspect-leaders-and-collaborators)
-    - [6.2.2.3. Sprint Backlog 2](#6223-sprint-backlog-2)
-    - [6.2.2.4. Development Evidence for Sprint Review](#6224-development-evidence-for-sprint-review)
-    - [6.2.2.5. Testing Suite Evidence for Sprint Review](#6225-testing-suite-evidence-for-sprint-review)
-    - [6.2.2.6. Execution Evidence for Sprint Review](#6226-execution-evidence-for-sprint-review)
-    - [6.2.2.7. Services Documentation Evidence for Sprint Review](#6227-services-documentation-evidence-for-sprint-review)
-    - [6.2.2.8. Software Deployment Evidence for Sprint Review](#6228-software-deployment-evidence-for-sprint-review)
-    - [6.2.2.9. Team Collaboration Insights during Sprint](#6229-team-collaboration-insights-during-sprint)
-  - [6.2.3. Sprint 3](#623-sprint-3)
-    - [6.2.3.1. Sprint Planning 3](#6231-sprint-planning-3)
-    - [6.2.3.2. Aspect Leaders and Collaborators](#6232-aspect-leaders-and-collaborators)
-    - [6.2.3.3. Sprint Backlog 2](#6233-sprint-backlog-2)
-    - [6.2.3.4. Development Evidence for Sprint Review](#6234-development-evidence-for-sprint-review)
-    - [6.2.3.5. Testing Suite Evidence for Sprint Review](#6235-testing-suite-evidence-for-sprint-review)
-    - [6.2.3.6. Execution Evidence for Sprint Review](#6236-execution-evidence-for-sprint-review)
-    - [6.2.3.7. Services Documentation Evidence for Sprint Review](#6237-services-documentation-evidence-for-sprint-review)
-    - [6.2.3.8. Software Deployment Evidence for Sprint Review](#6238-software-deployment-evidence-for-sprint-review)
-    - [6.2.3.9. Team Collaboration Insights during Sprint](#6239-team-collaboration-insights-during-sprint)
-- [6.3. Validation Interviews](#63-validation-interviews)
-  - [6.3.1. Diseño de Entrevistas](#631-diseño-de-entrevistas)
-  - [6.3.2. Registro de Entrevistas](#632-registro-de-entrevistas)
-  - [6.3.3. Evaluaciones según heurísticas](#633-evaluaciones-según-heurísticas)
-- [6.4. Video About the Product](#64-video-about-the-product)
-    
 - [Conclusiones](#conclusiones)
 - [Bibliografía](#bibliografia)
 - [Anexos](#anexos)
@@ -280,8 +200,8 @@ En el siguiente cuadro se describen las acciones realizadas y enunciados de conc
 
 | Criterio específico | Acciones realizadas | Conclusiones |
 | :--- | :--- | :--- |
-| **Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software.** | **Escobar Palomino, Sebastian Matias**<br>*AV1*: Actualizó conceptos sobre técnicas de elicitación de requerimientos, diseño de entrevistas y modelado de flujos de dominio (Domain Message Flow) aplicados al diseño estratégico.<br><br>**Bendezu Navarro, Rúbens Fitzgerald**<br>*AV1*: Investigó y actualizó conocimientos sobre análisis competitivo y metodologías Lean UX para estructurar el perfil de la solución y mapear el contexto (Context Mapping).<br><br>**Choquehuanca Nuñez, Luciana Carolina**<br>*AV1*: Profundizó en la dinámica de EventStorming y el descubrimiento de contextos candidatos, actualizando sus bases teóricas para la correcta redacción de User Stories.<br><br>**Cruz Ibarra, Victor Andres**<br>*AV1*: Actualizó conceptos sobre diseño de arquitectura de software utilizando el modelo C4 y patrones tácticos de DDD aplicados a la configuración inicial del proyecto.<br><br>**Peralta Chipa, Ronald Joel**<br>*AV1*: Actualizó conocimientos en la estructuración de Bounded Context Canvases y la interpretación de métricas de colaboración en GitHub (Insights) para documentar el progreso. | *AV1:*<br>Consideramos que durante esta primera etapa logramos cumplir un alto nivel de actualización técnica. Como equipo, tuvimos que investigar y afianzar nuestros conocimientos sobre Domain-Driven Design (DDD), arquitectura de software bajo el modelo C4 y metodologías de ideación (Lean UX, EventStorming). Esta asimilación de nuevos conceptos fue fundamental para estructurar correctamente las bases arquitectónicas y los requerimientos de nuestra solución de software, aportando directamente a nuestro desarrollo profesional. |
-| **Reconoce la necesidad del aprendizaje permamente para el desempeño profesional y el desarrollo de proyectos en soluciones de software.** | **Escobar Palomino, Sebastian Matias**<br>*AV1*: Reconoció la necesidad de investigar constantemente nuevas técnicas de mapeo de empatía y diseño de experiencia de usuario para comprender a profundidad las necesidades del cliente.<br><br>**Bendezu Navarro, Rúbens Fitzgerald**<br>*AV1*: Identificó la importancia de mantenerse actualizado sobre las tendencias del mercado y modelos de negocio de competidores para poder definir un Ubiquitous Language preciso y competitivo.<br><br>**Choquehuanca Nuñez, Luciana Carolina**<br>*AV1*: Comprendió la necesidad de instruirse continuamente en metodologías ágiles y gestión de Backlog para adaptarse a la complejidad del descubrimiento de dominios del software.<br><br>**Cruz Ibarra, Victor Andres**<br>*AV1*: Identificó la necesidad vital de seguir aprendiendo sobre estándares de flujos de trabajo colaborativos (GitFlow) y evolución de arquitecturas para garantizar un diseño escalable.<br><br>**Peralta Chipa, Ronald Joel**<br>*AV1*: Reconoció la relevancia de mantenerse al día con los estándares de documentación (ABET) y las mejores prácticas para delimitar contextos (Bounded Contexts) en proyectos complejos. | *AV1:*<br>A nivel grupal, reconocemos que el desarrollo de software exige una mentalidad de formación continua. Al enfrentarnos a la definición estratégica y táctica de nuestro dominio, evidenciamos que las metodologías y herramientas cambian y evolucionan. Entendimos que investigar de manera autónoma, validar nuevas fuentes de información y adaptar nuestro enfoque no es solo un requisito académico, sino una habilidad indispensable para mantener la calidad y vigencia en el ámbito profesional a largo plazo. |
+| **Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software.** | **Escobar Palomino, Sebastian Matias**<br>*TB1*: Actualizó conceptos sobre técnicas de elicitación de requerimientos, diseño de entrevistas y modelado de flujos de dominio (Domain Message Flow) aplicados al diseño estratégico.<br><br>**Bendezu Navarro, Rúbens Fitzgerald**<br>*TB1*: Investigó y actualizó conocimientos sobre análisis competitivo y metodologías Lean UX para estructurar el perfil de la solución y mapear el contexto (Context Mapping).<br><br>**Choquehuanca Nuñez, Luciana Carolina**<br>*TB1*: Profundizó en la dinámica de EventStorming y el descubrimiento de contextos candidatos, actualizando sus bases teóricas para la correcta redacción de User Stories.<br><br>**Cruz Ibarra, Victor Andres**<br>*TB1*: Actualizó conceptos sobre diseño de arquitectura de software utilizando el modelo C4 y patrones tácticos de DDD aplicados a la configuración inicial del proyecto.<br><br>**Peralta Chipa, Ronald Joel**<br>*TB1*: Actualizó conocimientos en la estructuración de Bounded Context Canvases y la interpretación de métricas de colaboración en GitHub (Insights) para documentar el progreso. | *TB1:*<br>Consideramos que durante esta primera etapa logramos cumplir un alto nivel de actualización técnica. Como equipo, tuvimos que investigar y afianzar nuestros conocimientos sobre Domain-Driven Design (DDD), arquitectura de software bajo el modelo C4 y metodologías de ideación (Lean UX, EventStorming). Esta asimilación de nuevos conceptos fue fundamental para estructurar correctamente las bases arquitectónicas y los requerimientos de nuestra solución de software, aportando directamente a nuestro desarrollo profesional. |
+| **Reconoce la necesidad del aprendizaje permamente para el desempeño profesional y el desarrollo de proyectos en soluciones de software.** | **Escobar Palomino, Sebastian Matias**<br>*TB1*: Reconoció la necesidad de investigar constantemente nuevas técnicas de mapeo de empatía y diseño de experiencia de usuario para comprender a profundidad las necesidades del cliente.<br><br>**Bendezu Navarro, Rúbens Fitzgerald**<br>*TB1*: Identificó la importancia de mantenerse actualizado sobre las tendencias del mercado y modelos de negocio de competidores para poder definir un Ubiquitous Language preciso y competitivo.<br><br>**Choquehuanca Nuñez, Luciana Carolina**<br>*TB1*: Comprendió la necesidad de instruirse continuamente en metodologías ágiles y gestión de Backlog para adaptarse a la complejidad del descubrimiento de dominios del software.<br><br>**Cruz Ibarra, Victor Andres**<br>*TB1*: Identificó la necesidad vital de seguir aprendiendo sobre estándares de flujos de trabajo colaborativos (GitFlow) y evolución de arquitecturas para garantizar un diseño escalable.<br><br>**Peralta Chipa, Ronald Joel**<br>*TB1*: Reconoció la relevancia de mantenerse al día con los estándares de documentación (ABET) y las mejores prácticas para delimitar contextos (Bounded Contexts) en proyectos complejos. | *TB1:*<br>A nivel grupal, reconocemos que el desarrollo de software exige una mentalidad de formación continua. Al enfrentarnos a la definición estratégica y táctica de nuestro dominio, evidenciamos que las metodologías y herramientas cambian y evolucionan. Entendimos que investigar de manera autónoma, validar nuevas fuentes de información y adaptar nuestro enfoque no es solo un requisito académico, sino una habilidad indispensable para mantener la calidad y vigencia en el ámbito profesional a largo plazo. |
 
 <div style="page-break-after: always;"></div>
 
@@ -296,7 +216,7 @@ Diseñar y documentar un mínimo de 3 perfiles de usuario (User Personas) y sus 
 Elaborar el Lean UX Canvas completo y documentar el análisis de al menos 3 competidores directos en el mercado tecnológico actual. Asimismo, deberá consolidar la primera versión del Lenguaje Ubicuo (Ubiquitous Language) estandarizado para el equipo durante los primeros 10 días del sprint, lo cual servirá como base indispensable para evitar ambigüedades en el modelado del dominio.
 
 **Choquehuanca Nuñez, Luciana Carolina (Requirements & EventStorming)**
-Estructurar el Product Backlog inicial redactando y estimando un mínimo de 20 Historias de Usuario priorizadas bajo criterios de valor de negocio. Además, completará el diagrama de EventStorming de alto nivel en la plataforma colaborativa al menos 3 días antes de la entrega final del AV1, permitiendo al equipo tener una visión integral del flujo de eventos del sistema.
+Estructurar el Product Backlog inicial redactando y estimando un mínimo de 20 Historias de Usuario priorizadas bajo criterios de valor de negocio. Además, completará el diagrama de EventStorming de alto nivel en la plataforma colaborativa al menos 3 días antes de la entrega final del TB1, permitiendo al equipo tener una visión integral del flujo de eventos del sistema.
 
 **Peralta Chipa, Ronald Joel (Architecture & DevOps)**
 Diseñar los 4 niveles fundamentales de arquitectura de software (System Landscape, Context, Container y Deployment) utilizando el estándar C4. En paralelo, configurará el repositorio oficial implementando las reglas del flujo GitFlow y protecciones de ramas principales, debiendo cumplir con el despliegue de esta infraestructura y documentación técnica a más tardar el 20 de abril para permitir la revisión grupal.
@@ -310,21 +230,22 @@ Consolidar la documentación técnica final integrando los 5 Bounded Context Can
 ## 1.1. Startup Profile
 ### 1.1.1. Descripción de la Startup
 
-**Verifish** es una startup tecnológica dedicada al desarrollo de soluciones de Smart Farming y monitoreo ambiental, con un enfoque en la modernización de la industria acuícola. La startup nace con el propósito de transformar la gestión tradicional de las piscigranjas en ecosistemas inteligentes y resilientes, utilizando el *Internet de las Cosas (IoT)* y *computación en la nube* para proteger la biodiversidad y la rentabilidad del productor.
+**Verifish** es una startup tecnológica orientada al desarrollo de soluciones de *Smart Farming* y monitoreo ambiental, enfocada principalmente en contribuir a la modernización del sector acuícola. Surge con la finalidad de mejorar la gestión convencional de las piscigranjas mediante la incorporación de tecnologías como el **Internet de las Cosas (IoT)** y la **computación en la nube**, permitiendo una administración más inteligente de los recursos, la protección del entorno y una mayor sostenibilidad económica para los productores.
 
-**YakuControl** (del quechua *yaku*, "agua") es un ecosistema digital integral que permite a los administradores de piscigranjas monitorear en tiempo real las variables bioquímicas críticas de sus estanques. Mediante el uso de hardware especializado y algoritmos alojados en la nube, el sistema actúa como un soporte vital preventivo par los piscicultores, con el fin de mitigar riesgos de mortalidad masiva causados por variaciones térmicas o intoxicaciones químicas.
+**YakuControl** (del término quechua *yaku*, que significa “agua”) es una solución tecnológica integral diseñada para facilitar el monitoreo continuo de las principales variables bioquímicas presentes en los estanques de las piscigranjas. A través de sensores especializados, dispositivos IoT y servicios alojados en la nube, la plataforma permite detectar oportunamente cambios en las condiciones del agua que podrían representar un riesgo para los peces. De esta manera, brinda apoyo preventivo a los piscicultores frente a situaciones como variaciones extremas de temperatura, alteraciones químicas o condiciones que puedan ocasionar pérdidas en la producción.
 
-El objetivo de YakuTech es promover el acceso a la tecnología a través de un modelo de **Software as a Service (SaaS)** **B2B**. De esta manera, no solo buscamos reducir la brecha digital en el sector agropecuario, sino también optimizar el uso de recursos energéticos y mejorar la calidad final del producto, fomentando una industria acuícola más eficiente, transparente y sostenible.
+El objetivo de Verifish es facilitar la incorporación de estas tecnologías en el sector acuícola mediante un modelo **Software as a Service (SaaS) B2B**. Este enfoque busca reducir las barreras de acceso tecnológico para las piscigranjas, optimizar el uso de los recursos disponibles y contribuir a mejorar la calidad de la producción. Asimismo, se pretende impulsar una actividad acuícola más eficiente, controlada y sostenible mediante el uso de información obtenida en tiempo real.
 
-La relevancia de esta innovación se sustenta en el contexto del sector acuícola nacional. Por un lado, la Organización para la Cooperación y el Desarrollo Económicos (OCDE, 2025) señala que la acuicultura en el Perú enfrenta constantes fluctuaciones y cuantiosas pérdidas de producción asociadas a la alteración en la calidad del agua y la contaminación de los cauces.
+La necesidad de este tipo de soluciones se encuentra respaldada por la situación actual de la acuicultura peruana. De acuerdo con la Organización para la Cooperación y el Desarrollo Económicos (OCDE, 2025), la actividad acuícola en el Perú se encuentra expuesta a fluctuaciones y pérdidas de producción relacionadas, entre otros factores, con alteraciones en la calidad del agua y la contaminación de los recursos hídricos.
 
-A esto se suma que, de los más de 12,700 acuicultores registrados a nivel nacional, un porcentaje crítico opera en la categoría de Acuicultura de Recursos Limitados (AREL), evidenciando una escasa adopción de tecnologías de control (PRODUCE, 2024).
+Asimismo, de los más de 12 700 acuicultores registrados a nivel nacional, una proporción importante pertenece a la categoría de **Acuicultura de Recursos Limitados (AREL)**, sector en el cual todavía existe una baja incorporación de tecnologías orientadas al monitoreo y control de las condiciones productivas (PRODUCE, 2024).
 
-Todo este panorama evidencia la importancia crítica y el respaldo necesario para introducir nuestro producto en el sector, actuando como la herramienta definitiva para cerrar esta profunda brecha tecnológica.
+Este contexto evidencia la existencia de una brecha tecnológica dentro del sector y la necesidad de implementar herramientas que permitan mejorar el control de las piscigranjas. En este escenario, YakuControl busca ofrecer una alternativa accesible que facilite la supervisión de las condiciones del agua y apoye a los productores en la prevención de riesgos asociados a la actividad acuícola.
 
-- **Misión:** Impulsar la transformación digital del sector acuícola mediante soluciones IoT de alta precisión, garantizando la seguridad alimentaria y la rentabilidad de nuestros clientes a través de la prevención de desastres biológicos.
+* **Misión:** Contribuir a la transformación digital del sector acuícola mediante el desarrollo de soluciones IoT de monitoreo y control que permitan prevenir riesgos, mejorar la gestión de las piscigranjas y favorecer la sostenibilidad y rentabilidad de los productores.
 
-- **Visión:** Consolidarse para el año 2030 como la plataforma líder en monitoreo y analítica predictiva para la acuicultura en América Latina, siendo reconocidos por nuestra capacidad de integrar ingeniería de software avanzada con la preservación de ecosistemas hídricos.
+* **Visión:** Consolidarse hacia el año 2030 como una plataforma referente en monitoreo y analítica aplicada a la acuicultura en América Latina, destacando por la integración de tecnologías de software, IoT y análisis de datos orientadas a una producción acuícola sostenible.
+
 
 <div style="page-break-after: always;"></div>
 
@@ -332,10 +253,10 @@ Todo este panorama evidencia la importancia crítica y el respaldo necesario par
 <table border="1">
   <tr>
       <td style="text-align:center;"><img width="1200" height="200" img alt="Sebastian Escobar" src="https://i.imgur.com/UqKbYwJ.jpeg" /></td>
-      <td><strong>Escobar Palomino, Sebastian Matias - u202125968</strong><br>Actualmente estoy en el 8vo ciclo de la carrera de Ingeniería de Software. Tengo conocimientos en desarrollo de software, diseño de bases de datos, arquitectura de sistemas y trabajo colaborativo con metodologías ágiles.</td>
+      <td><strong>Escobar Palomino, Sebastian Matias - u202125968</strong><br>Mi nombre es Sebastian Matías Escobar Palomino, tengo 22 años y soy estudiante de Ingeniería de Software. Mi objetivo es contribuir de manera activa al trabajo en equipo, cumplir con los plazos establecidos y mantener una comunicación fluida y clara con mis compañeros, aplicando mis conocimientos para cumplir con las responsabilidades asignadas en el proyecto.</td>
   </tr>
   <tr>
-      <td style="text-align:center;"><img width="1200" height="200" alt="Rúbens Bendezu" src="./assets/images/Mario.jpeg" /></td>
+      <td style="text-align:center;"><img width="1200" height="200" alt="Rúbens Bendezu" src="https://i.imgur.com/SBqRWCT.jpeg" /></td>
       <td><strong>Bendezu Navarro, Rúbens Fitzgerald - U20231d390</strong><br>Mi nombre es Rúbens Bendezu, tengo 21 años y soy estudiante de la carrera de Ingeniería de Software. Actualmente estoy en séptimo ciclo de la carrera de Ingeniería de Software. Tengo conocimientos en varios lenguajes de programación principalmente en Python y Typescrip, me gusta trabajar en equipo tratando de aportar en lo que pueda y compartiendo mis conocimientos. Me interesa aprender sobre gerencia en proyectos de software.</td>
   </tr>
   <tr>
@@ -358,7 +279,11 @@ Todo este panorama evidencia la importancia crítica y el respaldo necesario par
 
 #### Antecedentes
 
-La acuicultura de trucha es una actividad económica de alta relevancia en las regiones andinas del Perú, principalmente en Junín, Puno, Cusco y Huancavelica. Sin embargo, los productores enfrentan de manera recurrente eventos de mortalidad masiva ocasionados por variaciones bruscas en las condiciones del agua que pasan desapercibidas hasta que el daño ya es irreversible. Un caso reciente documentado por la Agencia Peruana de Noticias Andina (2026) reporta la muerte masiva de miles de truchas en siete piscigranjas del distrito de Pariahuanca, Junín, como consecuencia de la presunta contaminación del río Yuracyacu por actividad minera, afectando ejemplares en todas las etapas de desarrollo (Andina, 2026). Actualmente, el monitoreo se realiza mediante inspecciones físicas periódicas, un método manual, lento e impreciso que no permite reaccionar a tiempo ante cambios críticos.
+La acuicultura de trucha representa una actividad económica importante en diversas zonas altoandinas del Perú, especialmente en regiones como Junín, Puno, Cusco y Huancavelica. No obstante, los productores se encuentran expuestos de forma constante a episodios de mortalidad masiva asociados a cambios repentinos en la calidad del agua, los cuales muchas veces no son detectados oportunamente y terminan generando pérdidas irreversibles.
+
+Un ejemplo reciente fue reportado por la Agencia Peruana de Noticias Andina (2026), que informó sobre la muerte de miles de truchas en siete piscigranjas ubicadas en el distrito de Pariahuanca, Junín. Según el reporte, el evento habría estado relacionado con una posible contaminación del río Yuracyacu provocada por actividades mineras, afectando peces en distintas etapas de crecimiento.
+
+Actualmente, el control de las condiciones del agua suele realizarse mediante revisiones físicas periódicas. Este procedimiento es principalmente manual y presenta limitaciones en términos de rapidez y precisión, lo que dificulta la detección temprana de variaciones críticas y reduce la capacidad de respuesta de los productores ante situaciones de riesgo.
 
 #### Problemática
 
@@ -982,7 +907,7 @@ En esta sección hemos elaborado nuestro Impact Mapping. Para ello, utilizamos l
 | **19** | **US16** | Auditoría de Respuesta | Como administrador, deseo ver el tiempo que tarda un operario en atender una alerta. | **2** |
 | **20** | **US09** | Registro de Novedades | Como piscicultor, deseo escribir notas rápidas sobre un estanque para informar al dueño. | **2** |
 
-Link Trello: https://trello.com/invite/b/69ddbac5fb1fb4d9bc57783e/ATTI6aaf075e45566d05489c8cee7f6e22a5D24DC29E/yaku
+**Link Trello:** https://trello.com/invite/b/69ddbac5fb1fb4d9bc57783e/ATTI6aaf075e45566d05489c8cee7f6e22a5D24DC29E/yaku
 
 <div style="page-break-after: always;"></div>
 
@@ -1070,7 +995,56 @@ A continuación se formalizan los Escenarios de Atributos de Calidad con sus 6 c
 
 ### 4.1.4. Architectural Design Decisions
 
+En respuesta a los drivers priorizados en la sección 4.1.3, el equipo tomó las siguientes decisiones de diseño estructural para la primera iteración de la arquitectura de YakuControl:
+
+| ID Decisión | Driver(s) Asociado(s) | Decisión | Justificación |
+| :--- | :--- | :--- | :--- |
+| *AD-01* | QA-01, CO-03 | Adoptar un estilo de *Edge Computing*: el hardware Arduino UNO ejecuta localmente la lógica de evaluación de umbrales críticos y activación de actuadores de soporte vital, sin depender de una conexión constante al backend en la nube. | La conectividad rural es intermitente; la reacción ante una anomalía crítica (ej. oxígeno disuelto bajo) no puede esperar a que se restablezca internet. |
+| *AD-02* | CO-02 | Adoptar un estilo arquitectónico de *Monolito Modular* para el backend en la nube, organizado internamente por Bounded Contexts (IAM, Telemetry, Notification, Equipment, Payment), en lugar de microservicios independientes desde el inicio. | Un equipo reducido de estudiantes no puede sostener la complejidad operativa (despliegue, observabilidad, comunicación) de una arquitectura de microservicios en esta etapa del producto. |
+| *AD-03* | QA-02, TS01, US07/TS03 | Implementar comunicación *asíncrona basada en eventos* entre el Telemetry Context y el Notification Context (publicación de eventos de anomalía consumidos por un handler que dispara push/SMS), en lugar de invocaciones síncronas encadenadas. | Minimiza la latencia percibida por el usuario y evita que una falla en el canal de notificación (SMS/push) bloquee la ingesta de telemetría. |
+| *AD-04* | QA-04 | Centralizar la autenticación y autorización en el *IAM Context, exponiéndolo como un *Open Host Service que emite y valida tokens JWT con el identificador de la piscigranja embebido, consumido por el resto de los contextos mediante Anti-Corruption Layers. | Garantiza el aislamiento de datos entre piscigranjas (multi-tenancy) de forma centralizada y consistente en toda la plataforma. |
+| *AD-05* | QA-07, QA-08 | Aplicar *arquitectura hexagonal (Ports & Adapters)* en cada Bounded Context, aislando el dominio de negocio de los detalles de infraestructura (Stripe, Firebase Cloud Messaging, MQTT/Mosquitto, JPA/PostgreSQL) mediante adaptadores específicos. | Permite reemplazar un proveedor externo (p. ej. cambiar de Stripe a Culqi) modificando únicamente el adaptador correspondiente, sin afectar el dominio. |
+| *AD-06* | QA-03 | Desplegar el backend en un entorno *cloud gestionado (Microsoft Azure)* dentro de una red virtual privada (VNet), con separación de bases de datos relacionales y de series de tiempo para telemetría. | Permite escalar horizontalmente los recursos de procesamiento de datos ante el crecimiento de piscigranjas suscritas, sin comprometer la seguridad de la red. |
+| *AD-07* | US14, QA-05 | Delegar el procesamiento de pagos a *Stripe* como pasarela externa certificada, integrada mediante un adaptador (StripePaymentGatewayAdapter) y webhooks validados criptográficamente. | Evita gestionar directamente datos sensibles de tarjetas (cumplimiento PCI) y traslada la resiliencia ante fallos de cobro al proveedor especializado. |
+
+Estas decisiones constituyen la base estructural sobre la cual se refinarán los escenarios de calidad seleccionados (sección 4.1.5) y se derivará el modelado estratégico de Domain-Driven Design (sección 4.2).
+
 ### 4.1.5. Quality Attribute Scenario Refinements
+
+A continuación se refinan, en el formato de seis partes (Fuente del Estímulo, Estímulo, Artefacto, Ambiente, Respuesta y Medida de la Respuesta), los escenarios de atributos de calidad presentados anteriormente.
+
+*QA-01 — Availability*
+* *Fuente del Estímulo:* Interrupción del proveedor de conectividad a internet en la zona rural donde se ubica la piscigranja.
+* *Estímulo:* Se pierde la conexión entre el Edge API instalado en el estanque y el backend en la nube.
+* *Artefacto:* Edge API (firmware embebido + broker Mosquitto local).
+* *Ambiente:* Operación normal en producción, en una zona con conectividad intermitente.
+* *Respuesta:* El Edge API continúa leyendo los sensores, evalúa localmente los umbrales críticos (OptimalRange) y activa los actuadores de soporte vital sin intervención del backend.
+* *Medida de la Respuesta:* El 100% de las lecturas críticas se procesan y accionan localmente durante la interrupción; al recuperar conectividad, el Edge API se resincroniza con el backend en menos de 30 segundos, sin pérdida de datos.
+
+*QA-02 — Performance (Latencia)*
+* *Fuente del Estímulo:* Sensor IoT (pH, temperatura o turbidez) instalado en el estanque.
+* *Estímulo:* Se recibe una lectura fuera del rango óptimo configurado.
+* *Artefacto:* Pipeline Telemetry Context → Notification Context.
+* *Ambiente:* Operación normal, con carga habitual del sistema.
+* *Respuesta:* El Telemetry Context valida la anomalía y publica el evento correspondiente; el Notification Context lo consume y dispara la alerta push/SMS al piscicultor y al administrador.
+* *Medida de la Respuesta:* El tiempo transcurrido entre la detección de la anomalía y la entrega de la notificación es menor a 10 segundos en el 95% de los casos.
+
+*QA-04 — Security*
+* *Fuente del Estímulo:* Usuario autenticado (Administrador o Piscicultor) de una piscigranja.
+* *Estímulo:* Intenta acceder, mediante manipulación de parámetros o de un token válido, a datos o endpoints pertenecientes a una piscigranja distinta a la suya.
+* *Artefacto:* API Gateway + IAM Context (validación de tokens JWT).
+* *Ambiente:* Operación normal de la plataforma multi-tenant.
+* *Respuesta:* El sistema rechaza la petición con un código de error de autorización, sin exponer información de la piscigranja objetivo, y registra el intento en el log de auditoría.
+* *Medida de la Respuesta:* El 100% de los intentos de acceso cruzado entre tenants son bloqueados; el evento queda registrado en menos de 1 segundo.
+
+
+*QA-05 — Usability*
+* *Fuente del Estímulo:* Piscicultor con bajo nivel de digitalización, operando en campo.
+* *Estímulo:* Necesita ejecutar una acción crítica (p. ej. activar un aireador) inmediatamente después de recibir una alerta.
+* *Artefacto:* App móvil (Flutter) — módulo de control de actuadores.
+* *Ambiente:* Condiciones de campo, bajo presión de tiempo.
+* *Respuesta:* El usuario ejecuta la acción mediante un control directo (Status Card / botón de acción rápida) accesible desde la propia notificación, sin navegar por menús complejos.
+* *Medida de la Respuesta:* La acción se completa en un máximo de 2 toques desde la notificación recibida; el 90% de los usuarios de prueba la ejecutan correctamente sin capacitación previa.
 
 <div style="page-break-after: always;"></div>
 
@@ -1310,13 +1284,14 @@ Mapea la arquitectura lógica hacia la infraestructura física y los servicios e
 <div style="page-break-after: always;"></div>
 
 # Conclusiones
-El proyecto YakuControl demuestra ser una solución funcional y tecnológicamente robusta para la optimización de la piscicultura. Al integrar el monitoreo de sensores en tiempo real con una gestión de accesos controlada, se mitigan los riesgos de pérdida de producción por parámetros inadecuados del agua. La arquitectura propuesta no solo digitaliza el proceso, sino que transforma datos técnicos en decisiones operativas accionables para el piscicultor, resolviendo la brecha tecnológica en la gestión de criaderos de truchas.
 
-Usar los patrones tácticos de DDD nos ayudó a separar muy bien lo que son las reglas de negocio de los detalles más técnicos. Al definir "Contextos Delimitados" independientes (por ejemplo, para gestionar usuarios o para la telemetría), conseguimos que la lógica de cómo se manejan los usuarios y la de cómo se vigilan los estanques no se mezclaran. Así es mucho más fácil mantener y mejorar el sistema con el tiempo.
+Se presenta Verifish y su solución YakuControl, una propuesta orientada al monitoreo inteligente de piscigranjas mediante IoT y servicios en la nube. Se aborda la problemática de la supervisión manual de la calidad del agua, los riesgos asociados a una detección tardía y la necesidad de contar con información en tiempo real. También se definen la propuesta de valor, el modelo SaaS, las hipótesis de Lean UX y los principales usuarios: piscicultores y administradores de piscigranjas.
 
-Elegir una arquitectura de Monolito Modular nos dio la mezcla perfecta entre lo sencillo que es ponerlo a funcionar y lo bien ordenado que está todo por dentro. Gracias a esta forma de organizarse, cada parte (o módulo) funciona de manera independiente. Esto nos prepara para que, si un día necesitamos, podamos pasar a microservicios, sobre todo si la cantidad de datos de los sensores de las piscifactorías crece mucho, y todo sin tener que cambiar la base principal del programa.
+Además , se profundiza en las necesidades, comportamientos y dificultades de los usuarios mediante entrevistas y técnicas de análisis. También se estudian competidores y estrategias de diferenciación para YakuControl. Los hallazgos muestran la importancia de disponer de alertas automáticas, monitoreo en tiempo real, acceso desde dispositivos móviles y una interfaz sencilla. Esta información permite representar mejor a los usuarios, sus actividades y los principales procesos relacionados con la solución.
 
-Finalmente, la validación del prototipo físico y del firmware embebido en condiciones reales de campo confirmó que la arquitectura Edge Computing propuesta cumple su objetivo central: reducir la dependencia de una conexión constante a internet sin sacrificar la capacidad de reacción ante eventos críticos. El correcto funcionamiento en conjunto de los sensores, los actuadores y el broker Mosquitto en el Edge API evidencia que YakuControl no es solo una propuesta teórica de software, sino una solución end-to-end viable para su implementación en piscigranjas de zonas rurales andinas, cerrando así la brecha tecnológica identificada al inicio del proyecto.
+Se establecieron las funcionalidades y requerimientos que deberá cubrir YakuControl a partir de las necesidades previamente identificadas. Se organizan las características de la solución mediante User Stories, Impact Mapping y Product Backlog, contemplando funciones como el monitoreo de parámetros del agua, generación de alertas, control de equipos, gestión de usuarios y visualización de información. De esta manera, se prioriza el desarrollo de las funcionalidades de acuerdo con su valor para los usuarios y el negocio.
+
+Finalmente , se definio la estructura tecnológica y arquitectónica necesaria para el funcionamiento de YakuControl. Se consideran aspectos como seguridad, disponibilidad, rendimiento, escalabilidad y conectividad, además de la separación de responsabilidades mediante Domain-Driven Design. También se establecen los principales componentes y contextos del sistema, así como su interacción con sensores IoT, aplicaciones móviles, plataforma web y servicios en la nube, representados mediante diferentes diagramas de arquitectura.
 
 <div style="page-break-after: always;"></div>
 
@@ -1330,5 +1305,5 @@ Actualidad Ambiental. (28 de mayo de 2025). *Huarochirí: mueren 200 mil truchas
 Agencia Peruana de Noticias Andina. (29 de abril de 2026). *Junín: OEFA realizó diligencia por muerte masiva de truchas en piscigranjas de Pariahuanca.* Andina. https://andina.pe/agencia/noticia-junin-oefa-realizo-diligencia-muerte-masiva-truchas-piscigranjas-pariahuanca-1073248.aspx
 
 # Anexos
--Wokwi: 
-- [Ingresar a ver wokwi](https://wokwi.com/projects/467186064937826305)
+**-Wokwi:** 
+- [Wokwi](https://wokwi.com/projects/467186064937826305)
