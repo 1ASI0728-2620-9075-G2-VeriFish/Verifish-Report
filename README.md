@@ -348,8 +348,8 @@ Todo este panorama evidencia la importancia crítica y el respaldo necesario par
       <td><strong>Choquehuanca Nuñez, Luciana Carolina - U202319431</strong><br> Estudiante del 7mo ciclo de la carrera de Ingenieria de Software, Tengo experiencia con diferentes lenguajes de programación y desarrollo de aplicaciones web en diversos frameworks ambos en frontend y backend, asimismo considero que cada paso en la universidad contribuye en mi avance como desarollo profesional. Estoy interesado en continuar mi aprendizaje, por lo que estoy dispuesto a participar en la adecuada realizacion de proyectos.</td>
   </tr>
   <tr>
-      <td style="text-align:center;"><img width="1200" height="200" alt="Victor Cruz" src="./assets/images/rafael_vivanco.png" /></td>
-      <td><strong>Cruz Ibarra, Victor Andres - u202311053</strong><br>Actualmente curso el 7mo ciclo de la carrera de Ingeniería de Software. Me considero una persona responsable con facilidad para adaptarme a distintos entornos y manejar varias tareas a la vez. Tengo conocimientos en desarrollo web y nóvil siguiendo buenas prácticas y arquitecturas bajo metodologías ágiles.</td>
+      <td style="text-align:center;"><img width="1200" height="200" alt="Victor Cruz" src="./assets/images/victor.png" /></td>
+      <td><strong>Cruz Ibarra, Victor Andres - u202311053</strong><br>Actualmente curso el 8vo ciclo de la carrera de Ingeniería de Software. Me considero una persona responsable con facilidad para adaptarme a distintos entornos y manejar varias tareas a la vez. Tengo conocimientos en desarrollo web y nóvil siguiendo buenas prácticas y arquitecturas bajo metodologías ágiles.</td>
   </tr>
 </table>
 
@@ -1020,6 +1020,16 @@ A partir del Product Backlog definido en el Capítulo III (sección 3.3), se sel
 | **US16** | Como administrador, deseo ver el tiempo que tarda un operario en atender una alerta. |
 
 #### 4.1.2.2. Quality Attribute Scenarios
+
+A continuación se formalizan los Escenarios de Atributos de Calidad con sus 6 componentes canónicos:
+
+| **Atributo de Calidad** | **Fuente del Estímulo** | **Estímulo** | **Artefacto Afectado** | **Entorno** | **Respuesta del Sistema** | **Medida de Respuesta** |
+| --- | --- | --- | --- | --- | --- | --- |
+| **Disponibilidad (Availability)** | Falla de hardware o red en nodo en la nube | Caída intempestiva de una instancia del microservicio de telemetría | Microservicio de Telemetría / Orquestador Cloud | Operación normal con carga máxima en producción | El balanceador redirige el tráfico a réplicas saludables; el Edge almacena lecturas en búfer local. | Tiempo de recuperación < 10 s; 0% de pérdida de lecturas telemétricas. |
+| **Rendimiento (Performance)** | Nodos IoT en campo | Emisión concurrente de 500 paquetes de telemetría por segundo | Broker MQTT y Pipeline de Ingesta Backend | Operación continua pico durante cambios climáticos | El broker asimila los paquetes y los encola en tópicos asíncronos para consumo sin bloqueo. | Latencia de procesamiento de lectura < 150 ms en el 99% de los casos. |
+| **Escalabilidad (Scalability)** | Expansión comercial de clientes | Incremento de 10 a 200 piscigranjas activas monitoreadas | Arquitectura de Microservicios y Base de Datos | Crecimiento progresivo del negocio en 6 meses | Despliegue automático de nuevas réplicas (autoscaling horizontal) sin modificar el código fuente. | Degradación de tiempo de respuesta de APIs REST < 5% bajo carga triplicada. |
+| **Seguridad (Security)** | Agente malicioso externo | Intento de inyección de datos telemétricos falsos o manipulación de actuadores | API Gateway y Filtro de Seguridad IAM | Operación estándar expuesta a internet | El API Gateway intercepta la petición, verifica la firma criptográfica de la Farm Key y rechaza la conexión. | Bloqueo inmediato con HTTP 403 Forbidden; registro auditable del intento en < 50 ms. |
+
 
 #### 4.1.2.3. Constraints
 
