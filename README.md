@@ -344,7 +344,7 @@ Todo este panorama evidencia la importancia crítica y el respaldo necesario par
       </td>
   </tr>
   <tr>
-      <td style="text-align:center;"><img width="1200" height="200" alt="Ronald Peralta" src="./assets/images/jasmin_urrutia.png" /></td>
+      <td style="text-align:center;"><img width="1200" height="200" alt="Luciana Carolina" src="./assets/images/luciana.jpeg" /></td>
       <td><strong>Choquehuanca Nuñez, Luciana Carolina - U202319431</strong><br> Estudiante del 7mo ciclo de la carrera de Ingenieria de Software, Tengo experiencia con diferentes lenguajes de programación y desarrollo de aplicaciones web en diversos frameworks ambos en frontend y backend, asimismo considero que cada paso en la universidad contribuye en mi avance como desarollo profesional. Estoy interesado en continuar mi aprendizaje, por lo que estoy dispuesto a participar en la adecuada realizacion de proyectos.</td>
   </tr>
   <tr>
