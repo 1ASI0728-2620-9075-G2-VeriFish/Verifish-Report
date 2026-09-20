@@ -958,39 +958,41 @@ A continuación se formalizan los Escenarios de Atributos de Calidad con sus 6 c
 
 #### 4.1.2.3. Constraints
 
-##### 1. Restricciones Técnicas
+Se identificaron las siguientes restricciones de negocio, técnicas y organizacionales que condicionan el espacio de decisiones arquitectónicas de YakuControl:
 
-| Restricción                                    | Descripción e Impacto Arquitectónico                                                                                                                                                                                                                                                                                                                                                                                         |
-| ---------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Conectividad intermitente en zonas rurales** | Las piscigranjas operan en regiones andinas con cobertura de red inestable. **Impacto Arquitectónico:** Exige una arquitectura *offline-first*. La aplicación móvil debe implementar caché local, y el Edge API requiere una cola FIFO en memoria (Redis) para almacenar la telemetría temporalmente hasta recuperar la conexión con el backend en la nube.                                                                  |
-| **Procesamiento Edge y hardware embebido**     | El sistema debe reaccionar ante anomalías bioquímicas en el agua sin depender de la latencia de la nube para evitar la mortalidad de los peces. **Impacto Arquitectónico:** Obliga a desplegar un Edge API local (Python/Flask + Mosquitto) y desarrollar firmware en C++. El microcontrolador debe ejecutar el cálculo del Índice de Calidad del Agua (ICA) y automatizar los actuadores en lazo cerrado de forma autónoma. |
-| **Arquitectura y Stack Tecnológico**           | El desarrollo debe garantizar mantenibilidad y alta cohesión. **Impacto Arquitectónico:** Se exige la implementación de Domain-Driven Design (DDD) y Arquitectura Limpia utilizando Java/Spring Boot. Obliga a usar persistencia híbrida: PostgreSQL para el dominio transaccional y bases optimizadas para series de tiempo para la telemetría.                                                                             |
-
-##### 2. Restricciones de Negocio
-
-| Restricción                                   | Descripción e Impacto Arquitectónico                                                                                                                                                                                                                                                                                                                    |
-| --------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Especialización en Acuicultura Peruana**    | La plataforma está diseñada de forma vertical exclusivamente para la crianza de trucha arcoíris en el Perú. **Impacto Arquitectónico:** Los umbrales biológicos (temperatura, pH, turbidez) y los algoritmos del *Telemetry Context* deben estar restringidos y parametrizados específicamente para los límites de supervivencia de esta especie.       |
-| **Modelo de negocio SaaS por estanque**       | Los administradores requieren una solución sin alta inversión de capital inicial, basada en pagos recurrentes. **Impacto Arquitectónico:** Obliga a diseñar un *Payment Context* independiente que integre a Stripe mediante *webhooks*. El sistema debe activar o restringir automáticamente el acceso al monitoreo según el estado de la suscripción. |
-| **Baja digitalización del operario de campo** | Los piscicultores poseen un perfil no técnico y operan bajo condiciones físicas exigentes. **Impacto Arquitectónico:** Condiciona la capa de UI/UX a minimizar la carga cognitiva. Exige el uso de interfaces simplificadas con Material Design 3, botones de acción grandes y el uso de colores semánticos (rojo, verde) para indicadores de estado.   |
-
-##### 3. Restricciones Regulatorias y de Seguridad
-
-| Restricción                                         | Descripción e Impacto Arquitectónico                                                                                                                                                                                                                                                                                                                                                                                            |
-| --------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Seguridad de identidades mixtas (M2M y Humanos)** | El sistema debe proteger el acceso de los administradores/operarios y autenticar de manera segura la transmisión de datos desde el hardware físico. **Impacto Arquitectónico:** Requiere un *IAM Context* centralizado que exponga un Control de Acceso Basado en Roles (RBAC) con tokens JWT para usuarios humanos y un sistema estático de "Farm Keys" para la autenticación Máquina a Máquina (M2M) de los dispositivos IoT. |
+| ID | Tipo | Restricción |
+| :--- | :--- | :--- |
+| *CO-01* | Negocio | AcuaNode es una startup en etapa temprana (proyecto académico), por lo que no se puede invertir en infraestructura ni licencias de alto costo; se debe priorizar el uso de servicios cloud accesibles y de bajo costo operativo. |
+| *CO-02* | Organizacional | El equipo de desarrollo es reducido (6 integrantes, estudiantes de pregrado), lo que limita la complejidad operativa que puede mantenerse en producción (favorece un Monolito Modular sobre una arquitectura de microservicios desde el inicio). |
+| *CO-03* | Técnica | Las piscigranjas se ubican en zonas rurales andinas con conectividad a internet intermitente o inexistente, lo que obliga a que la lógica crítica de soporte vital se ejecute localmente mediante Edge Computing. |
+| *CO-04* | Técnica | El hardware de campo está compuesto por un microcontrolador Arduino UNO con sensores sumergibles de bajo costo (~S/ 250–280), lo que limita la capacidad de cómputo y almacenamiento disponible en el borde de la red. |
+| *CO-05* | Técnica | Las aplicaciones cliente deben ejecutarse tanto en Web como en dispositivos móviles Android/iOS a partir de una única base de código (Flutter), para optimizar el tiempo de desarrollo del equipo. |
+| *CO-06* | Negocio | El modelo de negocio es SaaS B2B con cobro recurrente por estanque, por lo que el procesamiento de pagos debe delegarse a una pasarela externa certificada (Stripe) en lugar de gestionar datos de tarjetas directamente. |
+| *CO-07* | Organizacional | El proyecto se desarrolla dentro del marco de un ciclo académico del curso de Arquitectura de Software Emergentes, con sprints y fechas de entrega fijas que limitan el tiempo disponible para iteraciones de diseño. |
 
 ### 4.1.3. Architectural Drivers Backlog
 
-| Driver ID | Nombre del Driver                       | Descripción                                                                                                                                    | Impacto Arch. | Dificultad | Tipo                   |
-| --------- | --------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- | ------------- | ---------- | ---------------------- |
-| **AD-01** | Resiliencia ante conectividad limitada  | El sistema debe seguir operando y capturando datos, aunque la conexión a internet de la piscigranja falle de forma intermitente.               | Alto          | Alta       | Restricción de Negocio |
-| **AD-02** | Procesamiento Autónomo (Edge Computing) | El hardware debe aplicar reglas lógicas y accionar actuadores en lazo cerrado sin depender de la latencia de la nube.                          | Alto          | Alta       | Restricción Técnica    |
-| **AD-03** | Notificaciones de Riesgo en Tiempo Real | Los eventos críticos del agua deben notificar a los operarios de manera inmediata para evitar la mortalidad masiva de la producción.           | Alto          | Media      | Atributo de Calidad    |
-| **AD-04** | Ingesta Masiva de Datos Inmutables      | El sistema debe procesar un flujo constante y masivo de lecturas telemétricas provenientes de múltiples estanques sin degradar el rendimiento. | Alto          | Media      | Atributo de Calidad    |
-| **AD-05** | Gestión Desacoplada de Pagos            | El ciclo de vida de las suscripciones SaaS debe administrarse mediante pasarelas externas sin contaminar la lógica de negocio acuícola.        | Medio         | Media      | Restricción de Negocio |
-| **AD-06** | Seguridad de Identidades Mixtas         | El sistema debe autenticar y autorizar de forma segura tanto a usuarios humanos como a los dispositivos IoT mediante mecanismos diferenciados. | Alto          | Media      | Atributo de Calidad    |
-| **AD-07** | Usabilidad Adaptativa en Campo          | Las interfaces de la aplicación móvil deben minimizar la fricción cognitiva para operarios con perfiles no técnicos y condiciones adversas.    | Medio         | Baja       | Atributo de Calidad    |
+El Architectural Drivers Backlog consolida la funcionalidad primaria (sección 4.1.2.1), los escenarios de atributos de calidad (sección 4.1.2.2) y las restricciones (sección 4.1.2.3), priorizándolos según su *valor de negocio* y su *impacto arquitectónico*, con el fin de identificar los drivers que guiarán las decisiones de diseño de mayor peso en esta primera iteración.
+
+| ID Driver | Tipo | Descripción resumida | Valor de Negocio | Impacto Arquitectónico | Prioridad |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| *QA-01* | Calidad | Availability — operación autónoma del Edge ante pérdida de conectividad. | Alto | Alto | *Alta* |
+| *QA-02* | Calidad | Performance — latencia mínima entre anomalía detectada y alerta emitida. | Alto | Alto | *Alta* |
+| *CO-03* | Restricción | Conectividad rural intermitente → necesidad de Edge Computing. | Alto | Alto | *Alta* |
+| *QA-04* | Calidad | Security — aislamiento de datos entre piscigranjas (multi-tenant). | Alto | Alto | *Alta* |
+| *CO-02* | Restricción | Equipo reducido → favorece Monolito Modular sobre microservicios. | Medio | Alto | *Alta* |
+| *US07 / TS03* | Funcionalidad | Alertas Push ante lectura fuera de rango (Notification Context). | Alto | Medio | *Alta* |
+| *TS01* | Funcionalidad | API de Ingesta de telemetría del hardware Edge (Telemetry Context). | Alto | Medio | *Alta* |
+| *QA-03* | Calidad | Scalability — crecimiento del volumen de telemetría e inquilinos. | Medio | Medio | Media |
+| *QA-07* | Calidad | Modifiability — aislamiento de integraciones externas mediante adaptadores. | Medio | Medio | Media |
+| *QA-05* | Calidad | Reliability — consistencia del estado de suscripción ante fallas de Stripe. | Medio | Medio | Media |
+| *US14* | Funcionalidad | Pago vía Stripe (Payment Context). | Alto | Bajo | Media |
+| *CO-04* | Restricción | Limitaciones de cómputo del hardware Arduino UNO. | Medio | Medio | Media |
+| *QA-08* | Calidad | Interoperability — desacoplamiento del dominio frente a servicios externos. | Bajo | Medio | Media |
+| *QA-06* | Calidad | Usability — ejecución de acciones críticas en pocos pasos. | Medio | Bajo | Baja |
+| *CO-05 / CO-06 / CO-07* | Restricción | Restricciones tecnológicas y organizacionales de implementación. | Bajo | Bajo | Baja |
+
+Los cinco drivers marcados con prioridad *Alta* (QA-01, QA-02, CO-03, QA-04 y CO-02), junto con las historias de usuario TS01 y US07/TS03 que representan el flujo crítico de telemetría-alerta, constituyen el foco de las decisiones de diseño de la primera iteración arquitectónica, documentadas en la siguiente sección.
 
 
 ### 4.1.4. Architectural Design Decisions
