@@ -231,27 +231,28 @@ Todo este panorama evidencia la importancia crítica y el respaldo necesario par
 - **Visión:** Consolidarse para el año 2030 como la plataforma líder en monitoreo y analítica predictiva para la acuicultura en América Latina, siendo reconocidos por nuestra capacidad de integrar ingeniería de software avanzada con la preservación de ecosistemas hídricos.
 
 <div style="page-break-after: always;"></div>
+
 ### 1.1.2. Perfiles de integrantes del equipo
 <table border="1">
   <tr>
-      <td style="text-align:center;"><img width="1200" height="200" img alt="Andrea Aponte" src="./assets/images/sebastian_img.png" /></td>
-      <td><strong>Escobar Palomino , Sebastian Matias - U202125968</strong><br>COMPLETAR</td>
+      <td style="text-align:center;"><img width="1200" height="200" img alt="Sebastian Escobar" src="https://i.imgur.com/2rRBSM5.jpeg" /></td>
+      <td><strong>Escobar Palomino , Sebastian Matias - U202125968</strong><br>Mi nombre es Sebastián Matías Escobar Palomino, tengo 22 años y soy estudiante de Ingeniería de Software. Mi objetivo es contribuir de manera activa al trabajo en equipo, cumplir con los plazos establecidos y mantener una comunicación fluida y clara con mis compañeros, aplicando mis conocimientos para cumplir con las responsabilidades asignadas en el proyecto.</td>
   </tr>
   <tr>
-      <td style="text-align:center;"><img width="1200" height="200" alt="Mario Lopez" src="./assets/images/rubenz_img.png" /></td>
+      <td style="text-align:center;"><img width="1200" height="200" alt="M" src="./assets/images/rubenz_img.png" /></td>
       <td><strong>Bendezu Navarro, Rúbens Fitzgerald - U20231d390</strong><br>COMPLETAR</td>
   </tr>
   <tr>
-      <td style="text-align:center;"><img width="1200" height="200" alt="Ruben Genaro" src="./assets/images/luciana.png" /></td>
+      <td style="text-align:center;"><img width="1200" height="200" alt="R" src="./assets/images/luciana.png" /></td>
       <td><strong>Choquehuanca Nuñez, Luciana Carolina - U202319431 </strong><br>Soy estudiante de ing de software, actualmente me encuentro en octavo ciclo. Tengo experiencia en desarrollo y espero fortalecer mis conocimientos sobre diseño de soluciones modernas, escalables y mantenibles, además de aprender nuevas tecnologías y enfoques arquitectónicos que pueda aplicar en proyectos reales.
       </td>
   </tr>
   <tr>
-      <td style="text-align:center;"><img width="1200" height="200" alt="Ruben Velasquez" src="./assets/images/andres.png" /></td>
+      <td style="text-align:center;"><img width="1200" height="200" alt="R" src="./assets/images/andres.png" /></td>
       <td><strong>Cruz Ibarra, Victor Andres - U202311053</strong><br> COMPLETAR</td>
   </tr>
   <tr>
-      <td style="text-align:center;"><img width="1200" height="200" alt="Rafael Vivanco" src="./assets/images/ronald.png" /></td>
+      <td style="text-align:center;"><img width="1200" height="200" alt="R" src="./assets/images/ronald.png" /></td>
       <td><strong>Peralta Chipa, Ronald Joel - U202224619</strong><br>COMPLETAR</td>
   </tr>
 </table>
