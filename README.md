@@ -94,7 +94,7 @@ Los integrantes del equipo y sus nombres de usuario en GitHub son los siguientes
 
 **Tareas**
 
-Iniciando actividades el **20/09/2026**, el equipo distribuyó las responsabilidades de la siguiente manera:
+Iniciando actividades el **10/09/2026**, el equipo distribuyó las responsabilidades de la siguiente manera:
 
 | Integrantes | Tarea asignada |
 | :--- | :--- |
