@@ -63,11 +63,11 @@
 
 | Versión | Fecha | Autor | Descripción de modificación |
 | :--- | :--- | :--- | :--- |
-| **1.0** | 20/09/2026 | Ronald Peralta | Creación inicial de la estructura del informe y definición de lineamientos. |
-| **2.0** | 20/09/2026 | S. Escobar, R. Bendezu, L. Choquehuanca, V. Cruz, R. Peralta | Se completó el Capítulo I: Presentación del proyecto y Background |
-| **3.0** | 20/09/2026 | S. Escobar, R. Bendezu, L. Choquehuanca, V. Cruz, R. Peralta | Finalización del Capítulo II: Obtención y análisis de requisitos |
-| **4.0** | 20/09/2026 | S. Escobar, R. Bendezu, L. Choquehuanca, V. Cruz, R. Peralta | Se completó el Capítulo III: Especificación de requisitos |
-| **5.0** | 20/09/2026 | S. Escobar, R. Bendezu, L. Choquehuanca, V. Cruz, R. Peralta | Se completó el Capítulo IV: Diseño y arquitectura de la solución |
+| **1.0** | 19/09/2026 | Ronald Peralta | Creación inicial de la estructura del informe y definición de lineamientos. |
+| **2.0** | 19/09/2026 | S. Escobar, R. Bendezu, L. Choquehuanca, V. Cruz, R. Peralta | Se completó el Capítulo I: Presentación del proyecto y Background |
+| **3.0** | 19/09/2026 | S. Escobar, R. Bendezu, L. Choquehuanca, V. Cruz, R. Peralta | Finalización del Capítulo II: Obtención y análisis de requisitos |
+| **4.0** | 19/09/2026 | S. Escobar, R. Bendezu, L. Choquehuanca, V. Cruz, R. Peralta | Se completó el Capítulo III: Especificación de requisitos |
+| **5.0** | 19/09/2026 | S. Escobar, R. Bendezu, L. Choquehuanca, V. Cruz, R. Peralta | Se completó el Capítulo IV: Diseño y arquitectura de la solución |
 
 <div style="page-break-after: always;"></div>
 
