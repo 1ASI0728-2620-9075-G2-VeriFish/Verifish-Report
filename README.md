@@ -5,7 +5,7 @@
 <div style="text-align: center;">
     <h3 style="text-align: center;">Universidad Peruana de Ciencias Aplicadas</h3>
     <h4 style="text-align: center;">Carrera de Ingeniería de Software</h4>
-    <h4 style="text-align: center;"><b>1ASI0572</b></h4>
+    <h4 style="text-align: center;"><b>1ASI0728</b></h4>
     <h4 style="text-align: center;"><b>Arquitecturas De Software Emergentes</b></h4>
 </div>
 
