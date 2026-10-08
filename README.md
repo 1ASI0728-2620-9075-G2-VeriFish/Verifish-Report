@@ -1192,8 +1192,6 @@ Esta sección presenta el escenario futuro de cada User Persona una vez que util
 
 ## 3.2. User Stories
 
-> ✍️ **REDACTADO** — Cuadro único con 5 épicas, 27 US y 9 TS, criterios en Gherkin sin UI. Solo revisión. (Tarea C3-2)
-
 
 Los requisitos de YakuControl + YakuTrace se organizan en cinco épicas y un conjunto de User Stories y Technical Stories. Las historias de usuario se redactan con el formato *"Como… deseo… para…"* y sus criterios de aceptación siguen la estructura Gherkin (*Given–When–Then*), en tiempo presente, tercera persona y sin referencias a la interfaz. Las historias del sitio estático (Landing Page) usan el rol *visitante*, y las Technical Stories de servicios sin interacción directa con el usuario usan el rol *developer*. La épica **EP05** incorpora la trazabilidad con blockchain.
 
@@ -1211,20 +1209,20 @@ Los requisitos de YakuControl + YakuTrace se organizan en cinco épicas y un con
 | **US18** | Sección YakuTrace para supermercados | Como visitante del segmento supermercado, deseo conocer cómo YakuTrace permite verificar un lote para evaluar su utilidad en mis compras. | **Escenario 1: Conocer la verificación**<br>**Given** un visitante del segmento supermercado consulta la sección de trazabilidad<br>**When** revisa la explicación<br>**Then** el sistema explica cómo se verifica un lote y señala el acceso a la verificación pública<br><br>**Escenario 2: Verificar un lote**<br>**Given** el visitante dispone de un código de lote<br>**When** solicita verificarlo<br>**Then** el sistema lo dirige a la verificación pública del certificado | EP01 |
 | **US05** | Autenticación en la app móvil | Como piscicultor, deseo autenticarme para acceder a los estanques que tengo asignados. | **Escenario 1: Acceso correcto**<br>**Given** el piscicultor posee credenciales válidas<br>**When** solicita el acceso<br>**Then** el sistema otorga acceso a sus estanques asignados<br><br>**Escenario 2: Credenciales inválidas**<br>**Given** las credenciales son incorrectas<br>**When** el piscicultor solicita el acceso<br>**Then** el sistema deniega el acceso sin revelar cuál dato es incorrecto | EP02 |
 | **US06** | Lectura de sensores | Como piscicultor, deseo consultar el pH, la temperatura y la turbidez actuales de un estanque para evitar rondas físicas innecesarias. | **Escenario 1: Datos en tiempo real**<br>**Given** un estanque asignado tiene sensores activos<br>**When** el piscicultor consulta su estado<br>**Then** el sistema presenta los últimos valores recibidos y el estado del estanque<br><br>**Escenario 2: Sensor sin conexión**<br>**Given** un sensor no envía lecturas<br>**When** el piscicultor consulta el estanque<br>**Then** el sistema presenta el último valor conocido e indica que el sensor está desconectado | EP02 |
-| **US07** | Alertas de calidad del agua | Como piscicultor, deseo recibir una alerta cuando el agua está fuera de rango para actuar rápidamente. | **Escenario 1: Alerta crítica**<br>**Given** una lectura fuera del rango óptimo es confirmada como anomalía<br>**When** el sistema la detecta<br>**Then** notifica al piscicultor asignado y al administrador en menos de 10 segundos<br><br>**Escenario 2: Notificaciones restringidas**<br>**Given** el dispositivo del piscicultor restringe las notificaciones<br>**When** ocurre una alerta crítica<br>**Then** el sistema mantiene la alerta pendiente en el historial hasta que sea atendida | EP02 |
+| **US07** | Alertas de calidad del agua | Como piscicultor, deseo recibir una alerta cuando el agua está fuera de rango para actuar rápidamente. | **Escenario 1: Alerta crítica**<br>**Given** una lectura fuera del rango óptimo es confirmada como anomalía<br>**When** el sistema la detecta<br>**Then** notifica al piscicultor asignado y al administrador en menos de 10 segundos<br><br>**Escenario 2: Entrega no disponible**<br>**Given** no es posible entregar la notificación push al piscicultor<br>**When** ocurre una alerta crítica<br>**Then** el sistema conserva la alerta como pendiente en el historial y reintenta la entrega<br><br>**Escenario 3: Atención de la alerta**<br>**Given** existe una alerta crítica pendiente<br>**When** el piscicultor registra que la atendió<br>**Then** el sistema marca la alerta como atendida y registra la hora de la atención | EP02 |
 | **US08** | Control de aireación | Como piscicultor, deseo activar el aireador de un estanque de forma remota para oxigenar el agua. | **Escenario 1: Activación exitosa**<br>**Given** el aireador está apagado y conectado<br>**When** el piscicultor solicita activarlo<br>**Then** el sistema envía la orden y confirma el estado del equipo<br><br>**Escenario 2: Actuador sin respuesta**<br>**Given** el actuador no responde<br>**When** el piscicultor solicita activarlo<br>**Then** el sistema informa el error de comunicación y registra la acción como fallida | EP02 |
 | **US09** | Registro de novedades | Como piscicultor, deseo registrar una novedad sobre un estanque para informar al administrador. | **Escenario 1: Registro de novedad**<br>**Given** el piscicultor redactó una novedad válida<br>**When** la guarda<br>**Then** el sistema la almacena con fecha, hora y autor<br><br>**Escenario 2: Novedad vacía**<br>**Given** la novedad no tiene contenido<br>**When** el piscicultor intenta guardarla<br>**Then** el sistema no la registra | EP02 |
 | **US17** | Control de limpieza | Como piscicultor, deseo activar los filtros de limpieza de un estanque para reducir la turbidez. | **Escenario 1: Activación remota**<br>**Given** la turbidez del estanque es alta<br>**When** el piscicultor solicita activar la limpieza<br>**Then** el sistema envía la orden al equipo y confirma su estado<br><br>**Escenario 2: Falla eléctrica**<br>**Given** el equipo no tiene energía<br>**When** el piscicultor solicita activarlo<br>**Then** el sistema informa el error de hardware | EP02 |
 | **US10** | Gestión de usuarios | Como administrador, deseo crear cuentas para mis operarios para delegarles el acceso. | **Escenario 1: Invitación enviada**<br>**Given** el administrador ingresó los datos del operario<br>**When** solicita la invitación<br>**Then** el sistema genera un código de registro y lo envía por correo al operario<br><br>**Escenario 2: Correo duplicado**<br>**Given** el correo ya está registrado<br>**When** el administrador intenta crear la cuenta<br>**Then** el sistema indica que el usuario ya existe | EP03 |
-| **US11** | Reporte de mortalidad | Como administrador, deseo generar un reporte mensual de bajas para mis registros contables. | **Escenario 1: Reporte generado**<br>**Given** el mes seleccionado tiene registros<br>**When** el administrador solicita el reporte<br>**Then** el sistema genera el documento con las bajas del periodo<br><br>**Escenario 2: Mes sin bajas**<br>**Given** no hubo bajas en el mes<br>**When** el administrador solicita el reporte<br>**Then** el sistema genera el documento indicando que no hay registros | EP03 |
-| **US12** | Historial de tendencias | Como administrador, deseo ver la evolución anual de los parámetros del agua para planificar el siguiente ciclo. | **Escenario 1: Evolución anual**<br>**Given** el administrador seleccionó un periodo anual<br>**When** consulta el historial<br>**Then** el sistema presenta la evolución temporal del parámetro<br><br>**Escenario 2: Consulta extensa**<br>**Given** el periodo contiene un gran volumen de datos<br>**When** el administrador consulta el historial<br>**Then** el sistema informa el progreso de la consulta | EP03 |
+| **US11** | Reporte de mortalidad | Como administrador, deseo generar un reporte mensual de bajas para mis registros contables. | **Escenario 1: Reporte generado**<br>**Given** el mes consultado tiene bajas registradas en los lotes<br>**When** el administrador solicita el reporte<br>**Then** el sistema genera el documento con las bajas del periodo por lote<br><br>**Escenario 2: Mes sin bajas**<br>**Given** no hubo bajas en el mes<br>**When** el administrador solicita el reporte<br>**Then** el sistema genera el documento indicando que no hay registros | EP03 |
+| **US12** | Historial de tendencias | Como administrador, deseo ver la evolución anual de los parámetros del agua para planificar el siguiente ciclo. | **Escenario 1: Evolución anual**<br>**Given** el administrador seleccionó un periodo anual<br>**When** consulta el historial<br>**Then** el sistema presenta la evolución temporal del parámetro<br><br>**Escenario 2: Consulta extensa**<br>**Given** el periodo contiene un gran volumen de datos<br>**When** el administrador consulta el historial<br>**Then** el sistema presenta la evolución agregada por periodos en lugar de las lecturas individuales | EP03 |
 | **US13** | Configuración de umbrales | Como administrador, deseo definir los límites de alerta de un estanque para personalizar el control. | **Escenario 1: Actualización de límites**<br>**Given** el administrador ingresó límites válidos<br>**When** los guarda<br>**Then** el sistema los aplica a las evaluaciones posteriores<br><br>**Escenario 2: Límites inconsistentes**<br>**Given** el mínimo es mayor que el máximo<br>**When** el administrador intenta guardar<br>**Then** el sistema rechaza el cambio e informa la inconsistencia | EP03 |
-| **US14** | Pago de suscripción | Como administrador, deseo pagar mi suscripción para mantener el servicio activo. | **Escenario 1: Pago exitoso**<br>**Given** el administrador seleccionó un plan<br>**When** la pasarela confirma el pago<br>**Then** el sistema activa la suscripción<br><br>**Escenario 2: Pago rechazado**<br>**Given** la pasarela rechaza el cobro<br>**When** informa el fallo<br>**Then** el sistema mantiene la suscripción pendiente y notifica al administrador | EP03 |
+| **US14** | Pago de suscripción | Como administrador, deseo pagar mi suscripción para mantener el servicio activo. | **Escenario 1: Pago exitoso**<br>**Given** el administrador seleccionó un plan<br>**When** la pasarela confirma el pago<br>**Then** el sistema activa la suscripción<br><br>**Escenario 2: Pago rechazado**<br>**Given** la pasarela rechaza el cobro<br>**When** informa el fallo<br>**Then** el sistema mantiene la suscripción pendiente e informa al administrador que el pago fue rechazado | EP03 |
 | **US15** | Registro de estanque | Como administrador, deseo registrar un estanque y vincularle sus equipos para ampliar mi capacidad productiva. | **Escenario 1: Registro correcto**<br>**Given** el administrador ingresó un identificador de hardware nuevo<br>**When** registra el estanque<br>**Then** el sistema lo incorpora al listado de la granja<br><br>**Escenario 2: Hardware duplicado**<br>**Given** el identificador de hardware ya está registrado<br>**When** el administrador intenta vincularlo<br>**Then** el sistema rechaza la acción e informa la duplicidad | EP03 |
 | **US16** | Auditoría de respuesta | Como administrador, deseo conocer el tiempo que tarda un operario en atender una alerta para evaluar la respuesta del equipo. | **Escenario 1: Reporte de tiempos**<br>**Given** una alerta fue atendida<br>**When** el administrador revisa el historial<br>**Then** el sistema muestra la hora de la alerta y la hora de la acción<br><br>**Escenario 2: Atención automática**<br>**Given** la alerta fue atendida por el sistema<br>**When** el administrador audita el evento<br>**Then** el sistema indica que fue atendida por el sistema | EP03 |
 | **US19** | Activación del complemento TRACE | Como administrador, deseo activar el complemento TRACE para emitir certificados de trazabilidad de mis lotes. | **Escenario 1: Activación**<br>**Given** la suscripción de la granja está activa<br>**When** el administrador contrata el complemento<br>**Then** el sistema habilita la emisión de certificados para la granja<br><br>**Escenario 2: Suscripción inactiva**<br>**Given** la suscripción está suspendida o cancelada<br>**When** el administrador intenta contratarlo<br>**Then** el sistema rechaza la contratación e indica que la suscripción debe estar activa | EP03 |
 | **US20** | Registro de lote | Como administrador, deseo registrar un lote con su fecha de siembra, cantidad y origen de alevines para iniciar su trazabilidad. | **Escenario 1: Lote registrado**<br>**Given** el estanque no tiene un lote activo<br>**When** el administrador registra el lote con datos válidos<br>**Then** el sistema crea el lote y registra el hito de siembra<br><br>**Escenario 2: Lote activo existente**<br>**Given** el estanque ya tiene un lote activo<br>**When** el administrador intenta registrar otro<br>**Then** el sistema lo rechaza e informa el motivo | EP05 |
-| **US21** | Registro de hitos del lote | Como administrador, deseo registrar tratamientos y cambios de alimentación de un lote para completar su historial. | **Escenario 1: Hito agregado**<br>**Given** el lote está activo<br>**When** el administrador registra un hito con fecha y descripción<br>**Then** el sistema lo agrega a la línea de tiempo del lote<br><br>**Escenario 2: Lote certificado**<br>**Given** el lote ya fue certificado<br>**When** el administrador intenta agregar un hito<br>**Then** el sistema lo rechaza porque el historial está cerrado | EP05 |
+| **US21** | Registro de hitos del lote | Como administrador, deseo registrar tratamientos, cambios de alimentación y bajas por mortalidad de un lote para completar su historial. | **Escenario 1: Hito agregado**<br>**Given** el lote está activo<br>**When** el administrador registra un hito de tratamiento, alimentación o mortalidad con su fecha y descripción (y la cantidad de peces en caso de mortalidad)<br>**Then** el sistema lo agrega a la línea de tiempo del lote<br><br>**Escenario 2: Lote certificado**<br>**Given** el lote ya fue certificado<br>**When** el administrador intenta agregar un hito<br>**Then** el sistema lo rechaza porque el historial está cerrado | EP05 |
 | **US22** | Resumen de calidad del agua del lote | Como administrador, deseo ver el resumen de calidad del agua de un lote por día, semana y mes para conocer cómo se comportó durante el ciclo. | **Escenario 1: Resumen del periodo**<br>**Given** el lote tiene lecturas en el periodo<br>**When** el administrador consulta el resumen<br>**Then** el sistema presenta el promedio, mínimo y máximo del índice de calidad, el porcentaje de tiempo en rango, los eventos críticos, el tiempo de respuesta y la cobertura de datos<br><br>**Escenario 2: Cobertura insuficiente**<br>**Given** el periodo no tiene lecturas suficientes<br>**When** el administrador consulta el resumen<br>**Then** el sistema indica que la cobertura de datos es insuficiente | EP05 |
 | **US23** | Registro de cosecha | Como administrador, deseo registrar la cosecha de un lote con su biomasa, mortalidad acumulada y temperatura del agua para cerrar el ciclo. | **Escenario 1: Cosecha registrada**<br>**Given** el lote está activo<br>**When** el administrador registra la cosecha con datos completos<br>**Then** el sistema cierra el ciclo y cambia el estado del lote a cosechado<br><br>**Escenario 2: Datos incompletos**<br>**Given** faltan datos de la cosecha<br>**When** el administrador intenta registrarla<br>**Then** el sistema rechaza el registro e indica los datos faltantes | EP05 |
 | **US24** | Emisión de certificado con QR | Como administrador, deseo emitir un certificado de trazabilidad con código QR para un lote cosechado para respaldarlo ante mis compradores. | **Escenario 1: Certificado emitido**<br>**Given** el lote está cosechado, la granja tiene TRACE activo y la cobertura de datos es suficiente<br>**When** el administrador solicita el certificado<br>**Then** el sistema lo emite, genera su código QR y registra su huella digital en la blockchain<br><br>**Escenario 2: Requisitos no cumplidos**<br>**Given** la cobertura de datos es insuficiente o existe un evento crítico abierto<br>**When** el administrador solicita el certificado<br>**Then** el sistema lo rechaza e indica el motivo<br><br>**Escenario 3: Red no disponible**<br>**Given** la red blockchain no está disponible<br>**When** el administrador solicita el certificado<br>**Then** el sistema lo emite con anclaje pendiente y lo confirma cuando la red responde | EP05 |
@@ -1283,59 +1281,57 @@ En esta sección hemos elaborado nuestro Impact Mapping. Para ello, utilizamos l
 
 ## 3.4. Product Backlog
 
-> ✍️ **REDACTADO** — Backlog reordenado por valor con estimaciones. Falta: actualizar **Trello** igual que la tabla, captura y URL pública. (Tarea C3-4)
 
-
-El Product Backlog se ordena por **valor para el negocio**. El criterio aplicado fue: (1) presencia digital y Landing Page desde el primer sprint; (2) el valor central de monitoreo (ingesta, lectura y alertas), que reduce la mortalidad; (3) el diferenciador YakuTrace (lotes, resúmenes, certificado, anclaje y verificación); (4) control operativo y monetización; y (5) funciones administrativas y de apoyo. Las historias de seguridad y autenticación no se priorizan al inicio por sí mismas: se ordenan según el valor que habilitan y se incorporan en el sprint en que son prerrequisito de las historias que las necesitan. Las estimaciones usan la escala 1/2/3/5/8.
+El Product Backlog se ordena por **valor para el negocio**. El criterio aplicado fue: (1) presencia digital y Landing Page desde el primer sprint; (2) el valor central de monitoreo (ingesta, lectura y alertas), que reduce la mortalidad; (3) el diferenciador YakuTrace (lotes, resúmenes, certificado, anclaje y verificación); (4) control operativo y monetización; y (5) funciones administrativas y de apoyo. Las historias de seguridad y autenticación no se priorizan al inicio por sí mismas: se ordenan según el valor que habilitan y se ubican justo antes de la primera historia que las necesita. Por esa misma razón de dependencias, TS02 (JWT), US05 (autenticación) y US15 (registro de estanque) preceden a la ingesta y a la lectura de sensores (TS01, TS04, US06); el pago (US14) y el complemento TRACE (US19) preceden a la emisión de certificados (US24); y el registro de la cosecha (US23) precede a su certificado. Las estimaciones usan la escala 1/2/3/5/8 y suman 126 puntos en total.
 
 | # Orden | User Story Id | Título | Descripción | Story Points (1/2/3/5/8) |
 | :--- | :--- | :--- | :--- | :--- |
 | **1** | **US01** | Propuesta de valor | Como visitante, deseo conocer la propuesta de valor de YakuControl para entender qué problema resuelve. | **2** |
 | **2** | **US02** | Catálogo de planes | Como visitante, deseo ver los planes y sus precios para evaluar mi presupuesto. | **2** |
-| **3** | **TS01** | API de ingesta de telemetría | Como developer, deseo un endpoint que reciba las lecturas del Edge para persistir la telemetría. | **5** |
-| **4** | **US06** | Lectura de sensores | Como piscicultor, deseo consultar el pH, la temperatura y la turbidez actuales de un estanque para evitar rondas físicas innecesarias. | **3** |
-| **5** | **US07** | Alertas de calidad del agua | Como piscicultor, deseo recibir una alerta cuando el agua está fuera de rango para actuar rápidamente. | **5** |
-| **6** | **TS03** | Envío de alertas por push | Como developer, deseo que las anomalías confirmadas disparen notificaciones push para alertar al usuario. | **3** |
-| **7** | **US04** | Formulario de ventas | Como visitante, deseo dejar mis datos de contacto para que un asesor se comunique conmigo. | **3** |
-| **8** | **US18** | Sección YakuTrace para supermercados | Como visitante del segmento supermercado, deseo conocer cómo YakuTrace permite verificar un lote para evaluar su utilidad en mis compras. | **3** |
-| **9** | **US20** | Registro de lote | Como administrador, deseo registrar un lote con su fecha de siembra, cantidad y origen de alevines para iniciar su trazabilidad. | **3** |
-| **10** | **TS08** | Cierre de resúmenes de calidad | Como developer, deseo un proceso programado que cierre y agregue los resúmenes de calidad para contar con datos inmutables por periodo. | **5** |
-| **11** | **US22** | Resumen de calidad del agua del lote | Como administrador, deseo ver el resumen de calidad del agua de un lote por día, semana y mes para conocer cómo se comportó durante el ciclo. | **5** |
-| **12** | **US23** | Registro de cosecha | Como administrador, deseo registrar la cosecha de un lote con su biomasa, mortalidad acumulada y temperatura del agua para cerrar el ciclo. | **3** |
-| **13** | **US24** | Emisión de certificado con QR | Como administrador, deseo emitir un certificado de trazabilidad con código QR para un lote cosechado para respaldarlo ante mis compradores. | **8** |
-| **14** | **TS05** | Anclaje de hash en el smart contract | Como developer, deseo registrar en el smart contract la huella digital de un hito o certificado para hacerlo verificable. | **5** |
-| **15** | **TS07** | Cola de anclajes con reintentos | Como developer, deseo una cola de anclajes pendientes con reintentos para que la caída de la red blockchain no bloquee la emisión de certificados. | **3** |
-| **16** | **US26** | Verificación de un lote por QR | Como comprador de supermercado, deseo verificar un lote escaneando su código QR para confirmar su origen y las condiciones registradas. | **5** |
-| **17** | **TS06** | API pública de verificación | Como developer, deseo un endpoint público de verificación por código para que el QR funcione sin autenticación. | **3** |
-| **18** | **US27** | Prueba del registro en blockchain | Como comprador de supermercado, deseo acceder a la prueba del registro en blockchain para confiar en que el certificado no fue modificado. | **2** |
-| **19** | **US13** | Configuración de umbrales | Como administrador, deseo definir los límites de alerta de un estanque para personalizar el control. | **3** |
-| **20** | **US08** | Control de aireación | Como piscicultor, deseo activar el aireador de un estanque de forma remota para oxigenar el agua. | **5** |
-| **21** | **US14** | Pago de suscripción | Como administrador, deseo pagar mi suscripción para mantener el servicio activo. | **5** |
-| **22** | **US19** | Activación del complemento TRACE | Como administrador, deseo activar el complemento TRACE para emitir certificados de trazabilidad de mis lotes. | **3** |
-| **23** | **TS04** | Firma de lecturas del Edge | Como developer, deseo que cada lectura enviada por el Edge esté firmada con la clave de la granja para evitar lecturas falsificadas. | **3** |
-| **24** | **US05** | Autenticación en la app móvil | Como piscicultor, deseo autenticarme para acceder a los estanques que tengo asignados. | **3** |
-| **25** | **TS02** | Seguridad con JWT | Como developer, deseo proteger los endpoints con tokens para evitar accesos no autorizados y aislar los datos de cada granja. | **5** |
-| **26** | **US15** | Registro de estanque | Como administrador, deseo registrar un estanque y vincularle sus equipos para ampliar mi capacidad productiva. | **3** |
+| **3** | **US04** | Formulario de ventas | Como visitante, deseo dejar mis datos de contacto para que un asesor se comunique conmigo. | **3** |
+| **4** | **US18** | Sección YakuTrace para supermercados | Como visitante del segmento supermercado, deseo conocer cómo YakuTrace permite verificar un lote para evaluar su utilidad en mis compras. | **3** |
+| **5** | **TS02** | Seguridad con JWT | Como developer, deseo proteger los endpoints con tokens para evitar accesos no autorizados y aislar los datos de cada granja. | **5** |
+| **6** | **US05** | Autenticación en la app móvil | Como piscicultor, deseo autenticarme para acceder a los estanques que tengo asignados. | **3** |
+| **7** | **US15** | Registro de estanque | Como administrador, deseo registrar un estanque y vincularle sus equipos para ampliar mi capacidad productiva. | **3** |
+| **8** | **TS01** | API de ingesta de telemetría | Como developer, deseo un endpoint que reciba las lecturas del Edge para persistir la telemetría. | **5** |
+| **9** | **TS04** | Firma de lecturas del Edge | Como developer, deseo que cada lectura enviada por el Edge esté firmada con la clave de la granja para evitar lecturas falsificadas. | **3** |
+| **10** | **US06** | Lectura de sensores | Como piscicultor, deseo consultar el pH, la temperatura y la turbidez actuales de un estanque para evitar rondas físicas innecesarias. | **3** |
+| **11** | **US07** | Alertas de calidad del agua | Como piscicultor, deseo recibir una alerta cuando el agua está fuera de rango para actuar rápidamente. | **5** |
+| **12** | **TS03** | Envío de alertas por push | Como developer, deseo que las anomalías confirmadas disparen notificaciones push para alertar al usuario. | **3** |
+| **13** | **US08** | Control de aireación | Como piscicultor, deseo activar el aireador de un estanque de forma remota para oxigenar el agua. | **5** |
+| **14** | **US20** | Registro de lote | Como administrador, deseo registrar un lote con su fecha de siembra, cantidad y origen de alevines para iniciar su trazabilidad. | **3** |
+| **15** | **TS08** | Cierre de resúmenes de calidad | Como developer, deseo un proceso programado que cierre y agregue los resúmenes de calidad para contar con datos inmutables por periodo. | **5** |
+| **16** | **US22** | Resumen de calidad del agua del lote | Como administrador, deseo ver el resumen de calidad del agua de un lote por día, semana y mes para conocer cómo se comportó durante el ciclo. | **5** |
+| **17** | **US23** | Registro de cosecha | Como administrador, deseo registrar la cosecha de un lote con su biomasa, mortalidad acumulada y temperatura del agua para cerrar el ciclo. | **3** |
+| **18** | **US14** | Pago de suscripción | Como administrador, deseo pagar mi suscripción para mantener el servicio activo. | **5** |
+| **19** | **US19** | Activación del complemento TRACE | Como administrador, deseo activar el complemento TRACE para emitir certificados de trazabilidad de mis lotes. | **3** |
+| **20** | **US24** | Emisión de certificado con QR | Como administrador, deseo emitir un certificado de trazabilidad con código QR para un lote cosechado para respaldarlo ante mis compradores. | **8** |
+| **21** | **TS05** | Anclaje de hash en el smart contract | Como developer, deseo registrar en el smart contract la huella digital de un hito o certificado para hacerlo verificable. | **5** |
+| **22** | **TS07** | Cola de anclajes con reintentos | Como developer, deseo una cola de anclajes pendientes con reintentos para que la caída de la red blockchain no bloquee la emisión de certificados. | **3** |
+| **23** | **US26** | Verificación de un lote por QR | Como comprador de supermercado, deseo verificar un lote escaneando su código QR para confirmar su origen y las condiciones registradas. | **5** |
+| **24** | **TS06** | API pública de verificación | Como developer, deseo un endpoint público de verificación por código para que el QR funcione sin autenticación. | **3** |
+| **25** | **US27** | Prueba del registro en blockchain | Como comprador de supermercado, deseo acceder a la prueba del registro en blockchain para confiar en que el certificado no fue modificado. | **2** |
+| **26** | **US13** | Configuración de umbrales | Como administrador, deseo definir los límites de alerta de un estanque para personalizar el control. | **3** |
 | **27** | **US10** | Gestión de usuarios | Como administrador, deseo crear cuentas para mis operarios para delegarles el acceso. | **3** |
-| **28** | **US21** | Registro de hitos del lote | Como administrador, deseo registrar tratamientos y cambios de alimentación de un lote para completar su historial. | **3** |
+| **28** | **US21** | Registro de hitos del lote | Como administrador, deseo registrar tratamientos, cambios de alimentación y bajas por mortalidad de un lote para completar su historial. | **3** |
 | **29** | **US17** | Control de limpieza | Como piscicultor, deseo activar los filtros de limpieza de un estanque para reducir la turbidez. | **5** |
-| **30** | **US12** | Historial de tendencias | Como administrador, deseo ver la evolución anual de los parámetros del agua para planificar el siguiente ciclo. | **5** |
-| **31** | **US16** | Auditoría de respuesta | Como administrador, deseo conocer el tiempo que tarda un operario en atender una alerta para evaluar la respuesta del equipo. | **2** |
-| **32** | **US25** | Revocación de certificado | Como administrador, deseo revocar un certificado emitido por error para evitar que se use como evidencia válida. | **2** |
+| **30** | **US16** | Auditoría de respuesta | Como administrador, deseo conocer el tiempo que tarda un operario en atender una alerta para evaluar la respuesta del equipo. | **2** |
+| **31** | **US25** | Revocación de certificado | Como administrador, deseo revocar un certificado emitido por error para evitar que se use como evidencia válida. | **2** |
+| **32** | **US12** | Historial de tendencias | Como administrador, deseo ver la evolución anual de los parámetros del agua para planificar el siguiente ciclo. | **5** |
 | **33** | **US11** | Reporte de mortalidad | Como administrador, deseo generar un reporte mensual de bajas para mis registros contables. | **3** |
 | **34** | **US09** | Registro de novedades | Como piscicultor, deseo registrar una novedad sobre un estanque para informar al administrador. | **2** |
 | **35** | **US03** | Preguntas frecuentes | Como visitante, deseo consultar preguntas frecuentes para resolver mis dudas básicas. | **1** |
 | **36** | **TS09** | Documentación OpenAPI | Como developer, deseo documentar los endpoints con OpenAPI para facilitar su uso e integración. | **2** |
 
-**Link Trello:** https://trello.com/invite/b/69ddbac5fb1fb4d9bc57783e/ATTI6aaf075e45566d05489c8cee7f6e22a5D24DC29E/yaku
+**Link Trello:** https://trello.com/invite/b/6ac7ef560e7a24aba89be174/ATTI780f9093bca7b5df991145c8fafa33f7BE95751C/yakucontrol-product-backlog
 
-*(Agregar la captura del Product Backlog y verificar que el enlace público del tablero abra sin invitación.)*
+![Product Backlog en Trello](./assets/images/product-backlog-trello.png)
+
+*Tablero de Trello con las 36 tarjetas en el mismo orden y con los mismos puntos de la tabla anterior.*
 
 # Capítulo IV: Strategic-Level Software Design
 ## 4.1. Strategic-Level Attribute-Driven Design
 ### 4.1.1. Design Purpose
-
-> ✍️ **REDACTADO** — Redactado.
 
 
 El presente diseño arquitectónico corresponde a **YakuControl + YakuTrace**, producto de la startup **Verifish**. Es un sistema *greenfield* en su capa de trazabilidad y evolutivo en su capa de monitoreo, cuyo propósito es definir la arquitectura que soportará el MVP descrito en el Product Backlog: la ingesta y validación de telemetría IoT (pH, temperatura y turbidez), la emisión de alertas críticas y el control remoto de actuadores, la gestión de la suscripción SaaS y, como novedad de este ciclo, la **emisión de certificados de trazabilidad verificables mediante blockchain**.
@@ -1352,8 +1348,6 @@ El alcance abarca el hardware Edge, un **backend en monolito modular** organizad
 
 ### 4.1.2. Attribute-Driven Design Inputs
 #### 4.1.2.1. Primary Functionality (Primary User Stories)
-
-> ✍️ **REDACTADO** — Redactado.
 
 
 Del Product Backlog (sección 3.4) se seleccionaron como **funcionalidad primaria** las historias con mayor impacto sobre la arquitectura: aquellas que ejercitan el flujo central de valor (ingesta de telemetría, alertas, control de actuadores), el modelo de negocio (pago y complemento TRACE) y la trazabilidad (emisión de certificados, anclaje, verificación pública y cierre de resúmenes). En conjunto involucran a los seis Bounded Contexts. Por brevedad se muestra el escenario principal de cada historia; el detalle completo está en la sección 3.2.
@@ -1377,26 +1371,22 @@ Del Product Backlog (sección 3.4) se seleccionaron como **funcionalidad primari
 
 #### 4.1.2.2. Quality Attribute Scenarios
 
-> ✍️ **REDACTADO** — Redactado (9 escenarios).
-
 
 Se formalizó la primera versión de los escenarios de atributos de calidad con mayor impacto en la arquitectura: disponibilidad en el borde, rendimiento de alertas, seguridad multi-tenant y, con YakuTrace, integridad de certificados, rendimiento de la verificación, disponibilidad del anclaje y modificabilidad del ledger, además de escalabilidad y usabilidad.
 
 | Atributo | Fuente | Estímulo | Artefacto | Entorno | Respuesta | Medida |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Disponibilidad** | Proveedor de internet de la zona rural | Se pierde la conexión entre el Edge/dispositivo y el backend | Dispositivo IoT y Edge API | Operación normal con conectividad intermitente | El dispositivo evalúa localmente los umbrales críticos y activa los actuadores de soporte vital; conserva las lecturas y las sincroniza al recuperar la conexión | 100% de las lecturas críticas accionadas localmente; resincronización en menos de 30 s sin pérdida de datos |
-| **Rendimiento (alerta)** | Sensor instalado en el estanque | Se recibe una lectura fuera del rango óptimo | Módulos Telemetry y Notification (eventos de dominio en proceso) | Operación normal con carga habitual | Telemetry valida la anomalía y publica el evento; Notification lo consume y envía la alerta push al piscicultor y al administrador | Alerta entregada en menos de 10 s en el 95% de los casos |
-| **Rendimiento (verificación)** | Comprador de supermercado | Escanea el código QR de un lote | Página pública y API de verificación (Traceability) | Operación normal con red móvil | El sistema recalcula la huella del contenido, la compara con la registrada en blockchain y muestra el resultado | Resultado visible en menos de 3 s en el 95% de las verificaciones |
-| **Seguridad** | Usuario autenticado de una granja o agente malicioso | Intenta acceder a datos o endpoints de otra granja, o enviar lecturas falsas | Módulo IAM, filtro JWT y endpoint de ingesta | Operación normal expuesta a internet | El sistema rechaza la petición, no revela información de la granja objetivo y registra el intento | 100% de los accesos cruzados bloqueados; registro del intento en menos de 1 s |
-| **Integridad** | Persona con acceso a los datos o error operativo | Se modifica el contenido almacenado de un certificado emitido | Certificado, huella registrada y servicio de verificación | Operación normal | La verificación detecta que la huella no coincide y presenta el certificado como no válido | 100% de las alteraciones detectadas en la verificación |
-| **Disponibilidad (anclaje)** | Proveedor de red blockchain/RPC | La red no está disponible al emitir un certificado | Cola de anclajes (outbox) y adaptador de ledger | Operación normal con red caída temporalmente | El sistema emite el certificado en estado pendiente, conserva el anclaje en la cola y lo reintenta | 0 certificados perdidos; anclaje confirmado en menos de 10 min tras restablecerse la red |
-| **Modificabilidad** | Equipo de desarrollo | Se requiere cambiar la red blockchain o el proveedor RPC | Adaptador de ledger (LedgerPort) | Mantenimiento | Se reemplaza o reconfigura solo el adaptador sin modificar el dominio | Cambio completado en no más de 1 día-persona y sin cambios en el Domain Layer |
-| **Escalabilidad** | Expansión comercial | Se incrementa de 10 a 200 piscigranjas activas | Backend (monolito modular) y base de datos | Crecimiento progresivo en 6 meses | Se despliegan réplicas del backend sin estado detrás de un balanceador y se aprovecha la serie temporal para la telemetría | Degradación del tiempo de respuesta de la API menor al 5% con una carga triplicada |
-| **Usabilidad** | Piscicultor con bajo nivel de digitalización | Necesita activar un aireador tras recibir una alerta | Aplicación móvil | Condiciones de campo bajo presión de tiempo | El usuario ejecuta la acción desde la propia alerta con un control directo | Acción completada en máximo 2 toques; 90% de los usuarios de prueba la ejecutan sin capacitación |
+| **QA-01 · Disponibilidad** | Proveedor de internet de la zona rural | Se pierde la conexión entre el Edge/dispositivo y el backend | Dispositivo IoT y Edge API | Operación normal con conectividad intermitente | El dispositivo evalúa localmente los umbrales críticos y activa los actuadores de soporte vital; conserva las lecturas y las sincroniza al recuperar la conexión | 100% de las lecturas críticas accionadas localmente; resincronización en menos de 30 s sin pérdida de datos |
+| **QA-02 · Rendimiento (alerta)** | Sensor instalado en el estanque | Se recibe una lectura fuera del rango óptimo | Módulos Telemetry y Notification (eventos de dominio en proceso) | Operación normal con carga habitual | Telemetry valida la anomalía y publica el evento; Notification lo consume y envía la alerta push al piscicultor y al administrador | Alerta entregada en menos de 10 s en el 95% de los casos |
+| **QA-03 · Integridad** | Persona con acceso a los datos o error operativo | Se modifica el contenido almacenado de un certificado emitido | Certificado, huella registrada y servicio de verificación | Operación normal | La verificación detecta que la huella no coincide y presenta el certificado como no válido | 100% de las alteraciones detectadas en la verificación |
+| **QA-04 · Seguridad** | Usuario autenticado de una granja o agente malicioso | Intenta acceder a datos o endpoints de otra granja, o enviar lecturas falsas | Módulo IAM, filtro JWT y endpoint de ingesta | Operación normal expuesta a internet | El sistema rechaza la petición, no revela información de la granja objetivo y registra el intento | 100% de los accesos cruzados bloqueados; registro del intento en menos de 1 s |
+| **QA-05 · Disponibilidad (anclaje)** | Proveedor de red blockchain/RPC | La red no está disponible al emitir un certificado | Cola de anclajes (outbox) y adaptador de ledger | Operación normal con red caída temporalmente | El sistema emite el certificado en estado pendiente, conserva el anclaje en la cola y lo reintenta | 0 certificados perdidos; anclaje confirmado en menos de 10 min tras restablecerse la red |
+| **QA-06 · Rendimiento (verificación)** | Comprador de supermercado | Escanea el código QR de un lote | Página pública y API de verificación (Traceability) | Operación normal con red móvil | El sistema recalcula la huella del contenido, la compara con la registrada en blockchain y muestra el resultado | Resultado visible en menos de 3 s en el 95% de las verificaciones |
+| **QA-07 · Modificabilidad** | Equipo de desarrollo | Se requiere cambiar la red blockchain o el proveedor RPC | Adaptador de ledger (LedgerPort) | Mantenimiento | Se reemplaza o reconfigura solo el adaptador sin modificar el dominio | Cambio completado en no más de 1 día-persona y sin cambios en el Domain Layer |
+| **QA-08 · Escalabilidad** | Expansión comercial | Se incrementa de 10 a 200 piscigranjas activas | Backend (monolito modular) y base de datos | Crecimiento progresivo en 6 meses | Se despliegan réplicas del backend sin estado de sesión (JWT) detrás de un balanceador, se aprovecha la serie temporal para la telemetría y los procesos programados toman un bloqueo en la base de datos para que solo una réplica ejecute cada trabajo | Degradación del tiempo de respuesta de la API menor al 5% al pasar de 10 a 200 granjas, sin trabajos duplicados (cierres, anclajes o envíos) |
+| **QA-09 · Usabilidad** | Piscicultor con bajo nivel de digitalización | Necesita activar un aireador tras recibir una alerta | Aplicación móvil | Condiciones de campo bajo presión de tiempo | El usuario ejecuta la acción desde la propia alerta con un control directo | Acción completada en máximo 2 toques; 90% de los usuarios de prueba la ejecutan sin capacitación |
 
 #### 4.1.2.3. Constraints
-
-> ✍️ **REDACTADO** — Redactado como Technical Stories (TC01–TC12).
 
 
 Las restricciones son condiciones no negociables impuestas por el negocio, el curso o el contexto técnico. Se expresan como Technical Stories para que cada una tenga un criterio de aceptación comprobable. Respecto de la versión anterior se actualizó el tamaño del equipo (5 integrantes), se corrigió la tecnología de la Web App (Angular) y se agregaron las restricciones propias de Web3, internacionalización y servicios de terceros.
@@ -1409,7 +1399,7 @@ Las restricciones son condiciones no negociables impuestas por el negocio, el cu
 | **TC04** | Hardware de bajo costo | Como equipo, debemos operar con un microcontrolador Arduino UNO y sensores sumergibles de bajo costo (aprox. S/ 250–280). | **Escenario 1**<br>**Given** se diseña el firmware<br>**When** se asignan responsabilidades entre dispositivo y Edge API<br>**Then** las tareas intensivas se ejecutan en el Edge API y no en el microcontrolador | EP04 |
 | **TC05** | Web en Angular y móvil en Flutter | Como equipo, debemos desarrollar la Web App con Angular (Angular Material o PrimeNG) siguiendo Material Design, y la app móvil con Flutter. | **Escenario 1**<br>**Given** se construyen las aplicaciones cliente<br>**When** se revisa la tecnología empleada<br>**Then** la Web App usa Angular y la aplicación móvil usa Flutter | EP02, EP03 |
 | **TC06** | Pagos mediante pasarela certificada | Como equipo, debemos delegar el procesamiento de pagos a Stripe sin gestionar datos de tarjetas. | **Escenario 1**<br>**Given** un administrador paga su suscripción<br>**When** se procesa el cobro<br>**Then** el cobro lo realiza la pasarela externa y el sistema no almacena datos de tarjeta | EP03 |
-| **TC07** | Calendario académico | Como equipo, debemos trabajar con sprints y fechas de entrega fijas del curso. | **Escenario 1**<br>**Given** se planifica un sprint<br>**When** se estima el alcance<br>**Then** el alcance no excede la capacidad de las fechas de entrega | EP04 |
+| **TC07** | Calendario académico | Como equipo, debemos trabajar con sprints y fechas de entrega fijas del curso. | **Escenario 1**<br>**Given** se planifica un sprint<br>**When** se estima el alcance<br>**Then** los story points comprometidos no superan la velocidad del equipo y todas las historias comprometidas pueden completarse antes de la fecha de entrega | EP04 |
 | **TC08** | Blockchain en red EVM de pruebas con solo hashes | Como equipo, debemos usar blockchain mediante un smart contract en una red EVM de pruebas y registrar únicamente huellas digitales (hashes), nunca datos comerciales. | **Escenario 1**<br>**Given** se ancla un certificado<br>**When** se escribe en la red<br>**Then** solo se registra el hash y el identificador del lote y la red es configurable | EP05 |
 | **TC09** | Backend RESTful con Spring Boot y OpenAPI | Como equipo, debemos construir el backend con Spring Boot bajo estilo RESTful y documentarlo con OpenAPI. | **Escenario 1**<br>**Given** se despliega el backend<br>**When** un developer consulta la documentación<br>**Then** se listan los endpoints con sus parámetros y respuestas | EP04 |
 | **TC10** | Internacionalización y accesibilidad | Como equipo, debemos soportar internacionalización (en_US y es_419) y accesibilidad (atributos ARIA) en la Landing Page y las Web Apps; el idioma base de la interfaz es el español. | **Escenario 1**<br>**Given** un usuario cambia el idioma<br>**When** se muestra la interfaz<br>**Then** los textos aparecen en el idioma seleccionado y los elementos tienen atributos de accesibilidad | EP01, EP03 |
@@ -1417,8 +1407,6 @@ Las restricciones son condiciones no negociables impuestas por el negocio, el cu
 | **TC12** | Landing Page en HTML5, CSS3 y JavaScript | Como equipo, debemos desarrollar la Landing Page con HTML5, CSS3 y JavaScript, con consistencia visual con las aplicaciones. | **Escenario 1**<br>**Given** un visitante usa un llamado a la acción<br>**When** se redirige<br>**Then** llega a la vista correspondiente de la Web App o al sitio de descarga de la app | EP01 |
 
 ### 4.1.3. Architectural Drivers Backlog
-
-> ✍️ **REDACTADO** — Redactado.
 
 
 El Architectural Drivers Backlog consolida los Functional Drivers (sección 4.1.2.1), los Quality Attribute Drivers (4.1.2.2) y todos los Constraints (4.1.2.3). Resultó de un Quality Attribute Workshop en el que el equipo presentó los objetivos de negocio, propuso y consolidó escenarios y los priorizó por **importancia para los stakeholders** y por **impacto en la complejidad técnica de la arquitectura**. Los drivers de importancia alta e impacto alto se ubican primero y concentran las decisiones de la primera iteración.
@@ -1449,14 +1437,12 @@ El Architectural Drivers Backlog consolida los Functional Drivers (sección 4.1.
 
 ### 4.1.4. Architectural Design Decisions
 
-> ✍️ **REDACTADO** — Redactado: iteraciones QAW, matriz de patrones y AD-01…AD-13. Revisar con el equipo.
-
 
 Las decisiones se tomaron siguiendo los *stages* del **Quality Attribute Workshop**: (1) presentación del QAW y de los objetivos de negocio; (2) presentación del plan arquitectónico; (3) lluvia de ideas de escenarios; (4) consolidación; (5) priorización y (6) refinamiento de los escenarios. El diseño se realizó en tres iteraciones:
 
 - **Iteración 1 — Estructura general:** drivers TC02, QA-08, FD-01, QA-02 y TC03. Se evaluó el estilo arquitectónico y la comunicación entre contextos y se decidió un monolito modular con eventos en proceso y Edge Computing (AD-01 a AD-04).
 - **Iteración 2 — Trazabilidad con blockchain:** drivers QA-03, QA-05, QA-06, TC08 y FD-02/FD-03. Se evaluó dónde guardar la evidencia, cómo acceder al ledger y cómo verificar, y se decidió anclar solo hashes con puerto/adaptador y Outbox (AD-08 a AD-11).
-- **Iteración 3 — Seguridad, integraciones y despliegue:** drivers QA-04, QA-07, TC05, TC06 y QA-08. Se decidió la firma de lecturas, los adaptadores de terceros, las tecnologías de cliente y el despliegue (AD-05 a AD-07, AD-12, AD-13).
+- **Iteración 3 — Seguridad, integraciones y despliegue:** drivers QA-04, QA-07, TC05, TC06 y QA-08. Se decidió la firma de lecturas, los adaptadores de terceros, las tecnologías de cliente y el despliegue (AD-05 a AD-07, AD-12 a AD-14).
 
 La **Candidate Pattern Evaluation Matrix** resume los patrones candidatos evaluados por driver (máximo tres) con sus ventajas y desventajas. Las referencias de patrones y tácticas provienen del trabajo previo del equipo (Facade, Observer, Repository, Factory, API Gateway; tácticas de disponibilidad, rendimiento y modificabilidad) y de la guía de trazabilidad de la industria del pescado, que define eventos críticos y datos clave como base de los hitos (Global Dialogue on Seafood Traceability, s. f.).
 
@@ -1480,20 +1466,19 @@ La **Candidate Pattern Evaluation Matrix** resume los patrones candidatos evalua
 | **AD-03** | QA-02, FD-01 | Comunicación entre contextos mediante eventos de dominio en proceso (Spring Events). | Minimiza la latencia y evita que una falla del canal de notificación bloquee la ingesta, sin infraestructura adicional. |
 | **AD-04** | QA-04 | IAM como Open Host Service que emite JWT con el identificador de la granja; el resto de contextos lo consume mediante Anti-Corruption Layers. | Aislamiento multi-tenant centralizado y consistente. |
 | **AD-05** | QA-07 | Arquitectura hexagonal (puertos y adaptadores) en cada contexto para Stripe, Firebase, correo, Edge y blockchain. | Permite reemplazar un proveedor modificando solo su adaptador. |
-| **AD-06** | QA-08, TC01 | Despliegue: backend y base de datos en Microsoft Azure, frontends en hosting estático y Edge API en un PaaS; base relacional con extensión de serie temporal para telemetría. | Bajo costo y escalado de réplicas sin estado del backend. |
+| **AD-06** | QA-08, TC01 | Despliegue: backend y base de datos en Microsoft Azure, frontends en hosting estático y Edge API en un PaaS; base PostgreSQL con la extensión TimescaleDB para la telemetría. | Bajo costo y escalado de réplicas del backend. La extensión disponible en Azure Database for PostgreSQL es la edición Apache 2 (hypertables y `time_bucket`, sin compresión nativa ni *continuous aggregates*), suficiente porque los resúmenes se cierran con un proceso programado (TS08) (Timescale, s. f.). |
 | **AD-07** | FD-04, TC06 | Delegar los pagos a Stripe mediante un adaptador y webhooks validados criptográficamente. | Evita manejar datos de tarjeta y traslada la resiliencia de cobro a un proveedor especializado. |
 | **AD-08** | QA-03, TC08 | Registrar en blockchain solo hashes (SHA-256 del contenido canónico) y mantener los datos completos en PostgreSQL. | Costo mínimo, privacidad comercial y verificación mediante recálculo del hash (ver matriz). |
 | **AD-09** | TC08, QA-07 | Smart contract mínimo (registrar y consultar huellas por lote) en una red EVM de pruebas configurable; solo la cuenta del backend puede escribir. | Alcance alcanzable en el curso; la red puede cambiarse por configuración (el estado de las testnets cambia en el tiempo; Beiko, 2025). |
-| **AD-10** | QA-05 | Patrón Outbox con worker de reintentos para el anclaje. | La emisión de certificados no depende de la disponibilidad de la red blockchain. |
+| **AD-10** | QA-05 | Patrón Outbox con worker de reintentos para el anclaje; el worker reclama las filas pendientes con `FOR UPDATE SKIP LOCKED`. | La emisión de certificados no depende de la disponibilidad de la red blockchain y varias réplicas no procesan el mismo anclaje. |
 | **AD-11** | QA-06, FD-03 | Verificación pública en el servidor: recalcula el hash, consulta el contrato y muestra el resultado con enlace a la prueba on-chain. | El comprador no necesita billetera ni cuenta. |
 | **AD-12** | QA-04 | Firma de cada lectura del Edge con la Farm Key (HMAC) y verificación en el backend. | Mitiga la falsificación de datos de entrada (el problema del "garbage in, garbage out" que blockchain no resuelve; Powell et al., 2021). |
 | **AD-13** | TC05 | Web App en Angular (Angular Material/PrimeNG) y app móvil en Flutter. | Cumple las tecnologías exigidas por el curso para web y permite una app móvil multiplataforma. |
+| **AD-14** | QA-08, QA-05 | Procesos programados con exclusión mutua: los trabajos periódicos (`QualitySummaryScheduler`, `AnchorOutboxWorker` y `NotificationDeliveryRetryJob`) toman un bloqueo en PostgreSQL (ShedLock o `SKIP LOCKED`) antes de ejecutarse y son idempotentes. | Al escalar a varias réplicas del monolito, evita cierres de resumen, anclajes o envíos duplicados. |
 
 Estas decisiones constituyen la base estructural para refinar los escenarios de calidad (sección 4.1.5) y para el modelado estratégico de Domain-Driven Design (sección 4.2).
 
 ### 4.1.5. Quality Attribute Scenario Refinements
-
-> ✍️ **REDACTADO** — Redactado (6 tablas).
 
 
 Se refinaron los seis escenarios de mayor prioridad al finalizar el Quality Attribute Workshop. Las decisiones principales que resultaron fueron: ejecutar la lógica crítica en el borde (Edge Computing), comunicar los contextos mediante eventos en proceso, anclar solo huellas en blockchain con una cola de reintentos y verificar en el servidor con enlace a la prueba on-chain. Cada escenario se presenta en orden de prioridad.
@@ -1502,7 +1487,7 @@ Se refinaron los seis escenarios de mayor prioridad al finalizar el Quality Attr
 | :--- | :--- | :--- |
 | **Scenario(s):** | Pérdida de conectividad entre la granja y la nube | |
 | **Business Goals:** | G2: reducir la mortalidad masiva en al menos 15% | |
-| **Relevant Quality Attributes:** | Availability | |
+| **Relevant Quality Attributes:** | Availability (QA-01) | |
 | **Scenario Components** | **Stimulus:** | Se pierde la conexión con el backend |
 | | **Stimulus Source:** | Proveedor de internet de la zona rural |
 | | **Environment:** | Operación normal con conectividad intermitente |
@@ -1515,8 +1500,8 @@ Se refinaron los seis escenarios de mayor prioridad al finalizar el Quality Attr
 | **Scenario Refinement for Scenario 2** | | |
 | :--- | :--- | :--- |
 | **Scenario(s):** | Alerta ante lectura fuera de rango | |
-| **Business Goals:** | G2: respuesta a eventos críticos en menos de 10 minutos | |
-| **Relevant Quality Attributes:** | Performance | |
+| **Business Goals:** | G2: reducir en al menos 15% la mortalidad masiva (los piscicultores deben responder a las alertas en menos de 10 minutos) | |
+| **Relevant Quality Attributes:** | Performance (QA-02) | |
 | **Scenario Components** | **Stimulus:** | Se recibe una lectura fuera del rango óptimo |
 | | **Stimulus Source:** | Sensor IoT |
 | | **Environment:** | Operación normal con carga habitual |
@@ -1530,7 +1515,7 @@ Se refinaron los seis escenarios de mayor prioridad al finalizar el Quality Attr
 | :--- | :--- | :--- |
 | **Scenario(s):** | Alteración de un certificado emitido | |
 | **Business Goals:** | G3 y G5: certificados verificables y confianza del comprador | |
-| **Relevant Quality Attributes:** | Integrity, Security | |
+| **Relevant Quality Attributes:** | Integrity (QA-03), Security | |
 | **Scenario Components** | **Stimulus:** | Se modifica el contenido almacenado de un certificado |
 | | **Stimulus Source:** | Persona con acceso a los datos o error operativo |
 | | **Environment:** | Operación normal |
@@ -1544,7 +1529,7 @@ Se refinaron los seis escenarios de mayor prioridad al finalizar el Quality Attr
 | :--- | :--- | :--- |
 | **Scenario(s):** | Anclaje con la red blockchain caída | |
 | **Business Goals:** | G3: emitir certificados para el 100% de los lotes piloto | |
-| **Relevant Quality Attributes:** | Availability, Modifiability | |
+| **Relevant Quality Attributes:** | Availability (QA-05), Modifiability (QA-07) | |
 | **Scenario Components** | **Stimulus:** | La red no está disponible al emitir un certificado |
 | | **Stimulus Source:** | Proveedor RPC/red blockchain |
 | | **Environment:** | Operación normal con red caída temporalmente |
@@ -1557,8 +1542,8 @@ Se refinaron los seis escenarios de mayor prioridad al finalizar el Quality Attr
 | **Scenario Refinement for Scenario 5** | | |
 | :--- | :--- | :--- |
 | **Scenario(s):** | Acceso entre granjas | |
-| **Business Goals:** | G1: operación segura multi-tenant | |
-| **Relevant Quality Attributes:** | Security | |
+| **Business Goals:** | G1: conectar 50 estanques con monitoreo activo (requiere aislar los datos de cada granja para que los clientes confíen en la plataforma) | |
+| **Relevant Quality Attributes:** | Security (QA-04) | |
 | **Scenario Components** | **Stimulus:** | Un usuario intenta acceder a datos de otra granja |
 | | **Stimulus Source:** | Usuario autenticado de una granja |
 | | **Environment:** | Operación normal de la plataforma multi-tenant |
@@ -1572,7 +1557,7 @@ Se refinaron los seis escenarios de mayor prioridad al finalizar el Quality Attr
 | :--- | :--- | :--- |
 | **Scenario(s):** | Verificación por QR | |
 | **Business Goals:** | G5: verificación en menos de 1 minuto | |
-| **Relevant Quality Attributes:** | Performance, Usability | |
+| **Relevant Quality Attributes:** | Performance (QA-06), Usability | |
 | **Scenario Components** | **Stimulus:** | El comprador escanea el código QR |
 | | **Stimulus Source:** | Comprador de supermercado |
 | | **Environment:** | Red móvil, operación normal |
@@ -1584,8 +1569,6 @@ Se refinaron los seis escenarios de mayor prioridad al finalizar el Quality Attr
 
 ## 4.2. Strategic-Level Domain-Driven Design
 ### 4.2.1. EventStorming
-
-> ✍️ **REDACTADO** — Texto de la extensión redactado. Falta (herramienta): sesión en **Miro** agregando los post-its y recapturar los pasos. (Tarea C4-7)
 
 
 En esta sección se detalla la aplicación del EventStorming como herramienta estratégica del Domain-Driven Design (DDD). El objetivo es mapear los eventos de dominio que articulan el ecosistema de **YakuControl**, permitiendo identificar los límites de los futuros Bounded Contexts y las interacciones clave entre los actores. Este enfoque garantiza que la arquitectura de software esté alineada con las reglas de negocio de la acuicultura inteligente y sea capaz de escalar de forma modular.
@@ -1651,34 +1634,34 @@ El paso final consiste en consolidar el mapa completo para definir la arquitectu
 
 | Tipo | Elementos agregados |
 | :--- | :--- |
-| Domain Events | Batch Registered, Milestone Recorded, Quality Summary Closed, Harvest Registered, Certificate Issued, Hash Anchored, Certificate Verified, Certificate Revoked |
-| Commands | Register Batch, Record Milestone, Register Harvest, Issue Certificate, Revoke Certificate, Verify Certificate |
+| Domain Events | Batch Registered, Milestone Recorded, Quality Summary Closed, Harvest Registered, Certificate Issued, Hash Anchored, Certificate Verified, Certificate Revoked, TRACE Add-on Activated |
+| Commands | Activate TRACE Add-on, Register Batch, Record Milestone, Register Harvest, Issue Certificate, Revoke Certificate, Verify Certificate |
 | Actors | Farm Administrator, Supermarket Buyer |
 | External Systems | Blockchain Network (smart contract y proveedor RPC) |
 | Aggregates | Batch, Traceability Certificate |
-| Policies | "Siempre que se cierra un resumen de calidad, entonces se asocia al lote activo"; "Siempre que se emite un certificado, entonces se ancla su huella"; "Siempre que falla el anclaje, entonces se reintenta" |
+| Policies | "Siempre que se activa el complemento TRACE, entonces se habilita la emisión de certificados de la granja"; "Siempre que se cierra un resumen de calidad, entonces se asocia al lote activo"; "Siempre que se emite un certificado, entonces se ancla su huella"; "Siempre que falla el anclaje, entonces se reintenta" |
 | Read Models | Línea de tiempo del lote, resultado de verificación |
-| Hotspots | Confiabilidad del dato del sensor (garbage in, garbage out); disponibilidad de la red blockchain; estado de las redes de prueba |
+| Hotspots | Confiabilidad del dato del sensor (garbage in, garbage out); veracidad de los hitos que registra manualmente el administrador; disponibilidad de la red blockchain; estado de las redes de prueba |
 
-*(Insertar las capturas de la sesión actualizada.)*
+Los elementos de la extensión se agruparon en el tablero según los seis contextos delimitados: los eventos de lotes, certificados y anclaje conforman **Traceability**; el cierre de resúmenes de calidad pertenece a **Telemetry**; y la activación del complemento TRACE, a **Payment**. La separación de la verificación pública (consulta sin sesión) respecto de la emisión y revocación (que exigen el rol de administrador) confirmó que ambas operaciones pertenecen al mismo contexto pero con distinto nivel de acceso.
+
+![EventStorming de la extensión YakuTrace](./assets/images/eventstorming-yakutrace.png)
 
 ### 4.2.2. Candidate Context Discovery
-
-> ✍️ **REDACTADO** — Traceability agregado y conteo de contextos corregido. Falta (herramienta): actualizar la imagen `cantidatecontext.png`. (Tarea C4-8)
 
 
 En esta sección se presenta el proceso seguido por el equipo para la identificación y clasificación de los **Bounded Contexts** candidatos a partir del Event Storming de **YakuControl**. El objetivo fue identificar los límites naturales del dominio IoT, determinar qué partes del sistema constituyen el núcleo estratégico (Core) y cuáles cumplen roles de apoyo, priorizando el diseño en los elementos que garantizan la supervivencia de la producción acuícola.
 
 #### **Preparación de la sesión**
-La sesión de Candidate Context Discovery se desarrolló de forma colaborativa con una duración de 1 hora 30 minutos. Se utilizaron los siguientes insumos:
+La sesión de Candidate Context Discovery se desarrolló de forma colaborativa con una duración de 1 hora 30 minutos; al incorporar YakuTrace se realizó una segunda sesión breve para ubicar el nuevo contexto de Traceability. Se utilizaron los siguientes insumos:
 * La línea de tiempo de eventos organizada cronológicamente.
-* Los eventos clave (**Pivotal Events**) como "Lectura fuera de rango detectada" y "Token JWT emitido".
+* Los eventos clave (**Pivotal Events**) como "Lectura fuera de rango detectada", "Token JWT emitido" y, con YakuTrace, "Certificado emitido".
 * La lógica de procesamiento **Edge Computing** definida para la resiliencia del sistema.
 
 #### **Técnica aplicada: Start-with-Value**
 Se aplicó la técnica **Start-with-Value**, priorizando las partes del dominio que generan el mayor impacto en la reducción de la mortalidad de los peces y la eficiencia operativa. El proceso se organizó en tres pasos:
 1.  **Identificación de valor estratégico:** El equipo determinó que la capacidad de reacción autónoma ante anomalías hídricas es el principal diferenciador.
-2.  **Agrupación de eventos:** Se consolidaron los clusters de eventos alrededor de los agregados "Estanque", "Sensor" y "Actuador".
+2.  **Agrupación de eventos:** Se consolidaron los clusters de eventos alrededor de los agregados "Estanque", "Sensor" y "Actuador" y, con YakuTrace, "Lote" y "Certificado de trazabilidad".
 3.  **Clasificación Estratégica:** Se categorizaron los contextos en **Core**, **Supporting** y **Generic** según su complejidad y diferenciación competitiva.
 
 #### **Candidate Contexts Identificados**
@@ -1688,8 +1671,8 @@ El análisis permitió identificar los siguientes bounded contexts candidatos:
 | Candidate Context | Eventos Clave Asociados | Clasificación | Descripción | Justificación |
 | :--- | :--- | :--- | :--- | :--- |
 | **Identity & Access (IAM)** | Key de granja generada, Piscicultor vinculado, Token JWT emitido. | **Generic** | Gestión de autenticación, roles y seguridad mediante llaves de granja. | Es vital para la seguridad, pero utiliza estándares (JWT) que no diferencian el negocio acuícola. |
-| **Telemetry** | Lectura recibida, Dato válido detectado, Métrica de estanque actualizada. | **Core** | Ingesta y validación de datos en tiempo real provenientes de sensores IoT. | Es el origen de toda la inteligencia del sistema; la precisión del dato es crítica. |
-| **Notification** | Lectura fuera de rango, Alerta crítica enviada, Actuador activado. | **Core** | Cerebro reactivo que evalúa umbrales y controla el soporte vital (oxigenadores). | Representa el valor máximo: la capacidad de salvar la producción sin intervención humana. |
+| **Telemetry** | Lectura recibida, Dato válido detectado, Métrica de estanque actualizada, Lectura fuera de rango detectada, Resumen de calidad cerrado. | **Core** | Ingesta y validación de datos en tiempo real provenientes de sensores IoT. | Es el origen de toda la inteligencia del sistema; la precisión del dato es crítica. |
+| **Notification** | Alerta crítica creada, Alerta enviada, Alerta atendida, Acción de emergencia ejecutada. | **Core** | Entrega de alertas críticas y de mantenimiento por push y correo, ejecución de acciones de emergencia sobre los actuadores y medición del tiempo de respuesta. | Materializa la reacción inmediata: convierte la anomalía detectada por Telemetry en una acción que protege la producción; los umbrales se evalúan en Telemetry y en el Edge, no aquí. |
 | **Equipment** | Estanque registrado, Sensor vinculado, Instalación certificada. | **Supporting** | Gestión del inventario físico y mapeo de la planta acuícola. | Apoya la operación permitiendo saber qué hardware está en cada estanque, pero es administrativo. |
 | **Payment** | Plan seleccionado, Pago procesado, Suscripción suspendida por mora. | **Generic** | Control del modelo de negocio SaaS y facturación recurrente. | Necesario para la monetización, pero delegable a pasarelas externas como Stripe o Culqi. |
 | **Traceability** | Lote registrado, Hito registrado, Resumen de calidad congelado, Certificado emitido, Hash anclado, Certificado verificado, Certificado revocado. | **Core** | Gestión del ciclo de vida del lote y emisión de certificados verificables con anclaje en blockchain. | Es el diferenciador nuevo de YakuTrace: convierte los datos de monitoreo en evidencia verificable para el comprador. |
@@ -1698,7 +1681,7 @@ El análisis permitió identificar los siguientes bounded contexts candidatos:
 
 Como parte del análisis, se distribuyeron los contextos en una matriz de **Diferenciación de Negocio** vs **Complejidad del Modelo**:
 
-* **Core (Alta diferenciación / Alta complejidad):** Telemetry, Notification, Traceability.
+* **Core (Alta diferenciación / Alta complejidad):** Telemetry, Notification y Traceability.
 * **Supporting (Baja diferenciación / Mediana complejidad):** Equipment.
 * **Generic (Baja diferenciación / Baja-Mediana complejidad):** Identity & Access (IAM), Payment.
 ![Candidate Contexts](./assets/images/cantidatecontext.png)
@@ -1708,7 +1691,7 @@ Se definieron **seis bounded contexts candidatos**, clasificados así:
 
 * **3 Core (Dominio Principal):**
     * **Telemetry:** procesa la ingesta de datos, asegura la fidelidad de las métricas y cierra los resúmenes de calidad.
-    * **Notification:** ejecuta la respuesta inmediata y el control de dispositivos físicos.
+    * **Notification:** ejecuta la respuesta inmediata: alertas, acciones de emergencia sobre actuadores y medición del tiempo de respuesta.
     * **Traceability:** gestiona lotes y emite certificados verificables con anclaje en blockchain.
 * **1 Supporting (Soporte Operativo):**
     * **Equipment:** administra la relación física entre estanques, sensores y personal.
@@ -1720,12 +1703,10 @@ La técnica **Start-with-Value** permitió concentrar la atención del diseño t
 
 ### 4.2.3. Domain Message Flows Modeling
 
-> ✍️ **REDACTADO** — Escenarios 5–7 redactados. Falta (herramienta): dibujar los 3 diagramas de Domain Storytelling. (Tarea C4-9)
-
 
 El Domain Storytelling es una técnica visual y colaborativa que facilita la exploración del conocimiento dentro del dominio del negocio, cuyo propósito principal es generar una comprensión común sobre lo que se desarrolla en un proceso específico, involucrando tanto a los expertos del negocio como a los equipos técnicos.
 
-En este sentido, elaboramos los domain storytelling tomando como referencia las interacciones entre los bounded contexts de YakuControl (IAM, Equipment, Telemetry, Notification y Payment), con el fin de analizar y comprender de manera más clara la lógica del negocio acuícola.
+En este sentido, elaboramos los domain storytelling tomando como referencia las interacciones entre los seis bounded contexts de YakuControl + YakuTrace (IAM, Equipment, Telemetry, Notification, Payment y Traceability), con el fin de analizar y comprender de manera más clara la lógica del negocio acuícola.
 
 
 **Escenario 1:** Registrar administrador y crear piscicultor
@@ -1754,23 +1735,52 @@ En este sentido, elaboramos los domain storytelling tomando como referencia las 
 
 ![Domain Message Flow 5](./assets/images/screenshots/domain-message-flow-5.jpg)
 
+**Secuencia de la historia:**
+
+1. El **Administrador** registra un **Lote** con su fecha de siembra, cantidad y origen de alevines.
+2. **Traceability** consulta a **Equipment** la identidad del **Estanque** y verifica que pertenece a la granja y que no tiene otro lote activo.
+3. **Traceability** crea el lote y registra el **Hito de siembra**.
+4. Durante el ciclo, el **Administrador** registra **Hitos** de tratamiento, alimentación o mortalidad.
+5. **Telemetry** cierra el **Resumen de calidad** del periodo y lo publica; **Traceability** lo asocia al lote activo.
+6. **Telemetry** informa una lectura fuera de rango; **Traceability** registra un **Hito crítico** en el lote.
+
 **Escenario 6:** Emitir certificado y anclar su huella
 **Objetivo:** Al cosechar, el administrador solicita el certificado; Traceability valida los requisitos con Payment (complemento TRACE activo) y Telemetry (resúmenes cerrados), emite el certificado con su código QR y ancla su huella en la blockchain.
 
 ![Domain Message Flow 6](./assets/images/screenshots/domain-message-flow-6.jpg)
+
+**Secuencia de la historia:**
+
+1. El **Administrador** registra la **Cosecha** del lote (biomasa, mortalidad acumulada y temperatura del agua).
+2. El **Administrador** solicita el **Certificado** del lote.
+3. **Traceability** verifica con la copia local del permiso de **Payment** que el complemento TRACE está activo.
+4. **Traceability** obtiene de **Telemetry** los **Resúmenes de calidad** cerrados y comprueba la cobertura de datos y que no haya eventos críticos abiertos.
+5. **Traceability** construye el contenido canónico y calcula la **Huella** (SHA-256).
+6. **Traceability** emite el **Certificado** con su código público y su código QR y lo entrega al **Administrador**.
+7. **Traceability** encola el **Anclaje** pendiente; un proceso en segundo plano envía la **Huella** al **Smart Contract** de la **Red blockchain**.
+8. La **Red blockchain** confirma la transacción y **Traceability** marca el certificado como anclado y avisa al administrador mediante **Notification**.
 
 **Escenario 7:** Verificar un lote mediante el QR
 **Objetivo:** El comprador de supermercado escanea el QR; Traceability recalcula la huella, la compara con la registrada en la blockchain y le presenta el resultado junto con el historial y el resumen de calidad.
 
 ![Domain Message Flow 7](./assets/images/screenshots/domain-message-flow-7.jpg)
 
-*(Elaborar los tres diagramas de Domain Storytelling y exportarlos con los nombres indicados.)*
+**Secuencia de la historia:**
+
+1. El **Comprador** escanea el **código QR** del lote y abre la **Página pública** de verificación.
+2. La **Página pública** solicita la verificación a **Traceability** con el código público.
+3. **Traceability** recalcula la **Huella** del contenido almacenado.
+4. **Traceability** consulta la **Huella registrada** en el **Smart Contract**.
+5. **Traceability** compara ambas huellas y determina si el certificado es válido, alterado o revocado.
+6. El **Comprador** recibe el resultado junto con el historial del lote, el resumen de calidad y el enlace a la prueba en la red.
+
 
 ### 4.2.4. Bounded Context Canvases
 
-> ✍️ **REDACTADO** — Proceso y canvas de Traceability redactados. Falta (herramienta): dibujar el canvas de Traceability y actualizar Telemetry, Payment y los demás. (Tarea C4-10)
 
 ![Telemetry-Canvas](./assets/images/Telemetry-canva.jpg)
+
+![Traceability-Canvas](./assets/images/Traceability-canva.jpg)
 
 ![Notification-Canvas](./assets/images/Notification-canva.jpg)
 
@@ -1794,21 +1804,19 @@ En este sentido, elaboramos los domain storytelling tomando como referencia las 
 | **Strategic Classification** | Core Domain; modelo en evolución; evolución del producto como diferenciador. |
 | **Domain Roles** | Execution context (registra hitos y emite certificados); Specification (aplica la política de emisión). |
 | **Inbound Communication** | Commands: Register Batch, Record Milestone, Register Harvest, Issue Certificate, Revoke Certificate. Queries: Get Batch Timeline, Verify Certificate (pública). Events: Quality Summary Closed y Out Of Range Reading Detected (Telemetry); Trace Entitlement Granted/Revoked (Payment). |
-| **Outbound Communication** | Events: Certificate Issued, Certificate Revoked, Milestone Recorded. Consulta a Telemetry (resúmenes cerrados) mediante Anti-Corruption Layer. Escritura y lectura en el smart contract mediante el puerto de ledger. |
+| **Outbound Communication** | Events: Certificate Issued, Certificate Revoked, Milestone Recorded. Consulta a Telemetry (resúmenes cerrados) y a Equipment (identidad del estanque) mediante Anti-Corruption Layer. Escritura y lectura en el smart contract mediante el puerto de ledger. |
 | **Ubiquitous Language** | Batch, Milestone, Water Quality Summary, Data Coverage, Traceability Certificate, Public Code, Verification, Revocation. |
 | **Business Decisions** | Un solo lote activo por estanque; un certificado por lote; un certificado emitido no se edita, solo se revoca; se requiere TRACE activo, lote cosechado y cobertura de datos mínima. |
 | **Assumptions** | Las lecturas del Edge firmadas son confiables; los compradores verifican desde el celular sin cuenta. |
 | **Verification Metrics** | Porcentaje de lotes piloto con certificado emitido; tiempo de verificación; porcentaje de certificados con anclaje confirmado. |
 | **Open Questions** | Umbral de cobertura de datos para emitir; qué red usar en producción; si el comprador necesitará un portal propio. |
 
-*(Dibujar el canvas de Traceability con este contenido y actualizar los canvases de Telemetry —resúmenes de calidad—, Payment —complemento TRACE— y los demás si cambian sus mensajes.)*
+Los canvases de **Telemetry** (cierre de resúmenes de calidad), **Payment** (complemento TRACE), **Notification** (acciones de emergencia y tiempo de respuesta), **Equipment** e **IAM** se actualizaron para reflejar los mensajes que ahora intercambian con Traceability.
 
 ### 4.2.5. Context Mapping
 
-> ✍️ **REDACTADO** — Relaciones y alternativas nuevas redactadas; párrafo duplicado eliminado. Falta (herramienta): actualizar el diagrama del Context Map si lo tienen. (Tarea C4-11)
 
-
-Para elaborar el Context Mapping de YakuControl, el equipo revisó los cinco Bounded Context Canvases definidos en la etapa de diseño estratégico: **Identity & Access (IAM)**, **Telemetry**, **Notification**, **Equipment** y **Payment**. A partir de esta revisión, se analizaron las dependencias entre contextos, las responsabilidades de cada uno y las posibles alternativas de diseño antes de determinar la estructura final de relaciones.
+Para elaborar el Context Mapping de YakuControl, el equipo revisó los seis Bounded Context Canvases definidos en la etapa de diseño estratégico: **Identity & Access (IAM)**, **Telemetry**, **Notification**, **Equipment**, **Payment** y **Traceability**. A partir de esta revisión, se analizaron las dependencias entre contextos, las responsabilidades de cada uno y las posibles alternativas de diseño antes de determinar la estructura final de relaciones.
 
 #### Proceso de análisis: preguntas de diseño candidato
 
@@ -1828,10 +1836,10 @@ La idea de unir la identidad del usuario con su estado de suscripción podría s
 El Equipment Context gestiona el inventario físico (estanques, sensores, instalaciones), mientras que el Telemetry Context procesa los datos que esos sensores generan. Fusionarlos mezclaría la configuración del hardware con el flujo de datos, violando el principio de responsabilidad única. Se mantienen separados: Equipment provee el contexto físico y Telemetry consume esa información para asociar las métricas al estanque correcto.
 
 **¿Qué pasaría si creamos un Shared Service de notificaciones para centralizar los canales de comunicación del sistema?**
-Tanto el Telemetry Context (alertas críticas por anomalías) como el Equipment Context (notificaciones de mantenimiento) podrían necesitar enviar mensajes al usuario. Centralizar esto en el Notification Context como un servicio compartido es la solución adoptada: ambos contextos publican eventos y el Notification Context se encarga del canal de entrega (push, SMS vía Twilio), evitando duplicación de integraciones externas.
+Tanto el Telemetry Context (alertas críticas por anomalías) como el Equipment Context (notificaciones de mantenimiento) podrían necesitar enviar mensajes al usuario. Centralizar esto en el Notification Context como un servicio compartido es la solución adoptada: ambos contextos publican eventos y el Notification Context se encarga del canal de entrega (push mediante Firebase Cloud Messaging y correo), evitando duplicación de integraciones externas.
 
 **¿Qué pasaría si aislamos los core capabilities de monitoreo y movemos la facturación a un contexto genérico externo?**
-El core de YakuControl son el Telemetry y el Notification Context. El Payment Context es un dominio genérico de soporte que puede delegarse a pasarelas externas como Stripe o Culqi. Aislarlo como contexto genérico es la decisión correcta: si el proveedor de pagos cambia, solo se afecta el Payment Context sin impacto en el core del negocio acuícola.
+El core de YakuControl + YakuTrace son los contextos Telemetry, Notification y Traceability. El Payment Context es un dominio genérico de soporte que puede delegarse a pasarelas externas como Stripe o Culqi. Aislarlo como contexto genérico es la decisión correcta: si el proveedor de pagos cambia, solo se afecta el Payment Context sin impacto en el core del negocio acuícola.
 
 ---
 
@@ -1847,17 +1855,20 @@ Acoplaría el dominio a una red concreta y haría que su caída bloquee la emisi
 
 #### Relaciones entre Bounded Contexts y patrones DDD aplicados
 
-Tras el análisis de alternativas, se definió el siguiente mapa de relaciones para YakuControl:
+Tras el análisis de alternativas, se definió el siguiente mapa de relaciones para YakuControl + YakuTrace. En el diagrama, cada flecha va del contexto *upstream* (U) al *downstream* (D) e indica el patrón aplicado.
+
+![Context Map](./assets/images/context-map.png)
 
 | Contexto Upstream (U) | Contexto Downstream (D) | Patrón de Relación | Descripción |
 | :--- | :--- | :--- | :--- |
 | **Identity & Access (IAM)** | **Telemetry** | Open Host Service (OHS) + ACL | El IAM Context expone un servicio de validación de tokens JWT y llaves de granja. El Telemetry Context implementa una Anti-Corruption Layer para traducir la identidad del dispositivo sin depender del modelo interno del IAM. |
-| **Identity & Access (IAM)** | **Notification** | Open Host Service (OHS) | El IAM Context provee los tokens de dispositivo y datos de contacto necesarios para que el Notification Context dirija las alertas al usuario correcto. El Notification Context consume este servicio sin modificar su modelo. |
+| **Identity & Access (IAM)** | **Notification** | Open Host Service (OHS) | El IAM Context publica la emisión de invitaciones a operarios (US10) y expone los datos de contacto necesarios para que el Notification Context dirija las alertas al usuario correcto. El Notification Context consume este servicio sin modificar su modelo. |
 | **Identity & Access (IAM)** | **Equipment** | Open Host Service (OHS) | El Equipment Context consulta al IAM para verificar que el usuario tiene permisos (ROLE_ADMIN) para registrar o modificar estanques y sensores. |
 | **Identity & Access (IAM)** | **Payment** | Customer/Supplier | El Payment Context (cliente) depende del IAM (proveedor) para obtener la identidad del usuario al momento de procesar una suscripción. El IAM tiene influencia sobre el modelo del Payment Context. |
 | **Equipment** | **Telemetry** | Customer/Supplier | El Equipment Context (proveedor) mantiene el registro de qué sensor está vinculado a qué estanque. El Telemetry Context (cliente) consume esta información para asociar correctamente cada métrica recibida con su estanque y especie correspondiente. |
-| **Telemetry** | **Notification** | Customer/Supplier | El Telemetry Context (proveedor) emite eventos de anomalía cuando una métrica validada supera el umbral crítico del OptimalRange. El Notification Context (cliente) consume estos eventos para disparar alertas push o SMS de forma inmediata. |
+| **Telemetry** | **Notification** | Customer/Supplier | El Telemetry Context (proveedor) emite eventos de anomalía cuando una métrica validada supera el umbral crítico del OptimalRange. El Notification Context (cliente) consume estos eventos para disparar alertas push o por correo de forma inmediata. |
 | **Equipment** | **Notification** | Customer/Supplier | El Equipment Context (proveedor) publica eventos de mantenimiento cuando un sensor queda fuera de línea o un estanque requiere atención técnica. El Notification Context (cliente) consume estos eventos para alertar al administrador de la piscigranja a través del canal correspondiente. |
+| **Notification** | **Telemetry** | Customer/Supplier (eventos) | Notification (proveedor) publica `AlertAttendedEvent` cuando el piscicultor atiende una alerta; Telemetry (cliente) registra el tiempo de respuesta para incluirlo en el resumen de calidad (US16). |
 | **Payment** | **Identity & Access (IAM)** | Conformist | Una vez procesado el pago, el Payment Context notifica al IAM el estado activo de la suscripción. El IAM adopta esta información para habilitar o restringir el acceso de la granja a la plataforma, conformándose al modelo del Payment Context sin transformarlo. |
 | **Telemetry** | **Traceability** | Customer/Supplier + Anti-Corruption Layer | Telemetry (proveedor) cierra y publica los resúmenes de calidad del agua; Traceability (cliente) los consume mediante una ACL (`TelemetrySummaryPort`) sin depender del modelo interno de Telemetry. |
 | **Equipment** | **Traceability** | Customer/Supplier | Equipment (proveedor) mantiene la identidad del estanque; Traceability (cliente) la usa para asociar cada lote a un estanque de una granja. |
@@ -1869,13 +1880,9 @@ Tras el análisis de alternativas, se definió el siguiente mapa de relaciones p
 
 #### Conclusión del Context Mapping
 
+El mapa de contextos resultante posiciona a **Identity & Access (IAM)** como el contexto genérico que provee autenticación y aislamiento por granja a los demás. **Equipment** define la realidad física de la piscigranja y **Telemetry** la convierte en datos de valor y en resúmenes de calidad cerrados. **Notification** materializa la reacción inmediata ante condiciones críticas (alertas y acciones de emergencia) y **Traceability** convierte esos resúmenes en evidencia verificable para el comprador mediante el anclaje de huellas en una blockchain; junto con Telemetry, ambos conforman el núcleo (Core) de YakuControl + YakuTrace. Finalmente, **Payment** opera como contexto genérico delegado a servicios externos que, además de la suscripción, habilita el complemento TRACE.
 
-El mapa de contextos resultante posiciona a **Identity & Access (IAM)** como el contexto genérico central que provee seguridad y autenticación a todos los demás. **Telemetry** e **Equipment** constituyen el núcleo operativo del sistema: Equipment define la realidad física de la piscigranja y Telemetry la convierte en datos de valor. **Notification** es el contexto core que materializa la propuesta de valor diferenciadora de YakuControl: la reacción autónoma e inmediata ante condiciones críticas del agua. Finalmente, **Payment** opera como contexto genérico de soporte de negocio, delegado a servicios externos, con mínima interferencia sobre el dominio acuícola.
-
-El mapa de contextos resultante posiciona a **Identity & Access (IAM)** como el contexto genérico central que provee seguridad y autenticación a todos los demás. **Telemetry** y **Equipment** constituyen el núcleo operativo del sistema: Equipment define la realidad física de la piscigranja y Telemetry la convierte en datos de valor. **Notification** es el contexto core que materializa la propuesta de valor diferenciadora de YakuControl: la reacción autónoma e inmediata ante condiciones críticas del agua. Finalmente, **Payment** opera como contexto genérico de soporte de negocio, delegado a servicios externos, con mínima interferencia sobre el dominio acuícola.
-
-
-Esta arquitectura garantiza que los cambios en la lógica de pagos o notificaciones no afecten el core del monitoreo, y que cada contexto pueda evolucionar, testearse y desplegarse de forma independiente.
+Los pares Telemetry–Notification, Telemetry–Equipment y Payment–IAM se relacionan en ambos sentidos, pero cada sentido usa un evento o una consulta distinta, por lo que no existe una dependencia circular de código entre los módulos. Esta organización permite que los cambios en el proveedor de pagos o en la red blockchain no afecten al core de monitoreo y trazabilidad, y que cada módulo evolucione y se pruebe de forma independiente; si en el futuro un contexto debiera escalar por separado, los eventos en proceso pueden externalizarse sin modificar el dominio.
 
 <div style="page-break-after: always;"></div>
 
@@ -1911,7 +1918,7 @@ El diagrama de contenedores muestra los elementos de alto nivel de la solución 
 | Web App | Angular, Angular Material | Panel del administrador y página pública de verificación de certificados. |
 | Mobile App | Flutter | App del piscicultor: lecturas, alertas y control de actuadores (offline-first). |
 | Backend | Java, Spring Boot | API RESTful con los contextos IAM, Equipment, Telemetry, Notification, Payment y Traceability; eventos de dominio en proceso. |
-| Base de datos | PostgreSQL + TimescaleDB | Un esquema por Bounded Context y serie temporal para las lecturas. |
+| Base de datos | PostgreSQL + TimescaleDB (edición Apache 2) | Un esquema por Bounded Context y serie temporal para las lecturas. |
 | Edge API | Python, Flask, Mosquitto | Recibe telemetría por MQTT, calcula el ICA, filtra falsos positivos, firma y reenvía las lecturas, y ejecuta órdenes de actuadores. |
 | Dispositivo IoT | Arduino UNO (C++) | Sensores y actuadores; evalúa umbrales críticos localmente. |
 | Smart Contract | Solidity (EVM) | Registra y consulta huellas de hitos y certificados por lote. |
@@ -2890,7 +2897,7 @@ El flujo de navegación es coherente entre la versión web y móvil, garantizand
 
 > ✍️ **REDACTADO** — CTA por segmento redactados.
 
-En esta sección se detalla el diseño de la interfaz de usuario para la Landing Page de YakuControl, la cual constituye el principal canal de captación B2B y presencia digital de la startup AcuaNode. El diseño está orientado a comunicar de manera efectiva la propuesta de valor de la solución, destacando beneficios como la reducción de mortalidad de truchas y el monitoreo IoT en tiempo real para atraer a potenciales administradores de piscigranjas.
+En esta sección se detalla el diseño de la interfaz de usuario para la Landing Page de YakuControl, la cual constituye el principal canal de captación B2B y presencia digital de la startup Verifish. El diseño está orientado a comunicar de manera efectiva la propuesta de valor de la solución, destacando beneficios como la reducción de mortalidad de truchas y el monitoreo IoT en tiempo real para atraer a potenciales administradores de piscigranjas.
 
 ### 6.3.1. Landing Page Wireframe
 
@@ -2900,7 +2907,7 @@ Se presentan los wireframes de baja fidelidad para la Landing Page, enfocándose
 
 | Vista Previa Desktop Web Browser | Vista Previa Mobile Web Browser |
 |----------------------------------|----------------------------------|
-| <img src="assets/disenoux/LandingDesktopWireframe.png" alt="wireframe1" /> | <img src="assets/disenoux/LandingPhoneWireframe.png" alt="wireframe2" />
+| <img src="assets/disenoux/LandingDesktopWireframe.png" alt="wireframe1" /> | <img src="assets/disenoux/LandingPhoneWireframe.png" alt="wireframe2" /> |
 
 Link Figma: https://www.figma.com/design/FdwCU88zpBqlCuHjQ9iY69/YacuControl?node-id=0-1&t=pGGdjtmP24aklmtz-1
 
@@ -2925,7 +2932,7 @@ En mobile las secciones se apilan en una sola columna, la navegación pasa a men
 El Mock-up de alta fidelidad para la Landing Page materializa las guías de estilo del proyecto en una interfaz visual acabada. Este diseño incorpora los elementos gráficos, tipografía y paleta de colores del sistema para transmitir profesionalismo y confianza, facilitando la visualización final de cómo los clientes interactuarán con la plataforma antes de su implementación.
 | Vista Previa Desktop Web Browser | Vista Previa Mobile Web Browser |
 |----------------------------------|----------------------------------|
-| <img src="assets/disenoux/LandingDesktopMockup.png" alt="Mockup1" /> | <img src="assets/disenoux/LandingPhoneMockup.png" alt="Mockup2" />
+| <img src="assets/disenoux/LandingDesktopMockup.png" alt="Mockup1" /> | <img src="assets/disenoux/LandingPhoneMockup.png" alt="Mockup2" /> |
 
 Link Figma: https://www.figma.com/design/FdwCU88zpBqlCuHjQ9iY69/YacuControl?node-id=0-1&t=pGGdjtmP24aklmtz-1
 
