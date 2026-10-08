@@ -1192,8 +1192,6 @@ Esta sección presenta el escenario futuro de cada User Persona una vez que util
 
 ## 3.2. User Stories
 
-> ✅ **COMPLETO** — Cuadro único con 5 épicas, 27 US y 9 TS, criterios en Gherkin sin UI; revisado (US07, US11, US12, US14, US21). (Tarea C3-2)
-
 
 Los requisitos de YakuControl + YakuTrace se organizan en cinco épicas y un conjunto de User Stories y Technical Stories. Las historias de usuario se redactan con el formato *"Como… deseo… para…"* y sus criterios de aceptación siguen la estructura Gherkin (*Given–When–Then*), en tiempo presente, tercera persona y sin referencias a la interfaz. Las historias del sitio estático (Landing Page) usan el rol *visitante*, y las Technical Stories de servicios sin interacción directa con el usuario usan el rol *developer*. La épica **EP05** incorpora la trazabilidad con blockchain.
 
@@ -1283,8 +1281,6 @@ En esta sección hemos elaborado nuestro Impact Mapping. Para ello, utilizamos l
 
 ## 3.4. Product Backlog
 
-> ✍️ **REDACTADO** — Backlog ordenado por valor y por dependencias, con estimaciones (126 puntos). Falta: crear el tablero **Trello** igual que la tabla (script `trello_import.py`), hacerlo público, la captura y actualizar la URL. (Tarea C3-4)
-
 
 El Product Backlog se ordena por **valor para el negocio**. El criterio aplicado fue: (1) presencia digital y Landing Page desde el primer sprint; (2) el valor central de monitoreo (ingesta, lectura y alertas), que reduce la mortalidad; (3) el diferenciador YakuTrace (lotes, resúmenes, certificado, anclaje y verificación); (4) control operativo y monetización; y (5) funciones administrativas y de apoyo. Las historias de seguridad y autenticación no se priorizan al inicio por sí mismas: se ordenan según el valor que habilitan y se ubican justo antes de la primera historia que las necesita. Por esa misma razón de dependencias, TS02 (JWT), US05 (autenticación) y US15 (registro de estanque) preceden a la ingesta y a la lectura de sensores (TS01, TS04, US06); el pago (US14) y el complemento TRACE (US19) preceden a la emisión de certificados (US24); y el registro de la cosecha (US23) precede a su certificado. Las estimaciones usan la escala 1/2/3/5/8 y suman 126 puntos en total.
 
@@ -1337,8 +1333,6 @@ El Product Backlog se ordena por **valor para el negocio**. El criterio aplicado
 ## 4.1. Strategic-Level Attribute-Driven Design
 ### 4.1.1. Design Purpose
 
-> ✍️ **REDACTADO** — Redactado.
-
 
 El presente diseño arquitectónico corresponde a **YakuControl + YakuTrace**, producto de la startup **Verifish**. Es un sistema *greenfield* en su capa de trazabilidad y evolutivo en su capa de monitoreo, cuyo propósito es definir la arquitectura que soportará el MVP descrito en el Product Backlog: la ingesta y validación de telemetría IoT (pH, temperatura y turbidez), la emisión de alertas críticas y el control remoto de actuadores, la gestión de la suscripción SaaS y, como novedad de este ciclo, la **emisión de certificados de trazabilidad verificables mediante blockchain**.
 
@@ -1354,8 +1348,6 @@ El alcance abarca el hardware Edge, un **backend en monolito modular** organizad
 
 ### 4.1.2. Attribute-Driven Design Inputs
 #### 4.1.2.1. Primary Functionality (Primary User Stories)
-
-> ✍️ **REDACTADO** — Redactado.
 
 
 Del Product Backlog (sección 3.4) se seleccionaron como **funcionalidad primaria** las historias con mayor impacto sobre la arquitectura: aquellas que ejercitan el flujo central de valor (ingesta de telemetría, alertas, control de actuadores), el modelo de negocio (pago y complemento TRACE) y la trazabilidad (emisión de certificados, anclaje, verificación pública y cierre de resúmenes). En conjunto involucran a los seis Bounded Contexts. Por brevedad se muestra el escenario principal de cada historia; el detalle completo está en la sección 3.2.
@@ -1379,8 +1371,6 @@ Del Product Backlog (sección 3.4) se seleccionaron como **funcionalidad primari
 
 #### 4.1.2.2. Quality Attribute Scenarios
 
-> ✅ **COMPLETO** — 9 escenarios con ID QA-01…QA-09. (Tarea C4-1)
-
 
 Se formalizó la primera versión de los escenarios de atributos de calidad con mayor impacto en la arquitectura: disponibilidad en el borde, rendimiento de alertas, seguridad multi-tenant y, con YakuTrace, integridad de certificados, rendimiento de la verificación, disponibilidad del anclaje y modificabilidad del ledger, además de escalabilidad y usabilidad.
 
@@ -1397,8 +1387,6 @@ Se formalizó la primera versión de los escenarios de atributos de calidad con 
 | **QA-09 · Usabilidad** | Piscicultor con bajo nivel de digitalización | Necesita activar un aireador tras recibir una alerta | Aplicación móvil | Condiciones de campo bajo presión de tiempo | El usuario ejecuta la acción desde la propia alerta con un control directo | Acción completada en máximo 2 toques; 90% de los usuarios de prueba la ejecutan sin capacitación |
 
 #### 4.1.2.3. Constraints
-
-> ✍️ **REDACTADO** — Redactado como Technical Stories (TC01–TC12).
 
 
 Las restricciones son condiciones no negociables impuestas por el negocio, el curso o el contexto técnico. Se expresan como Technical Stories para que cada una tenga un criterio de aceptación comprobable. Respecto de la versión anterior se actualizó el tamaño del equipo (5 integrantes), se corrigió la tecnología de la Web App (Angular) y se agregaron las restricciones propias de Web3, internacionalización y servicios de terceros.
@@ -1419,8 +1407,6 @@ Las restricciones son condiciones no negociables impuestas por el negocio, el cu
 | **TC12** | Landing Page en HTML5, CSS3 y JavaScript | Como equipo, debemos desarrollar la Landing Page con HTML5, CSS3 y JavaScript, con consistencia visual con las aplicaciones. | **Escenario 1**<br>**Given** un visitante usa un llamado a la acción<br>**When** se redirige<br>**Then** llega a la vista correspondiente de la Web App o al sitio de descarga de la app | EP01 |
 
 ### 4.1.3. Architectural Drivers Backlog
-
-> ✍️ **REDACTADO** — Redactado.
 
 
 El Architectural Drivers Backlog consolida los Functional Drivers (sección 4.1.2.1), los Quality Attribute Drivers (4.1.2.2) y todos los Constraints (4.1.2.3). Resultó de un Quality Attribute Workshop en el que el equipo presentó los objetivos de negocio, propuso y consolidó escenarios y los priorizó por **importancia para los stakeholders** y por **impacto en la complejidad técnica de la arquitectura**. Los drivers de importancia alta e impacto alto se ubican primero y concentran las decisiones de la primera iteración.
@@ -1450,8 +1436,6 @@ El Architectural Drivers Backlog consolida los Functional Drivers (sección 4.1.
 | **TC01 / TC07** | Costo y calendario | Bajo costo de infraestructura y fechas de entrega fijas. | Medium | Low |
 
 ### 4.1.4. Architectural Design Decisions
-
-> ✅ **COMPLETO** — Iteraciones QAW, matriz de patrones y AD-01…AD-14. (Tarea C4-1)
 
 
 Las decisiones se tomaron siguiendo los *stages* del **Quality Attribute Workshop**: (1) presentación del QAW y de los objetivos de negocio; (2) presentación del plan arquitectónico; (3) lluvia de ideas de escenarios; (4) consolidación; (5) priorización y (6) refinamiento de los escenarios. El diseño se realizó en tres iteraciones:
@@ -1495,8 +1479,6 @@ La **Candidate Pattern Evaluation Matrix** resume los patrones candidatos evalua
 Estas decisiones constituyen la base estructural para refinar los escenarios de calidad (sección 4.1.5) y para el modelado estratégico de Domain-Driven Design (sección 4.2).
 
 ### 4.1.5. Quality Attribute Scenario Refinements
-
-> ✍️ **REDACTADO** — Redactado (6 tablas).
 
 
 Se refinaron los seis escenarios de mayor prioridad al finalizar el Quality Attribute Workshop. Las decisiones principales que resultaron fueron: ejecutar la lógica crítica en el borde (Edge Computing), comunicar los contextos mediante eventos en proceso, anclar solo huellas en blockchain con una cola de reintentos y verificar en el servidor con enlace a la prueba on-chain. Cada escenario se presenta en orden de prioridad.
@@ -1588,8 +1570,6 @@ Se refinaron los seis escenarios de mayor prioridad al finalizar el Quality Attr
 ## 4.2. Strategic-Level Domain-Driven Design
 ### 4.2.1. EventStorming
 
-> ✅ **COMPLETO (borrador gráfico)** — Extensión de YakuTrace redactada y tablero resumen generado (`eventstorming-yakutrace.png`). Opcional: replicarlo en **Miro** y recapturar los pasos. (Tarea C4-7)
-
 
 En esta sección se detalla la aplicación del EventStorming como herramienta estratégica del Domain-Driven Design (DDD). El objetivo es mapear los eventos de dominio que articulan el ecosistema de **YakuControl**, permitiendo identificar los límites de los futuros Bounded Contexts y las interacciones clave entre los actores. Este enfoque garantiza que la arquitectura de software esté alineada con las reglas de negocio de la acuicultura inteligente y sea capaz de escalar de forma modular.
 
@@ -1669,8 +1649,6 @@ Los elementos de la extensión se agruparon en el tablero según los seis contex
 
 ### 4.2.2. Candidate Context Discovery
 
-> ✅ **COMPLETO** — Traceability agregado, Notification corregido y matriz `cantidatecontext.png` actualizada. (Tarea C4-8)
-
 
 En esta sección se presenta el proceso seguido por el equipo para la identificación y clasificación de los **Bounded Contexts** candidatos a partir del Event Storming de **YakuControl**. El objetivo fue identificar los límites naturales del dominio IoT, determinar qué partes del sistema constituyen el núcleo estratégico (Core) y cuáles cumplen roles de apoyo, priorizando el diseño en los elementos que garantizan la supervivencia de la producción acuícola.
 
@@ -1724,8 +1702,6 @@ Se definieron **seis bounded contexts candidatos**, clasificados así:
 La técnica **Start-with-Value** permitió concentrar la atención del diseño táctico y de la inversión tecnológica en **Telemetría, Automatización y Trazabilidad**, donde reside la propuesta de valor diferenciadora de YakuControl + YakuTrace.
 
 ### 4.2.3. Domain Message Flows Modeling
-
-> ✅ **COMPLETO** — Escenarios 5–7 redactados con su secuencia y diagramas generados. (Tarea C4-9)
 
 
 El Domain Storytelling es una técnica visual y colaborativa que facilita la exploración del conocimiento dentro del dominio del negocio, cuyo propósito principal es generar una comprensión común sobre lo que se desarrolla en un proceso específico, involucrando tanto a los expertos del negocio como a los equipos técnicos.
@@ -1801,7 +1777,6 @@ En este sentido, elaboramos los domain storytelling tomando como referencia las 
 
 ### 4.2.4. Bounded Context Canvases
 
-> ✅ **COMPLETO** — Seis canvases generados (Traceability nuevo; los demás actualizados). (Tarea C4-10)
 
 ![Telemetry-Canvas](./assets/images/Telemetry-canva.jpg)
 
@@ -1839,8 +1814,6 @@ En este sentido, elaboramos los domain storytelling tomando como referencia las 
 Los canvases de **Telemetry** (cierre de resúmenes de calidad), **Payment** (complemento TRACE), **Notification** (acciones de emergencia y tiempo de respuesta), **Equipment** e **IAM** se actualizaron para reflejar los mensajes que ahora intercambian con Traceability.
 
 ### 4.2.5. Context Mapping
-
-> ✅ **COMPLETO** — 16 relaciones, alternativas nuevas, conclusión corregida y diagrama `context-map.png`. (Tarea C4-11)
 
 
 Para elaborar el Context Mapping de YakuControl, el equipo revisó los seis Bounded Context Canvases definidos en la etapa de diseño estratégico: **Identity & Access (IAM)**, **Telemetry**, **Notification**, **Equipment**, **Payment** y **Traceability**. A partir de esta revisión, se analizaron las dependencias entre contextos, las responsabilidades de cada uno y las posibles alternativas de diseño antes de determinar la estructura final de relaciones.
@@ -2934,7 +2907,7 @@ Se presentan los wireframes de baja fidelidad para la Landing Page, enfocándose
 
 | Vista Previa Desktop Web Browser | Vista Previa Mobile Web Browser |
 |----------------------------------|----------------------------------|
-| <img src="assets/disenoux/LandingDesktopWireframe.png" alt="wireframe1" /> | <img src="assets/disenoux/LandingPhoneWireframe.png" alt="wireframe2" />
+| <img src="assets/disenoux/LandingDesktopWireframe.png" alt="wireframe1" /> | <img src="assets/disenoux/LandingPhoneWireframe.png" alt="wireframe2" /> |
 
 Link Figma: https://www.figma.com/design/FdwCU88zpBqlCuHjQ9iY69/YacuControl?node-id=0-1&t=pGGdjtmP24aklmtz-1
 
@@ -2959,7 +2932,7 @@ En mobile las secciones se apilan en una sola columna, la navegación pasa a men
 El Mock-up de alta fidelidad para la Landing Page materializa las guías de estilo del proyecto en una interfaz visual acabada. Este diseño incorpora los elementos gráficos, tipografía y paleta de colores del sistema para transmitir profesionalismo y confianza, facilitando la visualización final de cómo los clientes interactuarán con la plataforma antes de su implementación.
 | Vista Previa Desktop Web Browser | Vista Previa Mobile Web Browser |
 |----------------------------------|----------------------------------|
-| <img src="assets/disenoux/LandingDesktopMockup.png" alt="Mockup1" /> | <img src="assets/disenoux/LandingPhoneMockup.png" alt="Mockup2" />
+| <img src="assets/disenoux/LandingDesktopMockup.png" alt="Mockup1" /> | <img src="assets/disenoux/LandingPhoneMockup.png" alt="Mockup2" /> |
 
 Link Figma: https://www.figma.com/design/FdwCU88zpBqlCuHjQ9iY69/YacuControl?node-id=0-1&t=pGGdjtmP24aklmtz-1
 
