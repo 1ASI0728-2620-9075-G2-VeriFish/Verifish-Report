@@ -1323,7 +1323,7 @@ El Product Backlog se ordena por **valor para el negocio**. El criterio aplicado
 | **35** | **US03** | Preguntas frecuentes | Como visitante, deseo consultar preguntas frecuentes para resolver mis dudas básicas. | **1** |
 | **36** | **TS09** | Documentación OpenAPI | Como developer, deseo documentar los endpoints con OpenAPI para facilitar su uso e integración. | **2** |
 
-**Link Trello:** https://trello.com/invite/b/69ddbac5fb1fb4d9bc57783e/ATTI6aaf075e45566d05489c8cee7f6e22a5D24DC29E/yaku
+**Link Trello:** https://trello.com/invite/b/6ac7ef560e7a24aba89be174/ATTI780f9093bca7b5df991145c8fafa33f7BE95751C/yakucontrol-product-backlog
 
 ![Product Backlog en Trello](./assets/images/product-backlog-trello.png)
 
