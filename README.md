@@ -1,3 +1,18 @@
+> ## 🧭 GUÍA INTERNA DEL EQUIPO — BORRAR ANTES DE EXPORTAR A PDF
+>
+> Este archivo es el **esqueleto del informe TP1** (Cap. I–VI, hasta **6.4.2 Applications Wireflow Diagrams**) según el enunciado de 1ASI0728 (ciclo 202620). El contenido es el que ya existía (reporte TB1 para Cap. I–IV; reporte de IoT como base para Cap. V y VI): **no se editó**, solo se reordenó, se quitó lo que no se pide y se marcó lo que debe cambiar.
+>
+> | Marca | Significado |
+> | :--- | :--- |
+> | 🔴 **CAMBIAR** | El contenido existe pero debe modificarse (blockchain, segmento nuevo o inconsistencia). |
+> | 🟡 **AJUSTAR AL ENUNCIADO** | El contenido existe pero no cumple formato/regla del enunciado. |
+> | 🟢 **NUEVO** | Falta completamente: hay que crearlo. |
+> | 🔵 **BASE / REUTILIZAR** | Viene de otro reporte (IoT/Fundamentos) como punto de partida. |
+>
+> Cada marca indica la tarea correspondiente en `PENDIENTES_TP1.md` (p. ej. *Tarea C2-4*). Para limpiar antes de exportar: borrar todas las líneas que empiecen con `> 🔴`, `> 🟡`, `> 🟢`, `> 🔵`, `> ⚪` (y sus líneas `>` siguientes) y este bloque.
+>
+> **Quitado respecto a TB1:** sección "Objetivos Smart" (no la pide el enunciado), "2.4 Big Picture EventStorming" (duplicada con 4.2.1) y la tabla de contenido anterior (se regeneró a 4 niveles). **Fuera de alcance de TP1:** Cap. VII, Mock-ups, User Flows, Prototyping, Videos About-the-Product/About-the-Team.
+
 <div style="text-align: center;">
   <img src="./assets/images/logo_upc.png" alt="Logo UPC" width="80"/>
 </div>
@@ -59,7 +74,13 @@
 
 <div style="page-break-after: always;"></div>
 
+> 🟡 **AJUSTAR AL ENUNCIADO** — Verificar: **mes y año** de la carátula (hoy solo dice "Período 202620"), sección/NRC, nombre del profesor y los códigos de estudiante. Todo lo demás cumple (universidad, carrera, ciclo, curso, "Informe de Trabajo Final", startup, producto, integrantes). (Tarea TR-02)
+
 ### Registro de Versiones del Informe
+
+> 🟡 **AJUSTAR AL ENUNCIADO** — Agregar las filas de TP1 (6.0, 7.0, …). Cada cambio relevante (secciones nuevas/eliminadas, correcciones por feedback de TB1, mejoras por autocrítica) va en una fila con fecha, autor y descripción, y debe ser coherente con los commits y con "Collaboration Insights".
+> Las filas 2.0–5.0 usan nombres de capítulos antiguos ("Presentación del proyecto", "Diseño y arquitectura"): alinearlos a los nombres del enunciado. (Tarea TR-02)
+
 
 | Versión | Fecha | Autor | Descripción de modificación |
 | :--- | :--- | :--- | :--- |
@@ -72,6 +93,9 @@
 <div style="page-break-after: always;"></div>
 
 # Project Report Collaboration Insights
+
+> 🟡 **AJUSTAR AL ENUNCIADO** — Agregar una sección **## TP1** con: tareas por integrante (según votación), cómo se trabajó (ramas por capítulo, PRs, revisiones) y capturas nuevas de Insights (Contributors, Commits, Network). Todos los integrantes deben tener commits. Las capturas actuales (imgur) son de TB1: conservarlas bajo "## TB1" y migrarlas a `./assets/` para no depender de enlaces externos. (Tarea TR-02)
+
 
 En esta sección se presenta un resumen de las actividades de colaboración realizadas para la elaboración del informe del proyecto.
 
@@ -133,6 +157,10 @@ Iniciando actividades el **10/09/2026**, el equipo distribuyó las responsabilid
 
 # Contenido
 
+> 🟡 **AJUSTAR AL ENUNCIADO** — Tabla de contenido regenerada con hipervínculos Markdown y **4 niveles** (Capítulo / x.y / x.y.z / x.y.z.w). Verificar enlaces y regenerar antes de cada entrega (si cambian títulos, cambian los anclajes). (Tarea TR-09)
+
+- [Student Outcome](#student-outcome)
+
 ### Capítulo I: Introducción
 - [1.1. Startup Profile](#11-startup-profile)
   - [1.1.1. Descripción de la Startup](#111-descripción-de-la-startup)
@@ -157,15 +185,15 @@ Iniciando actividades el **10/09/2026**, el equipo distribuyó las responsabilid
 - [2.3. Needfinding](#23-needfinding)
   - [2.3.1. User Personas](#231-user-personas)
   - [2.3.2. User Task Matrix](#232-user-task-matrix)
-  - [2.3.3. User Journey Mapping](#233-user-journey-mapping)
-  - [2.3.4. Empathy Mapping](#234-empathy-mapping)
-- [2.4. Big Picture EventStorming](#24-big-picture-eventstorming)
-- [2.5. Ubiquitous Language](#25-ubiquitous-language)
+  - [2.3.3. Empathy Mapping](#233-empathy-mapping)
+  - [2.3.4. As-is Scenario Mapping](#234-as-is-scenario-mapping)
+- [2.4. Ubiquitous Language](#24-ubiquitous-language)
 
 ### Capítulo III: Requirements Specification
-- [3.1. User Stories](#31-user-stories)
-- [3.2. Impact Mapping](#32-impact-mapping)
-- [3.3. Product Backlog](#33-product-backlog)
+- [3.1. To-Be Scenario Mapping](#31-to-be-scenario-mapping)
+- [3.2. User Stories](#32-user-stories)
+- [3.3. Impact Mapping](#33-impact-mapping)
+- [3.4. Product Backlog](#34-product-backlog)
 
 ### Capítulo IV: Strategic-Level Software Design
 - [4.1. Strategic-Level Attribute-Driven Design](#41-strategic-level-attribute-driven-design)
@@ -188,13 +216,103 @@ Iniciando actividades el **10/09/2026**, el equipo distribuyó las responsabilid
   - [4.3.2. Software Architecture Context Level Diagrams](#432-software-architecture-context-level-diagrams)
   - [4.3.3. Software Architecture Container Level Diagrams](#433-software-architecture-container-level-diagrams)
   - [4.3.4. Software Architecture Deployment Diagrams](#434-software-architecture-deployment-diagrams)
-- [Conclusiones](#conclusiones)
-- [Bibliografía](#bibliografia)
-- [Anexos](#anexos)
 
+### Capítulo V: Tactical-Level Software Design
+- [5.1. Bounded Context: Telemetry Context](#51-bounded-context-telemetry-context)
+  - [5.1.1. Domain Layer](#511-domain-layer)
+  - [5.1.2. Interface Layer](#512-interface-layer)
+  - [5.1.3. Application Layer](#513-application-layer)
+  - [5.1.4. Infrastructure Layer](#514-infrastructure-layer)
+  - [5.1.5. Bounded Context Software Architecture Component Level Diagrams](#515-bounded-context-software-architecture-component-level-diagrams)
+  - [5.1.6. Bounded Context Software Architecture Code Level Diagrams](#516-bounded-context-software-architecture-code-level-diagrams)
+    - [5.1.6.1. Bounded Context Domain Layer Class Diagrams](#5161-bounded-context-domain-layer-class-diagrams)
+    - [5.1.6.2. Bounded Context Database Design Diagram](#5162-bounded-context-database-design-diagram)
+- [5.2. Bounded Context: Traceability Context](#52-bounded-context-traceability-context)
+  - [5.2.1. Domain Layer](#521-domain-layer)
+  - [5.2.2. Interface Layer](#522-interface-layer)
+  - [5.2.3. Application Layer](#523-application-layer)
+  - [5.2.4. Infrastructure Layer](#524-infrastructure-layer)
+  - [5.2.5. Bounded Context Software Architecture Component Level Diagrams](#525-bounded-context-software-architecture-component-level-diagrams)
+  - [5.2.6. Bounded Context Software Architecture Code Level Diagrams](#526-bounded-context-software-architecture-code-level-diagrams)
+    - [5.2.6.1. Bounded Context Domain Layer Class Diagrams](#5261-bounded-context-domain-layer-class-diagrams)
+    - [5.2.6.2. Bounded Context Database Design Diagram](#5262-bounded-context-database-design-diagram)
+- [5.3. Bounded Context: Equipment Context](#53-bounded-context-equipment-context)
+  - [5.3.1. Domain Layer](#531-domain-layer)
+  - [5.3.2. Interface Layer](#532-interface-layer)
+  - [5.3.3. Application Layer](#533-application-layer)
+  - [5.3.4. Infrastructure Layer](#534-infrastructure-layer)
+  - [5.3.5. Bounded Context Software Architecture Component Level Diagrams](#535-bounded-context-software-architecture-component-level-diagrams)
+  - [5.3.6. Bounded Context Software Architecture Code Level Diagrams](#536-bounded-context-software-architecture-code-level-diagrams)
+    - [5.3.6.1. Bounded Context Domain Layer Class Diagrams](#5361-bounded-context-domain-layer-class-diagrams)
+    - [5.3.6.2. Bounded Context Database Design Diagram](#5362-bounded-context-database-design-diagram)
+- [5.4. Bounded Context: IAM Context](#54-bounded-context-iam-context)
+  - [5.4.1. Domain Layer](#541-domain-layer)
+  - [5.4.2. Interface Layer](#542-interface-layer)
+  - [5.4.3. Application Layer](#543-application-layer)
+  - [5.4.4. Infrastructure Layer](#544-infrastructure-layer)
+  - [5.4.5. Bounded Context Software Architecture Component Level Diagrams](#545-bounded-context-software-architecture-component-level-diagrams)
+  - [5.4.6. Bounded Context Software Architecture Code Level Diagrams](#546-bounded-context-software-architecture-code-level-diagrams)
+    - [5.4.6.1. Bounded Context Domain Layer Class Diagrams](#5461-bounded-context-domain-layer-class-diagrams)
+    - [5.4.6.2. Bounded Context Database Design Diagram](#5462-bounded-context-database-design-diagram)
+- [5.5. Bounded Context: Notification Context](#55-bounded-context-notification-context)
+  - [5.5.1. Domain Layer](#551-domain-layer)
+  - [5.5.2. Interface Layer](#552-interface-layer)
+  - [5.5.3. Application Layer](#553-application-layer)
+  - [5.5.4. Infrastructure Layer](#554-infrastructure-layer)
+  - [5.5.5. Bounded Context Software Architecture Component Level Diagrams](#555-bounded-context-software-architecture-component-level-diagrams)
+  - [5.5.6. Bounded Context Software Architecture Code Level Diagrams](#556-bounded-context-software-architecture-code-level-diagrams)
+    - [5.5.6.1. Bounded Context Domain Layer Class Diagrams](#5561-bounded-context-domain-layer-class-diagrams)
+    - [5.5.6.2. Bounded Context Database Design Diagram](#5562-bounded-context-database-design-diagram)
+- [5.6. Bounded Context: Payment Context](#56-bounded-context-payment-context)
+  - [5.6.1. Domain Layer](#561-domain-layer)
+  - [5.6.2. Interface Layer](#562-interface-layer)
+  - [5.6.3. Application Layer](#563-application-layer)
+  - [5.6.4. Infrastructure Layer](#564-infrastructure-layer)
+  - [5.6.5. Bounded Context Software Architecture Component Level Diagrams](#565-bounded-context-software-architecture-component-level-diagrams)
+  - [5.6.6. Bounded Context Software Architecture Code Level Diagrams](#566-bounded-context-software-architecture-code-level-diagrams)
+    - [5.6.6.1. Bounded Context Domain Layer Class Diagrams](#5661-bounded-context-domain-layer-class-diagrams)
+    - [5.6.6.2. Bounded Context Database Design Diagram](#5662-bounded-context-database-design-diagram)
+
+### Capítulo VI: Solution UX Design
+- [6.1. Style Guidelines](#61-style-guidelines)
+  - [6.1.1. General Style Guidelines](#611-general-style-guidelines)
+  - [6.1.2. Web, Mobile & Devices Style Guidelines](#612-web-mobile--devices-style-guidelines)
+- [6.2. Information Architecture](#62-information-architecture)
+  - [6.2.1. Organization Systems](#621-organization-systems)
+  - [6.2.2. Labeling Systems](#622-labeling-systems)
+  - [6.2.3. Searching Systems](#623-searching-systems)
+  - [6.2.4. SEO Tags, Meta Tags y ASO Elements](#624-seo-tags-meta-tags-y-aso-elements)
+  - [6.2.5. Navigation Systems](#625-navigation-systems)
+- [6.3. Landing Page UI Design](#63-landing-page-ui-design)
+  - [6.3.1. Landing Page Wireframe](#631-landing-page-wireframe)
+  - [6.3.2. Landing Page Mock-up](#632-landing-page-mock-up)
+- [6.4. Applications UX/UI Design](#64-applications-uxui-design)
+  - [6.4.1. Applications Wireframes](#641-applications-wireframes)
+  - [6.4.2. Applications Wireflow Diagrams](#642-applications-wireflow-diagrams)
+- [Conclusiones](#conclusiones)
+- [Bibliografía](#bibliografía)
+- [Anexos](#anexos)
 
 <div style="page-break-after: always;"></div>
 
+# Student Outcome
+
+El curso contribuye al cumplimiento del Student Outcome ABET:
+
+**ABET – EAC - Student Outcome 3**
+
+**Criterio:** *Capacidad de comunicarse efectivamente con un rango de audiencias.*
+
+En el siguiente cuadro se describe las acciones realizadas y enunciados de conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el logro del ABET – EAC - Student Outcome 3.
+
+| Criterio específico | Acciones realizadas | Conclusiones |
+| :--- | :--- | :--- |
+| **Comunica oralmente sus ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería.** | **Escobar Palomino, Sebastian Matias**<br>*TB1*: (completar)<br>*TP1*: (completar)<br><br>**Bendezu Navarro, Rúbens Fitzgerald**<br>*TB1*: (completar)<br>*TP1*: (completar)<br><br>**Choquehuanca Nuñez, Luciana Carolina**<br>*TB1*: (completar)<br>*TP1*: (completar)<br><br>**Cruz Ibarra, Victor Andres**<br>*TB1*: (completar)<br>*TP1*: (completar)<br><br>**Peralta Chipa, Ronald Joel**<br>*TB1*: (completar)<br>*TP1*: (completar) | *TB1:* (completar, grupal)<br>*TP1:* (completar, grupal) |
+| **Comunica en forma escrita ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería.** | **Escobar Palomino, Sebastian Matias**<br>*TB1*: (completar)<br>*TP1*: (completar)<br><br>**Bendezu Navarro, Rúbens Fitzgerald**<br>*TB1*: (completar)<br>*TP1*: (completar)<br><br>**Choquehuanca Nuñez, Luciana Carolina**<br>*TB1*: (completar)<br>*TP1*: (completar)<br><br>**Cruz Ibarra, Victor Andres**<br>*TB1*: (completar)<br>*TP1*: (completar)<br><br>**Peralta Chipa, Ronald Joel**<br>*TB1*: (completar)<br>*TP1*: (completar) | *TB1:* (completar, grupal)<br>*TP1:* (completar, grupal) |
+
+> 🔴 **CAMBIAR** — El reporte actual usa **ABET – EAC – Student Outcome 7** (actualización de conocimientos), que corresponde al curso de IoT. El enunciado de **este** curso exige el **Student Outcome 3** (comunicación efectiva) con los dos criterios de abajo. Cada integrante redacta sus acciones concretas por entrega (TB1, TP1, …) relacionadas con el criterio; las conclusiones son grupales y acumulables. El párrafo introductorio debe ir idéntico al del Anexo A. El texto anterior (Outcome 7) quedó comentado al final de esta sección por si sirve de base de redacción. (Tarea TR-03)
+
+<!-- TEXTO ANTERIOR (Student Outcome 7, TB1) — borrar antes de exportar
 # Student Outcome
 En el siguiente cuadro se describen las acciones realizadas y enunciados de conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el logro del ABET – EAC - Student Outcome 7.
 
@@ -205,30 +323,14 @@ En el siguiente cuadro se describen las acciones realizadas y enunciados de conc
 
 <div style="page-break-after: always;"></div>
 
-# Objetivos Smart
-
-A continuación, cada integrante del equipo presenta sus objetivos SMART, enfocados en su desarrollo profesional luego de culminar la carrera universitaria.
-
-**Escobar Palomino, Sebastian Matias (UX/UI & Research)**
-Diseñar y documentar un mínimo de 3 perfiles de usuario (User Personas) y sus respectivos flujos (User Journey Maps) basándose en los hallazgos de las entrevistas iniciales. Este mapeo de empatía debe estar finalizado e integrado en el reporte antes del cierre de la segunda semana del sprint, garantizando que el diseño estratégico de la solución esté estrictamente alineado con las necesidades reales del cliente.
-
-**Bendezu Navarro, Rúbens Fitzgerald (Business & Strategy)**
-Elaborar el Lean UX Canvas completo y documentar el análisis de al menos 3 competidores directos en el mercado tecnológico actual. Asimismo, deberá consolidar la primera versión del Lenguaje Ubicuo (Ubiquitous Language) estandarizado para el equipo durante los primeros 10 días del sprint, lo cual servirá como base indispensable para evitar ambigüedades en el modelado del dominio.
-
-**Choquehuanca Nuñez, Luciana Carolina (Requirements & EventStorming)**
-Estructurar el Product Backlog inicial redactando y estimando un mínimo de 20 Historias de Usuario priorizadas bajo criterios de valor de negocio. Además, completará el diagrama de EventStorming de alto nivel en la plataforma colaborativa al menos 3 días antes de la entrega final del TB1, permitiendo al equipo tener una visión integral del flujo de eventos del sistema.
-
-**Peralta Chipa, Ronald Joel (Architecture & DevOps)**
-Diseñar los 4 niveles fundamentales de arquitectura de software (System Landscape, Context, Container y Deployment) utilizando el estándar C4. En paralelo, configurará el repositorio oficial implementando las reglas del flujo GitFlow y protecciones de ramas principales, debiendo cumplir con el despliegue de esta infraestructura y documentación técnica a más tardar el 20 de abril para permitir la revisión grupal.
-
-**Cruz Ibarra, Victor Andres (Documentation & Context Mapping)**
-Consolidar la documentación técnica final integrando los 5 Bounded Context Canvases elaborados por el equipo, garantizando la coherencia del Context Mapping. Además, extraerá y maquetará el reporte de métricas de colaboración de GitHub (Insights) con al menos 3 gráficos clave de rendimiento, entregando la versión candidata del documento en la rama *release* 48 horas antes de la presentación oficial para su auditoría final.
-
-<div style="page-break-after: always;"></div>
+-->
 
 # Capítulo I: Introducción
 ## 1.1. Startup Profile
 ### 1.1.1. Descripción de la Startup
+
+> 🔴 **CAMBIAR** — [BLOCKCHAIN] Agregar la capa de trazabilidad: Verifish/YakuControl ya no solo monitorea; ahora emite un **certificado verificable (QR) anclado en blockchain** por lote. Actualizar Misión/Visión y el párrafo del modelo SaaS B2B (plan/add-on TRACE). Mantener las citas OCDE 2025 y PRODUCE 2024. (Tarea C1-1)
+
 
 **Verifish** es una startup tecnológica orientada al desarrollo de soluciones de *Smart Farming* y monitoreo ambiental, enfocada principalmente en contribuir a la modernización del sector acuícola. Surge con la finalidad de mejorar la gestión convencional de las piscigranjas mediante la incorporación de tecnologías como el **Internet de las Cosas (IoT)** y la **computación en la nube**, permitiendo una administración más inteligente de los recursos, la protección del entorno y una mayor sostenibilidad económica para los productores.
 
@@ -250,6 +352,9 @@ Este contexto evidencia la existencia de una brecha tecnológica dentro del sect
 <div style="page-break-after: always;"></div>
 
 ### 1.1.2. Perfiles de integrantes del equipo
+
+> 🟡 **AJUSTAR AL ENUNCIADO** — El enunciado exige: foto, nombres y apellidos, código, descripción de carrera y un párrafo con conocimientos técnicos y habilidades que aporta cada uno. Completar carrera/ciclo y skills técnicos (faltan en varios), verificar códigos (p. ej. `U20231d390`) y corregir typos ("nóvil", `img alt`). Subir las fotos a `./assets/` en vez de imgur. (Tarea C1-1)
+
 <table border="1">
   <tr>
       <td style="text-align:center;"><img width="1200" height="200" img alt="Sebastian Escobar" src="https://i.imgur.com/UqKbYwJ.jpeg" /></td>
@@ -276,6 +381,9 @@ Este contexto evidencia la existencia de una brecha tecnológica dentro del sect
 
 ## 1.2. Solution Profile
 ### 1.2.1. Antecedentes y problemática
+
+> 🔴 **CAMBIAR** — [SEGMENTO NUEVO] Aplicar 5W+2H también al comprador de supermercado (Who: jefes de compras/aseguramiento de calidad de Wong, Metro, Plaza Vea, Vivanda, Mass, Tottus; What: no puede verificar origen ni condiciones de cría; Where; When: auditorías, reclamos, campañas; Why: registros en papel/WhatsApp sin evidencia inalterable; How: certificado QR + blockchain; How Much). Sumar antecedentes de trazabilidad con blockchain en acuicultura (ver pendientes, Anexo A de fuentes). (Tarea C1-2)
+
 
 #### Antecedentes
 
@@ -324,6 +432,9 @@ Todo este panorama evidencia la urgencia de digitalizar el control operativo par
 ### 1.2.2. Lean UX Process
 #### 1.2.2.1. Lean UX Problem Statements
 
+> 🟢 **NUEVO** — Agregar **Problem Statement 3 — Comprador de supermercado** con domain, customer segments, pain points, gap, visión/strategy, initial segment y criterio de éxito (misma estructura de los dos existentes). (Tarea C1-3)
+
+
 **Problem Statement 1 — Administrador de Piscigranja**
 
 El estado actual de la gestión acuícola se ha centrado principalmente en el registro manual de datos y la toma de decisiones basada en la experiencia empírica del productor. Lo que las herramientas existentes no logran abordar es la disponibilidad de datos históricos procesados, tendencias y reportes consolidados que permitan al dueño tomar decisiones preventivas y estratégicas sobre la salud de sus estanques. Considerando la restricción de que los productores evitan realizar grandes inversiones de capital en servidores físicos o licencias costosas, nuestro producto abordará esta brecha mediante un Web Dashboard basado en la nube (modelo SaaS) con visualización de históricos, gráficos de tendencias y un índice global de calidad del agua calculado automáticamente. Nuestro enfoque inicial serán los propietarios y administradores de piscigranjas en el Perú con más de un estanque activo. Sabremos que hemos tenido éxito cuando los dueños reporten una reducción medible en eventos de mortalidad masiva y adopten el dashboard como su herramienta principal de gestión diaria.
@@ -333,6 +444,9 @@ El estado actual de la gestión acuícola se ha centrado principalmente en el re
 El estado actual del monitoreo de estanques en piscigranjas se ha centrado principalmente en rondas físicas periódicas y observación visual directa por parte del personal de campo. Lo que los métodos y herramientas existentes no logran abordar es la detección temprana y automática de condiciones críticas del agua (pH bajo, turbidez alta, temperatura fuera de rango) durante los largos intervalos entre inspecciones. Asumiendo las restricciones de un entorno rural (conectividad intermitente) y el perfil no técnico de los usuarios, nuestro producto abordará esta brecha mediante una aplicación móvil de interfaz simplificada, conectada a sensores IoT vía Edge API, que emite alertas críticas inmediatas y permite accionar equipos de emergencia de forma remota. Nuestro enfoque inicial serán los operarios y trabajadores de campo de piscigranjas de trucha. Sabremos que hemos tenido éxito cuando los operarios respondan y mitiguen eventos críticos de calidad del agua en menos de 10 minutos desde su detección.
 
 #### 1.2.2.2. Lean UX Assumptions
+
+> 🔴 **CAMBIAR** — Agregar Business Assumptions (el supermercado exige/valora trazabilidad verificable; la piscigranja paga por TRACE; el certificado reduce disputas por mortandad/calidad) y User Assumptions del comprador (¿quién es?, ¿cuándo escanea?, ¿qué necesita ver?). Incluir como **riesgo** el supuesto "los datos de sensores son confiables" (problema del oráculo). (Tarea C1-3)
+
 
 **Business Assumptions**
 
@@ -357,6 +471,9 @@ El estado actual del monitoreo de estanques en piscigranjas se ha centrado princ
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
 
+> 🟢 **NUEVO** — Agregar hipótesis 6 y 7 (comprador): "Creemos que lograremos … si los compradores pueden verificar el historial de un lote escaneando un QR …" y la hipótesis de disposición a pagar por TRACE. (Tarea C1-3)
+
+
 **Hipótesis 1**
 Creemos que lograremos **reducir el tiempo de respuesta ante eventos críticos del agua** si los **operarios de campo** pueden **recibir alertas push inmediatas con el tipo de riesgo detectado** mediante la **funcionalidad de notificaciones en tiempo real de la app móvil**.
 
@@ -374,6 +491,9 @@ Creemos que lograremos **reducir falsos positivos y alarmas innecesarias** si el
 
 #### 1.2.2.4. Lean UX Canvas
 
+> 🔴 **CAMBIAR** — Regenerar el Lean UX Canvas v2 (imagen `LeanUX.png`) incluyendo el segmento nuevo, la hipótesis de trazabilidad y los criterios de éxito. (Tarea C1-3)
+
+
 <div style="text-align: center; margin-top: 1rem; margin-bottom: 1rem;">
 
 ![Lean UX Canvas - YakuControl](./assets/images/LeanUX.png)
@@ -383,6 +503,9 @@ Creemos que lograremos **reducir falsos positivos y alarmas innecesarias** si el
 <div style="page-break-after: always;"></div>
 
 ## 1.3. Segmentos objetivo
+
+> 🟢 **NUEVO** — **Segmento 3: Compradores de supermercado** (características demográficas + información estadística de sustento: nº de supermercados y operadores, producción/consumo de trucha, exigencias de trazabilidad). El consumidor final que escanea el QR se trata como "visitante" (no segmento formal). Hoy el texto dice "dos segmentos": actualizar. (Tarea C1-4)
+
 
 YakuControl dirige su propuesta de valor a dos segmentos de usuarios con roles, responsabilidades y necesidades claramente diferenciados dentro del ecosistema de una piscigranja:
 
@@ -408,9 +531,16 @@ Son los propietarios o gestores del negocio, enfocados en la rentabilidad, la pr
 
 <div style="page-break-after: always;"></div>
 
+**Segmento 3: Compradores de supermercado**
+
+_(Pendiente: descripción, características demográficas e información estadística de sustento. Tarea C1-4)_
+
 # Capítulo II: Requirements Elicitation & Analysis
 ## 2.1. Competidores
 ### 2.1.1. Análisis competitivo
+
+> 🔴 **CAMBIAR** — La tabla debe tener **3 competidores como mínimo** (ya hay 3: AquaManager, Libelium, Pentair — todos de gestión/IoT). Con TRACE conviene que al menos uno sea de **trazabilidad** (p. ej. IBM Food Trust, Wholechain, Provenance, Trace Register) y reevaluar cuáles son directos/indirectos. Actualizar Overview, ventaja competitiva, mercado objetivo, marketing, productos, precios, canales y SWOT (también de la startup). Agregar nombre **y logo** en la cabecera. (Tarea C2-1)
+
 
 **¿Por qué llevar a cabo este análisis?**
 
@@ -433,6 +563,9 @@ Identificar las fortalezas y debilidades de las soluciones existentes en el merc
 <div style="page-break-after: always;"></div>
 
 ### 2.1.2. Estrategias y tácticas frente a competidores
+
+> 🔴 **CAMBIAR** — Agregar una estrategia de **trazabilidad verificable accesible** (frente a plataformas enterprise costosas) con sus tácticas (piloto con 1 proveedor/supermercado, QR en empaque, anclaje de hashes en red pública de bajo costo). Revisar la Estrategia 4 (offline-first) y 5 (maqueta física) para que sigan siendo coherentes. (Tarea C2-2)
+
 
 A partir del análisis competitivo realizado, se identificaron las siguientes estrategias y tácticas que YakuControl adoptará para diferenciarse y ganar participación de mercado frente a sus competidores:
 
@@ -471,6 +604,9 @@ Para superar la resistencia a la adopción tecnológica —una de las principale
 ## 2.2. Entrevistas
 
 ### 2.2.1. Diseño de entrevistas
+
+> 🟢 **NUEVO** — Agregar **Segmento 3: Compradores de supermercado** (preguntas principales y complementarias, incluyendo datos para el arquetipo: edad, distrito, ocupación, dispositivos, canales, objetivos, frustraciones). Corregir la pregunta 11 del Segmento 1 (induce la respuesta: "¿… que sea simple?"). (Tarea C2-3)
+
 
 En esta sección se presenta el conjunto de preguntas diseñadas para la recolección de información de los dos segmentos objetivo identificados: Piscicultores, quienes son los operadores de campo encargados del monitoreo y manejo directo de los estanques y Administradores de piscigranja, quienes son los dueños y responsables de la gestión del negocio acuícola. Las preguntas han sido elaboradas aplicando buenas prácticas de diseño de entrevistas, con el fin de recopilar información subjetiva que permita construir arquetipos precisos para cada segmento.
 
@@ -516,7 +652,14 @@ En esta sección se presenta el conjunto de preguntas diseñadas para la recolec
 
 <div style="page-break-after: always;"></div>
 
+#### Segmento 3: Compradores de supermercado
+
+_(Pendiente: preguntas generales y sobre la solución. Tarea C2-3)_
+
 ### 2.2.2. Registro de entrevistas
+
+> 🟡 **AJUSTAR AL ENUNCIADO** — Por cada segmento se requieren **3 a 5 entrevistas** en video, cada una con nombres, edad, distrito, screenshot de un cuadro del video, URL en Microsoft Stream (con timing de inicio y duración) y resumen. Verificar que el enlace actual (SharePoint personal `u202224135`) abra para el docente; evaluar migrarlo a Stream del equipo. Aclarar que el Entrevistado 1 de piscicultores trabaja con tilapia (el producto es para trucha). **G — NUEVO:** registrar las entrevistas del Segmento 3. (Tareas C2-4)
+
 
 A continuación se presenta el registro de las entrevistas realizadas a representantes de los dos segmentos objetivo identificados para YakuControl: Administradores de piscigranja y Piscicultores.
 
@@ -612,7 +755,14 @@ A continuación se presenta el registro de las entrevistas realizadas a represen
  
 <div style="page-break-after: always;"></div>
 
+**Segmento Compradores de supermercado:**
+
+_(Pendiente: 3 a 5 entrevistas con nombres, edad, distrito, screenshot, URL de Stream con timing/duración y resumen. Tarea C2-4)_
+
 ### 2.2.3. Análisis de entrevistas
+
+> 🟡 **AJUSTAR AL ENUNCIADO** — Corregir la introducción (dice "dos participantes" y hay 3 + 3 + los nuevos). Mantener porcentajes por característica y agregar el análisis del Segmento 3 con el mismo formato (objetivas/subjetivas y conclusión). Cada característica debe poder rastrearse a una entrevista. (Tarea C2-5)
+
 
 Las entrevistas se realizaron en abril de 2026 a un total de dos participantes: un administrador de piscigranja y un piscicultor de campo, en diferentes zonas de Perú. El objetivo fue comprender sus contextos operativos, frustraciones actuales y validar hipótesis sobre la propuesta de valor de YakuControl.
 
@@ -674,11 +824,18 @@ El análisis de entrevistas revela patrones claros y consistentes entre ambos se
 
 <div style="page-break-after: always;"></div>
 
+**Segmento: Compradores de supermercado**
+
+_(Pendiente: análisis con porcentajes por característica. Tarea C2-5)_
+
 ## 2.3. Needfinding
 
 El Needfinding permite identificar necesidades reales de los usuarios mediante entrevistas y análisis del contexto. A partir de esta información, se construyeron artefactos clave que ayudaron a comprender mejor sus objetivos, tareas, emociones y frustraciones.
 
 ### 2.3.1. User Personas
+
+> 🟢 **NUEVO** — Agregar la **User Persona 3 (comprador de supermercado)** en UXPressia, con datos provenientes del análisis de entrevistas. Verificar que las dos personas existentes también estén en UXPressia (herramienta obligatoria). (Tarea C2-6)
+
 
 Los User Personas se construyen a partir del análisis de la información recopilada en entrevistas, representando perfiles clave de los usuarios objetivo. Cada uno integra características demográficas, comportamientos y necesidades, sirviendo como base para orientar el diseño y desarrollo de la solución.
 
@@ -706,7 +863,14 @@ Es la responsable de la gestión y toma de decisiones, quienes supervisan la pro
 
 <div style="page-break-after: always;"></div>
 
-## 2.3.2. User Task Matrix
+**User persona: Comprador de supermercado**
+
+_(Pendiente: ficha en UXPressia. Tarea C2-6)_
+
+### 2.3.2. User Task Matrix
+
+> 🟡 **AJUSTAR AL ENUNCIADO** — Debe ser **un solo cuadro** con una columna por User Persona y subcolumnas Frecuencia/Importancia (hoy son dos tablas separadas). Las filas son tareas que las personas hacen **independientemente del software**. Agregar tareas del comprador y reescribir la explicación comparando las tres personas. (Tarea C2-7) _(Nota: el heading original estaba en nivel `##`; se corrigió a `###`.)_
+
  
 En esta sección se presentan las tareas que los User Persona representativos de cada segmento objetivo realizan para cumplir sus metas. Se consideran dos User Persona: José Guevara, piscicultor de campo, y Pedro Alvarado, administrador de piscigranja.
   
@@ -744,23 +908,10 @@ Las tareas con mayor frecuencia e importancia para José Guevara son la medició
 
 <div style="page-break-after: always;"></div>
 
-### 2.3.3. User Journey Mapping
+### 2.3.3. Empathy Mapping
 
-En esta sección se presentan los User Journey Maps para cada uno de los User Persona identificados. Estos mapas representan la experiencia actual de los usuarios sin la existencia de YakuControl, con el objetivo de identificar sus principales puntos de dolor, frustraciones y oportunidades de mejora.
+> 🟡 **AJUSTAR AL ENUNCIADO** — Movido aquí para respetar el orden del enunciado (Personas → Task Matrix → Empathy → As-is). Agregar el 3er Empathy Map (UXPressia) y describir el proceso de elaboración. (Tarea C2-8)
 
-- User Journey Map de Pedro Alvarado
-
-![User Journey Map – Administradores de piscigranjas](./assets/images/user-journey-map-administrador.png)
-
-<div style="page-break-after: always;"></div>
-
-- User Journey Map de José Guevara
-
-![User Journey Map – Piscicultores](./assets/images/user-journey-map-piscicultor.png)
-
-<div style="page-break-after: always;"></div>
-
-### 2.3.4. Empathy Mapping
 
 Se elaboraron los Empathy Maps para los dos User Personas identificados. Este proceso permitió comprender mejor lo que dicen, piensan, hacen y sienten en su día a día, identificando sus principales pains y gains para diseñar una solución que realmente responda a las necesidades del sector acuícola peruano.
 
@@ -785,9 +936,37 @@ Se elaboraron los Empathy Maps para los dos User Personas identificados. Este pr
 
 <div style="page-break-after: always;"></div>
 
-## 2.4. Big Picture EventStorming
-![Eventstorming](./assets/images/step10.png)
-## 2.5. Ubiquitous Language
+**Empathy mapping de Comprador de supermercado**
+
+_(Pendiente: UXPressia. Tarea C2-8)_
+
+### 2.3.4. As-is Scenario Mapping
+
+> 🔴 **CAMBIAR** — El enunciado pide **As-is Scenario Mapping**, no "User Journey Mapping": filas Phases, Doing, Thinking y Feeling, con áreas positivas/negativas y *blank areas*, hechos en Miro o LucidChart. Los 2 journey maps actuales sirven de base para rehacerlos con ese formato; agregar el 3.º. (Tarea C2-9)
+
+
+En esta sección se presentan los User Journey Maps para cada uno de los User Persona identificados. Estos mapas representan la experiencia actual de los usuarios sin la existencia de YakuControl, con el objetivo de identificar sus principales puntos de dolor, frustraciones y oportunidades de mejora.
+
+- User Journey Map de Pedro Alvarado
+
+![User Journey Map – Administradores de piscigranjas](./assets/images/user-journey-map-administrador.png)
+
+<div style="page-break-after: always;"></div>
+
+- User Journey Map de José Guevara
+
+![User Journey Map – Piscicultores](./assets/images/user-journey-map-piscicultor.png)
+
+<div style="page-break-after: always;"></div>
+
+**As-is Scenario Map de Comprador de supermercado**
+
+_(Pendiente: Miro/LucidChart. Tarea C2-9)_
+
+## 2.4. Ubiquitous Language
+
+> 🔴 **CAMBIAR** — Reglas del enunciado: **términos en inglés** (con el equivalente en español entre paréntesis), definición en español y **solo términos del dominio** (no de ingeniería). Hoy está en español y mezcla términos técnicos (Token JWT, Edge API, Backend principal, Dashboard, Señal PWM, Farm Key…): eliminarlos o moverlos a un anexo técnico. Agregar términos de trazabilidad: Batch (Lote), Stocking (Siembra), Harvest (Cosecha), Milestone (Hito), Water Quality Summary, Traceability Certificate, Verification… (Tarea C2-10)
+
 
 El Lenguaje Ubicuo (Ubiquitous Language) de YakuControl es el vocabulario compartido y estandarizado que usan tanto el equipo de desarrollo como los expertos del dominio acuícola para comunicarse sin ambigüedades. Todos los términos definidos aquí deben usarse de forma consistente en el código, los modelos, las entrevistas y la documentación del proyecto.
 
@@ -833,7 +1012,17 @@ El Lenguaje Ubicuo (Ubiquitous Language) de YakuControl es el vocabulario compar
 <div style="page-break-after: always;"></div>
 
 # Capítulo III: Requirements Specification
-## 3.1. User Stories
+## 3.1. To-Be Scenario Mapping
+
+> 🟢 **NUEVO** — Sección faltante. Un To-Be Scenario Map por User Persona (3), con filas Phases, Doing, Thinking, Feeling, comparando con el As-is y señalando qué cambia con YakuControl + TRACE. Proceso: preparación, lluvia de ideas individual, revisión, nombrar fases, comparar con el As-is. (Tarea C3-1)
+
+
+_(Sección pendiente: un To-Be Scenario Map por User Persona, con filas Phases, Doing, Thinking y Feeling.)_
+
+## 3.2. User Stories
+
+> 🔴 **CAMBIAR** — (1) Unir Epics y Stories en **un solo cuadro**: `Epic / User Story ID | Título | Descripción | Criterios de Aceptación | Relacionado con (Epic ID)`. (2) Criterios en Gherkin, **tiempo presente, tercera persona, sin detalles de UI** (hoy hay "activa switch en app", "presiona Entrar") y con más de un escenario cuando corresponda. (3) Landing: historias con rol *visitante* (y "visitante del segmento supermercado"). (4) Technical Stories con rol *Developer* (request/response). [BLOCKCHAIN] Agregar épica de Trazabilidad y sus historias (lotes, hitos, resumen de calidad, certificado QR, verificación pública, revocación) y Technical Stories (anclaje en smart contract, API pública de verificación). (Tarea C3-2)
+
 
 ### 1. Cuadro de Epics (Épicas)
 
@@ -871,7 +1060,10 @@ El Lenguaje Ubicuo (Ubiquitous Language) de YakuControl es el vocabulario compar
 | **TS02** | Seguridad JWT | Como developer, deseo proteger los endpoints con tokens para evitar robos de datos. | **Escenario 1: Token válido** <br> **Given** petición con JWT vigente <br> **When** consulta recurso <br> **Then** API retorna código 200. <br><br> **Escenario 2: No autorizado** <br> **Given** sin token o expirado <br> **When** intenta consultar <br> **Then** retorna error 401. | EP04 |
 | **TS03** | Webhook de Alertas | Como developer, deseo un webhook que dispare notificaciones ante anomalías detectadas. | **Escenario 1: Trigger inmediato** <br> **Given** valor fuera de rango <br> **When** confirma anomalía <br> **Then** envía trigger a Firebase Cloud Messaging. <br><br> **Escenario 2: Reintento** <br> **Given** FCM no responde <br> **When** falla el trigger <br> **Then** encola petición para reintento automático. | EP04 |
 
-## 3.2. Impact Mapping
+## 3.3. Impact Mapping
+
+> 🔴 **CAMBIAR** — Hacerlo en UXPressia con las 3 User Personas como *Actors*. Redactar varios **Business Goals SMART** (p. ej. "Conectar N estanques en M meses", "Emitir certificados para el X% de lotes piloto en 2 sprints") y completar Impact → Deliverables → User Stories ("Como… deseo… para…"). La imagen actual necesita explicación textual. (Tarea C3-3)
+
 En esta sección hemos elaborado nuestro Impact Mapping. Para ello, utilizamos la hipótesis desarrollada durante nuestro proceso de Lean UX. Reemplazamos los segmentos de cliente por los User Personas, los cuales fueron elaborados en las secciones previas, y conectamos las funcionalidades con los objetivos, para que formen parte del Product Backlog.
 
 <div style="text-align: center; margin-top: 1rem; margin-bottom: 1rem;">
@@ -882,7 +1074,10 @@ En esta sección hemos elaborado nuestro Impact Mapping. Para ello, utilizamos l
 
 *El mapa refleja dos personas principales: el Piscicultor, enfocado en el monitoreo y control operativo en campo, y el Administrador, orientado a la gestión estratégica y análisis de datos. Cada impacto se conecta con los entregables del producto y las User Stories priorizadas en el Product Backlog.*
 
-## 3.3. Product Backlog
+## 3.4. Product Backlog
+
+> 🟡 **AJUSTAR AL ENUNCIADO** — **Error explícito en el enunciado:** poner al inicio historias de seguridad/autenticación se considera incorrecto, y hoy TS02 (JWT) y US05 (Login) son los puestos 1 y 2. El orden debe responder al **valor de negocio**, y las historias del Landing deben estar desde el primer sprint. Mantener la tabla `# Orden | User Story Id | Título | Descripción | Story Points (1/2/3/5/8)`, agregar captura + URL pública de la herramienta (Trello) y las historias nuevas de TRACE. (Tarea C3-4)
+
 
 | # Orden | User Story Id | Título | Descripción | Story Points (1/2/3/5/8) |
 | :--- | :--- | :--- | :--- | :--- |
@@ -915,6 +1110,9 @@ En esta sección hemos elaborado nuestro Impact Mapping. Para ello, utilizamos l
 ## 4.1. Strategic-Level Attribute-Driven Design
 ### 4.1.1. Design Purpose
 
+> 🔴 **CAMBIAR** — Reescribir el propósito incluyendo trazabilidad/Web3 (certificado verificable) y la relación con las necesidades de los **tres** segmentos. Ajustar "cinco Bounded Contexts" (serán seis con Traceability) y mantener coherencia con la decisión de **monolito modular**. (Tarea C4-1)
+
+
 El presente ejercicio de diseño arquitectónico corresponde al desarrollo de **YakuControl**, un sistema *greenfield* (diseñado desde cero, sin arquitectura preexistente que migrar o extender) que constituye el producto central de la startup **Verifish**. El propósito de este diseño es definir la arquitectura de software que soportará el MVP (Minimum Viable Product) descrito en el Product Backlog del Capítulo III, priorizando las User Stories y Technical Stories de mayor valor de negocio: la ingesta y validación de telemetría IoT (pH, temperatura, turbidez), la emisión de alertas críticas en tiempo real, el control remoto de actuadores de emergencia y la gestión del modelo de suscripción SaaS.
 
 Se aplica el método **Attribute-Driven Design (ADD)** en esta etapa temprana del proyecto con el fin de que las decisiones estructurales de alto nivel —la definición de los Bounded Contexts, los estilos y patrones arquitectónicos, y la distribución de responsabilidades entre el hardware Edge, el backend en la nube y los clientes Web/Mobile— respondan directamente a los atributos de calidad críticos para el negocio, y no únicamente a la funcionalidad. En particular, la arquitectura debe garantizar:
@@ -928,6 +1126,9 @@ El alcance de este diseño abarca la arquitectura completa del sistema (hardware
 
 ### 4.1.2. Attribute-Driven Design Inputs
 #### 4.1.2.1. Primary Functionality (Primary User Stories)
+
+> 🟡 **AJUSTAR AL ENUNCIADO** — La tabla debe tener la misma estructura que el cuadro de User Stories (`Epic / US ID | Título | Descripción | Criterios de Aceptación | Relacionado con`); hoy solo tiene ID y descripción. Incluir las historias de TRACE con impacto arquitectónico (emitir certificado, anclar hash, verificar QR). (Tarea C4-1)
+
 
 A partir del Product Backlog definido en el Capítulo III (sección 3.3), se seleccionó el siguiente subconjunto de User Stories y Technical Stories como **funcionalidad primaria**: aquellas que resultan arquitectónicamente significativas por representar el flujo central de valor de YakuControl (ingesta de telemetría, emisión de alertas, control remoto de actuadores, autenticación y facturación) y que, en conjunto, ejercitan a los cinco Bounded Contexts identificados (IAM, Telemetry, Notification, Equipment y Payment).
 
@@ -946,6 +1147,9 @@ A partir del Product Backlog definido en el Capítulo III (sección 3.3), se sel
 
 #### 4.1.2.2. Quality Attribute Scenarios
 
+> 🔴 **CAMBIAR** — Reemplazar "microservicio de telemetría" por módulo (decisión AD-02: monolito modular). [BLOCKCHAIN] Agregar escenarios de **integridad/auditabilidad** (alterar un certificado → la verificación falla), **rendimiento** de verificación por QR, **disponibilidad** si el nodo/RPC de blockchain cae (cola de reintento) y **seguridad** de la clave que firma las transacciones. (Tarea C4-2)
+
+
 A continuación se formalizan los Escenarios de Atributos de Calidad con sus 6 componentes canónicos:
 
 | **Atributo de Calidad** | **Fuente del Estímulo** | **Estímulo** | **Artefacto Afectado** | **Entorno** | **Respuesta del Sistema** | **Medida de Respuesta** |
@@ -957,6 +1161,9 @@ A continuación se formalizan los Escenarios de Atributos de Calidad con sus 6 c
 
 
 #### 4.1.2.3. Constraints
+
+> 🟡 **AJUSTAR AL ENUNCIADO** — Cada constraint debe expresarse como **Technical Story**: `Technical Story ID | Título | Descripción | Criterios de Aceptación | Relacionado con (Epic ID)`. Correcciones: "AcuaNode" → Verifish/YakuControl; CO-02 dice "6 integrantes" (son 5); **CO-05 (Flutter para Web) contradice el enunciado** (Web Apps con Angular o Vue; Flutter solo para móvil). Agregar constraints: Web3/smart contract en red EVM, idioma inglés por defecto + i18n (en_US, es_419) + a11y/ARIA, Spring Boot RESTful + OpenAPI, Material Design, servicios de terceros (Stripe, FCM, RPC blockchain). (Tarea C4-3)
+
 
 Se identificaron las siguientes restricciones de negocio, técnicas y organizacionales que condicionan el espacio de decisiones arquitectónicas de YakuControl:
 
@@ -971,6 +1178,9 @@ Se identificaron las siguientes restricciones de negocio, técnicas y organizaci
 | *CO-07* | Organizacional | El proyecto se desarrolla dentro del marco de un ciclo académico del curso de Arquitectura de Software Emergentes, con sprints y fechas de entrega fijas que limitan el tiempo disponible para iteraciones de diseño. |
 
 ### 4.1.3. Architectural Drivers Backlog
+
+> 🟡 **AJUSTAR AL ENUNCIADO** — Usar las columnas del enunciado: `Driver ID | Título de Driver | Descripción | Importancia para Stakeholders (High/Medium/Low) | Impacto en Architecture Technical Complexity (High/Medium/Low)`, con los de **alta importancia y alto impacto primero**, e incluir Functional Drivers + Quality Attribute Drivers + todos los Constraints. Explicar el proceso (Quality Attribute Workshop) en la introducción. Sumar drivers de trazabilidad. (Tarea C4-4)
+
 
 El Architectural Drivers Backlog consolida la funcionalidad primaria (sección 4.1.2.1), los escenarios de atributos de calidad (sección 4.1.2.2) y las restricciones (sección 4.1.2.3), priorizándolos según su *valor de negocio* y su *impacto arquitectónico*, con el fin de identificar los drivers que guiarán las decisiones de diseño de mayor peso en esta primera iteración.
 
@@ -997,6 +1207,9 @@ Los cinco drivers marcados con prioridad *Alta* (QA-01, QA-02, CO-03, QA-04 y CO
 
 ### 4.1.4. Architectural Design Decisions
 
+> 🟡 **AJUSTAR AL ENUNCIADO** — Falta (a) la **explicación por iteración siguiendo los stages del Quality Attribute Workshop** (drivers considerados, tácticas/patrones evaluados, criterios) y (b) el cuadro **Candidate Pattern Evaluation Matrix** (por driver, máx. 3 patrones con Pro/Con). Las decisiones AD-01…AD-07 pueden quedar como resumen final. [BLOCKCHAIN] Decisiones nuevas a evaluar: anclar solo hashes vs. datos completos on-chain; red pública de pruebas vs. permisionada; Outbox + reintentos; puerto/adaptador de ledger; eventos en proceso (sin Kafka) en el monolito. (Tarea C4-5)
+
+
 En respuesta a los drivers priorizados en la sección 4.1.3, el equipo tomó las siguientes decisiones de diseño estructural para la primera iteración de la arquitectura de YakuControl:
 
 | ID Decisión | Driver(s) Asociado(s) | Decisión | Justificación |
@@ -1012,6 +1225,9 @@ En respuesta a los drivers priorizados en la sección 4.1.3, el equipo tomó las
 Estas decisiones constituyen la base estructural sobre la cual se refinarán los escenarios de calidad seleccionados (sección 4.1.5) y se derivará el modelado estratégico de Domain-Driven Design (sección 4.2).
 
 ### 4.1.5. Quality Attribute Scenario Refinements
+
+> 🟡 **AJUSTAR AL ENUNCIADO** — El formato exigido es una **tabla por escenario** ("Scenario Refinement for Scenario N") con: Scenario(s), Business Goals, Relevant Quality Attributes, Stimulus, Stimulus Source, Environment, Artifact, Response, Response Measure, Questions, Issues. Hoy está en viñetas y faltan Business Goals/Questions/Issues. Además hay IDs inconsistentes (QA-05 es *Reliability* en 4.1.3 y *Usability* aquí). (Tarea C4-6)
+
 
 A continuación se refinan, en el formato de seis partes (Fuente del Estímulo, Estímulo, Artefacto, Ambiente, Respuesta y Medida de la Respuesta), los escenarios de atributos de calidad presentados anteriormente.
 
@@ -1052,6 +1268,9 @@ A continuación se refinan, en el formato de seis partes (Fuente del Estímulo, 
 
 ## 4.2. Strategic-Level Domain-Driven Design
 ### 4.2.1. EventStorming
+
+> 🔴 **CAMBIAR** — [BLOCKCHAIN] Repetir/extender la sesión en Miro con los eventos de trazabilidad (p. ej. Batch Registered, Milestone Recorded, Quality Summary Closed, Certificate Issued, Hash Anchored, Certificate Verified/Revoked), sus comandos, actores (Supermarket Buyer), sistema externo (Blockchain Network) y policies; recapturar los 10 pasos. Mantener este EventStorming aquí (la copia "Big Picture" de 2.4 se eliminó por duplicada). Sesión recomendada: 1–2 h. (Tarea C4-7)
+
 
 En esta sección se detalla la aplicación del EventStorming como herramienta estratégica del Domain-Driven Design (DDD). El objetivo es mapear los eventos de dominio que articulan el ecosistema de **YakuControl**, permitiendo identificar los límites de los futuros Bounded Contexts y las interacciones clave entre los actores. Este enfoque garantiza que la arquitectura de software esté alineada con las reglas de negocio de la acuicultura inteligente y sea capaz de escalar de forma modular.
 
@@ -1113,6 +1332,9 @@ El paso final consiste en consolidar el mapa completo para definir la arquitectu
 
 ### 4.2.2. Candidate Context Discovery
 
+> 🔴 **CAMBIAR** — Agregar el candidate context **Traceability** (Core: es el diferenciador nuevo). Corregir inconsistencias: dice "seis bounded contexts" pero se listan cinco; "Motification" (typo); "2 Supporting" pero se lista uno. Mantener técnica Start-with-Value. (Tarea C4-8)
+
+
 En esta sección se presenta el proceso seguido por el equipo para la identificación y clasificación de los **Bounded Contexts** candidatos a partir del Event Storming de **YakuControl**. El objetivo fue identificar los límites naturales del dominio IoT, determinar qué partes del sistema constituyen el núcleo estratégico (Core) y cuáles cumplen roles de apoyo, priorizando el diseño en los elementos que garantizan la supervivencia de la producción acuícola.
 
 #### **Preparación de la sesión**
@@ -1163,6 +1385,9 @@ El resto de contextos serán modelados en las siguientes secciones mediante **Bo
 
 ### 4.2.3. Domain Message Flows Modeling
 
+> 🟢 **NUEVO** — Agregar escenarios de Domain Storytelling: (5) registrar lote e hitos, (6) cerrar resumen de calidad, emitir certificado y anclar hash, (7) supermercado verifica el QR. Adjuntar capturas y explicación de cada escenario. (Tarea C4-9)
+
+
 El Domain Storytelling es una técnica visual y colaborativa que facilita la exploración del conocimiento dentro del dominio del negocio, cuyo propósito principal es generar una comprensión común sobre lo que se desarrolla en un proceso específico, involucrando tanto a los expertos del negocio como a los equipos técnicos.
 
 En este sentido, elaboramos los domain storytelling tomando como referencia las interacciones entre los bounded contexts de YakuControl (IAM, Equipment, Telemetry, Notification y Payment), con el fin de analizar y comprender de manera más clara la lógica del negocio acuícola.
@@ -1189,6 +1414,9 @@ En este sentido, elaboramos los domain storytelling tomando como referencia las 
 ![Domain Message Flow 4](./assets/images/screenshots/domain-message-flow-4.jpg)
 
 ### 4.2.4. Bounded Context Canvases
+
+> 🔴 **CAMBIAR** — Hoy solo hay imágenes. Agregar el **canvas de Traceability** y actualizar Telemetry (publica resúmenes de calidad), Payment (plan TRACE), Notification y Equipment si cambia algo. Documentar el proceso iterativo del enunciado: Context Overview Definition → Business Rules Distillation & Ubiquitous Language Capture → Capability Analysis → Capability Layering (si aplica) → Dependencies Capture → Design Critique. (Tarea C4-10)
+
 ![Telemetry-Canvas](./assets/images/Telemetry-canva.jpg)
 
 ![Notification-Canvas](./assets/images/Notification-canva.jpg)
@@ -1202,6 +1430,9 @@ En este sentido, elaboramos los domain storytelling tomando como referencia las 
 <div style="page-break-after: always;"></div>
 
 ### 4.2.5. Context Mapping
+
+> 🔴 **CAMBIAR** — Agregar relaciones con Traceability (Telemetry → Traceability: Customer/Supplier por resúmenes de calidad; Equipment → Traceability: identidad de estanque; Payment → Traceability: habilitación del plan TRACE; Traceability → Notification; Traceability ↔ Blockchain Network vía **Anti-Corruption Layer**). Incluir las preguntas "¿qué pasaría si…?" aplicadas a Traceability (p. ej. ¿Lote dentro de Equipment?). Eliminar el párrafo de conclusión que está **duplicado**. (Tarea C4-11)
+
 
 Para elaborar el Context Mapping de YakuControl, el equipo revisó los cinco Bounded Context Canvases definidos en la etapa de diseño estratégico: **Identity & Access (IAM)**, **Telemetry**, **Notification**, **Equipment** y **Payment**. A partir de esta revisión, se analizaron las dependencias entre contextos, las responsabilidades de cada uno y las posibles alternativas de diseño antes de determinar la estructura final de relaciones.
 
@@ -1259,18 +1490,27 @@ Esta arquitectura garantiza que los cambios en la lógica de pagos o notificacio
 
 ## 4.3. Software Architecture
 ### 4.3.1. Software Architecture System Landscape Diagram
+
+> 🔴 **CAMBIAR** — Rehacer en Structurizr incorporando supermercados/consumidor final y la red blockchain. (Tarea C4-12)
+
 En esta sección se ofrece una visión macroscópica del ecosistema tecnológico de la piscigranja. El objetivo de este nivel de abstracción es contextualizar a YakuControl dentro de su entorno operativo real. El diagrama ilustra la convivencia de la plataforma principal con otros sistemas aislados de la empresa y los actores organizacionales. Esto permite comprender los flujos de información y los procesos de negocio en el terreno, existan o no integraciones directas a nivel de código.
 
 ![Landscape Diagram](./assets/images/c0_system_landscape.png)
 <br>
 
 ### 4.3.2. Software Architecture Context Level Diagrams
+
+> 🔴 **CAMBIAR** — Agregar actores (Supermarket Buyer, Consumer) y sistemas externos nuevos (Blockchain Network/RPC); conservar Stripe, Firebase y servicio meteorológico. (Tarea C4-12)
+
 El propósito de este nivel es definir de manera estricta las fronteras del software en desarrollo. El diagrama detalla a los usuarios directos (el Administrador y el Piscicultor) y las dependencias con sistemas externos críticos para la operatividad y monetización, tales como la infraestructura IoT en los estanques, la pasarela de pagos B2B y las APIs meteorológicas.
 
 ![Context Diagram](./assets/images/c1_yakucontrol_context.png)
 <br>
 
 ### 4.3.3. Software Architecture Container Level Diagrams
+
+> 🔴 **CAMBIAR** — **Incoherencia crítica:** el texto habla de "API Gateway", "malla de microservicios" y "bus de eventos", pero AD-02 decide **Monolito Modular**. Rediseñar containers: Landing (HTML/CSS/JS) · Web App (Angular) · Mobile App (Flutter) · Backend (Spring Boot, monolito modular con 6 módulos) · Base de datos · Edge API (Python/Flask + MQTT) · Dispositivo IoT · Smart Contract (Solidity). Reescribir el texto acorde. (Tarea C4-12)
+
 Se expone la estructura interna de YakuControl y las decisiones tecnológicas de alto nivel. Este esquema identifica las unidades de ejecución independientes que conforman el sistema, abarcando desde las interfaces de usuario (aplicaciones web SPA y aplicaciones móviles nativas) hasta el enrutamiento mediante un API Gateway y la malla de microservicios backend. Asimismo, ilustra la estrategia de persistencia en bases de datos relacionales y de series de tiempo y el modelo de comunicación asíncrona mediante un bus de eventos, demostrando la escalabilidad y el desacoplamiento de la arquitectura.
 
 ![Container Diagram](./assets/images/c2_yakucontrol_container.png)
@@ -1278,6 +1518,9 @@ Se expone la estructura interna de YakuControl y las decisiones tecnológicas de
 
 
 ### 4.3.4. Software Architecture Deployment Diagrams
+
+> 🔴 **CAMBIAR** — Reflejar los nuevos containers (frontends, backend, Edge, red de pruebas EVM, proveedor de RPC) y confirmar el proveedor cloud real. (Tarea C4-12)
+
 Mapea la arquitectura lógica hacia la infraestructura física y los servicios en la nube. Este nivel visualiza la distribución topológica y geográfica del software, detallando cómo los artefactos y contenedores se instalan en los entornos de ejecución reales. El esquema evidencia la separación estratégica en ejecución en el "Edge", la distribución global del frontend mediante redes de entrega de contenido, y el despliegue seguro del backend dentro de una red virtual privada (VNet) administrada en la nube de Microsoft Azure.
 
 ![Deployment Diagram](./assets/images/c4_deployment_yakucontrol.png)
@@ -1285,7 +1528,1084 @@ Mapea la arquitectura lógica hacia la infraestructura física y los servicios e
 
 <div style="page-break-after: always;"></div>
 
+# Capítulo V: Tactical-Level Software Design
+
+> 🔵 **BASE / REUTILIZAR** — Todo este capítulo viene del reporte de IoT (cap. 4.2), **sin editar**. Se reordenaron las secciones: primero los contextos Core. Hay que: (1) quitar menciones a microservicios, Kafka y API Gateway (la solución es monolito modular con eventos en proceso); (2) re-exportar las imágenes que cambien; (3) agregar el BC nuevo **Traceability** (5.2). Cada BC debe tener Domain/Interface/Application/Infrastructure Layer, Component Diagram (C4 nivel 3), Class Diagram del dominio y Database Diagram. Las imágenes referencian `./assets/images/`: consolidar rutas en el repo nuevo.
+
+
+En este capítulo se presenta la perspectiva táctica del diseño de YakuControl. Se incluye una sección interna por cada bounded context.
+
+## 5.1. Bounded Context: Telemetry Context
+
+> 🔴 **CAMBIAR** — [BLOCKCHAIN] Agregar el modelo de lectura **Water Quality Summary** (resumen por día/semana/mes y por ciclo del lote: promedio, mínimo, máximo, % de tiempo en rango del ICA, eventos críticos, tiempo de respuesta y cobertura de datos) y el servicio de consulta que consume Traceability. Quitar `KafkaEventPublisher` → publicación de eventos en proceso. Corregir: `PondRepositoryImpl` "implementa la interfaz UserRepository". Actualizar los diagramas (clases, componentes, BD). (Tarea C5-3)
+
+Este contexto es el núcleo técnico de YakuControl. Su responsabilidad principal es la ingesta masiva, validación y procesamiento de los flujos de datos crudos provenientes de los sensores IoT instalados en los estanques de crianza de truchas. Utilizando principios de **Edge Computing** y arquitectura hexagonal, transforma datos inestables en métricas inmutables y detecta anomalías críticas en tiempo real para activar el soporte vital.
+
+### 5.1.1. Domain Layer
+
+La capa de dominio del Bounded Context Telemetry presenta la descripción estructurada de las clases que conforman el modelo encargado de garantizar la consistencia de los datos hídricos. Diseñado bajo los principios de DDD táctico, este modelo aísla las reglas de la acuicultura (umbrales, calibración, estabilidad) de la tecnología de sensores o bases de datos, utilizando agregados para mantener la integridad de cada estanque.
+
+#### Aggregate Root
+* **Pond (Estanque)** : Representa la unidad de producción y es la raíz de consistencia. Encapsula el estado actual de sus variables (PH, Oxígeno, Temperatura) y valida que cualquier nueva métrica entrante sea consistente con su historial y la especie que alberga.
+
+#### Entity
+* **ValidatedMetric** : Representa un punto de dato único (ej: PH 6.5) que ha superado los filtros de calidad y ha sido persistido de forma inmutable. Contiene su valor, timestamp y unidad de medida.
+* **Sensor** : Entidad que representa el hardware físico. Mantiene su estado de calibración y está vinculado a un tipo de variable específica.
+
+#### Value Object
+* **RawReading** : Objeto inmutable que captura el dato crudo recién llegado del dispositivo IoT (sensorId, valor_sin_procesar, timestamp) antes de ser validado.
+* **OptimalRange** : Define los límites (mínimo/máximo) aceptables para una variable específica según la etapa de vida de la trucha.
+* **WaterVariableType** : Enumerado que define el tipo de métrica (PH, TEMPERATURE, OXYGEN).
+
+![Domain Layer Telemetry](./assets/images/domainlayertelemetry.png)
+
+### 5.1.2. Interface Layer
+
+La capa de interfaz en el Bounded Context Telemetry actúa como el punto de contacto primario para la entrada de datos. A diferencia de otros contextos, su interacción principal no es humana, sino de máquina a máquina (M2M), gestionando el flujo masivo de mensajes desde los brokers MQTT o gateways en el Edge y exponiendo APIs para la visualización de datos.
+
+#### Controller
+* **PondMetricsController** : Controlador REST que expone los **Read Models** optimizados para las gráficas históricas y el estado actual de los estanques consultados por la App Web/Móvil.
+* **IoTDataStreamConsumer** : Adaptador especializado (quizás gRPC o WebSocket listener) que se suscribe al flujo de mensajes crudos provenientes del hardware y los introduce en la capa de aplicación.
+
+#### DTO
+* **RawIoTMessageResource** : Objeto que captura la estructura del mensaje crudo enviado por el dispositivo IoT a través del broker.
+* **CurrentPondStateResource** : Representa la respuesta optimizada con las últimas métricas validadas de un estanque para el Dashboard en tiempo real.
+* **HistoricalTrendResource** : Objeto estructurado para alimentar las gráficas de tendencias históricas, optimizado para series de tiempo.
+
+#### Transform
+* **RawReadingFromIoTMessageAssembler** : Componente encargado de transformar el mensaje crudo de red (RawIoTMessageResource) en un Objeto de Valor de dominio puro (RawReading).
+* **CurrentStateResourceFromAggregateAssembler** : Convierte el estado actual del Agregado Pond en un formato ligero y optimizado (CurrentPondStateResource) para su visualización.
+
+![Interface Layer Telemetry](./assets/images/interfacelayertelemetry.png)
+
+### 5.1.3. Application Layer
+
+La capa de aplicación en el Bounded Context Telemetry coordina el flujo de datos masivos. Siguiendo el patrón CQRS, separa estrictamente la orquestación de la ingesta de datos (comandos de alta frecuencia) de la consulta de información histórica (consultas). No contiene lógica de negocio, pero dirige la validación y la persistencia de las métricas.
+
+#### Command
+* **MetricApplicationService** : Servicio encargado de orquestar la ingesta. Recibe una `RawReading`, coordina con el Agregado `Pond` para aplicar las reglas de validación del Dominio y, si el dato es consistente, persiste la `ValidatedMetric`, publicando eventos si se detectan anomalías.
+* **RegisterRawReadingCommand** : Objeto inmutable que transporta la intención de registrar un nuevo dato crudo desde la interfaz de IoT.
+
+#### Query
+* **PondQueryService** : Servicio encargado de orquestar las consultas de lectura puras. Permite a los clientes (App Web y Móvil) obtener el estado actual o el historial de un estanque consultando repositorios optimizados para series de tiempo (Read Models).
+* **GetHistoricalTrendQuery** : Objeto que transporta los parámetros (pondId, rango_fecha) para una consulta histórica.
+
+#### Domain Event Handlers
+* **LecturaFueraDeRangoHandler** : Escucha el evento de dominio interno `LecturaFueraDeRangoNormalDetectada` y orquesta su publicación hacia el Event Bus externo para que el contexto de Alertas reaccione.
+* 
+![Application Layer Telemetry](./assets/images/applicationlayertelemetry.png)
+
+### 5.1.4. Infrastructure Layer
+
+La capa de infraestructura proporciona las capacidades tecnológicas críticas para manejar la alta frecuencia de datos de Telemetry. Implementa los mecanismos de persistencia (optimizados para series de tiempo), la comunicación con el broker de mensajes IoT y el bus de eventos externo, aplicando la inversión de dependencias.
+
+* **PondRepositoryImpl** : Clase que implementa la interfaz UserRepository. Utiliza un repositorio de Spring Data JPA con **PostgreSQL** para persistir y consultar los metadatos y el estado transaccional del Agregado Pond.
+* **TimeSeriesRepositoryImpl** : Implementación especializada que gestiona la persistencia masiva e inmutable de las `ValidatedMetric` en una base de datos optimizada para series de tiempo (como **TimescaleDB** o **InfluxDB**).
+* **MqttIoTBrokerClient** : Adaptador técnico encargado de la conexión, suscripción y recepción de mensajes desde el broker MQTT (ej: AWS IoT Core o Mosquitto en el Edge).
+* **KafkaEventPublisher** : Componente encargado de publicar los eventos de dominio confirmados (ej: `MétricaActualizada`) hacia un bus de eventos externo (como **Apache Kafka**) para la integración con otros Bounded Contexts.
+
+![Infrastructure Layer Telemetry](./assets/images/infrastructurelayertelemetry.png)
+
+### 5.1.5. Bounded Context Software Architecture Component Level Diagrams
+
+<p align="center">
+  <img src="./assets/images/c3_telemetry_yakucontrol.png" width="55%">
+  <br>
+  <i>Telemetry-Context</i>
+</p>
+
+### 5.1.6. Bounded Context Software Architecture Code Level Diagrams
+
+#### 5.1.6.1. Bounded Context Domain Layer Class Diagrams
+El diagrama de clases de la capa de dominio de Telemetry detalla la estructura táctica del Bounded Context, especificando cómo el Agregado **Pond** garantiza la consistencia de sus entidades y cómo interactúa con los objetos de valor inmutables generados por el flujo IoT. Muestra los atributos y comportamientos críticos para la validación de la calidad del agua.
+
+![Domain Layer Telemetry](./assets/images/classdiagramtelemetry.png)
+
+#### 5.1.6.2. Bounded Context Database Design Diagram
+Detalla la estructura híbrida de persistencia para la gestión de métricas. Define un modelo relacional (**PostgreSQL**) para los metadatos de estanques y sensores, y un modelo optimizado de series de tiempo (**TimescaleDB/Hypertable**) para la ingesta masiva e inmutable de lecturas validadas, garantizando integridad y rendimiento en las consultas históricas.
+
+![Database Telemetry](./assets/images/databaseyakucontroltelemetry.png)
+
+## 5.2. Bounded Context: Traceability Context
+
+> 🟢 **NUEVO** — **BC nuevo (Core).** Responsabilidad: ciclo de vida del Lote (Batch), hitos (Milestone), resúmenes de calidad congelados, emisión/revocación del Traceability Certificate con QR y anclaje del hash en la blockchain. Documentar las 4 capas + diagramas con la misma plantilla que los demás contextos; la propuesta de clases y capas está en la tarea C5-1/C5-2 de la lista de pendientes. (Tareas C5-1, C5-2)
+
+
+_(Sección pendiente. Documentar con la misma plantilla que los demás contextos.)_
+
+### 5.2.1. Domain Layer
+
+### 5.2.2. Interface Layer
+
+### 5.2.3. Application Layer
+
+### 5.2.4. Infrastructure Layer
+
+### 5.2.5. Bounded Context Software Architecture Component Level Diagrams
+
+### 5.2.6. Bounded Context Software Architecture Code Level Diagrams
+
+#### 5.2.6.1. Bounded Context Domain Layer Class Diagrams
+
+#### 5.2.6.2. Bounded Context Database Design Diagram
+
+## 5.3. Bounded Context: Equipment Context
+
+> 🟡 **AJUSTAR AL ENUNCIADO** — Revisar que el agregado `Pond` de Equipment y el `Pond` de Telemetry no se contradigan (hoy hay dos agregados con el mismo nombre en contextos distintos: justificarlo o renombrar). Definir si el Lote vive aquí o en Traceability (propuesta: Traceability). (Tarea C5-4)
+
+
+### 5.3.1. Domain Layer
+
+El Bounded Context Equipment presenta las clases que conforman el modelo de dominio encargado de la gestión de estanques y hardware en el sistema de monitoreo. Este modelo se ha diseñado bajo los principios de DDD, manteniendo una separación clara entre la lógica del dominio y los aspectos técnicos o de infraestructura.
+
+#### Aggregate
+* **Pond** : Representa el estanque de crianza como unidad productiva central. Gestiona su ciclo de configuración y la asignación del piscicultor responsable.
+* **Equipment** : Representa un dispositivo físico (sensor o actuador). Gestiona su estado operativo y su vinculación a un estanque.
+* **PondAssignment** : Registra el historial de asignaciones de piscicultores a estanques.
+
+#### Value Object
+* **PondName** : Encapsula el nombre del estanque.
+* **PondStatus** : Estado operativo del estanque (ACTIVE, INACTIVE, FULL).
+* **EquipmentType** : Tipo de dispositivo físico (SENSOR, ACTUATOR).
+* **EquipmentStatus** : Estado del hardware (AVAILABLE, LINKED).
+
+#### Domain Service
+* **PondCommandService** : Define las operaciones de escritura sobre estanques.
+* **PondQueryService** : Define las consultas de lectura sobre estanques.
+* **EquipmentCommandService** : Define las operaciones de escritura sobre hardware.
+* **EquipmentQueryService** : Define la consulta de hardware por estanque.
+* **PondAssignmentQueryService** : Define la consulta del historial de asignaciones.
+
+#### Repository
+* **PondRepository** : Abstrae la persistencia del agregado Pond.
+* **EquipmentRepository** : Abstrae la persistencia de Equipment.
+* **PondAssignmentRepository** : Abstrae la persistencia del historial de asignaciones.
+
+![Domain Layer Equipment](./assets/images/Equipment_domain_layer.png)
+
+### 5.3.2. Interface Layer
+
+La capa de interfaz expone los endpoints RESTful para la gestión de estanques, registro de hardware y asignación de piscicultores desde el Web Dashboard.
+
+#### Controller
+* **PondController** : Gestiona la creación de estanques, consulta por granja, asignación de piscicultores y certificación para producción.
+* **EquipmentController** : Gestiona el registro de dispositivos y su vinculación a un estanque.
+
+#### DTO
+* **CreatePondResource** : Captura los datos para registrar un nuevo estanque.
+* **PondResource** : Respuesta estándar al consultar un estanque.
+* **RegisterEquipmentResource** : Captura los datos para registrar un dispositivo.
+* **LinkEquipmentResource** : Transporta el identificador del estanque destino.
+* **EquipmentResource** : Respuesta estándar al consultar un dispositivo.
+* **AssignFishFarmerResource** : Captura el identificador del piscicultor a asignar.
+
+#### Transform
+* **CreatePondCommandFromResourceAssembler** : Convierte CreatePondResource en CreatePondCommand.
+* **PondResourceFromEntityAssembler** : Convierte el agregado Pond en PondResource.
+* **RegisterEquipmentCommandFromResourceAssembler** : Convierte RegisterEquipmentResource en RegisterEquipmentCommand.
+* **EquipmentResourceFromEntityAssembler** : Convierte Equipment en EquipmentResource.
+
+![Interface Layer Equipment](./assets/images/Equipment_interface_controller.png)
+
+### 5.3.3. Application Layer
+
+La capa de aplicación orquesta los flujos de gestión de activos físicos. Siguiendo el patrón CQRS, se divide en servicios de comandos y servicios de consultas.
+
+#### Command
+* **PondCommandService** : Orquesta la creación de estanques, asignación de piscicultores y certificación para producción.
+* **EquipmentCommandService** : Orquesta el registro de dispositivos y su vinculación a estanques.
+* **CreatePondCommand / AssignFishFarmerCommand / CertifyPondCommand** : Transportan la intención de ejecutar acciones sobre un estanque.
+* **RegisterEquipmentCommand / LinkEquipmentToPondCommand** : Transportan la intención de registrar o vincular un dispositivo.
+
+#### Query
+* **PondQueryService** : Consulta estanques por ID o por granja.
+* **EquipmentQueryService** : Consulta hardware vinculado a un estanque.
+* **PondAssignmentQueryService** : Consulta el historial de asignaciones de un estanque.
+
+![Application Layer Equipment](./assets/images/Equipment_layer_command.png)
+
+### 5.3.4. Infrastructure Layer
+
+La capa de infraestructura implementa las interfaces definidas en Domain Layer aplicando el principio de Inversión de Dependencias, gestionando la persistencia con JPA/PostgreSQL y la publicación de eventos de dominio.
+
+* **PondRepositoryImpl** : Implementa PondRepository usando Spring Data JPA.
+* **EquipmentRepositoryImpl** : Implementa EquipmentRepository usando Spring Data JPA.
+* **PondAssignmentRepositoryImpl** : Implementa PondAssignmentRepository para el historial de asignaciones.
+* **SpringDomainEventPublisher** : Publica el evento FishFarmerAssignedEvent al bus interno de Spring para que el módulo IAM actualice los permisos del piscicultor.
+
+![Infrastructure Layer Equipment](./assets/images/Infrastructure_layer_Repository.png)
+
+### 5.3.5. Bounded Context Software Architecture Component Level Diagrams
+
+<p align="center">
+  <img src="./assets/images/c3_equipment_yakucontrol.png" width="55%">
+  <br>
+  <i>Equipment-Context</i>
+</p>
+
+### 5.3.6. Bounded Context Software Architecture Code Level Diagrams
+#### 5.3.6.1. Bounded Context Domain Layer Class Diagrams
+
+El diagrama de clases de la capa de dominio del Equipment Context detalla la estructura táctica del Bounded Context, especificando los agregados, comandos, consultas y objetos de valor que lo integran. Este esquema permite visualizar las interacciones y reglas de negocio plasmadas en los atributos y comportamientos de cada componente, desde la creación y configuración de estanques hasta la vinculación de hardware y asignación de piscicultores responsables.
+
+![Domain Layer Equipment](./assets/images/domain_layer_equipment.png)
+
+#### 5.3.6.2. Bounded Context Database Design Diagram
+
+El siguiente diagrama detalla la estructura relacional para la gestión de activos físicos del sistema de crianza de peces. Define la tabla ponds(estanques) como entidad central que representa cada estanque registrado en una granja, incluyendo su capacidad, estado de configuración y el piscicultor actualmente responsable. La tabla equipment gestiona el inventario de dispositivos físicos (sensores y actuadores) vinculados a cada estanque mediante clave foránea. Finalmente, la tabla pond_assignments mantiene el historial completo de asignaciones de piscicultores, registrando tanto la fecha de asignación como la de desvinculación, lo que permite auditar la trazabilidad de responsabilidades sobre cada estanque a lo largo del tiempo.
+
+![Database Equipment](./assets/images/database_yakucontrol_equipment.png)
+
+## 5.4. Bounded Context: IAM Context
+
+> 🟡 **AJUSTAR AL ENUNCIADO** — Renombrar "Iam" → "IAM". Revisar mención de microservicios. Para el MVP la verificación del QR es **pública** (sin login), así que el cambio principal es la autorización de quién puede emitir/revocar certificados (ROLE_ADMIN de la granja). (Tarea C5-5)
+
+### 5.4.1. Domain Layer
+Bounded Context IAM presenta una descripción estructurada de las clases que conforman el modelo de dominio encargado de la gestión de identidades, roles y control de acceso de los usuarios dentro del sistema IoT de monitoreo en criaderos de truchas. Este modelo se ha diseñado bajo los principios de Domain-Driven Design (DDD), con el objetivo de reflejar fielmente las reglas del negocio y de seguridad en el código, manteniendo una separación clara entre la lógica del dominio y los aspectos técnicos o de infraestructura.
+
+#### Aggregate
+* **User** : Representa un usuario (administrador o piscicultor) registrado en el sistema cuando se otorgue la cuenta al administrador o se registre el usuario como piscicultor.
+#### Entity
+* **PondToken** : Código único generado por el rol administrador que permite el registro de piscicultores a su nombre.
+#### Value Object
+* **Role** 
+
+![Domain Layer IAM](./assets/images/domain_aggregate_iam.png)
+
+### 5.4.2. Interface Layer
+La capa de interfaz (o Interface Layer) en el Bounded Context IAM actúa como el punto de contacto entre el sistema y el mundo exterior. Su responsabilidad principal es exponer los puntos de enlace (endpoints) RESTful para la autenticación de usuarios, la gestión de identidades y el control de acceso, asegurando una comunicación segura y estandarizada con los clientes (App Web y App Móvil).
+
+#### Controller
+* **UserController** : Controlador REST que gestiona las operaciones relacionadas con las gestión de identidades, manejo de permisos y roles.
+
+#### DTO
+* **SignInResource** : Objeto que captura las credenciales del usuario al intentar acceder al sistema.
+* **SignUpResource** : Objeto que captura la información necesaria (incluyendo el PondToken para piscicultores) al momento del registro.
+* **UpdateUserProfileResource** : Objeto utilizado para capturar la información al momento de actualizar el perfil de un usuario existente.
+* **UserResource** : Representa la respuesta estándar del sistema al consultar los datos de un usuario.
+* **AuthenticationResponseResource** : Representa la respuesta exitosa tras el inicio de sesión, conteniendo el token de acceso (JWT).
+
+#### Transform
+* **SignInCommandFromResourceAssembler** : Componente encargado de transformar el DTO de entrada (SignInResource) en un comando de dominio puro (SignInCommand) para ser procesado por la capa de aplicación.
+* **SignUpCommandFromResourceAssembler** : Transforma el DTO de registro (SignUpResource) en su respectivo comando (SignUpCommand).
+* **UserResourceFromEntityAssembler** : Convierte la entidad de dominio User en un formato seguro y estructurado (UserResource) para ser expuesto al cliente.
+
+![Interface Layer IAM](./assets/images/interface_layer_iam.png)
+
+### 5.4.3. Application Layer
+La capa de aplicación en el Bounded Context IAM define los trabajos que el software debe realizar y dirige los objetos de dominio para que resuelvan los problemas de negocio. Siguiendo el principio de inversión de dependencias y el patrón CQRS (separación de comandos y consultas), esta capa se divide en servicios de comandos (para el registro, autenticación y modificación de datos) y servicios de consultas (para leer la información de los perfiles).
+
+#### Command
+* **UserCommandService** : Servicio encargado de orquestar las operaciones que alteran el estado del sistema. Coordina el inicio de sesión, la validación de los códigos de acceso (PondToken) requeridos para los piscicultores, la instanciación de la entidad User para nuevos registros y la actualización de perfiles, delegando a la infraestructura la persistencia de los cambios.
+* **SignInCommand / SignUpCommand / UpdateUserProfileCommand** : Objetos inmutables que transportan la intención de ejecutar una acción específica desde la capa de interfaz hacia la capa de aplicación. Contienen los datos estrictamente necesarios (credenciales, información personal o tokens de registro) para llevar a cabo su respectiva operación.
+
+#### Query
+* **UserQueryService** : Servicio encargado de orquestar las consultas de lectura puras. Permite a los clientes (App Web para Administradores y App Móvil para Piscicultores) obtener la información del perfil de un usuario específico o consultar la lista de personal registrado, sin realizar ninguna modificación en el estado del dominio.
+
+![Application Layer IAM](./assets/images/application_layer_iam.png)
+
+### 5.4.4. Infrastructure Layer
+La capa de infraestructura proporciona las capacidades técnicas y tecnológicas que soportan a las demás capas (Interfaces, Aplicación y Dominio) dentro del Bounded Context IAM. Su propósito es implementar las interfaces que definimos en las capas superiores, aplicando el principio de Inversión de Dependencias. Aquí es donde se configura la conexión a la base de datos (por ejemplo, usando JPA/Hibernate con PostgreSQL) y se gestionan los mecanismos técnicos de seguridad.
+
+* **UserRepositoryImpl** : Clase que implementa la interfaz UserRepository. Traduce la entidad de dominio User a su representación técnica en la base de datos (UserJpaEntity) y utiliza un repositorio de Spring Data JPA para persistir o consultar los datos del usuario.
+* **PondTokenRepositoryImpl** : Clase que implementa la interfaz PondTokenRepository. Gestiona la traducción y persistencia en base de datos de los códigos de un solo uso generados para el registro de los piscicultores.
+* **JwtTokenProvider** : Componente técnico encargado de la infraestructura de seguridad, específicamente de la generación, firma criptográfica y validación de los tokens JWT entregados a los clientes (App Web y App Móvil).
+
+![Infrastructure Layer IAM](./assets/images/infrastructure_layer_iam.png)
+
+### 5.4.5. Bounded Context Software Architecture Component Level Diagrams
+
+<p align="center">
+  <img src="./assets/images/c3_iam_yakucontrol.png" width="55%">
+  <br>
+  <i>Iam-Context</i>
+</p>
+
+### 5.4.6. Bounded Context Software Architecture Code Level Diagrams
+#### 5.4.6.1. Bounded Context Domain Layer Class Diagrams
+El diagrama de clases de la capa de dominio de IAM detalla la estructura táctica del Bounded Context, especificando los agregados, entidades y objetos de valor que lo integran. Este esquema permite visualizar las interacciones y reglas de negocio plasmadas en los atributos y comportamientos de cada componente.
+
+![Domain Layer IAM](./assets/images/domain_layer_iam.png)
+#### 5.4.6.2. Bounded Context Database Design Diagram
+Detalla la estructura relacional para la gestión de identidades. Define la persistencia de usuarios y sus roles, junto con el sistema de tokens para el registro de piscicultores. El modelo asegura la integridad mediante claves primarias y foráneas, garantizando una base sólida y segura para la autenticación en el sistema.
+
+![Database IAM](./assets/images/database_yakucontrol_iam.png)
+
+## 5.5. Bounded Context: Notification Context
+
+> 🟡 **AJUSTAR AL ENUNCIADO** — Quitar dependencia de Kafka; revisar eventos que consume (alertas críticas) y, opcional, notificación "certificado emitido". Completar secciones que quedaron vacías en IoT (Aggregate/Entity). (Tarea C5-6)
+
+### 5.5.1. Domain Layer
+Bounded Context Notification presenta una descripción estructurada de las clases que conforman el modelo de dominio encargado de la gestión de alertas y notificaciones dentro del sistema IOT de monitoreo en criaderos de truchas. Este modelo se ha diseñado bajo los principios de Domain-Driven Design (DDD), con el objetivo de reflejar fielmente las reglas del negocio en el código, manteniendo una separación clara entre la lógica del dominio y los aspectos técnicos o de infraestructura.
+
+#### Aggregate 
+* **Notification** : Representa una alerta (normal o crítica) generada por el sistema cuando los sensores envían datos por debajo del umbral permitido, si hay daño o pérdida de conexión.
+#### Entity
+* **Recipient** : Representa a la persona (Piscicultor o Administrador/Dueño) que recibe la notificación.
+* **SensorData**: Contiene la información capturada por el hardware (temperatura, turbidez, ph, estado de bombas) en el momento de la alerta.
+#### Value Object
+* **NotificationType**
+* **RecipientRole**
+* **ContactInfo**
+* **HardwareStatus**
+
+![Agregate](./assets/images/Notification-domain-aggregate.png)
+![Entity](./assets/images/Notification-domain-entity.png)
+![Value Object](./assets/images/Notification-domain-valueobject.png)
+
+
+### 5.5.2. Interface Layer
+La capa de interfaz de usuario (o Interface Layer) en el Bounded Context de Notification actúa como el punto de contacto entre el sistema y el mundo exterior. Su responsabilidad principal es exponer los puntos de enlace (endpoints) RESTful para la gestión de alertas y asegurar que la comunicación con los clientes (App Web y App Móvil).
+
+#### Controller
+* **NotificationController:** Controlador REST que gestiona las operaciones relacionadas con las notificaciones, permitiendo la recepción de alertas desde el hardware
+#### DTO
+* **CreateNotificationResource (DTO):** Objeto de transferencia de datos utilizado para capturar la información necesaria al generar una nueva alerta desde los sensores
+* **NotificationResource (DTO):** Representa la respuesta estándar del sistema al consultar una notificación, formateada para ser consumida por la aplicación web o móvil.
+* **SensorDataResource (DTO):** Objeto de transferencia de datos utilizndo para capturar la informacion del estado de los Sensores.
+
+![Controller](./assets/images/Notification-interface-controller.png)
+![DTO](./assets/images/Notification-interface-dto.png)
+
+### 5.5.3. Application Layer
+La capa de aplicación en el Bounded Context de Notification define los trabajos que el software debe realizar y dirige los objetos de dominio para que resuelvan los problemas. Siguiendo el principio de inversión de dependencias y el patrón CQRS (separación de comandos y consultas), esta capa se divide en servicios de comandos (para crear alertas) y servicios de consultas (para leer el historial).
+
+#### Command
+* **NotificationCommandService:** Servicio encargado de orquestar la creación de nuevas alertas. Coordina la obtención de los destinatarios correspondientes, crea la entidad Notification y hace el llamado para enviar y guardar la alerta.
+* **CreateNotificationCommand:** Objeto inmutable que transporta la intención de crear una notificación desde la capa de interfaz hacia la capa de aplicación. Contiene los datos del sensor y el tipo de alerta.
+
+#### Query
+* **NotificationQueryService:** Servicio encargado de orquestar las consultas de lectura para que la App Web (Administradores) y App Móvil (Piscicultores) puedan ver el historial de alertas.
+
+![command&query](./assets/images/Notification-application-command-query.png)
+
+### 5.5.4. Infrastructure Layer
+La capa de infraestructura proporciona las capacidades técnicas y tecnológicas que soportan a las demás capas (Interfaces, Aplicación y Dominio). Su propósito es implementar las interfaces (puertos) que definimos en la capa de Aplicación, aplicando el principio de Inversión de Dependencias.
+
+Aquí es donde configuramos la conexión a la base de datos (por ejemplo, usando JPA/Hibernate con PostgreSQL o MySQL
+
+**NotificationRepositoryImpl:** Clase que implementa la interfaz NotificationRepository definida en la capa de Aplicación. Traduce las entidades de dominio a NotificationJpaEntity y utiliza un repositorio de Spring Data JPA para guardar o consultar en la base de datos
+
+![Infrastructure](./assets/images/Notification-infrastructure.png)
+
+### 5.5.5. Bounded Context Software Architecture Component Level Diagrams
+
+<p align="center">
+  <img src="./assets/images/c3_notification_yakucontrol.png" width="45%">
+  <br>
+  <i>Notification-Context</i>
+</p>
+
+### 5.5.6. Bounded Context Software Architecture Code Level Diagrams
+#### 5.5.6.1. Bounded Context Domain Layer Class Diagrams
+![Notification-domain-level](./assets/images/Notification-domain-class.png)
+#### 5.5.6.2. Bounded Context Database Design Diagram
+![Notification-db](./assets/images/Notification-db.png)
+
+
+## 5.6. Bounded Context: Payment Context
+
+> 🔴 **CAMBIAR** — [BLOCKCHAIN/NEGOCIO] Modelar el plan/add-on **TRACE** (habilitación de la emisión de certificados por granja/estanque) en el agregado `Subscription`/`Plan`. Mantener Stripe vía adaptador. (Tarea C5-7)
+
+El Payment Context gestiona el modelo de negocio SaaS de YakuControl. Su responsabilidad es controlar el ciclo de vida de las suscripciones de cada piscigranja, procesar los cobros recurrentes a través de pasarelas de pago externas (Stripe) y garantizar que el acceso a la plataforma esté siempre vinculado a un estado de suscripción válido. Al ser un contexto genérico, delega la complejidad del procesamiento de pagos a servicios externos, concentrándose en las reglas de negocio de activación, suspensión y facturación.
+
+### 5.6.1. Domain Layer
+
+La capa de dominio del Payment Context modela el ciclo de vida de una suscripción SaaS. Su diseño aísla las reglas de negocio de facturación (planes, periodos, estados) de la tecnología de pago externa, garantizando que el dominio permanezca estable aunque el proveedor de pagos cambie.
+
+#### Aggregate Root
+* **Subscription** : Representa el contrato de acceso mensual de una piscigranja a YakuControl. Es la raíz de consistencia del contexto. Encapsula el plan contratado, el estado actual (`TRIAL`, `ACTIVE`, `SUSPENDED`, `CANCELLED`) y el historial de facturación. Garantiza que ninguna transición de estado ocurra sin pasar por sus invariantes de negocio (ej: no se puede activar una suscripción sin un pago confirmado).
+
+#### Entity
+* **Invoice** : Representa un comprobante de cobro individual generado dentro de un ciclo de facturación. Tiene su propio ciclo de vida (`PENDING`, `PAID`, `FAILED`) y contiene el monto cobrado, la fecha de emisión y la referencia del cargo externo en Stripe.
+
+#### Value Object
+* **SubscriptionPlan** : Enumerado que define los planes disponibles (ej: `BASIC`, `PRO`, `ENTERPRISE`), cada uno con su precio base por estanque y los límites de funcionalidades incluidas.
+* **SubscriptionStatus** : Enumerado que representa el estado del contrato (`TRIAL`, `ACTIVE`, `SUSPENDED`, `CANCELLED`).
+* **Money** : Objeto inmutable que encapsula un monto numérico y su moneda (PEN/USD), evitando cálculos de dinero sin tipo.
+* **BillingPeriod** : Define el rango de fechas de un ciclo de facturación (fecha de inicio y fecha de vencimiento).
+
+![Domain Layer Payment](./assets/images/payment_context.png)
+
+### 5.6.2. Interface Layer
+
+La capa de interfaz del Payment Context expone los endpoints REST para la gestión de suscripciones y actúa como receptor de los eventos asincrónicos enviados por Stripe a través de webhooks, siendo este último el mecanismo principal de confirmación de pagos.
+
+#### Controller
+* **SubscriptionController** : Controlador REST que expone los endpoints para que el Administrador pueda iniciar una suscripción, consultar su estado actual y ver el historial de facturas desde el Web Dashboard.
+* **StripeWebhookController** : Controlador especializado que recibe y valida los eventos HTTP enviados por Stripe (ej: `payment_intent.succeeded`, `invoice.payment_failed`). Traduce estos eventos externos en comandos de dominio internos.
+
+#### DTO
+* **CreateSubscriptionResource** : Captura la intención del Administrador de contratar un plan, incluyendo el plan seleccionado y el número de estanques a monitorear.
+* **SubscriptionResource** : Respuesta estándar con el estado actual de la suscripción, el plan vigente y la fecha del próximo cobro.
+* **InvoiceResource** : Representa un comprobante de pago formateado para su visualización en el historial de facturación del Dashboard.
+* **CheckoutSessionResource** : Contiene la URL de redirección generada por Stripe para que el Administrador complete el pago en la pasarela externa.
+
+#### Transform
+* **CreateSubscriptionCommandFromResourceAssembler** : Transforma el DTO de entrada (`CreateSubscriptionResource`) en el comando de dominio (`CreateSubscriptionCommand`).
+* **SubscriptionResourceFromEntityAssembler** : Convierte el Agregado `Subscription` en un `SubscriptionResource` seguro y estructurado para el cliente.
+* **InvoiceResourceFromEntityAssembler** : Convierte la entidad `Invoice` en un `InvoiceResource` para el historial de facturación.
+
+![Interface Layer Payment](./assets/images/payment_interface.png)
+
+### 5.6.3. Application Layer
+
+La capa de aplicación del Payment Context orquesta el ciclo de vida de las suscripciones aplicando CQRS. Separa las operaciones que modifican el estado (activar, suspender, cancelar) de las consultas de lectura (estado actual, historial de facturas). No contiene lógica de negocio directa, pero coordina el dominio con la infraestructura de pagos.
+
+#### Command
+* **SubscriptionCommandService** : Servicio que orquesta todas las operaciones de escritura. Coordina la creación de nuevas suscripciones, la activación tras confirmación de pago, la suspensión por mora y la cancelación, asegurando que cada transición pase por las invariantes del Agregado `Subscription`.
+* **CreateSubscriptionCommand** : Objeto inmutable que transporta la intención de crear una nueva suscripción (farmId, plan, cantidadEstanques).
+* **ActivateSubscriptionCommand** : Transporta la confirmación de pago recibida desde Stripe (stripePaymentIntentId) para activar una suscripción pendiente.
+* **SuspendSubscriptionCommand** : Transporta la notificación de pago fallido para suspender el acceso de la piscigranja a la plataforma.
+
+#### Query
+* **SubscriptionQueryService** : Servicio de consulta que permite al Web Dashboard obtener el estado actual de la suscripción de una piscigranja y listar el historial completo de facturas generadas.
+
+#### Domain Event Handlers
+* **PaymentConfirmedHandler** : Escucha el evento externo `StripePaymentConfirmed` (publicado por el `StripeWebhookController`) y lo traduce en un `ActivateSubscriptionCommand` para activar la suscripción correspondiente en el dominio.
+* **PaymentFailedHandler** : Escucha el evento `StripePaymentFailed` y genera un `SuspendSubscriptionCommand` para restringir el acceso de la piscigranja hasta que regularice su pago.
+
+![Application Layer Payment](./assets/images/payment_application_layer.png)
+
+### 5.6.4. Infrastructure Layer
+
+La capa de infraestructura del Payment Context implementa la persistencia de suscripciones e facturas mediante JPA/PostgreSQL, y provee el adaptador de integración con la API de Stripe, aplicando el principio de inversión de dependencias para que el dominio no dependa directamente de ningún proveedor externo.
+
+* **SubscriptionRepositoryImpl** : Implementa la interfaz `SubscriptionRepository`. Utiliza Spring Data JPA con PostgreSQL para persistir y consultar el estado transaccional del Agregado `Subscription` y sus `Invoice` asociadas.
+* **InvoiceRepositoryImpl** : Implementa la interfaz `InvoiceRepository`. Gestiona la persistencia del historial de facturas, permitiendo consultas por rango de fecha y estado de pago.
+* **StripePaymentGatewayAdapter** : Adaptador técnico que implementa la interfaz `PaymentGateway` definida en la capa de aplicación. Encapsula toda la comunicación con la API REST de Stripe: creación de `PaymentIntent`, generación de sesiones de `Checkout` y consulta del estado de cargos. Si en el futuro se migra a Culqi u otro proveedor, solo este adaptador cambia.
+* **StripeWebhookValidator** : Componente de infraestructura que verifica la firma criptográfica (`Stripe-Signature` header) de cada evento webhook entrante, garantizando que solo Stripe puede disparar cambios de estado en las suscripciones.
+
+![Infrastructure Layer Payment](./assets/images/payment_infrastructure.png)
+
+### 5.6.5. Bounded Context Software Architecture Component Level Diagrams
+
+<p align="center">
+  <img src="./assets/images/c3_subscription_yakucontrol.png" width="55%">
+  <br>
+  <i>Payment-Context</i>
+</p>
+
+### 5.6.6. Bounded Context Software Architecture Code Level Diagrams
+
+#### 5.6.6.1. Bounded Context Domain Layer Class Diagrams
+El diagrama de clases de la capa de dominio del Payment Context detalla la estructura táctica del Bounded Context, especificando cómo el Agregado **Subscription** garantiza la consistencia de su ciclo de vida y cómo se relaciona con la entidad **Invoice**. Muestra los atributos, comportamientos y las transiciones de estado que rigen el modelo de negocio SaaS de YakuControl.
+
+![Domain Layer Payment](./assets/images/payment_class.png)
+
+#### 5.6.6.2. Bounded Context Database Design Diagram
+Detalla la estructura relacional para la gestión de suscripciones y facturación. Define la tabla `subscriptions` para el estado vigente del contrato de cada piscigranja y la tabla `invoices` para el historial de cobros individuales, vinculada mediante clave foránea. El modelo garantiza la trazabilidad completa del historial de pagos y permite auditar cualquier cambio de estado en la suscripción.
+
+![Database Payment](./assets/images/payment-database.png)
+
+<div style="page-break-after: always;"></div>
+
+<div style="page-break-after: always;"></div>
+
+# Capítulo VI: Solution UX Design
+
+> 🔵 **BASE / REUTILIZAR** — Viene del cap. V del reporte de IoT, **sin editar**, renumerado. Para TP1 solo se incluye hasta **6.4.2 (Applications Wireflow Diagrams)**; Mock-ups, User Flows y Prototyping (IoT 5.4.3–5.5) se dejan para TB2. Lo que cambia: Web App en **Angular + Angular Material/PrimeNG** (no Flutter), **interfaz en inglés por defecto** con i18n en_US/es_419, accesibilidad (ARIA) y las pantallas nuevas de TRACE. Las imágenes referencian `./assets/disenoui/` y `./assets/diseñoux/` (¡con ñ!): normalizar el nombre de carpeta.
+
+
+ 
+## 6.1. Style Guidelines
+
+Los lineamientos de esta sección aseguran coherencia visual e identidad unificada en todos los componentes y vistas de YakuControl.
+
+### 6.1.1. General Style Guidelines
+
+> 🔴 **CAMBIAR** — [BLOCKCHAIN] Agregar el lenguaje visual de TRACE: color/estado semántico "Verified / Revoked / Pending", componente de sello/QR y tono de comunicación para el comprador. Quitar menciones a "AcuaNode". Revisar que Branding, Typography, Colors y Spacing sigan justificados con principios de diseño. (Tarea C6-1)
+
+
+La guía de estilos establece las bases de diseño para la plataforma YakuControl, asegurando una experiencia de usuario coherente, funcional y visualmente alineada con su propósito. En esta sección se detallan los colores, tipografías, iconografía y demás elementos visuales que conforman la identidad de la marca.
+
+---
+#### Color
+
+Los colores desempeñan un papel fundamental en la percepción que los usuarios tienen de YakuControl. En una plataforma de monitoreo acuícola, el color no solo cumple una función estética, sino también informativa y operativa. Los usuarios deben distinguir de un vistazo entre estados normales, advertencias y alertas críticas. Por ello, la paleta fue seleccionada considerando tanto la psicología del color como la teoría del color.
+
+![Color Guideline](./assets/disenoui/general-style-guidelines-color.png)
+ 
+La psicología del color estudia cómo los colores influyen en las percepciones y comportamientos humanos. Para YakuControl:
+ 
+- El azul marino oscuro evoca profundidad, confianza tecnológica y autoridad.
+- El azul cian eléctrico conecta con tecnología de punta, fluidez y datos en movimiento.
+- El turquesa evoca directamente el agua limpia y los ecosistemas acuáticos saludables.
+- El blanco neutro aporta limpieza y espacio visual, esencial en dashboards de alta densidad.
+Para la armonía cromática se escogió un esquema de colores análogos, todos pertenecientes a la familia cromática del agua. Este esquema proporciona cohesión visual, jerarquía clara mediante la progresión de oscuro a luminoso, y legibilidad óptima en vistas de monitoreo con múltiples indicadores simultáneos.
+ 
+Los colores fueron seleccionados siguiendo los lineamientos de Material Design de Google, adaptados a las necesidades de la plataforma. Además, los color tokens definen la asignación funcional de cada tono dentro del sistema de diseño, garantizando consistencia en todos los componentes y estados de la plataforma:
+
+![Color Guideline](./assets/disenoui/general-style-guidelines-colortoken.png)
+ 
+| Rol | Nombre | Hex | Uso |
+|-----|--------|-----|-----|
+| **Primario** | Navy Deep | `#002B49` | Barra de navegación, encabezados, botones de acción principal. Transmite confianza y autoridad tecnológica. |
+| **Secundario** | Cyan Electric | `#00A3E0` | Elementos interactivos secundarios, indicadores activos, gráficas en tiempo real. |
+| **Terciario** | Aqua Fresh | `#00E0D1` | Acentos, estados activos y badges de estado óptimo. Evoca agua limpia y ecosistemas saludables. |
+| **Neutro** | Off White | `#F8FAFC` | Fondo base de la interfaz. Reduce fatiga visual en sesiones prolongadas. |
+| **Información** | Blue 500 | `#2196F3` | Mensajes informativos, tooltips y enlaces contextuales. |
+| **Éxito** | Green 600 | `#43A047` | Parámetros dentro del rango óptimo y estados saludables de estanques. |
+| **Advertencia** | Amber 700 | `#F9A825` | Parámetros cercanos a límites críticos que requieren atención próxima. |
+| **Error** | Red 600 | `#E53935` | Fallos del sistema y parámetros en nivel crítico que requieren intervención inmediata. |
+
+---
+#### Tipografía
+
+La tipografía de YakuControl equilibra legibilidad técnica con una personalidad moderna y accesible. Se utilizan dos familias tipográficas con roles diferenciados, ambas disponibles en Google Fonts.
+ 
+**Títulos y Encabezados: Inter**
+ 
+Inter es la fuente principal de YakuControl, utilizada tanto para encabezados como para cuerpo de texto. Diseñada específicamente para interfaces digitales, ofrece alta legibilidad a cualquier tamaño, espaciado optimizado para pantallas y una amplia gama de pesos. Su geometría limpia transmite precisión y modernidad, valores centrales de la plataforma.
+ 
+```
+Inter Bold (700)      → Heading 1, Heading 2
+Inter SemiBold (600)  → Heading 3, Heading 4, Heading 5, Heading 6
+Inter Medium (500)    → Etiquetas, valores de parámetros
+Inter Regular (400)   → Body 1, Body 2, Caption
+Inter Light (300)     → Texto secundario, placeholders
+```
+ 
+La escala tipográfica para encabezados sigue una progresión proporcional con line-height de 1.1x el tamaño de fuente:
+
+![Big Typography Guideline](./assets/disenoui/general-style-guidelines-typo1.png)
+ 
+| Nivel | Tamaño | Line Height |
+|-------|--------|-------------|
+| Heading 1 | 56px | 61.6px |
+| Heading 2 | 48px | 52.8px |
+| Heading 3 | 40px | 44px |
+| Heading 4 | 32px | 35.2px |
+| Heading 5 | 24px | 26.4px |
+| Heading 6 | 20px | 22px |
+ 
+Para el cuerpo de texto, el line-height es de 1.5x el tamaño de fuente:
+
+![Big Typography Guideline](./assets/disenoui/general-style-guidelines-typo2.png)
+ 
+| Nivel | Tamaño | Line Height |
+|-------|--------|-------------|
+| Body 1 | 16px | 24px |
+| Body 2 | 14px | 21px |
+| Label | 13px | 19.5px |
+| Caption | 12px | 18px |
+ 
+---
+#### Iconografía
+
+La iconografía de YakuControl sigue un estilo lineal outlined, alineado con las convenciones de plataformas de monitoreo industrial. Los iconos son simples, reconocibles y funcionalmente descriptivos.
+
+![Icon Guideline](./assets/disenoui/general-style-guidelines-icon.png)
+
+Se adopta como base Material Design Icons (Material Symbols) en variante *Outlined*, con tres grupos funcionales:
+ 
+**Iconos de Navegación** (sobre fondo navy `#002B49`): dashboard, estanques, equipos, operadores, notificaciones y configuración. El ícono activo se muestra sobre un fondo navy más claro con color blanco.
+ 
+**Iconos de Acción** (sobre fondo claro, color slate `#64748B`): filtros/sliders, gráfica de barras, copiar, traducir, modo oscuro.
+ 
+**Iconos de Estado y Dominio**: llave en teal `#00796B` (acceso/auth), globo navy (sincronización), lápiz blanco sobre cuadrado verde oscuro (edición activa).
+ 
+Tamaños estándar: 20px (denso), 24px (por defecto), 28px (destacado).
+
+--- 
+#### Spacing
+ 
+YakuControl utiliza un sistema de espaciado basado en múltiplos de 8px, garantizando coherencia visual y facilitando la implementación entre diseño y desarrollo.
+ 
+![Spacing Guideline](./assets/disenoui/general-style-guidelines-space.png)
+
+| Token | Valor | Uso típico |
+|-------|-------|------------|
+| `space-1` | 8px | Micro espaciado interno (entre ícono y etiqueta) |
+| `space-2` | 16px | Padding de botones, separación entre campos |
+| `space-3` | 24px | Padding interno de tarjetas |
+| `space-4` | 32px | Separación entre componentes dentro de una sección |
+| `space-5` | 48px | Separación entre secciones |
+| `space-6` | 56px | Separación entre bloques de contenido |
+| `space-7` | 72px | Separación entre grupos principales |
+| `space-8` | 80px | Separación entre secciones de página |
+| `space-9` | 96px | Márgenes y separaciones mayores |
+ 
+---
+#### Botones
+ 
+Los botones de YakuControl siguen una jerarquía visual clara que comunica el nivel de importancia de cada acción. Todos utilizan Inter SemiBold, border-radius de 8px y altura estándar de 40px.
+
+![Buttom Guideline](./assets/disenoui/general-style-guidelines-buttom.png)
+ 
+| Variante | Estilo | Uso |
+|----------|--------|-----|
+| **Primary** | Fondo `#002B49`, texto blanco | Acción principal de la vista |
+| **Secondary** | Fondo `#00A3E0`, texto blanco | Acciones secundarias relevantes |
+| **Success Action** | Fondo `#00796B`, texto blanco | Confirmaciones y asignaciones (ej. "Asignar a estanque") |
+| **Outlined** | Borde `#002B49`, texto `#002B49`, fondo transparente | Acciones alternativas no destructivas (ej. "Editar") |
+| **Danger** | Borde `#E53935`, texto `#E53935`, fondo transparente | Acciones destructivas (ej. "Eliminar Registro") |
+| **Icon + Label** | Fondo `#00A3E0`, ícono `+` a la izquierda, texto blanco | Creación de nuevos elementos (ej. "+ Registrar Equipo") |
+| **Small Badge** | Fondo `#00E0D1`, texto oscuro, pill shape | Indicadores de estado compactos (ej. "ÓPTIMO") |
+| **Disabled** | Fondo `#BDBDBD`, texto `#9E9E9E` | Acciones no disponibles en el contexto actual |
+ 
+---
+#### Labels & Chips
+ 
+Los labels y chips comunican estados, categorías y acciones rápidas dentro de la interfaz.
+
+![Label Guideline](./assets/disenoui/general-style-guidelines-label.png)
+ 
+| Variante | Estilo | Uso |
+|----------|--------|-----|
+| **Icon Button** | Cuadrado redondeado teal `#00796B`, ícono blanco | Acción rápida compacta (ej. añadir) |
+| **Label con ícono** | Pill cyan `#00A3E0`, ícono + texto blanco | Etiqueta de categoría o tipo (ej. "Label") |
+| **Filter Chip** | Borde gris, fondo blanco, texto oscuro | Opciones de filtrado seleccionables |
+| **Status Badge** | Borde verde, texto verde, punto verde | Indicador de estado activo (ej. "● ACTIVE") |
+
+--- 
+#### Branding
+ 
+##### Arquetipo de Marca
+ 
+Los arquetipos de marca, según Brandemia (2024), son modelos de personalidad universales que las marcas adoptan para definir su carácter y generar vínculos emocionales con quienes las usan.
+
+![Brand Archetypes](./assets/disenoui/general-style-guidelines-brand-archi.png)
+
+Para YakuControl se identificó el arquetipo del "Explorador" *(The Explorer)* como el más representativo de su esencia. Brandemia (2024) caracteriza a este arquetipo por su búsqueda constante de libertad, nuevas experiencias y autodescubrimiento,rechazando la conformidad y los límites establecidos. Las marcas exploradoras transmiten independencia y autenticidad, motivando a sus usuarios a ir más allá de lo conocido. Sus valores centrales incluyen la aventura, la autonomía  y el descubrimiento, con un tono enérgico e inspirador.
+
+Este arquetipo encaja con YakuControl porque sus usuarios, acuicultores y emprendedores del sector, son personas que eligen la tecnología como herramienta para transformar su forma de trabajar, apostando por datos en tiempo real frente a métodos tradicionales de monitoreo.
+
+##### Tipo de Logotipo
+
+En cuanto a la identidad visual, Holum Studio (2022) distingue siete categorías de logotipos según su estructura y función comunicativa:
+
+- **Logotipo (Wordmark):** construido únicamente con tipografía (ej. Google).
+- **Isotipo (Brandmark):** símbolo visual sin texto (ej. Apple).
+- **Imagotipo:** ícono y texto conviven pero pueden usarse por separado (ej. Lacoste).
+- **Isologo:** ícono y texto forman una unidad inseparable (ej. Burger King).
+- **Monograma:** iniciales o siglas con tratamiento gráfico (ej. IBM).
+- **Emblema:** texto contenido dentro de una forma o figura (ej. Harley-Davidson).
+- **Símbolo abstracto:** figura no literal que evoca un concepto (ej. Nike).
+
+![Logo Types](./assets/disenoui/general-style-guidelines-branding.png)
+
+Marcas globales como Jeep, National Geographic y Patagonia son ejemplos representativos del arquetipo Explorador: transmiten aventura, autenticidad y libertad a través de identidades visuales que evocan movimiento y descubrimiento. YakuControl se alinea con esta misma esencia, adoptando la categoría de imagotipo, donde el símbolo y el nombre coexisten como unidad pero mantienen capacidad de uso independiente, permitiendo que la marca se adapte a distintos contextos sin perder su identidad.
+
+![YakuControl Imagotype](./assets/disenoui/general-style-guidelines-logotipo.jpeg)
+
+El símbolo integra un pez estilizado, ondas de agua y trazos que evocan conectividad digital, dentro de una composición circular de geometría limpia. El color dominante es Navy Deep (`#002B49`), complementado con acentos en Cyan Electric (`#00A3E0`). El nombre se escribe en Inter Bold, con la "u" como rasgo distintivo que preserva la raíz quechua de "Yaku", reforzando la autenticidad y el origen que el arquetipo Explorador valora profundamente.
+ 
+##### Tono de Comunicación
+ 
+El tono de comunicación de YakuControl fue definido considerando cuatro ejes de personalidad de marca:
+ 
+| Eje | Posición | Justificación |
+|-----|----------|---------------|
+| **Divertido / Serio** | Levemente serio | La plataforma maneja datos críticos de producción. El tono es profesional pero no rígido. |
+| **Formal / Casual** | Ligeramente casual | Se evita el lenguaje excesivamente técnico o corporativo para ser accesible a operadores de campo. |
+| **Respetuoso / Irreverente** | Respetuoso | Los usuarios confían datos sensibles de su negocio. El tono siempre es empático y considerado. |
+| **Entusiasta / Sereno** | Moderadamente entusiasta | Los mensajes de éxito y progreso celebran los logros del usuario sin exagerar. Las alertas son directas y calmadas. |
+ 
+En la práctica, esto se traduce en: frases cortas y directas, verbos en imperativo para llamadas a la acción, uso de términos del dominio acuícola con contexto claro, y mensajes de sistema que priorizan la utilidad sobre la formalidad.
+
+### 6.1.2. Web, Mobile & Devices Style Guidelines
+
+> 🔴 **CAMBIAR** — Hay **inconsistencias**: 6.1.1 define paleta Navy/Cyan/Aqua, pero la guía Web habla de tema oscuro y "Verde Esmeralda (#00A859)". Unificar. Reemplazar menciones a Flutter para Web: Web = Material Design con Angular Material o PrimeNG; Mobile = Flutter (permitido como cross-platform). Eliminar el marcador `[cite: 381]` y el bloque "IoT Style Guidelines" que está duplicado. (Tarea C6-1)
+
+
+**Web Style Guidelines**
+Para la interfaz web de YakuControl, orientada principalmente a administradores de piscigranjas, se han adoptado los estándares de Material Design 3. Esta decisión asegura una navegación intuitiva y una jerarquía visual clara, facilitando la gestión de grandes volúmenes de datos de telemetría y la configuración de los estanques. El diseño utiliza un tema oscuro (Dark Mode) para reducir la fatiga visual durante el monitoreo prolongado.
+
+* **Buttons:** Los botones utilizan esquinas redondeadas y estados claros (hover, focused, disabled) para indicar interactividad[cite: 381]. Se prioriza el uso del color Verde Esmeralda (#00A859) para acciones principales (ej. "Nuevo Estanque") y variantes en "outline" para acciones secundarias.
+    
+![YakuControl web buttom](./assets/disenoui/web-buttom.png)
+
+* **Data Cards & Indicators:** Utilizados masivamente en el Dashboard para representar la telemetría en tiempo real (Temperatura, pH, Oxígeno Disuelto). Utilizan anillos de progreso semánticos (Verde para normal, Rojo Coral para estado crítico) para proporcionar feedback visual inmediato sobre la salud del bio-activo.
+
+![YakuControl web card](./assets/disenoui/web-card.png)
+
+* **TextField & Selects:** Los campos de texto están diseñados para maximizar la legibilidad durante el ingreso de datos de nuevos operarios o equipos. Los componentes *Select* permiten una navegación eficiente dentro de formularios complejos, como la asignación de sensores a estanques específicos.
+
+![YakuControl web field](./assets/disenoui/web-field.png)
+
+**Mobile Style Guidelines**
+Para la aplicación móvil "Mobile Commander", el enfoque principal es la facilidad de uso y la reducción de la fricción cognitiva para el operario en campo. Al igual que en la versión web, se utiliza Material Design 3 como marco de referencia, adaptando sus componentes para ofrecer una interfaz táctil amigable en entornos al aire libre. 
+
+* **Offline-First & Feedback Components:** La arquitectura de la interfaz asume condiciones de conectividad inestables, ya que al final a veces no hay ni señal en esos lugares remotos. Por ello, se utilizan Progress Indicators (barras lineales e indicadores circulares) para gestionar la paciencia del usuario durante la sincronización asíncrona de datos locales con la nube.
+
+![YakuControl movil snack bar](./assets/disenoui/movil-snackbar.png)
+
+* **Buttons:** Los botones móviles presentan superficies táctiles amplias y bordes altamente redondeados para facilitar la interacción rápida, incluso si el operario usa guantes protectores.
+
+![YakuControl movil buttom](./assets/disenoui/movil-buttom.png)
+
+* **Navigation Bar:** Ubicada en la parte inferior de la pantalla, facilita la navegación con una sola mano, permitiendo saltar rápidamente entre "Inicio", "Perfil", y "Alertas".
+
+![YakuControl movil nav bar](./assets/disenoui/movil-bar.png)
+
+**IoT Style Guidelines**
+Estas directrices definen las características físicas y visuales de los nodos sensores (AcuNode Industrial) para asegurar que la captura de datos del agua sea fiable y su mantenimiento sea intuitivo. 
+
+**IoT Style Guidelines**
+Estas directrices definen las características físicas y de ensamblaje de los nodos sensores (AcuaNode) orientados a un entorno rural. El enfoque prioriza la funcionalidad, el bajo costo de implementación y la facilidad de reparación en campo sobre la estética refinada.
+
+* **Carcasa y Ensamblaje Físico:** Los dispositivos se alojan en cajas estancas industriales de PVC o ABS (grado IP65/IP67), modificadas con prensaestopas para el paso seguro de las sondas hacia el agua. Se utiliza sellador industrial en las uniones para garantizar la impermeabilidad, manteniendo un diseño modular que permita a los operarios abrir la caja y cambiar una batería sin necesidad de herramientas complejas.
+* **Feedback Visual y de Estado:** En lugar de interfaces complejas o pantallas, el sistema utiliza indicadores electrónicos básicos para no encarecer el producto. Se emplea un módulo LED estándar de un solo color (o la propia luz de la placa microcontroladora visible a través de una tapa translúcida):
+    * **Luz estática:** Indica que el dispositivo está encendido y capturando datos.
+    * **Luz parpadeante:** Indica que el dispositivo está intentando sincronizar la información vía red local.
+
+## 6.2. Information Architecture
+
+> 🔴 **CAMBIAR** — Incluir también la experiencia pública de verificación (comprador/consumidor) y mantener coherencia con Landing y Aplicaciones. (Tarea C6-2)
+
+
+En esta sección se describe la arquitectura de la información de la plataforma YakuControl, incluyendo la estructura de navegación, la organización del contenido, el sistema de etiquetas, búsqueda y navegación.
+
+### 6.2.1. Organization Systems
+
+> 🟡 **AJUSTAR AL ENUNCIADO** — El enunciado no lo lista en el índice, pero su texto de Information Architecture sí lo pide (Organization, Labeling, Navigation, Searching). Se mantiene como 6.2.1. Si el docente prefiere el índice literal, mover a introducción de 6.2. (Tarea C6-2)
+
+
+Se utilizarán diferentes sistemas de organización para estructurar y categorizar la información en YakuControl, facilitando el acceso a los datos de monitoreo y gestión de piscigranjas. A continuación se describen los principales sistemas implementados:
+
+1. **Visual Organization (organización visual del contenido):**
+    - **Jerárquica (visual hierarchy):** La información se presenta en niveles de importancia, con los elementos más crítico destacados visualmente mediante tamaños de fuente, colores semánticos y espaciado. Por ejemplo, los valores fuera de rango se resaltan en rojo (`#E53935`) mientras que los parámetros óptimos aparecen en verde (`#43A047`). Este sistema permite identificar situaciones críticas de un vistazo sin revisar cada dato individualmente.
+    - **Secuencial (step-by-step to accomplish):** La información se organiza en orden lógico para guiar al usuario en procesos específicos. Por ejemplo, al registrar un nuevo estanque, el sistema guía desde los datos básicos hasta la asignación de sensores y equipos, evitando omitir pasos esenciales.
+    - **Matricial (matrix to show relationships):** La información se presenta en tablas comparativas. Por ejemplo, en "Lecturas en Tiempo Real" del Dashboard, se pueden comparar temperatura, pH y turbidez de múltiples estanques simultáneamente, facilitando la detección de anomalías.
+
+2. **Categorization Schemes (esquemas de categorización)**
+    - **Por tema (by topic):** La información se agrupa en categorías temáticas: "Estanques", "Equipos", "Operadores" y "Notificaciones", permitiendo navegar directamente hacia el área de interés.
+    - **Por función (by function):** Las opciones se clasifican según las tareas disponibles. Por ejemplo, dentro de un estanque las funciones se dividen en "Telemetría en Tiempo Real", "Análisis Histórico" e "Historial de Lecturas", agilizando la ejecución de tareas específicas.
+    - **Por audiencia (by audience):** La información se segmenta según el perfil del usuario que interactúa con la plataforma:
+        - **Administradores de Piscigranja:** acceso completo a la gestión de estanques, equipos, personal y configuración del sistema. Son responsables de la supervisión general de la operación acuícola.
+        - **Piscicultores:** acceso a las vistas de monitoreo, registro de parámetros y consulta del historial de sus estanques asignados. Su enfoque está en el seguimiento diario de las condiciones del agua y el bienestar de los peces.
+
+### 6.2.2. Labeling Systems
+
+> 🔴 **CAMBIAR** — Agregar etiquetas del comprador/verificador (p. ej. "Verify lot", "Certificate", "Lot history") y revisar que las etiquetas estén en inglés. (Tarea C6-2)
+
+
+Se implementarán sistemas de etiquetado claros y consistentes para facilitar la navegación en YakuControl. A continuación se describen las etiquetas por tipo de usuario:
+ 
+**Etiquetado para Administradores de piscigranjas:**
+ 
+| Etiqueta | Qué comunica | Qué encontrará el usuario |
+|----------|--------------|--------------------------|
+| Dashboard | Panel de control principal | Resumen de estanques, sensores, alertas y calidad promedio |
+| Estanques | Gestión de piscinas de crianza | Listar, crear y monitorear estanques |
+| Equipos | Gestión de hardware desplegado | Registrar, asignar y editar sensores y bombas |
+| Operadores | Gestión de usuarios operativos | Crear y administrar cuentas de operadores |
+| Notificaciones | Centro de alertas del sistema | Ver y gestionar alertas de parámetros y eventos |
+| Configuración | Ajustes generales de la plataforma | Preferencias del sistema y parámetros de umbral |
+ 
+**Etiquetado para Piscicultores:**
+ 
+| Etiqueta | Qué comunica | Qué encontrará el usuario |
+|----------|--------------|--------------------------|
+| Dashboard | Vista general de monitoreo | Lecturas en tiempo real de los estanques asignados |
+| Estanques | Acceso a sus estanques asignados | Parámetros, historial y registro de lecturas |
+| Notificaciones | Alertas activas | Alertas pendientes de atención en su área |
+| Perfil | Información personal | Ver y editar sus datos de cuenta |
+
+### 6.2.3. Searching Systems
+
+> 🔴 **CAMBIAR** — Agregar búsqueda/filtros de lotes y certificados (por lote, fecha, estado) y definir cómo luce el resultado. (Tarea C6-2)
+
+
+A medida que crece el número de estanques, equipos y registros históricos en YakuControl, resulta esencial contar con herramientas que permitan a los usuarios localizar información de forma rápida y precisa. Para ello se implementarán los siguientes sistemas de búsqueda:
+ 
+**Búsqueda por palabras clave:**
+ 
+Se implementará una barra de búsqueda global, visible en la parte superior de todas las vistas de la plataforma, con el placeholder "Buscar estanque o alerta...". Esta herramienta permite buscar por nombre de estanque, ID de sensor, código de equipo o tipo de alerta, mostrando resultados en tiempo real mientras el usuario escribe.
+ 
+**Filtros por categoría:**
+ 
+En las vistas de listado y tablas de datos se ofrecerán filtros contextuales. Por ejemplo, en la vista de "Estanques" los usuarios podrán filtrar por estado (Óptimo, Crítico, Inactivo); en "Equipos", por disponibilidad (Asignado, Libre); y en "Historial de Lecturas", por rango de fechas o parámetro específico (temperatura, pH, oxígeno).
+ 
+**Visualización de resultados:**
+ 
+Los resultados se presentarán en tablas con columnas relevantes según el contexto, resaltando visualmente los valores que se encuentren fuera de rango. En vistas con grandes volúmenes de datos, como el historial de lecturas, se implementará paginación para evitar la sobrecarga visual.
+ 
+**Mensajes de ayuda:**
+ 
+Si una búsqueda no arroja resultados, el sistema mostrará un mensaje descriptivo sugiriendo revisar el término ingresado o ampliar los criterios de filtrado, evitando que el usuario quede ante una pantalla vacía sin orientación.
+
+### 6.2.4. SEO Tags, Meta Tags y ASO Elements
+
+> 🟡 **AJUSTAR AL ENUNCIADO** — Agregar **ASO elements** (App Title, App keywords, App subtitle, App description) para la app móvil, además de Title, Description, Keywords y Author por página (Landing y Web Apps). Incluir la página pública de verificación. (Tarea C6-2)
+
+ 
+Para mejorar la visibilidad de YakuControl en motores de búsqueda, se implementarán las siguientes etiquetas SEO y meta etiquetas en la landing page, aplicación web y movil:
+
+**Landing Page SEO Tags and Meta Tags:**
+
+| Etiqueta | Contenido |
+|----------|-----------|
+| Title | YakuControl - Plataforma de Monitoreo Inteligente para Piscigranjas |
+| Meta Description | YakuControl es una plataforma tecnológica para la gestión y monitoreo en tiempo real de piscigranjas. Controla temperatura, pH y oxígeno desde cualquier dispositivo. |
+| Meta Keywords | monitoreo de piscigranjas, gestión acuícola, sensores de agua, telemetría acuicultura, control de estanques |
+| Meta Author | YakuControl Team |
+| Meta Viewport | width=device-width, initial-scale=1.0 |
+| Meta Charset | UTF-8 |
+| OG Title | YakuControl - Tecnología Acuícola Inteligente |
+| OG Description | Monitorea y gestiona tus estanques en tiempo real con YakuControl. Alertas automáticas, historial de parámetros y reportes exportables. |
+| OG Image | URL del logotipo de YakuControl |
+| OG URL | URL de la landing page de YakuControl |
+ 
+Representación en HTML:
+ 
+```html
+<title>YakuControl - Plataforma de Monitoreo Inteligente para Piscigranjas</title>
+<meta name="description" content="YakuControl es una plataforma tecnológica para la gestión y monitoreo en tiempo real de piscigranjas. Controla temperatura, pH y oxígeno desde cualquier dispositivo.">
+<meta name="keywords" content="monitoreo de piscigranjas, gestión acuícola, sensores de agua, telemetría acuicultura, control de estanques">
+<meta name="author" content="YakuControl Team">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta property="og:title" content="YakuControl - Tecnología Acuícola Inteligente">
+<meta property="og:description" content="Monitorea y gestiona tus estanques en tiempo real con YakuControl. Alertas automáticas, historial de parámetros y reportes exportables.">
+<meta property="og:image" content="https://www.yakucontrol.app/assets/images/yakucontrol-logo.png">
+<meta property="og:url" content="https://www.yakucontrol.app">
+```
+ 
+**Web Application ASO / SEO:**
+ 
+| Etiqueta | Contenido |
+|----------|-----------|
+| Title | YakuControl - Gestión de Piscigranjas |
+| Meta Description | Plataforma web para el monitoreo en tiempo real de parámetros del agua en piscigranjas: temperatura, pH y oxígeno disuelto. |
+| Meta Keywords | acuicultura, monitoreo acuícola, gestión de estanques, sensores IoT, piscigranjas inteligentes |
+| Developer Name | YakuControl Team |
+| Category | Tecnología / Agricultura y Acuicultura |
+ 
+**Android Native-Mobile Application ASO (Google Play Store):**
+
+| Etiqueta | Contenido |
+|----------|-----------|
+| Title | YakuControl - Monitoreo de Piscigranjas |
+| Short Description | Monitorea y gestiona tus estanques acuícolas en tiempo real desde tu celular. |
+| Full Description | YakuControl es una plataforma tecnológica diseñada para piscicultores y administradores de piscigranjas que buscan modernizar su operación. Desde tu dispositivo Android, podrás visualizar en tiempo real los parámetros del agua de cada estanque, recibir alertas automáticas ante condiciones críticas, consultar el historial de lecturas y gestionar tus equipos y sensores, todo en un solo lugar. |
+| Keywords | monitoreo acuícola, piscigranjas, sensores de agua, gestión de estanques, acuicultura inteligente |
+| Developer Name | YakuControl Team |
+| Category | Herramientas / Productividad |
+| Icon | Ícono de la aplicación (512x512 PNG) |
+| Feature Graphic | Gráfico destacado (1024x500 PNG) |
+| Screenshots | Capturas de pantalla de la aplicación (mínimo 2, máximo 8) |
+
+
+### 6.2.5. Navigation Systems
+
+> 🔴 **CAMBIAR** — Incluir el recorrido: QR → página pública de verificación → historial del lote/prueba en blockchain. (Tarea C6-2)
+
+
+Para garantizar una experiencia fluida en YakuControl, se implementarán los siguientes sistemas de navegación:
+ 
+**Landing Page Navigation:**
+ 
+La página de inicio cuenta con un menú de navegación superior fijo con enlaces a las secciones: "Soluciones", "Tecnología", "Precios" y "FAQ". En el extremo derecho se ubica el botón de llamada a la acción principal "Solicitar Demo" en color primario `#002B49`, diseñado para captar la atención de visitantes interesados en conocer la plataforma.
+ 
+**Web Application Navigation:**
+ 
+La aplicación web utiliza un menú lateral fijo (sidebar) ubicado en el lado izquierdo de la pantalla, visible en todo momento independientemente del scroll. Este menú contiene los íconos y etiquetas de las secciones principales: Dashboard, Estanques, Equipos, Operadores, Notificaciones y Configuración. El ítem activo se resalta con un fondo navy claro para indicar la sección actual.
+ 
+Adicionalmente, dentro de cada sección se implementan:
+ 
+- Breadcrumbs de navegación contextual: por ejemplo, "← Volver a Estanques" al ingresar al detalle de un estanque, permitiendo retroceder sin usar el botón del navegador.
+- Botones de acción primaria: como "+ Nuevo Estanque" o "+ Registrar Equipo", ubicados en la esquina superior derecha de cada vista de listado.
+- Acciones en tabla: botones de "Ver detalles", "Editar" y opciones de menú contextual (ícono de tres barras) disponibles por fila para acceso rápido a funciones específicas de cada registro.
+El flujo de navegación es coherente en todas las secciones, asegurando que los usuarios puedan moverse entre módulos sin perder el contexto de su tarea actual.
+
+**Mobile Application Navigation (Android):**
+
+La aplicación móvil nativa para Android utiliza un menú inferior (bottom navigation bar) como sistema de navegación principal, 
+accesible en todo momento desde cualquier vista. Este patrón es el estándar recomendado por Material Design para aplicaciones móviles con entre 3 y 5 destinos principales, ya que permite el acceso con el pulgar sin necesidad de desplazar la mano.
+
+Las secciones accesibles desde el menú inferior son:
+- Dashboard: vista general con métricas resumen y alertas activas.
+- Estanques: listado y detalle de estanques asignados al usuario.
+- Notificaciones: centro de alertas y eventos del sistema.
+- Perfil: información de cuenta y configuración personal.
+
+Adicionalmente, dentro de cada sección se implementan:
+
+- Navegación contextual hacia el detalle: al seleccionar un estanque o equipo, se accede a su vista de detalle con un encabezado que incluye "← Volver" para retroceder sin usar el botón nativo del dispositivo.
+- Botones de acción flotante (FAB): para acciones de creación rápida como registrar una nueva lectura o reportar una incidencia, ubicados en la esquina inferior derecha de las vistas de listado.
+- Pull-to-refresh: en las vistas de monitoreo en tiempo real, el usuario puede deslizar hacia abajo para forzar una actualización de los datos del sensor.
+
+El flujo de navegación es coherente entre la versión web y móvil, garantizando que los usuarios puedan alternar entre plataformas sin necesidad de reaprender la estructura de la aplicación.
+
+## 6.3. Landing Page UI Design
+
+> 🔴 **CAMBIAR** — Los CTA de cada segmento deben llevar a la vista correspondiente de la Web App o a la descarga de la app móvil; agregar el CTA/sección para **supermercados** ("verifica un lote"). La experiencia debe ser consistente con las aplicaciones. (Tarea C6-3)
+
+En esta sección se detalla el diseño de la interfaz de usuario para la Landing Page de YakuControl, la cual constituye el principal canal de captación B2B y presencia digital de la startup AcuaNode. El diseño está orientado a comunicar de manera efectiva la propuesta de valor de la solución, destacando beneficios como la reducción de mortalidad de truchas y el monitoreo IoT en tiempo real para atraer a potenciales administradores de piscigranjas.
+
+### 6.3.1. Landing Page Wireframe
+
+> 🔴 **CAMBIAR** — Desktop y Mobile Web. Agregar sección TRACE/verificación y poner **textos en inglés** (idioma por defecto). Mantener link a Figma. (Tarea C6-3)
+
+Se presentan los wireframes de baja fidelidad para la Landing Page, enfocándose en la disposición estructural de los elementos clave definidos en las User Stories EP01. El esquema prioriza una jerarquía visual clara que guía al visitante desde la explicación del producto hasta las secciones de catálogo de planes, FAQ de soporte y el formulario de contacto para ventas.
+
+| Vista Previa Desktop Web Browser | Vista Previa Mobile Web Browser |
+|----------------------------------|----------------------------------|
+| <img src="assets/diseñoux/LandingDesktopWireframe.png" alt="wireframe1" /> | <img src="assets/diseñoux/LandingPhoneWireframe.png" alt="wireframe2" />
+
+Link Figma: https://www.figma.com/design/FdwCU88zpBqlCuHjQ9iY69/YacuControl?node-id=0-1&t=pGGdjtmP24aklmtz-1
+
+### 6.3.2. Landing Page Mock-up
+
+> 🔴 **CAMBIAR** — Desktop y Mobile Web aplicando el Design System; mostrar la sección nueva y los textos en inglés. (Tarea C6-3)
+
+El Mock-up de alta fidelidad para la Landing Page materializa las guías de estilo del proyecto en una interfaz visual acabada. Este diseño incorpora los elementos gráficos, tipografía y paleta de colores del sistema para transmitir profesionalismo y confianza, facilitando la visualización final de cómo los clientes interactuarán con la plataforma antes de su implementación.
+| Vista Previa Desktop Web Browser | Vista Previa Mobile Web Browser |
+|----------------------------------|----------------------------------|
+| <img src="assets/diseñoux/LandingDesktopMockup.png" alt="Mockup1" /> | <img src="assets/diseñoux/LandingPhoneMockup.png" alt="Mockup2" />
+
+Link Figma: https://www.figma.com/design/FdwCU88zpBqlCuHjQ9iY69/YacuControl?node-id=0-1&t=pGGdjtmP24aklmtz-1
+
+## 6.4. Applications UX/UI Design
+
+> 🔴 **CAMBIAR** — Aplicaciones: App móvil (piscicultor), Web App (administrador) y **vista pública de verificación** (comprador/consumidor). (Tareas C6-4, C6-5)
+
+Este apartado describe el diseño de experiencia (UX) e interfaz (UI) de las aplicaciones cliente de YakuControl: la Web App para administradores y la App Móvil para piscicultores. El diseño se fundamenta en las necesidades identificadas en el análisis de arquetipos, priorizando la visualización de datos telemétricos, la gestión de alertas push y el control remoto de actuadores en los estanques.
+
+### 6.4.1. Applications Wireframes
+
+> 🔴 **CAMBIAR** — Mantener los 18 wireframes y agregar los nuevos: lotes (lista/detalle/línea de tiempo), emisión de certificado (vista previa del resumen + QR), listado de certificados, plan TRACE en suscripción y **página pública de verificación**. Textos en inglés. (Tarea C6-4)
+
+Se exhiben los esqueletos estructurales de las aplicaciones, detallando la organización de los dashboards y paneles de control. Los wireframes para la aplicación móvil se centran en la simplicidad de uso para operarios en campo, mientras que los de la aplicación web priorizan la claridad en gráficos de tendencias e informes de mortalidad para la toma de decisiones estratégicas.
+
+- *Wireframes para el Segmento 1: Piscicultores*
+
+| Inicio Sesión |
+|----------------------------------|
+| <img src="assets/diseñoux/wireframe1.png" alt="wireframe" /> |
+
+| Register |
+|----------------------------------|
+| <img src="assets/diseñoux/wireframe2.png" alt="wireframe" /> |
+
+| Sección Home |
+|----------------------------------|
+| <img src="assets/diseñoux/wireframe3.png" alt="wireframe" /> |
+
+| Sección Home - Detalles de Estanque|
+|----------------------------------|
+| <img src="assets/diseñoux/wireframe4.png" alt="wireframe" /> |
+
+| Sección Home - Historial de Lecturas|
+|----------------------------------|
+| <img src="assets/diseñoux/wireframe5.png" alt="wireframe" /> |
+
+| Sección Alertas |
+|----------------------------------|
+| <img src="assets/diseñoux/wireframe6.png" alt="wireframe" /> |
+
+| Sección Perfil |
+|----------------------------------|
+| <img src="assets/diseñoux/wireframe7.png" alt="wireframe" /> |
+
+
+- *Wireframes para el Segmento 2: Administradores de Piscigranja*
+
+| Inicio Sesión |
+|----------------------------------|
+| <img src="assets/diseñoux/wireframe8.png" alt="wireframe" /> |
+
+| Register |
+|----------------------------------|
+| <img src="assets/diseñoux/wireframe9.png" alt="wireframe" /> |
+
+| Registro de Granja |
+|----------------------------------|
+| <img src="assets/diseñoux/wireframe10.png" alt="wireframe" /> |
+
+| Sección DashBoard|
+|----------------------------------|
+| <img src="assets/diseñoux/wireframe11.png" alt="wireframe" /> |
+
+| Sección Estanques|
+|----------------------------------|
+| <img src="assets/diseñoux/wireframe12.png" alt="wireframe" /> |
+
+| Sección Registrar Estanques|
+|----------------------------------|
+| <img src="assets/diseñoux/wireframe13.png" alt="wireframe" /> |
+
+| Sección Registrar Estanques -   Detalles de Estanque|
+|----------------------------------|
+| <img src="assets/diseñoux/wireframe14.png" alt="wireframe" /> |
+
+| Sección Equipos |
+|----------------------------------|
+| <img src="assets/diseñoux/wireframe15.png" alt="wireframe" /> |
+
+| Sección Operadores |
+|----------------------------------|
+| <img src="assets/diseñoux/wireframe16.png" alt="wireframe" /> |
+
+| Sección Notificaciones |
+|----------------------------------|
+| <img src="assets/diseñoux/wireframe17.png" alt="wireframe" /> |
+
+| Sección Configuracion |
+|----------------------------------|
+| <img src="assets/diseñoux/wireframe18.png" alt="wireframe" /> |
+
+
+
+### 6.4.2. Applications Wireflow Diagrams
+
+> 🔴 **CAMBIAR** — Un wireflow por *User goal* y por persona; cada uno con el goal redactado y una explicación del flujo. Agregar los de TRACE: (a) crear lote y registrar hitos, (b) emitir certificado con QR, (c) verificar el QR como comprador. Mantener link a LucidChart. (Tarea C6-5)
+
+Los diagramas de wireflow ilustran el flujo de navegación combinado con la disposición de las pantallas. Este análisis permite validar la ruta que sigue el usuario para completar tareas críticas, como la configuración de umbrales de alerta o la activación remota de aireadores, asegurando una interacción fluida y lógica entre los distintos contextos del sistema.
+
+- *User Flow Diagrams para el Segmento 1: Piscicultores*
+
+| User Goal: Como Usuario. Deseo poder registrarme en la aplicación móvil para poder acceder a las funcionalidades del sistema |
+|----------------------------------|
+| <img src="assets/diseñoux/wireflow1.png" alt="flow" /> |
+
+| User Goal:  Como Usuario. Deseo poder visualizar la información básica de un Estanque (nivel de PH, sensores, etc) para conocer su estado actual en tiempo real.  |
+|----------------------------------|
+| <img src="assets/diseñoux/wireflow2.png" alt="flow" /> |
+
+| User Goal: Como Usuario. Deseo poder visualizar las alertas en la aplicación móvil, para poder ver el estado de un estanque, prioridad y el estado de un mantenimiento (completo o en curso). |
+|----------------------------------|
+| <img src="assets/diseñoux/wireflow3.png" alt="flow" /> |
+
+| User Goal: Como Usuario. Deseo poder visualizar mi perfil en la aplicación móvil, para poder editar mi información, editar mi foto de perfil, ver las opciones de accesibilidad y cerrar mi sesión.  |
+|----------------------------------|
+| <img src="assets/diseñoux/wireflow4.png" alt="flow" /> |
+
+- *User Flow Diagrams para el Segmento 2: Administradores de Piscigranja*
+
+| User Goal:  Como Usuario. Deseo poder registrarme en la aplicación web para obtener acceso a la plataforma  |
+|----------------------------------|
+| <img src="assets/diseñoux/wireflow5.png" alt="flow" /> |
+
+| User Goal: Como Usuario. Deseo tener una sección exclusiva para la creación de estanques para mantener un registro ordenado  |
+|----------------------------------|
+| <img src="assets/diseñoux/wireflow6.png" alt="flow" /> |
+
+| User Goal: Como Usuario. Deseo tener una sección exclusiva para la visualización y gestión de los equipos, para poder asignar, agregar o eliminar diferentes equipos industriales para los estanques.  |
+|----------------------------------|
+| <img src="assets/diseñoux/wireflow7.png" alt="flow" /> |
+
+| User Goal: Como Usuario. Deseo tener una sección exclusiva para la visualización y gestión de los operadores, para poder ver y editar la información de cada uno.  |
+|----------------------------------|
+| <img src="assets/diseñoux/wireflow8.png" alt="flow" /> |
+
+| User Goal: Como Usuario. Deseo tener una sección exclusiva para la visualización de notificaciones con filtros por fecha, nombre y el estado del mensaje (leído, no leído o todos), para poder tener las últimas actualizaciones sobre un estanque en específico. |
+|----------------------------------|
+| <img src="assets/diseñoux/wireflow9.png" alt="flow" /> |
+
+| User Goal: Como Usuario. Deseo tener una sección exclusiva para la visualización y edición de datos personales para administrar mi cuenta de forma segura y personalizar mi experiencia de uso. |
+|----------------------------------|
+| <img src="assets/diseñoux/wireflow10.png" alt="flow" /> |
+
+
+Link LucidChart: https://lucid.app/lucidchart/ebc666ba-9266-48a0-a19c-b1b3f64247ab/edit?viewport_loc=2786%2C5222%2C4017%2C2011%2C0_0&invitationId=inv_dc87452a-958f-4f51-8df3-0b6797858cb2
+
 # Conclusiones
+
+> 🟡 **AJUSTAR AL ENUNCIADO** — Es un **avance** en TP1 (versión final en TF1): conclusiones y recomendaciones sobre TP1 (decisiones de arquitectura, diseño táctico y UX) y próximos pasos. El Video About-the-Team se incluye en entregas posteriores. (Tarea TR-08)
+
 
 Se presenta Verifish y su solución YakuControl, una propuesta orientada al monitoreo inteligente de piscigranjas mediante IoT y servicios en la nube. Se aborda la problemática de la supervisión manual de la calidad del agua, los riesgos asociados a una detección tardía y la necesidad de contar con información en tiempo real. También se definen la propuesta de valor, el modelo SaaS, las hipótesis de Lean UX y los principales usuarios: piscicultores y administradores de piscigranjas.
 
@@ -1298,6 +2618,9 @@ Finalmente , se definio la estructura tecnológica y arquitectónica necesaria p
 <div style="page-break-after: always;"></div>
 
 # Bibliografía
+
+> 🔴 **CAMBIAR** — Formato APA. Incorporar las fuentes nuevas usadas en Cap. I–VI (ver pendientes, Anexo A) y asegurar que **todo lo citado en el texto esté aquí y viceversa**. (Tarea TR-07)
+
 Organización para la Cooperación y el Desarrollo Económicos. (2025). *Políticas para el futuro de la pesca y la acuicultura en Perú.* OECD Publishing. https://www.oecd.org/es/publications/politicas-para-el-futuro-de-la-pesca-y-la-acuicultura-en-peru_712e7084-es/full-report/aquaculture-policies-in-peru_a47e9e62.html
 
 Ministerio de la Producción. (2024). *Catastro Acuícola Nacional (referenciado en Informe de Evaluación de la Intervención de Extensionismo Acuícola).* Gobierno del Perú. https://www.producempresarial.pe/wp-content/uploads/2025/02/05-Informe-ER-Extensionismo-Acuicola_rev.pdf
@@ -1307,5 +2630,13 @@ Actualidad Ambiental. (28 de mayo de 2025). *Huarochirí: mueren 200 mil truchas
 Agencia Peruana de Noticias Andina. (29 de abril de 2026). *Junín: OEFA realizó diligencia por muerte masiva de truchas en piscigranjas de Pariahuanca.* Andina. https://andina.pe/agencia/noticia-junin-oefa-realizo-diligencia-muerte-masiva-truchas-piscigranjas-pariahuanca-1073248.aspx
 
 # Anexos
+
+> 🟡 **AJUSTAR AL ENUNCIADO** — Cada anexo en página nueva con letra mayúscula. Falta el **Anexo "Videos de Exposiciones"** (enlace privado de Stream por entrega). (Tarea TR-07)
+
 **-Wokwi:** 
 - [Wokwi](https://wokwi.com/projects/467186064937826305)
+
+
+**Anexo B. Videos de Exposiciones**
+
+_(Pendiente: enlace privado de Microsoft Stream del video de exposición de cada entrega — TB1, TP1…. Tarea TR-06/TR-07)_
