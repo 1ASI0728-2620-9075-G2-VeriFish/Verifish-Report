@@ -2665,14 +2665,16 @@ Definen las características físicas del nodo sensor, con prioridad en la funci
 
 ## 6.2. Information Architecture
 
-> 🔴 **CAMBIAR** — Incluir también la experiencia pública de verificación (comprador/consumidor) y mantener coherencia con Landing y Aplicaciones. (Tarea C6-2)
 
 
 En esta sección se describe la arquitectura de la información de la plataforma YakuControl, incluyendo la estructura de navegación, la organización del contenido, el sistema de etiquetas, búsqueda y navegación.
 
+![Arquitectura de información por audiencia y producto](assets/images/cap6/information-architecture.png)
+
+[Fuente editable de la arquitectura](design/package-e/information-architecture.html). Los menús y etiquetas de esta propuesta se usan también en las pantallas y los wireflows.
+
 ### 6.2.1. Organization Systems
 
-> ✍️ **REDACTADO** — Extensión TRACE redactada.
 
 
 Se utilizarán diferentes sistemas de organización para estructurar y categorizar la información en YakuControl, facilitando el acceso a los datos de monitoreo y gestión de piscigranjas. A continuación se describen los principales sistemas implementados:
@@ -2699,7 +2701,6 @@ Se utilizarán diferentes sistemas de organización para estructurar y categoriz
 
 ### 6.2.2. Labeling Systems
 
-> ✍️ **REDACTADO** — Etiquetas de YakuTrace redactadas (en español).
 
 
 Se implementarán sistemas de etiquetado claros y consistentes para facilitar la navegación en YakuControl. A continuación se describen las etiquetas por tipo de usuario:
@@ -2740,18 +2741,17 @@ Se implementarán sistemas de etiquetado claros y consistentes para facilitar la
 
 ### 6.2.3. Searching Systems
 
-> ✍️ **REDACTADO** — Búsqueda y filtros de lotes/certificados redactados.
 
 
 A medida que crece el número de estanques, equipos y registros históricos en YakuControl, resulta esencial contar con herramientas que permitan a los usuarios localizar información de forma rápida y precisa. Para ello se implementarán los siguientes sistemas de búsqueda:
  
 **Búsqueda por palabras clave:**
  
-Se implementará una barra de búsqueda global, visible en la parte superior de todas las vistas de la plataforma, con el placeholder "Buscar estanque o alerta...". Esta herramienta permite buscar por nombre de estanque, ID de sensor, código de equipo o tipo de alerta, mostrando resultados en tiempo real mientras el usuario escribe.
+Se implementará una barra de búsqueda global, propuesta para futuras iteraciones de la plataforma; en los diseños actuales la búsqueda es contextual, con el placeholder "Buscar estanque o alerta...". Esta herramienta permite buscar por nombre de estanque, ID de sensor, código de equipo o tipo de alerta, mostrando resultados en tiempo real mientras el usuario escribe.
  
 **Filtros por categoría:**
  
-En las vistas de listado y tablas de datos se ofrecerán filtros contextuales. Por ejemplo, en la vista de "Estanques" los usuarios podrán filtrar por estado (Óptimo, Crítico, Inactivo); en "Equipos", por disponibilidad (Asignado, Libre); y en "Historial de Lecturas", por rango de fechas o parámetro específico (temperatura, pH, oxígeno).
+En las vistas de listado y tablas de datos se ofrecerán filtros contextuales. Por ejemplo, en la vista de "Estanques" los usuarios podrán filtrar por estado (Óptimo, Crítico, Inactivo); en "Equipos", por disponibilidad (Asignado, Libre); y en "Historial de Lecturas", por rango de fechas o parámetro específico (temperatura, pH, turbidez).
  
 **Visualización de resultados:**
  
@@ -2772,7 +2772,6 @@ Si una búsqueda no arroja resultados, el sistema mostrará un mensaje descripti
 
 ### 6.2.4. SEO Tags, Meta Tags y ASO Elements
 
-> ✍️ **REDACTADO** — Tabla SEO y ASO redactadas.
 
  
 Para mejorar la visibilidad de YakuControl en motores de búsqueda, se implementarán las siguientes etiquetas SEO y meta etiquetas en la landing page, aplicación web y movil:
@@ -2782,7 +2781,7 @@ Para mejorar la visibilidad de YakuControl en motores de búsqueda, se implement
 | Etiqueta | Contenido |
 |----------|-----------|
 | Title | YakuControl - Plataforma de Monitoreo Inteligente para Piscigranjas |
-| Meta Description | YakuControl es una plataforma tecnológica para la gestión y monitoreo en tiempo real de piscigranjas. Controla temperatura, pH y oxígeno desde cualquier dispositivo. |
+| Meta Description | YakuControl es una plataforma tecnológica para la gestión y monitoreo en tiempo real de piscigranjas. Controla temperatura, pH y turbidez desde cualquier dispositivo. |
 | Meta Keywords | monitoreo de piscigranjas, gestión acuícola, sensores de agua, telemetría acuicultura, control de estanques |
 | Meta Author | YakuControl Team |
 | Meta Viewport | width=device-width, initial-scale=1.0 |
@@ -2796,15 +2795,15 @@ Representación en HTML:
  
 ```html
 <title>YakuControl - Plataforma de Monitoreo Inteligente para Piscigranjas</title>
-<meta name="description" content="YakuControl es una plataforma tecnológica para la gestión y monitoreo en tiempo real de piscigranjas. Controla temperatura, pH y oxígeno desde cualquier dispositivo.">
+<meta name="description" content="YakuControl es una plataforma tecnológica para la gestión y monitoreo en tiempo real de piscigranjas. Controla temperatura, pH y turbidez desde cualquier dispositivo.">
 <meta name="keywords" content="monitoreo de piscigranjas, gestión acuícola, sensores de agua, telemetría acuicultura, control de estanques">
 <meta name="author" content="YakuControl Team">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="UTF-8">
 <meta property="og:title" content="YakuControl - Tecnología Acuícola Inteligente">
 <meta property="og:description" content="Monitorea y gestiona tus estanques en tiempo real con YakuControl. Alertas automáticas, historial de parámetros y reportes exportables.">
-<meta property="og:image" content="https://www.yakucontrol.app/assets/images/yakucontrol-logo.png">
-<meta property="og:url" content="https://www.yakucontrol.app">
+<meta property="og:image" content="URL-del-logo-en-el-dominio-publicado">
+<meta property="og:url" content="URL-del-dominio-publicado">
 ```
  
 **Web Application ASO / SEO:**
@@ -2812,7 +2811,7 @@ Representación en HTML:
 | Etiqueta | Contenido |
 |----------|-----------|
 | Title | YakuControl - Gestión de Piscigranjas |
-| Meta Description | Plataforma web para el monitoreo en tiempo real de parámetros del agua en piscigranjas: temperatura, pH y oxígeno disuelto. |
+| Meta Description | Plataforma web para el monitoreo en tiempo real de parámetros del agua en piscigranjas: temperatura, pH y turbidez. |
 | Meta Keywords | acuicultura, monitoreo acuícola, gestión de estanques, sensores IoT, piscigranjas inteligentes |
 | Developer Name | YakuControl Team |
 | Category | Tecnología / Agricultura y Acuicultura |
@@ -2837,7 +2836,7 @@ Representación en HTML:
 
 | Página | Title | Description | Keywords | Author |
 | :--- | :--- | :--- | :--- | :--- |
-| Landing – Inicio | YakuControl | Monitoreo del agua y alertas en tiempo real para piscigranjas de trucha | monitoreo acuícola, trucha, IoT, piscigranja | Verifish |
+| Landing – Inicio | YakuControl – Monitoreo y trazabilidad | Monitoreo del agua y alertas en tiempo real para piscigranjas de trucha | monitoreo acuícola, trucha, IoT, piscigranja | Verifish |
 | Landing – Planes | Planes y precios \| YakuControl | Planes de monitoreo por estanque y complemento TRACE | planes, suscripción, TRACE | Verifish |
 | Landing – YakuTrace | YakuTrace: trazabilidad verificable | Certificados con QR para verificar el origen y las condiciones registradas de cada lote de trucha | trazabilidad, QR, certificado, blockchain, trucha | Verifish |
 | Web App – Ingreso | Ingresar \| YakuControl | Acceso del administrador a su granja | — | Verifish |
@@ -2850,22 +2849,21 @@ Representación en HTML:
 | App Title | YakuControl – Monitoreo de estanques |
 | App Subtitle | Alertas y control para tu piscigranja |
 | App Keywords | trucha, piscigranja, acuicultura, estanque, alertas, sensores |
-| App Description | Monitorea la temperatura, el pH y la turbidez de tus estanques, recibe alertas inmediatas y activa el aireador desde tu celular, incluso con conectividad inestable. |
+| App Description | Monitorea la temperatura, el pH y la turbidez de tus estanques, recibe alertas inmediatas y activa el aireador desde tu celular. Sin conexión, consulta datos almacenados con la hora de última sincronización; el control remoto requiere conexión. |
 
 ### 6.2.5. Navigation Systems
 
-> ✍️ **REDACTADO** — Recorrido de verificación redactado.
 
 
 Para garantizar una experiencia fluida en YakuControl, se implementarán los siguientes sistemas de navegación:
  
 **Landing Page Navigation:**
  
-La página de inicio cuenta con un menú de navegación superior fijo con enlaces a las secciones: "Soluciones", "Tecnología", "Precios" y "FAQ". En el extremo derecho se ubica el botón de llamada a la acción principal "Solicitar Demo" en color primario `#002B49`, diseñado para captar la atención de visitantes interesados en conocer la plataforma.
+La página de inicio cuenta con un menú de navegación superior fijo con enlaces a las secciones: "Inicio", "Cómo funciona", "YakuTrace", "Planes", "Preguntas" y "Contacto". En el extremo derecho se ubica el botón de llamada a la acción principal "Solicitar Demo" en color primario `#002B49`, diseñado para captar la atención de visitantes interesados en conocer la plataforma.
  
 **Web Application Navigation:**
  
-La aplicación web utiliza un menú lateral fijo (sidebar) ubicado en el lado izquierdo de la pantalla, visible en todo momento independientemente del scroll. Este menú contiene los íconos y etiquetas de las secciones principales: Dashboard, Estanques, Equipos, Operadores, Notificaciones y Configuración. El ítem activo se resalta con un fondo navy claro para indicar la sección actual.
+La aplicación web utiliza un menú lateral fijo en escritorio (≥ 960 px) y un menú plegable en tamaños menores. Este menú contiene los íconos y etiquetas de las secciones principales: Inicio, Estanques, Equipos, Operadores, Lotes, Certificados, Notificaciones, Suscripción y Configuración. El ítem activo se resalta con un fondo navy claro para indicar la sección actual.
  
 Adicionalmente, dentro de cada sección se implementan:
  
@@ -2880,9 +2878,9 @@ La aplicación móvil nativa para Android utiliza un menú inferior (bottom navi
 accesible en todo momento desde cualquier vista. Este patrón es el estándar recomendado por Material Design para aplicaciones móviles con entre 3 y 5 destinos principales, ya que permite el acceso con el pulgar sin necesidad de desplazar la mano.
 
 Las secciones accesibles desde el menú inferior son:
-- Dashboard: vista general con métricas resumen y alertas activas.
+- Inicio: vista general con métricas resumen y alertas activas.
 - Estanques: listado y detalle de estanques asignados al usuario.
-- Notificaciones: centro de alertas y eventos del sistema.
+- Alertas: centro de alertas y eventos del sistema.
 - Perfil: información de cuenta y configuración personal.
 
 Adicionalmente, dentro de cada sección se implementan:
@@ -2896,31 +2894,29 @@ El flujo de navegación es coherente entre la versión web y móvil, garantizand
 
 **Recorrido de verificación (comprador / consumidor).** QR del empaque → página pública de verificación con el estado del certificado → resumen de calidad → historial del lote → enlace a la prueba de registro. La navegación es lineal, sin menú de gestión, con un único llamado a la acción secundario ("Ver prueba de registro") y migas de pan en la vista de detalle.
 
-**Navegación del administrador.** El menú lateral (Dashboard, Estanques, Equipos, Operadores, Notificaciones, Configuración) incorpora **Lotes** y **Certificados**; en pantallas pequeñas el menú se convierte en un *drawer* desplegable.
+**Navegación del administrador.** El menú lateral incorpora **Lotes**, **Certificados** y **Suscripción**, junto con Inicio, Estanques, Equipos, Operadores, Notificaciones y Configuración; en pantallas pequeñas el menú se convierte en un *drawer* desplegable.
 
 ## 6.3. Landing Page UI Design
 
-> ✍️ **REDACTADO** — CTA por segmento redactados.
 
 En esta sección se detalla el diseño de la interfaz de usuario para la Landing Page de YakuControl, la cual constituye el principal canal de captación B2B y presencia digital de la startup Verifish. El diseño está orientado a comunicar de manera efectiva la propuesta de valor de la solución, destacando beneficios como la reducción de mortalidad de truchas y el monitoreo IoT en tiempo real para atraer a potenciales administradores de piscigranjas.
 
 ### 6.3.1. Landing Page Wireframe
 
-> ✍️ **REDACTADO** — Estructura de secciones redactada. Falta (herramienta): actualizar el wireframe en **Figma** (desktop y mobile). (Tarea C6-3)
 
 Se presentan los wireframes de baja fidelidad para la Landing Page, enfocándose en la disposición estructural de los elementos clave definidos en las User Stories EP01. El esquema prioriza una jerarquía visual clara que guía al visitante desde la explicación del producto hasta las secciones de catálogo de planes, FAQ de soporte y el formulario de contacto para ventas.
 
 | Vista Previa Desktop Web Browser | Vista Previa Mobile Web Browser |
 |----------------------------------|----------------------------------|
-| <img src="assets/disenoux/LandingDesktopWireframe.png" alt="wireframe1" /> | <img src="assets/disenoux/LandingPhoneWireframe.png" alt="wireframe2" /> |
+| <img src="assets/images/cap6/LandingDesktopWireframe.png" alt="wireframe1" /> | <img src="assets/images/cap6/LandingPhoneWireframe.png" alt="wireframe2" /> |
 
-Link Figma: https://www.figma.com/design/FdwCU88zpBqlCuHjQ9iY69/YacuControl?node-id=0-1&t=pGGdjtmP24aklmtz-1
+Referencia histórica en Figma (sin actualización en esta entrega): [YacuControl](https://www.figma.com/design/FdwCU88zpBqlCuHjQ9iY69/YacuControl?node-id=0-1). Las fuentes actuales y sus PNG están en este repositorio.
 
 
 **Estructura propuesta (desktop y mobile).** En el wireframe se mantienen las secciones existentes y se agrega la sección de trazabilidad:
 
 1. *Header* con logotipo, navegación (Inicio, Cómo funciona, YakuTrace, Planes, Preguntas, Contacto) y selector de idioma.
-2. *Hero* con propuesta de valor y CTA ("Comenzar", "Descargar la app").
+2. *Hero* con propuesta de valor y CTA ("Ver planes", "Solicitar demo").
 3. Beneficios clave (alertas tempranas, control remoto, históricos).
 4. **Sección YakuTrace:** explicación en tres pasos ("El lote se registra → se emite un certificado con QR → el comprador lo verifica") y CTA "Verificar un lote".
 5. Planes y precios (con el complemento TRACE).
@@ -2932,28 +2928,30 @@ En mobile las secciones se apilan en una sola columna, la navegación pasa a men
 
 ### 6.3.2. Landing Page Mock-up
 
-> ✍️ **REDACTADO** — Texto redactado. Falta (herramienta): actualizar el mock-up en Figma. (Tarea C6-3)
 
 El Mock-up de alta fidelidad para la Landing Page materializa las guías de estilo del proyecto en una interfaz visual acabada. Este diseño incorpora los elementos gráficos, tipografía y paleta de colores del sistema para transmitir profesionalismo y confianza, facilitando la visualización final de cómo los clientes interactuarán con la plataforma antes de su implementación.
 | Vista Previa Desktop Web Browser | Vista Previa Mobile Web Browser |
 |----------------------------------|----------------------------------|
-| <img src="assets/disenoux/LandingDesktopMockup.png" alt="Mockup1" /> | <img src="assets/disenoux/LandingPhoneMockup.png" alt="Mockup2" /> |
+| <img src="assets/images/cap6/LandingDesktopMockup.png" alt="Mockup1" /> | <img src="assets/images/cap6/LandingPhoneMockup.png" alt="Mockup2" /> |
 
-Link Figma: https://www.figma.com/design/FdwCU88zpBqlCuHjQ9iY69/YacuControl?node-id=0-1&t=pGGdjtmP24aklmtz-1
+Referencia histórica en Figma (sin actualización en esta entrega): [YacuControl](https://www.figma.com/design/FdwCU88zpBqlCuHjQ9iY69/YacuControl?node-id=0-1). Las fuentes actuales y sus PNG están en este repositorio.
 
 
 **Llamados a la acción (CTA) por segmento**
 
 | Segmento | CTA | Destino |
 | :--- | :--- | :--- |
-| Administradores de piscigranja | "Comenzar" / "Ver planes" | Vista de registro/ingreso de la Web App y sección de planes |
-| Piscicultores | "Descargar la app" | Sitio de descarga de la app móvil (tienda) |
+| Administradores de piscigranja | "Ver planes" / "Solicitar demo" | Sección de planes y formulario de contacto |
+| Piscicultores | "Consultar la app" | Contacto; la descarga se habilitará cuando exista una publicación oficial |
 | Compradores de supermercado | "Verificar un lote" | Página pública de verificación de la Web App |
 
-La Landing Page mantiene la paleta, la tipografía y los componentes del Design System, y sus CTA llevan a las vistas correspondientes de las aplicaciones, para que la experiencia sea consistente. Los términos y condiciones de servicio se enlazan desde el pie de página.
+La Landing Page mantiene la paleta, la tipografía y los componentes del Design System, y sus CTA llevan a las vistas correspondientes de las aplicaciones, para que la experiencia sea consistente. El pie reserva los accesos a términos y privacidad; se publicarán con el servicio operativo. No se presentan URLs de tienda o precios sin confirmar.
 
 
-El mock-up aplica la guía de estilos (paleta Navy/Cyan/Aqua, tipografía Inter, espaciado en múltiplos de 8 px, botones y chips del Design System). La sección YakuTrace incorpora el sello de verificación y un ejemplo del certificado con su código QR para ilustrar el beneficio. Se verificó el contraste de color y el tamaño táctil de los CTA para el uso en móvil.
+El mock-up aplica la guía de estilos (paleta Navy/Cyan/Aqua, tipografía Inter, espaciado en múltiplos de 8 px, botones y chips del Design System). La sección YakuTrace incorpora el sello de verificación y un ejemplo del certificado con su código QR para ilustrar el beneficio. Los CTA tienen una altura mínima de 48 px. La verificación técnica del contraste y del ancho responsive se documenta en la revisión del paquete E.
+
+
+**Fuentes de la landing:** [wireframe desktop](design/package-e/LandingDesktopWireframe.html), [wireframe móvil](design/package-e/LandingPhoneWireframe.html), [mockup desktop](design/package-e/LandingDesktopMockup.html) y [mockup móvil](design/package-e/LandingPhoneMockup.html). Los gráficos del panel y el certificado usan datos ilustrativos; el formulario no realiza envíos.
 
 ## 6.4. Applications UX/UI Design
 

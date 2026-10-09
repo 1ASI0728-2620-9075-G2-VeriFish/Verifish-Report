@@ -1,0 +1,34 @@
+[
+  {
+    "name": "LandingDesktopWireframe",
+    "title": "Landing · wireframe desktop",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "LandingPhoneWireframe",
+    "title": "Landing · wireframe móvil",
+    "width": 390,
+    "scroll": 390,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "LandingDesktopMockup",
+    "title": "Landing · mockup desktop",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "LandingPhoneMockup",
+    "title": "Landing · mockup móvil",
+    "width": 390,
+    "scroll": 390,
+    "brokenImages": [],
+    "font": true
+  }
+]
