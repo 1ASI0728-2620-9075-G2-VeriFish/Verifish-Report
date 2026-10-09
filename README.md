@@ -347,9 +347,6 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 ## 1.1. Startup Profile
 ### 1.1.1. Descripción de la Startup
 
-> ✍️ **REDACTADO** — Texto de YakuTrace, misión y visión actualizados. Solo revisar redacción.
-
-
 **Verifish** es una startup tecnológica orientada al desarrollo de soluciones de *Smart Farming* y monitoreo ambiental, enfocada principalmente en contribuir a la modernización del sector acuícola. Surge con la finalidad de mejorar la gestión convencional de las piscigranjas mediante la incorporación de tecnologías como el **Internet de las Cosas (IoT)** y la **computación en la nube**, permitiendo una administración más inteligente de los recursos, la protección del entorno y una mayor sostenibilidad económica para los productores.
 
 **YakuControl** (del término quechua *yaku*, que significa “agua”) es una solución tecnológica integral diseñada para facilitar el monitoreo continuo de las principales variables bioquímicas presentes en los estanques de las piscigranjas. A través de sensores especializados, dispositivos IoT y servicios alojados en la nube, la plataforma permite detectar oportunamente cambios en las condiciones del agua que podrían representar un riesgo para los peces. De esta manera, brinda apoyo preventivo a los piscicultores frente a situaciones como variaciones extremas de temperatura, alteraciones químicas o condiciones que puedan ocasionar pérdidas en la producción.
@@ -372,8 +369,6 @@ A partir del trabajo de este ciclo, YakuControl incorpora **YakuTrace**, un mód
 <div style="page-break-after: always;"></div>
 
 ### 1.1.2. Perfiles de integrantes del equipo
-
-> 🟡 **AJUSTAR AL ENUNCIADO** — El enunciado exige: foto, nombres y apellidos, código, descripción de carrera y un párrafo con conocimientos técnicos y habilidades que aporta cada uno. Completar carrera/ciclo y skills técnicos (faltan en varios), verificar códigos (p. ej. `U20231d390`) y corregir typos ("nóvil", `img alt`). Subir las fotos a `./assets/` en vez de imgur. (Tarea C1-1)
 
 <table border="1">
   <tr>
@@ -401,9 +396,6 @@ A partir del trabajo de este ciclo, YakuControl incorpora **YakuTrace**, un mód
 
 ## 1.2. Solution Profile
 ### 1.2.1. Antecedentes y problemática
-
-> ✍️ **REDACTADO** — Antecedentes de trazabilidad y 5W+2H del comprador redactados. Revisar redacción y las citas.
-
 
 #### Antecedentes
 
