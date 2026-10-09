@@ -1062,7 +1062,16 @@ Es la responsable de la gestión y toma de decisiones, quienes supervisan la pro
 
 **User persona: Comprador de supermercado**
 
-_(Pendiente: ficha en UXPressia con datos de las entrevistas. Tarea C2-6)_
+Representa a los responsables de compras de productos frescos que seleccionan proveedores de trucha, coordinan el abastecimiento y revisan la documentación de los lotes, en colaboración con las áreas de recepción y calidad.
+
+<p align="center">
+  <img src="https://i.imgur.com/MgYpYA0.png" width="65%">
+  <br>
+  <i>User Persona – Administradores de piscigranjas</i>
+</p>
+
+<div style="page-break-after: always;"></div>
+
 
 ### 2.3.2. User Task Matrix
 
