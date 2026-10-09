@@ -1196,6 +1196,7 @@ Los mapas se construyen a partir de las actividades y dificultades descritas en 
 
 <div style="page-break-after: always;"></div>
 
+[Link del Miro (https://miro.com/welcomeonboard/SWQ4UUpYdlFSYTdCNEErcTQ2VzRqNU1BZk54eStDOFR6TnhmRTJCK2FWVWJXQ0ltTmtXYm9RUFJwSHF2eWIvNUxzeERCcXRhM1M3L1pXdE5ERGpqVTNrcUM4YWVONEZMTWZvVWFiVFl3dVdpb3AwTTVQQ2MzbTNxNkdLSWh4WEJBS2NFMDFkcUNFSnM0d3FEN050ekl3PT0hdjE=?share_link_id=826222577249)
 
 **Proceso de elaboración.** Para cada User Persona se construyó un As-is Scenario Map en Miro/LucidChart. Tras la preparación y una lluvia de ideas individual, el equipo revisó las ideas e identificó las **fases** del escenario actual (columnas), las nombró y completó para cada una las filas **Phases, Doing, Thinking y Feeling**. Finalmente se etiquetaron las áreas **positivas** y **negativas** para el usuario y las *blank areas*, es decir, aquello sobre lo que se necesita aprender más. Los mapas parten de los *journey maps* elaborados en la entrega anterior y se rehicieron con el formato del enunciado.
 
