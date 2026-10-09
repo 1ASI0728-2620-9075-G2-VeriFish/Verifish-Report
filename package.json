@@ -1,0 +1,14 @@
+{
+  "name": "verifish-report-designs",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Fuentes reproducibles de los diseños UX/UI del paquete E del informe TP1",
+  "scripts": {
+    "render:designs": "node scripts/render-package-e.cjs all",
+    "verify:designs": "node scripts/verify-package-e.cjs",
+    "check:responsive": "node scripts/check-responsive-package-e.cjs"
+  },
+  "devDependencies": {
+    "playwright": "1.60.0"
+  }
+}

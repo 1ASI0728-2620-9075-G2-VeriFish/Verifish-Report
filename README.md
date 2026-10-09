@@ -91,7 +91,7 @@
 | **7.0** | (fecha) | (autor) | **TP1 – Cap. I a III:** incorporación del Segmento 3 y de YakuTrace; reescritura de User Stories (Gherkin sin UI), Product Backlog ordenado por valor, To-Be Scenario Mapping, Impact Mapping con objetivos SMART y Ubiquitous Language en inglés. |
 | **8.0** | (fecha) | (autor) | **TP1 – Cap. IV:** constraints como Technical Stories, drivers, matriz de patrones, refinements; EventStorming, contextos, canvases y context map con Traceability; diagramas C4 coherentes con el monolito modular. |
 | **9.0** | (fecha) | (autor) | **TP1 – Cap. V:** diseño táctico de los seis Bounded Contexts (capas, componentes, clases y base de datos). |
-| **10.0** | (fecha) | (autor) | **TP1 – Cap. VI:** guía de estilos, arquitectura de información, landing, wireframes y wireflows con YakuTrace y principios de Responsive Web Design. |
+| **10.0** | 08/10/2026 | Rúbens Fitzgerald Bendezu (Lucemz) | **TP1 – Paquete E:** revisión del capítulo VI; guía visual y arquitectura de información, landing desktop/móvil, pantallas 1–28 en español, estados y 23 wireflows; fuentes editables, PNG y evidencia escrita del Student Outcome 3. |
 
 <div style="page-break-after: always;"></div>
 
@@ -116,6 +116,13 @@ Los integrantes del equipo y sus nombres de usuario en GitHub son los siguientes
 
 
 <div style="page-break-after: always;"></div>
+
+## TP1 — contribución del paquete E
+
+**Responsable:** Rúbens Fitzgerald Bendezu Navarro (`Lucemz`). Se desarrolló el capítulo VI desde `develop`, organizando el trabajo en `feature/pkg-e-style-guide`, `feature/pkg-e-landing`, `feature/pkg-e-wireframes`, `feature/pkg-e-wireflows` y `feature/review-chapter-6`. Los cambios se integran mediante la rama `feature/pkg-e`, conservando los commits y los merges del trabajo.
+
+La entrega incluye fuentes HTML/CSS, la tipografía Inter con licencia, PNG renderizados y un control reproducible de imágenes, referencias y contraste. Los diseños representan estados ilustrativos; no son pruebas de funcionamiento del backend. La [revisión del paquete](design/package-e/REVISION_PAQUETE_E.md) identifica los pendientes externos y del resto del informe. Las aportaciones de los demás integrantes deben registrarse con sus tareas y evidencias reales.
+
 
 ## TB1
 
@@ -310,23 +317,12 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 
 | Criterio específico | Acciones realizadas | Conclusiones |
 | :--- | :--- | :--- |
-| **Comunica oralmente sus ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería.** | **Escobar Palomino, Sebastian Matias**<br>*TB1*: (completar)<br>*TP1*: (completar)<br><br>**Bendezu Navarro, Rúbens Fitzgerald**<br>*TB1*: (completar)<br>*TP1*: (completar)<br><br>**Choquehuanca Nuñez, Luciana Carolina**<br>*TB1*: (completar)<br>*TP1*: (completar)<br><br>**Cruz Ibarra, Victor Andres**<br>*TB1*: (completar)<br>*TP1*: (completar)<br><br>**Peralta Chipa, Ronald Joel**<br>*TB1*: (completar)<br>*TP1*: (completar) | *TB1:* (completar, grupal)<br>*TP1:* (completar, grupal) |
-| **Comunica en forma escrita ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería.** | **Escobar Palomino, Sebastian Matias**<br>*TB1*: (completar)<br>*TP1*: (completar)<br><br>**Bendezu Navarro, Rúbens Fitzgerald**<br>*TB1*: (completar)<br>*TP1*: (completar)<br><br>**Choquehuanca Nuñez, Luciana Carolina**<br>*TB1*: (completar)<br>*TP1*: (completar)<br><br>**Cruz Ibarra, Victor Andres**<br>*TB1*: (completar)<br>*TP1*: (completar)<br><br>**Peralta Chipa, Ronald Joel**<br>*TB1*: (completar)<br>*TP1*: (completar) | *TB1:* (completar, grupal)<br>*TP1:* (completar, grupal) |
+| **Comunica oralmente sus ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería.** | **Escobar Palomino, Sebastian Matias**<br>*TB1*: (completar)<br>*TP1*: (completar)<br><br>**Bendezu Navarro, Rúbens Fitzgerald**<br>*TB1*: Evidencia oral individual por vincular; no se atribuye una exposición sin registro.<br>*TP1*: Preparé un guion de sustentación apoyado en la landing, las pantallas y los wireflows para explicar el diseño a piscicultores, administradores, compradores y al equipo técnico. El material distingue acciones de campo, decisiones de negocio y estados del certificado. La exposición y su evidencia se registrarán cuando se realicen.<br><br>**Choquehuanca Nuñez, Luciana Carolina**<br>*TB1*: (completar)<br>*TP1*: (completar)<br><br>**Cruz Ibarra, Victor Andres**<br>*TB1*: (completar)<br>*TP1*: (completar)<br><br>**Peralta Chipa, Ronald Joel**<br>*TB1*: (completar)<br>*TP1*: (completar) | *TB1:* (completar, grupal)<br>*TP1:* (completar, grupal) |
+| **Comunica en forma escrita ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería.** | **Escobar Palomino, Sebastian Matias**<br>*TB1*: (completar)<br>*TP1*: (completar)<br><br>**Bendezu Navarro, Rúbens Fitzgerald**<br>*TB1*: El informe previo registra aportes al análisis competitivo y Lean UX; falta vincular la evidencia personal específica para este criterio de comunicación.<br>*TP1*: Documenté y revisé el capítulo VI: guía visual, arquitectura de información, landing desktop/móvil, 28 pantallas principales, variantes responsive, estados alternativos y 23 wireflows. Redibujé la interfaz en español y relacioné los recorridos con las historias de usuario. Incorporé fuentes editables, PNG y controles de calidad que permiten al equipo reproducir y revisar el diseño.<br><br>**Choquehuanca Nuñez, Luciana Carolina**<br>*TB1*: (completar)<br>*TP1*: (completar)<br><br>**Cruz Ibarra, Victor Andres**<br>*TB1*: (completar)<br>*TP1*: (completar)<br><br>**Peralta Chipa, Ronald Joel**<br>*TB1*: (completar)<br>*TP1*: (completar) | *TB1:* (completar, grupal)<br>*TP1:* (completar, grupal) |
 
-> 🔴 **CAMBIAR** — El reporte anterior usaba **ABET – EAC – Student Outcome 7** (corresponde al curso de IoT); este curso exige el **3**. Cada integrante escribe sus acciones reales de TB1 y TP1; las conclusiones son grupales y acumulables. El texto anterior queda comentado abajo como referencia. (Tarea TR-03)
-
-<!-- TEXTO ANTERIOR (Student Outcome 7, TB1) — borrar antes de exportar
-# Student Outcome
-En el siguiente cuadro se describen las acciones realizadas y enunciados de conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el logro del ABET – EAC - Student Outcome 7.
-
-| Criterio específico | Acciones realizadas | Conclusiones |
-| :--- | :--- | :--- |
-| **Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software.** | **Escobar Palomino, Sebastian Matias**<br>*TB1*: Actualizó conceptos sobre técnicas de elicitación de requerimientos, diseño de entrevistas y modelado de flujos de dominio (Domain Message Flow) aplicados al diseño estratégico.<br><br>**Bendezu Navarro, Rúbens Fitzgerald**<br>*TB1*: Investigó y actualizó conocimientos sobre análisis competitivo y metodologías Lean UX para estructurar el perfil de la solución y mapear el contexto (Context Mapping).<br><br>**Choquehuanca Nuñez, Luciana Carolina**<br>*TB1*: Profundizó en la dinámica de EventStorming y el descubrimiento de contextos candidatos, actualizando sus bases teóricas para la correcta redacción de User Stories.<br><br>**Cruz Ibarra, Victor Andres**<br>*TB1*: Actualizó conceptos sobre diseño de arquitectura de software utilizando el modelo C4 y patrones tácticos de DDD aplicados a la configuración inicial del proyecto.<br><br>**Peralta Chipa, Ronald Joel**<br>*TB1*: Actualizó conocimientos en la estructuración de Bounded Context Canvases y la interpretación de métricas de colaboración en GitHub (Insights) para documentar el progreso. | *TB1:*<br>Consideramos que durante esta primera etapa logramos cumplir un alto nivel de actualización técnica. Como equipo, tuvimos que investigar y afianzar nuestros conocimientos sobre Domain-Driven Design (DDD), arquitectura de software bajo el modelo C4 y metodologías de ideación (Lean UX, EventStorming). Esta asimilación de nuevos conceptos fue fundamental para estructurar correctamente las bases arquitectónicas y los requerimientos de nuestra solución de software, aportando directamente a nuestro desarrollo profesional. |
-| **Reconoce la necesidad del aprendizaje permamente para el desempeño profesional y el desarrollo de proyectos en soluciones de software.** | **Escobar Palomino, Sebastian Matias**<br>*TB1*: Reconoció la necesidad de investigar constantemente nuevas técnicas de mapeo de empatía y diseño de experiencia de usuario para comprender a profundidad las necesidades del cliente.<br><br>**Bendezu Navarro, Rúbens Fitzgerald**<br>*TB1*: Identificó la importancia de mantenerse actualizado sobre las tendencias del mercado y modelos de negocio de competidores para poder definir un Ubiquitous Language preciso y competitivo.<br><br>**Choquehuanca Nuñez, Luciana Carolina**<br>*TB1*: Comprendió la necesidad de instruirse continuamente en metodologías ágiles y gestión de Backlog para adaptarse a la complejidad del descubrimiento de dominios del software.<br><br>**Cruz Ibarra, Victor Andres**<br>*TB1*: Identificó la necesidad vital de seguir aprendiendo sobre estándares de flujos de trabajo colaborativos (GitFlow) y evolución de arquitecturas para garantizar un diseño escalable.<br><br>**Peralta Chipa, Ronald Joel**<br>*TB1*: Reconoció la relevancia de mantenerse al día con los estándares de documentación (ABET) y las mejores prácticas para delimitar contextos (Bounded Contexts) en proyectos complejos. | *TB1:*<br>A nivel grupal, reconocemos que el desarrollo de software exige una mentalidad de formación continua. Al enfrentarnos a la definición estratégica y táctica de nuestro dominio, evidenciamos que las metodologías y herramientas cambian y evolucionan. Entendimos que investigar de manera autónoma, validar nuevas fuentes de información y adaptar nuestro enfoque no es solo un requisito académico, sino una habilidad indispensable para mantener la calidad y vigencia en el ámbito profesional a largo plazo. |
+**Evidencia individual de Rúbens Bendezu (TP1):** [fuentes y galería UX/UI](design/package-e/index.html), [revisión de entregables](design/package-e/REVISION_PAQUETE_E.md) y [guion de sustentación](design/package-e/GUION_SUSTENTACION.md). La evidencia escrita es verificable en los archivos y commits. La evidencia oral debe completarse con la sustentación real. Las filas de los demás integrantes y las conclusiones grupales requieren su validación.
 
 <div style="page-break-after: always;"></div>
-
--->
 
 # Capítulo I: Introducción
 ## 1.1. Startup Profile
@@ -2393,7 +2389,7 @@ El esquema `payment` contiene `subscriptions` (una por granja), `invoices` (hist
 
 # Capítulo VI: Solution UX Design
 
-> ✍️ **REDACTADO** — Base de IoT con **textos nuevos redactados** (extensión TRACE, guía web/móvil/dispositivos, IA, SEO/ASO, CTA, principios y RWD, pantallas nuevas y wireflows nuevos). Falta (herramienta): dibujar las pantallas y flujos nuevos en Figma/LucidChart y pasar la UI a **español** donde esté en otro idioma.
+El capítulo presenta la propuesta UX/UI de YakuControl + YakuTrace para visitantes, administradores, piscicultores y compradores. Las vistas se documentan con fuentes editables HTML/CSS y capturas PNG. Los valores y estados de las pantallas son ilustrativos; no constituyen evidencia de una implementación o validación con usuarios.
 
 
  
@@ -2403,7 +2399,6 @@ Los lineamientos de esta sección aseguran coherencia visual e identidad unifica
 
 ### 6.1.1. General Style Guidelines
 
-> ✍️ **REDACTADO** — Extensión TRACE (estados Verificado/No válido/Revocado/En proceso, QR, tono) redactada.
 
 
 La guía de estilos establece las bases de diseño para la plataforma YakuControl, asegurando una experiencia de usuario coherente, funcional y visualmente alineada con su propósito. En esta sección se detallan los colores, tipografías, iconografía y demás elementos visuales que conforman la identidad de la marca.
@@ -2518,18 +2513,18 @@ YakuControl utiliza un sistema de espaciado basado en múltiplos de 8px, garanti
 ---
 #### Botones
  
-Los botones de YakuControl siguen una jerarquía visual clara que comunica el nivel de importancia de cada acción. Todos utilizan Inter SemiBold, border-radius de 8px y altura estándar de 40px.
+Los botones de YakuControl siguen una jerarquía visual clara que comunica el nivel de importancia de cada acción. Todos utilizan Inter SemiBold, border-radius de 8px y altura mínima de 48px en los diseños nuevos.
 
 ![Buttom Guideline](./assets/disenoui/general-style-guidelines-buttom.png)
  
 | Variante | Estilo | Uso |
 |----------|--------|-----|
 | **Primary** | Fondo `#002B49`, texto blanco | Acción principal de la vista |
-| **Secondary** | Fondo `#00A3E0`, texto blanco | Acciones secundarias relevantes |
+| **Secondary** | Fondo `#007EA8`, texto blanco | Acciones secundarias relevantes |
 | **Success Action** | Fondo `#00796B`, texto blanco | Confirmaciones y asignaciones (ej. "Asignar a estanque") |
 | **Outlined** | Borde `#002B49`, texto `#002B49`, fondo transparente | Acciones alternativas no destructivas (ej. "Editar") |
 | **Danger** | Borde `#E53935`, texto `#E53935`, fondo transparente | Acciones destructivas (ej. "Eliminar Registro") |
-| **Icon + Label** | Fondo `#00A3E0`, ícono `+` a la izquierda, texto blanco | Creación de nuevos elementos (ej. "+ Registrar Equipo") |
+| **Icon + Label** | Fondo `#007EA8`, ícono `+` a la izquierda, texto blanco | Creación de nuevos elementos (ej. "+ Registrar Equipo") |
 | **Small Badge** | Fondo `#00E0D1`, texto oscuro, pill shape | Indicadores de estado compactos (ej. "ÓPTIMO") |
 | **Disabled** | Fondo `#BDBDBD`, texto `#9E9E9E` | Acciones no disponibles en el contexto actual |
  
@@ -2543,7 +2538,7 @@ Los labels y chips comunican estados, categorías y acciones rápidas dentro de 
 | Variante | Estilo | Uso |
 |----------|--------|-----|
 | **Icon Button** | Cuadrado redondeado teal `#00796B`, ícono blanco | Acción rápida compacta (ej. añadir) |
-| **Label con ícono** | Pill cyan `#00A3E0`, ícono + texto blanco | Etiqueta de categoría o tipo (ej. "Label") |
+| **Label con ícono** | Pill cyan accesible `#007EA8`, ícono + texto blanco | Etiqueta de categoría o tipo (ej. "Label") |
 | **Filter Chip** | Borde gris, fondo blanco, texto oscuro | Opciones de filtrado seleccionables |
 | **Status Badge** | Borde verde, texto verde, punto verde | Indicador de estado activo (ej. "● ACTIVE") |
 
@@ -2600,10 +2595,10 @@ La incorporación de la verificación de certificados exige comunicar **estados 
 
 | Estado | Texto en interfaz | Color (token) | Ícono (Material Symbols Outlined) | Uso |
 | :--- | :--- | :--- | :--- | :--- |
-| Verificado | "Verificado" | Éxito `#43A047` | `verified` | La huella recalculada coincide con la registrada. |
-| No válido | "No válido" | Error `#E53935` | `gpp_bad` | El contenido no coincide con el registro. |
-| Revocado | "Revocado" | Neutro oscuro `#616161` | `block` | El certificado fue anulado por el emisor. |
-| En proceso | "Registro en proceso" | Información `#2196F3` | `schedule` | El anclaje en blockchain aún no se confirma. |
+| Verificado | "Verificado" | Éxito `#166534` | `verified` | La huella recalculada coincide con la registrada. |
+| No válido | "No válido" | Error `#B91C1C` | `gpp_bad` | El contenido no coincide con el registro. |
+| Revocado | "Revocado" | Neutro oscuro `#374151` | `block` | El certificado fue anulado por el emisor. |
+| En proceso | "Registro en proceso" | Información `#075985` | `schedule` | El anclaje en blockchain aún no se confirma. |
 
 **Código QR.** Se muestra con un tamaño mínimo de 160 px, zona de silencio de 4 módulos, alto contraste (módulos en Navy Deep `#002B49` sobre fondo blanco) y un texto alternativo que describe su función. **Sello de verificación:** insignia compuesta por el ícono de estado y el texto, usada en el encabezado de la página pública de verificación y en las listas de certificados.
 
@@ -2611,14 +2606,13 @@ La incorporación de la verificación de certificados exige comunicar **estados 
 
 ### 6.1.2. Web, Mobile & Devices Style Guidelines
 
-> ✍️ **REDACTADO** — Reescrita: Web (Angular + Material), Mobile (Flutter), Devices; se eliminó la contradicción de paleta y los textos duplicados.
 
 
 Los estándares visuales y de interacción de los productos digitales se basan en **Material Design** y en la paleta, tipografía y espaciado definidos en 6.1.1, de modo que la Landing Page, la Web App y la app móvil resulten consistentes.
 
 **Web Style Guidelines**
 
-La Web App se construye con **Angular** y **Angular Material** (o PrimeNG), siguiendo Material Design 3, con tema claro (fondo Off White `#F8FAFC`) y la paleta de YakuControl. Está orientada al administrador (gestión de estanques, lotes y certificados) y a la página pública de verificación.
+La Web App se construye con **Angular** y **Angular Material**, siguiendo Material Design 3, con tema claro (fondo Off White `#F8FAFC`) y la paleta de YakuControl. Está orientada al administrador (gestión de estanques, lotes y certificados) y a la página pública de verificación.
 
 * **Botones:** jerarquía definida en 6.1.1 (primario Navy Deep, secundario Cyan Electric, *outlined* para acciones alternativas, peligro para acciones destructivas) con esquinas redondeadas y estados *hover*, *focus* y *disabled* claramente diferenciados.
 
@@ -2647,7 +2641,7 @@ La aplicación móvil del piscicultor se desarrolla en **Flutter** con Material 
 
 ![YakuControl movil buttom](./assets/disenoui/movil-buttom.png)
 
-* **Barra de navegación inferior:** permite navegar con una sola mano entre "Inicio", "Alertas" y "Perfil".
+* **Barra de navegación inferior:** permite navegar con una sola mano entre "Inicio", "Estanques", "Alertas" y "Perfil".
 
 ![YakuControl movil nav bar](./assets/disenoui/movil-bar.png)
 
@@ -2658,16 +2652,25 @@ Definen las características físicas del nodo sensor, con prioridad en la funci
 * **Carcasa y ensamblaje:** cajas estancas industriales de PVC o ABS (IP65/IP67) con prensaestopas para el paso de sondas, sellador industrial en las uniones y diseño modular que permite abrir la caja y cambiar la batería sin herramientas complejas.
 * **Retroalimentación de estado:** un módulo LED de un solo color: luz estática indica equipo encendido y capturando datos; luz parpadeante indica intento de sincronización por la red.
 
+
+**Guía aplicada a los diseños de TP1.** El color Cyan Electric `#00A3E0` se conserva como acento. Para botones con texto blanco se emplea `#007EA8`; los estados usan texto oscuro sobre fondos claros. Los controles tienen una altura mínima de 48 px y el foco de teclado es visible. La guía siguiente complementa los recursos históricos de TB1.
+
+![Guía visual de YakuTrace: colores, tipografía, estados y controles](assets/images/cap6/style-guide-trace.png)
+
+[Fuente editable de la guía](design/package-e/style-guide-trace.html) · [Reproducción y licencias](design/package-e/README.md).
+
 ## 6.2. Information Architecture
 
-> 🔴 **CAMBIAR** — Incluir también la experiencia pública de verificación (comprador/consumidor) y mantener coherencia con Landing y Aplicaciones. (Tarea C6-2)
 
 
 En esta sección se describe la arquitectura de la información de la plataforma YakuControl, incluyendo la estructura de navegación, la organización del contenido, el sistema de etiquetas, búsqueda y navegación.
 
+![Arquitectura de información por audiencia y producto](assets/images/cap6/information-architecture.png)
+
+[Fuente editable de la arquitectura](design/package-e/information-architecture.html). Los menús y etiquetas de esta propuesta se usan también en las pantallas y los wireflows.
+
 ### 6.2.1. Organization Systems
 
-> ✍️ **REDACTADO** — Extensión TRACE redactada.
 
 
 Se utilizarán diferentes sistemas de organización para estructurar y categorizar la información en YakuControl, facilitando el acceso a los datos de monitoreo y gestión de piscigranjas. A continuación se describen los principales sistemas implementados:
@@ -2694,7 +2697,6 @@ Se utilizarán diferentes sistemas de organización para estructurar y categoriz
 
 ### 6.2.2. Labeling Systems
 
-> ✍️ **REDACTADO** — Etiquetas de YakuTrace redactadas (en español).
 
 
 Se implementarán sistemas de etiquetado claros y consistentes para facilitar la navegación en YakuControl. A continuación se describen las etiquetas por tipo de usuario:
@@ -2703,7 +2705,7 @@ Se implementarán sistemas de etiquetado claros y consistentes para facilitar la
  
 | Etiqueta | Qué comunica | Qué encontrará el usuario |
 |----------|--------------|--------------------------|
-| Dashboard | Panel de control principal | Resumen de estanques, sensores, alertas y calidad promedio |
+| Inicio | Panel de control principal | Resumen de estanques, sensores, alertas y calidad promedio |
 | Estanques | Gestión de piscinas de crianza | Listar, crear y monitorear estanques |
 | Equipos | Gestión de hardware desplegado | Registrar, asignar y editar sensores y bombas |
 | Operadores | Gestión de usuarios operativos | Crear y administrar cuentas de operadores |
@@ -2735,18 +2737,17 @@ Se implementarán sistemas de etiquetado claros y consistentes para facilitar la
 
 ### 6.2.3. Searching Systems
 
-> ✍️ **REDACTADO** — Búsqueda y filtros de lotes/certificados redactados.
 
 
 A medida que crece el número de estanques, equipos y registros históricos en YakuControl, resulta esencial contar con herramientas que permitan a los usuarios localizar información de forma rápida y precisa. Para ello se implementarán los siguientes sistemas de búsqueda:
  
 **Búsqueda por palabras clave:**
  
-Se implementará una barra de búsqueda global, visible en la parte superior de todas las vistas de la plataforma, con el placeholder "Buscar estanque o alerta...". Esta herramienta permite buscar por nombre de estanque, ID de sensor, código de equipo o tipo de alerta, mostrando resultados en tiempo real mientras el usuario escribe.
+Se implementará una barra de búsqueda global, propuesta para futuras iteraciones de la plataforma; en los diseños actuales la búsqueda es contextual, con el placeholder "Buscar estanque o alerta...". Esta herramienta permite buscar por nombre de estanque, ID de sensor, código de equipo o tipo de alerta, mostrando resultados en tiempo real mientras el usuario escribe.
  
 **Filtros por categoría:**
  
-En las vistas de listado y tablas de datos se ofrecerán filtros contextuales. Por ejemplo, en la vista de "Estanques" los usuarios podrán filtrar por estado (Óptimo, Crítico, Inactivo); en "Equipos", por disponibilidad (Asignado, Libre); y en "Historial de Lecturas", por rango de fechas o parámetro específico (temperatura, pH, oxígeno).
+En las vistas de listado y tablas de datos se ofrecerán filtros contextuales. Por ejemplo, en la vista de "Estanques" los usuarios podrán filtrar por estado (Óptimo, Crítico, Inactivo); en "Equipos", por disponibilidad (Asignado, Libre); y en "Historial de Lecturas", por rango de fechas o parámetro específico (temperatura, pH, turbidez).
  
 **Visualización de resultados:**
  
@@ -2767,7 +2768,6 @@ Si una búsqueda no arroja resultados, el sistema mostrará un mensaje descripti
 
 ### 6.2.4. SEO Tags, Meta Tags y ASO Elements
 
-> ✍️ **REDACTADO** — Tabla SEO y ASO redactadas.
 
  
 Para mejorar la visibilidad de YakuControl en motores de búsqueda, se implementarán las siguientes etiquetas SEO y meta etiquetas en la landing page, aplicación web y movil:
@@ -2777,7 +2777,7 @@ Para mejorar la visibilidad de YakuControl en motores de búsqueda, se implement
 | Etiqueta | Contenido |
 |----------|-----------|
 | Title | YakuControl - Plataforma de Monitoreo Inteligente para Piscigranjas |
-| Meta Description | YakuControl es una plataforma tecnológica para la gestión y monitoreo en tiempo real de piscigranjas. Controla temperatura, pH y oxígeno desde cualquier dispositivo. |
+| Meta Description | YakuControl es una plataforma tecnológica para la gestión y monitoreo en tiempo real de piscigranjas. Controla temperatura, pH y turbidez desde cualquier dispositivo. |
 | Meta Keywords | monitoreo de piscigranjas, gestión acuícola, sensores de agua, telemetría acuicultura, control de estanques |
 | Meta Author | YakuControl Team |
 | Meta Viewport | width=device-width, initial-scale=1.0 |
@@ -2791,15 +2791,15 @@ Representación en HTML:
  
 ```html
 <title>YakuControl - Plataforma de Monitoreo Inteligente para Piscigranjas</title>
-<meta name="description" content="YakuControl es una plataforma tecnológica para la gestión y monitoreo en tiempo real de piscigranjas. Controla temperatura, pH y oxígeno desde cualquier dispositivo.">
+<meta name="description" content="YakuControl es una plataforma tecnológica para la gestión y monitoreo en tiempo real de piscigranjas. Controla temperatura, pH y turbidez desde cualquier dispositivo.">
 <meta name="keywords" content="monitoreo de piscigranjas, gestión acuícola, sensores de agua, telemetría acuicultura, control de estanques">
 <meta name="author" content="YakuControl Team">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="UTF-8">
 <meta property="og:title" content="YakuControl - Tecnología Acuícola Inteligente">
 <meta property="og:description" content="Monitorea y gestiona tus estanques en tiempo real con YakuControl. Alertas automáticas, historial de parámetros y reportes exportables.">
-<meta property="og:image" content="https://www.yakucontrol.app/assets/images/yakucontrol-logo.png">
-<meta property="og:url" content="https://www.yakucontrol.app">
+<meta property="og:image" content="URL-del-logo-en-el-dominio-publicado">
+<meta property="og:url" content="URL-del-dominio-publicado">
 ```
  
 **Web Application ASO / SEO:**
@@ -2807,7 +2807,7 @@ Representación en HTML:
 | Etiqueta | Contenido |
 |----------|-----------|
 | Title | YakuControl - Gestión de Piscigranjas |
-| Meta Description | Plataforma web para el monitoreo en tiempo real de parámetros del agua en piscigranjas: temperatura, pH y oxígeno disuelto. |
+| Meta Description | Plataforma web para el monitoreo en tiempo real de parámetros del agua en piscigranjas: temperatura, pH y turbidez. |
 | Meta Keywords | acuicultura, monitoreo acuícola, gestión de estanques, sensores IoT, piscigranjas inteligentes |
 | Developer Name | YakuControl Team |
 | Category | Tecnología / Agricultura y Acuicultura |
@@ -2832,7 +2832,7 @@ Representación en HTML:
 
 | Página | Title | Description | Keywords | Author |
 | :--- | :--- | :--- | :--- | :--- |
-| Landing – Inicio | YakuControl | Monitoreo del agua y alertas en tiempo real para piscigranjas de trucha | monitoreo acuícola, trucha, IoT, piscigranja | Verifish |
+| Landing – Inicio | YakuControl – Monitoreo y trazabilidad | Monitoreo del agua y alertas en tiempo real para piscigranjas de trucha | monitoreo acuícola, trucha, IoT, piscigranja | Verifish |
 | Landing – Planes | Planes y precios \| YakuControl | Planes de monitoreo por estanque y complemento TRACE | planes, suscripción, TRACE | Verifish |
 | Landing – YakuTrace | YakuTrace: trazabilidad verificable | Certificados con QR para verificar el origen y las condiciones registradas de cada lote de trucha | trazabilidad, QR, certificado, blockchain, trucha | Verifish |
 | Web App – Ingreso | Ingresar \| YakuControl | Acceso del administrador a su granja | — | Verifish |
@@ -2845,22 +2845,21 @@ Representación en HTML:
 | App Title | YakuControl – Monitoreo de estanques |
 | App Subtitle | Alertas y control para tu piscigranja |
 | App Keywords | trucha, piscigranja, acuicultura, estanque, alertas, sensores |
-| App Description | Monitorea la temperatura, el pH y la turbidez de tus estanques, recibe alertas inmediatas y activa el aireador desde tu celular, incluso con conectividad inestable. |
+| App Description | Monitorea la temperatura, el pH y la turbidez de tus estanques, recibe alertas inmediatas y activa el aireador desde tu celular. Sin conexión, consulta datos almacenados con la hora de última sincronización; el control remoto requiere conexión. |
 
 ### 6.2.5. Navigation Systems
 
-> ✍️ **REDACTADO** — Recorrido de verificación redactado.
 
 
 Para garantizar una experiencia fluida en YakuControl, se implementarán los siguientes sistemas de navegación:
  
 **Landing Page Navigation:**
  
-La página de inicio cuenta con un menú de navegación superior fijo con enlaces a las secciones: "Soluciones", "Tecnología", "Precios" y "FAQ". En el extremo derecho se ubica el botón de llamada a la acción principal "Solicitar Demo" en color primario `#002B49`, diseñado para captar la atención de visitantes interesados en conocer la plataforma.
+La página de inicio cuenta con un menú de navegación superior fijo con enlaces a las secciones: "Inicio", "Cómo funciona", "YakuTrace", "Planes", "Preguntas" y "Contacto". En el extremo derecho se ubica el botón de llamada a la acción principal "Solicitar Demo" en color primario `#002B49`, diseñado para captar la atención de visitantes interesados en conocer la plataforma.
  
 **Web Application Navigation:**
  
-La aplicación web utiliza un menú lateral fijo (sidebar) ubicado en el lado izquierdo de la pantalla, visible en todo momento independientemente del scroll. Este menú contiene los íconos y etiquetas de las secciones principales: Dashboard, Estanques, Equipos, Operadores, Notificaciones y Configuración. El ítem activo se resalta con un fondo navy claro para indicar la sección actual.
+La aplicación web utiliza un menú lateral fijo en escritorio (≥ 960 px) y un menú plegable en tamaños menores. Este menú contiene los íconos y etiquetas de las secciones principales: Inicio, Estanques, Equipos, Operadores, Lotes, Certificados, Notificaciones, Suscripción y Configuración. El ítem activo se resalta con un fondo navy claro para indicar la sección actual.
  
 Adicionalmente, dentro de cada sección se implementan:
  
@@ -2875,9 +2874,9 @@ La aplicación móvil nativa para Android utiliza un menú inferior (bottom navi
 accesible en todo momento desde cualquier vista. Este patrón es el estándar recomendado por Material Design para aplicaciones móviles con entre 3 y 5 destinos principales, ya que permite el acceso con el pulgar sin necesidad de desplazar la mano.
 
 Las secciones accesibles desde el menú inferior son:
-- Dashboard: vista general con métricas resumen y alertas activas.
+- Inicio: vista general con métricas resumen y alertas activas.
 - Estanques: listado y detalle de estanques asignados al usuario.
-- Notificaciones: centro de alertas y eventos del sistema.
+- Alertas: centro de alertas y eventos del sistema.
 - Perfil: información de cuenta y configuración personal.
 
 Adicionalmente, dentro de cada sección se implementan:
@@ -2891,31 +2890,29 @@ El flujo de navegación es coherente entre la versión web y móvil, garantizand
 
 **Recorrido de verificación (comprador / consumidor).** QR del empaque → página pública de verificación con el estado del certificado → resumen de calidad → historial del lote → enlace a la prueba de registro. La navegación es lineal, sin menú de gestión, con un único llamado a la acción secundario ("Ver prueba de registro") y migas de pan en la vista de detalle.
 
-**Navegación del administrador.** El menú lateral (Dashboard, Estanques, Equipos, Operadores, Notificaciones, Configuración) incorpora **Lotes** y **Certificados**; en pantallas pequeñas el menú se convierte en un *drawer* desplegable.
+**Navegación del administrador.** El menú lateral incorpora **Lotes**, **Certificados** y **Suscripción**, junto con Inicio, Estanques, Equipos, Operadores, Notificaciones y Configuración; en pantallas pequeñas el menú se convierte en un *drawer* desplegable.
 
 ## 6.3. Landing Page UI Design
 
-> ✍️ **REDACTADO** — CTA por segmento redactados.
 
 En esta sección se detalla el diseño de la interfaz de usuario para la Landing Page de YakuControl, la cual constituye el principal canal de captación B2B y presencia digital de la startup Verifish. El diseño está orientado a comunicar de manera efectiva la propuesta de valor de la solución, destacando beneficios como la reducción de mortalidad de truchas y el monitoreo IoT en tiempo real para atraer a potenciales administradores de piscigranjas.
 
 ### 6.3.1. Landing Page Wireframe
 
-> ✍️ **REDACTADO** — Estructura de secciones redactada. Falta (herramienta): actualizar el wireframe en **Figma** (desktop y mobile). (Tarea C6-3)
 
 Se presentan los wireframes de baja fidelidad para la Landing Page, enfocándose en la disposición estructural de los elementos clave definidos en las User Stories EP01. El esquema prioriza una jerarquía visual clara que guía al visitante desde la explicación del producto hasta las secciones de catálogo de planes, FAQ de soporte y el formulario de contacto para ventas.
 
 | Vista Previa Desktop Web Browser | Vista Previa Mobile Web Browser |
 |----------------------------------|----------------------------------|
-| <img src="assets/disenoux/LandingDesktopWireframe.png" alt="wireframe1" /> | <img src="assets/disenoux/LandingPhoneWireframe.png" alt="wireframe2" /> |
+| <img src="assets/images/cap6/LandingDesktopWireframe.png" alt="wireframe1" /> | <img src="assets/images/cap6/LandingPhoneWireframe.png" alt="wireframe2" /> |
 
-Link Figma: https://www.figma.com/design/FdwCU88zpBqlCuHjQ9iY69/YacuControl?node-id=0-1&t=pGGdjtmP24aklmtz-1
+Referencia histórica en Figma (sin actualización en esta entrega): [YacuControl](https://www.figma.com/design/FdwCU88zpBqlCuHjQ9iY69/YacuControl?node-id=0-1). Las fuentes actuales y sus PNG están en este repositorio.
 
 
 **Estructura propuesta (desktop y mobile).** En el wireframe se mantienen las secciones existentes y se agrega la sección de trazabilidad:
 
 1. *Header* con logotipo, navegación (Inicio, Cómo funciona, YakuTrace, Planes, Preguntas, Contacto) y selector de idioma.
-2. *Hero* con propuesta de valor y CTA ("Comenzar", "Descargar la app").
+2. *Hero* con propuesta de valor y CTA ("Ver planes", "Solicitar demo").
 3. Beneficios clave (alertas tempranas, control remoto, históricos).
 4. **Sección YakuTrace:** explicación en tres pasos ("El lote se registra → se emite un certificado con QR → el comprador lo verifica") y CTA "Verificar un lote".
 5. Planes y precios (con el complemento TRACE).
@@ -2927,38 +2924,38 @@ En mobile las secciones se apilan en una sola columna, la navegación pasa a men
 
 ### 6.3.2. Landing Page Mock-up
 
-> ✍️ **REDACTADO** — Texto redactado. Falta (herramienta): actualizar el mock-up en Figma. (Tarea C6-3)
 
 El Mock-up de alta fidelidad para la Landing Page materializa las guías de estilo del proyecto en una interfaz visual acabada. Este diseño incorpora los elementos gráficos, tipografía y paleta de colores del sistema para transmitir profesionalismo y confianza, facilitando la visualización final de cómo los clientes interactuarán con la plataforma antes de su implementación.
 | Vista Previa Desktop Web Browser | Vista Previa Mobile Web Browser |
 |----------------------------------|----------------------------------|
-| <img src="assets/disenoux/LandingDesktopMockup.png" alt="Mockup1" /> | <img src="assets/disenoux/LandingPhoneMockup.png" alt="Mockup2" /> |
+| <img src="assets/images/cap6/LandingDesktopMockup.png" alt="Mockup1" /> | <img src="assets/images/cap6/LandingPhoneMockup.png" alt="Mockup2" /> |
 
-Link Figma: https://www.figma.com/design/FdwCU88zpBqlCuHjQ9iY69/YacuControl?node-id=0-1&t=pGGdjtmP24aklmtz-1
+Referencia histórica en Figma (sin actualización en esta entrega): [YacuControl](https://www.figma.com/design/FdwCU88zpBqlCuHjQ9iY69/YacuControl?node-id=0-1). Las fuentes actuales y sus PNG están en este repositorio.
 
 
 **Llamados a la acción (CTA) por segmento**
 
 | Segmento | CTA | Destino |
 | :--- | :--- | :--- |
-| Administradores de piscigranja | "Comenzar" / "Ver planes" | Vista de registro/ingreso de la Web App y sección de planes |
-| Piscicultores | "Descargar la app" | Sitio de descarga de la app móvil (tienda) |
+| Administradores de piscigranja | "Ver planes" / "Solicitar demo" | Sección de planes y formulario de contacto |
+| Piscicultores | "Consultar la app" | Contacto; la descarga se habilitará cuando exista una publicación oficial |
 | Compradores de supermercado | "Verificar un lote" | Página pública de verificación de la Web App |
 
-La Landing Page mantiene la paleta, la tipografía y los componentes del Design System, y sus CTA llevan a las vistas correspondientes de las aplicaciones, para que la experiencia sea consistente. Los términos y condiciones de servicio se enlazan desde el pie de página.
+La Landing Page mantiene la paleta, la tipografía y los componentes del Design System, y sus CTA llevan a las vistas correspondientes de las aplicaciones, para que la experiencia sea consistente. El pie reserva los accesos a términos y privacidad; se publicarán con el servicio operativo. No se presentan URLs de tienda o precios sin confirmar.
 
 
-El mock-up aplica la guía de estilos (paleta Navy/Cyan/Aqua, tipografía Inter, espaciado en múltiplos de 8 px, botones y chips del Design System). La sección YakuTrace incorpora el sello de verificación y un ejemplo del certificado con su código QR para ilustrar el beneficio. Se verificó el contraste de color y el tamaño táctil de los CTA para el uso en móvil.
+El mock-up aplica la guía de estilos (paleta Navy/Cyan/Aqua, tipografía Inter, espaciado en múltiplos de 8 px, botones y chips del Design System). La sección YakuTrace incorpora el sello de verificación y un ejemplo del certificado con su código QR para ilustrar el beneficio. Los CTA tienen una altura mínima de 48 px. La verificación técnica del contraste y del ancho responsive se documenta en la revisión del paquete E.
+
+
+**Fuentes de la landing:** [wireframe desktop](design/package-e/LandingDesktopWireframe.html), [wireframe móvil](design/package-e/LandingPhoneWireframe.html), [mockup desktop](design/package-e/LandingDesktopMockup.html) y [mockup móvil](design/package-e/LandingPhoneMockup.html). Los gráficos del panel y el certificado usan datos ilustrativos; el formulario no realiza envíos.
 
 ## 6.4. Applications UX/UI Design
 
-> 🔴 **CAMBIAR** — Aplicaciones: App móvil (piscicultor), Web App (administrador) y **vista pública de verificación** (comprador/consumidor). (Tareas C6-4, C6-5)
 
-Este apartado describe el diseño de experiencia (UX) e interfaz (UI) de las aplicaciones cliente de YakuControl: la Web App para administradores y la App Móvil para piscicultores. El diseño se fundamenta en las necesidades identificadas en el análisis de arquetipos, priorizando la visualización de datos telemétricos, la gestión de alertas push y el control remoto de actuadores en los estanques.
+Este apartado describe el diseño de experiencia (UX) e interfaz (UI) de las aplicaciones cliente de YakuControl: la Web App para administradores, la App Móvil para piscicultores y la vista pública para compradores. El diseño se fundamenta en las necesidades identificadas en el análisis de arquetipos, priorizando la visualización de datos telemétricos, la gestión de alertas push y el control remoto de actuadores en los estanques.
 
 ### 6.4.1. Applications Wireframes
 
-> ✍️ **REDACTADO** — Principios, RWD y especificación de 10 pantallas nuevas redactados. Falta (herramienta): dibujar las pantallas 19–28 en **Figma**. (Tarea C6-4)
 
 Se exhiben los esqueletos estructurales de las aplicaciones, detallando la organización de los dashboards y paneles de control. Los wireframes para la aplicación móvil se centran en la simplicidad de uso para operarios en campo, mientras que los de la aplicación web priorizan la claridad en gráficos de tendencias e informes de mortalidad para la toma de decisiones estratégicas.
 
@@ -2966,78 +2963,78 @@ Se exhiben los esqueletos estructurales de las aplicaciones, detallando la organ
 
 | Inicio Sesión |
 |----------------------------------|
-| <img src="assets/disenoux/wireframe1.png" alt="wireframe" /> |
+| <img src="assets/images/cap6/wireframe1.png" alt="wireframe" /> |
 
-| Register |
+| Crear cuenta |
 |----------------------------------|
-| <img src="assets/disenoux/wireframe2.png" alt="wireframe" /> |
+| <img src="assets/images/cap6/wireframe2.png" alt="wireframe" /> |
 
-| Sección Home |
+| Sección Inicio |
 |----------------------------------|
-| <img src="assets/disenoux/wireframe3.png" alt="wireframe" /> |
+| <img src="assets/images/cap6/wireframe3.png" alt="wireframe" /> |
 
-| Sección Home - Detalles de Estanque|
+| Sección Inicio - Detalles de Estanque|
 |----------------------------------|
-| <img src="assets/disenoux/wireframe4.png" alt="wireframe" /> |
+| <img src="assets/images/cap6/wireframe4.png" alt="wireframe" /> |
 
-| Sección Home - Historial de Lecturas|
+| Sección Inicio - Historial de Lecturas|
 |----------------------------------|
-| <img src="assets/disenoux/wireframe5.png" alt="wireframe" /> |
+| <img src="assets/images/cap6/wireframe5.png" alt="wireframe" /> |
 
 | Sección Alertas |
 |----------------------------------|
-| <img src="assets/disenoux/wireframe6.png" alt="wireframe" /> |
+| <img src="assets/images/cap6/wireframe6.png" alt="wireframe" /> |
 
 | Sección Perfil |
 |----------------------------------|
-| <img src="assets/disenoux/wireframe7.png" alt="wireframe" /> |
+| <img src="assets/images/cap6/wireframe7.png" alt="wireframe" /> |
 
 
 - *Wireframes para el Segmento 2: Administradores de Piscigranja*
 
 | Inicio Sesión |
 |----------------------------------|
-| <img src="assets/disenoux/wireframe8.png" alt="wireframe" /> |
+| <img src="assets/images/cap6/wireframe8.png" alt="wireframe" /> |
 
-| Register |
+| Crear cuenta |
 |----------------------------------|
-| <img src="assets/disenoux/wireframe9.png" alt="wireframe" /> |
+| <img src="assets/images/cap6/wireframe9.png" alt="wireframe" /> |
 
 | Registro de Granja |
 |----------------------------------|
-| <img src="assets/disenoux/wireframe10.png" alt="wireframe" /> |
+| <img src="assets/images/cap6/wireframe10.png" alt="wireframe" /> |
 
-| Sección DashBoard|
+| Sección Inicio|
 |----------------------------------|
-| <img src="assets/disenoux/wireframe11.png" alt="wireframe" /> |
+| <img src="assets/images/cap6/wireframe11.png" alt="wireframe" /> |
 
 | Sección Estanques|
 |----------------------------------|
-| <img src="assets/disenoux/wireframe12.png" alt="wireframe" /> |
+| <img src="assets/images/cap6/wireframe12.png" alt="wireframe" /> |
 
 | Sección Registrar Estanques|
 |----------------------------------|
-| <img src="assets/disenoux/wireframe13.png" alt="wireframe" /> |
+| <img src="assets/images/cap6/wireframe13.png" alt="wireframe" /> |
 
 | Sección Registrar Estanques -   Detalles de Estanque|
 |----------------------------------|
-| <img src="assets/disenoux/wireframe14.png" alt="wireframe" /> |
+| <img src="assets/images/cap6/wireframe14.png" alt="wireframe" /> |
 
 | Sección Equipos |
 |----------------------------------|
-| <img src="assets/disenoux/wireframe15.png" alt="wireframe" /> |
+| <img src="assets/images/cap6/wireframe15.png" alt="wireframe" /> |
 
 | Sección Operadores |
 |----------------------------------|
-| <img src="assets/disenoux/wireframe16.png" alt="wireframe" /> |
+| <img src="assets/images/cap6/wireframe16.png" alt="wireframe" /> |
 
 | Sección Notificaciones |
 |----------------------------------|
-| <img src="assets/disenoux/wireframe17.png" alt="wireframe" /> |
+| <img src="assets/images/cap6/wireframe17.png" alt="wireframe" /> |
 
-| Sección Configuracion |
+| Sección Configuración |
 |----------------------------------|
-| <img src="assets/disenoux/wireframe18.png" alt="wireframe" /> |
+| <img src="assets/images/cap6/wireframe18.png" alt="wireframe" /> |
 
 
 
@@ -3069,7 +3066,7 @@ Se exhiben los esqueletos estructurales de las aplicaciones, detallando la organ
 | 19 | Lotes (lista) | Web App | Administrador | Tabla de lotes, filtros (estado, estanque, fecha), botón "Registrar lote" | Vacía (sin lotes), cargando, con resultados; tabla → tarjetas en móvil |
 | 20 | Registrar lote | Web App | Administrador | Estanque, fecha de siembra, cantidad, origen de alevines | Validación por campo; error si el estanque ya tiene un lote activo |
 | 21 | Detalle del lote | Web App | Administrador | Datos del lote, línea de tiempo de hitos, acciones "Registrar hito" y "Registrar cosecha" | Lote activo / cosechado / certificado |
-| 22 | Registrar hito o cosecha | Web App | Administrador | Tipo de hito, fecha, descripción; en cosecha: biomasa, mortalidad, temperatura | Validación; historial cerrado si el lote está certificado |
+| 22 | Registrar cosecha | Web App | Administrador | Fecha, biomasa, mortalidad y temperatura; el registro de hitos tiene una vista complementaria | Validación; historial cerrado si el lote está certificado |
 | 23 | Resumen de calidad del lote | Web App | Administrador | Selector día/semana/mes, promedio, mínimo, máximo, % en rango, eventos críticos, cobertura de datos | Cobertura insuficiente (aviso) |
 | 24 | Emitir certificado | Web App | Administrador | Vista previa del contenido, lista de requisitos (cumplido / pendiente), botón "Emitir" | Requisitos incompletos (botón deshabilitado con motivo); confirmación |
 | 25 | Certificados (lista) | Web App | Administrador | Tabla con sello de estado, código, lote, fecha; acciones "Ver QR" y "Revocar" | Emitido / Revocado / En proceso |
@@ -3077,11 +3074,91 @@ Se exhiben los esqueletos estructurales de las aplicaciones, detallando la organ
 | 27 | Verificación pública – Verificado | Web App (pública) | Comprador / consumidor | Sello "Verificado", resumen de calidad, línea de tiempo, enlace "Ver prueba de registro" | Móvil primero; "Registro en proceso" si el anclaje está pendiente |
 | 28 | Verificación pública – No válido / Revocado / No encontrado | Web App (pública) | Comprador / consumidor | Sello de estado con color + ícono + texto y motivo | Un solo mensaje claro; enlace a "Contactar al proveedor" |
 
-*(Dibujar las pantallas 19–28 en Figma con el mismo Design System y exportarlas con los nombres wireframe19.png … wireframe28.png. Los textos de la interfaz van en español.)*
+Las pantallas 19–28 están dibujadas en español y exportadas a PNG. Cada una dispone de una variante de 390 px para comprobar su adaptación móvil. Las fuentes editables y los estados alternativos están incluidos en la [galería de diseños](design/package-e/index.html).
+
+
+**Pantalla 19 — Lista de lotes.**
+
+| Escritorio | Móvil responsive |
+| :--- | :--- |
+| <img src="assets/images/cap6/wireframe19.png" alt="Lista de lotes, versión escritorio" width="720" /> | <img src="assets/images/cap6/wireframe19-mobile.png" alt="Lista de lotes, versión móvil" width="240" /> |
+
+
+**Pantalla 20 — Registrar lote.**
+
+| Escritorio | Móvil responsive |
+| :--- | :--- |
+| <img src="assets/images/cap6/wireframe20.png" alt="Registrar lote, versión escritorio" width="720" /> | <img src="assets/images/cap6/wireframe20-mobile.png" alt="Registrar lote, versión móvil" width="240" /> |
+
+
+**Pantalla 21 — Detalle del lote.**
+
+| Escritorio | Móvil responsive |
+| :--- | :--- |
+| <img src="assets/images/cap6/wireframe21.png" alt="Detalle del lote, versión escritorio" width="720" /> | <img src="assets/images/cap6/wireframe21-mobile.png" alt="Detalle del lote, versión móvil" width="240" /> |
+
+
+**Pantalla 22 — Registrar cosecha.**
+
+| Escritorio | Móvil responsive |
+| :--- | :--- |
+| <img src="assets/images/cap6/wireframe22.png" alt="Registrar cosecha, versión escritorio" width="720" /> | <img src="assets/images/cap6/wireframe22-mobile.png" alt="Registrar cosecha, versión móvil" width="240" /> |
+
+
+**Pantalla 23 — Resumen de calidad.**
+
+| Escritorio | Móvil responsive |
+| :--- | :--- |
+| <img src="assets/images/cap6/wireframe23.png" alt="Resumen de calidad, versión escritorio" width="720" /> | <img src="assets/images/cap6/wireframe23-mobile.png" alt="Resumen de calidad, versión móvil" width="240" /> |
+
+
+**Pantalla 24 — Emitir certificado.**
+
+| Escritorio | Móvil responsive |
+| :--- | :--- |
+| <img src="assets/images/cap6/wireframe24.png" alt="Emitir certificado, versión escritorio" width="720" /> | <img src="assets/images/cap6/wireframe24-mobile.png" alt="Emitir certificado, versión móvil" width="240" /> |
+
+
+**Pantalla 25 — Lista de certificados.**
+
+| Escritorio | Móvil responsive |
+| :--- | :--- |
+| <img src="assets/images/cap6/wireframe25.png" alt="Lista de certificados, versión escritorio" width="720" /> | <img src="assets/images/cap6/wireframe25-mobile.png" alt="Lista de certificados, versión móvil" width="240" /> |
+
+
+**Pantalla 26 — Complemento TRACE.**
+
+| Escritorio | Móvil responsive |
+| :--- | :--- |
+| <img src="assets/images/cap6/wireframe26.png" alt="Complemento TRACE, versión escritorio" width="720" /> | <img src="assets/images/cap6/wireframe26-mobile.png" alt="Complemento TRACE, versión móvil" width="240" /> |
+
+
+**Pantalla 27 — Verificación pública: Verificado.**
+
+| Escritorio | Móvil responsive |
+| :--- | :--- |
+| <img src="assets/images/cap6/wireframe27.png" alt="Verificación pública: Verificado, versión escritorio" width="720" /> | <img src="assets/images/cap6/wireframe27-mobile.png" alt="Verificación pública: Verificado, versión móvil" width="240" /> |
+
+
+**Pantalla 28 — Verificación pública: No válido.**
+
+| Escritorio | Móvil responsive |
+| :--- | :--- |
+| <img src="assets/images/cap6/wireframe28.png" alt="Verificación pública: No válido, versión escritorio" width="720" /> | <img src="assets/images/cap6/wireframe28-mobile.png" alt="Verificación pública: No válido, versión móvil" width="240" /> |
+
+
+**Estados y validaciones.** Las vistas adicionales representan el lote activo existente, historial cerrado, requisitos de emisión incompletos, cobertura insuficiente, registro pendiente, certificado revocado o inexistente, fallos de conexión y confirmaciones antes de emitir o revocar. El registro de un hito se dibuja aparte de la cosecha, incluyendo su tipo, fecha y descripción.
+
+![Formulario para registrar un hito](assets/images/cap6/state-register-event.png)
+
+![Emisión bloqueada por requisitos pendientes](assets/images/cap6/state-issue-blocked.png)
+
+![Resultado público de un certificado revocado](assets/images/cap6/state-public-revoked.png)
+
+**Cobertura de historias del capítulo III.** Se agregan vistas complementarias para registrar novedades (US09), invitar operarios (US10), reportar mortalidad (US11), consultar tendencias anuales agregadas (US12), configurar umbrales (US13), contratar la suscripción base (US14), auditar respuestas (US16), controlar limpieza (US17) y revocar certificados (US25). Sus recorridos se presentan en los wireflows 15–23.
 
 ### 6.4.2. Applications Wireflow Diagrams
 
-> ✍️ **REDACTADO** — Explicación de los 10 wireflows existentes (verificar vs. diagramas) y 4 wireflows nuevos especificados. Falta (herramienta): dibujar los wireflows 11–14 en **LucidChart**. (Tarea C6-5)
 
 Los diagramas de wireflow ilustran el flujo de navegación combinado con la disposición de las pantallas. Este análisis permite validar la ruta que sigue el usuario para completar tareas críticas, como la configuración de umbrales de alerta o la activación remota de aireadores, asegurando una interacción fluida y lógica entre los distintos contextos del sistema.
 
@@ -3089,48 +3166,48 @@ Los diagramas de wireflow ilustran el flujo de navegación combinado con la disp
 
 | User Goal: Como Usuario. Deseo poder registrarme en la aplicación móvil para poder acceder a las funcionalidades del sistema |
 |----------------------------------|
-| <img src="assets/disenoux/wireflow1.png" alt="flow" /> |
+| <img src="assets/images/cap6/wireflow1.png" alt="flow" /> |
 
 | User Goal:  Como Usuario. Deseo poder visualizar la información básica de un Estanque (nivel de PH, sensores, etc) para conocer su estado actual en tiempo real.  |
 |----------------------------------|
-| <img src="assets/disenoux/wireflow2.png" alt="flow" /> |
+| <img src="assets/images/cap6/wireflow2.png" alt="flow" /> |
 
 | User Goal: Como Usuario. Deseo poder visualizar las alertas en la aplicación móvil, para poder ver el estado de un estanque, prioridad y el estado de un mantenimiento (completo o en curso). |
 |----------------------------------|
-| <img src="assets/disenoux/wireflow3.png" alt="flow" /> |
+| <img src="assets/images/cap6/wireflow3.png" alt="flow" /> |
 
 | User Goal: Como Usuario. Deseo poder visualizar mi perfil en la aplicación móvil, para poder editar mi información, editar mi foto de perfil, ver las opciones de accesibilidad y cerrar mi sesión.  |
 |----------------------------------|
-| <img src="assets/disenoux/wireflow4.png" alt="flow" /> |
+| <img src="assets/images/cap6/wireflow4.png" alt="flow" /> |
 
 - *User Flow Diagrams para el Segmento 2: Administradores de Piscigranja*
 
 | User Goal:  Como Usuario. Deseo poder registrarme en la aplicación web para obtener acceso a la plataforma  |
 |----------------------------------|
-| <img src="assets/disenoux/wireflow5.png" alt="flow" /> |
+| <img src="assets/images/cap6/wireflow5.png" alt="flow" /> |
 
 | User Goal: Como Usuario. Deseo tener una sección exclusiva para la creación de estanques para mantener un registro ordenado  |
 |----------------------------------|
-| <img src="assets/disenoux/wireflow6.png" alt="flow" /> |
+| <img src="assets/images/cap6/wireflow6.png" alt="flow" /> |
 
 | User Goal: Como Usuario. Deseo tener una sección exclusiva para la visualización y gestión de los equipos, para poder asignar, agregar o eliminar diferentes equipos industriales para los estanques.  |
 |----------------------------------|
-| <img src="assets/disenoux/wireflow7.png" alt="flow" /> |
+| <img src="assets/images/cap6/wireflow7.png" alt="flow" /> |
 
 | User Goal: Como Usuario. Deseo tener una sección exclusiva para la visualización y gestión de los operadores, para poder ver y editar la información de cada uno.  |
 |----------------------------------|
-| <img src="assets/disenoux/wireflow8.png" alt="flow" /> |
+| <img src="assets/images/cap6/wireflow8.png" alt="flow" /> |
 
 | User Goal: Como Usuario. Deseo tener una sección exclusiva para la visualización de notificaciones con filtros por fecha, nombre y el estado del mensaje (leído, no leído o todos), para poder tener las últimas actualizaciones sobre un estanque en específico. |
 |----------------------------------|
-| <img src="assets/disenoux/wireflow9.png" alt="flow" /> |
+| <img src="assets/images/cap6/wireflow9.png" alt="flow" /> |
 
 | User Goal: Como Usuario. Deseo tener una sección exclusiva para la visualización y edición de datos personales para administrar mi cuenta de forma segura y personalizar mi experiencia de uso. |
 |----------------------------------|
-| <img src="assets/disenoux/wireflow10.png" alt="flow" /> |
+| <img src="assets/images/cap6/wireflow10.png" alt="flow" /> |
 
 
-Link LucidChart: https://lucid.app/lucidchart/ebc666ba-9266-48a0-a19c-b1b3f64247ab/edit?viewport_loc=2786%2C5222%2C4017%2C2011%2C0_0&invitationId=inv_dc87452a-958f-4f51-8df3-0b6797858cb2
+Referencia histórica en LucidChart (sin actualización en esta entrega): [diagramas base](https://lucid.app/lucidchart/ebc666ba-9266-48a0-a19c-b1b3f64247ab/edit). Los diagramas actuales se mantienen como [fuentes HTML editables](design/package-e/index.html) y PNG en el repositorio.
 
 
 **Explicación de los wireflows existentes.** Cada wireflow representa el recorrido de un usuario para cumplir un *User goal*, mostrando en cada paso el wireframe del estado correspondiente. Los flujos de información van de las acciones del usuario a las respuestas del sistema, y el *happy path* es la ruta principal sin errores.
@@ -3148,9 +3225,9 @@ Link LucidChart: https://lucid.app/lucidchart/ebc666ba-9266-48a0-a19c-b1b3f64247
 | 9 (Administrador) | Ver notificaciones con filtros | Notificaciones → Filtros (fecha, nombre, estado) → Lista filtrada |
 | 10 (Administrador) | Ver y editar sus datos personales | Configuración → Edición → Guardado |
 
-*(Verificar cada explicación contra el diagrama correspondiente y ajustar si el flujo difiere.)*
+Las rutas principales y alternativas se explican en cada diagrama. Los flujos 1–10 se redibujaron a partir de sus objetivos y de las pantallas en español; no se presentan como capturas nuevas de LucidChart.
 
-**Wireflows nuevos (YakuTrace).** Cada uno parte del *User goal* y se dibuja con los wireframes 19–28:
+**Wireflows nuevos (YakuTrace).** Cada uno parte del *User goal* y usa los wireframes 19–28 y sus estados complementarios:
 
 **Wireflow 11 — Crear un lote y registrar sus hitos (Administrador).** *User goal:* "Como administrador, deseo crear un lote y registrar sus hitos para llevar el historial del ciclo."
 *Happy path:* Lotes → Registrar lote (estanque, fecha, cantidad, origen) → Confirmación → Detalle del lote con el hito de siembra → Registrar hito → Detalle actualizado.
@@ -3169,6 +3246,100 @@ Link LucidChart: https://lucid.app/lucidchart/ebc666ba-9266-48a0-a19c-b1b3f64247
 *Ruta alternativa:* suscripción inactiva (se indica que debe estar activa).
 
 *(Dibujar los wireflows 11–14 en LucidChart y actualizar el enlace.)*
+
+
+**Wireflow 11 — Crear un lote y registrar hitos.**
+
+![Wireflow 11: Crear un lote y registrar hitos, ruta principal y alternativas](assets/images/cap6/wireflow11.png)
+
+[Fuente editable y explicación del recorrido](design/package-e/wireflow11.html).
+
+
+**Wireflow 12 — Emitir un certificado con QR.**
+
+![Wireflow 12: Emitir un certificado con QR, ruta principal y alternativas](assets/images/cap6/wireflow12.png)
+
+[Fuente editable y explicación del recorrido](design/package-e/wireflow12.html).
+
+
+**Wireflow 13 — Verificar un lote por QR.**
+
+![Wireflow 13: Verificar un lote por QR, ruta principal y alternativas](assets/images/cap6/wireflow13.png)
+
+[Fuente editable y explicación del recorrido](design/package-e/wireflow13.html).
+
+
+**Wireflow 14 — Activar el complemento TRACE.**
+
+![Wireflow 14: Activar el complemento TRACE, ruta principal y alternativas](assets/images/cap6/wireflow14.png)
+
+[Fuente editable y explicación del recorrido](design/package-e/wireflow14.html).
+
+
+**Wireflow 15 — Registrar una novedad del estanque.**
+
+![Wireflow 15: Registrar una novedad del estanque, ruta principal y alternativas](assets/images/cap6/wireflow15.png)
+
+[Fuente editable y explicación del recorrido](design/package-e/wireflow15.html).
+
+
+**Wireflow 16 — Generar un reporte de mortalidad.**
+
+![Wireflow 16: Generar un reporte de mortalidad, ruta principal y alternativas](assets/images/cap6/wireflow16.png)
+
+[Fuente editable y explicación del recorrido](design/package-e/wireflow16.html).
+
+
+**Wireflow 17 — Consultar tendencias anuales.**
+
+![Wireflow 17: Consultar tendencias anuales, ruta principal y alternativas](assets/images/cap6/wireflow17.png)
+
+[Fuente editable y explicación del recorrido](design/package-e/wireflow17.html).
+
+
+**Wireflow 18 — Configurar umbrales del estanque.**
+
+![Wireflow 18: Configurar umbrales del estanque, ruta principal y alternativas](assets/images/cap6/wireflow18.png)
+
+[Fuente editable y explicación del recorrido](design/package-e/wireflow18.html).
+
+
+**Wireflow 19 — Pagar la suscripción base.**
+
+![Wireflow 19: Pagar la suscripción base, ruta principal y alternativas](assets/images/cap6/wireflow19.png)
+
+[Fuente editable y explicación del recorrido](design/package-e/wireflow19.html).
+
+
+**Wireflow 20 — Auditar la respuesta a una alerta.**
+
+![Wireflow 20: Auditar la respuesta a una alerta, ruta principal y alternativas](assets/images/cap6/wireflow20.png)
+
+[Fuente editable y explicación del recorrido](design/package-e/wireflow20.html).
+
+
+**Wireflow 21 — Activar la limpieza de un estanque.**
+
+![Wireflow 21: Activar la limpieza de un estanque, ruta principal y alternativas](assets/images/cap6/wireflow21.png)
+
+[Fuente editable y explicación del recorrido](design/package-e/wireflow21.html).
+
+
+**Wireflow 22 — Revocar un certificado.**
+
+![Wireflow 22: Revocar un certificado, ruta principal y alternativas](assets/images/cap6/wireflow22.png)
+
+[Fuente editable y explicación del recorrido](design/package-e/wireflow22.html).
+
+
+**Wireflow 23 — Invitar a un operario.**
+
+![Wireflow 23: Invitar a un operario, ruta principal y alternativas](assets/images/cap6/wireflow23.png)
+
+[Fuente editable y explicación del recorrido](design/package-e/wireflow23.html).
+
+
+**Entrega y trazabilidad.** Las fuentes, sus PNG y la revisión técnica se versionan en ramas del paquete E. La [revisión del paquete](design/package-e/REVISION_PAQUETE_E.md) distingue los entregables verificables, el material de sustentación y los pendientes externos. El [guion de sustentación](design/package-e/GUION_SUSTENTACION.md) organiza la explicación por audiencia.
 
 # Conclusiones
 

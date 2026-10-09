@@ -1,0 +1,186 @@
+[
+  {
+    "name": "wireflow1",
+    "title": "Wireflow 1 · Registrarse en la app móvil",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "wireflow2",
+    "title": "Wireflow 2 · Consultar el estado de un estanque",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "wireflow3",
+    "title": "Wireflow 3 · Atender una alerta",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "wireflow4",
+    "title": "Wireflow 4 · Editar perfil o cerrar sesión",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "wireflow5",
+    "title": "Wireflow 5 · Registrar una cuenta y una granja",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "wireflow6",
+    "title": "Wireflow 6 · Registrar un estanque",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "wireflow7",
+    "title": "Wireflow 7 · Gestionar equipos",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "wireflow8",
+    "title": "Wireflow 8 · Gestionar operadores",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "wireflow9",
+    "title": "Wireflow 9 · Filtrar notificaciones",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "wireflow10",
+    "title": "Wireflow 10 · Editar la configuración de la cuenta",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "wireflow11",
+    "title": "Wireflow 11 · Crear un lote y registrar hitos",
+    "width": 1640,
+    "scroll": 1640,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "wireflow12",
+    "title": "Wireflow 12 · Emitir un certificado con QR",
+    "width": 1640,
+    "scroll": 1640,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "wireflow13",
+    "title": "Wireflow 13 · Verificar un lote escaneando su QR",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "wireflow14",
+    "title": "Wireflow 14 · Activar el complemento TRACE",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "wireflow15",
+    "title": "Wireflow 15 · Registrar una novedad del estanque",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "wireflow16",
+    "title": "Wireflow 16 · Generar un reporte de mortalidad",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "wireflow17",
+    "title": "Wireflow 17 · Consultar tendencias anuales",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "wireflow18",
+    "title": "Wireflow 18 · Configurar umbrales del estanque",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "wireflow19",
+    "title": "Wireflow 19 · Pagar la suscripción base",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "wireflow20",
+    "title": "Wireflow 20 · Auditar la respuesta a una alerta",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "wireflow21",
+    "title": "Wireflow 21 · Activar la limpieza de un estanque",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "wireflow22",
+    "title": "Wireflow 22 · Revocar un certificado",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "wireflow23",
+    "title": "Wireflow 23 · Invitar a un operario",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  }
+]
