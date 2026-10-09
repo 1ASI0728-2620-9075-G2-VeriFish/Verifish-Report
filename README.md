@@ -2393,7 +2393,7 @@ El esquema `payment` contiene `subscriptions` (una por granja), `invoices` (hist
 
 # Capítulo VI: Solution UX Design
 
-> ✍️ **REDACTADO** — Base de IoT con **textos nuevos redactados** (extensión TRACE, guía web/móvil/dispositivos, IA, SEO/ASO, CTA, principios y RWD, pantallas nuevas y wireflows nuevos). Falta (herramienta): dibujar las pantallas y flujos nuevos en Figma/LucidChart y pasar la UI a **español** donde esté en otro idioma.
+El capítulo presenta la propuesta UX/UI de YakuControl + YakuTrace para visitantes, administradores, piscicultores y compradores. Las vistas se documentan con fuentes editables HTML/CSS y capturas PNG. Los valores y estados de las pantallas son ilustrativos; no constituyen evidencia de una implementación o validación con usuarios.
 
 
  
@@ -2403,7 +2403,6 @@ Los lineamientos de esta sección aseguran coherencia visual e identidad unifica
 
 ### 6.1.1. General Style Guidelines
 
-> ✍️ **REDACTADO** — Extensión TRACE (estados Verificado/No válido/Revocado/En proceso, QR, tono) redactada.
 
 
 La guía de estilos establece las bases de diseño para la plataforma YakuControl, asegurando una experiencia de usuario coherente, funcional y visualmente alineada con su propósito. En esta sección se detallan los colores, tipografías, iconografía y demás elementos visuales que conforman la identidad de la marca.
@@ -2518,18 +2517,18 @@ YakuControl utiliza un sistema de espaciado basado en múltiplos de 8px, garanti
 ---
 #### Botones
  
-Los botones de YakuControl siguen una jerarquía visual clara que comunica el nivel de importancia de cada acción. Todos utilizan Inter SemiBold, border-radius de 8px y altura estándar de 40px.
+Los botones de YakuControl siguen una jerarquía visual clara que comunica el nivel de importancia de cada acción. Todos utilizan Inter SemiBold, border-radius de 8px y altura mínima de 48px en los diseños nuevos.
 
 ![Buttom Guideline](./assets/disenoui/general-style-guidelines-buttom.png)
  
 | Variante | Estilo | Uso |
 |----------|--------|-----|
 | **Primary** | Fondo `#002B49`, texto blanco | Acción principal de la vista |
-| **Secondary** | Fondo `#00A3E0`, texto blanco | Acciones secundarias relevantes |
+| **Secondary** | Fondo `#007EA8`, texto blanco | Acciones secundarias relevantes |
 | **Success Action** | Fondo `#00796B`, texto blanco | Confirmaciones y asignaciones (ej. "Asignar a estanque") |
 | **Outlined** | Borde `#002B49`, texto `#002B49`, fondo transparente | Acciones alternativas no destructivas (ej. "Editar") |
 | **Danger** | Borde `#E53935`, texto `#E53935`, fondo transparente | Acciones destructivas (ej. "Eliminar Registro") |
-| **Icon + Label** | Fondo `#00A3E0`, ícono `+` a la izquierda, texto blanco | Creación de nuevos elementos (ej. "+ Registrar Equipo") |
+| **Icon + Label** | Fondo `#007EA8`, ícono `+` a la izquierda, texto blanco | Creación de nuevos elementos (ej. "+ Registrar Equipo") |
 | **Small Badge** | Fondo `#00E0D1`, texto oscuro, pill shape | Indicadores de estado compactos (ej. "ÓPTIMO") |
 | **Disabled** | Fondo `#BDBDBD`, texto `#9E9E9E` | Acciones no disponibles en el contexto actual |
  
@@ -2543,7 +2542,7 @@ Los labels y chips comunican estados, categorías y acciones rápidas dentro de 
 | Variante | Estilo | Uso |
 |----------|--------|-----|
 | **Icon Button** | Cuadrado redondeado teal `#00796B`, ícono blanco | Acción rápida compacta (ej. añadir) |
-| **Label con ícono** | Pill cyan `#00A3E0`, ícono + texto blanco | Etiqueta de categoría o tipo (ej. "Label") |
+| **Label con ícono** | Pill cyan accesible `#007EA8`, ícono + texto blanco | Etiqueta de categoría o tipo (ej. "Label") |
 | **Filter Chip** | Borde gris, fondo blanco, texto oscuro | Opciones de filtrado seleccionables |
 | **Status Badge** | Borde verde, texto verde, punto verde | Indicador de estado activo (ej. "● ACTIVE") |
 
@@ -2600,10 +2599,10 @@ La incorporación de la verificación de certificados exige comunicar **estados 
 
 | Estado | Texto en interfaz | Color (token) | Ícono (Material Symbols Outlined) | Uso |
 | :--- | :--- | :--- | :--- | :--- |
-| Verificado | "Verificado" | Éxito `#43A047` | `verified` | La huella recalculada coincide con la registrada. |
-| No válido | "No válido" | Error `#E53935` | `gpp_bad` | El contenido no coincide con el registro. |
-| Revocado | "Revocado" | Neutro oscuro `#616161` | `block` | El certificado fue anulado por el emisor. |
-| En proceso | "Registro en proceso" | Información `#2196F3` | `schedule` | El anclaje en blockchain aún no se confirma. |
+| Verificado | "Verificado" | Éxito `#166534` | `verified` | La huella recalculada coincide con la registrada. |
+| No válido | "No válido" | Error `#B91C1C` | `gpp_bad` | El contenido no coincide con el registro. |
+| Revocado | "Revocado" | Neutro oscuro `#374151` | `block` | El certificado fue anulado por el emisor. |
+| En proceso | "Registro en proceso" | Información `#075985` | `schedule` | El anclaje en blockchain aún no se confirma. |
 
 **Código QR.** Se muestra con un tamaño mínimo de 160 px, zona de silencio de 4 módulos, alto contraste (módulos en Navy Deep `#002B49` sobre fondo blanco) y un texto alternativo que describe su función. **Sello de verificación:** insignia compuesta por el ícono de estado y el texto, usada en el encabezado de la página pública de verificación y en las listas de certificados.
 
@@ -2611,14 +2610,13 @@ La incorporación de la verificación de certificados exige comunicar **estados 
 
 ### 6.1.2. Web, Mobile & Devices Style Guidelines
 
-> ✍️ **REDACTADO** — Reescrita: Web (Angular + Material), Mobile (Flutter), Devices; se eliminó la contradicción de paleta y los textos duplicados.
 
 
 Los estándares visuales y de interacción de los productos digitales se basan en **Material Design** y en la paleta, tipografía y espaciado definidos en 6.1.1, de modo que la Landing Page, la Web App y la app móvil resulten consistentes.
 
 **Web Style Guidelines**
 
-La Web App se construye con **Angular** y **Angular Material** (o PrimeNG), siguiendo Material Design 3, con tema claro (fondo Off White `#F8FAFC`) y la paleta de YakuControl. Está orientada al administrador (gestión de estanques, lotes y certificados) y a la página pública de verificación.
+La Web App se construye con **Angular** y **Angular Material**, siguiendo Material Design 3, con tema claro (fondo Off White `#F8FAFC`) y la paleta de YakuControl. Está orientada al administrador (gestión de estanques, lotes y certificados) y a la página pública de verificación.
 
 * **Botones:** jerarquía definida en 6.1.1 (primario Navy Deep, secundario Cyan Electric, *outlined* para acciones alternativas, peligro para acciones destructivas) con esquinas redondeadas y estados *hover*, *focus* y *disabled* claramente diferenciados.
 
@@ -2647,7 +2645,7 @@ La aplicación móvil del piscicultor se desarrolla en **Flutter** con Material 
 
 ![YakuControl movil buttom](./assets/disenoui/movil-buttom.png)
 
-* **Barra de navegación inferior:** permite navegar con una sola mano entre "Inicio", "Alertas" y "Perfil".
+* **Barra de navegación inferior:** permite navegar con una sola mano entre "Inicio", "Estanques", "Alertas" y "Perfil".
 
 ![YakuControl movil nav bar](./assets/disenoui/movil-bar.png)
 
@@ -2657,6 +2655,13 @@ Definen las características físicas del nodo sensor, con prioridad en la funci
 
 * **Carcasa y ensamblaje:** cajas estancas industriales de PVC o ABS (IP65/IP67) con prensaestopas para el paso de sondas, sellador industrial en las uniones y diseño modular que permite abrir la caja y cambiar la batería sin herramientas complejas.
 * **Retroalimentación de estado:** un módulo LED de un solo color: luz estática indica equipo encendido y capturando datos; luz parpadeante indica intento de sincronización por la red.
+
+
+**Guía aplicada a los diseños de TP1.** El color Cyan Electric `#00A3E0` se conserva como acento. Para botones con texto blanco se emplea `#007EA8`; los estados usan texto oscuro sobre fondos claros. Los controles tienen una altura mínima de 48 px y el foco de teclado es visible. La guía siguiente complementa los recursos históricos de TB1.
+
+![Guía visual de YakuTrace: colores, tipografía, estados y controles](assets/images/cap6/style-guide-trace.png)
+
+[Fuente editable de la guía](design/package-e/style-guide-trace.html) · [Reproducción y licencias](design/package-e/README.md).
 
 ## 6.2. Information Architecture
 
