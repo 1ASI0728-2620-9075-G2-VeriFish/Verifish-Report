@@ -1,17 +1,3 @@
-> ## 🧭 GUÍA INTERNA DEL EQUIPO — BORRAR ANTES DE EXPORTAR A PDF
->
-> Esqueleto del informe **TP1** (Cap. I–VI hasta **6.4.2**) según el enunciado de 1ASI0728 (202620). Gran parte del texto ya está **redactado**; a los integrantes les queda principalmente trabajo en herramientas (Miro, UXPressia, Figma, LucidChart, Trello), entrevistas y revisión.
->
-> | Marca | Significado |
-> | :--- | :--- |
-> | ✍️ **REDACTADO** | Texto ya escrito. Revisar, ajustar y completar lo que la marca indique (normalmente herramientas o datos reales). |
-> | 🔴 **CAMBIAR** | Existe pero debe modificarse (aún no redactado). |
-> | 🟡 **AJUSTAR AL ENUNCIADO** | Existe pero no cumple formato/regla del enunciado. |
-> | 🟢 **NUEVO** | Falta completamente y no está redactado. |
-> | 🔵 **BASE / REUTILIZAR** | Viene de otro reporte como punto de partida. |
->
-> Para limpiar antes de exportar: borrar todas las líneas que empiecen con `> ✍️`, `> 🔴`, `> 🟡`, `> 🟢`, `> 🔵`, `> ⚪` (y sus líneas `>` siguientes), los comentarios `<!-- ⚠ … -->` ya resueltos y este bloque. Las imágenes van en `assets/images/` (ver `PENDIENTES_TP1.md`).
-
 <div style="text-align: center;">
   <img src="./assets/images/logo_upc.png" alt="Logo UPC" width="80"/>
 </div>
@@ -73,12 +59,9 @@
 
 <div style="page-break-after: always;"></div>
 
-> 🟡 **AJUSTAR AL ENUNCIADO** — Verificar **mes y año** (octubre 2026), sección/NRC, profesor y los códigos de estudiante. (Tarea TR-02)
+<div style="page-break-after: always;"></div>
 
 ### Registro de Versiones del Informe
-
-> ✍️ **REDACTADO** — Se agregaron las filas 6.0–10.0 de TP1 con **fecha y autor por completar**: poner la fecha real y el autor real de cada cambio, y que coincidan con los commits. (Tarea TR-02)
-
 
 | Versión | Fecha | Autor | Descripción de modificación |
 | :--- | :--- | :--- | :--- |
@@ -87,18 +70,16 @@
 | **3.0** | 15/09/2026 | S. Escobar, R. Bendezu, L. Choquehuanca, V. Cruz, R. Peralta | Finalización del Capítulo II: Obtención y análisis de requisitos |
 | **4.0** | 15/09/2026 | S. Escobar, R. Bendezu, L. Choquehuanca, V. Cruz, R. Peralta | Se completó el Capítulo III: Especificación de requisitos |
 | **5.0** | 19/09/2026 | S. Escobar, R. Bendezu, L. Choquehuanca, V. Cruz, R. Peralta | Se completó el Capítulo IV: Diseño y arquitectura de la solución |
-| **6.0** | (fecha) | (autor) | **TP1 – Estructura:** corrección del Student Outcome (ABET 3), eliminación de Objetivos SMART y de secciones duplicadas, reordenamiento de 2.3 según el enunciado. |
-| **7.0** | (fecha) | (autor) | **TP1 – Cap. I a III:** incorporación del Segmento 3 y de YakuTrace; reescritura de User Stories (Gherkin sin UI), Product Backlog ordenado por valor, To-Be Scenario Mapping, Impact Mapping con objetivos SMART y Ubiquitous Language en inglés. |
-| **8.0** | (fecha) | (autor) | **TP1 – Cap. IV:** constraints como Technical Stories, drivers, matriz de patrones, refinements; EventStorming, contextos, canvases y context map con Traceability; diagramas C4 coherentes con el monolito modular. |
-| **9.0** | (fecha) | (autor) | **TP1 – Cap. V:** diseño táctico de los seis Bounded Contexts (capas, componentes, clases y base de datos). |
-| **10.0** | 08/10/2026 | Rúbens Fitzgerald Bendezu (Lucemz) | **TP1 – Paquete E:** revisión del capítulo VI; guía visual y arquitectura de información, landing desktop/móvil, pantallas 1–28 en español, estados y 23 wireflows; fuentes editables, PNG y evidencia escrita del Student Outcome 3. |
+| **6.0** | 02/10/2026 | Ronald Peralta | **TP1 – Estructura y negocio:** corrección del Student Outcome (ABET 3), eliminación de Objetivos SMART y de secciones duplicadas y reordenamiento de 2.3 según el enunciado. Incorporación del Segmento 3 (compradores de supermercado) y de YakuTrace en el Startup y Solution Profile, el Lean UX, los segmentos objetivo, el análisis de competidores y el Impact Mapping con objetivos SMART. |
+| **7.0** | 04/10/2026 | Luciana Choquehuanca | **TP1 – Usuarios:** diseño y análisis de las entrevistas del Segmento 3, User Personas, validación de la User Task Matrix, Empathy Mapping y As-is y To-Be Scenario Mapping con el comprador de supermercado. |
+| **8.0** | 06/10/2026 | Victor Cruz | **TP1 – Requisitos y diseño estratégico:** User Stories en Gherkin sin referencias a la interfaz, Product Backlog ordenado por valor y por dependencias, constraints como Technical Stories, drivers, matriz de patrones y decisiones AD-01 a AD-14, refinamientos de escenarios de calidad, EventStorming, Candidate Context Discovery, Domain Message Flows 5 a 7, Bounded Context Canvases y Context Map con el contexto Traceability. |
+| **9.0** | 07/10/2026 | Sebastian Escobar | **TP1 – Arquitectura y diseño táctico:** diagramas C4 coherentes con el monolito modular, Ubiquitous Language en inglés, diseño táctico de los seis Bounded Contexts (capas, componentes, diagramas de clases y de base de datos), bibliografía y anexos. |
+| **10.0** | 08/10/2026 | Rúbens Bendezu | **TP1 – Diseño UX/UI:** guía de estilos, arquitectura de información, Landing Page desktop y móvil, pantallas de las aplicaciones en español con sus estados y wireflows con YakuTrace; fuentes editables, imágenes y evidencia escrita del Student Outcome 3. |
+| **11.0** | 09/10/2026 | S. Escobar, R. Bendezu, L. Choquehuanca, V. Cruz, R. Peralta | **TP1 – Integración:** revisión cruzada de los capítulos, unificación de terminología y de nombres de imágenes, tabla de contenido, Student Outcome, Project Report Collaboration Insights y limpieza de las notas internas del equipo. |
 
 <div style="page-break-after: always;"></div>
 
 # Project Report Collaboration Insights
-
-> 🟡 **AJUSTAR AL ENUNCIADO** — Agregar una sección **## TP1** con: tareas por integrante (según votación), cómo se trabajó (ramas por capítulo, PRs, revisiones) y capturas nuevas de Insights (Contributors, Commits, Network). Todos los integrantes deben tener commits. Las capturas actuales (imgur) son de TB1: conservarlas bajo "## TB1" y migrarlas a `./assets/` para no depender de enlaces externos. (Tarea TR-02)
-
 
 En esta sección se presenta un resumen de las actividades de colaboración realizadas para la elaboración del informe del proyecto.
 
@@ -111,18 +92,8 @@ Los integrantes del equipo y sus nombres de usuario en GitHub son los siguientes
 | Escobar Palomino, Sebastian Matias | sebasepe |
 | Bendezu Navarro, Rúbens Fitzgerald | Lucemz |
 | Choquehuanca Nuñez, Luciana Carolina | Lucianxaaa |
-| Cruz Ibarra, Victor Andres |Elandrehs |
+| Cruz Ibarra, Victor Andres | Elandrehs |
 | Peralta Chipa, Ronald Joel | RooDev10 |
-
-
-<div style="page-break-after: always;"></div>
-
-## TP1 — contribución del paquete E
-
-**Responsable:** Rúbens Fitzgerald Bendezu Navarro (`Lucemz`). Se desarrolló el capítulo VI desde `develop`, organizando el trabajo en `feature/pkg-e-style-guide`, `feature/pkg-e-landing`, `feature/pkg-e-wireframes`, `feature/pkg-e-wireflows` y `feature/review-chapter-6`. Los cambios se integran mediante la rama `feature/pkg-e`, conservando los commits y los merges del trabajo.
-
-La entrega incluye fuentes HTML/CSS, la tipografía Inter con licencia, PNG renderizados y un control reproducible de imágenes, referencias y contraste. Los diseños representan estados ilustrativos; no son pruebas de funcionamiento del backend. La [revisión del paquete](design/package-e/REVISION_PAQUETE_E.md) identifica los pendientes externos y del resto del informe. Las aportaciones de los demás integrantes deben registrarse con sus tareas y evidencias reales.
-
 
 ## TB1
 
@@ -138,36 +109,83 @@ Iniciando actividades el **10/09/2026**, el equipo distribuyó las responsabilid
 | Cruz Ibarra, Victor Andres | - Software Architecture (Context, Container & Deployment Diagrams) <br> - Configuración del Repositorio <br> - Tactical Level DDD (IAM Context) |
 | Peralta Chipa, Ronald Joel | - Registro de versiones del informe <br> - Project Report Collaboration Insights <br> - Student Outcome documentation <br> - Objetivos SMART <br> - Bounded Context Canvases <br> - Tactical Level DDD (Notification Context) |
 
+**GitHub Collaboration Insights**
 
+<div style="text-align: center; margin-top: 1rem; margin-bottom: 1rem;">
+
+![Insights TB1 - Contributors](./assets/images/insights-tb1-contributors.png)
+
+</div>
+
+<div style="text-align: center; margin-top: 1rem; margin-bottom: 1rem;">
+
+![Insights TB1 - Network Graph](./assets/images/insights-tb1-network.png)
+
+</div>
+
+<div style="text-align: center; margin-top: 1rem; margin-bottom: 1rem;">
+
+![Insights TB1 - Commits](./assets/images/insights-tb1-commits.png)
+
+</div>
+
+<div style="page-break-after: always;"></div>
+
+## TP1
+
+**Tareas**
+
+Iniciando actividades el **01/10/2026**, el equipo distribuyó las responsabilidades del trabajo parcial de la siguiente manera:
+
+| Integrantes | Tarea asignada |
+| :--- | :--- |
+| Escobar Palomino, Sebastian Matias | - Software Architecture: diagramas C4 (System Landscape, Context, Container y Deployment) <br> - Tactical-Level DDD: diagramas de clases y de base de datos de los seis Bounded Contexts <br> - Ubiquitous Language <br> - Bibliografía y anexos |
+| Bendezu Navarro, Rúbens Fitzgerald | - Style Guidelines e Information Architecture <br> - Landing Page (wireframe y mock-up, desktop y móvil) <br> - Wireframes de las aplicaciones y Wireflows <br> - Revisión del Capítulo VI |
+| Choquehuanca Nuñez, Luciana Carolina | - Diseño, registro y análisis de las entrevistas del Segmento 3 <br> - User Personas y validación de la User Task Matrix <br> - Empathy Mapping <br> - As-is y To-Be Scenario Mapping |
+| Cruz Ibarra, Victor Andres | - User Stories y Product Backlog (Trello) <br> - Strategic-Level Attribute-Driven Design (QAS, constraints, drivers, decisiones y refinamientos) <br> - Strategic-Level DDD: EventStorming, Candidate Context Discovery, Domain Message Flows, Bounded Context Canvases y Context Mapping <br> - Coordinación del equipo |
+| Peralta Chipa, Ronald Joel | - Repositorio y GitFlow <br> - Carátula, Registro de Versiones, Collaboration Insights y Student Outcome <br> - Startup Profile, Solution Profile y Lean UX <br> - Segmentos objetivo, Competidores e Impact Mapping |
+
+**Cómo se trabajó**
+
+El repositorio se organizó con GitFlow. La rama `main` conserva solo versiones entregables y `develop` integra el trabajo del equipo. Cada tarea se desarrolló en una rama `feature/pkg-<paquete>-<tema>` creada desde `develop`, se integró mediante un Pull Request con revisión de otro integrante, y los mensajes de commit siguieron la convención *Conventional Commits* (`docs`, `fix`, `feat`). Cada integrante editó solo sus secciones del informe, y las revisiones cruzadas se hicieron en ramas `feature/review-chapter-<n>`. La coordinación se realizó por chat, sin reuniones fijas.
 
 **GitHub Collaboration Insights**
 
-
-
 <div style="text-align: center; margin-top: 1rem; margin-bottom: 1rem;">
 
-![Insights - Contributors](https://i.imgur.com/3HvIb6B.png)
+![Insights TP1 - Contributors](./assets/images/insights-tp1-contributors.png)
+
+*Contributors: aportes de cada integrante al repositorio durante TP1.*
 
 </div>
 
 <div style="text-align: center; margin-top: 1rem; margin-bottom: 1rem;">
 
+![Insights TP1 - Commits](./assets/images/insights-tp1-commits.png)
 
-![Insights - Network Graph](https://i.imgur.com/GqOC9hn.png)
+*Commits: frecuencia de commits durante el desarrollo de TP1.*
 
 </div>
 
 <div style="text-align: center; margin-top: 1rem; margin-bottom: 1rem;">
 
-![Insights - Commits](https://i.imgur.com/2bKoCJg.png)
+![Insights TP1 - Network Graph](./assets/images/insights-tp1-network.png)
+
+*Network: ramas por tarea y su integración en `develop`.*
+
+</div>
+
+<div style="text-align: center; margin-top: 1rem; margin-bottom: 1rem;">
+
+![Insights TP1 - Pull Requests](./assets/images/insights-tp1-pull-requests.png)
+
+*Pull Requests: tareas integradas con revisión.*
 
 </div>
 
 <div style="page-break-after: always;"></div>
 
 # Contenido
-
-> 🟡 **AJUSTAR AL ENUNCIADO** — Tabla de contenido regenerada (4 niveles). Verificar enlaces y regenerar si cambian títulos. (Tarea TR-09)
 
 - [Student Outcome](#student-outcome)
 
@@ -305,6 +323,8 @@ Iniciando actividades el **10/09/2026**, el equipo distribuyó las responsabilid
 
 <div style="page-break-after: always;"></div>
 
+<div style="page-break-after: always;"></div>
+
 # Student Outcome
 
 El curso contribuye al cumplimiento del Student Outcome ABET:
@@ -317,12 +337,11 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 
 | Criterio específico | Acciones realizadas | Conclusiones |
 | :--- | :--- | :--- |
-| **Comunica oralmente sus ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería.** | **Escobar Palomino, Sebastian Matias**<br>*TB1*: (completar)<br>*TP1*: (completar)<br><br>**Bendezu Navarro, Rúbens Fitzgerald**<br>*TB1*: Evidencia oral individual por vincular; no se atribuye una exposición sin registro.<br>*TP1*: Preparé un guion de sustentación apoyado en la landing, las pantallas y los wireflows para explicar el diseño a piscicultores, administradores, compradores y al equipo técnico. El material distingue acciones de campo, decisiones de negocio y estados del certificado. La exposición y su evidencia se registrarán cuando se realicen.<br><br>**Choquehuanca Nuñez, Luciana Carolina**<br>*TB1*: (completar)<br>*TP1*: (completar)<br><br>**Cruz Ibarra, Victor Andres**<br>*TB1*: (completar)<br>*TP1*: (completar)<br><br>**Peralta Chipa, Ronald Joel**<br>*TB1*: (completar)<br>*TP1*: (completar) | *TB1:* (completar, grupal)<br>*TP1:* (completar, grupal) |
-| **Comunica en forma escrita ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería.** | **Escobar Palomino, Sebastian Matias**<br>*TB1*: (completar)<br>*TP1*: (completar)<br><br>**Bendezu Navarro, Rúbens Fitzgerald**<br>*TB1*: El informe previo registra aportes al análisis competitivo y Lean UX; falta vincular la evidencia personal específica para este criterio de comunicación.<br>*TP1*: Documenté y revisé el capítulo VI: guía visual, arquitectura de información, landing desktop/móvil, 28 pantallas principales, variantes responsive, estados alternativos y 23 wireflows. Redibujé la interfaz en español y relacioné los recorridos con las historias de usuario. Incorporé fuentes editables, PNG y controles de calidad que permiten al equipo reproducir y revisar el diseño.<br><br>**Choquehuanca Nuñez, Luciana Carolina**<br>*TB1*: (completar)<br>*TP1*: (completar)<br><br>**Cruz Ibarra, Victor Andres**<br>*TB1*: (completar)<br>*TP1*: (completar)<br><br>**Peralta Chipa, Ronald Joel**<br>*TB1*: (completar)<br>*TP1*: (completar) | *TB1:* (completar, grupal)<br>*TP1:* (completar, grupal) |
-
-**Evidencia individual de Rúbens Bendezu (TP1):** [fuentes y galería UX/UI](design/package-e/index.html), [revisión de entregables](design/package-e/REVISION_PAQUETE_E.md) y [guion de sustentación](design/package-e/GUION_SUSTENTACION.md). La evidencia escrita es verificable en los archivos y commits. La evidencia oral debe completarse con la sustentación real. Las filas de los demás integrantes y las conclusiones grupales requieren su validación.
+| **Comunica oralmente sus ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería.** | **TB1**<br><br>**Escobar Palomino, Sebastian Matias**<br>Explicó oralmente al equipo y al docente el diseño de las entrevistas, los perfiles de usuario y el modelado de flujos de dominio, y sustentó el contexto Equipment, ajustando el lenguaje técnico a cada oyente.<br><br>**Bendezu Navarro, Rúbens Fitzgerald**<br>Evidencia oral individual por vincular; no se atribuye una exposición sin registro.<br><br>**Choquehuanca Nuñez, Luciana Carolina**<br>Explicó el Product Backlog, las historias de usuario y el EventStorming, y justificó los límites del contexto Telemetry ante el equipo y el docente.<br><br>**Cruz Ibarra, Victor Andres**<br>Presentó la arquitectura de la solución (diagramas de contexto, contenedores y despliegue), la organización del repositorio y el contexto IAM, apoyándose en diagramas.<br><br>**Peralta Chipa, Ronald Joel**<br>Presentó los objetivos SMART, los Bounded Context Canvases y la organización del informe, y explicó al equipo cómo se documenta el Student Outcome.<br><br><br>**TP1**<br><br>**Escobar Palomino, Sebastian Matias**<br>Preparó el guion para explicar la arquitectura C4 y el diseño táctico de los seis contextos (clases y base de datos) a audiencias técnicas y no técnicas.<br><br>**Bendezu Navarro, Rúbens Fitzgerald**<br>Preparó un guion de sustentación apoyado en la landing, las pantallas y los wireflows para explicar el diseño a piscicultores, administradores, compradores y al equipo técnico. El material distingue acciones de campo, decisiones de negocio y estados del certificado. La exposición y su evidencia se registrarán cuando se realicen.<br><br>**Choquehuanca Nuñez, Luciana Carolina**<br>Preparó la exposición de las entrevistas del Segmento 3, las User Personas y los escenarios, para transmitir la voz del comprador de supermercado al equipo técnico.<br><br>**Cruz Ibarra, Victor Andres**<br>Preparó la sustentación del diseño estratégico: requisitos priorizados, atributos de calidad, EventStorming y mapa de contextos con Traceability, y la explicación de la verificación por QR para un público no técnico.<br><br>**Peralta Chipa, Ronald Joel**<br>Preparó la exposición del modelo de negocio, el análisis competitivo y el Impact Mapping, y de cómo YakuTrace se conecta con los objetivos de la startup. | **TB1 (grupal)**<br>El equipo aprendió a explicar decisiones técnicas (arquitectura, contextos y requisitos) a oyentes con distinto nivel de detalle, apoyándose en diagramas y en ejemplos del dominio acuícola. Se comprobó que presentar primero el problema del piscicultor y después la solución facilita la comprensión del público.<br><br>**TP1 (grupal)**<br>Con YakuTrace la audiencia se amplió a piscicultores, administradores y compradores de supermercado, por lo que el equipo preparó mensajes distintos para cada uno y los apoyó con la landing, las pantallas y los wireflows. La sustentación y su evidencia se registrarán cuando se realicen. |
+| **Comunica en forma escrita ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería.** | **TB1**<br><br>**Escobar Palomino, Sebastian Matias**<br>Redactó el diseño y análisis de entrevistas, las User Personas, la Task Matrix, el Journey Mapping, el Empathy Mapping, el Domain Message Flow y el contexto Equipment.<br><br>**Bendezu Navarro, Rúbens Fitzgerald**<br>Redactó el Startup y Solution Profile, los segmentos objetivo, los competidores, el Ubiquitous Language, el Impact Mapping, el Context Mapping y el contexto Payment.<br><br>**Choquehuanca Nuñez, Luciana Carolina**<br>Redactó las User Stories, el Product Backlog, la documentación del EventStorming, el Candidate Context Discovery y el contexto Telemetry.<br><br>**Cruz Ibarra, Victor Andres**<br>Redactó los diagramas de arquitectura (contexto, contenedores y despliegue), configuró el repositorio y redactó el contexto IAM.<br><br>**Peralta Chipa, Ronald Joel**<br>Redactó el registro de versiones, los Collaboration Insights, el Student Outcome, los objetivos SMART, los Bounded Context Canvases y el contexto Notification.<br><br><br>**TP1**<br><br>**Escobar Palomino, Sebastian Matias**<br>Redactó y revisó los diagramas C4 coherentes con el monolito modular, el Ubiquitous Language en inglés, el diseño táctico de los seis contextos (capas, clases y base de datos), la bibliografía y los anexos.<br><br>**Bendezu Navarro, Rúbens Fitzgerald**<br>Documenté y revisé el capítulo VI: guía visual, arquitectura de información, landing desktop/móvil, pantallas principales, variantes responsive, estados alternativos y wireflows. Redibujé la interfaz en español y relacioné los recorridos con las historias de usuario. Incorporé fuentes editables, imágenes y controles de calidad que permiten al equipo reproducir y revisar el diseño.<br><br>**Choquehuanca Nuñez, Luciana Carolina**<br>Redactó el diseño y el análisis de las entrevistas del Segmento 3, las User Personas, el Empathy Mapping y los escenarios As-is y To-Be con el comprador de supermercado.<br><br>**Cruz Ibarra, Victor Andres**<br>Redactó las User Stories en Gherkin sin referencias a la interfaz, el Product Backlog, el ADD completo (QAS, constraints, drivers, decisiones y refinamientos), el EventStorming, los canvases y el Context Map con Traceability.<br><br>**Peralta Chipa, Ronald Joel**<br>Redactó la estructura del informe, el registro de versiones, los Collaboration Insights y el Student Outcome, además del Startup Profile, el Lean UX, los competidores y el Impact Mapping con objetivos SMART. | **TB1 (grupal)**<br>El informe de TB1 documentó de forma ordenada el problema, los requisitos y la arquitectura mediante tablas, diagramas y plantillas comunes, y el trabajo por capítulos en GitHub permitió que cada integrante comunicara por escrito su parte de manera coherente.<br><br>**TP1 (grupal)**<br>En TP1 el informe incorporó el segmento de compradores y la trazabilidad con blockchain. Para que lo entiendan lectores técnicos y no técnicos, las historias se redactaron en Gherkin sin referencias a la interfaz, el glosario se escribió en inglés con su equivalente en español y los diagramas C4 y UML se hicieron coherentes con la decisión de un monolito modular. Las revisiones cruzadas entre integrantes mejoraron la consistencia del documento. |
 
 <div style="page-break-after: always;"></div>
+
 
 # Capítulo I: Introducción
 ## 1.1. Startup Profile
