@@ -1884,27 +1884,16 @@ Los pares Telemetry–Notification, Telemetry–Equipment y Payment–IAM se rel
 
 ## 4.3. Software Architecture
 ### 4.3.1. Software Architecture System Landscape Diagram
-
-> ✍️ **REDACTADO** — Texto redactado y **diagrama generado**: `assets/images/cap4/c0_system_landscape.png`. (Tarea C4-12)
-
-
 Este nivel ofrece una visión macroscópica del ecosistema de la piscigranja y de su cadena comercial. Muestra la plataforma **YakuControl + YakuTrace** junto a los actores (administrador, piscicultor, comprador de supermercado y consumidor final) y a los sistemas externos con los que interactúa: pasarela de pagos (Stripe), notificaciones push (Firebase), correo, servicios meteorológicos y la red blockchain. Permite comprender los flujos de información del negocio existan o no integraciones directas a nivel de código.
 
 ![Landscape Diagram](./assets/images/cap4/c0_system_landscape.png)
 
 ### 4.3.2. Software Architecture Context Level Diagrams
-
-> ✍️ **REDACTADO** — Texto redactado y diagrama generado: `c1_yakucontrol_context.png`.
-
-
 El diagrama de contexto define las fronteras del sistema: un único recuadro central (YakuControl + YakuTrace) rodeado por sus usuarios directos —el administrador, el piscicultor, el comprador de supermercado y el consumidor final— y por los sistemas con los que se integra: Stripe, Firebase Cloud Messaging, el servicio de correo, la API meteorológica y la red blockchain con su proveedor RPC.
 
 ![Context Diagram](./assets/images/cap4/c1_yakucontrol_context.png)
 
 ### 4.3.3. Software Architecture Container Level Diagrams
-
-> ✍️ **REDACTADO** — Texto redactado y diagrama generado: `c2_yakucontrol_container.png`.
-
 
 El diagrama de contenedores muestra los elementos de alto nivel de la solución y sus responsabilidades. La arquitectura del backend es un **monolito modular** (Spring Boot) con seis Bounded Contexts, desplegable como una sola unidad. Los contenedores son:
 
@@ -1924,19 +1913,11 @@ Los clientes se comunican con el backend por REST/JSON sobre HTTPS; el Edge API 
 ![Container Diagram](./assets/images/cap4/c2_yakucontrol_container.png)
 
 ### 4.3.4. Software Architecture Deployment Diagrams
-
-> ✍️ **REDACTADO** — Texto redactado y diagrama generado: `c4_deployment.png`. Confirmar los proveedores de despliegue reales.
-
-
 El diagrama de despliegue mapea la arquitectura lógica a la infraestructura. El **nodo IoT** se ubica en la granja con conectividad intermitente; el **Edge API** se ejecuta en un servicio PaaS (Railway); el **backend** y la **base de datos** se despliegan en Microsoft Azure (App Service y Azure Database for PostgreSQL); la **Landing Page** y la **Web App** se distribuyen como contenido estático con CDN; la **app móvil** se instala en el teléfono del piscicultor; y el **smart contract** se despliega en una red EVM de pruebas configurable.
 
 ![Deployment Diagram](./assets/images/cap4/c4_deployment.png)
 
 # Capítulo V: Tactical-Level Software Design
-
-> ✍️ **REDACTADO** — Capítulo **redactado completo** para los 6 contextos (tablas de clases por capa). Los diagramas de componentes, de clases y de BD ya están **generados** en `assets/images/cap5/` y sus fuentes en `diagramas/` (Structurizr DSL, PlantUML, SQL). Para entregar en las herramientas del curso: Structurizr (C4), LucidChart (UML) y Vertabelo/LucidChart (BD) — ver `PENDIENTES_TP1.md`.
-
-
 En este capítulo se presenta el diseño táctico de YakuControl + YakuTrace. El backend es un **monolito modular** (Spring Boot) en el que cada Bounded Context es un módulo con su propio paquete, su propio esquema de base de datos y cuatro capas: **Domain**, **Interface**, **Application** e **Infrastructure**. Los módulos no se acceden entre sí por sus clases internas: se comunican mediante **eventos de dominio en proceso** (bus interno de Spring) y mediante interfaces explícitas protegidas por una **Anti-Corruption Layer** cuando un contexto consulta a otro. Las integraciones externas (Stripe, Firebase Cloud Messaging, SMTP, Edge API y blockchain) se acceden siempre a través de un **puerto** definido en el contexto y un **adaptador** en la capa de Infrastructure, de modo que el dominio no depende de ningún proveedor.
 
 Convenciones aplicadas en todos los contextos:
