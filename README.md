@@ -1198,7 +1198,7 @@ Los mapas se construyen a partir de las actividades y dificultades descritas en 
 
 [Link del Miro](https://miro.com/welcomeonboard/SWQ4UUpYdlFSYTdCNEErcTQ2VzRqNU1BZk54eStDOFR6TnhmRTJCK2FWVWJXQ0ltTmtXYm9RUFJwSHF2eWIvNUxzeERCcXRhM1M3L1pXdE5ERGpqVTNrcUM4YWVONEZMTWZvVWFiVFl3dVdpb3AwTTVQQ2MzbTNxNkdLSWh4WEJBS2NFMDFkcUNFSnM0d3FEN050ekl3PT0hdjE=?share_link_id=826222577249)
 
-**Proceso de elaboración.** Para cada User Persona se construyó un As-is Scenario Map en Miro/LucidChart. Tras la preparación y una lluvia de ideas individual, el equipo revisó las ideas e identificó las **fases** del escenario actual (columnas), las nombró y completó para cada una las filas **Phases, Doing, Thinking y Feeling**. Finalmente se etiquetaron las áreas **positivas** y **negativas** para el usuario y las *blank areas*, es decir, aquello sobre lo que se necesita aprender más. Los mapas parten de los *journey maps* elaborados en la entrega anterior y se rehicieron con el formato del enunciado.
+**Proceso de elaboración.** Para cada User Persona se construyó un As-is Scenario Map en Miro. Tras la preparación y una lluvia de ideas individual, el equipo revisó las ideas e identificó las **fases** del escenario actual (columnas), las nombró y completó para cada una las filas **Phases, Doing, Thinking y Feeling**. Finalmente se etiquetaron las áreas **positivas** y **negativas** para el usuario y las *blank areas*, es decir, aquello sobre lo que se necesita aprender más. Los mapas parten de los *journey maps* elaborados en la entrega anterior y se rehicieron con el formato del enunciado.
 
 ## 2.4. Ubiquitous Language
 
@@ -1253,9 +1253,6 @@ El Lenguaje Ubicuo (*Ubiquitous Language*) de YakuControl + YakuTrace es el voca
 # Capítulo III: Requirements Specification
 ## 3.1. To-Be Scenario Mapping
 
-> ✍️ **REDACTADO** — Introducción y tabla de cambios redactadas. Falta (herramienta): los 3 mapas To-Be en Miro/LucidChart. (Tarea C3-1)
-
-
 Esta sección presenta el escenario futuro de cada User Persona una vez que utiliza YakuControl y YakuTrace. Para cada uno se elaboró un To-Be Scenario Map en Miro/LucidChart con las filas **Phases, Doing, Thinking y Feeling**. El proceso incluyó la preparación, una lluvia de ideas individual, la revisión de las ideas, la identificación y denominación de las fases y la **comparación con el As-is Scenario Map** para identificar qué cambios aporta la solución.
 
 **Cambios principales respecto del escenario actual**
@@ -1266,13 +1263,32 @@ Esta sección presenta el escenario futuro de cada User Persona una vez que util
 | Pedro Alvarado (Administrador) | Recibe reportes físicos, fotos de cuadernos o audios y decide con información tardía. | Consulta un panel con el estado de todos sus estanques, el historial y el resumen de calidad por lote, y emite certificados al cosechar. | Decide con datos en tiempo real y cuenta con evidencia para respaldar sus lotes ante compradores. |
 | Comprador de supermercado | Verifica el origen con documentos y declaraciones del proveedor. | Escanea el QR del lote y ve el historial, el resumen de calidad y la verificación de integridad. | Verifica en segundos con evidencia que no puede modificarse después de emitida. |
 
-![To-Be Scenario Map - Piscicultor](./assets/images/tobe-piscicultor.png)
+![To-Be Scenario Map - Piscicultor](https://i.imgur.com/Q0578Fw.png)
 
-![To-Be Scenario Map - Administrador](./assets/images/tobe-administrador.png)
+**Comparación con el As-is**
 
-![To-Be Scenario Map - Comprador de supermercado](./assets/images/tobe-comprador.png)
+La consulta de lecturas complementa la observación durante las rondas y reduce la necesidad de transcribir datos. Las alertas permiten identificar desviaciones de las variables monitoreadas, mientras que el registro de atención facilita comunicar lo ocurrido al administrador.
 
-*(Insertar las capturas de los tres mapas elaborados en Miro/LucidChart y el enlace al tablero.)*
+La solución conserva la inspección física y la intervención del operario. La consulta de datos almacenados no equivale a monitoreo actualizado; la recepción de alertas y el control remoto requieren conectividad. Registrar una alerta como atendida tampoco significa que la condición del agua esté resuelta.
+
+![To-Be Scenario Map - Administrador](https://i.imgur.com/2D5xIVS.png)
+
+**Comparación con el As-is**
+
+El panel reúne información que actualmente llega mediante documentos y mensajes, facilitando la revisión de los estanques y la coordinación con el personal. La gestión de lotes organiza los hitos y los resúmenes del agua para su consulta durante el ciclo.
+
+YakuTrace incorpora un documento con QR y una comprobación de integridad. El administrador debe distinguir un certificado con anclaje pendiente de uno confirmado. El certificado respalda el contenido registrado, pero no garantiza por sí mismo la exactitud de los datos de origen ni la calidad sanitaria del producto.
+
+
+![To-Be Scenario Map - Comprador de supermercado](https://i.imgur.com/d9QmKsk.png)
+
+**Comparación con el As-is**
+
+La página pública reúne información que actualmente debe solicitarse por separado al proveedor. El acceso sin registro responde a la necesidad de consultar durante la recepción sin añadir pasos innecesarios.
+
+La verificación permite comprobar la integridad del contenido anclado, pero no sustituye la revisión sanitaria ni la inspección del producto. Daniel debe contrastar el QR con la mercancía y sus documentos. Un certificado revocado, pendiente o no verificable requiere aclaración; no determina automáticamente la aceptación o rechazo del lote.
+
+[Link del Miro](https://miro.com/welcomeonboard/SWQ4UUpYdlFSYTdCNEErcTQ2VzRqNU1BZk54eStDOFR6TnhmRTJCK2FWVWJXQ0ltTmtXYm9RUFJwSHF2eWIvNUxzeERCcXRhM1M3L1pXdE5ERGpqVTNrcUM4YWVONEZMTWZvVWFiVFl3dVdpb3AwTTVQQ2MzbTNxNkdLSWh4WEJBS2NFMDFkcUNFSnM0d3FEN050ekl3PT0hdjE=?share_link_id=826222577249)
 
 ## 3.2. User Stories
 
