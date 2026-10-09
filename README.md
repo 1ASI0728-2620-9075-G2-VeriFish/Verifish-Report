@@ -908,11 +908,11 @@ Las entrevistas a piscicultores y administradores se realizaron entre el 12 y el
 
 **Segmento: Piscicultores**
 
-**Total entrevistados:** 3
-**Edades:** 30, 30, 31
-**Distritos:** Cieneguilla (Lima) y , Cascas (La Libertad)
-**Instituciones/Empresas:** Piscigranja negocio normal y familiar
-**Fechas:** 14 de abril de 2026
+**Total entrevistados:** 3  
+**Edades:** 30, 30, 31  
+**Distritos:** Cieneguilla (Lima) y , Cascas (La Libertad)  
+**Instituciones/Empresas:** Piscigranja negocio normal y familiar  
+**Fechas:** 14 de abril de 2026  
 
 **Características objetivas**
 
@@ -940,11 +940,11 @@ Las entrevistas a piscicultores y administradores se realizaron entre el 12 y el
 
 **Segmento: Administradores de piscigranja**
 
-**Total entrevistados:** 3
-**Edades:** 47, 45, 48 años
-**Distritos:** Huaraz (Ancash), Concepción (Junín), Pampas (Huancavelica)
-**Instituciones/Empresas:** Piscigranja de truchas y paiches, Piscigranja de truchas, Piscigranja comunidad campesina Mantacra
-**Fechas:** 12 y 21 de abril de 2026
+**Total entrevistados:** 3  
+**Edades:** 47, 45, 48 años  
+**Distritos:** Huaraz (Ancash), Concepción (Junín), Pampas (Huancavelica)  
+**Instituciones/Empresas:** Piscigranja de truchas y paiches, Piscigranja de truchas, Piscigranja comunidad campesina Mantacra   
+**Fechas:** 12 y 21 de abril de 2026  
  
 **Características objetivas**
 
@@ -1014,14 +1014,6 @@ Las entrevistas a piscicultores y administradores se realizaron entre el 12 y el
 | Señala la falta de integración con los sistemas actuales como un posible inconveniente. | **1/3 (33 %)** |
 | Considerarían el certificado una ventaja al evaluar o seleccionar proveedores. | **3/3 (100 %)** |
 | Condicionan su exigencia como requisito a comprobar previamente su utilidad. | **3/3 (100 %)** |
-
-**Análisis del segmento**
-
-Las entrevistas muestran que los compradores disponen de documentos y sistemas para gestionar las compras, pero encuentran una brecha en el acceso a información detallada sobre la crianza de las truchas. Los tres participantes verifican la procedencia mediante documentación del proveedor y consideran útil reunir el historial del lote y las condiciones del agua en una consulta mediante QR.
-
-La rapidez y la confiabilidad de la información son criterios centrales de adopción. Los tres valoran consultar sin crear una cuenta y expresan preocupación por datos incompletos o tiempos de carga elevados. José y Fabrisio destacan, además, la importancia de identificar al responsable del registro y conocer las correcciones realizadas; Sebastián incorpora la necesidad de integración con los sistemas existentes.
-
-Estos hallazgos respaldan el diseño de una página pública de verificación con información clara sobre proveedor, origen, lote, fechas y condiciones registradas. Sin embargo, la disposición favorable hacia el certificado no equivale a una exigencia comercial inmediata: los participantes plantean evaluar su utilidad antes de convertirlo en requisito. Sebastián también señala expresamente que debe complementar los controles sanitarios y la evaluación de calidad.
 
 **Conclusión general comparativa**
 
