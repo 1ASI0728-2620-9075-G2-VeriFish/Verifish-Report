@@ -1067,7 +1067,7 @@ Representa a los responsables de compras de productos frescos que seleccionan pr
 <p align="center">
   <img src="https://i.imgur.com/MgYpYA0.png" width="65%">
   <br>
-  <i>User Persona – Administradores de piscigranjas</i>
+  <i>User Persona – Comprador de supermercado</i>
 </p>
 
 <div style="page-break-after: always;"></div>
