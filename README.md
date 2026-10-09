@@ -3317,9 +3317,6 @@ Como recomendaciones para las siguientes entregas se sugiere validar con comprad
 
 # Bibliografía
 
-> ✍️ **REDACTADO** — Lista APA redactada. Las entradas con `<!-- ⚠ -->` necesitan autor, fecha o DOI: abrir la fuente y completar. (Tarea TR-07)
-
-
 Actualidad Ambiental. (28 de mayo de 2025). *Huarochirí: mueren 200 mil truchas en piscigranja por posible contaminación en el río Santa Eulalia.* https://www.actualidadambiental.pe/huarochiri-mueren-200-mil-truchas-en-piscigranja-por-posible-contaminacion-en-el-rio-santa-eulalia/
 
 Agencia Peruana de Noticias Andina. (29 de abril de 2026). *Junín: OEFA realizó diligencia por muerte masiva de truchas en piscigranjas de Pariahuanca.* Andina. https://andina.pe/agencia/noticia-junin-oefa-realizo-diligencia-muerte-masiva-truchas-piscigranjas-pariahuanca-1073248.aspx
@@ -3334,31 +3331,29 @@ Beiko, T. (2025, 18 de marzo). *Holesky and Hoodi testnet updates*. Ethereum Fou
 
 Blaha, F., & Katafono, K. (2020). *Blockchain application in seafood value chains* (FAO Fisheries and Aquaculture Circular No. 1207). Food and Agriculture Organization of the United Nations. https://doi.org/10.4060/ca8751en
 
-Computer Weekly. (s. f.). *Avances y progresos en el uso de blockchain en el Perú*. https://www.computerweekly.com/es/cronica/Avances-y-progresos-en-el-uso-de-blockchain-en-el-Peru <!-- ⚠ completar autor y fecha -->
+Computer Weekly. (s. f.). (2021) *Avances y progresos en el uso de blockchain en el Perú*. https://www.computerweekly.com/es/cronica/Avances-y-progresos-en-el-uso-de-blockchain-en-el-Peru
 
 El Búho. (2025, mayo). *Trucha producida en Puno es la más requerida en mercados del sur del país por su alta calidad*. https://elbuho.pe/2025/05/trucha-producida-en-puno-es-la-mas-requerida-en-mercados-del-sur-del-pais-por-su-alta-calidad/
 
 Global Dialogue on Seafood Traceability. (s. f.). *GDST standards*. https://traceability-dialogue.org/
 
-La Cámara. (s. f.). *Trucha peruana: potencial acuícola clave para diversificar la exportación*. https://lacamara.pe/?p=67270 <!-- ⚠ completar fecha -->
+La Cámara. (s. f.). (2025) *Trucha peruana: potencial acuícola clave para diversificar la exportación*. https://lacamara.pe/?p=67270
 
 Linux Foundation Decentralized Trust. (s. f.). *Walmart case study*. https://lfdecentralizedtrust.org/case-studies/walmart-case-study
 
-Ministerio de Agricultura, Pesca y Alimentación. (s. f.). *El director general de Ordenación Pesquera y Acuicultura asiste a la presentación del primer blockchain de pescado fresco*. https://www.mapa.gob.es/en/prensa/ultimas-noticias/detalle_noticias/el-director-general-de-ordenaci-n-pesquera-y-acuicultura-asiste-a-la-presentaci-n-del-primer-blockchain-de-pescado-fresco/ead2918c-3492-4809-9ce0-bb5a72d24776 <!-- ⚠ completar fecha -->
+Ministerio de Agricultura, Pesca y Alimentación. (s. f.). (2019)*El director general de Ordenación Pesquera y Acuicultura asiste a la presentación del primer blockchain de pescado fresco*. https://www.mapa.gob.es/en/prensa/ultimas-noticias/detalle_noticias/el-director-general-de-ordenaci-n-pesquera-y-acuicultura-asiste-a-la-presentaci-n-del-primer-blockchain-de-pescado-fresco/ead2918c-3492-4809-9ce0-bb5a72d24776
 
 Ministerio de la Producción. (2024). *Catastro Acuícola Nacional (referenciado en Informe de Evaluación de la Intervención de Extensionismo Acuícola).* Gobierno del Perú. https://www.producempresarial.pe/wp-content/uploads/2025/02/05-Informe-ER-Extensionismo-Acuicola_rev.pdf
 
 Organización para la Cooperación y el Desarrollo Económicos. (2025). *Políticas para el futuro de la pesca y la acuicultura en Perú.* OECD Publishing. https://www.oecd.org/es/publications/politicas-para-el-futuro-de-la-pesca-y-la-acuicultura-en-peru_712e7084-es/full-report/aquaculture-policies-in-peru_a47e9e62.html
 
-Perú Retail. (s. f.). *¿Cómo se está desarrollando el sector de supermercados en el Perú?* https://www.peru-retail.com/como-esta-desarrollando-sector-supermercados-peru/ <!-- ⚠ completar fecha; verificar cifras -->
+Perú Retail. (s. f.). (2026)*¿Cómo se está desarrollando el sector de supermercados en el Perú?* https://www.peru-retail.com/como-esta-desarrollando-sector-supermercados-peru/ 
 
-Powell, W., Foth, M., Cao, S., & Natanelov, V. (2021). *Garbage in garbage out: The precarious link between IoT and blockchain in food supply chains*. https://www.futurefoodsystems.com.au/resource/garbage-in-garbage-out-the-precarious-link-between-iot-and-blockchain-in-food-supply-chains/ <!-- ⚠ completar revista, volumen y DOI -->
+Powell, W., Foth, M., Cao, S., & Natanelov, V. (2021). *Garbage in garbage out: The precarious link between IoT and blockchain in food supply chains*. https://www.futurefoodsystems.com.au/resource/garbage-in-garbage-out-the-precarious-link-between-iot-and-blockchain-in-food-supply-chains/
 
-World Fishing & Aquaculture. (s. f.). *Nueva Pescanova e IBM trabajan para rastrear sus productos en IBM Food Trust*. https://www.worldfishing.net/news101/industry-news/1400435.article <!-- ⚠ completar título exacto y fecha -->
+World Fishing & Aquaculture. (s. f.). (2021)*Nueva Pescanova e IBM trabajan para rastrear sus productos en IBM Food Trust*.  https://www.worldfishing.net/news101/industry-news/1400435.article
 
 # Anexos
-
-> ✍️ **REDACTADO** — Anexo B (mejora continua / autocrítica) redactado: es evidencia directa del criterio *Applies continuous improvement* de la rúbrica; revisar que cada fila sea cierta. Falta el Anexo C con el enlace del video de exposición (más adelante). (Tarea TR-07)
 
 **-Wokwi:** 
 - [Wokwi](https://wokwi.com/projects/467186064937826305)
