@@ -862,28 +862,51 @@ A continuación se presenta el registro de las entrevistas realizadas a represen
  
 <div style="page-break-after: always;"></div>
 
-
 ---
 
-**Segmento Compradores de supermercado:**
-
-> _Entrevistas pendientes. En esta etapa se realizarán con **proxies** del segmento (p. ej. distribuidores que abastecen a supermercados, jefes de pescadería, administradores de autoservicios) hasta conseguir compradores de supermercado; se declarará esta limitación en el análisis._
+**Segmento Compradores de supermercado:** <br>
 
 **Entrevistado 1**
 
 | Atributo | Detalle |
 |---|---|
-| **Nombre** | (completar) |
-| **Edad** | (completar) |
-| **Sexo** | (completar) |
-| **Distrito** | (completar) |
-| **Ocupación / rol** | (completar) |
-| **Fecha de entrevista** | (completar) |
-| **Timing** | (completar: mm:ss - mm:ss) |
-| **Video** | (enlace de Microsoft Stream) |
-| **Resumen** | (completar: cargo, cómo verifica hoy el origen de un lote, problemas con reclamos o devoluciones, información que querría ver en un certificado, dispositivos y canales, objeciones y disposición a exigirlo; incluir personalidad, marcas o fuentes que consulta, y navegador/dispositivo) |
+| **Nombre** |Sebastián Silva |
+| **Edad** | 25 años |
+| **Sexo** | Masculino|
+| **Distrito** |  San Luis , Lima|
+| **Ocupación / rol** | Responsable de compras de productos frescos |
+| **Fecha de entrevista** | 02/10/2026  |
+| **Timing** | 0:00 - 06:27 |
+| **Video** |[Ver entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202125968_upc_edu_pe/IQA9ROmstnujQofrMar1TZocAX19lCGhUhsjlgEwvVBcYUk?e=WaITrO&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
+| **Resumen** | Sebastián coordina la compra de productos frescos para aproximadamente dos tiendas mediante un centro de distribución en Lima. Selecciona proveedores según calidad, precio, capacidad de abastecimiento y cumplimiento de requisitos sanitarios. Verifica los lotes con documentos de transporte, facturas y registros del proveedor, pero no siempre accede a información sobre la crianza. Ante problemas de temperatura o deterioro, revisa fotografías, registros de recepción e inspecciones para determinar rechazos o reposiciones. Utiliza computadora, celular, correo, WhatsApp y sistemas internos. Considera que el QR facilitaría verificar el origen, atender auditorías e investigar reclamos. Prioriza el acceso sin registro y expresa preocupación por datos incorrectos, costos elevados y falta de integración. El certificado podría convertirse en requisito, complementando los controles sanitarios y de calidad. |
 
-**Entrevistado 2** y **Entrevistado 3**: repetir la misma tabla.
+**Entrevistado 2**  
+| Atributo | Detalle |
+|---|---|
+| **Nombre** | Fabrisio Belahonia|
+| **Edad** | 28 años |
+| **Sexo** | Masculino|
+| **Distrito** | San Juan de Lurigancho, Lima|
+| **Ocupación / rol** | Encargado de compras de productos frescos|
+| **Fecha de entrevista** | 02/10/2026 |
+| **Timing** | 0:00 - 04:52|
+| **Video** |[Ver entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202125968_upc_edu_pe/IQDtTgNb-r-1QZjs2OEqc9SPATKkPZODEdnLvSA395U4NQU?e=G90GQP&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
+| **Resumen** |Fabrisio coordina las compras de pescados y mariscos para aproximadamente tres tiendas en Lima. Evalúa calidad, precio, puntualidad y documentación comercial y sanitaria. Actualmente verifica la procedencia mediante documentos del proveedor, sin acceso directo a registros del agua durante la crianza. Ha rechazado productos por calidad insuficiente, utilizando fotografías y temperaturas de recepción para gestionar devoluciones o reposiciones. Trabaja con laptop, correo, Excel, sistema interno y WhatsApp. Considera útil un QR que muestre proveedor, origen, lote, fechas, condiciones del agua y alertas registradas. Valora consultar sin crear una cuenta y conocer quién ingresó los datos y si hubo correcciones. Preferiría proveedores con mejor información, pero comprobaría la utilidad del certificado antes de exigirlo. |
+
+**Entrevistado 3**
+
+| Atributo | Detalle |
+|---|---|
+| **Nombre** |José Heredia |
+| **Edad** | 27 años |
+| **Sexo** | Masculino|
+| **Distrito** | Santa Anita, Lima |
+| **Ocupación / rol** | Encargado de compras de productos frescos de un supermercado |
+| **Fecha de entrevista** | 03/10/2026  |
+| **Timing** | 0:00 - 05:40 |
+| **Video** |[Ver entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202125968_upc_edu_pe/IQB5NNx403qhSp-_2GQdWJE0AVMY1mmazHAd5L4UclUo17o?e=J76x5g&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
+| **Resumen** | José se encarga de comprar productos frescos para una tienda de supermercado en Lima. Evalúa precios, calidad, puntualidad y documentación comercial y sanitaria. Verifica el origen de las truchas mediante documentos y consultas al proveedor, sin disponer de información detallada sobre las condiciones de crianza. Ante problemas de frescura, utiliza fotografías y registros del lote para coordinar devoluciones o reemplazos. Trabaja con computadora, celular, sistema interno, correo, WhatsApp y Excel. Considera útil consultar mediante QR la piscigranja, el lote, la fecha de cosecha y las condiciones del agua. Valora el acceso sin cuenta, la rapidez y conocer quién registró o modificó los datos. Preferiría proveedores con información confiable, aunque evaluaría la utilidad del certificado antes de exigirlo. |
+
 
 ### 2.2.3. Análisis de entrevistas
 
