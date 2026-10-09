@@ -1173,29 +1173,31 @@ Se elaboraron los Empathy Maps para los dos User Personas identificados. Este pr
 
 ### 2.3.4. As-is Scenario Mapping
 
-> ✍️ **REDACTADO** — Proceso redactado. Falta (herramienta): rehacer los 2 mapas y crear el 3.º en Miro/LucidChart con filas Phases/Doing/Thinking/Feeling. (Tarea C2-9)
+El As-is Scenario Mapping representa la experiencia actual de los usuarios para cumplir sus objetivos, antes de utilizar YakuControl o YakuTrace. Se consideran tres User Persona: José Guevara, piscicultor; Pedro Alvarado, administrador de piscigranja; y Daniel Torres, comprador de supermercado.
+
+Los mapas se construyen a partir de las actividades y dificultades descritas en las entrevistas. Cada escenario organiza sus fases como columnas e incluye las filas **Phases, Doing, Thinking y Feeling**, permitiendo relacionar las acciones del usuario con sus preocupaciones y emociones. Las filas Thinking y Feeling representan interpretaciones del equipo y no citas textuales de los participantes.
 
 
-En esta sección se presentan los User Journey Maps para cada uno de los User Persona identificados. Estos mapas representan la experiencia actual de los usuarios sin la existencia de YakuControl, con el objetivo de identificar sus principales puntos de dolor, frustraciones y oportunidades de mejora.
+- As-is Scenario Mapping de Pedro Alvarado
 
-- User Journey Map de Pedro Alvarado
-
-![User Journey Map – Administradores de piscigranjas](./assets/images/user-journey-map-administrador.png)
+![As-is Scenario Mapping – Administradores de piscigranjas](https://i.imgur.com/q4KMtfX.png)
 
 <div style="page-break-after: always;"></div>
 
-- User Journey Map de José Guevara
+- As-is Scenario Mapping de José Guevara
 
-![User Journey Map – Piscicultores](./assets/images/user-journey-map-piscicultor.png)
+![As-is Scenario Mapping – Piscicultores](https://i.imgur.com/vcBknWC.png)
+
+<div style="page-break-after: always;"></div>
+
+- As-is Scenario Mapping de Daniel Torres
+
+![As-is Scenario Mapping – Comprador de supermercado](https://i.imgur.com/UxRoxfM.png)
 
 <div style="page-break-after: always;"></div>
 
 
 **Proceso de elaboración.** Para cada User Persona se construyó un As-is Scenario Map en Miro/LucidChart. Tras la preparación y una lluvia de ideas individual, el equipo revisó las ideas e identificó las **fases** del escenario actual (columnas), las nombró y completó para cada una las filas **Phases, Doing, Thinking y Feeling**. Finalmente se etiquetaron las áreas **positivas** y **negativas** para el usuario y las *blank areas*, es decir, aquello sobre lo que se necesita aprender más. Los mapas parten de los *journey maps* elaborados en la entrega anterior y se rehicieron con el formato del enunciado.
-
-**As-is Scenario Map de Comprador de supermercado**
-
-_(Pendiente: Miro/LucidChart. Tarea C2-9)_
 
 ## 2.4. Ubiquitous Language
 
