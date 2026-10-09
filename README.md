@@ -1075,8 +1075,6 @@ Representa a los responsables de compras de productos frescos que seleccionan pr
 
 ### 2.3.2. User Task Matrix
 
-> ✍️ **REDACTADO** — Cuadro único redactado con las 3 personas. Falta: **validar con las entrevistas** los valores del comprador (marcados con \*). (Tarea C2-7)
-
 
 En esta sección se presentan las tareas que los User Persona representativos de cada segmento realizan para cumplir sus metas, **independientemente de la existencia de una solución de software**. Se consideran tres User Persona: José Guevara (piscicultor de campo), Pedro Alvarado (administrador de piscigranja) y Daniel Torres (comprador de supermercado). (\*).
 
@@ -1136,8 +1134,6 @@ Los tres perfiles necesitan **información confiable y oportuna**, aunque la uti
 
 ### 2.3.3. Empathy Mapping
 
-> ✍️ **REDACTADO** — Proceso redactado. Falta (herramienta): 3.er Empathy Map en UXPressia y verificar los dos existentes. (Tarea C2-8)
-
 
 Se elaboraron los Empathy Maps para los dos User Personas identificados. Este proceso permitió comprender mejor lo que dicen, piensan, hacen y sienten en su día a día, identificando sus principales pains y gains para diseñar una solución que realmente responda a las necesidades del sector acuícola peruano.
 
@@ -1162,12 +1158,18 @@ Se elaboraron los Empathy Maps para los dos User Personas identificados. Este pr
 
 <div style="page-break-after: always;"></div>
 
+- Empathy mapping de Comprador de supermercado
+
+<p align="center">
+  <img src="https://i.imgur.com/rKfKbl3.png" width="75%">
+  <br>
+  <i>Empathy mapping – Comprador de supermercado</i>
+</p>
+
+<div style="page-break-after: always;"></div>
 
 **Proceso de elaboración.** Para cada User Persona se preparó un tablero en UXPressia con la persona al centro. Cada integrante colocó de forma individual sus observaciones sobre lo que la persona dice, ve, hace y escucha, y cómo se siente y piensa, a partir de las entrevistas y la observación de su contexto. Luego el equipo agrupó las observaciones repetidas e identificó los *pains* (qué le preocupa) y los *gains* (qué puede ayudar a resolver sus problemas y qué lo convencería de que somos la alternativa correcta).
 
-**Empathy mapping de Comprador de supermercado**
-
-_(Pendiente: UXPressia. Tarea C2-8)_
 
 ### 2.3.4. As-is Scenario Mapping
 
