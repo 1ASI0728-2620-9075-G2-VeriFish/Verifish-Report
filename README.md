@@ -3163,7 +3163,6 @@ Las pantallas 19–28 están dibujadas en español y exportadas a PNG. Cada una 
 
 ### 6.4.2. Applications Wireflow Diagrams
 
-> ✍️ **REDACTADO** — Explicación de los 10 wireflows existentes (verificar vs. diagramas) y 4 wireflows nuevos especificados. Falta (herramienta): dibujar los wireflows 11–14 en **LucidChart**. (Tarea C6-5)
 
 Los diagramas de wireflow ilustran el flujo de navegación combinado con la disposición de las pantallas. Este análisis permite validar la ruta que sigue el usuario para completar tareas críticas, como la configuración de umbrales de alerta o la activación remota de aireadores, asegurando una interacción fluida y lógica entre los distintos contextos del sistema.
 
@@ -3171,48 +3170,48 @@ Los diagramas de wireflow ilustran el flujo de navegación combinado con la disp
 
 | User Goal: Como Usuario. Deseo poder registrarme en la aplicación móvil para poder acceder a las funcionalidades del sistema |
 |----------------------------------|
-| <img src="assets/disenoux/wireflow1.png" alt="flow" /> |
+| <img src="assets/images/cap6/wireflow1.png" alt="flow" /> |
 
 | User Goal:  Como Usuario. Deseo poder visualizar la información básica de un Estanque (nivel de PH, sensores, etc) para conocer su estado actual en tiempo real.  |
 |----------------------------------|
-| <img src="assets/disenoux/wireflow2.png" alt="flow" /> |
+| <img src="assets/images/cap6/wireflow2.png" alt="flow" /> |
 
 | User Goal: Como Usuario. Deseo poder visualizar las alertas en la aplicación móvil, para poder ver el estado de un estanque, prioridad y el estado de un mantenimiento (completo o en curso). |
 |----------------------------------|
-| <img src="assets/disenoux/wireflow3.png" alt="flow" /> |
+| <img src="assets/images/cap6/wireflow3.png" alt="flow" /> |
 
 | User Goal: Como Usuario. Deseo poder visualizar mi perfil en la aplicación móvil, para poder editar mi información, editar mi foto de perfil, ver las opciones de accesibilidad y cerrar mi sesión.  |
 |----------------------------------|
-| <img src="assets/disenoux/wireflow4.png" alt="flow" /> |
+| <img src="assets/images/cap6/wireflow4.png" alt="flow" /> |
 
 - *User Flow Diagrams para el Segmento 2: Administradores de Piscigranja*
 
 | User Goal:  Como Usuario. Deseo poder registrarme en la aplicación web para obtener acceso a la plataforma  |
 |----------------------------------|
-| <img src="assets/disenoux/wireflow5.png" alt="flow" /> |
+| <img src="assets/images/cap6/wireflow5.png" alt="flow" /> |
 
 | User Goal: Como Usuario. Deseo tener una sección exclusiva para la creación de estanques para mantener un registro ordenado  |
 |----------------------------------|
-| <img src="assets/disenoux/wireflow6.png" alt="flow" /> |
+| <img src="assets/images/cap6/wireflow6.png" alt="flow" /> |
 
 | User Goal: Como Usuario. Deseo tener una sección exclusiva para la visualización y gestión de los equipos, para poder asignar, agregar o eliminar diferentes equipos industriales para los estanques.  |
 |----------------------------------|
-| <img src="assets/disenoux/wireflow7.png" alt="flow" /> |
+| <img src="assets/images/cap6/wireflow7.png" alt="flow" /> |
 
 | User Goal: Como Usuario. Deseo tener una sección exclusiva para la visualización y gestión de los operadores, para poder ver y editar la información de cada uno.  |
 |----------------------------------|
-| <img src="assets/disenoux/wireflow8.png" alt="flow" /> |
+| <img src="assets/images/cap6/wireflow8.png" alt="flow" /> |
 
 | User Goal: Como Usuario. Deseo tener una sección exclusiva para la visualización de notificaciones con filtros por fecha, nombre y el estado del mensaje (leído, no leído o todos), para poder tener las últimas actualizaciones sobre un estanque en específico. |
 |----------------------------------|
-| <img src="assets/disenoux/wireflow9.png" alt="flow" /> |
+| <img src="assets/images/cap6/wireflow9.png" alt="flow" /> |
 
 | User Goal: Como Usuario. Deseo tener una sección exclusiva para la visualización y edición de datos personales para administrar mi cuenta de forma segura y personalizar mi experiencia de uso. |
 |----------------------------------|
-| <img src="assets/disenoux/wireflow10.png" alt="flow" /> |
+| <img src="assets/images/cap6/wireflow10.png" alt="flow" /> |
 
 
-Link LucidChart: https://lucid.app/lucidchart/ebc666ba-9266-48a0-a19c-b1b3f64247ab/edit?viewport_loc=2786%2C5222%2C4017%2C2011%2C0_0&invitationId=inv_dc87452a-958f-4f51-8df3-0b6797858cb2
+Referencia histórica en LucidChart (sin actualización en esta entrega): [diagramas base](https://lucid.app/lucidchart/ebc666ba-9266-48a0-a19c-b1b3f64247ab/edit). Los diagramas actuales se mantienen como [fuentes HTML editables](design/package-e/index.html) y PNG en el repositorio.
 
 
 **Explicación de los wireflows existentes.** Cada wireflow representa el recorrido de un usuario para cumplir un *User goal*, mostrando en cada paso el wireframe del estado correspondiente. Los flujos de información van de las acciones del usuario a las respuestas del sistema, y el *happy path* es la ruta principal sin errores.
@@ -3230,9 +3229,9 @@ Link LucidChart: https://lucid.app/lucidchart/ebc666ba-9266-48a0-a19c-b1b3f64247
 | 9 (Administrador) | Ver notificaciones con filtros | Notificaciones → Filtros (fecha, nombre, estado) → Lista filtrada |
 | 10 (Administrador) | Ver y editar sus datos personales | Configuración → Edición → Guardado |
 
-*(Verificar cada explicación contra el diagrama correspondiente y ajustar si el flujo difiere.)*
+Las rutas principales y alternativas se explican en cada diagrama. Los flujos 1–10 se redibujaron a partir de sus objetivos y de las pantallas en español; no se presentan como capturas nuevas de LucidChart.
 
-**Wireflows nuevos (YakuTrace).** Cada uno parte del *User goal* y se dibuja con los wireframes 19–28:
+**Wireflows nuevos (YakuTrace).** Cada uno parte del *User goal* y usa los wireframes 19–28 y sus estados complementarios:
 
 **Wireflow 11 — Crear un lote y registrar sus hitos (Administrador).** *User goal:* "Como administrador, deseo crear un lote y registrar sus hitos para llevar el historial del ciclo."
 *Happy path:* Lotes → Registrar lote (estanque, fecha, cantidad, origen) → Confirmación → Detalle del lote con el hito de siembra → Registrar hito → Detalle actualizado.
@@ -3251,6 +3250,100 @@ Link LucidChart: https://lucid.app/lucidchart/ebc666ba-9266-48a0-a19c-b1b3f64247
 *Ruta alternativa:* suscripción inactiva (se indica que debe estar activa).
 
 *(Dibujar los wireflows 11–14 en LucidChart y actualizar el enlace.)*
+
+
+**Wireflow 11 — Crear un lote y registrar hitos.**
+
+![Wireflow 11: Crear un lote y registrar hitos, ruta principal y alternativas](assets/images/cap6/wireflow11.png)
+
+[Fuente editable y explicación del recorrido](design/package-e/wireflow11.html).
+
+
+**Wireflow 12 — Emitir un certificado con QR.**
+
+![Wireflow 12: Emitir un certificado con QR, ruta principal y alternativas](assets/images/cap6/wireflow12.png)
+
+[Fuente editable y explicación del recorrido](design/package-e/wireflow12.html).
+
+
+**Wireflow 13 — Verificar un lote por QR.**
+
+![Wireflow 13: Verificar un lote por QR, ruta principal y alternativas](assets/images/cap6/wireflow13.png)
+
+[Fuente editable y explicación del recorrido](design/package-e/wireflow13.html).
+
+
+**Wireflow 14 — Activar el complemento TRACE.**
+
+![Wireflow 14: Activar el complemento TRACE, ruta principal y alternativas](assets/images/cap6/wireflow14.png)
+
+[Fuente editable y explicación del recorrido](design/package-e/wireflow14.html).
+
+
+**Wireflow 15 — Registrar una novedad del estanque.**
+
+![Wireflow 15: Registrar una novedad del estanque, ruta principal y alternativas](assets/images/cap6/wireflow15.png)
+
+[Fuente editable y explicación del recorrido](design/package-e/wireflow15.html).
+
+
+**Wireflow 16 — Generar un reporte de mortalidad.**
+
+![Wireflow 16: Generar un reporte de mortalidad, ruta principal y alternativas](assets/images/cap6/wireflow16.png)
+
+[Fuente editable y explicación del recorrido](design/package-e/wireflow16.html).
+
+
+**Wireflow 17 — Consultar tendencias anuales.**
+
+![Wireflow 17: Consultar tendencias anuales, ruta principal y alternativas](assets/images/cap6/wireflow17.png)
+
+[Fuente editable y explicación del recorrido](design/package-e/wireflow17.html).
+
+
+**Wireflow 18 — Configurar umbrales del estanque.**
+
+![Wireflow 18: Configurar umbrales del estanque, ruta principal y alternativas](assets/images/cap6/wireflow18.png)
+
+[Fuente editable y explicación del recorrido](design/package-e/wireflow18.html).
+
+
+**Wireflow 19 — Pagar la suscripción base.**
+
+![Wireflow 19: Pagar la suscripción base, ruta principal y alternativas](assets/images/cap6/wireflow19.png)
+
+[Fuente editable y explicación del recorrido](design/package-e/wireflow19.html).
+
+
+**Wireflow 20 — Auditar la respuesta a una alerta.**
+
+![Wireflow 20: Auditar la respuesta a una alerta, ruta principal y alternativas](assets/images/cap6/wireflow20.png)
+
+[Fuente editable y explicación del recorrido](design/package-e/wireflow20.html).
+
+
+**Wireflow 21 — Activar la limpieza de un estanque.**
+
+![Wireflow 21: Activar la limpieza de un estanque, ruta principal y alternativas](assets/images/cap6/wireflow21.png)
+
+[Fuente editable y explicación del recorrido](design/package-e/wireflow21.html).
+
+
+**Wireflow 22 — Revocar un certificado.**
+
+![Wireflow 22: Revocar un certificado, ruta principal y alternativas](assets/images/cap6/wireflow22.png)
+
+[Fuente editable y explicación del recorrido](design/package-e/wireflow22.html).
+
+
+**Wireflow 23 — Invitar a un operario.**
+
+![Wireflow 23: Invitar a un operario, ruta principal y alternativas](assets/images/cap6/wireflow23.png)
+
+[Fuente editable y explicación del recorrido](design/package-e/wireflow23.html).
+
+
+**Entrega y trazabilidad.** Las fuentes, sus PNG y la revisión técnica se versionan en ramas del paquete E. La [revisión del paquete](design/package-e/REVISION_PAQUETE_E.md) distingue los entregables verificables, el material de sustentación y los pendientes externos. El [guion de sustentación](design/package-e/GUION_SUSTENTACION.md) organiza la explicación por audiencia.
 
 # Conclusiones
 
