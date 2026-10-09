@@ -6,7 +6,7 @@ Los archivos HTML son las fuentes editables de los diseños; los PNG del informe
 
 ## Reproducción
 
-Requisitos: Node.js, Playwright 1.60 y Chromium de Playwright. En una máquina sin dependencias: `npm install`, `npx playwright install chromium`, `npm run render:designs` y `npm run verify:designs`.
+Requisitos: Node.js, Playwright 1.60 y Chromium de Playwright. En una máquina sin dependencias: `npm install`, `npx playwright install chromium`, `npm run render:designs`, `npm run check:responsive` y `npm run verify:designs`.
 
 Para usar un runtime ya instalado, definir `PACKAGE_E_NODE_MODULES` con el directorio de sus módulos y ejecutar `node scripts/render-package-e.cjs all`. También se pueden renderizar los grupos `style`, `landing`, `wireframes` y `wireflows`, en ese orden: los wireflows utilizan los PNG de las pantallas.
 
@@ -16,7 +16,7 @@ Abrir `index.html` para recorrer la galería local. Las capturas se generan a 14
 
 Son propuestas de diseño, no una aplicación implementada. Las métricas, usuarios, códigos y mensajes de confirmación son ilustrativos. Los formularios no transmiten datos, las acciones no controlan equipos y las pantallas no procesan pagos. El QR contiene `YAKUTRACE-DEMO-NO-VALIDO`, sin URL ni certificado válido. No se inventan precios, transacciones blockchain, validaciones con usuarios o exposiciones realizadas.
 
-Se redibujan en español las 18 pantallas base y los 10 flujos anteriores, y se añaden las pantallas 19–28, sus variantes móviles y los flujos 11–14 de YakuTrace. Los PNG anteriores se conservan en su carpeta original para mantener el historial.
+Se redibujan en español las 18 pantallas base y los 10 flujos anteriores, y se añaden las pantallas 19–28, sus variantes móviles y los flujos 11–14 de YakuTrace y 15–23 para cubrir los objetivos adicionales del backlog. Los PNG anteriores se conservan en su carpeta original para mantener el historial.
 
 ## Herramientas externas
 

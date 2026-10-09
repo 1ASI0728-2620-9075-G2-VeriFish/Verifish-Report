@@ -91,7 +91,7 @@
 | **7.0** | (fecha) | (autor) | **TP1 – Cap. I a III:** incorporación del Segmento 3 y de YakuTrace; reescritura de User Stories (Gherkin sin UI), Product Backlog ordenado por valor, To-Be Scenario Mapping, Impact Mapping con objetivos SMART y Ubiquitous Language en inglés. |
 | **8.0** | (fecha) | (autor) | **TP1 – Cap. IV:** constraints como Technical Stories, drivers, matriz de patrones, refinements; EventStorming, contextos, canvases y context map con Traceability; diagramas C4 coherentes con el monolito modular. |
 | **9.0** | (fecha) | (autor) | **TP1 – Cap. V:** diseño táctico de los seis Bounded Contexts (capas, componentes, clases y base de datos). |
-| **10.0** | (fecha) | (autor) | **TP1 – Cap. VI:** guía de estilos, arquitectura de información, landing, wireframes y wireflows con YakuTrace y principios de Responsive Web Design. |
+| **10.0** | 08/10/2026 | Rúbens Fitzgerald Bendezu (Lucemz) | **TP1 – Paquete E:** revisión del capítulo VI; guía visual y arquitectura de información, landing desktop/móvil, pantallas 1–28 en español, estados y 23 wireflows; fuentes editables, PNG y evidencia escrita del Student Outcome 3. |
 
 <div style="page-break-after: always;"></div>
 
@@ -116,6 +116,13 @@ Los integrantes del equipo y sus nombres de usuario en GitHub son los siguientes
 
 
 <div style="page-break-after: always;"></div>
+
+## TP1 — contribución del paquete E
+
+**Responsable:** Rúbens Fitzgerald Bendezu Navarro (`Lucemz`). Se desarrolló el capítulo VI desde `develop`, organizando el trabajo en `feature/pkg-e-style-guide`, `feature/pkg-e-landing`, `feature/pkg-e-wireframes`, `feature/pkg-e-wireflows` y `feature/review-chapter-6`. Los cambios se integran mediante la rama `feature/pkg-e`, conservando los commits y los merges del trabajo.
+
+La entrega incluye fuentes HTML/CSS, la tipografía Inter con licencia, PNG renderizados y un control reproducible de imágenes, referencias y contraste. Los diseños representan estados ilustrativos; no son pruebas de funcionamiento del backend. La [revisión del paquete](design/package-e/REVISION_PAQUETE_E.md) identifica los pendientes externos y del resto del informe. Las aportaciones de los demás integrantes deben registrarse con sus tareas y evidencias reales.
+
 
 ## TB1
 
@@ -310,23 +317,12 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 
 | Criterio específico | Acciones realizadas | Conclusiones |
 | :--- | :--- | :--- |
-| **Comunica oralmente sus ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería.** | **Escobar Palomino, Sebastian Matias**<br>*TB1*: (completar)<br>*TP1*: (completar)<br><br>**Bendezu Navarro, Rúbens Fitzgerald**<br>*TB1*: (completar)<br>*TP1*: (completar)<br><br>**Choquehuanca Nuñez, Luciana Carolina**<br>*TB1*: (completar)<br>*TP1*: (completar)<br><br>**Cruz Ibarra, Victor Andres**<br>*TB1*: (completar)<br>*TP1*: (completar)<br><br>**Peralta Chipa, Ronald Joel**<br>*TB1*: (completar)<br>*TP1*: (completar) | *TB1:* (completar, grupal)<br>*TP1:* (completar, grupal) |
-| **Comunica en forma escrita ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería.** | **Escobar Palomino, Sebastian Matias**<br>*TB1*: (completar)<br>*TP1*: (completar)<br><br>**Bendezu Navarro, Rúbens Fitzgerald**<br>*TB1*: (completar)<br>*TP1*: (completar)<br><br>**Choquehuanca Nuñez, Luciana Carolina**<br>*TB1*: (completar)<br>*TP1*: (completar)<br><br>**Cruz Ibarra, Victor Andres**<br>*TB1*: (completar)<br>*TP1*: (completar)<br><br>**Peralta Chipa, Ronald Joel**<br>*TB1*: (completar)<br>*TP1*: (completar) | *TB1:* (completar, grupal)<br>*TP1:* (completar, grupal) |
+| **Comunica oralmente sus ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería.** | **Escobar Palomino, Sebastian Matias**<br>*TB1*: (completar)<br>*TP1*: (completar)<br><br>**Bendezu Navarro, Rúbens Fitzgerald**<br>*TB1*: Evidencia oral individual por vincular; no se atribuye una exposición sin registro.<br>*TP1*: Preparé un guion de sustentación apoyado en la landing, las pantallas y los wireflows para explicar el diseño a piscicultores, administradores, compradores y al equipo técnico. El material distingue acciones de campo, decisiones de negocio y estados del certificado. La exposición y su evidencia se registrarán cuando se realicen.<br><br>**Choquehuanca Nuñez, Luciana Carolina**<br>*TB1*: (completar)<br>*TP1*: (completar)<br><br>**Cruz Ibarra, Victor Andres**<br>*TB1*: (completar)<br>*TP1*: (completar)<br><br>**Peralta Chipa, Ronald Joel**<br>*TB1*: (completar)<br>*TP1*: (completar) | *TB1:* (completar, grupal)<br>*TP1:* (completar, grupal) |
+| **Comunica en forma escrita ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería.** | **Escobar Palomino, Sebastian Matias**<br>*TB1*: (completar)<br>*TP1*: (completar)<br><br>**Bendezu Navarro, Rúbens Fitzgerald**<br>*TB1*: El informe previo registra aportes al análisis competitivo y Lean UX; falta vincular la evidencia personal específica para este criterio de comunicación.<br>*TP1*: Documenté y revisé el capítulo VI: guía visual, arquitectura de información, landing desktop/móvil, 28 pantallas principales, variantes responsive, estados alternativos y 23 wireflows. Redibujé la interfaz en español y relacioné los recorridos con las historias de usuario. Incorporé fuentes editables, PNG y controles de calidad que permiten al equipo reproducir y revisar el diseño.<br><br>**Choquehuanca Nuñez, Luciana Carolina**<br>*TB1*: (completar)<br>*TP1*: (completar)<br><br>**Cruz Ibarra, Victor Andres**<br>*TB1*: (completar)<br>*TP1*: (completar)<br><br>**Peralta Chipa, Ronald Joel**<br>*TB1*: (completar)<br>*TP1*: (completar) | *TB1:* (completar, grupal)<br>*TP1:* (completar, grupal) |
 
-> 🔴 **CAMBIAR** — El reporte anterior usaba **ABET – EAC – Student Outcome 7** (corresponde al curso de IoT); este curso exige el **3**. Cada integrante escribe sus acciones reales de TB1 y TP1; las conclusiones son grupales y acumulables. El texto anterior queda comentado abajo como referencia. (Tarea TR-03)
-
-<!-- TEXTO ANTERIOR (Student Outcome 7, TB1) — borrar antes de exportar
-# Student Outcome
-En el siguiente cuadro se describen las acciones realizadas y enunciados de conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el logro del ABET – EAC - Student Outcome 7.
-
-| Criterio específico | Acciones realizadas | Conclusiones |
-| :--- | :--- | :--- |
-| **Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software.** | **Escobar Palomino, Sebastian Matias**<br>*TB1*: Actualizó conceptos sobre técnicas de elicitación de requerimientos, diseño de entrevistas y modelado de flujos de dominio (Domain Message Flow) aplicados al diseño estratégico.<br><br>**Bendezu Navarro, Rúbens Fitzgerald**<br>*TB1*: Investigó y actualizó conocimientos sobre análisis competitivo y metodologías Lean UX para estructurar el perfil de la solución y mapear el contexto (Context Mapping).<br><br>**Choquehuanca Nuñez, Luciana Carolina**<br>*TB1*: Profundizó en la dinámica de EventStorming y el descubrimiento de contextos candidatos, actualizando sus bases teóricas para la correcta redacción de User Stories.<br><br>**Cruz Ibarra, Victor Andres**<br>*TB1*: Actualizó conceptos sobre diseño de arquitectura de software utilizando el modelo C4 y patrones tácticos de DDD aplicados a la configuración inicial del proyecto.<br><br>**Peralta Chipa, Ronald Joel**<br>*TB1*: Actualizó conocimientos en la estructuración de Bounded Context Canvases y la interpretación de métricas de colaboración en GitHub (Insights) para documentar el progreso. | *TB1:*<br>Consideramos que durante esta primera etapa logramos cumplir un alto nivel de actualización técnica. Como equipo, tuvimos que investigar y afianzar nuestros conocimientos sobre Domain-Driven Design (DDD), arquitectura de software bajo el modelo C4 y metodologías de ideación (Lean UX, EventStorming). Esta asimilación de nuevos conceptos fue fundamental para estructurar correctamente las bases arquitectónicas y los requerimientos de nuestra solución de software, aportando directamente a nuestro desarrollo profesional. |
-| **Reconoce la necesidad del aprendizaje permamente para el desempeño profesional y el desarrollo de proyectos en soluciones de software.** | **Escobar Palomino, Sebastian Matias**<br>*TB1*: Reconoció la necesidad de investigar constantemente nuevas técnicas de mapeo de empatía y diseño de experiencia de usuario para comprender a profundidad las necesidades del cliente.<br><br>**Bendezu Navarro, Rúbens Fitzgerald**<br>*TB1*: Identificó la importancia de mantenerse actualizado sobre las tendencias del mercado y modelos de negocio de competidores para poder definir un Ubiquitous Language preciso y competitivo.<br><br>**Choquehuanca Nuñez, Luciana Carolina**<br>*TB1*: Comprendió la necesidad de instruirse continuamente en metodologías ágiles y gestión de Backlog para adaptarse a la complejidad del descubrimiento de dominios del software.<br><br>**Cruz Ibarra, Victor Andres**<br>*TB1*: Identificó la necesidad vital de seguir aprendiendo sobre estándares de flujos de trabajo colaborativos (GitFlow) y evolución de arquitecturas para garantizar un diseño escalable.<br><br>**Peralta Chipa, Ronald Joel**<br>*TB1*: Reconoció la relevancia de mantenerse al día con los estándares de documentación (ABET) y las mejores prácticas para delimitar contextos (Bounded Contexts) en proyectos complejos. | *TB1:*<br>A nivel grupal, reconocemos que el desarrollo de software exige una mentalidad de formación continua. Al enfrentarnos a la definición estratégica y táctica de nuestro dominio, evidenciamos que las metodologías y herramientas cambian y evolucionan. Entendimos que investigar de manera autónoma, validar nuevas fuentes de información y adaptar nuestro enfoque no es solo un requisito académico, sino una habilidad indispensable para mantener la calidad y vigencia en el ámbito profesional a largo plazo. |
+**Evidencia individual de Rúbens Bendezu (TP1):** [fuentes y galería UX/UI](design/package-e/index.html), [revisión de entregables](design/package-e/REVISION_PAQUETE_E.md) y [guion de sustentación](design/package-e/GUION_SUSTENTACION.md). La evidencia escrita es verificable en los archivos y commits. La evidencia oral debe completarse con la sustentación real. Las filas de los demás integrantes y las conclusiones grupales requieren su validación.
 
 <div style="page-break-after: always;"></div>
-
--->
 
 # Capítulo I: Introducción
 ## 1.1. Startup Profile
@@ -2709,7 +2705,7 @@ Se implementarán sistemas de etiquetado claros y consistentes para facilitar la
  
 | Etiqueta | Qué comunica | Qué encontrará el usuario |
 |----------|--------------|--------------------------|
-| Dashboard | Panel de control principal | Resumen de estanques, sensores, alertas y calidad promedio |
+| Inicio | Panel de control principal | Resumen de estanques, sensores, alertas y calidad promedio |
 | Estanques | Gestión de piscinas de crianza | Listar, crear y monitorear estanques |
 | Equipos | Gestión de hardware desplegado | Registrar, asignar y editar sensores y bombas |
 | Operadores | Gestión de usuarios operativos | Crear y administrar cuentas de operadores |
@@ -3070,7 +3066,7 @@ Se exhiben los esqueletos estructurales de las aplicaciones, detallando la organ
 | 19 | Lotes (lista) | Web App | Administrador | Tabla de lotes, filtros (estado, estanque, fecha), botón "Registrar lote" | Vacía (sin lotes), cargando, con resultados; tabla → tarjetas en móvil |
 | 20 | Registrar lote | Web App | Administrador | Estanque, fecha de siembra, cantidad, origen de alevines | Validación por campo; error si el estanque ya tiene un lote activo |
 | 21 | Detalle del lote | Web App | Administrador | Datos del lote, línea de tiempo de hitos, acciones "Registrar hito" y "Registrar cosecha" | Lote activo / cosechado / certificado |
-| 22 | Registrar hito o cosecha | Web App | Administrador | Tipo de hito, fecha, descripción; en cosecha: biomasa, mortalidad, temperatura | Validación; historial cerrado si el lote está certificado |
+| 22 | Registrar cosecha | Web App | Administrador | Fecha, biomasa, mortalidad y temperatura; el registro de hitos tiene una vista complementaria | Validación; historial cerrado si el lote está certificado |
 | 23 | Resumen de calidad del lote | Web App | Administrador | Selector día/semana/mes, promedio, mínimo, máximo, % en rango, eventos críticos, cobertura de datos | Cobertura insuficiente (aviso) |
 | 24 | Emitir certificado | Web App | Administrador | Vista previa del contenido, lista de requisitos (cumplido / pendiente), botón "Emitir" | Requisitos incompletos (botón deshabilitado con motivo); confirmación |
 | 25 | Certificados (lista) | Web App | Administrador | Tabla con sello de estado, código, lote, fecha; acciones "Ver QR" y "Revocar" | Emitido / Revocado / En proceso |
