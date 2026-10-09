@@ -640,7 +640,6 @@ Identificar las fortalezas y debilidades de las soluciones existentes en el merc
 
 ### 2.1.2. Estrategias y tácticas frente a competidores
 
-> ✍️ **REDACTADO** — Estrategia 6 redactada. Revisar coherencia con las estrategias 3–5.
 
 
 A partir del análisis competitivo realizado, se identificaron las siguientes estrategias y tácticas que YakuControl adoptará para diferenciarse y ganar participación de mercado frente a sus competidores:
@@ -689,8 +688,6 @@ Las plataformas de trazabilidad existentes están pensadas para consorcios y emp
 ## 2.2. Entrevistas
 
 ### 2.2.1. Diseño de entrevistas
-
-> ✍️ **REDACTADO** — Preguntas del Segmento 3 redactadas y P11 del Segmento 1 corregida.
 
 
 En esta sección se presenta el conjunto de preguntas diseñadas para la recolección de información de los **tres** segmentos objetivo: Piscicultores, operadores de campo encargados del monitoreo y manejo directo de los estanques; Administradores de piscigranja, dueños y responsables de la gestión del negocio acuícola; y Compradores de supermercado, responsables de la compra y el aseguramiento de calidad de la trucha. Las preguntas aplican buenas prácticas de diseño de entrevistas (preguntas abiertas, no inductivas, de lo general a lo específico) y recopilan la información necesaria para construir arquetipos: características demográficas, dispositivos, canales, objetivos y frustraciones.
@@ -764,9 +761,6 @@ En esta sección se presenta el conjunto de preguntas diseñadas para la recolec
 **Preguntas complementarias (para el arquetipo):** edad, distrito de residencia, formación, tiempo en el cargo, canales digitales que usa a diario, marcas o fuentes de información que consulta, qué lo frustra más de su trabajo y qué espera lograr.
 
 ### 2.2.2. Registro de entrevistas
-
-> ✍️ **REDACTADO** — Plantilla del Segmento 3 lista. Falta: **realizar las entrevistas** (con proxies por ahora), video consolidado en Stream y llenar la plantilla. Verificar que el enlace de SharePoint abra para el docente. (Tarea C2-4)
-
 
 A continuación se presenta el registro de las entrevistas realizadas a representantes de los dos segmentos objetivo identificados para YakuControl: Administradores de piscigranja y Piscicultores.
 
@@ -910,9 +904,6 @@ A continuación se presenta el registro de las entrevistas realizadas a represen
 
 ### 2.2.3. Análisis de entrevistas
 
-> ✍️ **REDACTADO** — Introducción corregida y plantilla del Segmento 3. Falta: llenar n/N y % con las entrevistas reales y la conclusión comparativa. (Tarea C2-5)
-
-
 Las entrevistas a piscicultores y administradores se realizaron entre el 12 y el 21 de abril de 2026 a un total de seis participantes (tres por segmento) en diferentes zonas del Perú. El objetivo fue comprender sus contextos operativos y frustraciones actuales y validar hipótesis sobre la propuesta de valor de YakuControl. Las entrevistas del Segmento 3 (compradores de supermercado) se analizan al final de esta sección.
 
 **Segmento: Piscicultores**
@@ -924,22 +915,28 @@ Las entrevistas a piscicultores y administradores se realizaron entre el 12 y el
 **Fechas:** 14 de abril de 2026
 
 **Características objetivas**
-- Aprendieron el oficio de forma empírica o con capacitaciones básicas del Ministerio de la Producción: **3/3 (100%)**
-- Monitorean principalmente temperatura; el oxígeno y pH solo ante anomalías o cuando tienen equipo disponible: **3/3 (100%)**
-- Registran datos en cuaderno físico, celular o Excel de forma manual: **3/3 (100%)**
-- Detectan problemas por el comportamiento visual de los peces (dejan de comer, suben a la superficie): **3/3 (100%)**
-- No utilizan ninguna aplicación digital especializada en su trabajo: **3/3 (100%)**
-- Usan el celular como principal dispositivo de trabajo: **3/3 (100%)**
-- Consideran la limpieza y sedimentación de estanques como una tarea fundamental: **2/3 (67%)**
+
+| Característica objetiva | Resultado (n/N, %) |
+| :--- | :---: |
+| Aprendieron el oficio de forma empírica o con capacitaciones básicas del Ministerio de la Producción. | **3/3 (100%)** |
+| Monitorean principalmente temperatura; el oxígeno y el pH se revisan ante anomalías o cuando tienen equipos disponibles. | **3/3 (100%)** |
+| Registran datos manualmente en cuadernos, celular o Excel. | **3/3 (100%)** |
+| Detectan problemas mediante el comportamiento visual de los peces, como dejar de comer o subir a la superficie. | **3/3 (100%)** |
+| No utilizan aplicaciones digitales especializadas en su trabajo. | **3/3 (100%)** |
+| Usan el celular como principal dispositivo de trabajo. | **3/3 (100%)** |
+| Consideran la limpieza y sedimentación de estanques una tarea fundamental. | **2/3 (67%)** |
 
 **Características subjetivas**
-- Consideran el costo de los equipos como un factor limitante importante para adoptar tecnología: **3/3 (100%)**
-- Valoran que una herramienta sea simple y fácil de usar por encima de otras características: **3/3 (100%)**
-- Les gustaría recibir alertas claras y automáticas ante anomalías en el agua: **3/3 (100%)**
-- Desean ver el estado del agua en tiempo real desde su celular: **3/3 (100%)**
-- Están dispuestos a adoptar YakuControl si simplifica su trabajo diario: **3/3 (100%)**
-- Consideran que las alertas tempranas les permitirían reaccionar antes y evitar pérdidas: **3/3 (100%)**
-- Desean tener visibilidad del ciclo de alimentación de los peces desde su herramienta: **2/3 (67%)**
+
+| Característica subjetiva | Resultado (n/N, %) |
+| :--- | :---: |
+| Consideran el costo de los equipos un factor limitante para adoptar tecnología. | **3/3 (100%)** |
+| Valoran que una herramienta sea simple y fácil de usar por encima de otras características. | **3/3 (100%)** |
+| Les gustaría recibir alertas claras y automáticas ante anomalías en el agua. | **3/3 (100%)** |
+| Desean consultar el estado del agua en tiempo real desde su celular. | **3/3 (100%)** |
+| Están dispuestos a adoptar YakuControl si simplifica su trabajo diario. | **3/3 (100%)** |
+| Consideran que las alertas tempranas les permitirían reaccionar antes y evitar pérdidas. | **3/3 (100%)** |
+| Desean tener visibilidad del ciclo de alimentación de los peces. | **2/3 (67%)** |
 
 **Segmento: Administradores de piscigranja**
 
@@ -950,52 +947,91 @@ Las entrevistas a piscicultores y administradores se realizaron entre el 12 y el
 **Fechas:** 12 y 21 de abril de 2026
  
 **Características objetivas**
-- Reciben información del estado de los estanques a través de reportes físicos, fotos de cuadernos o audios de WhatsApp: **3/3 (100%)**
-- No cuentan con ningún sistema digital especializado para monitorear parámetros del agua: **3/3 (100%)**
-- Han sufrido pérdidas económicas por factores climáticos o detección tardía de problemas: **3/3 (100%)**
-- Usan Excel y WhatsApp como únicas herramientas de gestión: **3/3 (100%)**
-- Realizan venta directa al mercado sin procesamiento del producto: **2/3 (67%)**
-- Certifica la sanidad y procedencia de sus especies para cumplir estándares de calidad: **1/3 (33%)**
-- La información que reciben del personal de campo llega con retraso o es difícil de interpretar: **3/3 (100%)**
+
+| Característica objetiva | Resultado (n/N, %) |
+| :--- | :---: |
+| Reciben información sobre los estanques mediante reportes físicos, fotografías de cuadernos o audios de WhatsApp. | **3/3 (100%)** |
+| No cuentan con sistemas digitales especializados para monitorear parámetros del agua. | **3/3 (100%)** |
+| Han sufrido pérdidas económicas por factores climáticos o detección tardía de problemas. | **3/3 (100%)** |
+| Usan Excel y WhatsApp como únicas herramientas de gestión. | **3/3 (100%)** |
+| Realizan venta directa al mercado sin procesamiento del producto. | **2/3 (67%)** |
+| Declara certificar la sanidad y procedencia de sus especies para cumplir estándares de calidad. | **1/3 (33%)** |
+| La información que reciben del personal de campo llega con retraso o resulta difícil de interpretar. | **3/3 (100%)** |
 
 **Características subjetivas**
-- Consideran la temperatura y el oxígeno del agua como los factores más críticos del negocio: **3/3 (100%)**
-- Evalúan contratar una solución tecnológica principalmente según su costo: **3/3 (100%)**
-- Desean recibir alertas automáticas ante cambios críticos en el agua: **3/3 (100%)**
-- Valoran poder monitorear sus estanques de forma remota desde el celular: **3/3 (100%)**
-- Están dispuestos a invertir en tecnología si reduce la mortandad y mejora la rentabilidad: **3/3 (100%)**
-- Valoran la posibilidad de predecir la disponibilidad de agua a futuro: **2/3 (67%)**
-- Priorizarían en una primera etapa monitorear el volumen y temperatura del agua: **3/3 (100%)**
 
-**Conclusión general**
-
-El análisis de entrevistas revela patrones claros y consistentes entre ambos segmentos. Tanto piscicultores como administradores coinciden en que la temperatura, el oxígeno y la calidad del agua son los factores más críticos del negocio acuícola, y que la ausencia de herramientas digitales genera retrasos en la detección de problemas y pérdidas económicas evitables. Los piscicultores priorizan la simplicidad de uso y las alertas en tiempo real desde el celular, mientras que los administradores priorizan la visibilidad remota, la capacidad predictiva del sistema y un costo accesible. Estas necesidades complementarias refuerzan directamente la propuesta de valor de YakuControl como solución IoT que conecta a ambos segmentos en tiempo real, previniendo pérdidas y mejorando la rentabilidad del negocio acuícola peruano.
-
-<div style="page-break-after: always;"></div>
-
+| Característica subjetiva | Resultado (n/N, %) |
+| :--- | :---: |
+| Consideran la temperatura y el oxígeno del agua los factores más críticos del negocio. | **3/3 (100%)** |
+| Evalúan contratar una solución tecnológica principalmente según su costo. | **3/3 (100%)** |
+| Desean recibir alertas automáticas ante cambios críticos en el agua. | **3/3 (100%)** |
+| Valoran monitorear sus estanques de forma remota desde el celular. | **3/3 (100%)** |
+| Están dispuestos a invertir en tecnología si reduce la mortandad y mejora la rentabilidad. | **3/3 (100%)** |
+| Valoran la posibilidad de predecir la disponibilidad de agua a futuro. | **2/3 (67%)** |
+| Priorizarían monitorear el volumen y la temperatura del agua en una primera etapa. | **3/3 (100%)** |
 
 **Segmento: Compradores de supermercado**
 
-**Total entrevistados:** (n) · **Edades:** (…) · **Distritos:** (…) · **Instituciones/empresas:** (…) · **Fechas:** (…)
+**Total entrevistados:** 3  
+**Participantes:** Sebastián Silva, Fabrisio Belahonia y José Heredia.  
+**Edades:** 25, 28 y 27 años, respectivamente.  
+**Distritos de residencia:** San Luis, San Juan de Lurigancho y Santa Anita, Lima.  
+**Instituciones/empresas:** Supermercados cuyos nombres no fueron especificados en las entrevistas.  
+**Roles:** Responsables o encargados de compras de productos frescos, incluidos pescados y truchas.  
+**Cobertura operativa:** Aproximadamente dos tiendas, tres tiendas y una tienda, respectivamente.  
+**Fechas:** 2 y 3 de octubre de 2026.
+
+**Características objetivas**
 
 | Característica objetiva | Resultado (n/N, %) |
-| :--- | :-: |
-| Verifican hoy el origen de un lote con documentos del proveedor | (n/N) |
-| No cuentan con una herramienta digital para verificar condiciones de crianza | (n/N) |
-| Han tenido reclamos, devoluciones o rechazos por calidad o mortandad | (n/N) |
-| Deben responder a auditorías de trazabilidad | (n/N) |
-| Usan el celular como dispositivo principal de trabajo | (n/N) |
-| Se comunican con el proveedor por WhatsApp, llamadas o correo | (n/N) |
+| :--- | :---: |
+| Verifican el origen de los lotes mediante documentos del proveedor, registros de entrega o comprobantes. | **3/3 (100 %)** |
+| No disponen de acceso directo y sistemático a registros detallados de las condiciones del agua durante la crianza. | **3/3 (100 %)** |
+| Evalúan a los proveedores considerando calidad, precio y cumplimiento de las entregas. | **3/3 (100 %)** |
+| Solicitan documentación comercial y sanitaria correspondiente, además de información de procedencia. | **3/3 (100 %)** |
+| Reportan problemas de calidad en entregas y describen procedimientos para evaluar rechazos, devoluciones o reposiciones. | **3/3 (100 %)** |
+| Utilizan fotografías e identificación o registros del lote como evidencia ante problemas de calidad. | **3/3 (100 %)** |
+| Mencionan registros o mediciones de temperatura como evidencia para evaluar productos observados. | **2/3 (67 %)** |
+| Deben disponer de información sobre proveedor, origen, lote y fechas para atender auditorías o controles internos. | **3/3 (100 %)** |
+| Utilizan computadora o laptop y sistemas internos para gestionar compras y consultar información. | **3/3 (100 %)** |
+| Se comunican con proveedores mediante correo electrónico y WhatsApp. | **3/3 (100 %)** |
+| Conocen los códigos QR, pero expresan conocimiento limitado o ausencia de experiencia de trabajo con blockchain. | **3/3 (100 %)** |
+
+**Características subjetivas**
 
 | Característica subjetiva | Resultado (n/N, %) |
-| :--- | :-: |
-| Valoran verificar un lote en segundos escaneando un QR | (n/N) |
-| Confían más en información que no puede modificarse después | (n/N) |
-| Consideran importante ver un resumen de calidad del agua (no solo promedios) | (n/N) |
-| Preferirían o exigirían proveedores con este tipo de certificado | (n/N) |
-| Les preocupa el costo o la complejidad de adoptar una solución | (n/N) |
+| :--- | :---: |
+| Consideran útil consultar rápidamente el origen y el historial de un lote mediante un código QR. | **3/3 (100 %)** |
+| Valoran acceder desde el celular sin crear una cuenta. | **3/3 (100 %)** |
+| Valoran evitar la instalación de una aplicación para consultar el lote. | **2/3 (67 %)** |
+| Desean visualizar primero la procedencia, la identificación del proveedor o piscigranja, el número de lote y las fechas relevantes. | **3/3 (100 %)** |
+| Consideran útil consultar las condiciones del agua durante la crianza para complementar la evaluación del lote. | **3/3 (100 %)** |
+| Perciben que el certificado facilitaría investigar reclamos y reunir información sin solicitar documentos por separado. | **3/3 (100 %)** |
+| Expresan preocupación por información incompleta, incorrecta, desactualizada o cuya procedencia no pueda verificarse. | **3/3 (100 %)** |
+| Consideran que una consulta lenta dificultaría la adopción de la herramienta. | **3/3 (100 %)** |
+| Valoran conocer quién registró los datos y si existieron modificaciones o correcciones. | **2/3 (67 %)** |
+| Mencionan el costo adicional o elevado como una preocupación para adoptar la solución. | **2/3 (67 %)** |
+| Señala la falta de integración con los sistemas actuales como un posible inconveniente. | **1/3 (33 %)** |
+| Considerarían el certificado una ventaja al evaluar o seleccionar proveedores. | **3/3 (100 %)** |
+| Condicionan su exigencia como requisito a comprobar previamente su utilidad. | **3/3 (100 %)** |
 
-*(Completar con los resultados reales de las entrevistas y redactar una conclusión que compare los tres segmentos. Cada porcentaje debe poder rastrearse a una entrevista del registro. Si se usan proxies, indicarlo.)*
+**Análisis del segmento**
+
+Las entrevistas muestran que los compradores disponen de documentos y sistemas para gestionar las compras, pero encuentran una brecha en el acceso a información detallada sobre la crianza de las truchas. Los tres participantes verifican la procedencia mediante documentación del proveedor y consideran útil reunir el historial del lote y las condiciones del agua en una consulta mediante QR.
+
+La rapidez y la confiabilidad de la información son criterios centrales de adopción. Los tres valoran consultar sin crear una cuenta y expresan preocupación por datos incompletos o tiempos de carga elevados. José y Fabrisio destacan, además, la importancia de identificar al responsable del registro y conocer las correcciones realizadas; Sebastián incorpora la necesidad de integración con los sistemas existentes.
+
+Estos hallazgos respaldan el diseño de una página pública de verificación con información clara sobre proveedor, origen, lote, fechas y condiciones registradas. Sin embargo, la disposición favorable hacia el certificado no equivale a una exigencia comercial inmediata: los participantes plantean evaluar su utilidad antes de convertirlo en requisito. Sebastián también señala expresamente que debe complementar los controles sanitarios y la evaluación de calidad.
+
+**Conclusión general comparativa**
+
+El análisis de los tres segmentos identifica una necesidad compartida de información oportuna y confiable, aunque su uso cambia según las responsabilidades de cada actor. Los piscicultores requieren conocer el estado de los estanques y recibir alertas comprensibles para responder en campo. Los administradores necesitan consolidar la información operativa, revisar históricos y tomar decisiones sobre la producción. Los compradores de supermercado requieren consultar la procedencia y el historial de los lotes para evaluar entregas, atender reclamos y responder a auditorías.
+
+YakuControl responde a las necesidades de monitoreo y gestión de los dos primeros segmentos, mientras que YakuTrace amplía el uso de esa información hacia la verificación comercial. Las entrevistas del tercer segmento respaldan una consulta mediante QR, accesible desde el celular y sin registro, que priorice la identificación del lote, su origen y las condiciones documentadas durante la crianza.
+
+Los resultados orientan el diseño de la solución, pero todavía no demuestran una reducción de mortalidad, reclamos o tiempos de verificación. Estos efectos deberán evaluarse mediante pruebas y pilotos posteriores con tareas y métricas definidas.
+
+<div style="page-break-after: always;"></div>
 
 ## 2.3. Needfinding
 
