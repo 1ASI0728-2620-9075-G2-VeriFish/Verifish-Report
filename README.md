@@ -2955,13 +2955,11 @@ El mock-up aplica la guía de estilos (paleta Navy/Cyan/Aqua, tipografía Inter,
 
 ## 6.4. Applications UX/UI Design
 
-> 🔴 **CAMBIAR** — Aplicaciones: App móvil (piscicultor), Web App (administrador) y **vista pública de verificación** (comprador/consumidor). (Tareas C6-4, C6-5)
 
-Este apartado describe el diseño de experiencia (UX) e interfaz (UI) de las aplicaciones cliente de YakuControl: la Web App para administradores y la App Móvil para piscicultores. El diseño se fundamenta en las necesidades identificadas en el análisis de arquetipos, priorizando la visualización de datos telemétricos, la gestión de alertas push y el control remoto de actuadores en los estanques.
+Este apartado describe el diseño de experiencia (UX) e interfaz (UI) de las aplicaciones cliente de YakuControl: la Web App para administradores, la App Móvil para piscicultores y la vista pública para compradores. El diseño se fundamenta en las necesidades identificadas en el análisis de arquetipos, priorizando la visualización de datos telemétricos, la gestión de alertas push y el control remoto de actuadores en los estanques.
 
 ### 6.4.1. Applications Wireframes
 
-> ✍️ **REDACTADO** — Principios, RWD y especificación de 10 pantallas nuevas redactados. Falta (herramienta): dibujar las pantallas 19–28 en **Figma**. (Tarea C6-4)
 
 Se exhiben los esqueletos estructurales de las aplicaciones, detallando la organización de los dashboards y paneles de control. Los wireframes para la aplicación móvil se centran en la simplicidad de uso para operarios en campo, mientras que los de la aplicación web priorizan la claridad en gráficos de tendencias e informes de mortalidad para la toma de decisiones estratégicas.
 
@@ -2969,78 +2967,78 @@ Se exhiben los esqueletos estructurales de las aplicaciones, detallando la organ
 
 | Inicio Sesión |
 |----------------------------------|
-| <img src="assets/disenoux/wireframe1.png" alt="wireframe" /> |
+| <img src="assets/images/cap6/wireframe1.png" alt="wireframe" /> |
 
-| Register |
+| Crear cuenta |
 |----------------------------------|
-| <img src="assets/disenoux/wireframe2.png" alt="wireframe" /> |
+| <img src="assets/images/cap6/wireframe2.png" alt="wireframe" /> |
 
-| Sección Home |
+| Sección Inicio |
 |----------------------------------|
-| <img src="assets/disenoux/wireframe3.png" alt="wireframe" /> |
+| <img src="assets/images/cap6/wireframe3.png" alt="wireframe" /> |
 
-| Sección Home - Detalles de Estanque|
+| Sección Inicio - Detalles de Estanque|
 |----------------------------------|
-| <img src="assets/disenoux/wireframe4.png" alt="wireframe" /> |
+| <img src="assets/images/cap6/wireframe4.png" alt="wireframe" /> |
 
-| Sección Home - Historial de Lecturas|
+| Sección Inicio - Historial de Lecturas|
 |----------------------------------|
-| <img src="assets/disenoux/wireframe5.png" alt="wireframe" /> |
+| <img src="assets/images/cap6/wireframe5.png" alt="wireframe" /> |
 
 | Sección Alertas |
 |----------------------------------|
-| <img src="assets/disenoux/wireframe6.png" alt="wireframe" /> |
+| <img src="assets/images/cap6/wireframe6.png" alt="wireframe" /> |
 
 | Sección Perfil |
 |----------------------------------|
-| <img src="assets/disenoux/wireframe7.png" alt="wireframe" /> |
+| <img src="assets/images/cap6/wireframe7.png" alt="wireframe" /> |
 
 
 - *Wireframes para el Segmento 2: Administradores de Piscigranja*
 
 | Inicio Sesión |
 |----------------------------------|
-| <img src="assets/disenoux/wireframe8.png" alt="wireframe" /> |
+| <img src="assets/images/cap6/wireframe8.png" alt="wireframe" /> |
 
-| Register |
+| Crear cuenta |
 |----------------------------------|
-| <img src="assets/disenoux/wireframe9.png" alt="wireframe" /> |
+| <img src="assets/images/cap6/wireframe9.png" alt="wireframe" /> |
 
 | Registro de Granja |
 |----------------------------------|
-| <img src="assets/disenoux/wireframe10.png" alt="wireframe" /> |
+| <img src="assets/images/cap6/wireframe10.png" alt="wireframe" /> |
 
-| Sección DashBoard|
+| Sección Inicio|
 |----------------------------------|
-| <img src="assets/disenoux/wireframe11.png" alt="wireframe" /> |
+| <img src="assets/images/cap6/wireframe11.png" alt="wireframe" /> |
 
 | Sección Estanques|
 |----------------------------------|
-| <img src="assets/disenoux/wireframe12.png" alt="wireframe" /> |
+| <img src="assets/images/cap6/wireframe12.png" alt="wireframe" /> |
 
 | Sección Registrar Estanques|
 |----------------------------------|
-| <img src="assets/disenoux/wireframe13.png" alt="wireframe" /> |
+| <img src="assets/images/cap6/wireframe13.png" alt="wireframe" /> |
 
 | Sección Registrar Estanques -   Detalles de Estanque|
 |----------------------------------|
-| <img src="assets/disenoux/wireframe14.png" alt="wireframe" /> |
+| <img src="assets/images/cap6/wireframe14.png" alt="wireframe" /> |
 
 | Sección Equipos |
 |----------------------------------|
-| <img src="assets/disenoux/wireframe15.png" alt="wireframe" /> |
+| <img src="assets/images/cap6/wireframe15.png" alt="wireframe" /> |
 
 | Sección Operadores |
 |----------------------------------|
-| <img src="assets/disenoux/wireframe16.png" alt="wireframe" /> |
+| <img src="assets/images/cap6/wireframe16.png" alt="wireframe" /> |
 
 | Sección Notificaciones |
 |----------------------------------|
-| <img src="assets/disenoux/wireframe17.png" alt="wireframe" /> |
+| <img src="assets/images/cap6/wireframe17.png" alt="wireframe" /> |
 
-| Sección Configuracion |
+| Sección Configuración |
 |----------------------------------|
-| <img src="assets/disenoux/wireframe18.png" alt="wireframe" /> |
+| <img src="assets/images/cap6/wireframe18.png" alt="wireframe" /> |
 
 
 
@@ -3080,7 +3078,88 @@ Se exhiben los esqueletos estructurales de las aplicaciones, detallando la organ
 | 27 | Verificación pública – Verificado | Web App (pública) | Comprador / consumidor | Sello "Verificado", resumen de calidad, línea de tiempo, enlace "Ver prueba de registro" | Móvil primero; "Registro en proceso" si el anclaje está pendiente |
 | 28 | Verificación pública – No válido / Revocado / No encontrado | Web App (pública) | Comprador / consumidor | Sello de estado con color + ícono + texto y motivo | Un solo mensaje claro; enlace a "Contactar al proveedor" |
 
-*(Dibujar las pantallas 19–28 en Figma con el mismo Design System y exportarlas con los nombres wireframe19.png … wireframe28.png. Los textos de la interfaz van en español.)*
+Las pantallas 19–28 están dibujadas en español y exportadas a PNG. Cada una dispone de una variante de 390 px para comprobar su adaptación móvil. Las fuentes editables y los estados alternativos están incluidos en la [galería de diseños](design/package-e/index.html).
+
+
+**Pantalla 19 — Lista de lotes.**
+
+| Escritorio | Móvil responsive |
+| :--- | :--- |
+| <img src="assets/images/cap6/wireframe19.png" alt="Lista de lotes, versión escritorio" width="720" /> | <img src="assets/images/cap6/wireframe19-mobile.png" alt="Lista de lotes, versión móvil" width="240" /> |
+
+
+**Pantalla 20 — Registrar lote.**
+
+| Escritorio | Móvil responsive |
+| :--- | :--- |
+| <img src="assets/images/cap6/wireframe20.png" alt="Registrar lote, versión escritorio" width="720" /> | <img src="assets/images/cap6/wireframe20-mobile.png" alt="Registrar lote, versión móvil" width="240" /> |
+
+
+**Pantalla 21 — Detalle del lote.**
+
+| Escritorio | Móvil responsive |
+| :--- | :--- |
+| <img src="assets/images/cap6/wireframe21.png" alt="Detalle del lote, versión escritorio" width="720" /> | <img src="assets/images/cap6/wireframe21-mobile.png" alt="Detalle del lote, versión móvil" width="240" /> |
+
+
+**Pantalla 22 — Registrar cosecha.**
+
+| Escritorio | Móvil responsive |
+| :--- | :--- |
+| <img src="assets/images/cap6/wireframe22.png" alt="Registrar cosecha, versión escritorio" width="720" /> | <img src="assets/images/cap6/wireframe22-mobile.png" alt="Registrar cosecha, versión móvil" width="240" /> |
+
+
+**Pantalla 23 — Resumen de calidad.**
+
+| Escritorio | Móvil responsive |
+| :--- | :--- |
+| <img src="assets/images/cap6/wireframe23.png" alt="Resumen de calidad, versión escritorio" width="720" /> | <img src="assets/images/cap6/wireframe23-mobile.png" alt="Resumen de calidad, versión móvil" width="240" /> |
+
+
+**Pantalla 24 — Emitir certificado.**
+
+| Escritorio | Móvil responsive |
+| :--- | :--- |
+| <img src="assets/images/cap6/wireframe24.png" alt="Emitir certificado, versión escritorio" width="720" /> | <img src="assets/images/cap6/wireframe24-mobile.png" alt="Emitir certificado, versión móvil" width="240" /> |
+
+
+**Pantalla 25 — Lista de certificados.**
+
+| Escritorio | Móvil responsive |
+| :--- | :--- |
+| <img src="assets/images/cap6/wireframe25.png" alt="Lista de certificados, versión escritorio" width="720" /> | <img src="assets/images/cap6/wireframe25-mobile.png" alt="Lista de certificados, versión móvil" width="240" /> |
+
+
+**Pantalla 26 — Complemento TRACE.**
+
+| Escritorio | Móvil responsive |
+| :--- | :--- |
+| <img src="assets/images/cap6/wireframe26.png" alt="Complemento TRACE, versión escritorio" width="720" /> | <img src="assets/images/cap6/wireframe26-mobile.png" alt="Complemento TRACE, versión móvil" width="240" /> |
+
+
+**Pantalla 27 — Verificación pública: Verificado.**
+
+| Escritorio | Móvil responsive |
+| :--- | :--- |
+| <img src="assets/images/cap6/wireframe27.png" alt="Verificación pública: Verificado, versión escritorio" width="720" /> | <img src="assets/images/cap6/wireframe27-mobile.png" alt="Verificación pública: Verificado, versión móvil" width="240" /> |
+
+
+**Pantalla 28 — Verificación pública: No válido.**
+
+| Escritorio | Móvil responsive |
+| :--- | :--- |
+| <img src="assets/images/cap6/wireframe28.png" alt="Verificación pública: No válido, versión escritorio" width="720" /> | <img src="assets/images/cap6/wireframe28-mobile.png" alt="Verificación pública: No válido, versión móvil" width="240" /> |
+
+
+**Estados y validaciones.** Las vistas adicionales representan el lote activo existente, historial cerrado, requisitos de emisión incompletos, cobertura insuficiente, registro pendiente, certificado revocado o inexistente, fallos de conexión y confirmaciones antes de emitir o revocar. El registro de un hito se dibuja aparte de la cosecha, incluyendo su tipo, fecha y descripción.
+
+![Formulario para registrar un hito](assets/images/cap6/state-register-event.png)
+
+![Emisión bloqueada por requisitos pendientes](assets/images/cap6/state-issue-blocked.png)
+
+![Resultado público de un certificado revocado](assets/images/cap6/state-public-revoked.png)
+
+**Cobertura de historias del capítulo III.** Se agregan vistas complementarias para registrar novedades (US09), invitar operarios (US10), reportar mortalidad (US11), consultar tendencias anuales agregadas (US12), configurar umbrales (US13), contratar la suscripción base (US14), auditar respuestas (US16), controlar limpieza (US17) y revocar certificados (US25). Sus recorridos se presentan en los wireflows 15–23.
 
 ### 6.4.2. Applications Wireflow Diagrams
 
