@@ -169,7 +169,7 @@ El repositorio se organizó con GitFlow. La rama `main` conserva solo versiones 
 
 <div style="text-align: center; margin-top: 1rem; margin-bottom: 1rem;">
 
-![Insights TP1 - Network Graph](./assets/images/insights-tp1-network.png)
+![Insights TP1 - Network Graph](./assets/images/network.png)
 
 *Network: ramas por tarea y su integración en `develop`.*
 
