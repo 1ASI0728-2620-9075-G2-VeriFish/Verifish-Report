@@ -1371,7 +1371,7 @@ En esta sección hemos elaborado nuestro Impact Mapping. Para ello, utilizamos l
 
 <div style="text-align: center; margin-top: 1rem; margin-bottom: 1rem;">
 
-![Impact Mapping - YakuControl](./assets/images/Impactmap.png)
+![Impact Mapping - YakuControl](./assets/images/Impactmapv2.png)
 
 </div>
 
