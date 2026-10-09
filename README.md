@@ -659,7 +659,6 @@ Identificar las fortalezas y debilidades de las soluciones existentes en el merc
 
 ### 2.1.2. Estrategias y tácticas frente a competidores
 
-> ✍️ **REDACTADO** — Estrategia 6 redactada. Revisar coherencia con las estrategias 3–5.
 
 
 A partir del análisis competitivo realizado, se identificaron las siguientes estrategias y tácticas que YakuControl adoptará para diferenciarse y ganar participación de mercado frente a sus competidores:
@@ -708,8 +707,6 @@ Las plataformas de trazabilidad existentes están pensadas para consorcios y emp
 ## 2.2. Entrevistas
 
 ### 2.2.1. Diseño de entrevistas
-
-> ✍️ **REDACTADO** — Preguntas del Segmento 3 redactadas y P11 del Segmento 1 corregida.
 
 
 En esta sección se presenta el conjunto de preguntas diseñadas para la recolección de información de los **tres** segmentos objetivo: Piscicultores, operadores de campo encargados del monitoreo y manejo directo de los estanques; Administradores de piscigranja, dueños y responsables de la gestión del negocio acuícola; y Compradores de supermercado, responsables de la compra y el aseguramiento de calidad de la trucha. Las preguntas aplican buenas prácticas de diseño de entrevistas (preguntas abiertas, no inductivas, de lo general a lo específico) y recopilan la información necesaria para construir arquetipos: características demográficas, dispositivos, canales, objetivos y frustraciones.
@@ -783,9 +780,6 @@ En esta sección se presenta el conjunto de preguntas diseñadas para la recolec
 **Preguntas complementarias (para el arquetipo):** edad, distrito de residencia, formación, tiempo en el cargo, canales digitales que usa a diario, marcas o fuentes de información que consulta, qué lo frustra más de su trabajo y qué espera lograr.
 
 ### 2.2.2. Registro de entrevistas
-
-> ✍️ **REDACTADO** — Plantilla del Segmento 3 lista. Falta: **realizar las entrevistas** (con proxies por ahora), video consolidado en Stream y llenar la plantilla. Verificar que el enlace de SharePoint abra para el docente. (Tarea C2-4)
-
 
 A continuación se presenta el registro de las entrevistas realizadas a representantes de los dos segmentos objetivo identificados para YakuControl: Administradores de piscigranja y Piscicultores.
 
@@ -881,117 +875,174 @@ A continuación se presenta el registro de las entrevistas realizadas a represen
  
 <div style="page-break-after: always;"></div>
 
-
 ---
 
-**Segmento Compradores de supermercado:**
-
-> _Entrevistas pendientes. En esta etapa se realizarán con **proxies** del segmento (p. ej. distribuidores que abastecen a supermercados, jefes de pescadería, administradores de autoservicios) hasta conseguir compradores de supermercado; se declarará esta limitación en el análisis._
+**Segmento Compradores de supermercado:** <br>
 
 **Entrevistado 1**
 
 | Atributo | Detalle |
 |---|---|
-| **Nombre** | (completar) |
-| **Edad** | (completar) |
-| **Sexo** | (completar) |
-| **Distrito** | (completar) |
-| **Ocupación / rol** | (completar) |
-| **Fecha de entrevista** | (completar) |
-| **Timing** | (completar: mm:ss - mm:ss) |
-| **Video** | (enlace de Microsoft Stream) |
-| **Resumen** | (completar: cargo, cómo verifica hoy el origen de un lote, problemas con reclamos o devoluciones, información que querría ver en un certificado, dispositivos y canales, objeciones y disposición a exigirlo; incluir personalidad, marcas o fuentes que consulta, y navegador/dispositivo) |
+| **Nombre** |Sebastián Silva |
+| **Edad** | 25 años |
+| **Sexo** | Masculino|
+| **Distrito** |  San Luis , Lima|
+| **Ocupación / rol** | Responsable de compras de productos frescos |
+| **Fecha de entrevista** | 02/10/2026  |
+| **Timing** | 0:00 - 06:27 |
+| **Video** |[Ver entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202125968_upc_edu_pe/IQA9ROmstnujQofrMar1TZocAX19lCGhUhsjlgEwvVBcYUk?e=WaITrO&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
+| **Resumen** | Sebastián coordina la compra de productos frescos para aproximadamente dos tiendas mediante un centro de distribución en Lima. Selecciona proveedores según calidad, precio, capacidad de abastecimiento y cumplimiento de requisitos sanitarios. Verifica los lotes con documentos de transporte, facturas y registros del proveedor, pero no siempre accede a información sobre la crianza. Ante problemas de temperatura o deterioro, revisa fotografías, registros de recepción e inspecciones para determinar rechazos o reposiciones. Utiliza computadora, celular, correo, WhatsApp y sistemas internos. Considera que el QR facilitaría verificar el origen, atender auditorías e investigar reclamos. Prioriza el acceso sin registro y expresa preocupación por datos incorrectos, costos elevados y falta de integración. El certificado podría convertirse en requisito, complementando los controles sanitarios y de calidad. |
 
-**Entrevistado 2** y **Entrevistado 3**: repetir la misma tabla.
+**Entrevistado 2**  
+| Atributo | Detalle |
+|---|---|
+| **Nombre** | Fabrisio Belahonia|
+| **Edad** | 28 años |
+| **Sexo** | Masculino|
+| **Distrito** | San Juan de Lurigancho, Lima|
+| **Ocupación / rol** | Encargado de compras de productos frescos|
+| **Fecha de entrevista** | 02/10/2026 |
+| **Timing** | 0:00 - 04:52|
+| **Video** |[Ver entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202125968_upc_edu_pe/IQDtTgNb-r-1QZjs2OEqc9SPATKkPZODEdnLvSA395U4NQU?e=G90GQP&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
+| **Resumen** |Fabrisio coordina las compras de pescados y mariscos para aproximadamente tres tiendas en Lima. Evalúa calidad, precio, puntualidad y documentación comercial y sanitaria. Actualmente verifica la procedencia mediante documentos del proveedor, sin acceso directo a registros del agua durante la crianza. Ha rechazado productos por calidad insuficiente, utilizando fotografías y temperaturas de recepción para gestionar devoluciones o reposiciones. Trabaja con laptop, correo, Excel, sistema interno y WhatsApp. Considera útil un QR que muestre proveedor, origen, lote, fechas, condiciones del agua y alertas registradas. Valora consultar sin crear una cuenta y conocer quién ingresó los datos y si hubo correcciones. Preferiría proveedores con mejor información, pero comprobaría la utilidad del certificado antes de exigirlo. |
+
+**Entrevistado 3**
+
+| Atributo | Detalle |
+|---|---|
+| **Nombre** |José Heredia |
+| **Edad** | 27 años |
+| **Sexo** | Masculino|
+| **Distrito** | Santa Anita, Lima |
+| **Ocupación / rol** | Encargado de compras de productos frescos de un supermercado |
+| **Fecha de entrevista** | 03/10/2026  |
+| **Timing** | 0:00 - 05:40 |
+| **Video** |[Ver entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202125968_upc_edu_pe/IQB5NNx403qhSp-_2GQdWJE0AVMY1mmazHAd5L4UclUo17o?e=J76x5g&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
+| **Resumen** | José se encarga de comprar productos frescos para una tienda de supermercado en Lima. Evalúa precios, calidad, puntualidad y documentación comercial y sanitaria. Verifica el origen de las truchas mediante documentos y consultas al proveedor, sin disponer de información detallada sobre las condiciones de crianza. Ante problemas de frescura, utiliza fotografías y registros del lote para coordinar devoluciones o reemplazos. Trabaja con computadora, celular, sistema interno, correo, WhatsApp y Excel. Considera útil consultar mediante QR la piscigranja, el lote, la fecha de cosecha y las condiciones del agua. Valora el acceso sin cuenta, la rapidez y conocer quién registró o modificó los datos. Preferiría proveedores con información confiable, aunque evaluaría la utilidad del certificado antes de exigirlo. |
+
 
 ### 2.2.3. Análisis de entrevistas
-
-> ✍️ **REDACTADO** — Introducción corregida y plantilla del Segmento 3. Falta: llenar n/N y % con las entrevistas reales y la conclusión comparativa. (Tarea C2-5)
-
 
 Las entrevistas a piscicultores y administradores se realizaron entre el 12 y el 21 de abril de 2026 a un total de seis participantes (tres por segmento) en diferentes zonas del Perú. El objetivo fue comprender sus contextos operativos y frustraciones actuales y validar hipótesis sobre la propuesta de valor de YakuControl. Las entrevistas del Segmento 3 (compradores de supermercado) se analizan al final de esta sección.
 
 **Segmento: Piscicultores**
 
-**Total entrevistados:** 3
-**Edades:** 30, 30, 31
-**Distritos:** Cieneguilla (Lima) y , Cascas (La Libertad)
-**Instituciones/Empresas:** Piscigranja negocio normal y familiar
-**Fechas:** 14 de abril de 2026
+**Total entrevistados:** 3  
+**Edades:** 30, 30, 31  
+**Distritos:** Cieneguilla (Lima) y , Cascas (La Libertad)  
+**Instituciones/Empresas:** Piscigranja negocio normal y familiar  
+**Fechas:** 14 de abril de 2026  
 
 **Características objetivas**
-- Aprendieron el oficio de forma empírica o con capacitaciones básicas del Ministerio de la Producción: **3/3 (100%)**
-- Monitorean principalmente temperatura; el oxígeno y pH solo ante anomalías o cuando tienen equipo disponible: **3/3 (100%)**
-- Registran datos en cuaderno físico, celular o Excel de forma manual: **3/3 (100%)**
-- Detectan problemas por el comportamiento visual de los peces (dejan de comer, suben a la superficie): **3/3 (100%)**
-- No utilizan ninguna aplicación digital especializada en su trabajo: **3/3 (100%)**
-- Usan el celular como principal dispositivo de trabajo: **3/3 (100%)**
-- Consideran la limpieza y sedimentación de estanques como una tarea fundamental: **2/3 (67%)**
+
+| Característica objetiva | Resultado (n/N, %) |
+| :--- | :---: |
+| Aprendieron el oficio de forma empírica o con capacitaciones básicas del Ministerio de la Producción. | **3/3 (100%)** |
+| Monitorean principalmente temperatura; el oxígeno y el pH se revisan ante anomalías o cuando tienen equipos disponibles. | **3/3 (100%)** |
+| Registran datos manualmente en cuadernos, celular o Excel. | **3/3 (100%)** |
+| Detectan problemas mediante el comportamiento visual de los peces, como dejar de comer o subir a la superficie. | **3/3 (100%)** |
+| No utilizan aplicaciones digitales especializadas en su trabajo. | **3/3 (100%)** |
+| Usan el celular como principal dispositivo de trabajo. | **3/3 (100%)** |
+| Consideran la limpieza y sedimentación de estanques una tarea fundamental. | **2/3 (67%)** |
 
 **Características subjetivas**
-- Consideran el costo de los equipos como un factor limitante importante para adoptar tecnología: **3/3 (100%)**
-- Valoran que una herramienta sea simple y fácil de usar por encima de otras características: **3/3 (100%)**
-- Les gustaría recibir alertas claras y automáticas ante anomalías en el agua: **3/3 (100%)**
-- Desean ver el estado del agua en tiempo real desde su celular: **3/3 (100%)**
-- Están dispuestos a adoptar YakuControl si simplifica su trabajo diario: **3/3 (100%)**
-- Consideran que las alertas tempranas les permitirían reaccionar antes y evitar pérdidas: **3/3 (100%)**
-- Desean tener visibilidad del ciclo de alimentación de los peces desde su herramienta: **2/3 (67%)**
+
+| Característica subjetiva | Resultado (n/N, %) |
+| :--- | :---: |
+| Consideran el costo de los equipos un factor limitante para adoptar tecnología. | **3/3 (100%)** |
+| Valoran que una herramienta sea simple y fácil de usar por encima de otras características. | **3/3 (100%)** |
+| Les gustaría recibir alertas claras y automáticas ante anomalías en el agua. | **3/3 (100%)** |
+| Desean consultar el estado del agua en tiempo real desde su celular. | **3/3 (100%)** |
+| Están dispuestos a adoptar YakuControl si simplifica su trabajo diario. | **3/3 (100%)** |
+| Consideran que las alertas tempranas les permitirían reaccionar antes y evitar pérdidas. | **3/3 (100%)** |
+| Desean tener visibilidad del ciclo de alimentación de los peces. | **2/3 (67%)** |
 
 **Segmento: Administradores de piscigranja**
 
-**Total entrevistados:** 3
-**Edades:** 47, 45, 48 años
-**Distritos:** Huaraz (Ancash), Concepción (Junín), Pampas (Huancavelica)
-**Instituciones/Empresas:** Piscigranja de truchas y paiches, Piscigranja de truchas, Piscigranja comunidad campesina Mantacra
-**Fechas:** 12 y 21 de abril de 2026
+**Total entrevistados:** 3  
+**Edades:** 47, 45, 48 años  
+**Distritos:** Huaraz (Ancash), Concepción (Junín), Pampas (Huancavelica)  
+**Instituciones/Empresas:** Piscigranja de truchas y paiches, Piscigranja de truchas, Piscigranja comunidad campesina Mantacra   
+**Fechas:** 12 y 21 de abril de 2026  
  
 **Características objetivas**
-- Reciben información del estado de los estanques a través de reportes físicos, fotos de cuadernos o audios de WhatsApp: **3/3 (100%)**
-- No cuentan con ningún sistema digital especializado para monitorear parámetros del agua: **3/3 (100%)**
-- Han sufrido pérdidas económicas por factores climáticos o detección tardía de problemas: **3/3 (100%)**
-- Usan Excel y WhatsApp como únicas herramientas de gestión: **3/3 (100%)**
-- Realizan venta directa al mercado sin procesamiento del producto: **2/3 (67%)**
-- Certifica la sanidad y procedencia de sus especies para cumplir estándares de calidad: **1/3 (33%)**
-- La información que reciben del personal de campo llega con retraso o es difícil de interpretar: **3/3 (100%)**
+
+| Característica objetiva | Resultado (n/N, %) |
+| :--- | :---: |
+| Reciben información sobre los estanques mediante reportes físicos, fotografías de cuadernos o audios de WhatsApp. | **3/3 (100%)** |
+| No cuentan con sistemas digitales especializados para monitorear parámetros del agua. | **3/3 (100%)** |
+| Han sufrido pérdidas económicas por factores climáticos o detección tardía de problemas. | **3/3 (100%)** |
+| Usan Excel y WhatsApp como únicas herramientas de gestión. | **3/3 (100%)** |
+| Realizan venta directa al mercado sin procesamiento del producto. | **2/3 (67%)** |
+| Declara certificar la sanidad y procedencia de sus especies para cumplir estándares de calidad. | **1/3 (33%)** |
+| La información que reciben del personal de campo llega con retraso o resulta difícil de interpretar. | **3/3 (100%)** |
 
 **Características subjetivas**
-- Consideran la temperatura y el oxígeno del agua como los factores más críticos del negocio: **3/3 (100%)**
-- Evalúan contratar una solución tecnológica principalmente según su costo: **3/3 (100%)**
-- Desean recibir alertas automáticas ante cambios críticos en el agua: **3/3 (100%)**
-- Valoran poder monitorear sus estanques de forma remota desde el celular: **3/3 (100%)**
-- Están dispuestos a invertir en tecnología si reduce la mortandad y mejora la rentabilidad: **3/3 (100%)**
-- Valoran la posibilidad de predecir la disponibilidad de agua a futuro: **2/3 (67%)**
-- Priorizarían en una primera etapa monitorear el volumen y temperatura del agua: **3/3 (100%)**
 
-**Conclusión general**
-
-El análisis de entrevistas revela patrones claros y consistentes entre ambos segmentos. Tanto piscicultores como administradores coinciden en que la temperatura, el oxígeno y la calidad del agua son los factores más críticos del negocio acuícola, y que la ausencia de herramientas digitales genera retrasos en la detección de problemas y pérdidas económicas evitables. Los piscicultores priorizan la simplicidad de uso y las alertas en tiempo real desde el celular, mientras que los administradores priorizan la visibilidad remota, la capacidad predictiva del sistema y un costo accesible. Estas necesidades complementarias refuerzan directamente la propuesta de valor de YakuControl como solución IoT que conecta a ambos segmentos en tiempo real, previniendo pérdidas y mejorando la rentabilidad del negocio acuícola peruano.
-
-<div style="page-break-after: always;"></div>
-
+| Característica subjetiva | Resultado (n/N, %) |
+| :--- | :---: |
+| Consideran la temperatura y el oxígeno del agua los factores más críticos del negocio. | **3/3 (100%)** |
+| Evalúan contratar una solución tecnológica principalmente según su costo. | **3/3 (100%)** |
+| Desean recibir alertas automáticas ante cambios críticos en el agua. | **3/3 (100%)** |
+| Valoran monitorear sus estanques de forma remota desde el celular. | **3/3 (100%)** |
+| Están dispuestos a invertir en tecnología si reduce la mortandad y mejora la rentabilidad. | **3/3 (100%)** |
+| Valoran la posibilidad de predecir la disponibilidad de agua a futuro. | **2/3 (67%)** |
+| Priorizarían monitorear el volumen y la temperatura del agua en una primera etapa. | **3/3 (100%)** |
 
 **Segmento: Compradores de supermercado**
 
-**Total entrevistados:** (n) · **Edades:** (…) · **Distritos:** (…) · **Instituciones/empresas:** (…) · **Fechas:** (…)
+**Total entrevistados:** 3  
+**Participantes:** Sebastián Silva, Fabrisio Belahonia y José Heredia.  
+**Edades:** 25, 28 y 27 años, respectivamente.  
+**Distritos de residencia:** San Luis, San Juan de Lurigancho y Santa Anita, Lima.  
+**Instituciones/empresas:** Supermercados cuyos nombres no fueron especificados en las entrevistas.  
+**Roles:** Responsables o encargados de compras de productos frescos, incluidos pescados y truchas.  
+**Cobertura operativa:** Aproximadamente dos tiendas, tres tiendas y una tienda, respectivamente.  
+**Fechas:** 2 y 3 de octubre de 2026.
+
+**Características objetivas**
 
 | Característica objetiva | Resultado (n/N, %) |
-| :--- | :-: |
-| Verifican hoy el origen de un lote con documentos del proveedor | (n/N) |
-| No cuentan con una herramienta digital para verificar condiciones de crianza | (n/N) |
-| Han tenido reclamos, devoluciones o rechazos por calidad o mortandad | (n/N) |
-| Deben responder a auditorías de trazabilidad | (n/N) |
-| Usan el celular como dispositivo principal de trabajo | (n/N) |
-| Se comunican con el proveedor por WhatsApp, llamadas o correo | (n/N) |
+| :--- | :---: |
+| Verifican el origen de los lotes mediante documentos del proveedor, registros de entrega o comprobantes. | **3/3 (100 %)** |
+| No disponen de acceso directo y sistemático a registros detallados de las condiciones del agua durante la crianza. | **3/3 (100 %)** |
+| Evalúan a los proveedores considerando calidad, precio y cumplimiento de las entregas. | **3/3 (100 %)** |
+| Solicitan documentación comercial y sanitaria correspondiente, además de información de procedencia. | **3/3 (100 %)** |
+| Reportan problemas de calidad en entregas y describen procedimientos para evaluar rechazos, devoluciones o reposiciones. | **3/3 (100 %)** |
+| Utilizan fotografías e identificación o registros del lote como evidencia ante problemas de calidad. | **3/3 (100 %)** |
+| Mencionan registros o mediciones de temperatura como evidencia para evaluar productos observados. | **2/3 (67 %)** |
+| Deben disponer de información sobre proveedor, origen, lote y fechas para atender auditorías o controles internos. | **3/3 (100 %)** |
+| Utilizan computadora o laptop y sistemas internos para gestionar compras y consultar información. | **3/3 (100 %)** |
+| Se comunican con proveedores mediante correo electrónico y WhatsApp. | **3/3 (100 %)** |
+| Conocen los códigos QR, pero expresan conocimiento limitado o ausencia de experiencia de trabajo con blockchain. | **3/3 (100 %)** |
+
+**Características subjetivas**
 
 | Característica subjetiva | Resultado (n/N, %) |
-| :--- | :-: |
-| Valoran verificar un lote en segundos escaneando un QR | (n/N) |
-| Confían más en información que no puede modificarse después | (n/N) |
-| Consideran importante ver un resumen de calidad del agua (no solo promedios) | (n/N) |
-| Preferirían o exigirían proveedores con este tipo de certificado | (n/N) |
-| Les preocupa el costo o la complejidad de adoptar una solución | (n/N) |
+| :--- | :---: |
+| Consideran útil consultar rápidamente el origen y el historial de un lote mediante un código QR. | **3/3 (100 %)** |
+| Valoran acceder desde el celular sin crear una cuenta. | **3/3 (100 %)** |
+| Valoran evitar la instalación de una aplicación para consultar el lote. | **2/3 (67 %)** |
+| Desean visualizar primero la procedencia, la identificación del proveedor o piscigranja, el número de lote y las fechas relevantes. | **3/3 (100 %)** |
+| Consideran útil consultar las condiciones del agua durante la crianza para complementar la evaluación del lote. | **3/3 (100 %)** |
+| Perciben que el certificado facilitaría investigar reclamos y reunir información sin solicitar documentos por separado. | **3/3 (100 %)** |
+| Expresan preocupación por información incompleta, incorrecta, desactualizada o cuya procedencia no pueda verificarse. | **3/3 (100 %)** |
+| Consideran que una consulta lenta dificultaría la adopción de la herramienta. | **3/3 (100 %)** |
+| Valoran conocer quién registró los datos y si existieron modificaciones o correcciones. | **2/3 (67 %)** |
+| Mencionan el costo adicional o elevado como una preocupación para adoptar la solución. | **2/3 (67 %)** |
+| Señala la falta de integración con los sistemas actuales como un posible inconveniente. | **1/3 (33 %)** |
+| Considerarían el certificado una ventaja al evaluar o seleccionar proveedores. | **3/3 (100 %)** |
+| Condicionan su exigencia como requisito a comprobar previamente su utilidad. | **3/3 (100 %)** |
 
-*(Completar con los resultados reales de las entrevistas y redactar una conclusión que compare los tres segmentos. Cada porcentaje debe poder rastrearse a una entrevista del registro. Si se usan proxies, indicarlo.)*
+**Conclusión general comparativa**
+
+El análisis de los tres segmentos identifica una necesidad compartida de información oportuna y confiable, aunque su uso cambia según las responsabilidades de cada actor. Los piscicultores requieren conocer el estado de los estanques y recibir alertas comprensibles para responder en campo. Los administradores necesitan consolidar la información operativa, revisar históricos y tomar decisiones sobre la producción. Los compradores de supermercado requieren consultar la procedencia y el historial de los lotes para evaluar entregas, atender reclamos y responder a auditorías.
+
+YakuControl responde a las necesidades de monitoreo y gestión de los dos primeros segmentos, mientras que YakuTrace amplía el uso de esa información hacia la verificación comercial. Las entrevistas del tercer segmento respaldan una consulta mediante QR, accesible desde el celular y sin registro, que priorice la identificación del lote, su origen y las condiciones documentadas durante la crianza.
+
+Los resultados orientan el diseño de la solución, pero todavía no demuestran una reducción de mortalidad, reclamos o tiempos de verificación. Estos efectos deberán evaluarse mediante pruebas y pilotos posteriores con tareas y métricas definidas.
+
+<div style="page-break-after: always;"></div>
 
 ## 2.3. Needfinding
 
@@ -1030,16 +1081,31 @@ Es la responsable de la gestión y toma de decisiones, quienes supervisan la pro
 
 **User persona: Comprador de supermercado**
 
-_(Pendiente: ficha en UXPressia con datos de las entrevistas. Tarea C2-6)_
+Representa a los responsables de compras de productos frescos que seleccionan proveedores de trucha, coordinan el abastecimiento y revisan la documentación de los lotes, en colaboración con las áreas de recepción y calidad.
+
+<p align="center">
+  <img src="https://i.imgur.com/MgYpYA0.png" width="65%">
+  <br>
+  <i>User Persona – Comprador de supermercado</i>
+</p>
+
+<div style="page-break-after: always;"></div>
+
 
 ### 2.3.2. User Task Matrix
 
-> ✍️ **REDACTADO** — Cuadro único redactado con las 3 personas. Falta: **validar con las entrevistas** los valores del comprador (marcados con \*). (Tarea C2-7)
 
+En esta sección se presentan las tareas que los User Persona representativos de cada segmento realizan para cumplir sus metas, **independientemente de la existencia de una solución de software**. Se consideran tres User Persona: José Guevara (piscicultor de campo), Pedro Alvarado (administrador de piscigranja) y Daniel Torres (comprador de supermercado). (\*).
 
-En esta sección se presentan las tareas que los User Persona representativos de cada segmento realizan para cumplir sus metas, **independientemente de la existencia de una solución de software**. Se consideran tres User Persona: José Guevara (piscicultor de campo), Pedro Alvarado (administrador de piscigranja) y el comprador de supermercado. Los valores del comprador provienen de la hipótesis inicial y se ajustarán con el análisis de entrevistas (\*).
+**Criterios de clasificación:**
 
-| **Tarea** | **José Guevara (Piscicultor)**<br>Frecuencia | **José**<br>Importancia | **Pedro Alvarado (Administrador)**<br>Frecuencia | **Pedro**<br>Importancia | **Comprador de supermercado**<br>Frecuencia\* | **Comprador**<br>Importancia\* |
+- **Always:** actividad habitual dentro del proceso correspondiente, como revisar documentos durante la recepción de un lote; no significa necesariamente que se realice todos los días.
+- **Sometimes:** actividad periódica o condicionada a un evento, como seleccionar un nuevo proveedor, atender una devolución o responder a una auditoría.
+- **High:** tarea crítica para la operación, la calidad, la trazabilidad o la toma de decisiones.
+- **Medium:** tarea de apoyo que contribuye a la coordinación y eficiencia.
+- **—:** tarea que no corresponde a las responsabilidades principales del perfil.
+
+| **Tarea** | **José Guevara (Piscicultor)**<br>Frecuencia | **José**<br>Importancia | **Pedro Alvarado (Administrador)**<br>Frecuencia | **Pedro**<br>Importancia | **Daniel Torres (Comprador de supermercado)**<br>Frecuencia | **Daniel**<br>Importancia |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Medir manualmente la temperatura del agua en los estanques | Always | High | — | — | — | — |
 | Registrar parámetros del agua manualmente | Always | High | — | — | — | — |
@@ -1048,8 +1114,8 @@ En esta sección se presentan las tareas que los User Persona representativos de
 | Verificar el volumen y caudal de agua disponible | Always | High | Always | High | — | — |
 | Evaluar la turbidez y calidad del agua | Always | High | Always | High | — | — |
 | Limpiar y dar mantenimiento a los estanques | Sometimes | Medium | — | — | — | — |
-| Reportar y revisar el estado de los estanques (documento físico o WhatsApp) | Sometimes | High | Always | High | — | — |
-| Reaccionar ante una emergencia o mortalidad en el agua (actuar o decidir) | Sometimes | High | Sometimes | High | — | — |
+| Reportar y revisar el estado de los estanques mediante documentos físicos o WhatsApp | Sometimes | High | Always | High | — | — |
+| Reaccionar ante una emergencia o mortalidad en los estanques | Sometimes | High | Sometimes | High | — | — |
 | Coordinar con otros trabajadores de campo | Sometimes | Medium | — | — | — | — |
 | Anotar el consumo de alimento por estanque | Always | Medium | — | — | — | — |
 | Verificar que los peces estén sanos y sin enfermedades | Always | High | — | — | — | — |
@@ -1057,22 +1123,35 @@ En esta sección se presentan las tareas que los User Persona representativos de
 | Controlar los costos operativos y la rentabilidad de la piscigranja | — | — | Always | High | — | — |
 | Planificar los ciclos de producción y las fechas de cosecha | — | — | Sometimes | High | — | — |
 | Supervisar el desempeño del personal de campo | — | — | Sometimes | High | — | — |
-| Evaluar el impacto de factores externos (sequías, Fenómeno del Niño) | — | — | Sometimes | High | — | — |
+| Evaluar el impacto de factores externos, como sequías o el Fenómeno del Niño | — | — | Sometimes | High | — | — |
 | Proyectar la disponibilidad de agua para los próximos meses | — | — | Sometimes | High | — | — |
-| Negociar con la contraparte comercial (compradores o proveedores) | — | — | Sometimes | High | Always | High |
-| Verificar la procedencia y sanidad de los lotes para certificación | — | — | Sometimes | High | Always | High |
+| Negociar precios y condiciones con compradores o proveedores | — | — | Sometimes | High | Sometimes | High |
+| Revisar la procedencia y la documentación sanitaria de los lotes | — | — | Sometimes | High | Always | High |
 | Evaluar y seleccionar proveedores de trucha | — | — | — | — | Sometimes | High |
-| Solicitar y revisar la documentación sanitaria y de trazabilidad del proveedor | — | — | — | — | Always | High |
-| Recibir y aceptar o rechazar lotes de trucha | — | — | — | — | Always | High |
-| Atender reclamos o devoluciones por calidad o mortandad | — | — | — | — | Sometimes | High |
+| Solicitar y revisar la documentación comercial y de trazabilidad del proveedor | — | — | — | — | Always | High |
+| Coordinar cantidades, fechas y condiciones de entrega | — | — | — | — | Always | High |
+| Coordinar con recepción y calidad la evaluación y aceptación o rechazo de los lotes | — | — | — | — | Always | High |
+| Registrar o consultar el proveedor, número de lote, fecha de recepción y destino de los productos | — | — | — | — | Always | High |
+| Atender reclamos, rechazos o devoluciones por problemas de calidad | — | — | — | — | Sometimes | High |
+| Reunir fotografías, documentos de recepción y otras evidencias ante una observación | — | — | — | — | Sometimes | High |
 | Responder a auditorías sobre la trazabilidad de productos frescos | — | — | — | — | Sometimes | High |
-| Comunicarse con el proveedor ante un problema (llamada, correo o WhatsApp) | — | — | — | — | Sometimes | Medium |
+| Comunicarse con el proveedor para aclarar observaciones y coordinar devoluciones o reposiciones | — | — | — | — | Sometimes | High |
 
-Las tareas de mayor frecuencia e importancia para José Guevara son la medición del agua, el registro de estos datos y la alimentación diaria, actividades repetitivas y críticas que realiza sin apoyo tecnológico. Para Pedro Alvarado destacan la revisión del reporte y el control de costos, lo que evidencia su dependencia de información de segunda mano. Para el comprador de supermercado destacan la verificación del origen y de la documentación del proveedor y la recepción de lotes, tareas que hoy dependen de documentos que pueden modificarse. La coincidencia más relevante entre los tres es la **necesidad de contar con información confiable y oportuna sobre el estado y el origen de los lotes**: José debe reaccionar en campo, Pedro debe decidir y el comprador debe verificar y aceptar. Esto refuerza la propuesta de YakuControl para conectar a los dos primeros en tiempo real y de YakuTrace para entregar al tercero evidencia verificable.
+**Sustento de las tareas del comprador**
+
+Las tres entrevistas describen la revisión de documentos del proveedor y la evaluación de calidad, precio y cumplimiento de entregas como parte del proceso habitual de compra. Por ello, la revisión documental y la coordinación del abastecimiento se clasifican como **Always / High**. La selección de nuevos proveedores y la negociación de condiciones se clasifican como **Sometimes / High**, al corresponder a decisiones que se realizan cuando es necesario incorporar o reevaluar proveedores.
+
+La atención de reclamos, la recopilación de evidencias y la coordinación de devoluciones se clasifican como **Sometimes / High**, porque se activan ante problemas de calidad. La comunicación con el proveedor en estos casos tiene importancia alta, ya que permite resolver la observación y acordar una respuesta. Las auditorías también se consideran actividades periódicas de importancia alta por su relación con la trazabilidad.
+
+**Análisis de la matriz**
+
+Las tareas de mayor frecuencia e importancia para José Guevara se concentran en la medición del agua, la alimentación y la revisión de los peces. Para Pedro Alvarado destacan la supervisión de los estanques, la revisión de reportes y el control de costos, actividades que requieren información del personal de campo.
+
+Para Daniel Torres sobresalen la revisión de la procedencia y documentación de los lotes, la coordinación de entregas y la evaluación conjunta con recepción y calidad. Las entrevistas muestran que actualmente estas tareas se apoyan en documentos, sistemas internos y comunicaciones con el proveedor, sin acceso directo y sistemático a las condiciones del agua durante la crianza.
+
+Los tres perfiles necesitan **información confiable y oportuna**, aunque la utilizan con fines distintos: José actúa en campo, Pedro gestiona la producción y Daniel evalúa el abastecimiento y la trazabilidad comercial. Esta relación orienta la propuesta de YakuControl para el monitoreo y la gestión, y de YakuTrace para facilitar la consulta del historial registrado de los lotes, como evidencia complementaria a los controles sanitarios y de calidad.
 
 ### 2.3.3. Empathy Mapping
-
-> ✍️ **REDACTADO** — Proceso redactado. Falta (herramienta): 3.er Empathy Map en UXPressia y verificar los dos existentes. (Tarea C2-8)
 
 
 Se elaboraron los Empathy Maps para los dos User Personas identificados. Este proceso permitió comprender mejor lo que dicen, piensan, hacen y sienten en su día a día, identificando sus principales pains y gains para diseñar una solución que realmente responda a las necesidades del sector acuícola peruano.
@@ -1098,38 +1177,47 @@ Se elaboraron los Empathy Maps para los dos User Personas identificados. Este pr
 
 <div style="page-break-after: always;"></div>
 
+- Empathy mapping de Comprador de supermercado
+
+<p align="center">
+  <img src="https://i.imgur.com/rKfKbl3.png" width="75%">
+  <br>
+  <i>Empathy mapping – Comprador de supermercado</i>
+</p>
+
+<div style="page-break-after: always;"></div>
 
 **Proceso de elaboración.** Para cada User Persona se preparó un tablero en UXPressia con la persona al centro. Cada integrante colocó de forma individual sus observaciones sobre lo que la persona dice, ve, hace y escucha, y cómo se siente y piensa, a partir de las entrevistas y la observación de su contexto. Luego el equipo agrupó las observaciones repetidas e identificó los *pains* (qué le preocupa) y los *gains* (qué puede ayudar a resolver sus problemas y qué lo convencería de que somos la alternativa correcta).
 
-**Empathy mapping de Comprador de supermercado**
-
-_(Pendiente: UXPressia. Tarea C2-8)_
 
 ### 2.3.4. As-is Scenario Mapping
 
-> ✍️ **REDACTADO** — Proceso redactado. Falta (herramienta): rehacer los 2 mapas y crear el 3.º en Miro/LucidChart con filas Phases/Doing/Thinking/Feeling. (Tarea C2-9)
+El As-is Scenario Mapping representa la experiencia actual de los usuarios para cumplir sus objetivos, antes de utilizar YakuControl o YakuTrace. Se consideran tres User Persona: José Guevara, piscicultor; Pedro Alvarado, administrador de piscigranja; y Daniel Torres, comprador de supermercado.
+
+Los mapas se construyen a partir de las actividades y dificultades descritas en las entrevistas. Cada escenario organiza sus fases como columnas e incluye las filas **Phases, Doing, Thinking y Feeling**, permitiendo relacionar las acciones del usuario con sus preocupaciones y emociones. Las filas Thinking y Feeling representan interpretaciones del equipo y no citas textuales de los participantes.
 
 
-En esta sección se presentan los User Journey Maps para cada uno de los User Persona identificados. Estos mapas representan la experiencia actual de los usuarios sin la existencia de YakuControl, con el objetivo de identificar sus principales puntos de dolor, frustraciones y oportunidades de mejora.
+- As-is Scenario Mapping de Pedro Alvarado
 
-- User Journey Map de Pedro Alvarado
-
-![User Journey Map – Administradores de piscigranjas](./assets/images/user-journey-map-administrador.png)
-
-<div style="page-break-after: always;"></div>
-
-- User Journey Map de José Guevara
-
-![User Journey Map – Piscicultores](./assets/images/user-journey-map-piscicultor.png)
+![As-is Scenario Mapping – Administradores de piscigranjas](https://i.imgur.com/q4KMtfX.png)
 
 <div style="page-break-after: always;"></div>
 
+- As-is Scenario Mapping de José Guevara
 
-**Proceso de elaboración.** Para cada User Persona se construyó un As-is Scenario Map en Miro/LucidChart. Tras la preparación y una lluvia de ideas individual, el equipo revisó las ideas e identificó las **fases** del escenario actual (columnas), las nombró y completó para cada una las filas **Phases, Doing, Thinking y Feeling**. Finalmente se etiquetaron las áreas **positivas** y **negativas** para el usuario y las *blank areas*, es decir, aquello sobre lo que se necesita aprender más. Los mapas parten de los *journey maps* elaborados en la entrega anterior y se rehicieron con el formato del enunciado.
+![As-is Scenario Mapping – Piscicultores](https://i.imgur.com/vcBknWC.png)
 
-**As-is Scenario Map de Comprador de supermercado**
+<div style="page-break-after: always;"></div>
 
-_(Pendiente: Miro/LucidChart. Tarea C2-9)_
+- As-is Scenario Mapping de Daniel Torres
+
+![As-is Scenario Mapping – Comprador de supermercado](https://i.imgur.com/UxRoxfM.png)
+
+<div style="page-break-after: always;"></div>
+
+[Link del Miro](https://miro.com/welcomeonboard/SWQ4UUpYdlFSYTdCNEErcTQ2VzRqNU1BZk54eStDOFR6TnhmRTJCK2FWVWJXQ0ltTmtXYm9RUFJwSHF2eWIvNUxzeERCcXRhM1M3L1pXdE5ERGpqVTNrcUM4YWVONEZMTWZvVWFiVFl3dVdpb3AwTTVQQ2MzbTNxNkdLSWh4WEJBS2NFMDFkcUNFSnM0d3FEN050ekl3PT0hdjE=?share_link_id=826222577249)
+
+**Proceso de elaboración.** Para cada User Persona se construyó un As-is Scenario Map en Miro. Tras la preparación y una lluvia de ideas individual, el equipo revisó las ideas e identificó las **fases** del escenario actual (columnas), las nombró y completó para cada una las filas **Phases, Doing, Thinking y Feeling**. Finalmente se etiquetaron las áreas **positivas** y **negativas** para el usuario y las *blank areas*, es decir, aquello sobre lo que se necesita aprender más. Los mapas parten de los *journey maps* elaborados en la entrega anterior y se rehicieron con el formato del enunciado.
 
 ## 2.4. Ubiquitous Language
 
@@ -1184,9 +1272,6 @@ El Lenguaje Ubicuo (*Ubiquitous Language*) de YakuControl + YakuTrace es el voca
 # Capítulo III: Requirements Specification
 ## 3.1. To-Be Scenario Mapping
 
-> ✍️ **REDACTADO** — Introducción y tabla de cambios redactadas. Falta (herramienta): los 3 mapas To-Be en Miro/LucidChart. (Tarea C3-1)
-
-
 Esta sección presenta el escenario futuro de cada User Persona una vez que utiliza YakuControl y YakuTrace. Para cada uno se elaboró un To-Be Scenario Map en Miro/LucidChart con las filas **Phases, Doing, Thinking y Feeling**. El proceso incluyó la preparación, una lluvia de ideas individual, la revisión de las ideas, la identificación y denominación de las fases y la **comparación con el As-is Scenario Map** para identificar qué cambios aporta la solución.
 
 **Cambios principales respecto del escenario actual**
@@ -1197,13 +1282,37 @@ Esta sección presenta el escenario futuro de cada User Persona una vez que util
 | Pedro Alvarado (Administrador) | Recibe reportes físicos, fotos de cuadernos o audios y decide con información tardía. | Consulta un panel con el estado de todos sus estanques, el historial y el resumen de calidad por lote, y emite certificados al cosechar. | Decide con datos en tiempo real y cuenta con evidencia para respaldar sus lotes ante compradores. |
 | Comprador de supermercado | Verifica el origen con documentos y declaraciones del proveedor. | Escanea el QR del lote y ve el historial, el resumen de calidad y la verificación de integridad. | Verifica en segundos con evidencia que no puede modificarse después de emitida. |
 
-![To-Be Scenario Map - Piscicultor](./assets/images/tobe-piscicultor.png)
+- To-Be Scenario Map - Piscicultor
 
-![To-Be Scenario Map - Administrador](./assets/images/tobe-administrador.png)
+![To-Be Scenario Map - Piscicultor](https://i.imgur.com/Q0578Fw.png)
 
-![To-Be Scenario Map - Comprador de supermercado](./assets/images/tobe-comprador.png)
+**Comparación con el As-is**
 
-*(Insertar las capturas de los tres mapas elaborados en Miro/LucidChart y el enlace al tablero.)*
+La consulta de lecturas complementa la observación durante las rondas y reduce la necesidad de transcribir datos. Las alertas permiten identificar desviaciones de las variables monitoreadas, mientras que el registro de atención facilita comunicar lo ocurrido al administrador.
+
+La solución conserva la inspección física y la intervención del operario. La consulta de datos almacenados no equivale a monitoreo actualizado; la recepción de alertas y el control remoto requieren conectividad. Registrar una alerta como atendida tampoco significa que la condición del agua esté resuelta.
+
+- To-Be Scenario Map - Administrador
+
+![To-Be Scenario Map - Administrador](https://i.imgur.com/2D5xIVS.png)
+
+**Comparación con el As-is**
+
+El panel reúne información que actualmente llega mediante documentos y mensajes, facilitando la revisión de los estanques y la coordinación con el personal. La gestión de lotes organiza los hitos y los resúmenes del agua para su consulta durante el ciclo.
+
+YakuTrace incorpora un documento con QR y una comprobación de integridad. El administrador debe distinguir un certificado con anclaje pendiente de uno confirmado. El certificado respalda el contenido registrado, pero no garantiza por sí mismo la exactitud de los datos de origen ni la calidad sanitaria del producto.
+
+- To-Be Scenario Map - Comprador de supermercado
+
+![To-Be Scenario Map - Comprador de supermercado](https://i.imgur.com/d9QmKsk.png)
+
+**Comparación con el As-is**
+
+La página pública reúne información que actualmente debe solicitarse por separado al proveedor. El acceso sin registro responde a la necesidad de consultar durante la recepción sin añadir pasos innecesarios.
+
+La verificación permite comprobar la integridad del contenido anclado, pero no sustituye la revisión sanitaria ni la inspección del producto. Daniel debe contrastar el QR con la mercancía y sus documentos. Un certificado revocado, pendiente o no verificable requiere aclaración; no determina automáticamente la aceptación o rechazo del lote.
+
+[Link del Miro](https://miro.com/welcomeonboard/SWQ4UUpYdlFSYTdCNEErcTQ2VzRqNU1BZk54eStDOFR6TnhmRTJCK2FWVWJXQ0ltTmtXYm9RUFJwSHF2eWIvNUxzeERCcXRhM1M3L1pXdE5ERGpqVTNrcUM4YWVONEZMTWZvVWFiVFl3dVdpb3AwTTVQQ2MzbTNxNkdLSWh4WEJBS2NFMDFkcUNFSnM0d3FEN050ekl3PT0hdjE=?share_link_id=826222577249)
 
 ## 3.2. User Stories
 
