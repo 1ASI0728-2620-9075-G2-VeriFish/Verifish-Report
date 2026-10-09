@@ -1344,8 +1344,6 @@ El alcance abarca el hardware Edge, un **backend en monolito modular** organizad
 
 ### 4.1.2. Attribute-Driven Design Inputs
 #### 4.1.2.1. Primary Functionality (Primary User Stories)
-
-
 Del Product Backlog (sección 3.4) se seleccionaron como **funcionalidad primaria** las historias con mayor impacto sobre la arquitectura: aquellas que ejercitan el flujo central de valor (ingesta de telemetría, alertas, control de actuadores), el modelo de negocio (pago y complemento TRACE) y la trazabilidad (emisión de certificados, anclaje, verificación pública y cierre de resúmenes). En conjunto involucran a los seis Bounded Contexts. Por brevedad se muestra el escenario principal de cada historia; el detalle completo está en la sección 3.2.
 
 | Epic / User Story ID | Título | Descripción | Criterios de Aceptación | Relacionado con (Epic ID) |
@@ -1931,10 +1929,6 @@ Convenciones aplicadas en todos los contextos:
 Los diagramas de componentes (C4 nivel 3) se elaboraron en **Structurizr**, los diagramas de clases (UML) y de base de datos en **LucidChart/Vertabelo** a partir de los modelos aquí descritos.
 
 ## 5.1. Bounded Context: Telemetry Context
-
-> ✍️ **REDACTADO** — Sección redactada (tablas por capa) con diagramas generados en `assets/images/cap5/`. Revisar contra el diseño real del backend.
-
-
 El Telemetry Context es el núcleo técnico de YakuControl. Recibe las lecturas que el Edge API ya filtró y firmó, las valida contra el rango óptimo de la especie, las persiste como serie temporal inmutable, detecta lecturas fuera de rango y, desde YakuTrace, **cierra resúmenes de calidad del agua** por día, semana, mes y ciclo, que alimentan los certificados de trazabilidad. El Índice de Calidad del Agua (ICA) lo calcula el Edge API; el backend **no lo recalcula**: solo lo agrega y lo congela.
 
 ### 5.1.1. Domain Layer
@@ -2014,10 +2008,6 @@ El diagrama muestra los dos agregados, sus entidades y Value Objects, las factor
 El esquema `telemetry` contiene: `monitored_ponds` (estanque monitoreado y estado), `optimal_ranges` (rango por variable, único por estanque), `validated_metrics` (serie temporal, clave `(metric_id, measured_at)`) y `quality_summaries` (resúmenes por periodo, únicos por estanque-periodo-inicio). Todas las tablas hijas referencian a `monitored_ponds` mediante clave foránea.
 
 ## 5.2. Bounded Context: Traceability Context
-
-> ✍️ **REDACTADO** — Sección redactada (tablas por capa) con diagramas generados en `assets/images/cap5/`. Revisar contra el diseño real del backend.
-
-
 Traceability es el contexto **nuevo y core** de YakuTrace. Gestiona el ciclo de vida del **lote** (siembra, hitos, cosecha), congela los resúmenes de calidad del agua que Telemetry cierra y emite el **Certificado de Trazabilidad y Calidad del Agua** con un código QR. Para que el certificado sea verificable, calcula una huella digital (SHA-256) de su contenido canónico y la ancla en un **smart contract** (`TraceabilityRegistry`). En la blockchain solo se guardan hashes; los datos completos permanecen en PostgreSQL. La verificación pública recalcula el hash y lo compara con el registrado. El contexto no afirma que los peces hayan sido "bien cuidados": certifica que **las condiciones medidas fueron registradas sin alteración posterior**.
 
 ### 5.2.1. Domain Layer
@@ -2041,7 +2031,7 @@ Traceability es el contexto **nuevo y core** de YakuTrace. Gestiona el ciclo de 
 | `BatchRepository`, `CertificateRepository`, `FarmTraceEntitlementRepository` | Repository (interfaces) | Persistencia de los agregados. | — | `save()`, `findById()`, `findByPublicCode()`, `findActiveByPond()` |
 | `MilestoneRecordedEvent`, `CertificateIssuedEvent`, `CertificateRevokedEvent` | Domain Events | Informan a otros contextos y activan el anclaje. | — | — |
 
-### 5.2.2. Interface Layer
+### 5.2.2. Interface Layer 
 
 | Clase | Tipo | Propósito |
 | :--- | :--- | :--- |
@@ -2106,14 +2096,9 @@ El esquema `traceability` contiene: `batches` (lote y datos de cosecha), `milest
 
 
 ## 5.3. Bounded Context: Equipment Context
-
-> ✍️ **REDACTADO** — Sección redactada (tablas por capa) con diagramas generados en `assets/images/cap5/`. Revisar contra el diseño real del backend.
-
-
 Equipment gestiona la **realidad física** de la piscigranja: estanques, equipos (sensores y actuadores), la vinculación entre ambos y el historial de piscicultores asignados. Es un contexto de soporte: no procesa datos de los sensores, solo sabe qué hardware está en qué estanque.
 
 ### 5.3.1. Domain Layer
-
 | Clase | Tipo | Propósito y reglas de negocio | Atributos clave | Métodos clave |
 | :--- | :--- | :--- | :--- | :--- |
 | `Pond` | Aggregate Root | Estanque de crianza. Regla: el nombre es único dentro de la granja; solo un piscicultor responsable a la vez (la asignación anterior se cierra). | `pondId`, `farmId`, `name`, `capacityLiters`, `status`, `certifiedForProduction`, `assignedFarmerId` | `assignFishFarmer()`, `certifyForProduction()`, `deactivate()` |
@@ -2126,10 +2111,7 @@ Equipment gestiona la **realidad física** de la piscigranja: estanques, equipos
 | `PondRepository`, `EquipmentRepository` | Repository (interfaces) | Persistencia. | — | `findById()`, `findByFarm()`, `findByPond()` |
 | `PondRegisteredEvent`, `EquipmentLinkedEvent`, `FishFarmerAssignedEvent`, `EquipmentWentOfflineEvent` | Domain Events | Consumidos por Telemetry, IAM y Notification. | — | — |
 
-> _Nota de diseño:_ el agregado `Pond` de Equipment es la **fuente de identidad** del estanque; Telemetry usa `MonitoredPond` (otro modelo del mismo `pondId`), lo que evita que dos contextos compartan una misma clase.
-
 ### 5.3.2. Interface Layer
-
 | Clase | Tipo | Propósito |
 | :--- | :--- | :--- |
 | `PondController` | Controller | Alta de estanques, consulta por granja, asignación de piscicultor y certificación para producción. |
@@ -2170,9 +2152,6 @@ Equipment gestiona la **realidad física** de la piscigranja: estanques, equipos
 El esquema `equipment` define `ponds` (único por granja y nombre), `pond_assignments` (historial, FK a `ponds`) y `equipments` (con `hardware_id` único y FK opcional al estanque al que está vinculado).
 
 ## 5.4. Bounded Context: IAM Context
-
-> ✍️ **REDACTADO** — Sección redactada (tablas por capa) con diagramas generados en `assets/images/cap5/`. Revisar contra el diseño real del backend.
-
 
 IAM gestiona identidades, roles y acceso. Es un contexto genérico que otros contextos consumen como **Open Host Service**: emite y valida JWT con el identificador de la granja (aislamiento multi-tenant) y administra la **Farm Key** con la que el Edge API se autentica. La **verificación pública del QR no requiere sesión**; en cambio, emitir o revocar certificados exige `ROLE_ADMIN` de la granja dueña del lote.
 
@@ -2234,10 +2213,6 @@ IAM gestiona identidades, roles y acceso. Es un contexto genérico que otros con
 El esquema `iam` contiene `users` (email único, rol validado), `pond_tokens` (código único, FK al administrador que lo emitió) y `farm_keys` (hash de la credencial por granja).
 
 ## 5.5. Bounded Context: Notification Context
-
-> ✍️ **REDACTADO** — Sección redactada (tablas por capa) con diagramas generados en `assets/images/cap5/`. Revisar contra el diseño real del backend.
-
-
 Notification es el contexto reactivo de YakuControl: convierte eventos del dominio (lectura fuera de rango, equipo fuera de línea, certificado emitido) en **alertas** entregadas por push (Firebase Cloud Messaging) y correo (SMTP), y ejecuta **acciones de emergencia** sobre los actuadores (aireador, filtros) a través del Edge API. También registra cuándo un operario atendió una alerta, dato que alimenta el tiempo de respuesta de los resúmenes de calidad.
 
 ### 5.5.1. Domain Layer
@@ -2306,10 +2281,6 @@ Notification es el contexto reactivo de YakuControl: convierte eventos del domin
 El esquema `notification` contiene `recipients`, `notifications` (FK al destinatario), `sensor_data` (uno por notificación), `emergency_actions` (órdenes a actuadores) y `notification_deliveries` (intentos por canal para los reintentos).
 
 ## 5.6. Bounded Context: Payment Context
-
-> ✍️ **REDACTADO** — Sección redactada (tablas por capa) con diagramas generados en `assets/images/cap5/`. Revisar contra el diseño real del backend.
-
-
 Payment gestiona el modelo SaaS: suscripciones por granja, facturación recurrente mediante Stripe y, desde YakuTrace, el **add-on TRACE** que habilita la emisión de certificados. Es un contexto genérico: delega el cobro a Stripe a través de un adaptador y notifica a IAM (acceso) y a Traceability (permiso TRACE) mediante eventos.
 
 ### 5.6.1. Domain Layer
