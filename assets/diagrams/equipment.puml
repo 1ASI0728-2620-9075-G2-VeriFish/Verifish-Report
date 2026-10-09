@@ -1,0 +1,179 @@
+@startuml
+skinparam classBackgroundColor #FAFAFA
+skinparam classBorderColor #555555
+skinparam linetype ortho
+
+title Domain Layer Class Diagram — Equipment Context
+
+rectangle " " {
+
+    ' ===================== AGGREGATES =====================
+    class "Pond" <<(A, #27D3F5) Aggregate Root>> {
+      - id : Long
+      - farmId : Long
+      - pondName : PondName
+      - volume : double
+      - unit : String
+      - status : PondStatus
+      - assignedFishFarmerId : Long
+      + Pond(command : CreatePondCommand)
+      + assignFishFarmer(fishFarmerId : Long) : void
+      + unassignFishFarmer() : void
+      + certifyForProduction() : void
+      + isReadyForProduction() : boolean
+    }
+
+    class "Equipment" <<(A, #27D3F5) Aggregate Root>> {
+      - id : Long
+      - pondId : Long
+      - type : EquipmentType
+      - status : EquipmentStatus
+      + Equipment(command : RegisterEquipmentCommand)
+      + linkToPond(pondId : Long) : void
+      + unlink() : void
+      + isLinked() : boolean
+    }
+
+class "PondAssignment" <<(A, #27D3F5) Aggregate Root>> {
+  - id : Long
+  - pondId : Long
+  - fishFarmerId : Long
+  - assignedAt : Timestamp
+  - unassignedAt : Timestamp
+  + PondAssignment(command : AssignFishFarmerCommand)
+  + unassign() : void
+  + isActive() : boolean
+}
+
+    ' ===================== COMMANDS =====================
+    class "CreatePondCommand" <<(C, #BA68C8) Command>> {
+      + farmId : Long
+      + pondName : PondName
+      + volume : double
+      + unit : String
+    }
+
+    class "AssignFishFarmerCommand" <<(C, #BA68C8) Command>> {
+      + pondId : Long
+      + fishFarmerId : Long
+    }
+
+    class "CertifyPondCommand" <<(C, #BA68C8) Command>> {
+      + pondId : Long
+    }
+
+    class "RegisterEquipmentCommand" <<(C, #BA68C8) Command>> {
+      + type : EquipmentType
+    }
+
+    class "LinkEquipmentToPondCommand" <<(C, #BA68C8) Command>> {
+      + equipmentId : Long
+      + pondId : Long
+    }
+
+    ' ===================== QUERIES =====================
+    class "GetPondByIdQuery" <<(Q, #C5E1A5) Query>> {
+      + pondId : Long
+    }
+
+    class "GetPondsByFarmIdQuery" <<(Q, #C5E1A5) Query>> {
+      + farmId : Long
+    }
+
+    class "GetEquipmentByPondIdQuery" <<(Q, #C5E1A5) Query>> {
+      + pondId : Long
+    }
+
+class "GetAssignmentsByPondIdQuery" <<(Q, #C5E1A5) Query>> {
+  + pondId : Long
+}
+
+    ' ===================== DOMAIN EVENT =====================
+    class "FishFarmerAssignedEvent" <<(E, #FFB74D) Domain Event>> {
+      + pondId : Long
+      + fishFarmerId : Long
+      + FishFarmerAssignedEvent(pondId : Long, fishFarmerId : Long)
+    }
+
+    ' ===================== VALUE OBJECTS =====================
+    class "PondName" <<(V, #FFD700) Value Object>> {
+      - name : String
+    }
+
+    class "PondStatus" <<(V, #FFD700) Value Object>> {
+      ACTIVE
+      INACTIVE
+      FULL
+    }
+
+    class "EquipmentType" <<(V, #FFD700) Value Object>> {
+      SENSOR
+      ACTUATOR
+    }
+
+    class "EquipmentStatus" <<(V, #FFD700) Value Object>> {
+      AVAILABLE
+      LINKED
+    }
+
+    ' ===================== DOMAIN SERVICES =====================
+    class "PondCommandService" <<(S, #FF8A65) Domain Service>> {
+      + handle(command : CreatePondCommand) : Optional<Pond>
+      + handle(command : AssignFishFarmerCommand) : void
+      + handle(command : CertifyPondCommand) : void
+    }
+
+    class "PondQueryService" <<(S, #FF8A65) Domain Service>> {
+      + handle(query : GetPondByIdQuery) : Optional<Pond>
+      + handle(query : GetPondsByFarmIdQuery) : List<Pond>
+    }
+
+    class "EquipmentCommandService" <<(S, #FF8A65) Domain Service>> {
+      + handle(command : RegisterEquipmentCommand) : Optional<Equipment>
+      + handle(command : LinkEquipmentToPondCommand) : void
+    }
+
+    class "EquipmentQueryService" <<(S, #FF8A65) Domain Service>> {
+      + handle(query : GetEquipmentByPondIdQuery) : List<Equipment>
+    }
+
+class "PondAssignmentQueryService" <<(S, #FF8A65) Domain Service>> {
+  + handle(query : GetAssignmentsByPondIdQuery) : List<PondAssignment>
+}
+
+}
+
+' ===================== RELATIONSHIPS =====================
+Pond *-- PondName
+Pond *-- PondStatus
+Equipment *-- EquipmentType
+Equipment *-- EquipmentStatus
+
+Pond ..> CreatePondCommand
+Pond ..> AssignFishFarmerCommand 
+Pond ..> CertifyPondCommand 
+Pond ..> FishFarmerAssignedEvent 
+Equipment ..> RegisterEquipmentCommand
+Equipment ..> LinkEquipmentToPondCommand 
+
+PondCommandService ..> Pond 
+PondCommandService ..> CreatePondCommand
+PondCommandService ..> AssignFishFarmerCommand
+PondCommandService ..> CertifyPondCommand
+
+Pond *-- PondAssignment
+PondAssignment ..> AssignFishFarmerCommand
+PondAssignmentQueryService ..> PondAssignment
+PondAssignmentQueryService ..> GetAssignmentsByPondIdQuery
+
+PondQueryService ..> Pond 
+PondQueryService ..> GetPondByIdQuery
+PondQueryService ..> GetPondsByFarmIdQuery
+
+EquipmentCommandService ..> Equipment
+EquipmentCommandService ..> RegisterEquipmentCommand
+EquipmentCommandService ..> LinkEquipmentToPondCommand
+
+EquipmentQueryService ..> Equipment 
+EquipmentQueryService ..> GetEquipmentByPondIdQuery
+@enduml

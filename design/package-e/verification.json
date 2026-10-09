@@ -1,0 +1,66 @@
+{
+  "designs": 137,
+  "mainScreens": 28,
+  "mobileTraceScreens": 10,
+  "wireflows": 23,
+  "chapterImageReferences": 87,
+  "contrast": [
+    {
+      "name": "Primary",
+      "foreground": "#FFFFFF",
+      "background": "#002B49",
+      "ratio": 14.57
+    },
+    {
+      "name": "Accessible cyan",
+      "foreground": "#FFFFFF",
+      "background": "#007EA8",
+      "ratio": 4.62
+    },
+    {
+      "name": "Success",
+      "foreground": "#166534",
+      "background": "#F0FDF4",
+      "ratio": 6.81
+    },
+    {
+      "name": "Error",
+      "foreground": "#B91C1C",
+      "background": "#FEF2F2",
+      "ratio": 5.91
+    },
+    {
+      "name": "Pending",
+      "foreground": "#075985",
+      "background": "#F0F9FF",
+      "ratio": 7.09
+    },
+    {
+      "name": "Revoked",
+      "foreground": "#374151",
+      "background": "#F3F4F6",
+      "ratio": 9.37
+    },
+    {
+      "name": "Body",
+      "foreground": "#163249",
+      "background": "#F8FAFC",
+      "ratio": 12.65
+    },
+    {
+      "name": "Muted",
+      "foreground": "#526577",
+      "background": "#F8FAFC",
+      "ratio": 5.76
+    }
+  ],
+  "checks": [
+    "PNG signature and width",
+    "Editable source and local references",
+    "Spanish language",
+    "Render manifests: overflow, fonts, images",
+    "Chapter VI image paths",
+    "Text contrast ≥ 4.5:1"
+  ],
+  "failures": []
+}
