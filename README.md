@@ -1472,8 +1472,6 @@ El alcance abarca el hardware Edge, un **backend en monolito modular** organizad
 
 ### 4.1.2. Attribute-Driven Design Inputs
 #### 4.1.2.1. Primary Functionality (Primary User Stories)
-
-
 Del Product Backlog (sección 3.4) se seleccionaron como **funcionalidad primaria** las historias con mayor impacto sobre la arquitectura: aquellas que ejercitan el flujo central de valor (ingesta de telemetría, alertas, control de actuadores), el modelo de negocio (pago y complemento TRACE) y la trazabilidad (emisión de certificados, anclaje, verificación pública y cierre de resúmenes). En conjunto involucran a los seis Bounded Contexts. Por brevedad se muestra el escenario principal de cada historia; el detalle completo está en la sección 3.2.
 
 | Epic / User Story ID | Título | Descripción | Criterios de Aceptación | Relacionado con (Epic ID) |
@@ -2012,27 +2010,16 @@ Los pares Telemetry–Notification, Telemetry–Equipment y Payment–IAM se rel
 
 ## 4.3. Software Architecture
 ### 4.3.1. Software Architecture System Landscape Diagram
-
-> ✍️ **REDACTADO** — Texto redactado y **diagrama generado**: `assets/images/cap4/c0_system_landscape.png`. (Tarea C4-12)
-
-
 Este nivel ofrece una visión macroscópica del ecosistema de la piscigranja y de su cadena comercial. Muestra la plataforma **YakuControl + YakuTrace** junto a los actores (administrador, piscicultor, comprador de supermercado y consumidor final) y a los sistemas externos con los que interactúa: pasarela de pagos (Stripe), notificaciones push (Firebase), correo, servicios meteorológicos y la red blockchain. Permite comprender los flujos de información del negocio existan o no integraciones directas a nivel de código.
 
 ![Landscape Diagram](./assets/images/cap4/c0_system_landscape.png)
 
 ### 4.3.2. Software Architecture Context Level Diagrams
-
-> ✍️ **REDACTADO** — Texto redactado y diagrama generado: `c1_yakucontrol_context.png`.
-
-
 El diagrama de contexto define las fronteras del sistema: un único recuadro central (YakuControl + YakuTrace) rodeado por sus usuarios directos —el administrador, el piscicultor, el comprador de supermercado y el consumidor final— y por los sistemas con los que se integra: Stripe, Firebase Cloud Messaging, el servicio de correo, la API meteorológica y la red blockchain con su proveedor RPC.
 
 ![Context Diagram](./assets/images/cap4/c1_yakucontrol_context.png)
 
 ### 4.3.3. Software Architecture Container Level Diagrams
-
-> ✍️ **REDACTADO** — Texto redactado y diagrama generado: `c2_yakucontrol_container.png`.
-
 
 El diagrama de contenedores muestra los elementos de alto nivel de la solución y sus responsabilidades. La arquitectura del backend es un **monolito modular** (Spring Boot) con seis Bounded Contexts, desplegable como una sola unidad. Los contenedores son:
 
@@ -2052,19 +2039,11 @@ Los clientes se comunican con el backend por REST/JSON sobre HTTPS; el Edge API 
 ![Container Diagram](./assets/images/cap4/c2_yakucontrol_container.png)
 
 ### 4.3.4. Software Architecture Deployment Diagrams
-
-> ✍️ **REDACTADO** — Texto redactado y diagrama generado: `c4_deployment.png`. Confirmar los proveedores de despliegue reales.
-
-
 El diagrama de despliegue mapea la arquitectura lógica a la infraestructura. El **nodo IoT** se ubica en la granja con conectividad intermitente; el **Edge API** se ejecuta en un servicio PaaS (Railway); el **backend** y la **base de datos** se despliegan en Microsoft Azure (App Service y Azure Database for PostgreSQL); la **Landing Page** y la **Web App** se distribuyen como contenido estático con CDN; la **app móvil** se instala en el teléfono del piscicultor; y el **smart contract** se despliega en una red EVM de pruebas configurable.
 
 ![Deployment Diagram](./assets/images/cap4/c4_deployment.png)
 
 # Capítulo V: Tactical-Level Software Design
-
-> ✍️ **REDACTADO** — Capítulo **redactado completo** para los 6 contextos (tablas de clases por capa). Los diagramas de componentes, de clases y de BD ya están **generados** en `assets/images/cap5/` y sus fuentes en `diagramas/` (Structurizr DSL, PlantUML, SQL). Para entregar en las herramientas del curso: Structurizr (C4), LucidChart (UML) y Vertabelo/LucidChart (BD) — ver `PENDIENTES_TP1.md`.
-
-
 En este capítulo se presenta el diseño táctico de YakuControl + YakuTrace. El backend es un **monolito modular** (Spring Boot) en el que cada Bounded Context es un módulo con su propio paquete, su propio esquema de base de datos y cuatro capas: **Domain**, **Interface**, **Application** e **Infrastructure**. Los módulos no se acceden entre sí por sus clases internas: se comunican mediante **eventos de dominio en proceso** (bus interno de Spring) y mediante interfaces explícitas protegidas por una **Anti-Corruption Layer** cuando un contexto consulta a otro. Las integraciones externas (Stripe, Firebase Cloud Messaging, SMTP, Edge API y blockchain) se acceden siempre a través de un **puerto** definido en el contexto y un **adaptador** en la capa de Infrastructure, de modo que el dominio no depende de ningún proveedor.
 
 Convenciones aplicadas en todos los contextos:
@@ -2078,10 +2057,6 @@ Convenciones aplicadas en todos los contextos:
 Los diagramas de componentes (C4 nivel 3) se elaboraron en **Structurizr**, los diagramas de clases (UML) y de base de datos en **LucidChart/Vertabelo** a partir de los modelos aquí descritos.
 
 ## 5.1. Bounded Context: Telemetry Context
-
-> ✍️ **REDACTADO** — Sección redactada (tablas por capa) con diagramas generados en `assets/images/cap5/`. Revisar contra el diseño real del backend.
-
-
 El Telemetry Context es el núcleo técnico de YakuControl. Recibe las lecturas que el Edge API ya filtró y firmó, las valida contra el rango óptimo de la especie, las persiste como serie temporal inmutable, detecta lecturas fuera de rango y, desde YakuTrace, **cierra resúmenes de calidad del agua** por día, semana, mes y ciclo, que alimentan los certificados de trazabilidad. El Índice de Calidad del Agua (ICA) lo calcula el Edge API; el backend **no lo recalcula**: solo lo agrega y lo congela.
 
 ### 5.1.1. Domain Layer
@@ -2161,10 +2136,6 @@ El diagrama muestra los dos agregados, sus entidades y Value Objects, las factor
 El esquema `telemetry` contiene: `monitored_ponds` (estanque monitoreado y estado), `optimal_ranges` (rango por variable, único por estanque), `validated_metrics` (serie temporal, clave `(metric_id, measured_at)`) y `quality_summaries` (resúmenes por periodo, únicos por estanque-periodo-inicio). Todas las tablas hijas referencian a `monitored_ponds` mediante clave foránea.
 
 ## 5.2. Bounded Context: Traceability Context
-
-> ✍️ **REDACTADO** — Sección redactada (tablas por capa) con diagramas generados en `assets/images/cap5/`. Revisar contra el diseño real del backend.
-
-
 Traceability es el contexto **nuevo y core** de YakuTrace. Gestiona el ciclo de vida del **lote** (siembra, hitos, cosecha), congela los resúmenes de calidad del agua que Telemetry cierra y emite el **Certificado de Trazabilidad y Calidad del Agua** con un código QR. Para que el certificado sea verificable, calcula una huella digital (SHA-256) de su contenido canónico y la ancla en un **smart contract** (`TraceabilityRegistry`). En la blockchain solo se guardan hashes; los datos completos permanecen en PostgreSQL. La verificación pública recalcula el hash y lo compara con el registrado. El contexto no afirma que los peces hayan sido "bien cuidados": certifica que **las condiciones medidas fueron registradas sin alteración posterior**.
 
 ### 5.2.1. Domain Layer
@@ -2188,7 +2159,7 @@ Traceability es el contexto **nuevo y core** de YakuTrace. Gestiona el ciclo de 
 | `BatchRepository`, `CertificateRepository`, `FarmTraceEntitlementRepository` | Repository (interfaces) | Persistencia de los agregados. | — | `save()`, `findById()`, `findByPublicCode()`, `findActiveByPond()` |
 | `MilestoneRecordedEvent`, `CertificateIssuedEvent`, `CertificateRevokedEvent` | Domain Events | Informan a otros contextos y activan el anclaje. | — | — |
 
-### 5.2.2. Interface Layer
+### 5.2.2. Interface Layer 
 
 | Clase | Tipo | Propósito |
 | :--- | :--- | :--- |
@@ -2253,14 +2224,9 @@ El esquema `traceability` contiene: `batches` (lote y datos de cosecha), `milest
 
 
 ## 5.3. Bounded Context: Equipment Context
-
-> ✍️ **REDACTADO** — Sección redactada (tablas por capa) con diagramas generados en `assets/images/cap5/`. Revisar contra el diseño real del backend.
-
-
 Equipment gestiona la **realidad física** de la piscigranja: estanques, equipos (sensores y actuadores), la vinculación entre ambos y el historial de piscicultores asignados. Es un contexto de soporte: no procesa datos de los sensores, solo sabe qué hardware está en qué estanque.
 
 ### 5.3.1. Domain Layer
-
 | Clase | Tipo | Propósito y reglas de negocio | Atributos clave | Métodos clave |
 | :--- | :--- | :--- | :--- | :--- |
 | `Pond` | Aggregate Root | Estanque de crianza. Regla: el nombre es único dentro de la granja; solo un piscicultor responsable a la vez (la asignación anterior se cierra). | `pondId`, `farmId`, `name`, `capacityLiters`, `status`, `certifiedForProduction`, `assignedFarmerId` | `assignFishFarmer()`, `certifyForProduction()`, `deactivate()` |
@@ -2273,10 +2239,7 @@ Equipment gestiona la **realidad física** de la piscigranja: estanques, equipos
 | `PondRepository`, `EquipmentRepository` | Repository (interfaces) | Persistencia. | — | `findById()`, `findByFarm()`, `findByPond()` |
 | `PondRegisteredEvent`, `EquipmentLinkedEvent`, `FishFarmerAssignedEvent`, `EquipmentWentOfflineEvent` | Domain Events | Consumidos por Telemetry, IAM y Notification. | — | — |
 
-> _Nota de diseño:_ el agregado `Pond` de Equipment es la **fuente de identidad** del estanque; Telemetry usa `MonitoredPond` (otro modelo del mismo `pondId`), lo que evita que dos contextos compartan una misma clase.
-
 ### 5.3.2. Interface Layer
-
 | Clase | Tipo | Propósito |
 | :--- | :--- | :--- |
 | `PondController` | Controller | Alta de estanques, consulta por granja, asignación de piscicultor y certificación para producción. |
@@ -2317,9 +2280,6 @@ Equipment gestiona la **realidad física** de la piscigranja: estanques, equipos
 El esquema `equipment` define `ponds` (único por granja y nombre), `pond_assignments` (historial, FK a `ponds`) y `equipments` (con `hardware_id` único y FK opcional al estanque al que está vinculado).
 
 ## 5.4. Bounded Context: IAM Context
-
-> ✍️ **REDACTADO** — Sección redactada (tablas por capa) con diagramas generados en `assets/images/cap5/`. Revisar contra el diseño real del backend.
-
 
 IAM gestiona identidades, roles y acceso. Es un contexto genérico que otros contextos consumen como **Open Host Service**: emite y valida JWT con el identificador de la granja (aislamiento multi-tenant) y administra la **Farm Key** con la que el Edge API se autentica. La **verificación pública del QR no requiere sesión**; en cambio, emitir o revocar certificados exige `ROLE_ADMIN` de la granja dueña del lote.
 
@@ -2381,10 +2341,6 @@ IAM gestiona identidades, roles y acceso. Es un contexto genérico que otros con
 El esquema `iam` contiene `users` (email único, rol validado), `pond_tokens` (código único, FK al administrador que lo emitió) y `farm_keys` (hash de la credencial por granja).
 
 ## 5.5. Bounded Context: Notification Context
-
-> ✍️ **REDACTADO** — Sección redactada (tablas por capa) con diagramas generados en `assets/images/cap5/`. Revisar contra el diseño real del backend.
-
-
 Notification es el contexto reactivo de YakuControl: convierte eventos del dominio (lectura fuera de rango, equipo fuera de línea, certificado emitido) en **alertas** entregadas por push (Firebase Cloud Messaging) y correo (SMTP), y ejecuta **acciones de emergencia** sobre los actuadores (aireador, filtros) a través del Edge API. También registra cuándo un operario atendió una alerta, dato que alimenta el tiempo de respuesta de los resúmenes de calidad.
 
 ### 5.5.1. Domain Layer
@@ -2453,10 +2409,6 @@ Notification es el contexto reactivo de YakuControl: convierte eventos del domin
 El esquema `notification` contiene `recipients`, `notifications` (FK al destinatario), `sensor_data` (uno por notificación), `emergency_actions` (órdenes a actuadores) y `notification_deliveries` (intentos por canal para los reintentos).
 
 ## 5.6. Bounded Context: Payment Context
-
-> ✍️ **REDACTADO** — Sección redactada (tablas por capa) con diagramas generados en `assets/images/cap5/`. Revisar contra el diseño real del backend.
-
-
 Payment gestiona el modelo SaaS: suscripciones por granja, facturación recurrente mediante Stripe y, desde YakuTrace, el **add-on TRACE** que habilita la emisión de certificados. Es un contexto genérico: delega el cobro a Stripe a través de un adaptador y notifica a IAM (acceso) y a Traceability (permiso TRACE) mediante eventos.
 
 ### 5.6.1. Domain Layer
@@ -3493,9 +3445,6 @@ Como recomendaciones para las siguientes entregas se sugiere validar con comprad
 
 # Bibliografía
 
-> ✍️ **REDACTADO** — Lista APA redactada. Las entradas con `<!-- ⚠ -->` necesitan autor, fecha o DOI: abrir la fuente y completar. (Tarea TR-07)
-
-
 Actualidad Ambiental. (28 de mayo de 2025). *Huarochirí: mueren 200 mil truchas en piscigranja por posible contaminación en el río Santa Eulalia.* https://www.actualidadambiental.pe/huarochiri-mueren-200-mil-truchas-en-piscigranja-por-posible-contaminacion-en-el-rio-santa-eulalia/
 
 Agencia Peruana de Noticias Andina. (29 de abril de 2026). *Junín: OEFA realizó diligencia por muerte masiva de truchas en piscigranjas de Pariahuanca.* Andina. https://andina.pe/agencia/noticia-junin-oefa-realizo-diligencia-muerte-masiva-truchas-piscigranjas-pariahuanca-1073248.aspx
@@ -3510,31 +3459,29 @@ Beiko, T. (2025, 18 de marzo). *Holesky and Hoodi testnet updates*. Ethereum Fou
 
 Blaha, F., & Katafono, K. (2020). *Blockchain application in seafood value chains* (FAO Fisheries and Aquaculture Circular No. 1207). Food and Agriculture Organization of the United Nations. https://doi.org/10.4060/ca8751en
 
-Computer Weekly. (s. f.). *Avances y progresos en el uso de blockchain en el Perú*. https://www.computerweekly.com/es/cronica/Avances-y-progresos-en-el-uso-de-blockchain-en-el-Peru <!-- ⚠ completar autor y fecha -->
+Computer Weekly. (s. f.). (2021) *Avances y progresos en el uso de blockchain en el Perú*. https://www.computerweekly.com/es/cronica/Avances-y-progresos-en-el-uso-de-blockchain-en-el-Peru
 
 El Búho. (2025, mayo). *Trucha producida en Puno es la más requerida en mercados del sur del país por su alta calidad*. https://elbuho.pe/2025/05/trucha-producida-en-puno-es-la-mas-requerida-en-mercados-del-sur-del-pais-por-su-alta-calidad/
 
 Global Dialogue on Seafood Traceability. (s. f.). *GDST standards*. https://traceability-dialogue.org/
 
-La Cámara. (s. f.). *Trucha peruana: potencial acuícola clave para diversificar la exportación*. https://lacamara.pe/?p=67270 <!-- ⚠ completar fecha -->
+La Cámara. (s. f.). (2025) *Trucha peruana: potencial acuícola clave para diversificar la exportación*. https://lacamara.pe/?p=67270
 
 Linux Foundation Decentralized Trust. (s. f.). *Walmart case study*. https://lfdecentralizedtrust.org/case-studies/walmart-case-study
 
-Ministerio de Agricultura, Pesca y Alimentación. (s. f.). *El director general de Ordenación Pesquera y Acuicultura asiste a la presentación del primer blockchain de pescado fresco*. https://www.mapa.gob.es/en/prensa/ultimas-noticias/detalle_noticias/el-director-general-de-ordenaci-n-pesquera-y-acuicultura-asiste-a-la-presentaci-n-del-primer-blockchain-de-pescado-fresco/ead2918c-3492-4809-9ce0-bb5a72d24776 <!-- ⚠ completar fecha -->
+Ministerio de Agricultura, Pesca y Alimentación. (s. f.). (2019)*El director general de Ordenación Pesquera y Acuicultura asiste a la presentación del primer blockchain de pescado fresco*. https://www.mapa.gob.es/en/prensa/ultimas-noticias/detalle_noticias/el-director-general-de-ordenaci-n-pesquera-y-acuicultura-asiste-a-la-presentaci-n-del-primer-blockchain-de-pescado-fresco/ead2918c-3492-4809-9ce0-bb5a72d24776
 
 Ministerio de la Producción. (2024). *Catastro Acuícola Nacional (referenciado en Informe de Evaluación de la Intervención de Extensionismo Acuícola).* Gobierno del Perú. https://www.producempresarial.pe/wp-content/uploads/2025/02/05-Informe-ER-Extensionismo-Acuicola_rev.pdf
 
 Organización para la Cooperación y el Desarrollo Económicos. (2025). *Políticas para el futuro de la pesca y la acuicultura en Perú.* OECD Publishing. https://www.oecd.org/es/publications/politicas-para-el-futuro-de-la-pesca-y-la-acuicultura-en-peru_712e7084-es/full-report/aquaculture-policies-in-peru_a47e9e62.html
 
-Perú Retail. (s. f.). *¿Cómo se está desarrollando el sector de supermercados en el Perú?* https://www.peru-retail.com/como-esta-desarrollando-sector-supermercados-peru/ <!-- ⚠ completar fecha; verificar cifras -->
+Perú Retail. (s. f.). (2026)*¿Cómo se está desarrollando el sector de supermercados en el Perú?* https://www.peru-retail.com/como-esta-desarrollando-sector-supermercados-peru/ 
 
-Powell, W., Foth, M., Cao, S., & Natanelov, V. (2021). *Garbage in garbage out: The precarious link between IoT and blockchain in food supply chains*. https://www.futurefoodsystems.com.au/resource/garbage-in-garbage-out-the-precarious-link-between-iot-and-blockchain-in-food-supply-chains/ <!-- ⚠ completar revista, volumen y DOI -->
+Powell, W., Foth, M., Cao, S., & Natanelov, V. (2021). *Garbage in garbage out: The precarious link between IoT and blockchain in food supply chains*. https://www.futurefoodsystems.com.au/resource/garbage-in-garbage-out-the-precarious-link-between-iot-and-blockchain-in-food-supply-chains/
 
-World Fishing & Aquaculture. (s. f.). *Nueva Pescanova e IBM trabajan para rastrear sus productos en IBM Food Trust*. https://www.worldfishing.net/news101/industry-news/1400435.article <!-- ⚠ completar título exacto y fecha -->
+World Fishing & Aquaculture. (s. f.). (2021)*Nueva Pescanova e IBM trabajan para rastrear sus productos en IBM Food Trust*.  https://www.worldfishing.net/news101/industry-news/1400435.article
 
 # Anexos
-
-> ✍️ **REDACTADO** — Anexo B (mejora continua / autocrítica) redactado: es evidencia directa del criterio *Applies continuous improvement* de la rúbrica; revisar que cada fila sea cierta. Falta el Anexo C con el enlace del video de exposición (más adelante). (Tarea TR-07)
 
 **-Wokwi:** 
 - [Wokwi](https://wokwi.com/projects/467186064937826305)
