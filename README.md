@@ -1078,9 +1078,17 @@ Representa a los responsables de compras de productos frescos que seleccionan pr
 > ✍️ **REDACTADO** — Cuadro único redactado con las 3 personas. Falta: **validar con las entrevistas** los valores del comprador (marcados con \*). (Tarea C2-7)
 
 
-En esta sección se presentan las tareas que los User Persona representativos de cada segmento realizan para cumplir sus metas, **independientemente de la existencia de una solución de software**. Se consideran tres User Persona: José Guevara (piscicultor de campo), Pedro Alvarado (administrador de piscigranja) y el comprador de supermercado. Los valores del comprador provienen de la hipótesis inicial y se ajustarán con el análisis de entrevistas (\*).
+En esta sección se presentan las tareas que los User Persona representativos de cada segmento realizan para cumplir sus metas, **independientemente de la existencia de una solución de software**. Se consideran tres User Persona: José Guevara (piscicultor de campo), Pedro Alvarado (administrador de piscigranja) y Daniel Torres (comprador de supermercado). (\*).
 
-| **Tarea** | **José Guevara (Piscicultor)**<br>Frecuencia | **José**<br>Importancia | **Pedro Alvarado (Administrador)**<br>Frecuencia | **Pedro**<br>Importancia | **Comprador de supermercado**<br>Frecuencia\* | **Comprador**<br>Importancia\* |
+**Criterios de clasificación:**
+
+- **Always:** actividad habitual dentro del proceso correspondiente, como revisar documentos durante la recepción de un lote; no significa necesariamente que se realice todos los días.
+- **Sometimes:** actividad periódica o condicionada a un evento, como seleccionar un nuevo proveedor, atender una devolución o responder a una auditoría.
+- **High:** tarea crítica para la operación, la calidad, la trazabilidad o la toma de decisiones.
+- **Medium:** tarea de apoyo que contribuye a la coordinación y eficiencia.
+- **—:** tarea que no corresponde a las responsabilidades principales del perfil.
+
+| **Tarea** | **José Guevara (Piscicultor)**<br>Frecuencia | **José**<br>Importancia | **Pedro Alvarado (Administrador)**<br>Frecuencia | **Pedro**<br>Importancia | **Daniel Torres (Comprador de supermercado)**<br>Frecuencia | **Daniel**<br>Importancia |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Medir manualmente la temperatura del agua en los estanques | Always | High | — | — | — | — |
 | Registrar parámetros del agua manualmente | Always | High | — | — | — | — |
@@ -1089,8 +1097,8 @@ En esta sección se presentan las tareas que los User Persona representativos de
 | Verificar el volumen y caudal de agua disponible | Always | High | Always | High | — | — |
 | Evaluar la turbidez y calidad del agua | Always | High | Always | High | — | — |
 | Limpiar y dar mantenimiento a los estanques | Sometimes | Medium | — | — | — | — |
-| Reportar y revisar el estado de los estanques (documento físico o WhatsApp) | Sometimes | High | Always | High | — | — |
-| Reaccionar ante una emergencia o mortalidad en el agua (actuar o decidir) | Sometimes | High | Sometimes | High | — | — |
+| Reportar y revisar el estado de los estanques mediante documentos físicos o WhatsApp | Sometimes | High | Always | High | — | — |
+| Reaccionar ante una emergencia o mortalidad en los estanques | Sometimes | High | Sometimes | High | — | — |
 | Coordinar con otros trabajadores de campo | Sometimes | Medium | — | — | — | — |
 | Anotar el consumo de alimento por estanque | Always | Medium | — | — | — | — |
 | Verificar que los peces estén sanos y sin enfermedades | Always | High | — | — | — | — |
@@ -1098,18 +1106,33 @@ En esta sección se presentan las tareas que los User Persona representativos de
 | Controlar los costos operativos y la rentabilidad de la piscigranja | — | — | Always | High | — | — |
 | Planificar los ciclos de producción y las fechas de cosecha | — | — | Sometimes | High | — | — |
 | Supervisar el desempeño del personal de campo | — | — | Sometimes | High | — | — |
-| Evaluar el impacto de factores externos (sequías, Fenómeno del Niño) | — | — | Sometimes | High | — | — |
+| Evaluar el impacto de factores externos, como sequías o el Fenómeno del Niño | — | — | Sometimes | High | — | — |
 | Proyectar la disponibilidad de agua para los próximos meses | — | — | Sometimes | High | — | — |
-| Negociar con la contraparte comercial (compradores o proveedores) | — | — | Sometimes | High | Always | High |
-| Verificar la procedencia y sanidad de los lotes para certificación | — | — | Sometimes | High | Always | High |
+| Negociar precios y condiciones con compradores o proveedores | — | — | Sometimes | High | Sometimes | High |
+| Revisar la procedencia y la documentación sanitaria de los lotes | — | — | Sometimes | High | Always | High |
 | Evaluar y seleccionar proveedores de trucha | — | — | — | — | Sometimes | High |
-| Solicitar y revisar la documentación sanitaria y de trazabilidad del proveedor | — | — | — | — | Always | High |
-| Recibir y aceptar o rechazar lotes de trucha | — | — | — | — | Always | High |
-| Atender reclamos o devoluciones por calidad o mortandad | — | — | — | — | Sometimes | High |
+| Solicitar y revisar la documentación comercial y de trazabilidad del proveedor | — | — | — | — | Always | High |
+| Coordinar cantidades, fechas y condiciones de entrega | — | — | — | — | Always | High |
+| Coordinar con recepción y calidad la evaluación y aceptación o rechazo de los lotes | — | — | — | — | Always | High |
+| Registrar o consultar el proveedor, número de lote, fecha de recepción y destino de los productos | — | — | — | — | Always | High |
+| Atender reclamos, rechazos o devoluciones por problemas de calidad | — | — | — | — | Sometimes | High |
+| Reunir fotografías, documentos de recepción y otras evidencias ante una observación | — | — | — | — | Sometimes | High |
 | Responder a auditorías sobre la trazabilidad de productos frescos | — | — | — | — | Sometimes | High |
-| Comunicarse con el proveedor ante un problema (llamada, correo o WhatsApp) | — | — | — | — | Sometimes | Medium |
+| Comunicarse con el proveedor para aclarar observaciones y coordinar devoluciones o reposiciones | — | — | — | — | Sometimes | High |
 
-Las tareas de mayor frecuencia e importancia para José Guevara son la medición del agua, el registro de estos datos y la alimentación diaria, actividades repetitivas y críticas que realiza sin apoyo tecnológico. Para Pedro Alvarado destacan la revisión del reporte y el control de costos, lo que evidencia su dependencia de información de segunda mano. Para el comprador de supermercado destacan la verificación del origen y de la documentación del proveedor y la recepción de lotes, tareas que hoy dependen de documentos que pueden modificarse. La coincidencia más relevante entre los tres es la **necesidad de contar con información confiable y oportuna sobre el estado y el origen de los lotes**: José debe reaccionar en campo, Pedro debe decidir y el comprador debe verificar y aceptar. Esto refuerza la propuesta de YakuControl para conectar a los dos primeros en tiempo real y de YakuTrace para entregar al tercero evidencia verificable.
+**Sustento de las tareas del comprador**
+
+Las tres entrevistas describen la revisión de documentos del proveedor y la evaluación de calidad, precio y cumplimiento de entregas como parte del proceso habitual de compra. Por ello, la revisión documental y la coordinación del abastecimiento se clasifican como **Always / High**. La selección de nuevos proveedores y la negociación de condiciones se clasifican como **Sometimes / High**, al corresponder a decisiones que se realizan cuando es necesario incorporar o reevaluar proveedores.
+
+La atención de reclamos, la recopilación de evidencias y la coordinación de devoluciones se clasifican como **Sometimes / High**, porque se activan ante problemas de calidad. La comunicación con el proveedor en estos casos tiene importancia alta, ya que permite resolver la observación y acordar una respuesta. Las auditorías también se consideran actividades periódicas de importancia alta por su relación con la trazabilidad.
+
+**Análisis de la matriz**
+
+Las tareas de mayor frecuencia e importancia para José Guevara se concentran en la medición del agua, la alimentación y la revisión de los peces. Para Pedro Alvarado destacan la supervisión de los estanques, la revisión de reportes y el control de costos, actividades que requieren información del personal de campo.
+
+Para Daniel Torres sobresalen la revisión de la procedencia y documentación de los lotes, la coordinación de entregas y la evaluación conjunta con recepción y calidad. Las entrevistas muestran que actualmente estas tareas se apoyan en documentos, sistemas internos y comunicaciones con el proveedor, sin acceso directo y sistemático a las condiciones del agua durante la crianza.
+
+Los tres perfiles necesitan **información confiable y oportuna**, aunque la utilizan con fines distintos: José actúa en campo, Pedro gestiona la producción y Daniel evalúa el abastecimiento y la trazabilidad comercial. Esta relación orienta la propuesta de YakuControl para el monitoreo y la gestión, y de YakuTrace para facilitar la consulta del historial registrado de los lotes, como evidencia complementaria a los controles sanitarios y de calidad.
 
 ### 2.3.3. Empathy Mapping
 
