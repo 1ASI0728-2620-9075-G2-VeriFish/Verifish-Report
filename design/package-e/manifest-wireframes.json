@@ -1,0 +1,866 @@
+[
+  {
+    "name": "wireframe1",
+    "title": "Pantalla 1 · Iniciar sesión",
+    "width": 390,
+    "scroll": 390,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "wireframe2",
+    "title": "Pantalla 2 · Crear cuenta",
+    "width": 390,
+    "scroll": 390,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "wireframe3",
+    "title": "Pantalla 3 · Inicio",
+    "width": 390,
+    "scroll": 390,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "wireframe4",
+    "title": "Pantalla 4 · Estanque 03",
+    "width": 390,
+    "scroll": 390,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "wireframe5",
+    "title": "Pantalla 5 · Historial de lecturas",
+    "width": 390,
+    "scroll": 390,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "wireframe6",
+    "title": "Pantalla 6 · Alertas",
+    "width": 390,
+    "scroll": 390,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "wireframe7",
+    "title": "Pantalla 7 · Perfil",
+    "width": 390,
+    "scroll": 390,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "wireframe8",
+    "title": "Pantalla 8 · Iniciar sesión",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "wireframe9",
+    "title": "Pantalla 9 · Crear cuenta",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "wireframe10",
+    "title": "Pantalla 10 · Registrar granja",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "wireframe11",
+    "title": "Pantalla 11 · Inicio",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "wireframe12",
+    "title": "Pantalla 12 · Estanques",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "wireframe13",
+    "title": "Pantalla 13 · Registrar estanque",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "wireframe14",
+    "title": "Pantalla 14 · Detalle de estanque",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "wireframe15",
+    "title": "Pantalla 15 · Equipos",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "wireframe16",
+    "title": "Pantalla 16 · Operadores",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "wireframe17",
+    "title": "Pantalla 17 · Notificaciones",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "wireframe18",
+    "title": "Pantalla 18 · Configuración",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "wireframe19",
+    "title": "Pantalla 19 · Lotes",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "wireframe19-mobile",
+    "title": "Pantalla 19 · Lotes · móvil",
+    "width": 390,
+    "scroll": 390,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "wireframe20",
+    "title": "Pantalla 20 · Registrar lote",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "wireframe20-mobile",
+    "title": "Pantalla 20 · Registrar lote · móvil",
+    "width": 390,
+    "scroll": 390,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "wireframe21",
+    "title": "Pantalla 21 · Detalle del lote",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "wireframe21-mobile",
+    "title": "Pantalla 21 · Detalle del lote · móvil",
+    "width": 390,
+    "scroll": 390,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "wireframe22",
+    "title": "Pantalla 22 · Registrar cosecha",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "wireframe22-mobile",
+    "title": "Pantalla 22 · Registrar cosecha · móvil",
+    "width": 390,
+    "scroll": 390,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "wireframe23",
+    "title": "Pantalla 23 · Resumen de calidad",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "wireframe23-mobile",
+    "title": "Pantalla 23 · Resumen de calidad · móvil",
+    "width": 390,
+    "scroll": 390,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "wireframe24",
+    "title": "Pantalla 24 · Emitir certificado",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "wireframe24-mobile",
+    "title": "Pantalla 24 · Emitir certificado · móvil",
+    "width": 390,
+    "scroll": 390,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "wireframe25",
+    "title": "Pantalla 25 · Certificados",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "wireframe25-mobile",
+    "title": "Pantalla 25 · Certificados · móvil",
+    "width": 390,
+    "scroll": 390,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "wireframe26",
+    "title": "Pantalla 26 · Complemento TRACE",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "wireframe26-mobile",
+    "title": "Pantalla 26 · Complemento TRACE · móvil",
+    "width": 390,
+    "scroll": 390,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "wireframe27",
+    "title": "Pantalla 27 · Verificación pública",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "wireframe27-mobile",
+    "title": "Pantalla 27 · Verificación pública · móvil",
+    "width": 390,
+    "scroll": 390,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "wireframe28",
+    "title": "Pantalla 28 · Verificación no válida",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "wireframe28-mobile",
+    "title": "Pantalla 28 · Verificación no válida · móvil",
+    "width": 390,
+    "scroll": 390,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "state-active-lot",
+    "title": "No se pudo registrar el lote",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "state-lot-created",
+    "title": "Lote creado",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "state-register-event",
+    "title": "Registrar hito",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "state-event-saved",
+    "title": "Hito registrado",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "state-history-closed",
+    "title": "Historial cerrado",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "state-issue-confirm",
+    "title": "Confirmar emisión",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "state-issue-blocked",
+    "title": "Emisión no disponible",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "state-issued-pending",
+    "title": "Certificado emitido",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "state-issued-verified",
+    "title": "Certificado emitido",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "state-public-revoked",
+    "title": "Revocado",
+    "width": 390,
+    "scroll": 390,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "state-public-not-found",
+    "title": "Código no encontrado",
+    "width": 390,
+    "scroll": 390,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "state-public-pending",
+    "title": "Registro en proceso",
+    "width": 390,
+    "scroll": 390,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "state-public-loading",
+    "title": "Cargando",
+    "width": 390,
+    "scroll": 390,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "state-qr-scan",
+    "title": "Escanear QR",
+    "width": 390,
+    "scroll": 390,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "state-registration-proof",
+    "title": "Prueba del registro",
+    "width": 390,
+    "scroll": 390,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "state-trace-confirm",
+    "title": "Revisar contratación de TRACE",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "state-trace-active",
+    "title": "TRACE activo",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "state-trace-inactive",
+    "title": "Suscripción inactiva",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "state-trace-payment-error",
+    "title": "Contratación no confirmada",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "state-mobile-registered",
+    "title": "Cuenta creada",
+    "width": 390,
+    "scroll": 390,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "state-register-error",
+    "title": "Revisar registro",
+    "width": 390,
+    "scroll": 390,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "state-offline",
+    "title": "Sin conexión",
+    "width": 390,
+    "scroll": 390,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "state-actuator-confirm",
+    "title": "Confirmar activación",
+    "width": 390,
+    "scroll": 390,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "state-actuator-error",
+    "title": "Equipo sin confirmar",
+    "width": 390,
+    "scroll": 390,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "state-alert-attended",
+    "title": "Atención registrada",
+    "width": 390,
+    "scroll": 390,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "state-profile-saved",
+    "title": "Cambios guardados",
+    "width": 390,
+    "scroll": 390,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "state-profile-error",
+    "title": "Revisa tu correo",
+    "width": 390,
+    "scroll": 390,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "state-pond-saved",
+    "title": "Estanque registrado",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "state-pond-error",
+    "title": "Datos incompletos",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "state-equipment-edit",
+    "title": "Asignar equipo",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "state-equipment-saved",
+    "title": "Asignación guardada",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "state-equipment-error",
+    "title": "Asignación no disponible",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "state-operator-edit",
+    "title": "Editar operador",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "state-operator-saved",
+    "title": "Operador actualizado",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "state-operator-error",
+    "title": "Revisar asignación",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "state-notification-filter",
+    "title": "Filtrar notificaciones",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "state-notification-result",
+    "title": "Resultados de búsqueda",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "state-empty-search",
+    "title": "Sin resultados",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "state-admin-edit",
+    "title": "Editar configuración",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "state-admin-saved",
+    "title": "Configuración guardada",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "state-admin-error",
+    "title": "Revisa tu correo",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "state-lots-empty",
+    "title": "Sin lotes registrados",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "state-lots-loading",
+    "title": "Cargando lotes",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "state-quality-insufficient",
+    "title": "Cobertura insuficiente",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "state-revoke-confirm",
+    "title": "Revocar certificado",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "state-note-edit",
+    "title": "Registrar novedad",
+    "width": 390,
+    "scroll": 390,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "state-note-saved",
+    "title": "Novedad registrada",
+    "width": 390,
+    "scroll": 390,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "state-note-error",
+    "title": "Novedad sin contenido",
+    "width": 390,
+    "scroll": 390,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "state-mortality-report",
+    "title": "Reporte de mortalidad",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "state-mortality-ready",
+    "title": "Reporte preparado",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "state-mortality-empty",
+    "title": "Mes sin bajas",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "state-trends",
+    "title": "Historial de tendencias",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "state-trends-result",
+    "title": "Evolución anual",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "state-trends-empty",
+    "title": "Sin lecturas en el periodo",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "state-threshold-edit",
+    "title": "Configurar umbrales",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "state-threshold-saved",
+    "title": "Límites actualizados",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "state-threshold-error",
+    "title": "Límites inconsistentes",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "state-subscription-plan",
+    "title": "Suscripción base",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "state-subscription-confirm",
+    "title": "Revisar pago",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "state-subscription-active",
+    "title": "Suscripción activa",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "state-subscription-error",
+    "title": "Pago rechazado",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "state-audit-operator",
+    "title": "Auditoría de respuesta",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "state-audit-automatic",
+    "title": "Atención automática",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "state-cleanup-confirm",
+    "title": "Confirmar limpieza",
+    "width": 390,
+    "scroll": 390,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "state-cleanup-active",
+    "title": "Limpieza activa",
+    "width": 390,
+    "scroll": 390,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "state-cleanup-no-power",
+    "title": "Equipo sin energía",
+    "width": 390,
+    "scroll": 390,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "state-already-revoked",
+    "title": "Certificado ya revocado",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "state-invite-edit",
+    "title": "Invitar operador",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "state-invite-sent",
+    "title": "Invitación enviada",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  },
+  {
+    "name": "state-invite-duplicate",
+    "title": "Correo ya registrado",
+    "width": 1440,
+    "scroll": 1440,
+    "brokenImages": [],
+    "font": true
+  }
+]
