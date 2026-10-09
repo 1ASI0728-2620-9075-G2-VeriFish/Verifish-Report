@@ -1263,6 +1263,8 @@ Esta sección presenta el escenario futuro de cada User Persona una vez que util
 | Pedro Alvarado (Administrador) | Recibe reportes físicos, fotos de cuadernos o audios y decide con información tardía. | Consulta un panel con el estado de todos sus estanques, el historial y el resumen de calidad por lote, y emite certificados al cosechar. | Decide con datos en tiempo real y cuenta con evidencia para respaldar sus lotes ante compradores. |
 | Comprador de supermercado | Verifica el origen con documentos y declaraciones del proveedor. | Escanea el QR del lote y ve el historial, el resumen de calidad y la verificación de integridad. | Verifica en segundos con evidencia que no puede modificarse después de emitida. |
 
+- To-Be Scenario Map - Piscicultor
+
 ![To-Be Scenario Map - Piscicultor](https://i.imgur.com/Q0578Fw.png)
 
 **Comparación con el As-is**
@@ -1270,6 +1272,8 @@ Esta sección presenta el escenario futuro de cada User Persona una vez que util
 La consulta de lecturas complementa la observación durante las rondas y reduce la necesidad de transcribir datos. Las alertas permiten identificar desviaciones de las variables monitoreadas, mientras que el registro de atención facilita comunicar lo ocurrido al administrador.
 
 La solución conserva la inspección física y la intervención del operario. La consulta de datos almacenados no equivale a monitoreo actualizado; la recepción de alertas y el control remoto requieren conectividad. Registrar una alerta como atendida tampoco significa que la condición del agua esté resuelta.
+
+- To-Be Scenario Map - Administrador
 
 ![To-Be Scenario Map - Administrador](https://i.imgur.com/2D5xIVS.png)
 
@@ -1279,6 +1283,7 @@ El panel reúne información que actualmente llega mediante documentos y mensaje
 
 YakuTrace incorpora un documento con QR y una comprobación de integridad. El administrador debe distinguir un certificado con anclaje pendiente de uno confirmado. El certificado respalda el contenido registrado, pero no garantiza por sí mismo la exactitud de los datos de origen ni la calidad sanitaria del producto.
 
+- To-Be Scenario Map - Comprador de supermercado
 
 ![To-Be Scenario Map - Comprador de supermercado](https://i.imgur.com/d9QmKsk.png)
 
