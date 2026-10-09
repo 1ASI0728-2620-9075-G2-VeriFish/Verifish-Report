@@ -358,8 +358,6 @@ Consolidarse hacia el año 2030 como una startup referente en el desarrollo de s
 
 ### 1.1.2. Perfiles de integrantes del equipo
 
-> 🟡 **AJUSTAR AL ENUNCIADO** — El enunciado exige: foto, nombres y apellidos, código, descripción de carrera y un párrafo con conocimientos técnicos y habilidades que aporta cada uno. Completar carrera/ciclo y skills técnicos (faltan en varios), verificar códigos (p. ej. `U20231d390`) y corregir typos ("nóvil", `img alt`). Subir las fotos a `./assets/` en vez de imgur. (Tarea C1-1)
-
 <table border="1">
   <tr>
       <td style="text-align:center;"><img width="1200" height="200" img alt="Sebastian Escobar" src="https://i.imgur.com/UqKbYwJ.jpeg" /></td>
@@ -392,49 +390,108 @@ Consolidarse hacia el año 2030 como una startup referente en el desarrollo de s
 
 #### Antecedentes
 
-La acuicultura de trucha representa una actividad económica importante en diversas zonas altoandinas del Perú, especialmente en regiones como Junín, Puno, Cusco y Huancavelica. No obstante, los productores se encuentran expuestos de forma constante a episodios de mortalidad masiva asociados a cambios repentinos en la calidad del agua, los cuales muchas veces no son detectados oportunamente y terminan generando pérdidas irreversibles.
+#### Antecedentes
 
-Un ejemplo reciente fue reportado por la Agencia Peruana de Noticias Andina (2026), que informó sobre la muerte de miles de truchas en siete piscigranjas ubicadas en el distrito de Pariahuanca, Junín. Según el reporte, el evento habría estado relacionado con una posible contaminación del río Yuracyacu provocada por actividades mineras, afectando peces en distintas etapas de crecimiento.
+La crianza de trucha arcoíris constituye una actividad productiva relevante para diversas zonas altoandinas del Perú, donde las piscigranjas dependen de las condiciones del agua para mantener el desarrollo de los peces. Las variaciones ambientales y los posibles episodios de contaminación representan riesgos importantes para esta actividad, especialmente cuando los productores no cuentan con información continua que les permita identificar oportunamente cambios en los parámetros del agua. En estas circunstancias, las inspecciones periódicas y los registros manuales pueden resultar insuficientes para detectar determinadas anomalías entre una medición y otra. Los efectos económicos y productivos asociados a estos riesgos se observan en incidentes reportados en el país. En abril de 2026, la Agencia Peruana de Noticias Andina informó sobre la muerte masiva de truchas en piscigranjas del distrito de Pariahuanca, Junín, presuntamente relacionada con la contaminación del río Yuracyacu. Durante las diligencias preliminares, el Organismo de Evaluación y Fiscalización Ambiental (OEFA) constató la presencia de miles de peces muertos en dos establecimientos inspeccionados, cuyos responsables señalaron que siete piscigranjas habrían resultado afectadas. La causa del incidente se encontraba bajo investigación, por lo que el caso evidencia la vulnerabilidad de la actividad acuícola frente a posibles alteraciones ambientales, sin establecer todavía una causa definitiva. Una situación similar fue reportada por Actualidad Ambiental (2025) en la piscigranja Santa María, ubicada en Huarochirí, Lima, donde se registró la muerte repentina de más de 200 000 truchas. Según la información proporcionada por el responsable del establecimiento, las pérdidas económicas se estimaron entre S/ 100 000 y S/ 150 000, con una proyección de hasta S/ 300 000 si los peces hubieran completado su ciclo de crecimiento. Aunque el origen del evento no había sido determinado, su magnitud permite dimensionar las consecuencias económicas que pueden enfrentar los productores ante incidentes de este tipo.
 
-Actualmente, el control de las condiciones del agua suele realizarse mediante revisiones físicas periódicas. Este procedimiento es principalmente manual y presenta limitaciones en términos de rapidez y precisión, lo que dificulta la detección temprana de variaciones críticas y reduce la capacidad de respuesta de los productores ante situaciones de riesgo.
+A estas dificultades se suma la necesidad de contar con información organizada sobre los procesos de crianza y comercialización. En muchas operaciones acuícolas, la documentación puede encontrarse distribuida entre registros físicos, hojas de cálculo y comunicaciones informales. Esta fragmentación dificulta consolidar el historial de las condiciones de producción y presentar información verificable a los compradores. En consecuencia, la problemática no se limita al monitoreo del agua, sino que también comprende la disponibilidad, conservación y consulta de los datos correspondientes a cada lote. La trazabilidad constituye un aspecto relevante en la comercialización de productos acuícolas. Agraria.pe (2016) informó que, durante 2015, el ingreso de trucha a los supermercados de Lima aumentó un 20 % respecto al año anterior. En esa publicación, representantes de Sierra Exportadora señalaron que cadenas como Plaza Vea, Wong y Tottus solicitaban productos inocuos y con trazabilidad. Si bien esta información corresponde a un período anterior, constituye un antecedente documentado de los requisitos de información y control presentes en la relación comercial entre productores y supermercados. En el ámbito tecnológico, existen experiencias de aplicación de blockchain para fortalecer la trazabilidad alimentaria. Mendoza (2021) documentó que Cencosud, empresa propietaria de Wong y Metro, había incorporado una solución de trazabilidad basada en blockchain para productos cárnicos. En el contexto internacional, la Linux Foundation Decentralized Trust (s. f.) describe un proyecto desarrollado por Walmart e IBM mediante Hyperledger Fabric, en el cual el tiempo necesario para rastrear el origen de mangos se redujo de aproximadamente siete días a 2,2 segundos. Estos antecedentes muestran posibilidades de aplicación de registros digitales compartidos en cadenas de suministro, aunque sus resultados no pueden trasladarse directamente al sector acuícola peruano sin realizar una validación específica.
 
-Paralelamente, los compradores del producto exigen cada vez más información verificable. Ya en 2016 se reportaba que supermercados como Plaza Vea, Wong y Tottus solicitaban a los productores de trucha un producto inocuo y con trazabilidad (Agraria.pe, 2016). En el Perú, Cencosud, propietaria de Wong y Metro, ha implementado una solución de trazabilidad basada en blockchain para productos cárnicos (Computer Weekly, s. f.), y a nivel internacional existen casos como el de Carrefour en España, que lanzó una trazabilidad con blockchain para pescado consultable mediante código QR (Ministerio de Agricultura, Pesca y Alimentación, s. f.), o el de Walmart, que redujo de siete días a 2,2 segundos el tiempo necesario para rastrear el origen de un producto (Linux Foundation Decentralized Trust, s. f.). La FAO ha analizado cómo la tecnología blockchain puede aplicarse a las cadenas de valor del pescado y en qué casos resulta adecuada (Blaha & Katafono, 2020).
-
-Sin embargo, la literatura advierte que blockchain por sí sola no garantiza que los datos sean correctos: puede conservar de forma inalterable un dato erróneo si este ingresa mal desde el sensor (Powell et al., 2021). Por ello, YakuTrace combina sensores cuyas lecturas se firman en el Edge, resúmenes que informan su cobertura de datos y el anclaje del hash en blockchain, y comunica sus certificados como **registros verificables e inalterados**, no como una garantía absoluta de bienestar animal.
+Por su parte, Blaha y Katafono (2020), en una publicación de la Organización de las Naciones Unidas para la Alimentación y la Agricultura (FAO), analizan las oportunidades y limitaciones del uso de blockchain en las cadenas de valor de productos pesqueros. Los autores destacan la importancia de identificar los eventos críticos de seguimiento y los datos necesarios para mantener la trazabilidad, así como de evaluar si la tecnología resulta adecuada para cada escenario de aplicación. Este planteamiento permite reconocer que la trazabilidad requiere procesos definidos de captura y organización de información, además de mecanismos tecnológicos para consultar y proteger los registros. No obstante, la utilización de blockchain no garantiza por sí sola que los datos registrados sean correctos. Powell et al. (2022) advierten que la integración de IoT y blockchain puede conservar registros inalterables sin resolver previamente los problemas de calidad, validez o confiabilidad de la información recopilada. Por ello, la protección criptográfica de un registro debe diferenciarse de la verificación de las condiciones reales en las que se produjo el alimento. Frente a este escenario, el proyecto Verifish plantea YakuControl como una solución orientada al monitoreo de las condiciones del agua en piscigranjas de trucha, complementada por YakuTrace para organizar y verificar la integridad del historial digital de los lotes. La propuesta busca atender tanto las necesidades operativas de los productores como los requerimientos de consulta de información de los compradores de supermercado. De esta manera, el proyecto integra dos necesidades relacionadas: disponer de información oportuna para apoyar la gestión acuícola y facilitar el acceso a registros de trazabilidad durante la comercialización.
 
 #### Problemática
 
-**Who (¿Quién?)**<br>
-La problemática afecta directamente a dos actores fundamentales en el ecosistema acuícola:
-- **Administradores de piscigranja**: Profesionales responsables de la planificación estratégica, rentabilidad financiera y toma de decisiones basada en el rendimiento histórico de producción.
+**Who (¿Quién?)**
 
-- **Piscicultores:** Personal técnico encargado de la supervisión física diaria, el mantenimiento de los estanques y la ejecución de maniobras de emergencia ante variaciones ambientales.
+La problemática afecta principalmente a dos segmentos relacionados con la operación de las piscigranjas de trucha:
 
-**What (¿Qué?)** <br>
-La ausencia de un sistema de monitoreo inteligente impacta a cada perfil de la siguiente manera:
+- **Administradores de piscigranja:** responsables de supervisar la producción, organizar los recursos, evaluar el desempeño de los estanques y tomar decisiones operativas y económicas.
+- **Piscicultores:** trabajadores encargados del seguimiento diario de las condiciones de crianza, la observación del comportamiento de los peces y la ejecución de acciones de respuesta ante situaciones que puedan afectar la producción.
 
-- **Administrador de piscigranja**: La falta de una plataforma centralizada impide visualizar tendencias o calcular costos operativos. Sin datos históricos, no puede optimizar el uso de recursos ni garantizar la escalabilidad del negocio, quedando vulnerable ante pérdidas masivas de inventario.
+**What (¿Qué?)**
 
-- **Piscicultor:** Su limitación es la dependencia de la observación, lo que le impide detectar anomalías invisibles a simple vista. Esto los fuerza a actuar de forma reactiva, enfrentando crisis cuando el pez ya muestra signos de estrés, lo que eleva la carga laboral y riesgo de mortalidad por error humano.
+La dificultad principal consiste en disponer de información continua, organizada y accesible sobre las condiciones del agua de los estanques.
 
-**Where (¿Dónde?)** <br>
- Esta problemática se observa en piscigranjas de truchas arcoíris, particularmente en zonas andinas y rurales del Perú alimentadas por ríos.
+Para los administradores, la dispersión de registros y la ausencia de información histórica consolidada dificultan la identificación de tendencias, la comparación del comportamiento de los estanques y la evaluación de situaciones que requieren intervención.
 
-**When (¿Cuándo?)** <br>
- El problema es una amenaza constante, pero se intensifica de forma crítica durante anomalías climáticas (como mediodías de calor extremo que disminuyen la solubilidad del oxígeno), lluvias intensas que elevan repentinamente la turbidez del agua (lodo), y tras los ciclos de alimentación intensiva, cuando la concentración de desechos altera el equilibrio químico del estanque.
+En el caso de los piscicultores, la dependencia de observaciones visuales y mediciones periódicas puede ocasionar que determinadas variaciones de temperatura, pH o turbidez no sean identificadas durante los intervalos entre inspecciones. Como consecuencia, las acciones correctivas pueden iniciarse cuando las condiciones adversas ya se han prolongado.
 
-**Why (¿Por qué?)** <br>
- La raíz del problema es la *falta de adopción tecnológica y de sistemas de telemetría en el sector acuícola.* Muchos productores de las categorías de micro y pequeña escala dependen de la simple observación o de mediciones químicas manuales esporádicas. Esto impide contar con un registro histórico, generando ineficiencia operativa que impide reaccionar a los cambios termodinámicos que destruyen el ecosistema.
+**Where (¿Dónde?)**
 
-**How (¿Cómo?)** <br>
- **YakuControl** propone una solución integrando el Internet de las Cosas (IoT) con una arquitectura en la nube. A través de hardware instalado en los estanques (Edge API), el sistema recopila lecturas de temperatura, pH y turbidez en tiempo real, ejecutando algoritmos que determinan la calidad del agua. Simultáneamente, las aplicaciones cliente (Web y Móvil) alertan a los operarios sobre estados críticos y permiten el encendido remoto (o automatizado) de actuadores de emergencia.
+La problemática se sitúa en piscigranjas dedicadas a la crianza de trucha arcoíris en el Perú, especialmente en establecimientos localizados en zonas altoandinas y rurales, donde las condiciones ambientales, la disponibilidad de equipamiento y la conectividad pueden influir en los procedimientos de monitoreo.
 
-**How Much (¿Cuánto?)**<br>
-Uno de los principales desafíos en el sector acuícola es la alta vulnerabilidad ante alteraciones ambientales y bioquímicas en el agua, lo que genera mortalidades masivas y pérdida total del capital. 
+**When (¿Cuándo?)**
 
-Según documenta el portal Actualidad Ambiental (2025), el impacto económico de no contar con un monitoreo preventivo es devastador: incidentes recientes en zonas andinas, ocasionados por contaminación o alteraciones en los cauces, han generado la muerte repentina de hasta 200,000 truchas en un solo evento. Este tipo de desastres representa pérdidas de capital superiores a los S/ 300,000 para una sola piscigranja. 
+Las dificultades pueden presentarse durante todo el ciclo de crianza, particularmente cuando ocurren variaciones ambientales entre las inspecciones programadas. Estas situaciones pueden relacionarse con cambios de temperatura, precipitaciones intensas, incremento de turbidez o alteraciones de las condiciones fisicoquímicas del agua.
 
-Todo este panorama evidencia la urgencia de digitalizar el control operativo para evitar la quiebra de los productores locales.
+La necesidad de información oportuna se vuelve especialmente relevante cuando el personal debe identificar una anomalía, evaluar su gravedad y decidir qué acciones corresponde ejecutar.
+
+**Why (¿Por qué?)**
+
+Una de las causas identificadas en el contexto del proyecto es la limitada incorporación de mecanismos de monitoreo continuo y registro digital de información en determinados establecimientos acuícolas.
+
+La dependencia de procedimientos manuales, junto con las restricciones de conectividad, disponibilidad de equipos y recursos económicos, puede dificultar la recopilación sistemática de datos. Esto limita la capacidad de construir historiales confiables y utilizarlos para apoyar decisiones preventivas.
+
+**How (¿Cómo?)**
+
+Actualmente, el seguimiento de las condiciones de crianza puede realizarse mediante inspecciones de los estanques, observación del comportamiento de los peces, mediciones puntuales de los parámetros del agua y registros elaborados por el personal.
+
+Como respuesta a estas limitaciones, YakuControl propone integrar sensores IoT, procesamiento de datos y servicios en la nube para recopilar lecturas de temperatura, pH y turbidez, presentar información histórica y generar alertas ante condiciones fuera de los rangos definidos.
+
+La solución contempla aplicaciones web y móviles para facilitar la consulta de información por parte de administradores y piscicultores. La integración con los componentes Edge permitirá gestionar las lecturas de los dispositivos y considerar las restricciones de conectividad de los establecimientos.
+
+**How Much (¿Cuánto?)**
+
+Los incidentes de mortalidad masiva pueden ocasionar pérdidas económicas significativas para los productores acuícolas. Actualidad Ambiental (2025) reportó la muerte de más de 200 000 truchas en una piscigranja de Huarochirí, con pérdidas estimadas entre S/ 100 000 y S/ 150 000 y una proyección de hasta S/ 300 000 si los peces hubieran completado su crecimiento.
+
+Esta información permite ilustrar la magnitud económica de determinados incidentes, aunque no establece que todas las pérdidas puedan evitarse mediante monitoreo IoT. En consecuencia, la propuesta de YakuControl se orienta a mejorar la disponibilidad de información y apoyar la detección oportuna de anomalías, mientras que su impacto real sobre las pérdidas productivas deberá evaluarse mediante pruebas y resultados de validación.
+
+#### Problemática del comprador de supermercado (5W+2H)
+
+**Who (¿Quién?)**
+
+La problemática se relaciona con los responsables de compras, abastecimiento y aseguramiento de calidad de pescados y mariscos en supermercados que adquieren lotes de trucha a proveedores acuícolas.
+
+Estos profesionales participan en la evaluación de proveedores, revisión documental, recepción de productos y seguimiento de requisitos comerciales o de calidad establecidos por sus organizaciones.
+
+**What (¿Qué?)**
+
+Una de las dificultades que pueden enfrentar es la limitada disponibilidad de información centralizada y verificable sobre el origen y las condiciones registradas durante la crianza de los lotes adquiridos.
+
+Cuando los antecedentes de producción se encuentran distribuidos entre distintos documentos o registros proporcionados por el proveedor, su revisión puede requerir consultas adicionales y dificultar el seguimiento de la información necesaria para atender observaciones, reclamos o auditorías.
+
+**Where (¿Dónde?)**
+
+La problemática se presenta durante los procesos de adquisición y recepción de trucha en supermercados y centros de distribución que mantienen relaciones comerciales con piscigranjas proveedoras del país.
+
+En el contexto del proyecto, se considera especialmente la adquisición de trucha procedente de establecimientos ubicados en regiones productoras del territorio peruano.
+
+**When (¿Cuándo?)**
+
+La necesidad de consultar información de trazabilidad aparece durante la selección y evaluación de proveedores, la recepción de lotes y la revisión de documentación asociada con las compras.
+
+Asimismo, puede adquirir mayor importancia cuando se presentan observaciones de calidad, solicitudes de información adicional, devoluciones o auditorías.
+
+**Why (¿Por qué?)**
+
+La dificultad se relaciona con la posible fragmentación de los registros generados durante la crianza y comercialización. Cuando la información depende de documentos físicos, hojas de cálculo u otros medios de comunicación, puede resultar más complicado consolidar el historial del lote y verificar si los registros presentados corresponden a una versión previamente emitida.
+
+No obstante, la magnitud de esta dificultad y su frecuencia en los procesos de los supermercados deberán contrastarse con las entrevistas del tercer segmento.
+
+**How (¿Cómo?)**
+
+La consulta de información puede requerir la revisión de documentos proporcionados por los proveedores y la comunicación con los responsables de las piscigranjas para resolver dudas o solicitar antecedentes adicionales.
+
+Para atender esta necesidad, YakuTrace propone generar certificados digitales por lote, accesibles mediante códigos QR. La página pública de verificación presentará el historial registrado y un resumen de las condiciones del agua, además de permitir comprobar la correspondencia entre el contenido del certificado y su huella digital almacenada en blockchain.
+
+Este mecanismo está orientado a facilitar la consulta y verificación de integridad documental, sin sustituir los controles sanitarios ni los procedimientos internos de aceptación de productos de cada supermercado.
+
+**How Much (¿Cuánto?)**
+
+Todavía no se cuenta con información suficiente para cuantificar el costo que representa la revisión documental o la atención de incidencias relacionadas con la trazabilidad para los compradores de supermercado.
+
+Como parte del modelo de negocio propuesto, la consulta pública de certificados será gratuita y no requerirá crear una cuenta. El servicio de generación y gestión de certificados estará asociado al plan adicional TRACE, cuyo pago corresponde a la piscigranja.
+
+Los beneficios económicos y operativos para los compradores deberán evaluarse posteriormente mediante entrevistas y pruebas con representantes del segmento objetivo.
 
 <div style="page-break-after: always;"></div>
 
