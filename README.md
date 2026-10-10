@@ -59,8 +59,6 @@
 
 <div style="page-break-after: always;"></div>
 
-<div style="page-break-after: always;"></div>
-
 ### Registro de Versiones del Informe
 
 | Versión | Fecha | Autor | Descripción de modificación |
@@ -315,8 +313,6 @@ El repositorio se organizó con GitFlow. La rama `main` conserva solo versiones 
 
 <div style="page-break-after: always;"></div>
 
-<div style="page-break-after: always;"></div>
-
 # Student Outcome
 
 El curso contribuye al cumplimiento del Student Outcome ABET:
@@ -434,8 +430,6 @@ Uno de los principales desafíos en el sector acuícola es la alta vulnerabilida
 Según documenta el portal Actualidad Ambiental (2025), el impacto económico de no contar con un monitoreo preventivo es devastador: incidentes recientes en zonas andinas, ocasionados por contaminación o alteraciones en los cauces, han generado la muerte repentina de hasta 200,000 truchas en un solo evento. Este tipo de desastres representa pérdidas de capital superiores a los S/ 300,000 para una sola piscigranja. 
 
 Todo este panorama evidencia la urgencia de digitalizar el control operativo para evitar la quiebra de los productores locales.
-
-<div style="page-break-after: always;"></div>
 
 
 #### Problemática del comprador de supermercado (5W+2H)
@@ -582,8 +576,6 @@ Son los propietarios o gestores del negocio, enfocados en la rentabilidad, la pr
 - Valoran la trazabilidad de eventos para tomar decisiones sobre mantenimiento, inversión en equipos o cambios operativos.
 - Son los tomadores de decisión de compra: evalúan el costo de la suscripción frente al costo potencial de una mortalidad masiva.
 
-<div style="page-break-after: always;"></div>
-
 
 **Segmento 3: Compradores de supermercado**
 
@@ -598,6 +590,8 @@ Son los profesionales de compras y de aseguramiento de calidad de la categoría 
 En las entrevistas realizadas (sección 2.2.3), los tres participantes tienen entre 25 y 28 años, residen en distritos de Lima (San Luis, San Juan de Lurigancho y Santa Anita), se desempeñan como responsables o encargados de compras de productos frescos y atienden entre una y tres tiendas. Trabajan con computadora o laptop, sistema interno, correo, Excel y WhatsApp, y usan el celular para comunicarse con sus proveedores.
 
 **Consumidor final (visitante).** Es quien escanea el QR del empaque en tienda o en casa. No se modela como segmento formal; sus historias de usuario usan el rol *visitante*.
+
+<div style="page-break-after: always;"></div>
 
 # Capítulo II: Requirements Elicitation & Analysis
 ## 2.1. Competidores
@@ -1181,7 +1175,6 @@ Los mapas se construyen a partir de las actividades y dificultades descritas en 
 
 ![As-is Scenario Mapping – Comprador de supermercado](https://i.imgur.com/UxRoxfM.png)
 
-<div style="page-break-after: always;"></div>
 
 [Link del Miro](https://miro.com/welcomeonboard/SWQ4UUpYdlFSYTdCNEErcTQ2VzRqNU1BZk54eStDOFR6TnhmRTJCK2FWVWJXQ0ltTmtXYm9RUFJwSHF2eWIvNUxzeERCcXRhM1M3L1pXdE5ERGpqVTNrcUM4YWVONEZMTWZvVWFiVFl3dVdpb3AwTTVQQ2MzbTNxNkdLSWh4WEJBS2NFMDFkcUNFSnM0d3FEN050ekl3PT0hdjE=?share_link_id=826222577249)
 
@@ -1234,6 +1227,8 @@ El Lenguaje Ubicuo (*Ubiquitous Language*) de YakuControl + YakuTrace es el voca
 | **Verification** (Verificación) | Comprobación de que el contenido de un certificado coincide con el registro inalterable emitido; resulta en válido, alterado o revocado. | Traceability |
 | **Revocation** (Revocación) | Anulación de un certificado emitido por error; queda registrada y no borra el historial. | Traceability |
 | **Supermarket Buyer** (Comprador de supermercado) | Profesional de compras o aseguramiento de calidad que verifica el origen y las condiciones registradas de un lote. | Traceability |
+
+<div style="page-break-after: always;"></div>
 
 # Capítulo III: Requirements Specification
 ## 3.1. To-Be Scenario Mapping
@@ -1414,6 +1409,8 @@ El Product Backlog se ordena por **valor para el negocio**. El criterio aplicado
 ![Product Backlog en Trello](./assets/images/product-backlog-trello.png)
 
 *Tablero de Trello con las 36 tarjetas en el mismo orden y con los mismos puntos de la tabla anterior.*
+
+<div style="page-break-after: always;"></div>
 
 # Capítulo IV: Strategic-Level Software Design
 ## 4.1. Strategic-Level Attribute-Driven Design
@@ -2005,6 +2002,8 @@ El diagrama de despliegue mapea la arquitectura lógica a la infraestructura. El
 
 ![Deployment Diagram](./assets/images/cap4/c4_deployment.png)
 
+<div style="page-break-after: always;"></div>
+
 # Capítulo V: Tactical-Level Software Design
 En este capítulo se presenta el diseño táctico de YakuControl + YakuTrace. El backend es un **monolito modular** (Spring Boot) en el que cada Bounded Context es un módulo con su propio paquete, su propio esquema de base de datos y cuatro capas: **Domain**, **Interface**, **Application** e **Infrastructure**. Los módulos no se acceden entre sí por sus clases internas: se comunican mediante **eventos de dominio en proceso** (bus interno de Spring) y mediante interfaces explícitas protegidas por una **Anti-Corruption Layer** cuando un contexto consulta a otro. Las integraciones externas (Stripe, Firebase Cloud Messaging, SMTP, Edge API y blockchain) se acceden siempre a través de un **puerto** definido en el contexto y un **adaptador** en la capa de Infrastructure, de modo que el dominio no depende de ningún proveedor.
 
@@ -2428,6 +2427,8 @@ Payment gestiona el modelo SaaS: suscripciones por granja, facturación recurren
 ![Database Payment](./assets/images/cap5/db_payment.png)
 
 El esquema `payment` contiene `subscriptions` (una por granja), `invoices` (historial de cobros, FK a la suscripción) y `subscription_addons` (add-ons por suscripción, únicos por tipo).
+
+<div style="page-break-after: always;"></div>
 
 # Capítulo VI: Solution UX Design
 
@@ -3448,32 +3449,6 @@ World Fishing & Aquaculture. (2021). *Nueva Pescanova e IBM trabajan para rastre
 
 - [Simulación en Wokwi](https://wokwi.com/projects/467186064937826305)
 
+**Anexo b. Videos de Exposiciones**
 
-**Anexo B. Mejora continua: autocrítica y cambios respecto de TB1**
-
-Para esta entrega no se contó con retroalimentación formal del docente sobre TB1. Las mejoras provienen de la **autocrítica del equipo**, al contrastar el informe con el enunciado y la rúbrica, y de la incorporación del nuevo segmento y de la trazabilidad con blockchain. Cada observación se vincula con el cambio aplicado.
-
-| # | Observación (autocrítica) | Cambio aplicado en TP1 | Sección |
-| :-: | :--- | :--- | :--- |
-| 1 | El Student Outcome correspondía a otro curso (ABET 7). | Se reemplazó por el ABET 3 con los criterios del enunciado. | Student Outcome |
-| 2 | Existía una sección de Objetivos SMART que el enunciado no pide. | Se eliminó. | — |
-| 3 | El Ubiquitous Language estaba en español y mezclaba términos técnicos. | Se reescribió con términos en inglés (español entre paréntesis) y solo del dominio. | 2.4 |
-| 4 | Se usó *User Journey Mapping* y el enunciado pide As-is Scenario Mapping. | Se rehicieron con las filas Phases, Doing, Thinking y Feeling. | 2.3.4 |
-| 5 | Faltaba el To-Be Scenario Mapping. | Se agregó para las tres personas. | 3.1 |
-| 6 | Épicas y User Stories estaban en cuadros separados y los criterios incluían detalles de interfaz. | Cuadro único; criterios en Gherkin, tiempo presente, sin UI y con más escenarios. | 3.2 |
-| 7 | El Product Backlog iniciaba con seguridad y autenticación. | Se reordenó por valor de negocio y se justificó el criterio. | 3.4 |
-| 8 | El Impact Mapping era solo una imagen. | Se agregaron objetivos SMART y la tabla Goal → Actor → Impact → Deliverable → Stories. | 3.3 |
-| 9 | Los constraints no eran Technical Stories y estaban desactualizados (nombre previo, 6 integrantes, Flutter para web). | Se reescribieron como TC01–TC12 y se corrigió la tecnología de la Web App. | 4.1.2.3 |
-| 10 | Drivers, decisiones y refinements no seguían el formato del enunciado. | Se rehicieron con las columnas exigidas, matriz de patrones y tablas de refinement. | 4.1.3 a 4.1.5 |
-| 11 | El Container Diagram hablaba de microservicios, API Gateway y bus de eventos, pero la decisión era un monolito modular. | Se rehicieron todos los diagramas C4 con una arquitectura coherente. | 4.3 |
-| 12 | Inconsistencias en los contextos (conteo de contextos, errores de escritura) y un párrafo duplicado en el Context Mapping. | Se corrigieron. | 4.2.2, 4.2.5 |
-| 13 | La introducción del análisis de entrevistas indicaba dos participantes cuando eran seis. | Se corrigió y se actualizó con el Segmento 3 (nueve participantes en total). | 2.2.3 |
-| 14 | El EventStorming aparecía duplicado en dos capítulos. | Se mantuvo solo en el diseño estratégico. | 4.2.1 |
-| 15 | No se consideraba al comprador del producto. | Se incorporó el Segmento 3 y el módulo YakuTrace con trazabilidad en blockchain. | 1.3, Cap. II a VI |
-| 16 | Los datos de los sensores podían ingresar sin autenticar su origen y blockchain no corrige datos erróneos. | Se agregó la firma de lecturas y la cobertura de datos en los resúmenes. | 4.1.4, 5.2 |
-| 17 | El diseño táctico y la experiencia de usuario no estaban desarrollados en este informe. | Se desarrollaron los Capítulos V y VI con diagramas y principios de Responsive Web Design. | Cap. V y VI |
-
-
-**Anexo C. Videos de Exposiciones**
-
-Enlace privado de Microsoft Stream del video de exposición: _por completar al subir el video_.
+- [Link de la Exposición de TP1]()
