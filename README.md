@@ -3451,4 +3451,4 @@ World Fishing & Aquaculture. (2021). *Nueva Pescanova e IBM trabajan para rastre
 
 **Anexo b. Videos de Exposiciones**
 
-- [Link de la Exposición de TP1]()
+- [Link de la Exposición de TP1](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202125968_upc_edu_pe/IQCfmbv_fzrnToGVrxLg26ojAbX7Gt2nWWMgIejbg462N8Q?e=b7ouCh&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
