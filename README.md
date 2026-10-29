@@ -1,17 +1,3 @@
-> ## 🧭 GUÍA INTERNA DEL EQUIPO — BORRAR ANTES DE EXPORTAR A PDF
->
-> Esqueleto del informe **TP1** (Cap. I–VI hasta **6.4.2**) según el enunciado de 1ASI0728 (202620). Gran parte del texto ya está **redactado**; a los integrantes les queda principalmente trabajo en herramientas (Miro, UXPressia, Figma, LucidChart, Trello), entrevistas y revisión.
->
-> | Marca | Significado |
-> | :--- | :--- |
-> | ✍️ **REDACTADO** | Texto ya escrito. Revisar, ajustar y completar lo que la marca indique (normalmente herramientas o datos reales). |
-> | 🔴 **CAMBIAR** | Existe pero debe modificarse (aún no redactado). |
-> | 🟡 **AJUSTAR AL ENUNCIADO** | Existe pero no cumple formato/regla del enunciado. |
-> | 🟢 **NUEVO** | Falta completamente y no está redactado. |
-> | 🔵 **BASE / REUTILIZAR** | Viene de otro reporte como punto de partida. |
->
-> Para limpiar antes de exportar: borrar todas las líneas que empiecen con `> ✍️`, `> 🔴`, `> 🟡`, `> 🟢`, `> 🔵`, `> ⚪` (y sus líneas `>` siguientes), los comentarios `<!-- ⚠ … -->` ya resueltos y este bloque. Las imágenes van en `assets/images/` (ver `PENDIENTES_TP1.md`).
-
 <div style="text-align: center;">
   <img src="./assets/images/logo_upc.png" alt="Logo UPC" width="80"/>
 </div>
@@ -73,12 +59,7 @@
 
 <div style="page-break-after: always;"></div>
 
-> 🟡 **AJUSTAR AL ENUNCIADO** — Verificar **mes y año** (octubre 2026), sección/NRC, profesor y los códigos de estudiante. (Tarea TR-02)
-
 ### Registro de Versiones del Informe
-
-> ✍️ **REDACTADO** — Se agregaron las filas 6.0–10.0 de TP1 con **fecha y autor por completar**: poner la fecha real y el autor real de cada cambio, y que coincidan con los commits. (Tarea TR-02)
-
 
 | Versión | Fecha | Autor | Descripción de modificación |
 | :--- | :--- | :--- | :--- |
@@ -87,18 +68,16 @@
 | **3.0** | 15/09/2026 | S. Escobar, R. Bendezu, L. Choquehuanca, V. Cruz, R. Peralta | Finalización del Capítulo II: Obtención y análisis de requisitos |
 | **4.0** | 15/09/2026 | S. Escobar, R. Bendezu, L. Choquehuanca, V. Cruz, R. Peralta | Se completó el Capítulo III: Especificación de requisitos |
 | **5.0** | 19/09/2026 | S. Escobar, R. Bendezu, L. Choquehuanca, V. Cruz, R. Peralta | Se completó el Capítulo IV: Diseño y arquitectura de la solución |
-| **6.0** | (fecha) | (autor) | **TP1 – Estructura:** corrección del Student Outcome (ABET 3), eliminación de Objetivos SMART y de secciones duplicadas, reordenamiento de 2.3 según el enunciado. |
-| **7.0** | (fecha) | (autor) | **TP1 – Cap. I a III:** incorporación del Segmento 3 y de YakuTrace; reescritura de User Stories (Gherkin sin UI), Product Backlog ordenado por valor, To-Be Scenario Mapping, Impact Mapping con objetivos SMART y Ubiquitous Language en inglés. |
-| **8.0** | (fecha) | (autor) | **TP1 – Cap. IV:** constraints como Technical Stories, drivers, matriz de patrones, refinements; EventStorming, contextos, canvases y context map con Traceability; diagramas C4 coherentes con el monolito modular. |
-| **9.0** | (fecha) | (autor) | **TP1 – Cap. V:** diseño táctico de los seis Bounded Contexts (capas, componentes, clases y base de datos). |
-| **10.0** | 08/10/2026 | Rúbens Fitzgerald Bendezu (Lucemz) | **TP1 – Paquete E:** revisión del capítulo VI; guía visual y arquitectura de información, landing desktop/móvil, pantallas 1–28 en español, estados y 23 wireflows; fuentes editables, PNG y evidencia escrita del Student Outcome 3. |
+| **6.0** | 02/10/2026 | Ronald Peralta | **TP1 – Estructura y negocio:** corrección del Student Outcome (ABET 3), eliminación de la sección independiente de Objetivos SMART (que pasaron al Impact Mapping) y de secciones duplicadas y reordenamiento de 2.3 según el enunciado. Incorporación del Segmento 3 (compradores de supermercado) y de YakuTrace en el Startup y Solution Profile, el Lean UX, los segmentos objetivo, el análisis de competidores y el Impact Mapping con objetivos SMART. |
+| **7.0** | 04/10/2026 | Luciana Choquehuanca | **TP1 – Usuarios:** diseño y análisis de las entrevistas del Segmento 3, User Personas, validación de la User Task Matrix, Empathy Mapping y As-is y To-Be Scenario Mapping con el comprador de supermercado. |
+| **8.0** | 06/10/2026 | Victor Cruz | **TP1 – Requisitos y diseño estratégico:** User Stories en Gherkin sin referencias a la interfaz, Product Backlog ordenado por valor y por dependencias, constraints como Technical Stories, drivers, matriz de patrones y decisiones AD-01 a AD-14, refinamientos de escenarios de calidad, EventStorming, Candidate Context Discovery, Domain Message Flows 5 a 7, Bounded Context Canvases y Context Map con el contexto Traceability. |
+| **9.0** | 07/10/2026 | Sebastian Escobar | **TP1 – Arquitectura y diseño táctico:** diagramas C4 coherentes con el monolito modular, Ubiquitous Language en inglés, diseño táctico de los seis Bounded Contexts (capas, componentes, diagramas de clases y de base de datos), bibliografía y anexos. |
+| **10.0** | 08/10/2026 | Rúbens Bendezu | **TP1 – Diseño UX/UI:** guía de estilos, arquitectura de información, Landing Page desktop y móvil, pantallas de las aplicaciones en español con sus estados y wireflows con YakuTrace; fuentes editables, imágenes y evidencia escrita del Student Outcome 3. |
+| **11.0** | 09/10/2026 | S. Escobar, R. Bendezu, L. Choquehuanca, V. Cruz, R. Peralta | **TP1 – Integración:** revisión cruzada de los capítulos, unificación de terminología y de nombres de imágenes, tabla de contenido, Student Outcome, Project Report Collaboration Insights y limpieza de las notas internas del equipo. |
 
 <div style="page-break-after: always;"></div>
 
 # Project Report Collaboration Insights
-
-> 🟡 **AJUSTAR AL ENUNCIADO** — Agregar una sección **## TP1** con: tareas por integrante (según votación), cómo se trabajó (ramas por capítulo, PRs, revisiones) y capturas nuevas de Insights (Contributors, Commits, Network). Todos los integrantes deben tener commits. Las capturas actuales (imgur) son de TB1: conservarlas bajo "## TB1" y migrarlas a `./assets/` para no depender de enlaces externos. (Tarea TR-02)
-
 
 En esta sección se presenta un resumen de las actividades de colaboración realizadas para la elaboración del informe del proyecto.
 
@@ -111,18 +90,8 @@ Los integrantes del equipo y sus nombres de usuario en GitHub son los siguientes
 | Escobar Palomino, Sebastian Matias | sebasepe |
 | Bendezu Navarro, Rúbens Fitzgerald | Lucemz |
 | Choquehuanca Nuñez, Luciana Carolina | Lucianxaaa |
-| Cruz Ibarra, Victor Andres |Elandrehs |
+| Cruz Ibarra, Victor Andres | Elandrehs |
 | Peralta Chipa, Ronald Joel | RooDev10 |
-
-
-<div style="page-break-after: always;"></div>
-
-## TP1 — contribución del paquete E
-
-**Responsable:** Rúbens Fitzgerald Bendezu Navarro (`Lucemz`). Se desarrolló el capítulo VI desde `develop`, organizando el trabajo en `feature/pkg-e-style-guide`, `feature/pkg-e-landing`, `feature/pkg-e-wireframes`, `feature/pkg-e-wireflows` y `feature/review-chapter-6`. Los cambios se integran mediante la rama `feature/pkg-e`, conservando los commits y los merges del trabajo.
-
-La entrega incluye fuentes HTML/CSS, la tipografía Inter con licencia, PNG renderizados y un control reproducible de imágenes, referencias y contraste. Los diseños representan estados ilustrativos; no son pruebas de funcionamiento del backend. La [revisión del paquete](design/package-e/REVISION_PAQUETE_E.md) identifica los pendientes externos y del resto del informe. Las aportaciones de los demás integrantes deben registrarse con sus tareas y evidencias reales.
-
 
 ## TB1
 
@@ -138,36 +107,75 @@ Iniciando actividades el **10/09/2026**, el equipo distribuyó las responsabilid
 | Cruz Ibarra, Victor Andres | - Software Architecture (Context, Container & Deployment Diagrams) <br> - Configuración del Repositorio <br> - Tactical Level DDD (IAM Context) |
 | Peralta Chipa, Ronald Joel | - Registro de versiones del informe <br> - Project Report Collaboration Insights <br> - Student Outcome documentation <br> - Objetivos SMART <br> - Bounded Context Canvases <br> - Tactical Level DDD (Notification Context) |
 
-
-
 **GitHub Collaboration Insights**
 
-
-
 <div style="text-align: center; margin-top: 1rem; margin-bottom: 1rem;">
 
-![Insights - Contributors](https://i.imgur.com/3HvIb6B.png)
+![Insights TB1 - Contributors](https://i.imgur.com/GFsTViL.png)
 
 </div>
 
 <div style="text-align: center; margin-top: 1rem; margin-bottom: 1rem;">
 
-
-![Insights - Network Graph](https://i.imgur.com/GqOC9hn.png)
+![Insights TB1 - Network Graph](https://i.imgur.com/l2MZzRQ.png)
 
 </div>
 
 <div style="text-align: center; margin-top: 1rem; margin-bottom: 1rem;">
 
-![Insights - Commits](https://i.imgur.com/2bKoCJg.png)
+![Insights TB1 - Commits](https://i.imgur.com/gHlVSTL.png)
 
 </div>
 
 <div style="page-break-after: always;"></div>
 
-# Contenido
+## TP1
 
-> 🟡 **AJUSTAR AL ENUNCIADO** — Tabla de contenido regenerada (4 niveles). Verificar enlaces y regenerar si cambian títulos. (Tarea TR-09)
+**Tareas**
+
+Iniciando actividades el **01/10/2026**, el equipo distribuyó las responsabilidades del trabajo parcial de la siguiente manera:
+
+| Integrantes | Tarea asignada |
+| :--- | :--- |
+| Escobar Palomino, Sebastian Matias | - Software Architecture: diagramas C4 (System Landscape, Context, Container y Deployment) <br> - Tactical-Level DDD: diagramas de clases y de base de datos de los seis Bounded Contexts <br> - Ubiquitous Language <br> - Bibliografía y anexos |
+| Bendezu Navarro, Rúbens Fitzgerald | - Style Guidelines e Information Architecture <br> - Landing Page (wireframe y mock-up, desktop y móvil) <br> - Wireframes de las aplicaciones y Wireflows <br> - Revisión del Capítulo VI |
+| Choquehuanca Nuñez, Luciana Carolina | - Diseño, registro y análisis de las entrevistas del Segmento 3 <br> - User Personas y validación de la User Task Matrix <br> - Empathy Mapping <br> - As-is y To-Be Scenario Mapping |
+| Cruz Ibarra, Victor Andres | - User Stories y Product Backlog (Trello) <br> - Strategic-Level Attribute-Driven Design (QAS, constraints, drivers, decisiones y refinamientos) <br> - Strategic-Level DDD: EventStorming, Candidate Context Discovery, Domain Message Flows, Bounded Context Canvases y Context Mapping <br> - Coordinación del equipo |
+| Peralta Chipa, Ronald Joel | - Repositorio y GitFlow <br> - Carátula, Registro de Versiones, Collaboration Insights y Student Outcome <br> - Startup Profile, Solution Profile y Lean UX <br> - Segmentos objetivo, Competidores e Impact Mapping |
+
+**Cómo se trabajó**
+
+El repositorio se organizó con GitFlow. La rama `main` conserva solo versiones entregables y `develop` integra el trabajo del equipo. Cada tarea se desarrolló en una rama de funcionalidad (`feature/<tema>`) creada desde `develop`, se integró mediante un Pull Request con revisión de otro integrante, y los mensajes de commit siguieron la convención *Conventional Commits* (`docs`, `fix`, `feat`). Cada integrante editó solo sus secciones del informe, y las revisiones cruzadas se hicieron en ramas `feature/review-chapter-<n>`. La coordinación se realizó por chat, sin reuniones fijas.
+
+**GitHub Collaboration Insights**
+
+<div style="text-align: center; margin-top: 1rem; margin-bottom: 1rem;">
+
+![Insights TP1 - Contributors](https://i.imgur.com/qXSEzSz.png)
+
+*Contributors: aportes de cada integrante al repositorio durante TP1.*
+
+</div>
+
+<div style="text-align: center; margin-top: 1rem; margin-bottom: 1rem;">
+
+![Insights TP1 - Commits](https://i.imgur.com/Dw8tEGw.png)
+
+*Commits: frecuencia de commits durante el desarrollo de TP1.*
+
+</div>
+
+<div style="text-align: center; margin-top: 1rem; margin-bottom: 1rem;">
+
+![Insights TP1 - Network Graph](./assets/images/network.png)
+
+</div>
+
+<div style="page-break-after: always;"></div>
+
+
+
+# Contenido
 
 - [Student Outcome](#student-outcome)
 
@@ -317,19 +325,15 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 
 | Criterio específico | Acciones realizadas | Conclusiones |
 | :--- | :--- | :--- |
-| **Comunica oralmente sus ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería.** | **Escobar Palomino, Sebastian Matias**<br>*TB1*: (completar)<br>*TP1*: (completar)<br><br>**Bendezu Navarro, Rúbens Fitzgerald**<br>*TB1*: Evidencia oral individual por vincular; no se atribuye una exposición sin registro.<br>*TP1*: Preparé un guion de sustentación apoyado en la landing, las pantallas y los wireflows para explicar el diseño a piscicultores, administradores, compradores y al equipo técnico. El material distingue acciones de campo, decisiones de negocio y estados del certificado. La exposición y su evidencia se registrarán cuando se realicen.<br><br>**Choquehuanca Nuñez, Luciana Carolina**<br>*TB1*: (completar)<br>*TP1*: (completar)<br><br>**Cruz Ibarra, Victor Andres**<br>*TB1*: (completar)<br>*TP1*: (completar)<br><br>**Peralta Chipa, Ronald Joel**<br>*TB1*: (completar)<br>*TP1*: (completar) | *TB1:* (completar, grupal)<br>*TP1:* (completar, grupal) |
-| **Comunica en forma escrita ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería.** | **Escobar Palomino, Sebastian Matias**<br>*TB1*: (completar)<br>*TP1*: (completar)<br><br>**Bendezu Navarro, Rúbens Fitzgerald**<br>*TB1*: El informe previo registra aportes al análisis competitivo y Lean UX; falta vincular la evidencia personal específica para este criterio de comunicación.<br>*TP1*: Documenté y revisé el capítulo VI: guía visual, arquitectura de información, landing desktop/móvil, 28 pantallas principales, variantes responsive, estados alternativos y 23 wireflows. Redibujé la interfaz en español y relacioné los recorridos con las historias de usuario. Incorporé fuentes editables, PNG y controles de calidad que permiten al equipo reproducir y revisar el diseño.<br><br>**Choquehuanca Nuñez, Luciana Carolina**<br>*TB1*: (completar)<br>*TP1*: (completar)<br><br>**Cruz Ibarra, Victor Andres**<br>*TB1*: (completar)<br>*TP1*: (completar)<br><br>**Peralta Chipa, Ronald Joel**<br>*TB1*: (completar)<br>*TP1*: (completar) | *TB1:* (completar, grupal)<br>*TP1:* (completar, grupal) |
-
-**Evidencia individual de Rúbens Bendezu (TP1):** [fuentes y galería UX/UI](design/package-e/index.html), [revisión de entregables](design/package-e/REVISION_PAQUETE_E.md) y [guion de sustentación](design/package-e/GUION_SUSTENTACION.md). La evidencia escrita es verificable en los archivos y commits. La evidencia oral debe completarse con la sustentación real. Las filas de los demás integrantes y las conclusiones grupales requieren su validación.
+| **Comunica oralmente sus ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería.** | **TB1**<br><br>**Escobar Palomino, Sebastian Matias**<br>Explicó oralmente al equipo y al docente el diseño de las entrevistas, los perfiles de usuario y el modelado de flujos de dominio, y sustentó el contexto Equipment, ajustando el lenguaje técnico a cada oyente.<br><br>**Bendezu Navarro, Rúbens Fitzgerald**<br>Presentó el Startup y Solution Profile, los segmentos objetivo y los competidores, y explicó el Context Mapping y el contexto Payment al equipo y al docente, adaptando el nivel de detalle a cada oyente.<br><br>**Choquehuanca Nuñez, Luciana Carolina**<br>Explicó el Product Backlog, las historias de usuario y el EventStorming, y justificó los límites del contexto Telemetry ante el equipo y el docente.<br><br>**Cruz Ibarra, Victor Andres**<br>Presentó la arquitectura de la solución (diagramas de contexto, contenedores y despliegue), la organización del repositorio y el contexto IAM, apoyándose en diagramas.<br><br>**Peralta Chipa, Ronald Joel**<br>Presentó los objetivos SMART, los Bounded Context Canvases y la organización del informe, y explicó al equipo cómo se documenta el Student Outcome.<br><br><br>**TP1**<br><br>**Escobar Palomino, Sebastian Matias**<br>Preparó el guion para explicar la arquitectura C4 y el diseño táctico de los seis contextos (clases y base de datos) a audiencias técnicas y no técnicas.<br><br>**Bendezu Navarro, Rúbens Fitzgerald**<br>Preparó un guion de sustentación apoyado en la landing, las pantallas y los wireflows para explicar el diseño a piscicultores, administradores, compradores y al equipo técnico. El material distingue acciones de campo, decisiones de negocio y estados del certificado.<br><br>**Choquehuanca Nuñez, Luciana Carolina**<br>Preparó la exposición de las entrevistas del Segmento 3, las User Personas y los escenarios, para transmitir la voz del comprador de supermercado al equipo técnico.<br><br>**Cruz Ibarra, Victor Andres**<br>Preparó la sustentación del diseño estratégico: requisitos priorizados, atributos de calidad, EventStorming y mapa de contextos con Traceability, y la explicación de la verificación por QR para un público no técnico.<br><br>**Peralta Chipa, Ronald Joel**<br>Preparó la exposición del modelo de negocio, el análisis competitivo y el Impact Mapping, y de cómo YakuTrace se conecta con los objetivos de la startup. | **TB1**<br>El equipo aprendió a explicar decisiones técnicas (arquitectura, contextos y requisitos) a oyentes con distinto nivel de detalle, apoyándose en diagramas y en ejemplos del dominio acuícola. Se comprobó que presentar primero el problema del piscicultor y después la solución facilita la comprensión del público.<br><br>**TP1**<br>Con YakuTrace la audiencia se amplió a piscicultores, administradores y compradores de supermercado, por lo que el equipo preparó mensajes distintos para cada uno y los apoyó con la landing, las pantallas y los wireflows. |
+| **Comunica en forma escrita ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería.** | **TB1**<br><br>**Escobar Palomino, Sebastian Matias**<br>Redactó el diseño y análisis de entrevistas, las User Personas, la Task Matrix, el Journey Mapping, el Empathy Mapping, el Domain Message Flow y el contexto Equipment.<br><br>**Bendezu Navarro, Rúbens Fitzgerald**<br>Redactó el Startup y Solution Profile, los segmentos objetivo, los competidores, el Ubiquitous Language, el Impact Mapping, el Context Mapping y el contexto Payment.<br><br>**Choquehuanca Nuñez, Luciana Carolina**<br>Redactó las User Stories, el Product Backlog, la documentación del EventStorming, el Candidate Context Discovery y el contexto Telemetry.<br><br>**Cruz Ibarra, Victor Andres**<br>Redactó los diagramas de arquitectura (contexto, contenedores y despliegue), configuró el repositorio y redactó el contexto IAM.<br><br>**Peralta Chipa, Ronald Joel**<br>Redactó el registro de versiones, los Collaboration Insights, el Student Outcome, los objetivos SMART, los Bounded Context Canvases y el contexto Notification.<br><br><br>**TP1**<br><br>**Escobar Palomino, Sebastian Matias**<br>Redactó y revisó los diagramas C4 coherentes con el monolito modular, el Ubiquitous Language en inglés, el diseño táctico de los seis contextos (capas, clases y base de datos), la bibliografía y los anexos.<br><br>**Bendezu Navarro, Rúbens Fitzgerald**<br>Documentó y revisó el capítulo VI: guía visual, arquitectura de información, landing desktop/móvil, pantallas principales, variantes responsive, estados alternativos y wireflows. Redibujó la interfaz en español y relacionó los recorridos con las historias de usuario. Incorporó fuentes editables, imágenes y controles de calidad que permiten al equipo reproducir y revisar el diseño.<br><br>**Choquehuanca Nuñez, Luciana Carolina**<br>Redactó el diseño y el análisis de las entrevistas del Segmento 3, las User Personas, el Empathy Mapping y los escenarios As-is y To-Be con el comprador de supermercado.<br><br>**Cruz Ibarra, Victor Andres**<br>Redactó las User Stories en Gherkin sin referencias a la interfaz, el Product Backlog, el ADD completo (QAS, constraints, drivers, decisiones y refinamientos), el EventStorming, los canvases y el Context Map con Traceability.<br><br>**Peralta Chipa, Ronald Joel**<br>Redactó la estructura del informe, el registro de versiones, los Collaboration Insights y el Student Outcome, además del Startup Profile, el Lean UX, los competidores y el Impact Mapping con objetivos SMART. | **TB1**<br>El informe de TB1 documentó de forma ordenada el problema, los requisitos y la arquitectura mediante tablas, diagramas y plantillas comunes, y el trabajo por capítulos en GitHub permitió que cada integrante comunicara por escrito su parte de manera coherente.<br><br>**TP1**<br>En TP1 el informe incorporó el segmento de compradores y la trazabilidad con blockchain. Para que lo entiendan lectores técnicos y no técnicos, las historias se redactaron en Gherkin sin referencias a la interfaz, el glosario se escribió en inglés con su equivalente en español y los diagramas C4 y UML se hicieron coherentes con la decisión de un monolito modular. Las revisiones cruzadas entre integrantes mejoraron la consistencia del documento. |
 
 <div style="page-break-after: always;"></div>
+
 
 # Capítulo I: Introducción
 ## 1.1. Startup Profile
 ### 1.1.1. Descripción de la Startup
-
-> ✍️ **REDACTADO** — Texto de YakuTrace, misión y visión actualizados. Solo revisar redacción.
-
 
 **Verifish** es una startup tecnológica orientada al desarrollo de soluciones de *Smart Farming* y monitoreo ambiental, enfocada principalmente en contribuir a la modernización del sector acuícola. Surge con la finalidad de mejorar la gestión convencional de las piscigranjas mediante la incorporación de tecnologías como el **Internet de las Cosas (IoT)** y la **computación en la nube**, permitiendo una administración más inteligente de los recursos, la protección del entorno y una mayor sostenibilidad económica para los productores.
 
@@ -339,7 +343,7 @@ El objetivo de Verifish es facilitar la incorporación de estas tecnologías en 
 
 La necesidad de este tipo de soluciones se encuentra respaldada por la situación actual de la acuicultura peruana. De acuerdo con la Organización para la Cooperación y el Desarrollo Económicos (OCDE, 2025), la actividad acuícola en el Perú se encuentra expuesta a fluctuaciones y pérdidas de producción relacionadas, entre otros factores, con alteraciones en la calidad del agua y la contaminación de los recursos hídricos.
 
-Asimismo, de los más de 12 700 acuicultores registrados a nivel nacional, una proporción importante pertenece a la categoría de **Acuicultura de Recursos Limitados (AREL)**, sector en el cual todavía existe una baja incorporación de tecnologías orientadas al monitoreo y control de las condiciones productivas (PRODUCE, 2024).
+Asimismo, de los más de 12 700 acuicultores registrados a nivel nacional, una proporción importante pertenece a la categoría de **Acuicultura de Recursos Limitados (AREL)**, sector en el cual todavía existe una baja incorporación de tecnologías orientadas al monitoreo y control de las condiciones productivas (Ministerio de la Producción, 2024).
 
 Este contexto evidencia la existencia de una brecha tecnológica dentro del sector y la necesidad de implementar herramientas que permitan mejorar el control de las piscigranjas. En este escenario, YakuControl busca ofrecer una alternativa accesible que facilite la supervisión de las condiciones del agua y apoye a los productores en la prevención de riesgos asociados a la actividad acuícola.
 
@@ -353,8 +357,6 @@ A partir del trabajo de este ciclo, YakuControl incorpora **YakuTrace**, un mód
 <div style="page-break-after: always;"></div>
 
 ### 1.1.2. Perfiles de integrantes del equipo
-
-> 🟡 **AJUSTAR AL ENUNCIADO** — El enunciado exige: foto, nombres y apellidos, código, descripción de carrera y un párrafo con conocimientos técnicos y habilidades que aporta cada uno. Completar carrera/ciclo y skills técnicos (faltan en varios), verificar códigos (p. ej. `U20231d390`) y corregir typos ("nóvil", `img alt`). Subir las fotos a `./assets/` en vez de imgur. (Tarea C1-1)
 
 <table border="1">
   <tr>
@@ -383,9 +385,6 @@ A partir del trabajo de este ciclo, YakuControl incorpora **YakuTrace**, un mód
 ## 1.2. Solution Profile
 ### 1.2.1. Antecedentes y problemática
 
-> ✍️ **REDACTADO** — Antecedentes de trazabilidad y 5W+2H del comprador redactados. Revisar redacción y las citas.
-
-
 #### Antecedentes
 
 La acuicultura de trucha representa una actividad económica importante en diversas zonas altoandinas del Perú, especialmente en regiones como Junín, Puno, Cusco y Huancavelica. No obstante, los productores se encuentran expuestos de forma constante a episodios de mortalidad masiva asociados a cambios repentinos en la calidad del agua, los cuales muchas veces no son detectados oportunamente y terminan generando pérdidas irreversibles.
@@ -394,7 +393,7 @@ Un ejemplo reciente fue reportado por la Agencia Peruana de Noticias Andina (202
 
 Actualmente, el control de las condiciones del agua suele realizarse mediante revisiones físicas periódicas. Este procedimiento es principalmente manual y presenta limitaciones en términos de rapidez y precisión, lo que dificulta la detección temprana de variaciones críticas y reduce la capacidad de respuesta de los productores ante situaciones de riesgo.
 
-Paralelamente, los compradores del producto exigen cada vez más información verificable. Ya en 2016 se reportaba que supermercados como Plaza Vea, Wong y Tottus solicitaban a los productores de trucha un producto inocuo y con trazabilidad (Agraria.pe, 2016). En el Perú, Cencosud, propietaria de Wong y Metro, ha implementado una solución de trazabilidad basada en blockchain para productos cárnicos (Computer Weekly, s. f.), y a nivel internacional existen casos como el de Carrefour en España, que lanzó una trazabilidad con blockchain para pescado consultable mediante código QR (Ministerio de Agricultura, Pesca y Alimentación, s. f.), o el de Walmart, que redujo de siete días a 2,2 segundos el tiempo necesario para rastrear el origen de un producto (Linux Foundation Decentralized Trust, s. f.). La FAO ha analizado cómo la tecnología blockchain puede aplicarse a las cadenas de valor del pescado y en qué casos resulta adecuada (Blaha & Katafono, 2020).
+Paralelamente, los compradores del producto exigen cada vez más información verificable. Ya en 2016 se reportaba que supermercados como Plaza Vea, Wong y Tottus solicitaban a los productores de trucha un producto inocuo y con trazabilidad (Agraria.pe, 2016). En el Perú, Cencosud, propietaria de Wong y Metro, ha implementado una solución de trazabilidad basada en blockchain para productos cárnicos (Computer Weekly, 2021), y a nivel internacional existen casos como el de Carrefour en España, que lanzó una trazabilidad con blockchain para pescado consultable mediante código QR (Ministerio de Agricultura, Pesca y Alimentación, 2019), o el de Walmart, que redujo de siete días a 2,2 segundos el tiempo necesario para rastrear el origen de un producto (Linux Foundation Decentralized Trust, s. f.). La FAO ha analizado cómo la tecnología blockchain puede aplicarse a las cadenas de valor del pescado y en qué casos resulta adecuada (Blaha & Katafono, 2020).
 
 Sin embargo, la literatura advierte que blockchain por sí sola no garantiza que los datos sean correctos: puede conservar de forma inalterable un dato erróneo si este ingresa mal desde el sensor (Powell et al., 2021). Por ello, YakuTrace combina sensores cuyas lecturas se firman en el Edge, resúmenes que informan su cobertura de datos y el anclaje del hash en blockchain, y comunica sus certificados como **registros verificables e inalterados**, no como una garantía absoluta de bienestar animal.
 
@@ -432,8 +431,6 @@ Según documenta el portal Actualidad Ambiental (2025), el impacto económico de
 
 Todo este panorama evidencia la urgencia de digitalizar el control operativo para evitar la quiebra de los productores locales.
 
-<div style="page-break-after: always;"></div>
-
 
 #### Problemática del comprador de supermercado (5W+2H)
 
@@ -456,12 +453,10 @@ Los registros de cría suelen llevarse en cuadernos, hojas de cálculo y mensaje
 YakuTrace emite un certificado por lote con código QR. Al escanearlo, el comprador visualiza el historial del lote y el resumen de calidad del agua, y comprueba que el contenido coincide con la huella digital registrada en blockchain.
 
 **How Much (¿Cuánto?)**<br>
-*(Por validar con las entrevistas del Segmento 3.)* En el MVP el comprador verifica sin costo ni cuenta; el costo del certificado lo asume la piscigranja mediante el plan TRACE.
+En el MVP el comprador verifica sin costo ni cuenta; el costo del certificado lo asume la piscigranja mediante el plan TRACE. En las entrevistas, 2 de 3 compradores señalaron el costo adicional como una preocupación, por lo que el precio del complemento se definirá con las piscigranjas piloto.
 
 ### 1.2.2. Lean UX Process
 #### 1.2.2.1. Lean UX Problem Statements
-
-> ✍️ **REDACTADO** — Problem Statement 3 redactado.
 
 
 **Problem Statement 1 — Administrador de Piscigranja**
@@ -478,8 +473,6 @@ El estado actual del monitoreo de estanques en piscigranjas se ha centrado princ
 El estado actual de la compra de trucha fresca a piscigranjas se ha centrado principalmente en documentos y declaraciones del proveedor, y en la confianza construida con cada productor. Lo que los métodos y herramientas existentes no logran abordar es la posibilidad de **verificar de forma rápida y no alterable** el origen de un lote y las condiciones del agua registradas durante su cría, algo que se vuelve crítico ante reclamos, devoluciones o auditorías. Considerando la restricción de que los compradores no desean crear cuentas ni aprender sistemas nuevos para verificar un lote, y que los productores tienen un bajo nivel de digitalización, nuestro producto abordará esta brecha mediante un **certificado con código QR por lote** que abre una página pública de verificación, cuyo contenido está respaldado por una huella digital registrada en blockchain. Nuestro enfoque inicial serán los compradores y responsables de calidad de la categoría de pescados en cadenas de supermercados que se abastecen de trucha de piscigranjas peruanas. Sabremos que hemos tenido éxito cuando los compradores puedan verificar un lote en menos de un minuto desde su celular y, en los lotes piloto, se reduzcan las disputas por calidad o mortandad frente a los proveedores.
 
 #### 1.2.2.2. Lean UX Assumptions
-
-> ✍️ **REDACTADO** — Assumptions 6–8 y User Assumptions del comprador redactados.
 
 
 **Business Assumptions**
@@ -521,8 +514,6 @@ El estado actual de la compra de trucha fresca a piscigranjas se ha centrado pri
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
 
-> ✍️ **REDACTADO** — Hipótesis 6–8 redactadas.
-
 
 **Hipótesis 1**
 Creemos que lograremos **reducir el tiempo de respuesta ante eventos críticos del agua** si los **operarios de campo** pueden **recibir alertas push inmediatas con el tipo de riesgo detectado** mediante la **funcionalidad de notificaciones en tiempo real de la app móvil**.
@@ -551,22 +542,16 @@ Creemos que lograremos **reducir las disputas por calidad o mortandad entre prov
 
 #### 1.2.2.4. Lean UX Canvas
 
-> ✍️ **REDACTADO** — Falta (herramienta): rehacer el **Lean UX Canvas v2** con el Segmento 3 y las hipótesis 6–8 y reemplazar `LeanUX.png`. (Tarea C1-3)
-
 
 <div style="text-align: center; margin-top: 1rem; margin-bottom: 1rem;">
 
 ![Lean UX Canvas - YakuControl](./assets/images/LeanUX.png)
-
-_(Actualizar la imagen con el Canvas v2 que incluya el Segmento 3 y las hipótesis 6–8.)_
 
 </div>
 
 <div style="page-break-after: always;"></div>
 
 ## 1.3. Segmentos objetivo
-
-> ✍️ **REDACTADO** — Segmento 3 redactado con fuentes. Falta: verificar el año del dato de Perú Retail y completar la demografía con las entrevistas. (Tarea C1-4)
 
 
 YakuControl dirige su propuesta de valor a **tres segmentos** de usuarios con roles, responsabilidades y necesidades claramente diferenciados dentro del ecosistema de una piscigranja y de su cadena comercial:
@@ -591,28 +576,26 @@ Son los propietarios o gestores del negocio, enfocados en la rentabilidad, la pr
 - Valoran la trazabilidad de eventos para tomar decisiones sobre mantenimiento, inversión en equipos o cambios operativos.
 - Son los tomadores de decisión de compra: evalúan el costo de la suscripción frente al costo potencial de una mortalidad masiva.
 
-<div style="page-break-after: always;"></div>
-
 
 **Segmento 3: Compradores de supermercado**
 
 Son los profesionales de compras y de aseguramiento de calidad de la categoría de pescados y mariscos de las cadenas de supermercados. Deciden qué proveedores de trucha incorporan, aceptan o rechazan lotes y responden ante reclamos de clientes y auditorías. No son usuarios operativos de YakuControl: no necesitan una cuenta para verificar un certificado, lo hacen escaneando un código QR. Sus características clave son:
 
-- Operan en el canal moderno peruano, conformado principalmente por tres grupos: Cencosud (Wong y Metro), Supermercados Peruanos (Plaza Vea, Vivanda y Mass) y Tottus. Perú Retail reporta 316 supermercados, de los cuales 165 pertenecen a Supermercados Peruanos, 91 a Cencosud y 60 a Tottus (Perú Retail, s. f.). *(Verificar el año de este dato antes de la entrega.)*
+- Operan en el canal moderno peruano, conformado principalmente por tres grupos: Cencosud (Wong y Metro), Supermercados Peruanos (Plaza Vea, Vivanda y Mass) y Tottus. Perú Retail reporta 316 supermercados, de los cuales 165 pertenecen a Supermercados Peruanos, 91 a Cencosud y 60 a Tottus (Perú Retail, 2026).
 - Abastecen sus pescaderías con trucha de regiones como Puno, que alcanzó 26 mil toneladas en 2024 y distribuye parte de su producción a supermercados (El Búho, 2025); el Perú exportó trucha por US$ 32,8 millones en 2024 (Agraria.pe, 2025).
-- Históricamente han solicitado producto inocuo y con trazabilidad a los proveedores de trucha (Agraria.pe, 2016) y algunos operadores ya han adoptado trazabilidad con blockchain en otras categorías (Computer Weekly, s. f.).
+- Históricamente han solicitado producto inocuo y con trazabilidad a los proveedores de trucha (Agraria.pe, 2016) y algunos operadores ya han adoptado trazabilidad con blockchain en otras categorías (Computer Weekly, 2021).
 - Necesitan verificar rápidamente el origen y las condiciones registradas de un lote sin depender de documentos que puedan modificarse.
 - Valoran reducir reclamos y devoluciones y contar con evidencia ágil para auditorías.
 
-*(Las características demográficas —edad, cargo, dispositivos y canales digitales— se completan con el análisis de las entrevistas, sección 2.2.3.)*
+En las entrevistas realizadas (sección 2.2.3), los tres participantes tienen entre 25 y 28 años, residen en distritos de Lima (San Luis, San Juan de Lurigancho y Santa Anita), se desempeñan como responsables o encargados de compras de productos frescos y atienden entre una y tres tiendas. Trabajan con computadora o laptop, sistema interno, correo, Excel y WhatsApp, y usan el celular para comunicarse con sus proveedores.
 
 **Consumidor final (visitante).** Es quien escanea el QR del empaque en tienda o en casa. No se modela como segmento formal; sus historias de usuario usan el rol *visitante*.
+
+<div style="page-break-after: always;"></div>
 
 # Capítulo II: Requirements Elicitation & Analysis
 ## 2.1. Competidores
 ### 2.1.1. Análisis competitivo
-
-> ✍️ **REDACTADO** — Se agregó **Wholechain** (trazabilidad) como 4.º competidor y se actualizó la columna de Verifish; competidores indirectos redactados. Falta: **logos en la cabecera**, verificar datos/precios de Wholechain y revisar la tabla completa. (Tarea C2-1)
 
 
 **¿Por qué llevar a cabo este análisis?**
@@ -626,7 +609,7 @@ Identificar las fortalezas y debilidades de las soluciones existentes en el merc
 | **Perfil de Marketing** | **Mercado objetivo** | Piscigranjas de trucha en regiones andinas del Perú (Junín, Puno, Cusco, Huancavelica). Pequeños y medianos productores acuícolas. Compradores de supermercado como verificadores del certificado. | Empresas acuícolas de mediana y gran escala a nivel mundial (salmón, camarones, truchas). Enfocado en Europa y mercados desarrollados. | Gobiernos, empresas de utilities e industrias que requieren monitoreo ambiental de calidad del agua a nivel global. Sector agrícola y acuícola de mediana y gran escala. | Piscigranjas comerciales de mediana y gran escala, acuarios públicos e instalaciones de investigación acuícola a nivel mundial. | Empresas pesqueras y acuícolas, procesadores, distribuidores y minoristas con requisitos de trazabilidad y certificación a nivel global. |
 | | **Estrategias de marketing** | Venta directa B2B a piscigranjas; alianzas con proveedores de insumos acuícolas; demostración con maqueta física en ferias del sector peruano; landing page para captación de clientes. Piloto de verificación con un proveedor o supermercado; QR en el empaque como punto de contacto. | Participación en ferias internacionales de acuicultura (Aqua Nor, Aquaculture Europe); marketing de contenidos y demostraciones online; canal de ventas enterprise. | Canal de distribuidores internacionales autorizados; participación en conferencias IoT y medioambientales; documentación técnica extensa y casos de uso publicados. | Catálogos técnicos y venta directa a través de distribuidores especializados en acuicultura; presencia en ferias del sector; alianzas con instituciones de investigación. | Documentación y guías para cumplir el estándar GDST; relación con actores de la cadena (minoristas, certificadoras). *(Según su documentación pública.)* |
 | **Perfil de Producto** | **Productos & Servicios** | Dispositivo IoT con sensores de temperatura, pH y turbidez + Edge API de procesamiento + App móvil para operarios + Web Dashboard para administradores. Suscripción mensual por estanque. Plan complementario TRACE: lotes, hitos, resumen de calidad, certificado con QR y verificación pública. | Software SaaS de gestión acuícola (producción, alimentación, salud, inventarios). Requiere integración con sensores de terceros para datos en tiempo real. | Kits de sensores IoT (temperatura, pH, turbidez, oxígeno disuelto, entre otros) + plataforma de visualización en la nube. Venta de hardware con licencia de plataforma. | Equipos físicos de recirculación, aireación, filtración y controladores digitales de parámetros hídricos. Sin plataforma SaaS ni app móvil nativa integrada. | Software de trazabilidad con plantillas de eventos e intercambio EPCIS. Según la información revisada, no incluye sensores ni monitoreo de calidad del agua en el estanque. |
-| | **Precios & Costos** | Hardware ~S/ 250–280 (costo del prototipo). Modelo SaaS con suscripción mensual por estanque monitoreado (precio a validar en mercado). Precio del complemento TRACE por definir (se validará en las entrevistas). | Suscripción mensual de precio elevado orientada a empresas de gran escala. No publicado abiertamente; cotización personalizada según número de módulos. | Hardware de gama alta con costos elevados (kits desde $500–$2,000 USD). Orientado a proyectos industriales y gubernamentales con presupuesto alto. | Equipos de gama media-alta con inversión inicial elevada. Modelo de venta directa de hardware sin suscripción recurrente. | No publicado en las fuentes revisadas; a validar. |
+| | **Precios & Costos** | Hardware ~S/ 250–280 (costo del prototipo). Modelo SaaS con suscripción mensual por estanque monitoreado (precio a validar en mercado). Precio del complemento TRACE por definir con las piscigranjas piloto (en las entrevistas, 2 de 3 compradores señalaron el costo como preocupación). | Suscripción mensual de precio elevado orientada a empresas de gran escala. No publicado abiertamente; cotización personalizada según número de módulos. | Hardware de gama alta con costos elevados (kits desde $500–$2,000 USD). Orientado a proyectos industriales y gubernamentales con presupuesto alto. | Equipos de gama media-alta con inversión inicial elevada. Modelo de venta directa de hardware sin suscripción recurrente. | No publicado en las fuentes revisadas; a validar. |
 | | **Canales de distribución (Web y/o Móvil)** | App móvil (Android/iOS compilada con Flutter) y Web App. Landing page estática para captación B2B. Página pública de verificación accesible desde el QR. | Exclusivamente Web App. Acceso vía navegador sin app móvil dedicada para campo. | Plataforma web para visualización de datos. Sin app móvil para operarios de campo. Distribución vía resellers. | Catálogo web para consulta técnica. Distribuidores físicos especializados. Sin canal digital de gestión remota. | Plataforma web e integración por API con sistemas de los socios. |
 | **Análisis SWOT** | **Fortalezas** | Diseño específico para acuicultura peruana; modelo SaaS escalable; procesamiento edge que filtra falsos positivos; control remoto de actuadores; bajo costo de hardware. La evidencia nace de los sensores propios (menos captura manual). | Plataforma madura con múltiples módulos integrados; reconocimiento global; soporte técnico especializado; amplia base de clientes internacionales. | Alta precisión y confiabilidad de sensores; soporte para múltiples protocolos de conectividad; amplio historial de proyectos exitosos; alta escalabilidad. | Experiencia consolidada en acuicultura; equipos de alta durabilidad; amplio catálogo de soluciones complementarias; marca reconocida globalmente. | Alineación con estándares internacionales; foco en productos del mar; interoperabilidad con minoristas. |
 | | **Debilidades** | Startup en etapa temprana sin historial de clientes; dependencia de conectividad Wi-Fi en zonas rurales; equipo pequeño con recursos limitados. Depende de la confiabilidad de los sensores (blockchain no corrige datos erróneos). | No incluye hardware IoT propio; precio elevado inaccesible para pequeños productores; no localizado para el mercado peruano ni andino. | Precio inaccesible para pequeñas piscigranjas; sin app móvil para operarios; sin control remoto de actuadores; plataforma genérica no especializada en acuicultura. | No ofrece plataforma SaaS ni app móvil; sin alertas automáticas en tiempo real; sin procesamiento en la nube; costo inicial elevado sin modelo de suscripción. | Cada actor debe capturar y cargar sus datos, por lo que la calidad depende del dato ingresado; no está localizada al contexto de piscigranjas andinas. |
@@ -636,11 +619,10 @@ Identificar las fortalezas y debilidades de las soluciones existentes en el merc
 <div style="page-break-after: always;"></div>
 
 
-**Competidores indirectos.** Además de las plataformas de software, hoy el comprador resuelve la verificación con **documentos del proveedor, auditorías presenciales y sellos de certificación** como la Marca de Certificación de SANIPES, que asocia calidad y trazabilidad a los productos acuícolas (Agraria.pe, 2021), o certificaciones de sostenibilidad como la ASC (La Cámara, s. f.). YakuTrace no busca sustituirlos: aporta una **evidencia digital complementaria** basada en datos medidos y verificable en segundos. Plataformas de trazabilidad con blockchain como IBM Food Trust se han usado en casos como Nueva Pescanova (World Fishing & Aquaculture, s. f.) y en asociaciones noruegas; se mencionan como referencia del mercado y su estado vigente debe verificarse antes de considerarlas competidores directos.
+**Competidores indirectos.** Además de las plataformas de software, hoy el comprador resuelve la verificación con **documentos del proveedor, auditorías presenciales y sellos de certificación** como la Marca de Certificación de SANIPES, que asocia calidad y trazabilidad a los productos acuícolas (Agraria.pe, 2021), o certificaciones de sostenibilidad como la ASC (La Cámara, 2025). YakuTrace no busca sustituirlos: aporta una **evidencia digital complementaria** basada en datos medidos y verificable en segundos. Plataformas de trazabilidad con blockchain como IBM Food Trust se han usado en casos como Nueva Pescanova (World Fishing & Aquaculture, 2021) y en asociaciones noruegas; se mencionan solo como referencia del mercado y no se consideran competidores directos de YakuTrace.
 
 ### 2.1.2. Estrategias y tácticas frente a competidores
 
-> ✍️ **REDACTADO** — Estrategia 6 redactada. Revisar coherencia con las estrategias 3–5.
 
 
 A partir del análisis competitivo realizado, se identificaron las siguientes estrategias y tácticas que YakuControl adoptará para diferenciarse y ganar participación de mercado frente a sus competidores:
@@ -689,8 +671,6 @@ Las plataformas de trazabilidad existentes están pensadas para consorcios y emp
 ## 2.2. Entrevistas
 
 ### 2.2.1. Diseño de entrevistas
-
-> ✍️ **REDACTADO** — Preguntas del Segmento 3 redactadas y P11 del Segmento 1 corregida.
 
 
 En esta sección se presenta el conjunto de preguntas diseñadas para la recolección de información de los **tres** segmentos objetivo: Piscicultores, operadores de campo encargados del monitoreo y manejo directo de los estanques; Administradores de piscigranja, dueños y responsables de la gestión del negocio acuícola; y Compradores de supermercado, responsables de la compra y el aseguramiento de calidad de la trucha. Las preguntas aplican buenas prácticas de diseño de entrevistas (preguntas abiertas, no inductivas, de lo general a lo específico) y recopilan la información necesaria para construir arquetipos: características demográficas, dispositivos, canales, objetivos y frustraciones.
@@ -765,10 +745,7 @@ En esta sección se presenta el conjunto de preguntas diseñadas para la recolec
 
 ### 2.2.2. Registro de entrevistas
 
-> ✍️ **REDACTADO** — Plantilla del Segmento 3 lista. Falta: **realizar las entrevistas** (con proxies por ahora), video consolidado en Stream y llenar la plantilla. Verificar que el enlace de SharePoint abra para el docente. (Tarea C2-4)
-
-
-A continuación se presenta el registro de las entrevistas realizadas a representantes de los dos segmentos objetivo identificados para YakuControl: Administradores de piscigranja y Piscicultores.
+A continuación se presenta el registro de las entrevistas realizadas a representantes de los tres segmentos objetivo identificados para YakuControl y YakuTrace: Piscicultores, Administradores de piscigranja y Compradores de supermercado.
 
 **Segmento Piscicultores:**
 
@@ -862,125 +839,180 @@ A continuación se presenta el registro de las entrevistas realizadas a represen
  
 <div style="page-break-after: always;"></div>
 
-
 ---
 
-**Segmento Compradores de supermercado:**
-
-> _Entrevistas pendientes. En esta etapa se realizarán con **proxies** del segmento (p. ej. distribuidores que abastecen a supermercados, jefes de pescadería, administradores de autoservicios) hasta conseguir compradores de supermercado; se declarará esta limitación en el análisis._
+**Segmento Compradores de supermercado:** <br>
 
 **Entrevistado 1**
 
 | Atributo | Detalle |
 |---|---|
-| **Nombre** | (completar) |
-| **Edad** | (completar) |
-| **Sexo** | (completar) |
-| **Distrito** | (completar) |
-| **Ocupación / rol** | (completar) |
-| **Fecha de entrevista** | (completar) |
-| **Timing** | (completar: mm:ss - mm:ss) |
-| **Video** | (enlace de Microsoft Stream) |
-| **Resumen** | (completar: cargo, cómo verifica hoy el origen de un lote, problemas con reclamos o devoluciones, información que querría ver en un certificado, dispositivos y canales, objeciones y disposición a exigirlo; incluir personalidad, marcas o fuentes que consulta, y navegador/dispositivo) |
+| **Nombre** |Sebastián Silva |
+| **Edad** | 25 años |
+| **Sexo** | Masculino|
+| **Distrito** |  San Luis , Lima|
+| **Ocupación / rol** | Responsable de compras de productos frescos |
+| **Fecha de entrevista** | 02/10/2026  |
+| **Timing** | 0:00 - 06:27 |
+| **Video** |[Ver entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202125968_upc_edu_pe/IQA9ROmstnujQofrMar1TZocAX19lCGhUhsjlgEwvVBcYUk?e=WaITrO&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
+| **Resumen** | Sebastián coordina la compra de productos frescos para aproximadamente dos tiendas mediante un centro de distribución en Lima. Selecciona proveedores según calidad, precio, capacidad de abastecimiento y cumplimiento de requisitos sanitarios. Verifica los lotes con documentos de transporte, facturas y registros del proveedor, pero no siempre accede a información sobre la crianza. Ante problemas de temperatura o deterioro, revisa fotografías, registros de recepción e inspecciones para determinar rechazos o reposiciones. Utiliza computadora, celular, correo, WhatsApp y sistemas internos. Considera que el QR facilitaría verificar el origen, atender auditorías e investigar reclamos. Prioriza el acceso sin registro y expresa preocupación por datos incorrectos, costos elevados y falta de integración. El certificado podría convertirse en requisito, complementando los controles sanitarios y de calidad. |
 
-**Entrevistado 2** y **Entrevistado 3**: repetir la misma tabla.
+**Entrevistado 2**  
+| Atributo | Detalle |
+|---|---|
+| **Nombre** | Fabrisio Belahonia|
+| **Edad** | 28 años |
+| **Sexo** | Masculino|
+| **Distrito** | San Juan de Lurigancho, Lima|
+| **Ocupación / rol** | Encargado de compras de productos frescos|
+| **Fecha de entrevista** | 02/10/2026 |
+| **Timing** | 0:00 - 04:52|
+| **Video** |[Ver entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202125968_upc_edu_pe/IQDtTgNb-r-1QZjs2OEqc9SPATKkPZODEdnLvSA395U4NQU?e=G90GQP&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
+| **Resumen** |Fabrisio coordina las compras de pescados y mariscos para aproximadamente tres tiendas en Lima. Evalúa calidad, precio, puntualidad y documentación comercial y sanitaria. Actualmente verifica la procedencia mediante documentos del proveedor, sin acceso directo a registros del agua durante la crianza. Ha rechazado productos por calidad insuficiente, utilizando fotografías y temperaturas de recepción para gestionar devoluciones o reposiciones. Trabaja con laptop, correo, Excel, sistema interno y WhatsApp. Considera útil un QR que muestre proveedor, origen, lote, fechas, condiciones del agua y alertas registradas. Valora consultar sin crear una cuenta y conocer quién ingresó los datos y si hubo correcciones. Preferiría proveedores con mejor información, pero comprobaría la utilidad del certificado antes de exigirlo. |
+
+**Entrevistado 3**
+
+| Atributo | Detalle |
+|---|---|
+| **Nombre** |José Heredia |
+| **Edad** | 27 años |
+| **Sexo** | Masculino|
+| **Distrito** | Santa Anita, Lima |
+| **Ocupación / rol** | Encargado de compras de productos frescos de un supermercado |
+| **Fecha de entrevista** | 03/10/2026  |
+| **Timing** | 0:00 - 05:40 |
+| **Video** |[Ver entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202125968_upc_edu_pe/IQB5NNx403qhSp-_2GQdWJE0AVMY1mmazHAd5L4UclUo17o?e=J76x5g&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
+| **Resumen** | José se encarga de comprar productos frescos para una tienda de supermercado en Lima. Evalúa precios, calidad, puntualidad y documentación comercial y sanitaria. Verifica el origen de las truchas mediante documentos y consultas al proveedor, sin disponer de información detallada sobre las condiciones de crianza. Ante problemas de frescura, utiliza fotografías y registros del lote para coordinar devoluciones o reemplazos. Trabaja con computadora, celular, sistema interno, correo, WhatsApp y Excel. Considera útil consultar mediante QR la piscigranja, el lote, la fecha de cosecha y las condiciones del agua. Valora el acceso sin cuenta, la rapidez y conocer quién registró o modificó los datos. Preferiría proveedores con información confiable, aunque evaluaría la utilidad del certificado antes de exigirlo. |
+
 
 ### 2.2.3. Análisis de entrevistas
 
-> ✍️ **REDACTADO** — Introducción corregida y plantilla del Segmento 3. Falta: llenar n/N y % con las entrevistas reales y la conclusión comparativa. (Tarea C2-5)
-
-
-Las entrevistas a piscicultores y administradores se realizaron entre el 12 y el 21 de abril de 2026 a un total de seis participantes (tres por segmento) en diferentes zonas del Perú. El objetivo fue comprender sus contextos operativos y frustraciones actuales y validar hipótesis sobre la propuesta de valor de YakuControl. Las entrevistas del Segmento 3 (compradores de supermercado) se analizan al final de esta sección.
+Se entrevistó a un total de nueve participantes (tres por segmento) en diferentes zonas del Perú. Las entrevistas a piscicultores y administradores se realizaron entre el 12 y el 21 de abril de 2026, y las de compradores de supermercado el 2 y 3 de octubre de 2026. El objetivo fue comprender sus contextos operativos y frustraciones actuales y validar hipótesis sobre la propuesta de valor de YakuControl y de YakuTrace.
 
 **Segmento: Piscicultores**
 
-**Total entrevistados:** 3
-**Edades:** 30, 30, 31
-**Distritos:** Cieneguilla (Lima) y , Cascas (La Libertad)
-**Instituciones/Empresas:** Piscigranja negocio normal y familiar
-**Fechas:** 14 de abril de 2026
+**Total entrevistados:** 3  
+**Edades:** 30, 30, 31  
+**Distritos:** Cieneguilla (Lima) y Cascas (La Libertad)  
+**Instituciones/Empresas:** Piscigranja negocio normal y familiar  
+**Fechas:** 14 de abril de 2026  
 
 **Características objetivas**
-- Aprendieron el oficio de forma empírica o con capacitaciones básicas del Ministerio de la Producción: **3/3 (100%)**
-- Monitorean principalmente temperatura; el oxígeno y pH solo ante anomalías o cuando tienen equipo disponible: **3/3 (100%)**
-- Registran datos en cuaderno físico, celular o Excel de forma manual: **3/3 (100%)**
-- Detectan problemas por el comportamiento visual de los peces (dejan de comer, suben a la superficie): **3/3 (100%)**
-- No utilizan ninguna aplicación digital especializada en su trabajo: **3/3 (100%)**
-- Usan el celular como principal dispositivo de trabajo: **3/3 (100%)**
-- Consideran la limpieza y sedimentación de estanques como una tarea fundamental: **2/3 (67%)**
+
+| Característica objetiva | Resultado (n/N, %) |
+| :--- | :---: |
+| Aprendieron el oficio de forma empírica o con capacitaciones básicas del Ministerio de la Producción. | **3/3 (100%)** |
+| Monitorean principalmente temperatura; el oxígeno y el pH se revisan ante anomalías o cuando tienen equipos disponibles. | **3/3 (100%)** |
+| Registran datos manualmente en cuadernos, celular o Excel. | **3/3 (100%)** |
+| Detectan problemas mediante el comportamiento visual de los peces, como dejar de comer o subir a la superficie. | **3/3 (100%)** |
+| No utilizan aplicaciones digitales especializadas en su trabajo. | **3/3 (100%)** |
+| Usan el celular como principal dispositivo de trabajo. | **3/3 (100%)** |
+| Consideran la limpieza y sedimentación de estanques una tarea fundamental. | **2/3 (67%)** |
 
 **Características subjetivas**
-- Consideran el costo de los equipos como un factor limitante importante para adoptar tecnología: **3/3 (100%)**
-- Valoran que una herramienta sea simple y fácil de usar por encima de otras características: **3/3 (100%)**
-- Les gustaría recibir alertas claras y automáticas ante anomalías en el agua: **3/3 (100%)**
-- Desean ver el estado del agua en tiempo real desde su celular: **3/3 (100%)**
-- Están dispuestos a adoptar YakuControl si simplifica su trabajo diario: **3/3 (100%)**
-- Consideran que las alertas tempranas les permitirían reaccionar antes y evitar pérdidas: **3/3 (100%)**
-- Desean tener visibilidad del ciclo de alimentación de los peces desde su herramienta: **2/3 (67%)**
+
+| Característica subjetiva | Resultado (n/N, %) |
+| :--- | :---: |
+| Consideran el costo de los equipos un factor limitante para adoptar tecnología. | **3/3 (100%)** |
+| Valoran que una herramienta sea simple y fácil de usar por encima de otras características. | **3/3 (100%)** |
+| Les gustaría recibir alertas claras y automáticas ante anomalías en el agua. | **3/3 (100%)** |
+| Desean consultar el estado del agua en tiempo real desde su celular. | **3/3 (100%)** |
+| Están dispuestos a adoptar YakuControl si simplifica su trabajo diario. | **3/3 (100%)** |
+| Consideran que las alertas tempranas les permitirían reaccionar antes y evitar pérdidas. | **3/3 (100%)** |
+| Desean tener visibilidad del ciclo de alimentación de los peces. | **2/3 (67%)** |
 
 **Segmento: Administradores de piscigranja**
 
-**Total entrevistados:** 3
-**Edades:** 47, 45, 48 años
-**Distritos:** Huaraz (Ancash), Concepción (Junín), Pampas (Huancavelica)
-**Instituciones/Empresas:** Piscigranja de truchas y paiches, Piscigranja de truchas, Piscigranja comunidad campesina Mantacra
-**Fechas:** 12 y 21 de abril de 2026
+**Total entrevistados:** 3  
+**Edades:** 47, 45, 48 años  
+**Distritos:** Huaraz (Ancash), Concepción (Junín), Pampas (Huancavelica)  
+**Instituciones/Empresas:** Piscigranja de truchas y paiches, Piscigranja de truchas, Piscigranja comunidad campesina Mantacra   
+**Fechas:** 12 y 21 de abril de 2026  
  
 **Características objetivas**
-- Reciben información del estado de los estanques a través de reportes físicos, fotos de cuadernos o audios de WhatsApp: **3/3 (100%)**
-- No cuentan con ningún sistema digital especializado para monitorear parámetros del agua: **3/3 (100%)**
-- Han sufrido pérdidas económicas por factores climáticos o detección tardía de problemas: **3/3 (100%)**
-- Usan Excel y WhatsApp como únicas herramientas de gestión: **3/3 (100%)**
-- Realizan venta directa al mercado sin procesamiento del producto: **2/3 (67%)**
-- Certifica la sanidad y procedencia de sus especies para cumplir estándares de calidad: **1/3 (33%)**
-- La información que reciben del personal de campo llega con retraso o es difícil de interpretar: **3/3 (100%)**
+
+| Característica objetiva | Resultado (n/N, %) |
+| :--- | :---: |
+| Reciben información sobre los estanques mediante reportes físicos, fotografías de cuadernos o audios de WhatsApp. | **3/3 (100%)** |
+| No cuentan con sistemas digitales especializados para monitorear parámetros del agua. | **3/3 (100%)** |
+| Han sufrido pérdidas económicas por factores climáticos o detección tardía de problemas. | **3/3 (100%)** |
+| Usan Excel y WhatsApp como únicas herramientas de gestión. | **3/3 (100%)** |
+| Realizan venta directa al mercado sin procesamiento del producto. | **2/3 (67%)** |
+| Declara certificar la sanidad y procedencia de sus especies para cumplir estándares de calidad. | **1/3 (33%)** |
+| La información que reciben del personal de campo llega con retraso o resulta difícil de interpretar. | **3/3 (100%)** |
 
 **Características subjetivas**
-- Consideran la temperatura y el oxígeno del agua como los factores más críticos del negocio: **3/3 (100%)**
-- Evalúan contratar una solución tecnológica principalmente según su costo: **3/3 (100%)**
-- Desean recibir alertas automáticas ante cambios críticos en el agua: **3/3 (100%)**
-- Valoran poder monitorear sus estanques de forma remota desde el celular: **3/3 (100%)**
-- Están dispuestos a invertir en tecnología si reduce la mortandad y mejora la rentabilidad: **3/3 (100%)**
-- Valoran la posibilidad de predecir la disponibilidad de agua a futuro: **2/3 (67%)**
-- Priorizarían en una primera etapa monitorear el volumen y temperatura del agua: **3/3 (100%)**
 
-**Conclusión general**
-
-El análisis de entrevistas revela patrones claros y consistentes entre ambos segmentos. Tanto piscicultores como administradores coinciden en que la temperatura, el oxígeno y la calidad del agua son los factores más críticos del negocio acuícola, y que la ausencia de herramientas digitales genera retrasos en la detección de problemas y pérdidas económicas evitables. Los piscicultores priorizan la simplicidad de uso y las alertas en tiempo real desde el celular, mientras que los administradores priorizan la visibilidad remota, la capacidad predictiva del sistema y un costo accesible. Estas necesidades complementarias refuerzan directamente la propuesta de valor de YakuControl como solución IoT que conecta a ambos segmentos en tiempo real, previniendo pérdidas y mejorando la rentabilidad del negocio acuícola peruano.
-
-<div style="page-break-after: always;"></div>
-
+| Característica subjetiva | Resultado (n/N, %) |
+| :--- | :---: |
+| Consideran la temperatura y el oxígeno del agua los factores más críticos del negocio. | **3/3 (100%)** |
+| Evalúan contratar una solución tecnológica principalmente según su costo. | **3/3 (100%)** |
+| Desean recibir alertas automáticas ante cambios críticos en el agua. | **3/3 (100%)** |
+| Valoran monitorear sus estanques de forma remota desde el celular. | **3/3 (100%)** |
+| Están dispuestos a invertir en tecnología si reduce la mortandad y mejora la rentabilidad. | **3/3 (100%)** |
+| Valoran la posibilidad de predecir la disponibilidad de agua a futuro. | **2/3 (67%)** |
+| Priorizarían monitorear el volumen y la temperatura del agua en una primera etapa. | **3/3 (100%)** |
 
 **Segmento: Compradores de supermercado**
 
-**Total entrevistados:** (n) · **Edades:** (…) · **Distritos:** (…) · **Instituciones/empresas:** (…) · **Fechas:** (…)
+**Total entrevistados:** 3  
+**Participantes:** Sebastián Silva, Fabrisio Belahonia y José Heredia.  
+**Edades:** 25, 28 y 27 años, respectivamente.  
+**Distritos de residencia:** San Luis, San Juan de Lurigancho y Santa Anita, Lima.  
+**Instituciones/empresas:** Supermercados cuyos nombres no fueron especificados en las entrevistas.  
+**Roles:** Responsables o encargados de compras de productos frescos, incluidos pescados y truchas.  
+**Cobertura operativa:** Aproximadamente dos tiendas, tres tiendas y una tienda, respectivamente.  
+**Fechas:** 2 y 3 de octubre de 2026.
+
+**Características objetivas**
 
 | Característica objetiva | Resultado (n/N, %) |
-| :--- | :-: |
-| Verifican hoy el origen de un lote con documentos del proveedor | (n/N) |
-| No cuentan con una herramienta digital para verificar condiciones de crianza | (n/N) |
-| Han tenido reclamos, devoluciones o rechazos por calidad o mortandad | (n/N) |
-| Deben responder a auditorías de trazabilidad | (n/N) |
-| Usan el celular como dispositivo principal de trabajo | (n/N) |
-| Se comunican con el proveedor por WhatsApp, llamadas o correo | (n/N) |
+| :--- | :---: |
+| Verifican el origen de los lotes mediante documentos del proveedor, registros de entrega o comprobantes. | **3/3 (100 %)** |
+| No disponen de acceso directo y sistemático a registros detallados de las condiciones del agua durante la crianza. | **3/3 (100 %)** |
+| Evalúan a los proveedores considerando calidad, precio y cumplimiento de las entregas. | **3/3 (100 %)** |
+| Solicitan documentación comercial y sanitaria correspondiente, además de información de procedencia. | **3/3 (100 %)** |
+| Reportan problemas de calidad en entregas y describen procedimientos para evaluar rechazos, devoluciones o reposiciones. | **3/3 (100 %)** |
+| Utilizan fotografías e identificación o registros del lote como evidencia ante problemas de calidad. | **3/3 (100 %)** |
+| Mencionan registros o mediciones de temperatura como evidencia para evaluar productos observados. | **2/3 (67 %)** |
+| Deben disponer de información sobre proveedor, origen, lote y fechas para atender auditorías o controles internos. | **3/3 (100 %)** |
+| Utilizan computadora o laptop y sistemas internos para gestionar compras y consultar información. | **3/3 (100 %)** |
+| Se comunican con proveedores mediante correo electrónico y WhatsApp. | **3/3 (100 %)** |
+| Conocen los códigos QR, pero expresan conocimiento limitado o ausencia de experiencia de trabajo con blockchain. | **3/3 (100 %)** |
+
+**Características subjetivas**
 
 | Característica subjetiva | Resultado (n/N, %) |
-| :--- | :-: |
-| Valoran verificar un lote en segundos escaneando un QR | (n/N) |
-| Confían más en información que no puede modificarse después | (n/N) |
-| Consideran importante ver un resumen de calidad del agua (no solo promedios) | (n/N) |
-| Preferirían o exigirían proveedores con este tipo de certificado | (n/N) |
-| Les preocupa el costo o la complejidad de adoptar una solución | (n/N) |
+| :--- | :---: |
+| Consideran útil consultar rápidamente el origen y el historial de un lote mediante un código QR. | **3/3 (100 %)** |
+| Valoran acceder desde el celular sin crear una cuenta. | **3/3 (100 %)** |
+| Valoran evitar la instalación de una aplicación para consultar el lote. | **2/3 (67 %)** |
+| Desean visualizar primero la procedencia, la identificación del proveedor o piscigranja, el número de lote y las fechas relevantes. | **3/3 (100 %)** |
+| Consideran útil consultar las condiciones del agua durante la crianza para complementar la evaluación del lote. | **3/3 (100 %)** |
+| Perciben que el certificado facilitaría investigar reclamos y reunir información sin solicitar documentos por separado. | **3/3 (100 %)** |
+| Expresan preocupación por información incompleta, incorrecta, desactualizada o cuya procedencia no pueda verificarse. | **3/3 (100 %)** |
+| Consideran que una consulta lenta dificultaría la adopción de la herramienta. | **3/3 (100 %)** |
+| Valoran conocer quién registró los datos y si existieron modificaciones o correcciones. | **2/3 (67 %)** |
+| Mencionan el costo adicional o elevado como una preocupación para adoptar la solución. | **2/3 (67 %)** |
+| Señala la falta de integración con los sistemas actuales como un posible inconveniente. | **1/3 (33 %)** |
+| Considerarían el certificado una ventaja al evaluar o seleccionar proveedores. | **3/3 (100 %)** |
+| Condicionan su exigencia como requisito a comprobar previamente su utilidad. | **3/3 (100 %)** |
 
-*(Completar con los resultados reales de las entrevistas y redactar una conclusión que compare los tres segmentos. Cada porcentaje debe poder rastrearse a una entrevista del registro. Si se usan proxies, indicarlo.)*
+**Conclusión general comparativa**
+
+El análisis de los tres segmentos identifica una necesidad compartida de información oportuna y confiable, aunque su uso cambia según las responsabilidades de cada actor. Los piscicultores requieren conocer el estado de los estanques y recibir alertas comprensibles para responder en campo. Los administradores necesitan consolidar la información operativa, revisar históricos y tomar decisiones sobre la producción. Los compradores de supermercado requieren consultar la procedencia y el historial de los lotes para evaluar entregas, atender reclamos y responder a auditorías.
+
+YakuControl responde a las necesidades de monitoreo y gestión de los dos primeros segmentos, mientras que YakuTrace amplía el uso de esa información hacia la verificación comercial. Las entrevistas del tercer segmento respaldan una consulta mediante QR, accesible desde el celular y sin registro, que priorice la identificación del lote, su origen y las condiciones documentadas durante la crianza.
+
+Los resultados orientan el diseño de la solución, pero todavía no demuestran una reducción de mortalidad, reclamos o tiempos de verificación. Estos efectos deberán evaluarse mediante pruebas y pilotos posteriores con tareas y métricas definidas.
+
+<div style="page-break-after: always;"></div>
 
 ## 2.3. Needfinding
 
 El Needfinding permite identificar necesidades reales de los usuarios mediante entrevistas y análisis del contexto. A partir de esta información, se construyeron artefactos clave que ayudaron a comprender mejor sus objetivos, tareas, emociones y frustraciones.
 
 ### 2.3.1. User Personas
-
-> 🟢 **NUEVO** — Agregar la **User Persona 3 (comprador de supermercado)** en UXPressia, con datos provenientes del análisis de entrevistas. Verificar que las dos personas existentes también estén en UXPressia (herramienta obligatoria). (Tarea C2-6)
 
 
 Los User Personas se construyen a partir del análisis de la información recopilada en entrevistas, representando perfiles clave de los usuarios objetivo. Cada uno integra características demográficas, comportamientos y necesidades, sirviendo como base para orientar el diseño y desarrollo de la solución.
@@ -1011,16 +1043,31 @@ Es la responsable de la gestión y toma de decisiones, quienes supervisan la pro
 
 **User persona: Comprador de supermercado**
 
-_(Pendiente: ficha en UXPressia con datos de las entrevistas. Tarea C2-6)_
+Representa a los responsables de compras de productos frescos que seleccionan proveedores de trucha, coordinan el abastecimiento y revisan la documentación de los lotes, en colaboración con las áreas de recepción y calidad.
+
+<p align="center">
+  <img src="https://i.imgur.com/MgYpYA0.png" width="65%">
+  <br>
+  <i>User Persona – Comprador de supermercado</i>
+</p>
+
+<div style="page-break-after: always;"></div>
+
 
 ### 2.3.2. User Task Matrix
 
-> ✍️ **REDACTADO** — Cuadro único redactado con las 3 personas. Falta: **validar con las entrevistas** los valores del comprador (marcados con \*). (Tarea C2-7)
 
+En esta sección se presentan las tareas que los User Persona representativos de cada segmento realizan para cumplir sus metas, **independientemente de la existencia de una solución de software**. Se consideran tres User Persona: José Guevara (piscicultor de campo), Pedro Alvarado (administrador de piscigranja) y Daniel Torres (comprador de supermercado).
 
-En esta sección se presentan las tareas que los User Persona representativos de cada segmento realizan para cumplir sus metas, **independientemente de la existencia de una solución de software**. Se consideran tres User Persona: José Guevara (piscicultor de campo), Pedro Alvarado (administrador de piscigranja) y el comprador de supermercado. Los valores del comprador provienen de la hipótesis inicial y se ajustarán con el análisis de entrevistas (\*).
+**Criterios de clasificación:**
 
-| **Tarea** | **José Guevara (Piscicultor)**<br>Frecuencia | **José**<br>Importancia | **Pedro Alvarado (Administrador)**<br>Frecuencia | **Pedro**<br>Importancia | **Comprador de supermercado**<br>Frecuencia\* | **Comprador**<br>Importancia\* |
+- **Always:** actividad habitual dentro del proceso correspondiente, como revisar documentos durante la recepción de un lote; no significa necesariamente que se realice todos los días.
+- **Sometimes:** actividad periódica o condicionada a un evento, como seleccionar un nuevo proveedor, atender una devolución o responder a una auditoría.
+- **High:** tarea crítica para la operación, la calidad, la trazabilidad o la toma de decisiones.
+- **Medium:** tarea de apoyo que contribuye a la coordinación y eficiencia.
+- **—:** tarea que no corresponde a las responsabilidades principales del perfil.
+
+| **Tarea** | **José Guevara (Piscicultor)**<br>Frecuencia | **José**<br>Importancia | **Pedro Alvarado (Administrador)**<br>Frecuencia | **Pedro**<br>Importancia | **Daniel Torres (Comprador de supermercado)**<br>Frecuencia | **Daniel**<br>Importancia |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Medir manualmente la temperatura del agua en los estanques | Always | High | — | — | — | — |
 | Registrar parámetros del agua manualmente | Always | High | — | — | — | — |
@@ -1029,8 +1076,8 @@ En esta sección se presentan las tareas que los User Persona representativos de
 | Verificar el volumen y caudal de agua disponible | Always | High | Always | High | — | — |
 | Evaluar la turbidez y calidad del agua | Always | High | Always | High | — | — |
 | Limpiar y dar mantenimiento a los estanques | Sometimes | Medium | — | — | — | — |
-| Reportar y revisar el estado de los estanques (documento físico o WhatsApp) | Sometimes | High | Always | High | — | — |
-| Reaccionar ante una emergencia o mortalidad en el agua (actuar o decidir) | Sometimes | High | Sometimes | High | — | — |
+| Reportar y revisar el estado de los estanques mediante documentos físicos o WhatsApp | Sometimes | High | Always | High | — | — |
+| Reaccionar ante una emergencia o mortalidad en los estanques | Sometimes | High | Sometimes | High | — | — |
 | Coordinar con otros trabajadores de campo | Sometimes | Medium | — | — | — | — |
 | Anotar el consumo de alimento por estanque | Always | Medium | — | — | — | — |
 | Verificar que los peces estén sanos y sin enfermedades | Always | High | — | — | — | — |
@@ -1038,25 +1085,38 @@ En esta sección se presentan las tareas que los User Persona representativos de
 | Controlar los costos operativos y la rentabilidad de la piscigranja | — | — | Always | High | — | — |
 | Planificar los ciclos de producción y las fechas de cosecha | — | — | Sometimes | High | — | — |
 | Supervisar el desempeño del personal de campo | — | — | Sometimes | High | — | — |
-| Evaluar el impacto de factores externos (sequías, Fenómeno del Niño) | — | — | Sometimes | High | — | — |
+| Evaluar el impacto de factores externos, como sequías o el Fenómeno del Niño | — | — | Sometimes | High | — | — |
 | Proyectar la disponibilidad de agua para los próximos meses | — | — | Sometimes | High | — | — |
-| Negociar con la contraparte comercial (compradores o proveedores) | — | — | Sometimes | High | Always | High |
-| Verificar la procedencia y sanidad de los lotes para certificación | — | — | Sometimes | High | Always | High |
+| Negociar precios y condiciones con compradores o proveedores | — | — | Sometimes | High | Sometimes | High |
+| Revisar la procedencia y la documentación sanitaria de los lotes | — | — | Sometimes | High | Always | High |
 | Evaluar y seleccionar proveedores de trucha | — | — | — | — | Sometimes | High |
-| Solicitar y revisar la documentación sanitaria y de trazabilidad del proveedor | — | — | — | — | Always | High |
-| Recibir y aceptar o rechazar lotes de trucha | — | — | — | — | Always | High |
-| Atender reclamos o devoluciones por calidad o mortandad | — | — | — | — | Sometimes | High |
+| Solicitar y revisar la documentación comercial y de trazabilidad del proveedor | — | — | — | — | Always | High |
+| Coordinar cantidades, fechas y condiciones de entrega | — | — | — | — | Always | High |
+| Coordinar con recepción y calidad la evaluación y aceptación o rechazo de los lotes | — | — | — | — | Always | High |
+| Registrar o consultar el proveedor, número de lote, fecha de recepción y destino de los productos | — | — | — | — | Always | High |
+| Atender reclamos, rechazos o devoluciones por problemas de calidad | — | — | — | — | Sometimes | High |
+| Reunir fotografías, documentos de recepción y otras evidencias ante una observación | — | — | — | — | Sometimes | High |
 | Responder a auditorías sobre la trazabilidad de productos frescos | — | — | — | — | Sometimes | High |
-| Comunicarse con el proveedor ante un problema (llamada, correo o WhatsApp) | — | — | — | — | Sometimes | Medium |
+| Comunicarse con el proveedor para aclarar observaciones y coordinar devoluciones o reposiciones | — | — | — | — | Sometimes | High |
 
-Las tareas de mayor frecuencia e importancia para José Guevara son la medición del agua, el registro de estos datos y la alimentación diaria, actividades repetitivas y críticas que realiza sin apoyo tecnológico. Para Pedro Alvarado destacan la revisión del reporte y el control de costos, lo que evidencia su dependencia de información de segunda mano. Para el comprador de supermercado destacan la verificación del origen y de la documentación del proveedor y la recepción de lotes, tareas que hoy dependen de documentos que pueden modificarse. La coincidencia más relevante entre los tres es la **necesidad de contar con información confiable y oportuna sobre el estado y el origen de los lotes**: José debe reaccionar en campo, Pedro debe decidir y el comprador debe verificar y aceptar. Esto refuerza la propuesta de YakuControl para conectar a los dos primeros en tiempo real y de YakuTrace para entregar al tercero evidencia verificable.
+**Sustento de las tareas del comprador**
+
+Las tres entrevistas describen la revisión de documentos del proveedor y la evaluación de calidad, precio y cumplimiento de entregas como parte del proceso habitual de compra. Por ello, la revisión documental y la coordinación del abastecimiento se clasifican como **Always / High**. La selección de nuevos proveedores y la negociación de condiciones se clasifican como **Sometimes / High**, al corresponder a decisiones que se realizan cuando es necesario incorporar o reevaluar proveedores.
+
+La atención de reclamos, la recopilación de evidencias y la coordinación de devoluciones se clasifican como **Sometimes / High**, porque se activan ante problemas de calidad. La comunicación con el proveedor en estos casos tiene importancia alta, ya que permite resolver la observación y acordar una respuesta. Las auditorías también se consideran actividades periódicas de importancia alta por su relación con la trazabilidad.
+
+**Análisis de la matriz**
+
+Las tareas de mayor frecuencia e importancia para José Guevara se concentran en la medición del agua, la alimentación y la revisión de los peces. Para Pedro Alvarado destacan la supervisión de los estanques, la revisión de reportes y el control de costos, actividades que requieren información del personal de campo.
+
+Para Daniel Torres sobresalen la revisión de la procedencia y documentación de los lotes, la coordinación de entregas y la evaluación conjunta con recepción y calidad. Las entrevistas muestran que actualmente estas tareas se apoyan en documentos, sistemas internos y comunicaciones con el proveedor, sin acceso directo y sistemático a las condiciones del agua durante la crianza.
+
+Los tres perfiles necesitan **información confiable y oportuna**, aunque la utilizan con fines distintos: José actúa en campo, Pedro gestiona la producción y Daniel evalúa el abastecimiento y la trazabilidad comercial. Esta relación orienta la propuesta de YakuControl para el monitoreo y la gestión, y de YakuTrace para facilitar la consulta del historial registrado de los lotes, como evidencia complementaria a los controles sanitarios y de calidad.
 
 ### 2.3.3. Empathy Mapping
 
-> ✍️ **REDACTADO** — Proceso redactado. Falta (herramienta): 3.er Empathy Map en UXPressia y verificar los dos existentes. (Tarea C2-8)
 
-
-Se elaboraron los Empathy Maps para los dos User Personas identificados. Este proceso permitió comprender mejor lo que dicen, piensan, hacen y sienten en su día a día, identificando sus principales pains y gains para diseñar una solución que realmente responda a las necesidades del sector acuícola peruano.
+Se elaboraron los Empathy Maps para los tres User Personas identificados. Este proceso permitió comprender mejor lo que dicen, piensan, hacen y sienten en su día a día, identificando sus principales pains y gains para diseñar una solución que realmente responda a las necesidades del sector acuícola peruano.
 
 - Empathy mapping de Administrador de piscigranja
 
@@ -1079,42 +1139,48 @@ Se elaboraron los Empathy Maps para los dos User Personas identificados. Este pr
 
 <div style="page-break-after: always;"></div>
 
+- Empathy mapping de Comprador de supermercado
+
+<p align="center">
+  <img src="https://i.imgur.com/rKfKbl3.png" width="75%">
+  <br>
+  <i>Empathy mapping – Comprador de supermercado</i>
+</p>
+
+<div style="page-break-after: always;"></div>
 
 **Proceso de elaboración.** Para cada User Persona se preparó un tablero en UXPressia con la persona al centro. Cada integrante colocó de forma individual sus observaciones sobre lo que la persona dice, ve, hace y escucha, y cómo se siente y piensa, a partir de las entrevistas y la observación de su contexto. Luego el equipo agrupó las observaciones repetidas e identificó los *pains* (qué le preocupa) y los *gains* (qué puede ayudar a resolver sus problemas y qué lo convencería de que somos la alternativa correcta).
 
-**Empathy mapping de Comprador de supermercado**
-
-_(Pendiente: UXPressia. Tarea C2-8)_
 
 ### 2.3.4. As-is Scenario Mapping
 
-> ✍️ **REDACTADO** — Proceso redactado. Falta (herramienta): rehacer los 2 mapas y crear el 3.º en Miro/LucidChart con filas Phases/Doing/Thinking/Feeling. (Tarea C2-9)
+El As-is Scenario Mapping representa la experiencia actual de los usuarios para cumplir sus objetivos, antes de utilizar YakuControl o YakuTrace. Se consideran tres User Persona: José Guevara, piscicultor; Pedro Alvarado, administrador de piscigranja; y Daniel Torres, comprador de supermercado.
+
+Los mapas se construyen a partir de las actividades y dificultades descritas en las entrevistas. Cada escenario organiza sus fases como columnas e incluye las filas **Phases, Doing, Thinking y Feeling**, permitiendo relacionar las acciones del usuario con sus preocupaciones y emociones. Las filas Thinking y Feeling representan interpretaciones del equipo y no citas textuales de los participantes.
 
 
-En esta sección se presentan los User Journey Maps para cada uno de los User Persona identificados. Estos mapas representan la experiencia actual de los usuarios sin la existencia de YakuControl, con el objetivo de identificar sus principales puntos de dolor, frustraciones y oportunidades de mejora.
+- As-is Scenario Mapping de Pedro Alvarado
 
-- User Journey Map de Pedro Alvarado
-
-![User Journey Map – Administradores de piscigranjas](./assets/images/user-journey-map-administrador.png)
-
-<div style="page-break-after: always;"></div>
-
-- User Journey Map de José Guevara
-
-![User Journey Map – Piscicultores](./assets/images/user-journey-map-piscicultor.png)
+![As-is Scenario Mapping – Administradores de piscigranjas](https://i.imgur.com/q4KMtfX.png)
 
 <div style="page-break-after: always;"></div>
 
+- As-is Scenario Mapping de José Guevara
 
-**Proceso de elaboración.** Para cada User Persona se construyó un As-is Scenario Map en Miro/LucidChart. Tras la preparación y una lluvia de ideas individual, el equipo revisó las ideas e identificó las **fases** del escenario actual (columnas), las nombró y completó para cada una las filas **Phases, Doing, Thinking y Feeling**. Finalmente se etiquetaron las áreas **positivas** y **negativas** para el usuario y las *blank areas*, es decir, aquello sobre lo que se necesita aprender más. Los mapas parten de los *journey maps* elaborados en la entrega anterior y se rehicieron con el formato del enunciado.
+![As-is Scenario Mapping – Piscicultores](https://i.imgur.com/vcBknWC.png)
 
-**As-is Scenario Map de Comprador de supermercado**
+<div style="page-break-after: always;"></div>
 
-_(Pendiente: Miro/LucidChart. Tarea C2-9)_
+- As-is Scenario Mapping de Daniel Torres
+
+![As-is Scenario Mapping – Comprador de supermercado](https://i.imgur.com/UxRoxfM.png)
+
+
+[Link del Miro](https://miro.com/welcomeonboard/SWQ4UUpYdlFSYTdCNEErcTQ2VzRqNU1BZk54eStDOFR6TnhmRTJCK2FWVWJXQ0ltTmtXYm9RUFJwSHF2eWIvNUxzeERCcXRhM1M3L1pXdE5ERGpqVTNrcUM4YWVONEZMTWZvVWFiVFl3dVdpb3AwTTVQQ2MzbTNxNkdLSWh4WEJBS2NFMDFkcUNFSnM0d3FEN050ekl3PT0hdjE=?share_link_id=826222577249)
+
+**Proceso de elaboración.** Para cada User Persona se construyó un As-is Scenario Map en Miro. Tras la preparación y una lluvia de ideas individual, el equipo revisó las ideas e identificó las **fases** del escenario actual (columnas), las nombró y completó para cada una las filas **Phases, Doing, Thinking y Feeling**. Finalmente se etiquetaron las áreas **positivas** y **negativas** para el usuario y las *blank areas*, es decir, aquello sobre lo que se necesita aprender más. Los mapas parten de los *journey maps* elaborados en la entrega anterior y se rehicieron con el formato del enunciado.
 
 ## 2.4. Ubiquitous Language
-
-> ✍️ **REDACTADO** — Glosario reescrito en inglés con equivalente en español, solo términos del dominio. Revisar y mantenerlo actualizado. (Tarea C2-10)
 
 
 El Lenguaje Ubicuo (*Ubiquitous Language*) de YakuControl + YakuTrace es el vocabulario compartido del dominio acuícola y comercial que usan el equipo y los expertos del negocio para comunicarse sin ambigüedad. Los términos se presentan en inglés, con su equivalente en español entre paréntesis; las definiciones están en español. Solo se incluyen términos del **dominio**, no términos de ingeniería de software.
@@ -1162,11 +1228,10 @@ El Lenguaje Ubicuo (*Ubiquitous Language*) de YakuControl + YakuTrace es el voca
 | **Revocation** (Revocación) | Anulación de un certificado emitido por error; queda registrada y no borra el historial. | Traceability |
 | **Supermarket Buyer** (Comprador de supermercado) | Profesional de compras o aseguramiento de calidad que verifica el origen y las condiciones registradas de un lote. | Traceability |
 
+<div style="page-break-after: always;"></div>
+
 # Capítulo III: Requirements Specification
 ## 3.1. To-Be Scenario Mapping
-
-> ✍️ **REDACTADO** — Introducción y tabla de cambios redactadas. Falta (herramienta): los 3 mapas To-Be en Miro/LucidChart. (Tarea C3-1)
-
 
 Esta sección presenta el escenario futuro de cada User Persona una vez que utiliza YakuControl y YakuTrace. Para cada uno se elaboró un To-Be Scenario Map en Miro/LucidChart con las filas **Phases, Doing, Thinking y Feeling**. El proceso incluyó la preparación, una lluvia de ideas individual, la revisión de las ideas, la identificación y denominación de las fases y la **comparación con el As-is Scenario Map** para identificar qué cambios aporta la solución.
 
@@ -1176,15 +1241,39 @@ Esta sección presenta el escenario futuro de cada User Persona una vez que util
 | :--- | :--- | :--- | :--- |
 | José Guevara (Piscicultor) | Detecta los problemas por el comportamiento de los peces durante sus rondas y registra los datos a mano. | Recibe alertas con el tipo de riesgo y puede activar el aireador o el filtro desde su celular. | Reacciona antes de que el pez muestre signos de estrés y reduce el registro manual. |
 | Pedro Alvarado (Administrador) | Recibe reportes físicos, fotos de cuadernos o audios y decide con información tardía. | Consulta un panel con el estado de todos sus estanques, el historial y el resumen de calidad por lote, y emite certificados al cosechar. | Decide con datos en tiempo real y cuenta con evidencia para respaldar sus lotes ante compradores. |
-| Comprador de supermercado | Verifica el origen con documentos y declaraciones del proveedor. | Escanea el QR del lote y ve el historial, el resumen de calidad y la verificación de integridad. | Verifica en segundos con evidencia que no puede modificarse después de emitida. |
+| Daniel Torres (Comprador de supermercado) | Verifica el origen con documentos y declaraciones del proveedor. | Escanea el QR del lote y ve el historial, el resumen de calidad y la verificación de integridad. | Verifica en segundos con evidencia que no puede modificarse después de emitida. |
 
-![To-Be Scenario Map - Piscicultor](./assets/images/tobe-piscicultor.png)
+- To-Be Scenario Map - Piscicultor
 
-![To-Be Scenario Map - Administrador](./assets/images/tobe-administrador.png)
+![To-Be Scenario Map - Piscicultor](https://i.imgur.com/Q0578Fw.png)
 
-![To-Be Scenario Map - Comprador de supermercado](./assets/images/tobe-comprador.png)
+**Comparación con el As-is**
 
-*(Insertar las capturas de los tres mapas elaborados en Miro/LucidChart y el enlace al tablero.)*
+La consulta de lecturas complementa la observación durante las rondas y reduce la necesidad de transcribir datos. Las alertas permiten identificar desviaciones de las variables monitoreadas, mientras que el registro de atención facilita comunicar lo ocurrido al administrador.
+
+La solución conserva la inspección física y la intervención del operario. La consulta de datos almacenados no equivale a monitoreo actualizado; la recepción de alertas y el control remoto requieren conectividad. Registrar una alerta como atendida tampoco significa que la condición del agua esté resuelta.
+
+- To-Be Scenario Map - Administrador
+
+![To-Be Scenario Map - Administrador](https://i.imgur.com/2D5xIVS.png)
+
+**Comparación con el As-is**
+
+El panel reúne información que actualmente llega mediante documentos y mensajes, facilitando la revisión de los estanques y la coordinación con el personal. La gestión de lotes organiza los hitos y los resúmenes del agua para su consulta durante el ciclo.
+
+YakuTrace incorpora un documento con QR y una comprobación de integridad. El administrador debe distinguir un certificado con anclaje pendiente de uno confirmado. El certificado respalda el contenido registrado, pero no garantiza por sí mismo la exactitud de los datos de origen ni la calidad sanitaria del producto.
+
+- To-Be Scenario Map - Comprador de supermercado
+
+![To-Be Scenario Map - Comprador de supermercado](https://i.imgur.com/d9QmKsk.png)
+
+**Comparación con el As-is**
+
+La página pública reúne información que actualmente debe solicitarse por separado al proveedor. El acceso sin registro responde a la necesidad de consultar durante la recepción sin añadir pasos innecesarios.
+
+La verificación permite comprobar la integridad del contenido anclado, pero no sustituye la revisión sanitaria ni la inspección del producto. Daniel debe contrastar el QR con la mercancía y sus documentos. Un certificado revocado, pendiente o no verificable requiere aclaración; no determina automáticamente la aceptación o rechazo del lote.
+
+[Link del Miro](https://miro.com/welcomeonboard/SWQ4UUpYdlFSYTdCNEErcTQ2VzRqNU1BZk54eStDOFR6TnhmRTJCK2FWVWJXQ0ltTmtXYm9RUFJwSHF2eWIvNUxzeERCcXRhM1M3L1pXdE5ERGpqVTNrcUM4YWVONEZMTWZvVWFiVFl3dVdpb3AwTTVQQ2MzbTNxNkdLSWh4WEJBS2NFMDFkcUNFSnM0d3FEN050ekl3PT0hdjE=?share_link_id=826222577249)
 
 ## 3.2. User Stories
 
@@ -1237,17 +1326,15 @@ Los requisitos de YakuControl + YakuTrace se organizan en cinco épicas y un con
 
 ## 3.3. Impact Mapping
 
-> ✍️ **REDACTADO** — Business Goals SMART y mapa en tabla redactados. Falta (herramienta): replicarlo en **UXPressia**, capturas y link. (Tarea C3-3)
-
 En esta sección hemos elaborado nuestro Impact Mapping. Para ello, utilizamos la hipótesis desarrollada durante nuestro proceso de Lean UX. Reemplazamos los segmentos de cliente por los User Personas, los cuales fueron elaborados en las secciones previas, y conectamos las funcionalidades con los objetivos, para que formen parte del Product Backlog.
 
 <div style="text-align: center; margin-top: 1rem; margin-bottom: 1rem;">
 
-![Impact Mapping - YakuControl](./assets/images/Impactmap.png)
+![Impact Mapping - YakuControl](./assets/images/Impactmapv2.png)
 
 </div>
 
-*El mapa refleja dos personas principales: el Piscicultor, enfocado en el monitoreo y control operativo en campo, y el Administrador, orientado a la gestión estratégica y análisis de datos. Cada impacto se conecta con los entregables del producto y las User Stories priorizadas en el Product Backlog.*
+*El mapa conecta a las personas con los impactos y entregables del producto: el Piscicultor, enfocado en el monitoreo y control operativo en campo; el Administrador, orientado a la gestión estratégica y a la emisión de certificados; y el Comprador de supermercado, que verifica los lotes. Cada impacto se vincula con las User Stories priorizadas en el Product Backlog, como detalla la tabla siguiente.*
 
 
 **Business Goals (SMART)**
@@ -1272,8 +1359,6 @@ En esta sección hemos elaborado nuestro Impact Mapping. Para ello, utilizamos l
 | G3 | Comprador de supermercado | Verifica los lotes que recibe | Página pública de verificación | US26, US27, TS06 |
 | G4 | Pedro Alvarado (Administrador) | Activa el complemento TRACE | Plan complementario TRACE | US19, US14 |
 | G5 | Comprador de supermercado | Escanea el QR y confía en el certificado | Verificación pública con prueba en blockchain | US26, US27 |
-
-*(Replicar este mapa en UXPressia con las fichas de las tres User Personas e incluir la captura y el enlace.)*
 
 ## 3.4. Product Backlog
 
@@ -1325,6 +1410,8 @@ El Product Backlog se ordena por **valor para el negocio**. El criterio aplicado
 
 *Tablero de Trello con las 36 tarjetas en el mismo orden y con los mismos puntos de la tabla anterior.*
 
+<div style="page-break-after: always;"></div>
+
 # Capítulo IV: Strategic-Level Software Design
 ## 4.1. Strategic-Level Attribute-Driven Design
 ### 4.1.1. Design Purpose
@@ -1344,8 +1431,6 @@ El alcance abarca el hardware Edge, un **backend en monolito modular** organizad
 
 ### 4.1.2. Attribute-Driven Design Inputs
 #### 4.1.2.1. Primary Functionality (Primary User Stories)
-
-
 Del Product Backlog (sección 3.4) se seleccionaron como **funcionalidad primaria** las historias con mayor impacto sobre la arquitectura: aquellas que ejercitan el flujo central de valor (ingesta de telemetría, alertas, control de actuadores), el modelo de negocio (pago y complemento TRACE) y la trazabilidad (emisión de certificados, anclaje, verificación pública y cierre de resúmenes). En conjunto involucran a los seis Bounded Contexts. Por brevedad se muestra el escenario principal de cada historia; el detalle completo está en la sección 3.2.
 
 | Epic / User Story ID | Título | Descripción | Criterios de Aceptación | Relacionado con (Epic ID) |
@@ -1385,7 +1470,7 @@ Se formalizó la primera versión de los escenarios de atributos de calidad con 
 #### 4.1.2.3. Constraints
 
 
-Las restricciones son condiciones no negociables impuestas por el negocio, el curso o el contexto técnico. Se expresan como Technical Stories para que cada una tenga un criterio de aceptación comprobable. Respecto de la versión anterior se actualizó el tamaño del equipo (5 integrantes), se corrigió la tecnología de la Web App (Angular) y se agregaron las restricciones propias de Web3, internacionalización y servicios de terceros.
+Las restricciones son condiciones no negociables impuestas por el negocio, el curso o el contexto técnico. Se expresan como Technical Stories para que cada una tenga un criterio de aceptación comprobable. Incluyen el tamaño del equipo (5 integrantes), la tecnología de la Web App (Angular) y las restricciones propias de Web3, internacionalización y servicios de terceros.
 
 | Technical Story ID | Título | Descripción | Criterios de Aceptación | Relacionado con (Epic ID) |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1617,7 +1702,7 @@ Se señalan los **Pain Points** (post-its fucsia en diamante), identificando rie
 ![Step 9](assets/images/step9.png)
 
 ##### Step 10: Final Architecture & Context Mapping
-El paso final consiste en consolidar el mapa completo para definir la arquitectura técnica. Se establecen los canales de comunicación entre contextos, asegurando que el **IAM** actúe como guardián transversal mientras que **Telemetría** y **Alertas** funcionan como el motor reactivo de la solución inteligente.
+El paso final consiste en consolidar el mapa completo para definir la arquitectura técnica. Se establecen los canales de comunicación entre contextos, asegurando que el **IAM** actúe como guardián transversal mientras que **Telemetry** y **Notification** funcionan como el motor reactivo de la solución inteligente.
 
 ![Step 10](assets/images/step10.png)
 
@@ -1791,7 +1876,7 @@ En este sentido, elaboramos los domain storytelling tomando como referencia las 
 
 **Proceso de elaboración.** Cada Bounded Context Canvas se elaboró de forma iterativa: (1) *Context Overview Definition*, donde se definió el propósito y la clasificación estratégica; (2) *Business Rules Distillation & Ubiquitous Language Capture*, donde se destilaron las reglas y los términos; (3) *Capability Analysis*, donde se identificaron las capacidades; (4) *Capability Layering*, para separar capacidades núcleo de las de soporte; (5) *Dependencies Capture*, con la comunicación entrante y saliente; y (6) *Design Critique*, donde se revisaron las decisiones abiertas. Se priorizó el orden: Telemetry, Traceability, Notification, Equipment, IAM y Payment.
 
-**Bounded Context Canvas — Traceability (nuevo)**
+**Bounded Context Canvas — Traceability (detalle)**
 
 | Campo | Contenido |
 | :--- | :--- |
@@ -1807,7 +1892,7 @@ En este sentido, elaboramos los domain storytelling tomando como referencia las 
 | **Verification Metrics** | Porcentaje de lotes piloto con certificado emitido; tiempo de verificación; porcentaje de certificados con anclaje confirmado. |
 | **Open Questions** | Umbral de cobertura de datos para emitir; qué red usar en producción; si el comprador necesitará un portal propio. |
 
-Los canvases de **Telemetry** (cierre de resúmenes de calidad), **Payment** (complemento TRACE), **Notification** (acciones de emergencia y tiempo de respuesta), **Equipment** e **IAM** se actualizaron para reflejar los mensajes que ahora intercambian con Traceability.
+Los canvases de **Telemetry** (cierre de resúmenes de calidad), **Payment** (complemento TRACE), **Notification** (acciones de emergencia y tiempo de respuesta), **Equipment** e **IAM** incluyen los mensajes que intercambian con Traceability.
 
 ### 4.2.5. Context Mapping
 
@@ -1884,27 +1969,16 @@ Los pares Telemetry–Notification, Telemetry–Equipment y Payment–IAM se rel
 
 ## 4.3. Software Architecture
 ### 4.3.1. Software Architecture System Landscape Diagram
-
-> ✍️ **REDACTADO** — Texto redactado y **diagrama generado**: `assets/images/cap4/c0_system_landscape.png`. (Tarea C4-12)
-
-
 Este nivel ofrece una visión macroscópica del ecosistema de la piscigranja y de su cadena comercial. Muestra la plataforma **YakuControl + YakuTrace** junto a los actores (administrador, piscicultor, comprador de supermercado y consumidor final) y a los sistemas externos con los que interactúa: pasarela de pagos (Stripe), notificaciones push (Firebase), correo, servicios meteorológicos y la red blockchain. Permite comprender los flujos de información del negocio existan o no integraciones directas a nivel de código.
 
 ![Landscape Diagram](./assets/images/cap4/c0_system_landscape.png)
 
 ### 4.3.2. Software Architecture Context Level Diagrams
-
-> ✍️ **REDACTADO** — Texto redactado y diagrama generado: `c1_yakucontrol_context.png`.
-
-
 El diagrama de contexto define las fronteras del sistema: un único recuadro central (YakuControl + YakuTrace) rodeado por sus usuarios directos —el administrador, el piscicultor, el comprador de supermercado y el consumidor final— y por los sistemas con los que se integra: Stripe, Firebase Cloud Messaging, el servicio de correo, la API meteorológica y la red blockchain con su proveedor RPC.
 
 ![Context Diagram](./assets/images/cap4/c1_yakucontrol_context.png)
 
 ### 4.3.3. Software Architecture Container Level Diagrams
-
-> ✍️ **REDACTADO** — Texto redactado y diagrama generado: `c2_yakucontrol_container.png`.
-
 
 El diagrama de contenedores muestra los elementos de alto nivel de la solución y sus responsabilidades. La arquitectura del backend es un **monolito modular** (Spring Boot) con seis Bounded Contexts, desplegable como una sola unidad. Los contenedores son:
 
@@ -1924,19 +1998,13 @@ Los clientes se comunican con el backend por REST/JSON sobre HTTPS; el Edge API 
 ![Container Diagram](./assets/images/cap4/c2_yakucontrol_container.png)
 
 ### 4.3.4. Software Architecture Deployment Diagrams
-
-> ✍️ **REDACTADO** — Texto redactado y diagrama generado: `c4_deployment.png`. Confirmar los proveedores de despliegue reales.
-
-
 El diagrama de despliegue mapea la arquitectura lógica a la infraestructura. El **nodo IoT** se ubica en la granja con conectividad intermitente; el **Edge API** se ejecuta en un servicio PaaS (Railway); el **backend** y la **base de datos** se despliegan en Microsoft Azure (App Service y Azure Database for PostgreSQL); la **Landing Page** y la **Web App** se distribuyen como contenido estático con CDN; la **app móvil** se instala en el teléfono del piscicultor; y el **smart contract** se despliega en una red EVM de pruebas configurable.
 
 ![Deployment Diagram](./assets/images/cap4/c4_deployment.png)
 
+<div style="page-break-after: always;"></div>
+
 # Capítulo V: Tactical-Level Software Design
-
-> ✍️ **REDACTADO** — Capítulo **redactado completo** para los 6 contextos (tablas de clases por capa). Los diagramas de componentes, de clases y de BD ya están **generados** en `assets/images/cap5/` y sus fuentes en `diagramas/` (Structurizr DSL, PlantUML, SQL). Para entregar en las herramientas del curso: Structurizr (C4), LucidChart (UML) y Vertabelo/LucidChart (BD) — ver `PENDIENTES_TP1.md`.
-
-
 En este capítulo se presenta el diseño táctico de YakuControl + YakuTrace. El backend es un **monolito modular** (Spring Boot) en el que cada Bounded Context es un módulo con su propio paquete, su propio esquema de base de datos y cuatro capas: **Domain**, **Interface**, **Application** e **Infrastructure**. Los módulos no se acceden entre sí por sus clases internas: se comunican mediante **eventos de dominio en proceso** (bus interno de Spring) y mediante interfaces explícitas protegidas por una **Anti-Corruption Layer** cuando un contexto consulta a otro. Las integraciones externas (Stripe, Firebase Cloud Messaging, SMTP, Edge API y blockchain) se acceden siempre a través de un **puerto** definido en el contexto y un **adaptador** en la capa de Infrastructure, de modo que el dominio no depende de ningún proveedor.
 
 Convenciones aplicadas en todos los contextos:
@@ -1950,10 +2018,6 @@ Convenciones aplicadas en todos los contextos:
 Los diagramas de componentes (C4 nivel 3) se elaboraron en **Structurizr**, los diagramas de clases (UML) y de base de datos en **LucidChart/Vertabelo** a partir de los modelos aquí descritos.
 
 ## 5.1. Bounded Context: Telemetry Context
-
-> ✍️ **REDACTADO** — Sección redactada (tablas por capa) con diagramas generados en `assets/images/cap5/`. Revisar contra el diseño real del backend.
-
-
 El Telemetry Context es el núcleo técnico de YakuControl. Recibe las lecturas que el Edge API ya filtró y firmó, las valida contra el rango óptimo de la especie, las persiste como serie temporal inmutable, detecta lecturas fuera de rango y, desde YakuTrace, **cierra resúmenes de calidad del agua** por día, semana, mes y ciclo, que alimentan los certificados de trazabilidad. El Índice de Calidad del Agua (ICA) lo calcula el Edge API; el backend **no lo recalcula**: solo lo agrega y lo congela.
 
 ### 5.1.1. Domain Layer
@@ -2033,11 +2097,7 @@ El diagrama muestra los dos agregados, sus entidades y Value Objects, las factor
 El esquema `telemetry` contiene: `monitored_ponds` (estanque monitoreado y estado), `optimal_ranges` (rango por variable, único por estanque), `validated_metrics` (serie temporal, clave `(metric_id, measured_at)`) y `quality_summaries` (resúmenes por periodo, únicos por estanque-periodo-inicio). Todas las tablas hijas referencian a `monitored_ponds` mediante clave foránea.
 
 ## 5.2. Bounded Context: Traceability Context
-
-> ✍️ **REDACTADO** — Sección redactada (tablas por capa) con diagramas generados en `assets/images/cap5/`. Revisar contra el diseño real del backend.
-
-
-Traceability es el contexto **nuevo y core** de YakuTrace. Gestiona el ciclo de vida del **lote** (siembra, hitos, cosecha), congela los resúmenes de calidad del agua que Telemetry cierra y emite el **Certificado de Trazabilidad y Calidad del Agua** con un código QR. Para que el certificado sea verificable, calcula una huella digital (SHA-256) de su contenido canónico y la ancla en un **smart contract** (`TraceabilityRegistry`). En la blockchain solo se guardan hashes; los datos completos permanecen en PostgreSQL. La verificación pública recalcula el hash y lo compara con el registrado. El contexto no afirma que los peces hayan sido "bien cuidados": certifica que **las condiciones medidas fueron registradas sin alteración posterior**.
+Traceability es el contexto **core** de YakuTrace. Gestiona el ciclo de vida del **lote** (siembra, hitos, cosecha), congela los resúmenes de calidad del agua que Telemetry cierra y emite el **Certificado de Trazabilidad y Calidad del Agua** con un código QR. Para que el certificado sea verificable, calcula una huella digital (SHA-256) de su contenido canónico y la ancla en un **smart contract** (`TraceabilityRegistry`). En la blockchain solo se guardan hashes; los datos completos permanecen en PostgreSQL. La verificación pública recalcula el hash y lo compara con el registrado. El contexto no afirma que los peces hayan sido "bien cuidados": certifica que **las condiciones medidas fueron registradas sin alteración posterior**.
 
 ### 5.2.1. Domain Layer
 
@@ -2060,7 +2120,7 @@ Traceability es el contexto **nuevo y core** de YakuTrace. Gestiona el ciclo de 
 | `BatchRepository`, `CertificateRepository`, `FarmTraceEntitlementRepository` | Repository (interfaces) | Persistencia de los agregados. | — | `save()`, `findById()`, `findByPublicCode()`, `findActiveByPond()` |
 | `MilestoneRecordedEvent`, `CertificateIssuedEvent`, `CertificateRevokedEvent` | Domain Events | Informan a otros contextos y activan el anclaje. | — | — |
 
-### 5.2.2. Interface Layer
+### 5.2.2. Interface Layer 
 
 | Clase | Tipo | Propósito |
 | :--- | :--- | :--- |
@@ -2125,14 +2185,9 @@ El esquema `traceability` contiene: `batches` (lote y datos de cosecha), `milest
 
 
 ## 5.3. Bounded Context: Equipment Context
-
-> ✍️ **REDACTADO** — Sección redactada (tablas por capa) con diagramas generados en `assets/images/cap5/`. Revisar contra el diseño real del backend.
-
-
 Equipment gestiona la **realidad física** de la piscigranja: estanques, equipos (sensores y actuadores), la vinculación entre ambos y el historial de piscicultores asignados. Es un contexto de soporte: no procesa datos de los sensores, solo sabe qué hardware está en qué estanque.
 
 ### 5.3.1. Domain Layer
-
 | Clase | Tipo | Propósito y reglas de negocio | Atributos clave | Métodos clave |
 | :--- | :--- | :--- | :--- | :--- |
 | `Pond` | Aggregate Root | Estanque de crianza. Regla: el nombre es único dentro de la granja; solo un piscicultor responsable a la vez (la asignación anterior se cierra). | `pondId`, `farmId`, `name`, `capacityLiters`, `status`, `certifiedForProduction`, `assignedFarmerId` | `assignFishFarmer()`, `certifyForProduction()`, `deactivate()` |
@@ -2145,10 +2200,7 @@ Equipment gestiona la **realidad física** de la piscigranja: estanques, equipos
 | `PondRepository`, `EquipmentRepository` | Repository (interfaces) | Persistencia. | — | `findById()`, `findByFarm()`, `findByPond()` |
 | `PondRegisteredEvent`, `EquipmentLinkedEvent`, `FishFarmerAssignedEvent`, `EquipmentWentOfflineEvent` | Domain Events | Consumidos por Telemetry, IAM y Notification. | — | — |
 
-> _Nota de diseño:_ el agregado `Pond` de Equipment es la **fuente de identidad** del estanque; Telemetry usa `MonitoredPond` (otro modelo del mismo `pondId`), lo que evita que dos contextos compartan una misma clase.
-
 ### 5.3.2. Interface Layer
-
 | Clase | Tipo | Propósito |
 | :--- | :--- | :--- |
 | `PondController` | Controller | Alta de estanques, consulta por granja, asignación de piscicultor y certificación para producción. |
@@ -2189,9 +2241,6 @@ Equipment gestiona la **realidad física** de la piscigranja: estanques, equipos
 El esquema `equipment` define `ponds` (único por granja y nombre), `pond_assignments` (historial, FK a `ponds`) y `equipments` (con `hardware_id` único y FK opcional al estanque al que está vinculado).
 
 ## 5.4. Bounded Context: IAM Context
-
-> ✍️ **REDACTADO** — Sección redactada (tablas por capa) con diagramas generados en `assets/images/cap5/`. Revisar contra el diseño real del backend.
-
 
 IAM gestiona identidades, roles y acceso. Es un contexto genérico que otros contextos consumen como **Open Host Service**: emite y valida JWT con el identificador de la granja (aislamiento multi-tenant) y administra la **Farm Key** con la que el Edge API se autentica. La **verificación pública del QR no requiere sesión**; en cambio, emitir o revocar certificados exige `ROLE_ADMIN` de la granja dueña del lote.
 
@@ -2253,10 +2302,6 @@ IAM gestiona identidades, roles y acceso. Es un contexto genérico que otros con
 El esquema `iam` contiene `users` (email único, rol validado), `pond_tokens` (código único, FK al administrador que lo emitió) y `farm_keys` (hash de la credencial por granja).
 
 ## 5.5. Bounded Context: Notification Context
-
-> ✍️ **REDACTADO** — Sección redactada (tablas por capa) con diagramas generados en `assets/images/cap5/`. Revisar contra el diseño real del backend.
-
-
 Notification es el contexto reactivo de YakuControl: convierte eventos del dominio (lectura fuera de rango, equipo fuera de línea, certificado emitido) en **alertas** entregadas por push (Firebase Cloud Messaging) y correo (SMTP), y ejecuta **acciones de emergencia** sobre los actuadores (aireador, filtros) a través del Edge API. También registra cuándo un operario atendió una alerta, dato que alimenta el tiempo de respuesta de los resúmenes de calidad.
 
 ### 5.5.1. Domain Layer
@@ -2325,10 +2370,6 @@ Notification es el contexto reactivo de YakuControl: convierte eventos del domin
 El esquema `notification` contiene `recipients`, `notifications` (FK al destinatario), `sensor_data` (uno por notificación), `emergency_actions` (órdenes a actuadores) y `notification_deliveries` (intentos por canal para los reintentos).
 
 ## 5.6. Bounded Context: Payment Context
-
-> ✍️ **REDACTADO** — Sección redactada (tablas por capa) con diagramas generados en `assets/images/cap5/`. Revisar contra el diseño real del backend.
-
-
 Payment gestiona el modelo SaaS: suscripciones por granja, facturación recurrente mediante Stripe y, desde YakuTrace, el **add-on TRACE** que habilita la emisión de certificados. Es un contexto genérico: delega el cobro a Stripe a través de un adaptador y notifica a IAM (acceso) y a Traceability (permiso TRACE) mediante eventos.
 
 ### 5.6.1. Domain Layer
@@ -2386,6 +2427,8 @@ Payment gestiona el modelo SaaS: suscripciones por granja, facturación recurren
 ![Database Payment](./assets/images/cap5/db_payment.png)
 
 El esquema `payment` contiene `subscriptions` (una por granja), `invoices` (historial de cobros, FK a la suscripción) y `subscription_addons` (add-ons por suscripción, únicos por tipo).
+
+<div style="page-break-after: always;"></div>
 
 # Capítulo VI: Solution UX Design
 
@@ -2591,7 +2634,7 @@ En la práctica, esto se traduce en: frases cortas y directas, verbos en imperat
 
 #### Extensión de la guía para YakuTrace
 
-La incorporación de la verificación de certificados exige comunicar **estados de confianza** de forma inequívoca para un comprador que no es técnico. Se definen los siguientes estados semánticos, que reutilizan los *color tokens* existentes y siempre combinan **color + ícono + texto** (no se comunican solo con color, por accesibilidad):
+La incorporación de la verificación de certificados exige comunicar **estados de confianza** de forma inequívoca para un comprador que no es técnico. Se definen los siguientes estados semánticos, que derivan de los *color tokens* existentes con variantes de mayor contraste para texto y siempre combinan **color + ícono + texto** (no se comunican solo con color, por accesibilidad):
 
 | Estado | Texto en interfaz | Color (token) | Ícono (Material Symbols Outlined) | Uso |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2653,7 +2696,7 @@ Definen las características físicas del nodo sensor, con prioridad en la funci
 * **Retroalimentación de estado:** un módulo LED de un solo color: luz estática indica equipo encendido y capturando datos; luz parpadeante indica intento de sincronización por la red.
 
 
-**Guía aplicada a los diseños de TP1.** El color Cyan Electric `#00A3E0` se conserva como acento. Para botones con texto blanco se emplea `#007EA8`; los estados usan texto oscuro sobre fondos claros. Los controles tienen una altura mínima de 48 px y el foco de teclado es visible. La guía siguiente complementa los recursos históricos de TB1.
+**Guía aplicada a los diseños.** El color Cyan Electric `#00A3E0` se conserva como acento. Para botones con texto blanco se emplea `#007EA8`; los estados usan texto oscuro sobre fondos claros. Los controles tienen una altura mínima de 48 px y el foco de teclado es visible. La guía siguiente complementa los recursos anteriores de estilo.
 
 ![Guía visual de YakuTrace: colores, tipografía, estados y controles](assets/images/cap6/style-guide-trace.png)
 
@@ -2830,6 +2873,8 @@ Representación en HTML:
 
 **SEO y Meta Tags de las páginas nuevas o ajustadas**
 
+Estas etiquetas actualizan las de la Landing Page y la Web App con el posicionamiento de trazabilidad: para la página de inicio prevalecen sobre las de la primera tabla.
+
 | Página | Title | Description | Keywords | Author |
 | :--- | :--- | :--- | :--- | :--- |
 | Landing – Inicio | YakuControl – Monitoreo y trazabilidad | Monitoreo del agua y alertas en tiempo real para piscigranjas de trucha | monitoreo acuícola, trucha, IoT, piscigranja | Verifish |
@@ -2906,7 +2951,7 @@ Se presentan los wireframes de baja fidelidad para la Landing Page, enfocándose
 |----------------------------------|----------------------------------|
 | <img src="assets/images/cap6/LandingDesktopWireframe.png" alt="wireframe1" /> | <img src="assets/images/cap6/LandingPhoneWireframe.png" alt="wireframe2" /> |
 
-Referencia histórica en Figma (sin actualización en esta entrega): [YacuControl](https://www.figma.com/design/FdwCU88zpBqlCuHjQ9iY69/YacuControl?node-id=0-1). Las fuentes actuales y sus PNG están en este repositorio.
+Prototipo en Figma: [YakuControl](https://www.figma.com/design/FdwCU88zpBqlCuHjQ9iY69/YacuControl?node-id=0-1). Las fuentes editables y sus PNG están en este repositorio.
 
 
 **Estructura propuesta (desktop y mobile).** En el wireframe se mantienen las secciones existentes y se agrega la sección de trazabilidad:
@@ -2930,7 +2975,7 @@ El Mock-up de alta fidelidad para la Landing Page materializa las guías de esti
 |----------------------------------|----------------------------------|
 | <img src="assets/images/cap6/LandingDesktopMockup.png" alt="Mockup1" /> | <img src="assets/images/cap6/LandingPhoneMockup.png" alt="Mockup2" /> |
 
-Referencia histórica en Figma (sin actualización en esta entrega): [YacuControl](https://www.figma.com/design/FdwCU88zpBqlCuHjQ9iY69/YacuControl?node-id=0-1). Las fuentes actuales y sus PNG están en este repositorio.
+Prototipo en Figma: [YakuControl](https://www.figma.com/design/FdwCU88zpBqlCuHjQ9iY69/YacuControl?node-id=0-1). Las fuentes editables y sus PNG están en este repositorio.
 
 
 **Llamados a la acción (CTA) por segmento**
@@ -2944,7 +2989,7 @@ Referencia histórica en Figma (sin actualización en esta entrega): [YacuContro
 La Landing Page mantiene la paleta, la tipografía y los componentes del Design System, y sus CTA llevan a las vistas correspondientes de las aplicaciones, para que la experiencia sea consistente. El pie reserva los accesos a términos y privacidad; se publicarán con el servicio operativo. No se presentan URLs de tienda o precios sin confirmar.
 
 
-El mock-up aplica la guía de estilos (paleta Navy/Cyan/Aqua, tipografía Inter, espaciado en múltiplos de 8 px, botones y chips del Design System). La sección YakuTrace incorpora el sello de verificación y un ejemplo del certificado con su código QR para ilustrar el beneficio. Los CTA tienen una altura mínima de 48 px. La verificación técnica del contraste y del ancho responsive se documenta en la revisión del paquete E.
+El mock-up aplica la guía de estilos (paleta Navy/Cyan/Aqua, tipografía Inter, espaciado en múltiplos de 8 px, botones y chips del Design System). La sección YakuTrace incorpora el sello de verificación y un ejemplo del certificado con su código QR para ilustrar el beneficio. Los CTA tienen una altura mínima de 48 px. La verificación técnica del contraste y del ancho responsive se documenta en la revisión técnica del capítulo.
 
 
 **Fuentes de la landing:** [wireframe desktop](design/package-e/LandingDesktopWireframe.html), [wireframe móvil](design/package-e/LandingPhoneWireframe.html), [mockup desktop](design/package-e/LandingDesktopMockup.html) y [mockup móvil](design/package-e/LandingPhoneMockup.html). Los gráficos del panel y el certificado usan datos ilustrativos; el formulario no realiza envíos.
@@ -3155,7 +3200,7 @@ Las pantallas 19–28 están dibujadas en español y exportadas a PNG. Cada una 
 
 ![Resultado público de un certificado revocado](assets/images/cap6/state-public-revoked.png)
 
-**Cobertura de historias del capítulo III.** Se agregan vistas complementarias para registrar novedades (US09), invitar operarios (US10), reportar mortalidad (US11), consultar tendencias anuales agregadas (US12), configurar umbrales (US13), contratar la suscripción base (US14), auditar respuestas (US16), controlar limpieza (US17) y revocar certificados (US25). Sus recorridos se presentan en los wireflows 15–23.
+**Cobertura de historias de usuario (sección 3.2).** Se agregan vistas complementarias para registrar novedades (US09), invitar operarios (US10), reportar mortalidad (US11), consultar tendencias anuales agregadas (US12), configurar umbrales (US13), contratar la suscripción base (US14), auditar respuestas (US16), controlar limpieza (US17) y revocar certificados (US25). Sus recorridos se presentan en los wireflows 15–23.
 
 ### 6.4.2. Applications Wireflow Diagrams
 
@@ -3207,7 +3252,7 @@ Los diagramas de wireflow ilustran el flujo de navegación combinado con la disp
 | <img src="assets/images/cap6/wireflow10.png" alt="flow" /> |
 
 
-Referencia histórica en LucidChart (sin actualización en esta entrega): [diagramas base](https://lucid.app/lucidchart/ebc666ba-9266-48a0-a19c-b1b3f64247ab/edit). Los diagramas actuales se mantienen como [fuentes HTML editables](design/package-e/index.html) y PNG en el repositorio.
+Diagramas base en LucidChart: [wireflows](https://lucid.app/lucidchart/ebc666ba-9266-48a0-a19c-b1b3f64247ab/edit). Los diagramas vigentes se mantienen como [fuentes HTML editables](design/package-e/index.html) y PNG en el repositorio.
 
 
 **Explicación de los wireflows existentes.** Cada wireflow representa el recorrido de un usuario para cumplir un *User goal*, mostrando en cada paso el wireframe del estado correspondiente. Los flujos de información van de las acciones del usuario a las respuestas del sistema, y el *happy path* es la ruta principal sin errores.
@@ -3244,9 +3289,6 @@ Las rutas principales y alternativas se explican en cada diagrama. Los flujos 1�
 **Wireflow 14 — Activar el plan TRACE (Administrador).** *User goal:* "Como administrador, deseo activar el complemento TRACE para emitir certificados."
 *Happy path:* Suscripción → Plan TRACE → Confirmar y pagar → Confirmación → TRACE activo.
 *Ruta alternativa:* suscripción inactiva (se indica que debe estar activa).
-
-*(Dibujar los wireflows 11–14 en LucidChart y actualizar el enlace.)*
-
 
 **Wireflow 11 — Crear un lote y registrar hitos.**
 
@@ -3339,20 +3381,18 @@ Las rutas principales y alternativas se explican en cada diagrama. Los flujos 1�
 [Fuente editable y explicación del recorrido](design/package-e/wireflow23.html).
 
 
-**Entrega y trazabilidad.** Las fuentes, sus PNG y la revisión técnica se versionan en ramas del paquete E. La [revisión del paquete](design/package-e/REVISION_PAQUETE_E.md) distingue los entregables verificables, el material de sustentación y los pendientes externos. El [guion de sustentación](design/package-e/GUION_SUSTENTACION.md) organiza la explicación por audiencia.
+**Entrega y trazabilidad.** Las fuentes, sus PNG y la revisión técnica se versionan en el repositorio. La [revisión técnica del capítulo](design/package-e/REVISION_PAQUETE_E.md) distingue los entregables verificables, el material de sustentación y los pendientes externos. El [guion de sustentación](design/package-e/GUION_SUSTENTACION.md) organiza la explicación por audiencia.
 
 # Conclusiones
-
-> ✍️ **REDACTADO** — Conclusiones de TP1 redactadas (se suman a las de TB1). Revisar al final.
 
 
 Se presenta Verifish y su solución YakuControl, una propuesta orientada al monitoreo inteligente de piscigranjas mediante IoT y servicios en la nube. Se aborda la problemática de la supervisión manual de la calidad del agua, los riesgos asociados a una detección tardía y la necesidad de contar con información en tiempo real. También se definen la propuesta de valor, el modelo SaaS, las hipótesis de Lean UX y los principales usuarios: piscicultores y administradores de piscigranjas.
 
-Además , se profundiza en las necesidades, comportamientos y dificultades de los usuarios mediante entrevistas y técnicas de análisis. También se estudian competidores y estrategias de diferenciación para YakuControl. Los hallazgos muestran la importancia de disponer de alertas automáticas, monitoreo en tiempo real, acceso desde dispositivos móviles y una interfaz sencilla. Esta información permite representar mejor a los usuarios, sus actividades y los principales procesos relacionados con la solución.
+Además, se profundiza en las necesidades, comportamientos y dificultades de los usuarios mediante entrevistas y técnicas de análisis. También se estudian competidores y estrategias de diferenciación para YakuControl. Los hallazgos muestran la importancia de disponer de alertas automáticas, monitoreo en tiempo real, acceso desde dispositivos móviles y una interfaz sencilla. Esta información permite representar mejor a los usuarios, sus actividades y los principales procesos relacionados con la solución.
 
 Se establecieron las funcionalidades y requerimientos que deberá cubrir YakuControl a partir de las necesidades previamente identificadas. Se organizan las características de la solución mediante User Stories, Impact Mapping y Product Backlog, contemplando funciones como el monitoreo de parámetros del agua, generación de alertas, control de equipos, gestión de usuarios y visualización de información. De esta manera, se prioriza el desarrollo de las funcionalidades de acuerdo con su valor para los usuarios y el negocio.
 
-Finalmente , se definio la estructura tecnológica y arquitectónica necesaria para el funcionamiento de YakuControl. Se consideran aspectos como seguridad, disponibilidad, rendimiento, escalabilidad y conectividad, además de la separación de responsabilidades mediante Domain-Driven Design. También se establecen los principales componentes y contextos del sistema, así como su interacción con sensores IoT, aplicaciones móviles, plataforma web y servicios en la nube, representados mediante diferentes diagramas de arquitectura.
+Finalmente, se definió la estructura tecnológica y arquitectónica necesaria para el funcionamiento de YakuControl. Se consideran aspectos como seguridad, disponibilidad, rendimiento, escalabilidad y conectividad, además de la separación de responsabilidades mediante Domain-Driven Design. También se establecen los principales componentes y contextos del sistema, así como su interacción con sensores IoT, aplicaciones móviles, plataforma web y servicios en la nube, representados mediante diferentes diagramas de arquitectura.
 
 <div style="page-break-after: always;"></div>
 
@@ -3364,9 +3404,6 @@ En el diseño arquitectónico, la decisión de un **monolito modular** con seis 
 Como recomendaciones para las siguientes entregas se sugiere validar con compradores reales la utilidad y el contenido del certificado, confirmar el estado de las redes de prueba antes de implementar el contrato, evaluar un portal propio para compradores y definir con las piscigranjas piloto el precio del complemento TRACE.
 
 # Bibliografía
-
-> ✍️ **REDACTADO** — Lista APA redactada. Las entradas con `<!-- ⚠ -->` necesitan autor, fecha o DOI: abrir la fuente y completar. (Tarea TR-07)
-
 
 Actualidad Ambiental. (28 de mayo de 2025). *Huarochirí: mueren 200 mil truchas en piscigranja por posible contaminación en el río Santa Eulalia.* https://www.actualidadambiental.pe/huarochiri-mueren-200-mil-truchas-en-piscigranja-por-posible-contaminacion-en-el-rio-santa-eulalia/
 
@@ -3382,61 +3419,36 @@ Beiko, T. (2025, 18 de marzo). *Holesky and Hoodi testnet updates*. Ethereum Fou
 
 Blaha, F., & Katafono, K. (2020). *Blockchain application in seafood value chains* (FAO Fisheries and Aquaculture Circular No. 1207). Food and Agriculture Organization of the United Nations. https://doi.org/10.4060/ca8751en
 
-Computer Weekly. (s. f.). *Avances y progresos en el uso de blockchain en el Perú*. https://www.computerweekly.com/es/cronica/Avances-y-progresos-en-el-uso-de-blockchain-en-el-Peru <!-- ⚠ completar autor y fecha -->
+Computer Weekly. (2021). *Avances y progresos en el uso de blockchain en el Perú*. https://www.computerweekly.com/es/cronica/Avances-y-progresos-en-el-uso-de-blockchain-en-el-Peru
 
 El Búho. (2025, mayo). *Trucha producida en Puno es la más requerida en mercados del sur del país por su alta calidad*. https://elbuho.pe/2025/05/trucha-producida-en-puno-es-la-mas-requerida-en-mercados-del-sur-del-pais-por-su-alta-calidad/
 
 Global Dialogue on Seafood Traceability. (s. f.). *GDST standards*. https://traceability-dialogue.org/
 
-La Cámara. (s. f.). *Trucha peruana: potencial acuícola clave para diversificar la exportación*. https://lacamara.pe/?p=67270 <!-- ⚠ completar fecha -->
+La Cámara. (2025). *Trucha peruana: potencial acuícola clave para diversificar la exportación*. https://lacamara.pe/?p=67270
 
 Linux Foundation Decentralized Trust. (s. f.). *Walmart case study*. https://lfdecentralizedtrust.org/case-studies/walmart-case-study
 
-Ministerio de Agricultura, Pesca y Alimentación. (s. f.). *El director general de Ordenación Pesquera y Acuicultura asiste a la presentación del primer blockchain de pescado fresco*. https://www.mapa.gob.es/en/prensa/ultimas-noticias/detalle_noticias/el-director-general-de-ordenaci-n-pesquera-y-acuicultura-asiste-a-la-presentaci-n-del-primer-blockchain-de-pescado-fresco/ead2918c-3492-4809-9ce0-bb5a72d24776 <!-- ⚠ completar fecha -->
+Ministerio de Agricultura, Pesca y Alimentación. (2019). *El director general de Ordenación Pesquera y Acuicultura asiste a la presentación del primer blockchain de pescado fresco*. https://www.mapa.gob.es/en/prensa/ultimas-noticias/detalle_noticias/el-director-general-de-ordenaci-n-pesquera-y-acuicultura-asiste-a-la-presentaci-n-del-primer-blockchain-de-pescado-fresco/ead2918c-3492-4809-9ce0-bb5a72d24776
 
 Ministerio de la Producción. (2024). *Catastro Acuícola Nacional (referenciado en Informe de Evaluación de la Intervención de Extensionismo Acuícola).* Gobierno del Perú. https://www.producempresarial.pe/wp-content/uploads/2025/02/05-Informe-ER-Extensionismo-Acuicola_rev.pdf
 
 Organización para la Cooperación y el Desarrollo Económicos. (2025). *Políticas para el futuro de la pesca y la acuicultura en Perú.* OECD Publishing. https://www.oecd.org/es/publications/politicas-para-el-futuro-de-la-pesca-y-la-acuicultura-en-peru_712e7084-es/full-report/aquaculture-policies-in-peru_a47e9e62.html
 
-Perú Retail. (s. f.). *¿Cómo se está desarrollando el sector de supermercados en el Perú?* https://www.peru-retail.com/como-esta-desarrollando-sector-supermercados-peru/ <!-- ⚠ completar fecha; verificar cifras -->
+Perú Retail. (2026). *¿Cómo se está desarrollando el sector de supermercados en el Perú?* https://www.peru-retail.com/como-esta-desarrollando-sector-supermercados-peru/ 
 
-Powell, W., Foth, M., Cao, S., & Natanelov, V. (2021). *Garbage in garbage out: The precarious link between IoT and blockchain in food supply chains*. https://www.futurefoodsystems.com.au/resource/garbage-in-garbage-out-the-precarious-link-between-iot-and-blockchain-in-food-supply-chains/ <!-- ⚠ completar revista, volumen y DOI -->
+Powell, W., Foth, M., Cao, S., & Natanelov, V. (2021). *Garbage in garbage out: The precarious link between IoT and blockchain in food supply chains*. https://www.futurefoodsystems.com.au/resource/garbage-in-garbage-out-the-precarious-link-between-iot-and-blockchain-in-food-supply-chains/
 
-World Fishing & Aquaculture. (s. f.). *Nueva Pescanova e IBM trabajan para rastrear sus productos en IBM Food Trust*. https://www.worldfishing.net/news101/industry-news/1400435.article <!-- ⚠ completar título exacto y fecha -->
+Timescale. (s. f.). *Compare TimescaleDB editions*. Tiger Data Docs. https://www.tigerdata.com/docs/get-started/choose-your-path/timescaledb-editions
+
+World Fishing & Aquaculture. (2021). *Nueva Pescanova e IBM trabajan para rastrear sus productos en IBM Food Trust*. https://www.worldfishing.net/news101/industry-news/1400435.article
 
 # Anexos
 
-> ✍️ **REDACTADO** — Anexo B (mejora continua / autocrítica) redactado: es evidencia directa del criterio *Applies continuous improvement* de la rúbrica; revisar que cada fila sea cierta. Falta el Anexo C con el enlace del video de exposición (más adelante). (Tarea TR-07)
+**Anexo A. Prototipo IoT**
 
-**-Wokwi:** 
-- [Wokwi](https://wokwi.com/projects/467186064937826305)
+- [Simulación en Wokwi](https://wokwi.com/projects/467186064937826305)
 
+**Anexo b. Videos de Exposiciones**
 
-**Anexo B. Mejora continua: autocrítica y cambios respecto de TB1**
-
-Para esta entrega no se contó con retroalimentación formal del docente sobre TB1. Las mejoras provienen de la **autocrítica del equipo**, al contrastar el informe con el enunciado y la rúbrica, y de la incorporación del nuevo segmento y de la trazabilidad con blockchain. Cada observación se vincula con el cambio aplicado.
-
-| # | Observación (autocrítica) | Cambio aplicado en TP1 | Sección |
-| :-: | :--- | :--- | :--- |
-| 1 | El Student Outcome correspondía a otro curso (ABET 7). | Se reemplazó por el ABET 3 con los criterios del enunciado. | Student Outcome |
-| 2 | Existía una sección de Objetivos SMART que el enunciado no pide. | Se eliminó. | — |
-| 3 | El Ubiquitous Language estaba en español y mezclaba términos técnicos. | Se reescribió con términos en inglés (español entre paréntesis) y solo del dominio. | 2.4 |
-| 4 | Se usó *User Journey Mapping* y el enunciado pide As-is Scenario Mapping. | Se rehicieron con las filas Phases, Doing, Thinking y Feeling. | 2.3.4 |
-| 5 | Faltaba el To-Be Scenario Mapping. | Se agregó para las tres personas. | 3.1 |
-| 6 | Épicas y User Stories estaban en cuadros separados y los criterios incluían detalles de interfaz. | Cuadro único; criterios en Gherkin, tiempo presente, sin UI y con más escenarios. | 3.2 |
-| 7 | El Product Backlog iniciaba con seguridad y autenticación. | Se reordenó por valor de negocio y se justificó el criterio. | 3.4 |
-| 8 | El Impact Mapping era solo una imagen. | Se agregaron objetivos SMART y la tabla Goal → Actor → Impact → Deliverable → Stories. | 3.3 |
-| 9 | Los constraints no eran Technical Stories y estaban desactualizados (nombre previo, 6 integrantes, Flutter para web). | Se reescribieron como TC01–TC12 y se corrigió la tecnología de la Web App. | 4.1.2.3 |
-| 10 | Drivers, decisiones y refinements no seguían el formato del enunciado. | Se rehicieron con las columnas exigidas, matriz de patrones y tablas de refinement. | 4.1.3 a 4.1.5 |
-| 11 | El Container Diagram hablaba de microservicios, API Gateway y bus de eventos, pero la decisión era un monolito modular. | Se rehicieron todos los diagramas C4 con una arquitectura coherente. | 4.3 |
-| 12 | Inconsistencias en los contextos (conteo de contextos, errores de escritura) y un párrafo duplicado en el Context Mapping. | Se corrigieron. | 4.2.2, 4.2.5 |
-| 13 | La introducción del análisis de entrevistas indicaba dos participantes cuando eran seis. | Se corrigió. | 2.2.3 |
-| 14 | El EventStorming aparecía duplicado en dos capítulos. | Se mantuvo solo en el diseño estratégico. | 4.2.1 |
-| 15 | No se consideraba al comprador del producto. | Se incorporó el Segmento 3 y el módulo YakuTrace con trazabilidad en blockchain. | 1.3, Cap. II a VI |
-| 16 | Los datos de los sensores podían ingresar sin autenticar su origen y blockchain no corrige datos erróneos. | Se agregó la firma de lecturas y la cobertura de datos en los resúmenes. | 4.1.4, 5.2 |
-| 17 | El diseño táctico y la experiencia de usuario no estaban desarrollados en este informe. | Se desarrollaron los Capítulos V y VI con diagramas y principios de Responsive Web Design. | Cap. V y VI |
-
-
-**Anexo C. Videos de Exposiciones**
-
-_(Pendiente para más adelante: enlace privado de Microsoft Stream del video de exposición de cada entrega.)_
+- [Link de la Exposición de TP1](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202125968_upc_edu_pe/IQCfmbv_fzrnToGVrxLg26ojAbX7Gt2nWWMgIejbg462N8Q?e=b7ouCh&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
