@@ -1,0 +1,11 @@
+[
+  "login real contra Azure: OK",
+  "registrar y listar estanque: OK",
+  "registrar dispositivo IoT: OK",
+  "BLOCKED: backend duplicado devuelve 201; se esperaba 409",
+  "vincular equipo a estanque: OK",
+  "consultar notificaciones: OK",
+  "restaurar sesión y recargar ruta: OK",
+  "401 real limpia sesión y vuelve al login: OK",
+  "cerrar sesión explícitamente: OK"
+]

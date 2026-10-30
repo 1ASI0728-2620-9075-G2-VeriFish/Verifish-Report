@@ -1,0 +1,26 @@
+test_contact_validation_and_honest_confirmation (test_landing.LandingFlows) ... 127.0.0.1 - - [30/Oct/2026 18:17:49] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [30/Oct/2026 18:17:49] "GET /sales.css HTTP/1.1" 200 -
+127.0.0.1 - - [30/Oct/2026 18:17:49] "GET /sales.js HTTP/1.1" 200 -
+127.0.0.1 - - [30/Oct/2026 18:17:50] code 404, message File not found
+127.0.0.1 - - [30/Oct/2026 18:17:50] "GET /favicon.ico HTTP/1.1" 404 -
+ok
+test_mobile_navigation_and_no_horizontal_overflow (test_landing.LandingFlows) ... 127.0.0.1 - - [30/Oct/2026 18:17:51] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [30/Oct/2026 18:17:51] "GET /sales.js HTTP/1.1" 200 -
+127.0.0.1 - - [30/Oct/2026 18:17:51] "GET /sales.css HTTP/1.1" 200 -
+127.0.0.1 - - [30/Oct/2026 18:17:51] "GET / HTTP/1.1" 304 -
+ok
+test_terms_and_privacy (test_landing.LandingFlows) ... 127.0.0.1 - - [30/Oct/2026 18:17:53] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [30/Oct/2026 18:17:53] "GET /sales.css HTTP/1.1" 200 -
+127.0.0.1 - - [30/Oct/2026 18:17:53] "GET /sales.js HTTP/1.1" 200 -
+127.0.0.1 - - [30/Oct/2026 18:17:53] "GET /terminos.html HTTP/1.1" 200 -
+127.0.0.1 - - [30/Oct/2026 18:17:54] "GET /index.html HTTP/1.1" 200 -
+ok
+test_trace_and_web_navigation (test_landing.LandingFlows) ... 127.0.0.1 - - [30/Oct/2026 18:17:54] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [30/Oct/2026 18:17:54] "GET /sales.js HTTP/1.1" 200 -
+127.0.0.1 - - [30/Oct/2026 18:17:54] "GET /sales.css HTTP/1.1" 200 -
+ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 6.396s
+
+OK
