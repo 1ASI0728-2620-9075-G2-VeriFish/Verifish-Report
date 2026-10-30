@@ -4,6 +4,7 @@ Trabajo de Rúbens. Los cambios están en ramas feature y los PR apuntan a devel
 
 - [Landing PR #1](https://github.com/1ASI0728-2620-9075-G2-VeriFish/Verifish-Landing/pull/1)
 - [Flutter Web PR #1](https://github.com/1ASI0728-2620-9075-G2-VeriFish/VeriFish-Fronted/pull/1)
+- [Informe PR #4](https://github.com/1ASI0728-2620-9075-G2-VeriFish/Verifish-Report/pull/4)
 
 ## Qué se verificó
 
