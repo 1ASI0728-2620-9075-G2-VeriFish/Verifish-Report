@@ -3973,6 +3973,7 @@ En el Sprint 1 se implementaron la Landing Page, la Web App, el backend, la app 
 | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | (pegar filas del `git log`) | | | | |
+| 1ASI0728-2620-9075-G2-VeriFish/VeriFish-Fronted | `feature/web-ponds-and-hosting` | `52e8f09` | test(web): wait for pond linking dialog to close | — | 2026-10-30 |
 | 1ASI0728-2620-9075-G2-VeriFish/VeriFish-Fronted | `feature/web-ponds-and-hosting` | `afd1d43` | test(web): cover admin validation, session expiry and Azure browser flows | — | 2026-10-30 |
 | 1ASI0728-2620-9075-G2-VeriFish/VeriFish-Fronted | `feature/web-ponds-and-hosting` | `6ec974c` | fix(web): handle farm access errors and prepare Firebase Hosting | — | 2026-10-30 |
 | 1ASI0728-2620-9075-G2-VeriFish/Verifish-Landing | `feature/landing-sales-yakutrace` | `0cd1c75` | style(landing): format commercial section styles | — | 2026-10-30 |
