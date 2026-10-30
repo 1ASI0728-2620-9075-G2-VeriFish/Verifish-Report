@@ -1,3 +1,4 @@
+<!-- TB2: las líneas que empiezan con "> 📝" son notas internas del equipo. Antes de exportar a PDF, borrarlas: sed -i '/^> 📝/d' README.md. Rellenar o quitar todo "(completar)". -->
 <div style="text-align: center;">
   <img src="./assets/images/logo_upc.png" alt="Logo UPC" width="80"/>
 </div>
@@ -33,8 +34,8 @@
 </div>
 
 <div style="text-align: center;">
-    <p>Proyecto</p>
-    <h4 style="text-align: center;"><b>YakuControl</b></h4>
+    <p>Producto</p>
+    <h4 style="text-align: center;"><b>YakuControl + YakuTrace</b></h4>
 </div>
 
 <br>
@@ -55,11 +56,14 @@
 
 <div style="text-align: center;">
     <h4 style="text-align: center;"><b>Período 202620</b></h4>
+    <p>Noviembre de 2026</p>
 </div>
 
 <div style="page-break-after: always;"></div>
 
 ### Registro de Versiones del Informe
+
+> 📝 **NOTA TB2 — qué va aquí:** Una fila nueva por cada modificación relevante de TB2 (secciones nuevas, correcciones, mejoras por autocrítica). Fecha y autor reales; deben coincidir con los commits y con Collaboration Insights.
 
 | Versión | Fecha | Autor | Descripción de modificación |
 | :--- | :--- | :--- | :--- |
@@ -74,6 +78,7 @@
 | **9.0** | 07/10/2026 | Sebastian Escobar | **TP1 – Arquitectura y diseño táctico:** diagramas C4 coherentes con el monolito modular, Ubiquitous Language en inglés, diseño táctico de los seis Bounded Contexts (capas, componentes, diagramas de clases y de base de datos), bibliografía y anexos. |
 | **10.0** | 08/10/2026 | Rúbens Bendezu | **TP1 – Diseño UX/UI:** guía de estilos, arquitectura de información, Landing Page desktop y móvil, pantallas de las aplicaciones en español con sus estados y wireflows con YakuTrace; fuentes editables, imágenes y evidencia escrita del Student Outcome 3. |
 | **11.0** | 09/10/2026 | S. Escobar, R. Bendezu, L. Choquehuanca, V. Cruz, R. Peralta | **TP1 – Integración:** revisión cruzada de los capítulos, unificación de terminología y de nombres de imágenes, tabla de contenido, Student Outcome, Project Report Collaboration Insights y limpieza de las notas internas del equipo. |
+| **12.0** | 28/10/2026 | Victor Cruz | **TB2 – Estructura:** actualización de la tabla de contenido con las secciones 6.4.3 a 6.4.5 y el Capítulo VII; corrección de los títulos de los wireflows (6.4.2), de la descripción de la app móvil (6.2.5) y de la numeración de los anexos; incorporación de la carátula completa (producto y mes). |
 
 <div style="page-break-after: always;"></div>
 
@@ -173,9 +178,57 @@ El repositorio se organizó con GitFlow. La rama `main` conserva solo versiones 
 
 <div style="page-break-after: always;"></div>
 
+## TB2
+
+> 📝 **NOTA TB2 — qué va aquí:** Igual que en TB1 y TP1: fecha de inicio de actividades, tabla de tareas por integrante (según lo acordado en el Sprint Planning), cómo se trabajó (GitFlow, PRs, revisiones, coordinación) y capturas NUEVAS de Insights (Contributors, Commits y Network) del repositorio del informe. Las capturas de los repositorios de código van en 7.2.1.8. Lo descrito debe coincidir con el Registro de Versiones.
+
+**Tareas**
+
+Iniciando actividades el **(DD/MM/2026)**, el equipo distribuyó las responsabilidades del trabajo de la siguiente manera:
+
+| Integrantes | Tarea asignada |
+| :--- | :--- |
+| Escobar Palomino, Sebastian Matias | (completar) |
+| Bendezu Navarro, Rúbens Fitzgerald | (completar) |
+| Choquehuanca Nuñez, Luciana Carolina | (completar) |
+| Cruz Ibarra, Victor Andres | (completar) |
+| Peralta Chipa, Ronald Joel | (completar) |
+
+**Cómo se trabajó**
+
+(Completar: ramas por producto, Pull Requests, revisiones, reuniones del Sprint, herramientas de coordinación.)
+
+**GitHub Collaboration Insights**
+
+<div style="text-align: center; margin-top: 1rem; margin-bottom: 1rem;">
+
+![Insights TB2 - Contributors](./assets/images/insights-tb2-contributors.png)
+
+*Contributors: aportes de cada integrante durante TB2.*
+
+</div>
+
+<div style="text-align: center; margin-top: 1rem; margin-bottom: 1rem;">
+
+![Insights TB2 - Commits](./assets/images/insights-tb2-commits.png)
+
+*Commits: frecuencia de commits durante TB2.*
+
+</div>
+
+<div style="text-align: center; margin-top: 1rem; margin-bottom: 1rem;">
+
+![Insights TB2 - Network Graph](./assets/images/insights-tb2-network.png)
+
+</div>
+
+<div style="page-break-after: always;"></div>
+
 
 
 # Contenido
+
+> 📝 **NOTA TB2 — qué va aquí:** La tabla de contenido usa hipervínculos Markdown a 4 niveles y debe actualizarse y verificarse antes de cada entrega: si se cambia un título, cambiar también su enlace.
 
 - [Student Outcome](#student-outcome)
 
@@ -307,7 +360,34 @@ El repositorio se organizó con GitFlow. La rama `main` conserva solo versiones 
 - [6.4. Applications UX/UI Design](#64-applications-uxui-design)
   - [6.4.1. Applications Wireframes](#641-applications-wireframes)
   - [6.4.2. Applications Wireflow Diagrams](#642-applications-wireflow-diagrams)
+  - [6.4.3. Applications Mock-ups](#643-applications-mock-ups)
+  - [6.4.4. Applications User Flow Diagrams](#644-applications-user-flow-diagrams)
+  - [6.4.5. Applications Prototyping](#645-applications-prototyping)
+
+### Capítulo VII: Product Implementation, Validation & Deployment
+- [7.1. Software Configuration Management](#71-software-configuration-management)
+  - [7.1.1. Software Development Environment Configuration](#711-software-development-environment-configuration)
+  - [7.1.2. Source Code Management](#712-source-code-management)
+  - [7.1.3. Source Code Style Guide & Conventions](#713-source-code-style-guide--conventions)
+  - [7.1.4. Software Deployment Configuration](#714-software-deployment-configuration)
+- [7.2. Solution Implementation](#72-solution-implementation)
+  - [7.2.1. Sprint 1](#721-sprint-1)
+    - [7.2.1.1. Sprint Planning 1](#7211-sprint-planning-1)
+    - [7.2.1.2. Sprint Backlog 1](#7212-sprint-backlog-1)
+    - [7.2.1.3. Development Evidence for Sprint Review](#7213-development-evidence-for-sprint-review)
+    - [7.2.1.4. Testing Suite Evidence for Sprint Review](#7214-testing-suite-evidence-for-sprint-review)
+    - [7.2.1.5. Execution Evidence for Sprint Review](#7215-execution-evidence-for-sprint-review)
+    - [7.2.1.6. Services Documentation Evidence for Sprint Review](#7216-services-documentation-evidence-for-sprint-review)
+    - [7.2.1.7. Software Deployment Evidence for Sprint Review](#7217-software-deployment-evidence-for-sprint-review)
+    - [7.2.1.8. Team Collaboration Insights during Sprint](#7218-team-collaboration-insights-during-sprint)
+- [7.3. Validation Interviews](#73-validation-interviews)
+  - [7.3.1. Diseño de Entrevistas](#731-diseño-de-entrevistas)
+  - [7.3.2. Registro de Entrevistas](#732-registro-de-entrevistas)
+  - [7.3.3. Evaluaciones según heurísticas](#733-evaluaciones-según-heurísticas)
+- [7.4. Video About-the-Product](#74-video-about-the-product)
 - [Conclusiones](#conclusiones)
+  - [Conclusiones y recomendaciones](#conclusiones-y-recomendaciones)
+  - [Video About-The-Team](#video-about-the-team)
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)
 
@@ -323,10 +403,12 @@ El curso contribuye al cumplimiento del Student Outcome ABET:
 
 En el siguiente cuadro se describe las acciones realizadas y enunciados de conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el logro del ABET – EAC - Student Outcome 3.
 
+> 📝 **NOTA TB2 — qué va aquí:** En cada celda de "Acciones realizadas" se agrega, debajo de TP1, el bloque **TB2** con lo que hizo CADA integrante y que se relaciona con el criterio (qué expuso, grabó o redactó). Las celdas de "Conclusiones" son grupales y acumulables: se amplían, no se reemplazan.
+
 | Criterio específico | Acciones realizadas | Conclusiones |
 | :--- | :--- | :--- |
-| **Comunica oralmente sus ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería.** | **TB1**<br><br>**Escobar Palomino, Sebastian Matias**<br>Explicó oralmente al equipo y al docente el diseño de las entrevistas, los perfiles de usuario y el modelado de flujos de dominio, y sustentó el contexto Equipment, ajustando el lenguaje técnico a cada oyente.<br><br>**Bendezu Navarro, Rúbens Fitzgerald**<br>Presentó el Startup y Solution Profile, los segmentos objetivo y los competidores, y explicó el Context Mapping y el contexto Payment al equipo y al docente, adaptando el nivel de detalle a cada oyente.<br><br>**Choquehuanca Nuñez, Luciana Carolina**<br>Explicó el Product Backlog, las historias de usuario y el EventStorming, y justificó los límites del contexto Telemetry ante el equipo y el docente.<br><br>**Cruz Ibarra, Victor Andres**<br>Presentó la arquitectura de la solución (diagramas de contexto, contenedores y despliegue), la organización del repositorio y el contexto IAM, apoyándose en diagramas.<br><br>**Peralta Chipa, Ronald Joel**<br>Presentó los objetivos SMART, los Bounded Context Canvases y la organización del informe, y explicó al equipo cómo se documenta el Student Outcome.<br><br><br>**TP1**<br><br>**Escobar Palomino, Sebastian Matias**<br>Preparó el guion para explicar la arquitectura C4 y el diseño táctico de los seis contextos (clases y base de datos) a audiencias técnicas y no técnicas.<br><br>**Bendezu Navarro, Rúbens Fitzgerald**<br>Preparó un guion de sustentación apoyado en la landing, las pantallas y los wireflows para explicar el diseño a piscicultores, administradores, compradores y al equipo técnico. El material distingue acciones de campo, decisiones de negocio y estados del certificado.<br><br>**Choquehuanca Nuñez, Luciana Carolina**<br>Preparó la exposición de las entrevistas del Segmento 3, las User Personas y los escenarios, para transmitir la voz del comprador de supermercado al equipo técnico.<br><br>**Cruz Ibarra, Victor Andres**<br>Preparó la sustentación del diseño estratégico: requisitos priorizados, atributos de calidad, EventStorming y mapa de contextos con Traceability, y la explicación de la verificación por QR para un público no técnico.<br><br>**Peralta Chipa, Ronald Joel**<br>Preparó la exposición del modelo de negocio, el análisis competitivo y el Impact Mapping, y de cómo YakuTrace se conecta con los objetivos de la startup. | **TB1**<br>El equipo aprendió a explicar decisiones técnicas (arquitectura, contextos y requisitos) a oyentes con distinto nivel de detalle, apoyándose en diagramas y en ejemplos del dominio acuícola. Se comprobó que presentar primero el problema del piscicultor y después la solución facilita la comprensión del público.<br><br>**TP1**<br>Con YakuTrace la audiencia se amplió a piscicultores, administradores y compradores de supermercado, por lo que el equipo preparó mensajes distintos para cada uno y los apoyó con la landing, las pantallas y los wireflows. |
-| **Comunica en forma escrita ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería.** | **TB1**<br><br>**Escobar Palomino, Sebastian Matias**<br>Redactó el diseño y análisis de entrevistas, las User Personas, la Task Matrix, el Journey Mapping, el Empathy Mapping, el Domain Message Flow y el contexto Equipment.<br><br>**Bendezu Navarro, Rúbens Fitzgerald**<br>Redactó el Startup y Solution Profile, los segmentos objetivo, los competidores, el Ubiquitous Language, el Impact Mapping, el Context Mapping y el contexto Payment.<br><br>**Choquehuanca Nuñez, Luciana Carolina**<br>Redactó las User Stories, el Product Backlog, la documentación del EventStorming, el Candidate Context Discovery y el contexto Telemetry.<br><br>**Cruz Ibarra, Victor Andres**<br>Redactó los diagramas de arquitectura (contexto, contenedores y despliegue), configuró el repositorio y redactó el contexto IAM.<br><br>**Peralta Chipa, Ronald Joel**<br>Redactó el registro de versiones, los Collaboration Insights, el Student Outcome, los objetivos SMART, los Bounded Context Canvases y el contexto Notification.<br><br><br>**TP1**<br><br>**Escobar Palomino, Sebastian Matias**<br>Redactó y revisó los diagramas C4 coherentes con el monolito modular, el Ubiquitous Language en inglés, el diseño táctico de los seis contextos (capas, clases y base de datos), la bibliografía y los anexos.<br><br>**Bendezu Navarro, Rúbens Fitzgerald**<br>Documentó y revisó el capítulo VI: guía visual, arquitectura de información, landing desktop/móvil, pantallas principales, variantes responsive, estados alternativos y wireflows. Redibujó la interfaz en español y relacionó los recorridos con las historias de usuario. Incorporó fuentes editables, imágenes y controles de calidad que permiten al equipo reproducir y revisar el diseño.<br><br>**Choquehuanca Nuñez, Luciana Carolina**<br>Redactó el diseño y el análisis de las entrevistas del Segmento 3, las User Personas, el Empathy Mapping y los escenarios As-is y To-Be con el comprador de supermercado.<br><br>**Cruz Ibarra, Victor Andres**<br>Redactó las User Stories en Gherkin sin referencias a la interfaz, el Product Backlog, el ADD completo (QAS, constraints, drivers, decisiones y refinamientos), el EventStorming, los canvases y el Context Map con Traceability.<br><br>**Peralta Chipa, Ronald Joel**<br>Redactó la estructura del informe, el registro de versiones, los Collaboration Insights y el Student Outcome, además del Startup Profile, el Lean UX, los competidores y el Impact Mapping con objetivos SMART. | **TB1**<br>El informe de TB1 documentó de forma ordenada el problema, los requisitos y la arquitectura mediante tablas, diagramas y plantillas comunes, y el trabajo por capítulos en GitHub permitió que cada integrante comunicara por escrito su parte de manera coherente.<br><br>**TP1**<br>En TP1 el informe incorporó el segmento de compradores y la trazabilidad con blockchain. Para que lo entiendan lectores técnicos y no técnicos, las historias se redactaron en Gherkin sin referencias a la interfaz, el glosario se escribió en inglés con su equivalente en español y los diagramas C4 y UML se hicieron coherentes con la decisión de un monolito modular. Las revisiones cruzadas entre integrantes mejoraron la consistencia del documento. |
+| **Comunica oralmente sus ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería.** | **TB1**<br><br>**Escobar Palomino, Sebastian Matias**<br>Explicó oralmente al equipo y al docente el diseño de las entrevistas, los perfiles de usuario y el modelado de flujos de dominio, y sustentó el contexto Equipment, ajustando el lenguaje técnico a cada oyente.<br><br>**Bendezu Navarro, Rúbens Fitzgerald**<br>Presentó el Startup y Solution Profile, los segmentos objetivo y los competidores, y explicó el Context Mapping y el contexto Payment al equipo y al docente, adaptando el nivel de detalle a cada oyente.<br><br>**Choquehuanca Nuñez, Luciana Carolina**<br>Explicó el Product Backlog, las historias de usuario y el EventStorming, y justificó los límites del contexto Telemetry ante el equipo y el docente.<br><br>**Cruz Ibarra, Victor Andres**<br>Presentó la arquitectura de la solución (diagramas de contexto, contenedores y despliegue), la organización del repositorio y el contexto IAM, apoyándose en diagramas.<br><br>**Peralta Chipa, Ronald Joel**<br>Presentó los objetivos SMART, los Bounded Context Canvases y la organización del informe, y explicó al equipo cómo se documenta el Student Outcome.<br><br><br>**TP1**<br><br>**Escobar Palomino, Sebastian Matias**<br>Preparó el guion para explicar la arquitectura C4 y el diseño táctico de los seis contextos (clases y base de datos) a audiencias técnicas y no técnicas.<br><br>**Bendezu Navarro, Rúbens Fitzgerald**<br>Preparó un guion de sustentación apoyado en la landing, las pantallas y los wireflows para explicar el diseño a piscicultores, administradores, compradores y al equipo técnico. El material distingue acciones de campo, decisiones de negocio y estados del certificado.<br><br>**Choquehuanca Nuñez, Luciana Carolina**<br>Preparó la exposición de las entrevistas del Segmento 3, las User Personas y los escenarios, para transmitir la voz del comprador de supermercado al equipo técnico.<br><br>**Cruz Ibarra, Victor Andres**<br>Preparó la sustentación del diseño estratégico: requisitos priorizados, atributos de calidad, EventStorming y mapa de contextos con Traceability, y la explicación de la verificación por QR para un público no técnico.<br><br>**Peralta Chipa, Ronald Joel**<br>Preparó la exposición del modelo de negocio, el análisis competitivo y el Impact Mapping, y de cómo YakuTrace se conecta con los objetivos de la startup.<br><br>**TB2**<br><br>**Escobar Palomino, Sebastian Matias**<br>(completar: acciones de TB2 — comunicación oral: exposición, video y sustentación)<br><br>**Bendezu Navarro, Rúbens Fitzgerald**<br>(completar: acciones de TB2 — comunicación oral: exposición, video y sustentación)<br><br>**Choquehuanca Nuñez, Luciana Carolina**<br>(completar: acciones de TB2 — comunicación oral: exposición, video y sustentación)<br><br>**Cruz Ibarra, Victor Andres**<br>(completar: acciones de TB2 — comunicación oral: exposición, video y sustentación)<br><br>**Peralta Chipa, Ronald Joel**<br>(completar: acciones de TB2 — comunicación oral: exposición, video y sustentación) | **TB1**<br>El equipo aprendió a explicar decisiones técnicas (arquitectura, contextos y requisitos) a oyentes con distinto nivel de detalle, apoyándose en diagramas y en ejemplos del dominio acuícola. Se comprobó que presentar primero el problema del piscicultor y después la solución facilita la comprensión del público.<br><br>**TP1**<br>Con YakuTrace la audiencia se amplió a piscicultores, administradores y compradores de supermercado, por lo que el equipo preparó mensajes distintos para cada uno y los apoyó con la landing, las pantallas y los wireflows.<br><br>**TB2**<br>(completar: conclusión grupal acumulada de TB2) |
+| **Comunica en forma escrita ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería.** | **TB1**<br><br>**Escobar Palomino, Sebastian Matias**<br>Redactó el diseño y análisis de entrevistas, las User Personas, la Task Matrix, el Journey Mapping, el Empathy Mapping, el Domain Message Flow y el contexto Equipment.<br><br>**Bendezu Navarro, Rúbens Fitzgerald**<br>Redactó el Startup y Solution Profile, los segmentos objetivo, los competidores, el Ubiquitous Language, el Impact Mapping, el Context Mapping y el contexto Payment.<br><br>**Choquehuanca Nuñez, Luciana Carolina**<br>Redactó las User Stories, el Product Backlog, la documentación del EventStorming, el Candidate Context Discovery y el contexto Telemetry.<br><br>**Cruz Ibarra, Victor Andres**<br>Redactó los diagramas de arquitectura (contexto, contenedores y despliegue), configuró el repositorio y redactó el contexto IAM.<br><br>**Peralta Chipa, Ronald Joel**<br>Redactó el registro de versiones, los Collaboration Insights, el Student Outcome, los objetivos SMART, los Bounded Context Canvases y el contexto Notification.<br><br><br>**TP1**<br><br>**Escobar Palomino, Sebastian Matias**<br>Redactó y revisó los diagramas C4 coherentes con el monolito modular, el Ubiquitous Language en inglés, el diseño táctico de los seis contextos (capas, clases y base de datos), la bibliografía y los anexos.<br><br>**Bendezu Navarro, Rúbens Fitzgerald**<br>Documentó y revisó el capítulo VI: guía visual, arquitectura de información, landing desktop/móvil, pantallas principales, variantes responsive, estados alternativos y wireflows. Redibujó la interfaz en español y relacionó los recorridos con las historias de usuario. Incorporó fuentes editables, imágenes y controles de calidad que permiten al equipo reproducir y revisar el diseño.<br><br>**Choquehuanca Nuñez, Luciana Carolina**<br>Redactó el diseño y el análisis de las entrevistas del Segmento 3, las User Personas, el Empathy Mapping y los escenarios As-is y To-Be con el comprador de supermercado.<br><br>**Cruz Ibarra, Victor Andres**<br>Redactó las User Stories en Gherkin sin referencias a la interfaz, el Product Backlog, el ADD completo (QAS, constraints, drivers, decisiones y refinamientos), el EventStorming, los canvases y el Context Map con Traceability.<br><br>**Peralta Chipa, Ronald Joel**<br>Redactó la estructura del informe, el registro de versiones, los Collaboration Insights y el Student Outcome, además del Startup Profile, el Lean UX, los competidores y el Impact Mapping con objetivos SMART.<br><br>**TB2**<br><br>**Escobar Palomino, Sebastian Matias**<br>(completar: acciones de TB2 — comunicación escrita: informe, documentación del Sprint y evidencias)<br><br>**Bendezu Navarro, Rúbens Fitzgerald**<br>(completar: acciones de TB2 — comunicación escrita: informe, documentación del Sprint y evidencias)<br><br>**Choquehuanca Nuñez, Luciana Carolina**<br>(completar: acciones de TB2 — comunicación escrita: informe, documentación del Sprint y evidencias)<br><br>**Cruz Ibarra, Victor Andres**<br>(completar: acciones de TB2 — comunicación escrita: informe, documentación del Sprint y evidencias)<br><br>**Peralta Chipa, Ronald Joel**<br>(completar: acciones de TB2 — comunicación escrita: informe, documentación del Sprint y evidencias) | **TB1**<br>El informe de TB1 documentó de forma ordenada el problema, los requisitos y la arquitectura mediante tablas, diagramas y plantillas comunes, y el trabajo por capítulos en GitHub permitió que cada integrante comunicara por escrito su parte de manera coherente.<br><br>**TP1**<br>En TP1 el informe incorporó el segmento de compradores y la trazabilidad con blockchain. Para que lo entiendan lectores técnicos y no técnicos, las historias se redactaron en Gherkin sin referencias a la interfaz, el glosario se escribió en inglés con su equivalente en español y los diagramas C4 y UML se hicieron coherentes con la decisión de un monolito modular. Las revisiones cruzadas entre integrantes mejoraron la consistencia del documento.<br><br>**TB2**<br>(completar: conclusión grupal acumulada de TB2) |
 
 <div style="page-break-after: always;"></div>
 
@@ -2915,7 +2997,7 @@ El flujo de navegación es coherente en todas las secciones, asegurando que los 
 
 **Mobile Application Navigation (Android):**
 
-La aplicación móvil nativa para Android utiliza un menú inferior (bottom navigation bar) como sistema de navegación principal, 
+La aplicación móvil (Flutter, con Android como plataforma principal) utiliza un menú inferior (bottom navigation bar) como sistema de navegación principal, 
 accesible en todo momento desde cualquier vista. Este patrón es el estándar recomendado por Material Design para aplicaciones móviles con entre 3 y 5 destinos principales, ya que permite el acceso con el pulgar sin necesidad de desplazar la mano.
 
 Las secciones accesibles desde el menú inferior son:
@@ -3207,7 +3289,7 @@ Las pantallas 19–28 están dibujadas en español y exportadas a PNG. Cada una 
 
 Los diagramas de wireflow ilustran el flujo de navegación combinado con la disposición de las pantallas. Este análisis permite validar la ruta que sigue el usuario para completar tareas críticas, como la configuración de umbrales de alerta o la activación remota de aireadores, asegurando una interacción fluida y lógica entre los distintos contextos del sistema.
 
-- *User Flow Diagrams para el Segmento 1: Piscicultores*
+- *Wireflow Diagrams para el Segmento 1: Piscicultores*
 
 | User Goal: Como Usuario. Deseo poder registrarme en la aplicación móvil para poder acceder a las funcionalidades del sistema |
 |----------------------------------|
@@ -3225,7 +3307,7 @@ Los diagramas de wireflow ilustran el flujo de navegación combinado con la disp
 |----------------------------------|
 | <img src="assets/images/cap6/wireflow4.png" alt="flow" /> |
 
-- *User Flow Diagrams para el Segmento 2: Administradores de Piscigranja*
+- *Wireflow Diagrams para el Segmento 2: Administradores de Piscigranja*
 
 | User Goal:  Como Usuario. Deseo poder registrarme en la aplicación web para obtener acceso a la plataforma  |
 |----------------------------------|
@@ -3383,7 +3465,419 @@ Las rutas principales y alternativas se explican en cada diagrama. Los flujos 1�
 
 **Entrega y trazabilidad.** Las fuentes, sus PNG y la revisión técnica se versionan en el repositorio. La [revisión técnica del capítulo](design/package-e/REVISION_PAQUETE_E.md) distingue los entregables verificables, el material de sustentación y los pendientes externos. El [guion de sustentación](design/package-e/GUION_SUSTENTACION.md) organiza la explicación por audiencia.
 
+<div style="page-break-after: always;"></div>
+
+### 6.4.3. Applications Mock-ups
+
+> 📝 **NOTA TB2 — qué va aquí:** Mock-ups (diseño visual final) de TODAS las pantallas de las aplicaciones, hechos en Figma, con los colores, la tipografía y los componentes de la guía de estilos (6.1). Un mock-up por cada wireframe de 6.4.1 (1–28), en el mismo orden y con la misma numeración. Cada bloque debe explicar qué principios de diseño, qué criterio de diseño inclusivo y qué decisión de arquitectura de información (6.2) se aplicó. Se exporta cada pantalla a PNG en `assets/images/cap6/mockup<N>.png`. Si el idioma base final cambia (ver decisión de idioma), las pantallas deben mostrar el idioma definido.
+
+Esta sección presenta los mock-ups de las aplicaciones de YakuControl + YakuTrace. Cada pantalla parte del wireframe correspondiente (sección 6.4.1) y aplica la guía de estilos (sección 6.1), el sistema de navegación y las etiquetas definidas en la arquitectura de información (sección 6.2).
+
+**Principios aplicados.** (completar: jerarquía visual, contraste, consistencia con la Landing Page, tamaño mínimo de controles, uso de los *color tokens* de estado, diseño inclusivo).
+
+- *Mock-ups para el Segmento 1: Piscicultores (App móvil)*
+
+| Mock-up 1 — Inicio de sesión |
+|----------------------------------|
+| <img src="assets/images/cap6/mockup1.png" alt="Mock-up 1: Inicio de sesión" /> |
+
+*(Repetir la tabla por cada pantalla de la app móvil. Debajo de cada una, una explicación breve: objetivo de la pantalla, decisiones de diseño y relación con la historia de usuario.)*
+
+- *Mock-ups para el Segmento 2: Administradores de piscigranja (Web App)*
+
+| Mock-up 5 — Registro de administrador |
+|----------------------------------|
+| <img src="assets/images/cap6/mockup5.png" alt="Mock-up 5: Registro de administrador" /> |
+
+*(Repetir por cada pantalla de la Web App.)*
+
+- *Mock-ups para el Segmento 3: Compradores de supermercado (verificación pública)*
+
+| Mock-up 19 — Verificación pública de un certificado |
+|----------------------------------|
+| <img src="assets/images/cap6/mockup19.png" alt="Mock-up 19: Verificación pública" /> |
+
+*(Repetir por cada pantalla de YakuTrace, incluidos los estados: válido, no válido, revocado y registro en proceso.)*
+
+<div style="page-break-after: always;"></div>
+
+### 6.4.4. Applications User Flow Diagrams
+
+> 📝 **NOTA TB2 — qué va aquí:** Un User Flow por cada *user goal* y por cada persona/aplicación, dibujado en la herramienta indicada (LucidChart o Figma). A diferencia del wireflow (6.4.2), el User Flow se arma con los MOCK-UPS (no wireframes) e incluye el camino esperado (*happy path*) y los caminos alternativos o de error (*unhappy paths*). Debe ser coherente con los 23 wireflows de 6.4.2 (mismos objetivos y mismas rutas). Cada diagrama lleva escrito su *User goal* y una explicación del flujo y de sus condiciones. Exportar a `assets/images/cap6/userflow<N>.png`.
+
+Esta sección presenta los User Flows de las aplicaciones. Cada flujo se deriva del wireflow del mismo objetivo (sección 6.4.2), reemplaza los wireframes por los mock-ups (sección 6.4.3) e incorpora el camino esperado y los caminos alternativos.
+
+- *User Flow Diagrams para el Segmento 1: Piscicultores*
+
+| User Goal: Como piscicultor, deseo (completar) para (completar) |
+|----------------------------------|
+| <img src="assets/images/cap6/userflow1.png" alt="User flow 1" /> |
+
+**Explicación del flujo 1.** *Happy path:* (completar). *Unhappy paths:* (completar: error de validación, sin conexión, permiso denegado, etc.).
+
+- *User Flow Diagrams para el Segmento 2: Administradores de Piscigranja*
+
+| User Goal: Como administrador, deseo (completar) para (completar) |
+|----------------------------------|
+| <img src="assets/images/cap6/userflow5.png" alt="User flow 5" /> |
+
+**Explicación del flujo.** (completar)
+
+- *User Flow Diagrams para el Segmento 3: Compradores de supermercado*
+
+| User Goal: Como comprador de supermercado, deseo verificar un lote escaneando su código QR para confirmar su origen |
+|----------------------------------|
+| <img src="assets/images/cap6/userflow11.png" alt="User flow 11" /> |
+
+**Explicación del flujo.** (completar: válido, no válido, revocado, registro en proceso).
+
+<div style="page-break-after: always;"></div>
+
+### 6.4.5. Applications Prototyping
+
+> 📝 **NOTA TB2 — qué va aquí:** Prototipo navegable (Figma) de cada aplicación, con la interacción y la navegación según los User Flows de 6.4.4. Empieza con una introducción de los criterios de interacción y su relación con la arquitectura de información (sistema de navegación). Por CADA aplicación: 1 screenshot de un cuadro del video + el enlace al video en Microsoft Stream donde se demuestran y explican los flujos principales (3 a 5 min por aplicación). Este video también se muestra y explica en la exposición.
+
+Esta sección presenta los prototipos de interfaz de las aplicaciones. Las decisiones de interacción (navegación inferior en la app móvil, menú lateral en la Web App, acciones de emergencia a dos toques, estados de confianza del certificado) se derivan del sistema de navegación definido en la sección 6.2.5.
+
+| Aplicación | Prototipo (Figma) | Video en Microsoft Stream | Flujos demostrados |
+| :--- | :--- | :--- | :--- |
+| App móvil del piscicultor | (enlace) | (enlace privado) | (completar) |
+| Web App del administrador | (enlace) | (enlace privado) | (completar) |
+| Verificación pública (comprador) | (enlace) | (enlace privado) | (completar) |
+
+*(Insertar un screenshot de cada video: `![Video prototipo app móvil](assets/images/cap6/prototype-mobile.png)`.)*
+
+<div style="page-break-after: always;"></div>
+
+# Capítulo VII: Product Implementation, Validation & Deployment
+
+> 📝 **NOTA TB2 — qué va aquí:** Este capítulo es NUEVO en TB2. Documenta cómo se implementa, prueba, despliega y valida la solución. Debe empezar con una introducción propia (qué productos se implementan, qué Sprint se cubre en esta entrega y qué queda para la TF1). Las historias, tablas y evidencias van REDACTADAS en el informe; las capturas son complemento, no reemplazo. El enunciado de TB2 exige: Software Configuration Management, Sprint 1 completo, Validation Interviews y Video About-the-Product, además de tener desplegada la primera versión de los productos digitales.
+
+Este capítulo documenta la implementación, las pruebas, el despliegue y la validación de la primera versión de los productos digitales de YakuControl + YakuTrace: la Landing Page, la Web App, la aplicación móvil, el backend (monolito modular) y el Edge API. En esta entrega se cubre el **Sprint 1**. *(Completar: alcance real del Sprint 1 y qué productos están desplegados.)*
+
+## 7.1. Software Configuration Management
+
+> 📝 **NOTA TB2 — qué va aquí:** Las decisiones y convenciones que mantienen la consistencia durante todo el ciclo de vida. Cuatro subsecciones: entorno de desarrollo, control de código fuente, guía de estilo de código y configuración de despliegue. Empezar con una frase de introducción.
+
+Esta sección establece las herramientas, convenciones y procesos que permiten mantener la consistencia del proyecto durante su ciclo de vida.
+
+### 7.1.1. Software Development Environment Configuration
+
+> 📝 **NOTA TB2 — qué va aquí:** Una fila por herramienta que usa el equipo: nombre del producto, para qué se usa y ruta de referencia (si es SaaS) o de descarga (si se instala en la PC). Deben cubrirse TODAS las actividades: gestión de proyecto, gestión de requisitos, diseño de producto, desarrollo, testing, despliegue y documentación. Solo se pueden usar herramientas permitidas por el enunciado.
+
+| Actividad | Producto | Propósito de uso en el proyecto | Ruta de referencia / descarga |
+| :--- | :--- | :--- | :--- |
+| Project Management | Trello | Product Backlog y Sprint Backlog | https://trello.com |
+| Requirements Management | UXPressia, Miro, LucidChart | User Personas, Empathy Maps, Impact Map, Scenario Maps | https://uxpressia.com · https://miro.com · https://lucid.app |
+| Product Design | Figma | Wireframes, mock-ups y prototipos | https://www.figma.com |
+| Diagramas de arquitectura | (completar: Structurizr, LucidChart u otra) | C4 Model, UML y base de datos | (completar) |
+| Source Code Management | GitHub + Git | Repositorios y GitFlow | https://github.com |
+| Software Development (backend) | (completar: IDE, JDK, Maven/Gradle) | Spring Boot, Java | (completar) |
+| Software Development (web) | (completar: VS Code, Node.js, Angular CLI) | Web App y Landing Page | (completar) |
+| Software Development (móvil) | (completar: Android Studio, Flutter SDK) | App móvil | (completar) |
+| Software Development (Edge/IoT) | (completar: Python, Mosquitto, Arduino IDE, Wokwi) | Edge API y prototipo IoT | https://wokwi.com |
+| Software Testing | (completar: JUnit, Cucumber, Postman) | Pruebas unitarias, de integración y BDD | (completar) |
+| Software Deployment | (completar: Azure, Railway, hosting estático, Firebase App Distribution) | Despliegue de los productos | (completar) |
+| Software Documentation | Swagger UI / OpenAPI, Markdown | Documentación de servicios e informe | (completar) |
+
+### 7.1.2. Source Code Management
+
+> 📝 **NOTA TB2 — qué va aquí:** (1) URL del repositorio de GitHub de CADA producto digital (el de Web Services incluye el proyecto y los archivos de prueba `.feature`). (2) Cómo se aplica GitFlow: ramas además de `main` (por ejemplo `develop`), convención de nombres para feature, release y hotfix. (3) Semantic Versioning para los releases. (4) Conventional Commits para los mensajes. Las convenciones de abajo son una propuesta basada en lo que ya usa el equipo en el informe; ajustar a lo que realmente se aplique.
+
+El código fuente se gestiona en la organización de GitHub del equipo, con un repositorio por producto digital:
+
+| Producto | Repositorio | Contenido |
+| :--- | :--- | :--- |
+| Informe del proyecto | https://github.com/1ASI0728-2620-9075-G2-VeriFish/Verifish-Report | Informe en Markdown y recursos |
+| Backend (monolito modular) | (completar URL) | Proyecto Spring Boot y archivos de pruebas (`.feature`) |
+| Web App | (completar URL) | Aplicación Angular |
+| Landing Page | (completar URL) | HTML5, CSS3 y JavaScript |
+| App móvil | (completar URL) | Aplicación Flutter |
+| Edge API / IoT | (completar URL) | Edge API (Python/Flask), configuración MQTT y sketch Arduino |
+
+**GitFlow.** Se utilizan las siguientes ramas *(confirmar)*:
+
+| Rama | Convención de nombre | Uso |
+| :--- | :--- | :--- |
+| Principal | `main` | Solo versiones entregables (releases) |
+| Integración | `develop` | Integra el trabajo del equipo |
+| Funcionalidad | `feature/<tema>` (ej. `feature/telemetry-ingestion`) | Una por tarea o historia; se crea desde `develop` |
+| Revisión | `feature/review-chapter-<n>` | Revisiones cruzadas del informe |
+| Release | `release/<MAJOR.MINOR.PATCH>` | Preparación de una entrega |
+| Hotfix | `hotfix/<descripción>` | Corrección urgente sobre `main` |
+
+**Semantic Versioning.** Los releases se nombran `MAJOR.MINOR.PATCH` (por ejemplo, `1.0.0` para la primera versión desplegada). *(Completar: versión de cada producto en TB2.)*
+
+**Conventional Commits.** Los mensajes siguen el formato `<tipo>(<alcance>): <descripción>`, con los tipos `feat`, `fix`, `docs`, `test`, `refactor`, `chore` y `ci`.
+
+### 7.1.3. Source Code Style Guide & Conventions
+
+> 📝 **NOTA TB2 — qué va aquí:** Las guías de estilo que el equipo adopta para nombrar elementos y programar en CADA lenguaje del proyecto (más Gherkin para los `.feature`). Todo el código, los nombres y los endpoints van en INGLÉS. Las referencias de abajo son una propuesta; confirmar o cambiar.
+
+| Lenguaje / artefacto | Guía adoptada | Reglas principales |
+| :--- | :--- | :--- |
+| Java (backend) | Google Java Style Guide *(confirmar)* | Clases en `PascalCase`, métodos y variables en `camelCase`, paquetes en minúscula por Bounded Context |
+| TypeScript (Web App) | Google TypeScript Style Guide | `camelCase` para variables y funciones, `PascalCase` para componentes, un componente por archivo |
+| JavaScript / HTML / CSS (Landing Page) | (completar) | (completar) |
+| Dart (Flutter) | Effective Dart *(confirmar)* | `lowerCamelCase` para miembros, `UpperCamelCase` para tipos, `snake_case` para archivos |
+| Python (Edge API) | PEP 8 *(confirmar)* | `snake_case` para funciones y variables, `PascalCase` para clases |
+| Gherkin (`.feature`) | Gherkin Conventions for Readable Specifications | Escenarios en tercera persona y presente, un comportamiento por escenario |
+| Commits | Conventional Commits | Ver 7.1.2 |
+
+### 7.1.4. Software Deployment Configuration
+
+> 📝 **NOTA TB2 — qué va aquí:** Los pasos necesarios para pasar del código fuente en los repositorios a la publicación exitosa de CADA producto digital (plataforma, variables de entorno, comandos o pipeline, URL final). Se incluye aquí el Deployment Diagram del C4 Model (puede reutilizar el de 4.3.4, actualizado con lo realmente desplegado).
+
+El despliegue previsto se describe en la sección 4.3.4: el backend y la base de datos en Microsoft Azure, el Edge API en Railway, la Landing Page y la Web App como contenido estático, la app móvil instalada en el teléfono y el smart contract en una red EVM de pruebas. En esta entrega se desplegó lo siguiente *(completar con lo real)*:
+
+| Producto | Plataforma | Pasos de despliegue | URL / enlace |
+| :--- | :--- | :--- | :--- |
+| Backend | Azure App Service | (completar: build, variables de entorno, despliegue) | (completar) |
+| Base de datos | Azure Database for PostgreSQL | (completar) | — |
+| Edge API | Railway | (completar) | (completar) |
+| Web App | (completar: hosting estático) | (completar) | (completar) |
+| Landing Page | (completar: hosting estático) | (completar) | (completar) |
+| App móvil | (completar: Firebase App Distribution / Play Store) | (completar) | (completar) |
+
+![Deployment Diagram](./assets/images/cap4/c4_deployment.png)
+
+<div style="page-break-after: always;"></div>
+
+## 7.2. Solution Implementation
+
+> 📝 **NOTA TB2 — qué va aquí:** El avance de implementación, pruebas, documentación y despliegue de TODOS los productos, organizado por Sprint. En TB2 solo se incluye el Sprint 1 (el Sprint 2 se agrega en la TF1). Empezar con una introducción que resuma el objetivo del Sprint.
+
+Esta sección registra el avance de la implementación por Sprint, en términos de producto y de trabajo colaborativo.
+
+### 7.2.1. Sprint 1
+
+#### 7.2.1.1. Sprint Planning 1
+
+> 📝 **NOTA TB2 — qué va aquí:** Introducción breve y el cuadro resumen del Sprint Planning Meeting con esta estructura exacta. El Sprint Goal debe tener una métrica de cumplimiento; la velocity y la suma de story points deben cuadrar con el Product Backlog (sección 3.4). Se resume el Sprint anterior; en el Sprint 1 puede indicarse que parte del informe y diseño (TB1 y TP1) como punto de partida.
+
+| **Sprint #** | Sprint 1 |
+| :--- | :--- |
+| **Sprint Planning Background** | |
+| Date | (AAAA-MM-DD) |
+| Time | (HH:MM AM/PM) |
+| Location | (reunión virtual / lugar) |
+| Prepared By | Cruz Ibarra, Victor Andres |
+| Attendees (to planning meeting) | Escobar Palomino, Sebastian Matias / Bendezu Navarro, Rúbens Fitzgerald / Choquehuanca Nuñez, Luciana Carolina / Cruz Ibarra, Victor Andres / Peralta Chipa, Ronald Joel |
+| Sprint 0 Review Summary | (resumen de lo alcanzado antes del Sprint: informe y diseño hasta TP1) |
+| Sprint 0 Retrospective Summary | (aciertos y oportunidades de mejora de la forma de trabajo) |
+| **Sprint Goal & User Stories** | |
+| Sprint 1 Goal | (objetivo del Sprint y su métrica de cumplimiento) |
+| Sprint 1 Velocity | (story points que el equipo puede aceptar) |
+| Sum of Story Points | (suma de los story points de las historias incluidas) |
+
+#### 7.2.1.2. Sprint Backlog 1
+
+> 📝 **NOTA TB2 — qué va aquí:** Introducción con el objetivo del Sprint; captura del tablero del Sprint en Trello + su URL PÚBLICA; y la tabla User Story ↔ Work-items (tareas). Se incluyen también tareas que no dependen de una historia (por ejemplo, una tarea para cumplir un constraint general). Las historias deben ser las del Product Backlog (3.4), con sus mismos IDs. Estados permitidos: To-do / In-Process / To-Review / Done.
+
+El objetivo del Sprint 1 es (completar).
+
+**Tablero del Sprint en Trello:** (URL público)
+
+![Sprint 1 Backlog en Trello](./assets/images/sprint1-backlog-trello.png)
+
+| Sprint # | Sprint 1 | | | | | | |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **User Story** | | **Work-Item / Task** | | | | | |
+| **Id** | **Title** | **Id** | **Title** | **Description** | **Estimation (Hours)** | **Assigned To** | **Status (To-do / In-Process / To-Review / Done)** |
+| US01 | Propuesta de valor | T01 | (completar) | (completar) | (h) | (nombre) | (estado) |
+| | | T02 | (completar) | (completar) | (h) | (nombre) | (estado) |
+| TS01 | API de ingesta de telemetría | T03 | (completar) | (completar) | (h) | (nombre) | (estado) |
+
+*(Una o más filas de Work-item por historia. Repetir para todas las historias del Sprint.)*
+
+#### 7.2.1.3. Development Evidence for Sprint Review
+
+> 📝 **NOTA TB2 — qué va aquí:** Introducción que resume los principales avances de implementación (Landing Page, Web App, backend, app móvil, Edge) y UNA tabla por repositorio con los commits relacionados con la implementación en este Sprint. Los commits deben seguir Conventional Commits y mostrar a los cinco integrantes.
+
+(Completar: resumen de avances por producto.)
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| 1ASI0728-2620-9075-G2-VeriFish/(repositorio) | feature/(tema) | (7 caracteres) | feat: (mensaje) | (cuerpo) | (DD/MM/AAAA) |
+
+#### 7.2.1.4. Testing Suite Evidence for Sprint Review
+
+> 📝 **NOTA TB2 — qué va aquí:** Las pruebas automatizadas de los Web Services relacionadas con las historias del Sprint: Unit Tests (indicar con qué clases y comportamientos se relacionan), Integration/Acceptance Tests bajo BDD (incluir el código de los archivos `.feature` y explicar con qué User Story se relacionan; los *steps* van en el lenguaje de programación). Incluir la ruta del repositorio de pruebas y la tabla de commits de testing.
+
+**Unit Tests.**
+
+| Prueba | Clase / comportamiento probado | Historia relacionada |
+| :--- | :--- | :--- |
+| (completar) | (completar) | (US/TS) |
+
+**Acceptance Tests (BDD).**
+
+```gherkin
+Feature: (nombre de la funcionalidad)
+  Scenario: (nombre del escenario)
+    Given (contexto)
+    When (acción)
+    Then (resultado esperado)
+```
+
+*(Explicar con qué User Story se relaciona cada archivo `.feature` y dónde están sus steps.)*
+
+**Repositorio de pruebas:** (URL)
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| (repositorio) | feature/(tema) | (id) | test: (mensaje) | (cuerpo) | (DD/MM/AAAA) |
+
+#### 7.2.1.5. Execution Evidence for Sprint Review
+
+> 📝 **NOTA TB2 — qué va aquí:** Resumen de lo alcanzado en el Sprint, screenshots de las principales vistas implementadas (Landing Page, Web App, app móvil) y el enlace a un video que muestre la visualización y la navegación logradas.
+
+(Completar: resumen.)
+
+![Landing Page implementada](./assets/images/sprint1/execution-landing.png)
+
+![Web App implementada](./assets/images/sprint1/execution-web.png)
+
+![App móvil implementada](./assets/images/sprint1/execution-mobile.png)
+
+**Video de ejecución del Sprint 1:** (enlace)
+
+#### 7.2.1.6. Services Documentation Evidence for Sprint Review
+
+> 📝 **NOTA TB2 — qué va aquí:** Los endpoints documentados con OpenAPI (Swagger) dentro del alcance del Sprint: una fila por endpoint con las acciones implementadas (verbo HTTP, sintaxis de llamada, parámetros, ejemplo y explicación del response) y el enlace a la documentación desplegada (o URL local si aún no está desplegada). Incluir capturas de la documentación usando datos de muestra, la URL del repositorio de Web Services y los commits de documentación.
+
+(Completar: resumen de logros de documentación.)
+
+| Endpoint | Acción | Verbo | Sintaxis de llamada | Parámetros | Ejemplo y explicación del response | Documentación |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| (ej. Telemetry) | (ej. recibir lecturas del Edge) | POST | `/api/v1/(recurso)` | (cuerpo / ruta / query) | (código y JSON de ejemplo) | (URL de Swagger) |
+
+![Documentación OpenAPI en Swagger UI](./assets/images/sprint1/swagger.png)
+
+**Repositorio de Web Services:** (URL)
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| (repositorio) | feature/(tema) | (id) | docs: (mensaje) | (cuerpo) | (DD/MM/AAAA) |
+
+#### 7.2.1.7. Software Deployment Evidence for Sprint Review
+
+> 📝 **NOTA TB2 — qué va aquí:** Los procesos de despliegue realizados en el Sprint: creación de cuentas, configuración de recursos en los proveedores cloud, configuración de proyectos para integración o automatización del despliegue. Cubre TODOS los productos digitales. Cada paso con captura y explicación.
+
+(Completar: resumen de lo realizado en despliegue durante el Sprint.)
+
+| Paso | Producto | Qué se hizo | Evidencia |
+| :--- | :--- | :--- | :--- |
+| 1 | (producto) | (ej. creación del recurso en Azure) | ![paso 1](./assets/images/sprint1/deploy-1.png) |
+
+#### 7.2.1.8. Team Collaboration Insights during Sprint
+
+> 📝 **NOTA TB2 — qué va aquí:** Cómo se desarrolló la implementación y capturas de los analíticos de colaboración y commits en GitHub de los repositorios de código (no solo el del informe). TODOS los integrantes deben aparecer con participación en los productos según corresponda.
+
+(Completar: cómo trabajó el equipo durante el Sprint 1.)
+
+![Insights Sprint 1 - Contributors](./assets/images/sprint1/insights-contributors.png)
+
+![Insights Sprint 1 - Commits](./assets/images/sprint1/insights-commits.png)
+
+<div style="page-break-after: always;"></div>
+
+## 7.3. Validation Interviews
+
+> 📝 **NOTA TB2 — qué va aquí:** Las entrevistas de validación: usuarios de los segmentos objetivo interactúan con la Landing Page y con las aplicaciones y comentan lo que observan. Tres subsecciones: diseño, registro y evaluación por heurísticas. Es DISTINTO de las entrevistas de needfinding de 2.2: aquí se prueba el producto, no el problema. Se graba un video consolidado (3 a 5 min por entrevista) con títulos del entrevistado, segmento y fecha.
+
+Las entrevistas de validación evalúan con usuarios reales de cada segmento la Landing Page y las aplicaciones de YakuControl + YakuTrace.
+
+### 7.3.1. Diseño de Entrevistas
+
+> 📝 **NOTA TB2 — qué va aquí:** Por cada segmento: qué elementos se evalúan (Landing Page y aplicaciones), qué tareas y qué user flows se le pedirá ejecutar (los de 6.4.4) y las preguntas de la sesión. Aplicar buenas prácticas: tareas concretas, no inducir respuestas, grabar con consentimiento.
+
+| Segmento | Elementos a evaluar | User flows / tareas | Preguntas principales |
+| :--- | :--- | :--- | :--- |
+| Piscicultores | App móvil y Landing Page | (completar: ej. consultar lecturas, atender una alerta, activar el aireador) | (completar) |
+| Administradores | Web App y Landing Page | (completar: ej. registrar un estanque, emitir un certificado) | (completar) |
+| Compradores de supermercado | Verificación pública por QR y Landing Page | (completar: ej. verificar un lote) | (completar) |
+
+### 7.3.2. Registro de Entrevistas
+
+> 📝 **NOTA TB2 — qué va aquí:** De 3 a 5 entrevistas por segmento. Por cada una: nombres, apellidos, edad, distrito, un screenshot de un cuadro del video, URL del video en Microsoft Stream con el timing donde inicia la entrevista y su duración, y un resumen descriptivo de las principales apreciaciones respecto de las tareas asignadas. El enlace del video consolidado también va en el Anexo B si el docente lo pide.
+
+**Segmento: (Piscicultores / Administradores / Compradores)**
+
+| | **Entrevistado 1** |
+| :--- | :--- |
+| **Nombre** | (completar) |
+| **Edad** | (completar) |
+| **Distrito** | (completar) |
+| **Fecha de entrevista** | (completar) |
+| **Video (Stream)** | (enlace privado) |
+| **Timing** | (mm:ss – mm:ss) |
+| **Captura** | ![Entrevista de validación 1](./assets/images/validation/entrevista-1.png) |
+| **Resumen** | (principales apreciaciones sobre las tareas asignadas) |
+
+*(Repetir la tabla por cada entrevistado, de 3 a 5 por segmento.)*
+
+### 7.3.3. Evaluaciones según heurísticas
+
+> 📝 **NOTA TB2 — qué va aquí:** La evaluación de cada sesión usando el formato del Anexo D del enunciado: usabilidad, arquitectura de información y diseño inclusivo. Estructura: encabezado, producto y tareas evaluadas, escala de severidad (1 a 4), tabla resumen de problemas y descripción detallada de cada uno (con captura y recomendación).
+
+**Datos de la evaluación**
+
+| Campo | Valor |
+| :--- | :--- |
+| Carrera | Ingeniería de Software |
+| Curso | Arquitecturas de Software Emergentes |
+| Sección | (NRC 9075) |
+| Profesor | Wilder Aurelio Vega Calero |
+| Auditor | Verifish |
+| Cliente(s) | (nombres de los participantes de la sesión) |
+
+**Sitio o aplicación a evaluar:** (Landing Page / App móvil / Web App)
+
+**Tareas evaluadas:** (lista) · **No incluidas en esta versión:** (lista)
+
+**Escala de severidad**
+
+| Nivel | Descripción |
+| :--- | :--- |
+| 1 | Problema superficial: se supera fácilmente o ocurre muy poco. Solo se corrige si hay tiempo. |
+| 2 | Problema menor: ocurre algo más seguido o es más difícil de superar. Prioridad baja para el siguiente release. |
+| 3 | Problema mayor: ocurre frecuentemente o el usuario no puede resolverlo. Prioridad alta. |
+| 4 | Problema muy grave: impide continuar con el uso de la herramienta. Debe corregirse antes del lanzamiento. |
+
+**Tabla resumen**
+
+| # | Problema | Escala de severidad | Heurística / Principio violada(o) |
+| :--- | :--- | :--- | :--- |
+| 1 | (completar) | (1–4) | (Usability / Inclusive Design / Information Architecture: criterio) |
+
+**Descripción de problemas**
+
+**Problema #1:** (título) · **Severidad:** (n)
+**Heurística violada:** (criterio)
+**Problema:** (descripción y captura de pantalla)
+**Recomendación:** (solución propuesta)
+
+## 7.4. Video About-the-Product
+
+> 📝 **NOTA TB2 — qué va aquí:** Introducción al video promocional: dura de 1 a 3 minutos, va dirigido a visitantes de la Landing Page y a usuarios de las apps, resume el modelo de negocio, las características y los beneficios, muestra escenas de interacción con el producto y tiene al menos un testimonio positivo por segmento de usuarios entrevistados en validación. El tono debe ser consistente con el del producto. Se publica en Microsoft Stream Y en YouTube (esta versión se incrusta en la Landing Page). Incluir screenshot, ambos URL y la duración.
+
+Este video presenta a visitantes y usuarios el modelo de negocio, las características principales y los beneficios de YakuControl + YakuTrace. (Completar: tono, estructura y testimonios incluidos.)
+
+| Dato | Valor |
+| :--- | :--- |
+| Screenshot | ![Video About-the-Product](./assets/images/video-about-product.png) |
+| URL en Microsoft Stream | (enlace privado) |
+| URL en YouTube (incrustado en la Landing Page) | (enlace) |
+| Duración | (mm:ss) |
+
+<div style="page-break-after: always;"></div>
+
 # Conclusiones
+
+## Conclusiones y recomendaciones
+
+> 📝 **NOTA TB2 — qué va aquí:** Las conclusiones acumuladas (TB1 y TP1, ya redactadas abajo) más las de TB2: resultados frente a los Problem Statements, los supuestos y las hipótesis de Lean UX y sus criterios de éxito, contrastados con lo obtenido (implementación, despliegue y validación). Incluir recomendaciones de siguientes pasos y roadmap de los productos. Agregar el bloque **TB2** al final de esta sección.
 
 
 Se presenta Verifish y su solución YakuControl, una propuesta orientada al monitoreo inteligente de piscigranjas mediante IoT y servicios en la nube. Se aborda la problemática de la supervisión manual de la calidad del agua, los riesgos asociados a una detección tardía y la necesidad de contar con información en tiempo real. También se definen la propuesta de valor, el modelo SaaS, las hipótesis de Lean UX y los principales usuarios: piscicultores y administradores de piscigranjas.
@@ -3403,7 +3897,31 @@ En el diseño arquitectónico, la decisión de un **monolito modular** con seis 
 
 Como recomendaciones para las siguientes entregas se sugiere validar con compradores reales la utilidad y el contenido del certificado, confirmar el estado de las redes de prueba antes de implementar el contrato, evaluar un portal propio para compradores y definir con las piscigranjas piloto el precio del complemento TRACE.
 
+## Video About-The-Team
+
+> 📝 **NOTA TB2 — qué va aquí:** Resumen de lo más relevante del video About-The-Team: pauta de secuencias con el timing de inicio de cada sección (hh:mm:ss), un cuadro representativo del video, y los URL de Microsoft Stream y de YouTube (el de YouTube se incrusta en la Landing Page). El video resume el proceso de trabajo con escenas de sesiones reales del equipo y voz en off, e incluye el testimonio ante cámara de cada integrante (actividades realizadas, logro de outcomes y competencias). Duración sugerida: ~5 min de retrospectiva + 1 min por testimonio.
+
+(Completar: resumen del contenido del video.)
+
+| Sección | Inicio (hh:mm:ss) |
+| :--- | :--- |
+| Retrospectiva del equipo | 00:00:00 |
+| Testimonio de Escobar Palomino, Sebastian Matias | (completar) |
+| Testimonio de Bendezu Navarro, Rúbens Fitzgerald | (completar) |
+| Testimonio de Choquehuanca Nuñez, Luciana Carolina | (completar) |
+| Testimonio de Cruz Ibarra, Victor Andres | (completar) |
+| Testimonio de Peralta Chipa, Ronald Joel | (completar) |
+
+![Video About-The-Team](./assets/images/video-about-team.png)
+
+- URL en Microsoft Stream: (enlace privado)
+- URL en YouTube (incrustado en la Landing Page): (enlace)
+
+<div style="page-break-after: always;"></div>
+
 # Bibliografía
+
+> 📝 **NOTA TB2 — qué va aquí:** Todas las referencias en formato APA usadas como base o citadas en el informe. Agregar las fuentes nuevas de TB2 (documentación de las tecnologías, guías de estilo, normas de accesibilidad) y verificar que cada cita del texto tenga su entrada.
 
 Actualidad Ambiental. (28 de mayo de 2025). *Huarochirí: mueren 200 mil truchas en piscigranja por posible contaminación en el río Santa Eulalia.* https://www.actualidadambiental.pe/huarochiri-mueren-200-mil-truchas-en-piscigranja-por-posible-contaminacion-en-el-rio-santa-eulalia/
 
@@ -3445,10 +3963,13 @@ World Fishing & Aquaculture. (2021). *Nueva Pescanova e IBM trabajan para rastre
 
 # Anexos
 
+> 📝 **NOTA TB2 — qué va aquí:** Tablas, documentos o gráficos que por su extensión merezcan un anexo. Cada anexo inicia en página nueva y se rotula con letra mayúscula (Anexo A, B, C…). El Anexo B (Videos de Exposiciones) es obligatorio: enlace privado de Microsoft Stream de cada entrega, indicando a cuál corresponde.
+
 **Anexo A. Prototipo IoT**
 
 - [Simulación en Wokwi](https://wokwi.com/projects/467186064937826305)
 
-**Anexo b. Videos de Exposiciones**
+**Anexo B. Videos de Exposiciones**
 
 - [Link de la Exposición de TP1](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202125968_upc_edu_pe/IQCfmbv_fzrnToGVrxLg26ojAbX7Gt2nWWMgIejbg462N8Q?e=b7ouCh&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+- Link de la Exposición de TB2: (enlace privado de Microsoft Stream)
