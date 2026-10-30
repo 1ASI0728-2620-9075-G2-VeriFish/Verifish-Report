@@ -3869,8 +3869,8 @@ El despliegue sigue lo definido en el diagrama de la sección 4.3.4. Cada produc
 | Backend | Azure App Service (Java 17) | 1) Crear el App Service `yaku-backend`. 2) Configurar las variables de entorno: `DB_URL`, `DB_USERNAME`, `DB_PASSWORD`, `JWT_SECRET`, `CORS_ALLOWED_ORIGINS`, `FIREBASE_CONFIG_PATH`, `MQTT_ENABLED` y las de Stripe. 3) Cargar el perfil de publicación como secreto `AZURE_WEBAPP_PUBLISH_PROFILE` en GitHub. 4) El workflow de GitHub Actions compila con Maven y publica el JAR en cada push a `develop`. 5) Comprobar `/swagger-ui.html`. | (pegar enlace) |
 | Base de datos | Azure Database for PostgreSQL | 1) Crear el servidor flexible. 2) Permitir la conexión desde el App Service. 3) Cargar la cadena de conexión en las variables de entorno. 4) Dejar que el backend cree el esquema al iniciar. | — |
 | Edge API | Railway | 1) Crear el proyecto y enlazar el repositorio del Edge (con su `Dockerfile`). 2) Agregar los servicios de Redis y de Mosquitto. 3) Configurar `MQTT_BROKER`, `MQTT_PORT`, `REDIS_HOST`, `REDIS_PORT`, `API_URL`, `FARM_ID` y `FARM_TOKEN`. 4) Desplegar y revisar los registros. | (pegar enlace) |
-| Web App (Flutter Web) | Firebase Hosting | 1) `flutter build web --release --dart-define=API_BASE_URL=<URL del backend>/api`. 2) `firebase deploy --only hosting`. 3) Verificar que la URL de la Web App esté en `CORS_ALLOWED_ORIGINS`. | (pegar enlace) |
-| Landing Page | Netlify (hosting estático con CDN) | 1) Enlazar el repositorio de la Landing Page. 2) Publicar la carpeta raíz. 3) Verificar que los llamados a la acción enlacen con la Web App. | (pegar enlace) |
+| Web App (Flutter Web) | Firebase Hosting | Publicado el 30/10; versión Hosting `b27c1e8c2210d609`. Carga y rutas verificadas. El login queda pendiente de corregir CORS en Azure. | [YakuControl Web](https://yakucontrol-v2.web.app). |
+| Landing Page | Netlify (pendiente) | Raíz y configuración listas para publicar. El repositorio tiene una integración existente con Vercel que generó una vista previa protegida al subir la rama. | [PR y vista previa](https://github.com/1ASI0728-2620-9075-G2-VeriFish/Verifish-Landing/pull/1). |
 | App móvil (Android) | Firebase App Distribution | 1) `flutter build apk --release --dart-define=API_BASE_URL=<URL del backend>/api`. 2) Subir el APK como versión `v0.1.0`. 3) Invitar a los testers por correo. | (pegar enlace de la invitación) |
 
 ![Deployment Diagram](./assets/images/cap4/c4_deployment.png)
@@ -3932,16 +3932,16 @@ El objetivo del Sprint 1 es desplegar la primera versión del flujo de monitoreo
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **User Story** | | **Work-Item / Task** | | | | | |
 | **Id** | **Title** | **Id** | **Title** | **Description** | **Estimation (Hours)** | **Assigned To** | **Status (To-do / In-Process / To-Review / Done)** |
-| US01 | Propuesta de valor | T01 | Ajuste de la propuesta de valor | Revisión de Hero y Problem Statement con las métricas del informe. | 2 | Bendezu, Rúbens | Done |
-|  |  | T02 | Términos y condiciones en el footer | Página de términos y condiciones y enlace desde el footer. | 2 | Bendezu, Rúbens | Done |
-| US02 | Catálogo de planes | T03 | Revisión de la sección de planes | Planes Starter, Professional y Enterprise, con mención del complemento TRACE. | 2 | Bendezu, Rúbens | Done |
-| US04 | Formulario de ventas | T04 | Formulario de ventas | Formulario comercial (nombre, empresa, cantidad de pozas, correo y teléfono) con validación y mensaje de confirmación. | 4 | Bendezu, Rúbens | Done |
-| US18 | Sección YakuTrace para supermercados | T05 | Sección YakuTrace | Sección para supermercados con el llamado a la acción "Verificar un lote". | 3 | Bendezu, Rúbens | Done |
+| US01 | Propuesta de valor | T01 | Ajuste de la propuesta de valor | Revisión de Hero y Problem Statement con las métricas del informe. | 2 | Bendezu, Rúbens | En revisión |
+|  |  | T02 | Términos y condiciones en el footer | Página de términos y condiciones y enlace desde el footer. | 2 | Bendezu, Rúbens | En revisión |
+| US02 | Catálogo de planes | T03 | Revisión de la sección de planes | Planes Starter, Professional y Enterprise, con mención del complemento TRACE. | 2 | Bendezu, Rúbens | En revisión |
+| US04 | Formulario de ventas | T04 | Formulario de ventas | Formulario comercial (nombre, empresa, cantidad de pozas, correo y teléfono) con validación y mensaje de confirmación. | 4 | Bendezu, Rúbens | En revisión |
+| US18 | Sección YakuTrace para supermercados | T05 | Sección YakuTrace | Sección para supermercados con el llamado a la acción "Verificar un lote". | 3 | Bendezu, Rúbens | En revisión |
 | TS02 | Seguridad con JWT | T06 | Claim `farmId` en el JWT | Incluir `farmId` en el token al iniciar sesión y retirar el claim residual `workshop_id`. | 3 | Cruz, Victor | Done |
 |  |  | T07 | Aislamiento por granja en el filtro de seguridad | Validar la granja del token contra el recurso solicitado; 401 sin token válido y 403 para otra granja. | 5 | Cruz, Victor | Done |
 | US05 | Autenticación en la app móvil | T08 | Pruebas de modelos y de autenticación en la app | Pruebas unitarias de los modelos y del servicio de autenticación de la app (reemplazan el test de ejemplo). | 3 | Choquehuanca, Luciana | Done |
 | US15 | Registro de estanque | T09 | Registro de estanque y equipo | Rechazo de un `deviceId` duplicado en el registro del equipo IoT (409) y verificación del flujo estanque, equipo y vínculo. | 3 | Escobar, Sebastian | Done |
-|  |  | T10 | Vistas web de estanques y equipos | Revisión y ajuste en Flutter Web de las vistas de listado, registro de estanques y vínculo de equipos. | 3 | Bendezu, Rúbens | Done |
+|  |  | T10 | Vistas web de estanques y equipos | Revisión y ajuste en Flutter Web de las vistas de listado, registro de estanques y vínculo de equipos. | 3 | Bendezu, Rúbens | En revisión |
 | TS01 | API de ingesta de telemetría | T11 | Validación de la ingesta | Códigos de respuesta de `POST /api/v1/telemetry/manual-ingest` (datos incompletos y firma inválida). | 3 | Escobar, Sebastian | Done |
 | TS04 | Firma de lecturas del Edge | T12 | Validación de firma en el backend | Verificación HMAC-SHA256 de cada lectura con el token de la granja; registro de los intentos inválidos. | 5 | Escobar, Sebastian | Done |
 |  |  | T13 | Firma de lecturas en el Edge API | Firma de cada lectura con el token de la granja (cabeceras `X-Farm-Id` y `X-Signature`) antes de reenviarla. | 4 | Peralta, Ronald | Done |
@@ -3961,8 +3961,8 @@ El objetivo del Sprint 1 es desplegar la primera versión del flujo de monitoreo
 |  |  | T27 | Pruebas unitarias del Edge | pytest para la firma, el ICA y el filtro de falsos positivos. | 3 | Peralta, Ronald | Done |
 |  |  | T28 | Despliegue del backend y la base de datos | Azure App Service y Azure Database for PostgreSQL con el flujo de GitHub Actions. | 4 | Cruz, Victor | Done |
 |  |  | T29 | Despliegue del Edge API | Dockerfile y servicio en Railway con Redis y broker Mosquitto. | 4 | Peralta, Ronald | Done |
-|  |  | T30 | Despliegue de la Landing Page | Hosting estático en Netlify. | 1 | Bendezu, Rúbens | Done |
-|  |  | T31 | Despliegue de la Web App | Flutter Web en Firebase Hosting. | 2 | Bendezu, Rúbens | Done |
+|  |  | T30 | Despliegue de la Landing Page | Hosting estático en Netlify. | 1 | Bendezu, Rúbens | Pendiente de publicación |
+|  |  | T31 | Despliegue de la Web App | Flutter Web en Firebase Hosting. | 2 | Bendezu, Rúbens | En revisión |
 |  |  | T32 | Distribución de la app móvil | APK `v0.1.0` en Firebase App Distribution. | 2 | Choquehuanca, Luciana | Done |
 | | | | **Total** | | **97** | | |
 
@@ -3973,11 +3973,23 @@ En el Sprint 1 se implementaron la Landing Page, la Web App, el backend, la app 
 | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | (pegar filas del `git log`) | | | | |
-| 1ASI0728-2620-9075-G2-VeriFish/VeriFish-Fronted | (pegar filas del `git log`) | | | | |
-| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Landing | (pegar filas del `git log`) | | | | |
+| 1ASI0728-2620-9075-G2-VeriFish/VeriFish-Fronted | `feature/web-ponds-and-hosting` | `206d206` | docs(web): record Firebase Hosting deployment | — | 2026-10-30 |
+| 1ASI0728-2620-9075-G2-VeriFish/VeriFish-Fronted | `feature/web-ponds-and-hosting` | `5c387ab` | fix(hosting): select the yakucontrol-v2 site explicitly | — | 2026-10-30 |
+| 1ASI0728-2620-9075-G2-VeriFish/VeriFish-Fronted | `feature/web-ponds-and-hosting` | `52e8f09` | test(web): wait for pond linking dialog to close | — | 2026-10-30 |
+| 1ASI0728-2620-9075-G2-VeriFish/VeriFish-Fronted | `feature/web-ponds-and-hosting` | `afd1d43` | test(web): cover admin validation, session expiry and Azure browser flows | — | 2026-10-30 |
+| 1ASI0728-2620-9075-G2-VeriFish/VeriFish-Fronted | `feature/web-ponds-and-hosting` | `6ec974c` | fix(web): handle farm access errors and prepare Firebase Hosting | — | 2026-10-30 |
+| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Landing | `feature/landing-sales-yakutrace` | `0cd1c75` | style(landing): format commercial section styles | — | 2026-10-30 |
+| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Landing | `feature/landing-sales-yakutrace` | `8f37a92` | test(landing): cover contact validation and responsive navigation | — | 2026-10-30 |
+| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Landing | `feature/landing-sales-yakutrace` | `c212ef1` | feat(landing): add sales contact, terms and YakuTrace overview | — | 2026-10-30 |
 | 1ASI0728-2620-9075-G2-VeriFish/Verifish-Edge | (pegar filas del `git log`) | | | | |
 
 #### 7.2.1.4. Testing Suite Evidence for Sprint Review
+
+**Validación de Landing y Web — 30/10/2026.** Pasaron las 4 pruebas Playwright de Landing y las 7 pruebas Flutter (6 nuevas y el test previo). Las compilaciones Web debug y release terminaron correctamente. El análisis pasó de 52 a 49 incidencias previas, sin incidencias nuevas en las fuentes. Los resultados y los pendientes de integración están en [Validación Web TB2](evidence/tb2-web-validation.md).
+
+![Salida registrada de las pruebas Flutter](./assets/images/sprint1/tests-fronted.png)
+
+![Salida registrada de las pruebas Landing](./assets/images/sprint1/tests-landing.png)
 
 Las pruebas automatizadas cubren los servicios del Sprint 1 en tres niveles: pruebas unitarias del dominio y de los handlers (JUnit y Mockito), pruebas de integración y de aceptación bajo BDD (Cucumber, con archivos `.feature` en Gherkin y *steps* en Java) y pruebas unitarias del Edge API (pytest).
 
@@ -4077,6 +4089,8 @@ Los demás archivos `.feature` se encuentran en el repositorio con su contenido 
 | 1ASI0728-2620-9075-G2-VeriFish/VeriFish-Fronted | (pegar filas del `git log` de commits `test:`) | | | | |
 
 #### 7.2.1.5. Execution Evidence for Sprint Review
+
+**Estado de Landing y Web (30/10).** Las capturas de ejecución se tomaron localmente con Flutter conectado a Azure. Además, la Web fue publicada en Firebase Hosting y su carga y rutas se verificaron en el dominio público; la Landing sigue pendiente de publicar en Netlify. El backend todavía acepta equipos duplicados con 201 y su CORS rechaza los dos dominios de Firebase. Los PR están pendientes de revisión; ver [detalle de validación](evidence/tb2-web-validation.md).
 
 En el Sprint 1 se ejecutaron y desplegaron la Landing Page, la Web App, la app móvil, el backend y el Edge API. Las siguientes capturas muestran las principales vistas implementadas, organizadas por producto y por historia de usuario.
 
