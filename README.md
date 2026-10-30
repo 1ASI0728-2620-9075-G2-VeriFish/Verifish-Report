@@ -3869,7 +3869,7 @@ El despliegue sigue lo definido en el diagrama de la sección 4.3.4. Cada produc
 | Backend | Azure App Service (Java 17) | 1) Crear el App Service `yaku-backend`. 2) Configurar las variables de entorno: `DB_URL`, `DB_USERNAME`, `DB_PASSWORD`, `JWT_SECRET`, `CORS_ALLOWED_ORIGINS`, `FIREBASE_CONFIG_PATH`, `MQTT_ENABLED` y las de Stripe. 3) Cargar el perfil de publicación como secreto `AZURE_WEBAPP_PUBLISH_PROFILE` en GitHub. 4) El workflow de GitHub Actions compila con Maven y publica el JAR en cada push a `develop`. 5) Comprobar `/swagger-ui.html`. | (pegar enlace) |
 | Base de datos | Azure Database for PostgreSQL | 1) Crear el servidor flexible. 2) Permitir la conexión desde el App Service. 3) Cargar la cadena de conexión en las variables de entorno. 4) Dejar que el backend cree el esquema al iniciar. | — |
 | Edge API | Railway | 1) Crear el proyecto y enlazar el repositorio del Edge (con su `Dockerfile`). 2) Agregar los servicios de Redis y de Mosquitto. 3) Configurar `MQTT_BROKER`, `MQTT_PORT`, `REDIS_HOST`, `REDIS_PORT`, `API_URL`, `FARM_ID` y `FARM_TOKEN`. 4) Desplegar y revisar los registros. | (pegar enlace) |
-| Web App (Flutter Web) | Firebase Hosting | Configuración y build release preparados. Publicación de estos cambios pendiente de autenticar la cuenta invitada y corregir CORS en Azure. | [URL comunicada por el equipo](https://yakucontrol-v2.web.app); no acredita despliegue de esta rama. |
+| Web App (Flutter Web) | Firebase Hosting | Publicado el 30/10; versión Hosting `b27c1e8c2210d609`. Carga y rutas verificadas. El login queda pendiente de corregir CORS en Azure. | [YakuControl Web](https://yakucontrol-v2.web.app). |
 | Landing Page | Netlify (pendiente) | Raíz y configuración listas para publicar. El repositorio tiene una integración existente con Vercel que generó una vista previa protegida al subir la rama. | [PR y vista previa](https://github.com/1ASI0728-2620-9075-G2-VeriFish/Verifish-Landing/pull/1). |
 | App móvil (Android) | Firebase App Distribution | 1) `flutter build apk --release --dart-define=API_BASE_URL=<URL del backend>/api`. 2) Subir el APK como versión `v0.1.0`. 3) Invitar a los testers por correo. | (pegar enlace de la invitación) |
 
@@ -3962,7 +3962,7 @@ El objetivo del Sprint 1 es desplegar la primera versión del flujo de monitoreo
 |  |  | T28 | Despliegue del backend y la base de datos | Azure App Service y Azure Database for PostgreSQL con el flujo de GitHub Actions. | 4 | Cruz, Victor | Done |
 |  |  | T29 | Despliegue del Edge API | Dockerfile y servicio en Railway con Redis y broker Mosquitto. | 4 | Peralta, Ronald | Done |
 |  |  | T30 | Despliegue de la Landing Page | Hosting estático en Netlify. | 1 | Bendezu, Rúbens | Pendiente de publicación |
-|  |  | T31 | Despliegue de la Web App | Flutter Web en Firebase Hosting. | 2 | Bendezu, Rúbens | Pendiente de publicación |
+|  |  | T31 | Despliegue de la Web App | Flutter Web en Firebase Hosting. | 2 | Bendezu, Rúbens | En revisión |
 |  |  | T32 | Distribución de la app móvil | APK `v0.1.0` en Firebase App Distribution. | 2 | Choquehuanca, Luciana | Done |
 | | | | **Total** | | **97** | | |
 
@@ -3973,6 +3973,8 @@ En el Sprint 1 se implementaron la Landing Page, la Web App, el backend, la app 
 | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | (pegar filas del `git log`) | | | | |
+| 1ASI0728-2620-9075-G2-VeriFish/VeriFish-Fronted | `feature/web-ponds-and-hosting` | `206d206` | docs(web): record Firebase Hosting deployment | — | 2026-10-30 |
+| 1ASI0728-2620-9075-G2-VeriFish/VeriFish-Fronted | `feature/web-ponds-and-hosting` | `5c387ab` | fix(hosting): select the yakucontrol-v2 site explicitly | — | 2026-10-30 |
 | 1ASI0728-2620-9075-G2-VeriFish/VeriFish-Fronted | `feature/web-ponds-and-hosting` | `52e8f09` | test(web): wait for pond linking dialog to close | — | 2026-10-30 |
 | 1ASI0728-2620-9075-G2-VeriFish/VeriFish-Fronted | `feature/web-ponds-and-hosting` | `afd1d43` | test(web): cover admin validation, session expiry and Azure browser flows | — | 2026-10-30 |
 | 1ASI0728-2620-9075-G2-VeriFish/VeriFish-Fronted | `feature/web-ponds-and-hosting` | `6ec974c` | fix(web): handle farm access errors and prepare Firebase Hosting | — | 2026-10-30 |
@@ -4088,7 +4090,7 @@ Los demás archivos `.feature` se encuentran en el repositorio con su contenido 
 
 #### 7.2.1.5. Execution Evidence for Sprint Review
 
-**Estado de Landing y Web (30/10).** Las capturas de estos dos productos corresponden a ejecución local; Flutter se conectó al backend de Azure. No acreditan un despliegue nuevo en Netlify o Firebase. El backend todavía acepta equipos duplicados con 201 y su CORS rechaza los dos dominios de Firebase. Los PR están pendientes de revisión; ver [detalle de validación](evidence/tb2-web-validation.md).
+**Estado de Landing y Web (30/10).** Las capturas de ejecución se tomaron localmente con Flutter conectado a Azure. Además, la Web fue publicada en Firebase Hosting y su carga y rutas se verificaron en el dominio público; la Landing sigue pendiente de publicar en Netlify. El backend todavía acepta equipos duplicados con 201 y su CORS rechaza los dos dominios de Firebase. Los PR están pendientes de revisión; ver [detalle de validación](evidence/tb2-web-validation.md).
 
 En el Sprint 1 se ejecutaron y desplegaron la Landing Page, la Web App, la app móvil, el backend y el Edge API. Las siguientes capturas muestran las principales vistas implementadas, organizadas por producto y por historia de usuario.
 

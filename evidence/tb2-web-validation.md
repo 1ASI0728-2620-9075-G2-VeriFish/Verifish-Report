@@ -16,7 +16,9 @@ Trabajo de Rúbens. Los cambios están en ramas feature y los PR apuntan a devel
 | Flutter después | 7 tests aprobados: los 6 nuevos y el previo |
 | Análisis final | 49 incidencias previas; ninguna nueva en las fuentes |
 | Compilación debug | Correcta con Azure como API_BASE_URL |
-| Compilación release | Correcta; preparada para Hosting |
+| Compilación release | Correcta; publicada en Firebase Hosting |
+| Hosting público | Login carga y /estanques responde 200; el JavaScript coincide con el build release |
+| Login desde Hosting | Bloqueado por CORS del backend |
 | Login contra Azure | Correcto |
 | Crear granja y volver a ingresar | Correcto; el nuevo JWT obtiene farmId |
 | Registrar estanque y dispositivo IoT | Correcto |
@@ -33,7 +35,7 @@ El smoke test de navegador termina con código 1 porque detecta el fallo real de
 
 1. Azure responde 201 al registrar nuevamente el mismo deviceId. Debe responder 409; corresponde al backend.
 2. El preflight CORS acepta http://localhost:3000, pero devuelve 403 para https://yakucontrol-v2.web.app y https://yakucontrol-v2.firebaseapp.com. El dueño del backend debe habilitar esos orígenes.
-3. Firebase MCP/CLI todavía tiene la cuenta de ApuestaTotal. Se inició la autenticación de bendezuni@gmail.com, pero falta completarla. No se publicó esta rama en Hosting ni se cambiaron los otros proyectos.
+3. Hosting ya está publicado en https://yakucontrol-v2.web.app, versión `b27c1e8c2210d609`. Se comprobó carga, ruta directa y coincidencia del JavaScript con el build release. Falta corregir CORS para poder iniciar sesión desde ese dominio.
 4. Netlify queda pendiente de acceso. La integración existente de Vercel generó una vista previa, pero exige login y no sustituye una publicación pública verificada.
 5. Figma y el video del prototipo quedan fuera por indicación del usuario. Se copiaron los mockups 8–18 existentes conservando sus originales.
 
@@ -41,6 +43,10 @@ Se crearon dos administradores y recursos de prueba con prefijo TB2 en Azure. Su
 
 ## Evidencias
 
-Los resultados crudos están en [assets/images/sprint1](../assets/images/sprint1/): `tests-fronted.txt`, `tests-landing.txt`, `analyze-before.txt`, `analyze-after.txt`, `build-web-debug.txt`, `build-web-release.txt`, `web-browser-results.json`, `web-browser-output.txt` y `api-integration-results.json`.
+Los resultados crudos están en [assets/images/sprint1](../assets/images/sprint1/): `tests-fronted.txt`, `tests-landing.txt`, `analyze-before.txt`, `analyze-after.txt`, `build-web-debug.txt`, `build-web-release.txt`, `web-browser-results.json`, `web-browser-output.txt`, `api-integration-results.json` y `hosting-results.json`.
 
 Las capturas `exec-landing-*` y `exec-web-*` son ejecuciones locales. Las imágenes `tests-*` muestran la salida registrada de los comandos, no una ejecución nueva. Los archivos originales de diseño permanecen en assets/diseñoux; las copias solicitadas están en assets/images/cap6/mockup8.png hasta mockup18.png.
+
+![Web publicada en Firebase Hosting](../assets/images/sprint1/deploy-firebase-hosting.png)
+
+![Login bloqueado por CORS de Azure](../assets/images/sprint1/exec-web-hosted-cors-error.png)
