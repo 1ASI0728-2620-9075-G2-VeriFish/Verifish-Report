@@ -3866,8 +3866,8 @@ El despliegue sigue lo definido en el diagrama de la sección 4.3.4. Cada produc
 
 | Producto | Plataforma | Pasos de despliegue | URL |
 | :--- | :--- | :--- | :--- |
-| Backend | Azure App Service (Java 17) | 1) Crear el App Service `yaku-backend`. 2) Configurar las variables de entorno: `DB_URL`, `DB_USERNAME`, `DB_PASSWORD`, `JWT_SECRET`, `CORS_ALLOWED_ORIGINS`, `FIREBASE_CONFIG_PATH`, `MQTT_ENABLED` y las de Stripe. 3) Cargar el perfil de publicación como secreto `AZURE_WEBAPP_PUBLISH_PROFILE` en GitHub. 4) El workflow de GitHub Actions compila con Maven y publica el JAR en cada push a `develop`. 5) Comprobar `/swagger-ui.html`. | (pegar enlace) |
-| Base de datos | Azure Database for PostgreSQL | 1) Crear el servidor flexible. 2) Permitir la conexión desde el App Service. 3) Cargar la cadena de conexión en las variables de entorno. 4) Dejar que el backend cree el esquema al iniciar. | — |
+| Backend | Azure App Service (Java 17, Linux, plan B1, Brazil South) | 1) Crear el App Service `yaku-backend`. 2) Configurar las variables de entorno: `DB_URL`, `DB_USERNAME`, `DB_PASSWORD`, `JWT_SECRET`, `CORS_ALLOWED_ORIGINS`, `FIREBASE_CONFIG_PATH`, `MQTT_ENABLED`, `SERVER_PORT` y las de Stripe (claves de prueba). 3) Subir la cuenta de servicio de Firebase al almacenamiento persistente del App Service (`/home`) mediante Kudu, nunca al repositorio, y apuntar `FIREBASE_CONFIG_PATH` a `file:/home/firebase-service-account.json`. 4) Cargar el perfil de publicación como secreto `AZURE_WEBAPP_PUBLISH_PROFILE` en GitHub. 5) El workflow de GitHub Actions compila con Maven y publica el JAR en cada push a `develop`. 6) Comprobar `/swagger-ui.html`. | https://yaku-backend-hjbmb2btfzece4c0.brazilsouth-01.azurewebsites.net |
+| Base de datos | Azure Database for PostgreSQL (servidor flexible, B1ms, PostgreSQL 16, Brazil South) | 1) Crear el servidor flexible y la base `yaku`. 2) Permitir el acceso desde los servicios de Azure. 3) Cargar la cadena de conexión en las variables de entorno del App Service. 4) Dejar que el backend cree el esquema al iniciar. | — |
 | Edge API | Railway | 1) Crear el proyecto y enlazar el repositorio del Edge (con su `Dockerfile`). 2) Agregar los servicios de Redis y de Mosquitto. 3) Configurar `MQTT_BROKER`, `MQTT_PORT`, `REDIS_HOST`, `REDIS_PORT`, `API_URL`, `FARM_ID` y `FARM_TOKEN`. 4) Desplegar y revisar los registros. | (pegar enlace) |
 | Web App (Flutter Web) | Firebase Hosting | 1) `flutter build web --release --dart-define=API_BASE_URL=<URL del backend>/api`. 2) `firebase deploy --only hosting`. 3) Verificar que la URL de la Web App esté en `CORS_ALLOWED_ORIGINS`. | (pegar enlace) |
 | Landing Page | Netlify (hosting estático con CDN) | 1) Enlazar el repositorio de la Landing Page. 2) Publicar la carpeta raíz. 3) Verificar que los llamados a la acción enlacen con la Web App. | (pegar enlace) |
@@ -3924,7 +3924,7 @@ Las historias de las posiciones 14 a 36 (YakuTrace, pagos y funciones administra
 
 El objetivo del Sprint 1 es desplegar la primera versión del flujo de monitoreo de YakuControl. Las 13 historias se descompusieron en 32 work-items, con una estimación total de 97 horas, repartidos entre los cinco integrantes de modo que cada uno trabaja sobre su propio producto y repositorio.
 
-**Tablero del Sprint en Trello:** (pegar la URL pública del tablero)
+**Tablero del Sprint en Trello:** https://trello.com/invite/b/6ac7ef560e7a24aba89be174/ATTI780f9093bca7b5df991145c8fafa33f7BE95751C/verifish-sprint-1
 
 ![Sprint 1 Backlog en Trello](./assets/images/sprint1/sprint1-backlog-trello.png)
 
@@ -3937,8 +3937,8 @@ El objetivo del Sprint 1 es desplegar la primera versión del flujo de monitoreo
 | US02 | Catálogo de planes | T03 | Revisión de la sección de planes | Planes Starter, Professional y Enterprise, con mención del complemento TRACE. | 2 | Bendezu, Rúbens | Done |
 | US04 | Formulario de ventas | T04 | Formulario de ventas | Formulario comercial (nombre, empresa, cantidad de pozas, correo y teléfono) con validación y mensaje de confirmación. | 4 | Bendezu, Rúbens | Done |
 | US18 | Sección YakuTrace para supermercados | T05 | Sección YakuTrace | Sección para supermercados con el llamado a la acción "Verificar un lote". | 3 | Bendezu, Rúbens | Done |
-| TS02 | Seguridad con JWT | T06 | Claim `farmId` en el JWT | Incluir `farmId` en el token al iniciar sesión y retirar el claim residual `workshop_id`. | 3 | Cruz, Victor | Done |
-|  |  | T07 | Aislamiento por granja en el filtro de seguridad | Validar la granja del token contra el recurso solicitado; 401 sin token válido y 403 para otra granja. | 5 | Cruz, Victor | Done |
+| TS02 | Seguridad con JWT | T06 | Claim `farmId` en el JWT | Incluir `farmId` en el token al iniciar sesión (para el ADMIN se resuelve desde la granja de la que es dueño) y retirar el claim residual `workshop_id`. | 3 | Cruz, Victor | Done |
+|  |  | T07 | Aislamiento por granja en el filtro de seguridad | `FarmAccessGuard` aplicado en los controladores de estanques, equipos y telemetría; 401 sin token válido (o con token alterado o vencido) y 403 para otra granja, sin revelar datos del recurso. | 5 | Cruz, Victor | Done |
 | US05 | Autenticación en la app móvil | T08 | Pruebas de modelos y de autenticación en la app | Pruebas unitarias de los modelos y del servicio de autenticación de la app (reemplazan el test de ejemplo). | 3 | Choquehuanca, Luciana | Done |
 | US15 | Registro de estanque | T09 | Registro de estanque y equipo | Rechazo de un `deviceId` duplicado en el registro del equipo IoT (409) y verificación del flujo estanque, equipo y vínculo. | 3 | Escobar, Sebastian | Done |
 |  |  | T10 | Vistas web de estanques y equipos | Revisión y ajuste en Flutter Web de las vistas de listado, registro de estanques y vínculo de equipos. | 3 | Bendezu, Rúbens | Done |
@@ -3950,14 +3950,14 @@ El objetivo del Sprint 1 es desplegar la primera versión del flujo de monitoreo
 | US07 | Alertas de calidad del agua | T16 | Pruebas de la detección de anomalías | Pruebas del evento de umbral superado con severidad WARNING y CRITICAL. | 2 | Escobar, Sebastian | Done |
 |  |  | T17 | ICA y filtro de falsos positivos en el Edge | Cálculo del Índice de Calidad del Agua y confirmación de la anomalía con una ventana de lecturas. | 6 | Peralta, Ronald | Done |
 |  |  | T18 | Revisión de la pantalla de alertas | Listado de alertas por severidad y marcado como leídas. | 2 | Choquehuanca, Luciana | Done |
-| TS03 | Envío de alertas por push | T19 | Credenciales Firebase y prueba de envío push | Configurar la cuenta de servicio de Firebase en el despliegue y comprobar el envío a un dispositivo. | 2 | Cruz, Victor | Done |
+| TS03 | Envío de alertas por push | T19 | Credenciales Firebase en el despliegue | Cargar la cuenta de servicio de Firebase en el App Service (fuera del repositorio), fijar `FIREBASE_CONFIG_PATH` y verificar en el registro la inicialización del Firebase Admin SDK. | 2 | Cruz, Victor | Done |
 |  |  | T20 | Registro del token del dispositivo | Verificación del registro del token FCM desde la app móvil. | 1 | Choquehuanca, Luciana | Done |
 | US08 | Control de aireación | T21 | Simulador de sensores con respuesta a comandos | El simulador del Edge reacciona a `PUMP1_ON` y `PUMP2_ON` y resuelve el tópico por dispositivo. | 4 | Peralta, Ronald | Done |
 |  |  | T22 | Botón de aireación | Verificación del comando de activación remota desde la app móvil. | 1 | Choquehuanca, Luciana | Done |
-| — | Trabajo transversal | T23 | Repositorios y GitFlow | Rama `develop`, ramas `feature/*`, Pull Requests y plantilla en los repositorios de código; etiqueta `v0.1.0`. | 3 | Cruz, Victor | Done |
+| — | Trabajo transversal | T23 | Repositorios y GitFlow | Rama `develop` creada desde `main` en los cuatro repositorios de código; eliminación del workflow de despliegue duplicado del backend; rama `feature/farm-isolation` integrada en `develop`. | 3 | Cruz, Victor | Done |
 |  |  | T24 | Limpieza de código residual y OpenAPI | Retirar referencias a "Autonexo" y completar la documentación OpenAPI del Sprint. | 2 | Escobar, Sebastian | Done |
 |  |  | T25 | Pruebas BDD con Cucumber | Dependencias de Cucumber y clases de steps para los `.feature` del backend. | 8 | Escobar, Sebastian | Done |
-|  |  | T26 | Pruebas BDD de seguridad y granjas | Steps de `authentication`, `farm-management` y `farm-isolation`. | 4 | Cruz, Victor | Done |
+|  |  | T26 | Pruebas BDD de seguridad y granjas | Steps de `authentication`, `farm-management` y `farm-isolation` sobre la configuración de Cucumber del backend. | 4 | Cruz, Victor | In-Process |
 |  |  | T27 | Pruebas unitarias del Edge | pytest para la firma, el ICA y el filtro de falsos positivos. | 3 | Peralta, Ronald | Done |
 |  |  | T28 | Despliegue del backend y la base de datos | Azure App Service y Azure Database for PostgreSQL con el flujo de GitHub Actions. | 4 | Cruz, Victor | Done |
 |  |  | T29 | Despliegue del Edge API | Dockerfile y servicio en Railway con Redis y broker Mosquitto. | 4 | Peralta, Ronald | Done |
@@ -3972,7 +3972,17 @@ En el Sprint 1 se implementaron la Landing Page, la Web App, el backend, la app 
 
 | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | (pegar filas del `git log`) | | | | |
+| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | main | fd9f7d6 | feat: initial clean release for organization | — | 2026-09-13 |
+| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | main | 9f6873b | Delete .github/workflows/develop_yaku-back.yml | — | 2026-10-30 |
+| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | develop | 212b75c | Merge pull request #1 from 1ASI0728-2620-9075-G2-VeriFish/main | Delete .github/workflows/develop_yaku-back.yml | 2026-10-30 |
+| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | feature/farm-isolation | 102f0b6 | feat(iam): add farmId claim support to JWT token service and sign-in | — | 2026-10-30 |
+| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | feature/farm-isolation | 9db1f63 | feat(iam): populate farmId in SecurityContext and return 401 on invalid JWT | — | 2026-10-30 |
+| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | feature/farm-isolation | 25c8e7b | feat(shared): add FarmAccessGuard and 403/401 exception handlers | — | 2026-10-30 |
+| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | feature/farm-isolation | 76d7631 | feat(equipment,telemetry): enforce farm isolation in Pond, Equipment, and Telemetry controllers | — | 2026-10-30 |
+| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | feature/farm-isolation | 478e1e8 | test(security): add unit and MockMvc integration tests for JWT farmId and farm isolation | — | 2026-10-30 |
+| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | feature/farm-isolation | b75f613 | feat(iam): resolve farmId from owned Farm for ADMIN users during sign-in | — | 2026-10-30 |
+| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | feature/farm-isolation | e977e42 | test(security): add ADMIN owner and OPERATOR farm isolation integration tests | — | 2026-10-30 |
+| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | develop | 5adbd05 | Merge feature/farm-isolation: JWT farmId and farm isolation (T06, T07) | — | 2026-10-30 |
 | 1ASI0728-2620-9075-G2-VeriFish/VeriFish-Fronted | (pegar filas del `git log`) | | | | |
 | 1ASI0728-2620-9075-G2-VeriFish/Verifish-Landing | (pegar filas del `git log`) | | | | |
 | 1ASI0728-2620-9075-G2-VeriFish/Verifish-Edge | (pegar filas del `git log`) | | | | |
@@ -3981,7 +3991,7 @@ En el Sprint 1 se implementaron la Landing Page, la Web App, el backend, la app 
 
 Las pruebas automatizadas cubren los servicios del Sprint 1 en tres niveles: pruebas unitarias del dominio y de los handlers (JUnit y Mockito), pruebas de integración y de aceptación bajo BDD (Cucumber, con archivos `.feature` en Gherkin y *steps* en Java) y pruebas unitarias del Edge API (pytest).
 
-**Unit Tests.** El backend cuenta con 49 pruebas unitarias en JUnit 5 sobre los agregados y objetos de valor de los contextos, que se ejecutan con una base H2 en memoria (`mvnw test`). En el Sprint 1 se agregaron las pruebas de la firma, del aislamiento por granja y de los componentes del Edge.
+**Unit Tests.** El backend cuenta con 59 pruebas automatizadas en JUnit 5 (49 sobre los agregados y objetos de valor, 2 unitarias del claim `farmId` y 8 de integración del aislamiento por granja), que se ejecutan con una base H2 en memoria (`mvnw test`). En el Sprint 1 se agregaron las pruebas de la firma, del aislamiento por granja y de los componentes del Edge.
 
 | Prueba | Clase / comportamiento probado | Repositorio | Historia relacionada |
 | :--- | :--- | :--- | :--- |
@@ -3991,7 +4001,8 @@ Las pruebas automatizadas cubren los servicios del Sprint 1 en tres niveles: pru
 | `SubscriptionTest`, `SubscriptionPeriodTest` | Reglas de la suscripción y de su período | Backend | Sprint 2 (Payment) |
 | `YakuBackendApplicationTests` | Arranque del contexto de Spring con la base H2 | Backend | Transversal |
 | `ReadingSignatureValidatorTest` | Acepta la firma HMAC correcta y rechaza la incorrecta o ausente | Backend | TS04 |
-| `JwtFarmClaimTest` | El token incluye `farmId` y rol; se rechaza el acceso a recursos de otra granja | Backend | TS02 |
+| `JwtFarmClaimTest` | El token generado incluye el claim `farmId` con su valor, ya no incluye `workshop_id`, y un token sin granja devuelve `farmId` nulo | Backend | TS02 |
+| `FarmIsolationIntegrationTest` | Con MockMvc y H2: 200 en un recurso de la propia granja, 401 sin token o con token alterado, 403 sin datos del recurso en otra granja; casos de ADMIN dueño de su granja y de OPERATOR | Backend | TS02 |
 | `ThresholdBreachTest` | Una lectura fuera de umbral genera el evento con severidad WARNING o CRITICAL | Backend | US07 |
 | `test_sign_reading.py` | Firma de la lectura con el token de la granja | Edge | TS04 |
 | `test_water_quality_index.py` | Cálculo del ICA con valores dentro y fuera de rango | Edge | US07 |
@@ -4213,7 +4224,7 @@ Los servicios del backend se documentan con OpenAPI y se publican con Swagger UI
 
 ![Swagger UI: endpoints de Notification, Equipment e IAM](./assets/images/sprint1/swagger-other.png)
 
-**URL de la documentación desplegada:** (pegar enlace de Swagger UI en Azure, ruta `/swagger-ui.html`). **Repositorio de Web Services:** https://github.com/1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend
+**URL de la documentación desplegada:** https://yaku-backend-hjbmb2btfzece4c0.brazilsouth-01.azurewebsites.net/swagger-ui.html. **Repositorio de Web Services:** https://github.com/1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend
 
 | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
