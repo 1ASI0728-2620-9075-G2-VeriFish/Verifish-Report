@@ -4074,9 +4074,9 @@ Los demás archivos `.feature` se encuentran en el repositorio con su contenido 
 
 **Evidencia de ejecución.** Resultado de la ejecución de la suite en el backend, en el Edge y en la app:
 
-![Resultado de las pruebas del backend](./assets/images/sprint1/tests-backend.png)
+![Resultado de las pruebas del backend](/assets/sprint1/tests-backend.jpeg)
 
-![Resultado de las pruebas BDD (Cucumber)](./assets/images/sprint1/tests-bdd.png)
+![Resultado de las pruebas BDD (Cucumber)](/assets/sprint1/tests-bdd2.jpeg)
 
 ![Resultado de las pruebas del Edge (pytest)](./assets/images/sprint1/tests-edge.png)
 
@@ -4186,11 +4186,11 @@ En el Sprint 1 se ejecutaron y desplegaron la Landing Page, la Web App, la app m
 
 *TS01 — Lectura firmada aceptada.*
 
-![Backend: Lectura firmada aceptada](./assets/images/sprint1/exec-backend-ingest-ok.png)
+![Backend: Lectura firmada aceptada](./assets/sprint1/exec-backend-ingest-ok.jpeg)
 
 *TS04 — Lectura con firma inválida rechazada (401).*
 
-![Backend: Lectura con firma inválida rechazada (401)](./assets/images/sprint1/exec-backend-ingest-401.png)
+![Backend: Lectura con firma inválida rechazada (401)](./assets/sprint1/exec-backend-ingest-401.jpeg)
 
 *TS02 — Acceso a un recurso de otra granja rechazado (403).*
 
@@ -4221,7 +4221,21 @@ Los servicios del backend se documentan con OpenAPI y se publican con Swagger UI
 | Equipment | Gestionar estanques | POST / GET / PUT / DELETE | `/api/v1/ponds`, `/api/v1/ponds/{id}`, `/api/v1/ponds/farm/{farmId}` | Datos del estanque; JWT de administrador | Estanque creado, consultado o actualizado | US15 |
 | IAM | Registrarse e iniciar sesión | POST | `/api/v1/users/signup`, `/api/v1/users/signin` | Credenciales; token de granja en el registro | JWT con `userId`, `farmId` y rol; 401 si las credenciales son inválidas | US05, TS02 |
 
-![Swagger UI: endpoints de Telemetry](./assets/images/sprint1/swagger-telemetry.png)
+*Telemetry — Documentación de ingesta y consulta de lecturas.*
+
+![Swagger UI: endpoints de Telemetry](./assets/sprint1/swagger-telemetry.jpeg)
+
+*Telemetry — Ejemplo de request y response de la ingesta.*
+
+![Swagger UI: solicitud de ingesta y respuesta HTTP 200](./assets/sprint1/swagger-ingest-example.jpeg)
+
+*Equipment — Documentación de equipos y dispositivos IoT.*
+
+![Swagger UI: endpoints de Equipment](./assets/sprint1/swagger-other.jpeg)
+
+*IAM y Notification — Documentación de usuarios y registro de tokens FCM.*
+
+![Swagger UI: endpoints de IAM y Notification](./assets/sprint1/swagger-other2.jpeg)
 
 ![Swagger UI: ejemplo de request y response de la ingesta](./assets/images/sprint1/swagger-ingest-example.png)
 
