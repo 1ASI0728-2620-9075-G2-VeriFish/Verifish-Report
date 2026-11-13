@@ -3983,6 +3983,9 @@ En el Sprint 1 se implementaron la Landing Page, la Web App, el backend, la app 
 | 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | feature/farm-isolation | b75f613 | feat(iam): resolve farmId from owned Farm for ADMIN users during sign-in | — | 2026-10-30 |
 | 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | feature/farm-isolation | e977e42 | test(security): add ADMIN owner and OPERATOR farm isolation integration tests | — | 2026-10-30 |
 | 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | develop | 5adbd05 | Merge feature/farm-isolation: JWT farmId and farm isolation (T06, T07) | — | 2026-10-30 |
+| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | feature/hmac-signature | f0aa752 | feat: add equipment command services, telemetry controllers, and device integration tests | — | 2026-11-12 |
+| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | feature/cucumber-bdd | 840f487 | test(bdd): configure Cucumber runner, Spring context, and step definitions for telemetry, alerts, equipment, and subscriptions | — | 2026-11-12 |
+| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | main | 2e61853 | Merge pull request #2 from 1ASI0728-2620-9075-G2-VeriFish/feature/cucumber-bdd | — | 2026-11-12 |
 | 1ASI0728-2620-9075-G2-VeriFish/VeriFish-Fronted | (pegar filas del `git log`) | | | | |
 | 1ASI0728-2620-9075-G2-VeriFish/Verifish-Landing | (pegar filas del `git log`) | | | | |
 | 1ASI0728-2620-9075-G2-VeriFish/Verifish-Edge | (pegar filas del `git log`) | | | | |
