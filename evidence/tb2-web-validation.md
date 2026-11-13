@@ -1,4 +1,4 @@
-# Validación Landing y Flutter Web — 30/10/2026
+# Validación de Landing y Flutter Web
 
 Trabajo de Rúbens. Los cambios están en ramas feature y los PR apuntan a develop. No se hizo merge ni se creó un tag de release.
 
@@ -18,7 +18,6 @@ Trabajo de Rúbens. Los cambios están en ramas feature y los PR apuntan a devel
 | Compilación debug | Correcta con Azure como API_BASE_URL |
 | Compilación release | Correcta; publicada en Firebase Hosting |
 | Hosting público | Login carga y /estanques responde 200; el JavaScript coincide con el build release |
-| Login desde Hosting | Bloqueado por CORS del backend |
 | Login contra Azure | Correcto |
 | Crear granja y volver a ingresar | Correcto; el nuevo JWT obtiene farmId |
 | Registrar estanque y dispositivo IoT | Correcto |
@@ -31,13 +30,14 @@ Trabajo de Rúbens. Los cambios están en ramas feature y los PR apuntan a devel
 
 El smoke test de navegador termina con código 1 porque detecta el fallo real de duplicados descrito abajo. Las pruebas del frontend que simulan 409 sí pasan.
 
-## Pendientes
+## Evidencias del 13/11/2026
 
-1. Azure responde 201 al registrar nuevamente el mismo deviceId. Debe responder 409; corresponde al backend.
-2. El preflight CORS acepta http://localhost:3000, pero devuelve 403 para https://yakucontrol-v2.web.app y https://yakucontrol-v2.firebaseapp.com. El dueño del backend debe habilitar esos orígenes.
-3. Hosting ya está publicado en https://yakucontrol-v2.web.app, versión `b27c1e8c2210d609`. Se comprobó carga, ruta directa y coincidencia del JavaScript con el build release. Falta corregir CORS para poder iniciar sesión desde ese dominio.
-4. Netlify queda pendiente de acceso. La integración existente de Vercel generó una vista previa, pero exige login y no sustituye una publicación pública verificada.
-5. Figma y el video del prototipo quedan fuera por indicación del usuario. Se copiaron los mockups 8–18 existentes conservando sus originales.
+Se repitieron las cuatro pruebas de Landing y las siete de Flutter. Pasaron las dos suites. El recorrido administrativo verificó inicio de sesión contra Azure, alta y listado de estanques, registro y vínculo de un equipo, consulta de notificaciones y cierre de sesión. El registro repetido del mismo dispositivo devolvió 201. Se conserva el [resultado de la prueba](../assets/images/sprint1/web-browser-results-2026-11-13.json).
+
+- [Grabación de ejecución de Landing y Web](../assets/videos/exec-landing-web.mp4).
+- [Prototipo navegable](../design/tb2-web/index.html) y [video de las once pantallas](../assets/videos/prototype-web.mp4).
+- [Landing pública en Vercel](https://verifish-landing.vercel.app). La actualización de la Landing está en el PR #1.
+- [Web en Firebase Hosting](https://yakucontrol-v2.web.app), versión `b27c1e8c2210d609`.
 
 Se crearon dos administradores y recursos de prueba con prefijo TB2 en Azure. Sus credenciales se guardaron fuera de los repositorios y no se incluyeron en las evidencias.
 
@@ -48,5 +48,3 @@ Los resultados crudos están en [assets/images/sprint1](../assets/images/sprint1
 Las capturas `exec-landing-*` y `exec-web-*` son ejecuciones locales. Las imágenes `tests-*` muestran la salida registrada de los comandos, no una ejecución nueva. Los archivos originales de diseño permanecen en assets/diseñoux; las copias solicitadas están en assets/images/cap6/mockup8.png hasta mockup18.png.
 
 ![Web publicada en Firebase Hosting](../assets/images/sprint1/deploy-firebase-hosting.png)
-
-![Login bloqueado por CORS de Azure](../assets/images/sprint1/exec-web-hosted-cors-error.png)
