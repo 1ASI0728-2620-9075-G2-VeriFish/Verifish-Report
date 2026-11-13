@@ -3866,8 +3866,8 @@ El despliegue sigue lo definido en el diagrama de la sección 4.3.4. Cada produc
 
 | Producto | Plataforma | Pasos de despliegue | URL |
 | :--- | :--- | :--- | :--- |
-| Backend | Azure App Service (Java 17) | 1) Crear el App Service `yaku-backend`. 2) Configurar las variables de entorno: `DB_URL`, `DB_USERNAME`, `DB_PASSWORD`, `JWT_SECRET`, `CORS_ALLOWED_ORIGINS`, `FIREBASE_CONFIG_PATH`, `MQTT_ENABLED` y las de Stripe. 3) Cargar el perfil de publicación como secreto `AZURE_WEBAPP_PUBLISH_PROFILE` en GitHub. 4) El workflow de GitHub Actions compila con Maven y publica el JAR en cada push a `develop`. 5) Comprobar `/swagger-ui.html`. | (pegar enlace) |
-| Base de datos | Azure Database for PostgreSQL | 1) Crear el servidor flexible. 2) Permitir la conexión desde el App Service. 3) Cargar la cadena de conexión en las variables de entorno. 4) Dejar que el backend cree el esquema al iniciar. | — |
+| Backend | Azure App Service (Java 17, Linux, plan B1, Brazil South) | 1) Crear el App Service `yaku-backend`. 2) Configurar las variables de entorno: `DB_URL`, `DB_USERNAME`, `DB_PASSWORD`, `JWT_SECRET`, `CORS_ALLOWED_ORIGINS`, `FIREBASE_CONFIG_PATH`, `MQTT_ENABLED`, `SERVER_PORT` y las de Stripe (claves de prueba). 3) Subir la cuenta de servicio de Firebase al almacenamiento persistente del App Service (`/home`) mediante Kudu, nunca al repositorio, y apuntar `FIREBASE_CONFIG_PATH` a `file:/home/firebase-service-account.json`. 4) Cargar el perfil de publicación como secreto `AZURE_WEBAPP_PUBLISH_PROFILE` en GitHub. 5) El workflow de GitHub Actions compila con Maven y publica el JAR en cada push a `develop`. 6) Comprobar `/swagger-ui.html`. | https://yaku-backend-hjbmb2btfzece4c0.brazilsouth-01.azurewebsites.net |
+| Base de datos | Azure Database for PostgreSQL (servidor flexible, B1ms, PostgreSQL 16, Brazil South) | 1) Crear el servidor flexible y la base `yaku`. 2) Permitir el acceso desde los servicios de Azure. 3) Cargar la cadena de conexión en las variables de entorno del App Service. 4) Dejar que el backend cree el esquema al iniciar. | — |
 | Edge API | Railway | 1) Crear el proyecto y enlazar el repositorio del Edge (con su `Dockerfile`). 2) Agregar los servicios de Redis y de Mosquitto. 3) Configurar `MQTT_BROKER`, `MQTT_PORT`, `REDIS_HOST`, `REDIS_PORT`, `API_URL`, `FARM_ID` y `FARM_TOKEN`. 4) Desplegar y revisar los registros. | (pegar enlace) |
 | Web App (Flutter Web) | Firebase Hosting | Publicado el 30/10; versión Hosting `b27c1e8c2210d609`. Carga y rutas verificadas. El login queda pendiente de corregir CORS en Azure. | [YakuControl Web](https://yakucontrol-v2.web.app). |
 | Landing Page | Netlify (pendiente) | Raíz y configuración listas para publicar. El repositorio tiene una integración existente con Vercel que generó una vista previa protegida al subir la rama. | [PR y vista previa](https://github.com/1ASI0728-2620-9075-G2-VeriFish/Verifish-Landing/pull/1). |
@@ -3924,7 +3924,7 @@ Las historias de las posiciones 14 a 36 (YakuTrace, pagos y funciones administra
 
 El objetivo del Sprint 1 es desplegar la primera versión del flujo de monitoreo de YakuControl. Las 13 historias se descompusieron en 32 work-items, con una estimación total de 97 horas, repartidos entre los cinco integrantes de modo que cada uno trabaja sobre su propio producto y repositorio.
 
-**Tablero del Sprint en Trello:** (pegar la URL pública del tablero)
+**Tablero del Sprint en Trello:** https://trello.com/invite/b/6ac7ef560e7a24aba89be174/ATTI780f9093bca7b5df991145c8fafa33f7BE95751C/verifish-sprint-1
 
 ![Sprint 1 Backlog en Trello](./assets/images/sprint1/sprint1-backlog-trello.png)
 
@@ -3932,13 +3932,13 @@ El objetivo del Sprint 1 es desplegar la primera versión del flujo de monitoreo
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **User Story** | | **Work-Item / Task** | | | | | |
 | **Id** | **Title** | **Id** | **Title** | **Description** | **Estimation (Hours)** | **Assigned To** | **Status (To-do / In-Process / To-Review / Done)** |
-| US01 | Propuesta de valor | T01 | Ajuste de la propuesta de valor | Revisión de Hero y Problem Statement con las métricas del informe. | 2 | Bendezu, Rúbens | En revisión |
-|  |  | T02 | Términos y condiciones en el footer | Página de términos y condiciones y enlace desde el footer. | 2 | Bendezu, Rúbens | En revisión |
-| US02 | Catálogo de planes | T03 | Revisión de la sección de planes | Planes Starter, Professional y Enterprise, con mención del complemento TRACE. | 2 | Bendezu, Rúbens | En revisión |
-| US04 | Formulario de ventas | T04 | Formulario de ventas | Formulario comercial (nombre, empresa, cantidad de pozas, correo y teléfono) con validación y mensaje de confirmación. | 4 | Bendezu, Rúbens | En revisión |
-| US18 | Sección YakuTrace para supermercados | T05 | Sección YakuTrace | Sección para supermercados con el llamado a la acción "Verificar un lote". | 3 | Bendezu, Rúbens | En revisión |
-| TS02 | Seguridad con JWT | T06 | Claim `farmId` en el JWT | Incluir `farmId` en el token al iniciar sesión y retirar el claim residual `workshop_id`. | 3 | Cruz, Victor | Done |
-|  |  | T07 | Aislamiento por granja en el filtro de seguridad | Validar la granja del token contra el recurso solicitado; 401 sin token válido y 403 para otra granja. | 5 | Cruz, Victor | Done |
+| US01 | Propuesta de valor | T01 | Ajuste de la propuesta de valor | Revisión de Hero y Problem Statement con las métricas del informe. | 2 | Bendezu, Rúbens | Done |
+|  |  | T02 | Términos y condiciones en el footer | Página de términos y condiciones y enlace desde el footer. | 2 | Bendezu, Rúbens | Done |
+| US02 | Catálogo de planes | T03 | Revisión de la sección de planes | Planes Starter, Professional y Enterprise, con mención del complemento TRACE. | 2 | Bendezu, Rúbens | Done |
+| US04 | Formulario de ventas | T04 | Formulario de ventas | Formulario comercial (nombre, empresa, cantidad de pozas, correo y teléfono) con validación y mensaje de confirmación. | 4 | Bendezu, Rúbens | Done |
+| US18 | Sección YakuTrace para supermercados | T05 | Sección YakuTrace | Sección para supermercados con el llamado a la acción "Verificar un lote". | 3 | Bendezu, Rúbens | Done |
+| TS02 | Seguridad con JWT | T06 | Claim `farmId` en el JWT | Incluir `farmId` en el token al iniciar sesión (para el ADMIN se resuelve desde la granja de la que es dueño) y retirar el claim residual `workshop_id`. | 3 | Cruz, Victor | Done |
+|  |  | T07 | Aislamiento por granja en el filtro de seguridad | `FarmAccessGuard` aplicado en los controladores de estanques, equipos y telemetría; 401 sin token válido (o con token alterado o vencido) y 403 para otra granja, sin revelar datos del recurso. | 5 | Cruz, Victor | Done |
 | US05 | Autenticación en la app móvil | T08 | Pruebas de modelos y de autenticación en la app | Pruebas unitarias de los modelos y del servicio de autenticación de la app (reemplazan el test de ejemplo). | 3 | Choquehuanca, Luciana | Done |
 | US15 | Registro de estanque | T09 | Registro de estanque y equipo | Rechazo de un `deviceId` duplicado en el registro del equipo IoT (409) y verificación del flujo estanque, equipo y vínculo. | 3 | Escobar, Sebastian | Done |
 |  |  | T10 | Vistas web de estanques y equipos | Revisión y ajuste en Flutter Web de las vistas de listado, registro de estanques y vínculo de equipos. | 3 | Bendezu, Rúbens | En revisión |
@@ -3950,14 +3950,14 @@ El objetivo del Sprint 1 es desplegar la primera versión del flujo de monitoreo
 | US07 | Alertas de calidad del agua | T16 | Pruebas de la detección de anomalías | Pruebas del evento de umbral superado con severidad WARNING y CRITICAL. | 2 | Escobar, Sebastian | Done |
 |  |  | T17 | ICA y filtro de falsos positivos en el Edge | Cálculo del Índice de Calidad del Agua y confirmación de la anomalía con una ventana de lecturas. | 6 | Peralta, Ronald | Done |
 |  |  | T18 | Revisión de la pantalla de alertas | Listado de alertas por severidad y marcado como leídas. | 2 | Choquehuanca, Luciana | Done |
-| TS03 | Envío de alertas por push | T19 | Credenciales Firebase y prueba de envío push | Configurar la cuenta de servicio de Firebase en el despliegue y comprobar el envío a un dispositivo. | 2 | Cruz, Victor | Done |
+| TS03 | Envío de alertas por push | T19 | Credenciales Firebase en el despliegue | Cargar la cuenta de servicio de Firebase en el App Service (fuera del repositorio), fijar `FIREBASE_CONFIG_PATH` y verificar en el registro la inicialización del Firebase Admin SDK. | 2 | Cruz, Victor | Done |
 |  |  | T20 | Registro del token del dispositivo | Verificación del registro del token FCM desde la app móvil. | 1 | Choquehuanca, Luciana | Done |
 | US08 | Control de aireación | T21 | Simulador de sensores con respuesta a comandos | El simulador del Edge reacciona a `PUMP1_ON` y `PUMP2_ON` y resuelve el tópico por dispositivo. | 4 | Peralta, Ronald | Done |
 |  |  | T22 | Botón de aireación | Verificación del comando de activación remota desde la app móvil. | 1 | Choquehuanca, Luciana | Done |
-| — | Trabajo transversal | T23 | Repositorios y GitFlow | Rama `develop`, ramas `feature/*`, Pull Requests y plantilla en los repositorios de código; etiqueta `v0.1.0`. | 3 | Cruz, Victor | Done |
+| — | Trabajo transversal | T23 | Repositorios y GitFlow | Rama `develop` creada desde `main` en los cuatro repositorios de código; eliminación del workflow de despliegue duplicado del backend; rama `feature/farm-isolation` integrada en `develop`. | 3 | Cruz, Victor | Done |
 |  |  | T24 | Limpieza de código residual y OpenAPI | Retirar referencias a "Autonexo" y completar la documentación OpenAPI del Sprint. | 2 | Escobar, Sebastian | Done |
 |  |  | T25 | Pruebas BDD con Cucumber | Dependencias de Cucumber y clases de steps para los `.feature` del backend. | 8 | Escobar, Sebastian | Done |
-|  |  | T26 | Pruebas BDD de seguridad y granjas | Steps de `authentication`, `farm-management` y `farm-isolation`. | 4 | Cruz, Victor | Done |
+|  |  | T26 | Pruebas BDD de seguridad y granjas | Steps de `authentication`, `farm-management` y `farm-isolation` sobre la configuración de Cucumber del backend. | 4 | Cruz, Victor | In-Process |
 |  |  | T27 | Pruebas unitarias del Edge | pytest para la firma, el ICA y el filtro de falsos positivos. | 3 | Peralta, Ronald | Done |
 |  |  | T28 | Despliegue del backend y la base de datos | Azure App Service y Azure Database for PostgreSQL con el flujo de GitHub Actions. | 4 | Cruz, Victor | Done |
 |  |  | T29 | Despliegue del Edge API | Dockerfile y servicio en Railway con Redis y broker Mosquitto. | 4 | Peralta, Ronald | Done |
@@ -3972,7 +3972,20 @@ En el Sprint 1 se implementaron la Landing Page, la Web App, el backend, la app 
 
 | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | (pegar filas del `git log`) | | | | |
+| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | main | fd9f7d6 | feat: initial clean release for organization | — | 2026-09-13 |
+| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | main | 9f6873b | Delete .github/workflows/develop_yaku-back.yml | — | 2026-10-30 |
+| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | develop | 212b75c | Merge pull request #1 from 1ASI0728-2620-9075-G2-VeriFish/main | Delete .github/workflows/develop_yaku-back.yml | 2026-10-30 |
+| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | feature/farm-isolation | 102f0b6 | feat(iam): add farmId claim support to JWT token service and sign-in | — | 2026-10-30 |
+| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | feature/farm-isolation | 9db1f63 | feat(iam): populate farmId in SecurityContext and return 401 on invalid JWT | — | 2026-10-30 |
+| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | feature/farm-isolation | 25c8e7b | feat(shared): add FarmAccessGuard and 403/401 exception handlers | — | 2026-10-30 |
+| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | feature/farm-isolation | 76d7631 | feat(equipment,telemetry): enforce farm isolation in Pond, Equipment, and Telemetry controllers | — | 2026-10-30 |
+| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | feature/farm-isolation | 478e1e8 | test(security): add unit and MockMvc integration tests for JWT farmId and farm isolation | — | 2026-10-30 |
+| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | feature/farm-isolation | b75f613 | feat(iam): resolve farmId from owned Farm for ADMIN users during sign-in | — | 2026-10-30 |
+| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | feature/farm-isolation | e977e42 | test(security): add ADMIN owner and OPERATOR farm isolation integration tests | — | 2026-10-30 |
+| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | develop | 5adbd05 | Merge feature/farm-isolation: JWT farmId and farm isolation (T06, T07) | — | 2026-10-30 |
+| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | feature/hmac-signature | f0aa752 | feat: add equipment command services, telemetry controllers, and device integration tests | — | 2026-11-12 |
+| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | feature/cucumber-bdd | 840f487 | test(bdd): configure Cucumber runner, Spring context, and step definitions for telemetry, alerts, equipment, and subscriptions | — | 2026-11-12 |
+| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | main | 2e61853 | Merge pull request #2 from 1ASI0728-2620-9075-G2-VeriFish/feature/cucumber-bdd | — | 2026-11-12 |
 | 1ASI0728-2620-9075-G2-VeriFish/VeriFish-Fronted | `feature/web-ponds-and-hosting` | `206d206` | docs(web): record Firebase Hosting deployment | — | 2026-10-30 |
 | 1ASI0728-2620-9075-G2-VeriFish/VeriFish-Fronted | `feature/web-ponds-and-hosting` | `5c387ab` | fix(hosting): select the yakucontrol-v2 site explicitly | — | 2026-10-30 |
 | 1ASI0728-2620-9075-G2-VeriFish/VeriFish-Fronted | `feature/web-ponds-and-hosting` | `52e8f09` | test(web): wait for pond linking dialog to close | — | 2026-10-30 |
@@ -3993,7 +4006,7 @@ En el Sprint 1 se implementaron la Landing Page, la Web App, el backend, la app 
 
 Las pruebas automatizadas cubren los servicios del Sprint 1 en tres niveles: pruebas unitarias del dominio y de los handlers (JUnit y Mockito), pruebas de integración y de aceptación bajo BDD (Cucumber, con archivos `.feature` en Gherkin y *steps* en Java) y pruebas unitarias del Edge API (pytest).
 
-**Unit Tests.** El backend cuenta con 49 pruebas unitarias en JUnit 5 sobre los agregados y objetos de valor de los contextos, que se ejecutan con una base H2 en memoria (`mvnw test`). En el Sprint 1 se agregaron las pruebas de la firma, del aislamiento por granja y de los componentes del Edge.
+**Unit Tests.** El backend cuenta con 59 pruebas automatizadas en JUnit 5 (49 sobre los agregados y objetos de valor, 2 unitarias del claim `farmId` y 8 de integración del aislamiento por granja), que se ejecutan con una base H2 en memoria (`mvnw test`). En el Sprint 1 se agregaron las pruebas de la firma, del aislamiento por granja y de los componentes del Edge.
 
 | Prueba | Clase / comportamiento probado | Repositorio | Historia relacionada |
 | :--- | :--- | :--- | :--- |
@@ -4003,7 +4016,8 @@ Las pruebas automatizadas cubren los servicios del Sprint 1 en tres niveles: pru
 | `SubscriptionTest`, `SubscriptionPeriodTest` | Reglas de la suscripción y de su período | Backend | Sprint 2 (Payment) |
 | `YakuBackendApplicationTests` | Arranque del contexto de Spring con la base H2 | Backend | Transversal |
 | `ReadingSignatureValidatorTest` | Acepta la firma HMAC correcta y rechaza la incorrecta o ausente | Backend | TS04 |
-| `JwtFarmClaimTest` | El token incluye `farmId` y rol; se rechaza el acceso a recursos de otra granja | Backend | TS02 |
+| `JwtFarmClaimTest` | El token generado incluye el claim `farmId` con su valor, ya no incluye `workshop_id`, y un token sin granja devuelve `farmId` nulo | Backend | TS02 |
+| `FarmIsolationIntegrationTest` | Con MockMvc y H2: 200 en un recurso de la propia granja, 401 sin token o con token alterado, 403 sin datos del recurso en otra granja; casos de ADMIN dueño de su granja y de OPERATOR | Backend | TS02 |
 | `ThresholdBreachTest` | Una lectura fuera de umbral genera el evento con severidad WARNING o CRITICAL | Backend | US07 |
 | `test_sign_reading.py` | Firma de la lectura con el token de la granja | Edge | TS04 |
 | `test_water_quality_index.py` | Cálculo del ICA con valores dentro y fuera de rango | Edge | US07 |
@@ -4065,16 +4079,321 @@ Feature: JWT security
     When it requests a resource that belongs to a different farm
     Then the API responds 403 without revealing information about the resource
 ```
+*iam/authentication.feature (US17, US18 — Autenticación y registro de usuarios)*
 
-Los demás archivos `.feature` se encuentran en el repositorio con su contenido completo:
+```gherkin
+Característica: Autenticacion y Registro de Usuarios
+  Como usuario, deseo autenticarme y registrarme en el sistema
+  para acceder a las funcionalidades de la plataforma.
+  Relacionado: US17, US18
 
-(pegar aquí el contenido de `authentication.feature`, `farm-management.feature`, `equipment-registration.feature`, `telemetry-monitoring.feature`, `alert-system.feature` y `subscription-management.feature`)
+  Escenario: Registro exitoso de usuario
+    Dado que el administrador ingresa datos validos
+      | username    | email               | password      | firstName | lastName | rol        |
+      | "operario1" | "operario@yaku.com" | "password123" | "Juan"    | "Perez"  | "OPERATOR" |
+    Cuando registra al usuario mediante POST /api/v1/users/signup
+    Entonces se crea la cuenta con codigo 201
+    Y la respuesta contiene el ID del usuario creado
+    Y el usuario tiene el rol asignado correctamente
+
+  Escenario: Error por correo duplicado
+    Dado que el correo "operario@yaku.com" ya existe en el sistema
+    Cuando intenta registrarlo mediante POST /api/v1/users/signup
+    Entonces se muestra un error con codigo 400
+    Y el mensaje indica que el usuario ya existe
+
+  Escenario: Error por campos obligatorios vacios
+    Dado que el administrador deja campos obligatorios vacios como username o email
+    Cuando intenta registrar al usuario mediante POST /api/v1/users/signup
+    Entonces se muestra un error de validacion con codigo 400
+
+  Escenario: Autenticacion exitosa
+    Dado que existen credenciales validas
+      | username    | password      |
+      | "operario1" | "password123" |
+    Cuando inicia sesion mediante POST /api/v1/users/signin
+    Entonces accede al sistema con codigo 200
+    Y la respuesta contiene un token JWT valido
+    Y la respuesta contiene la informacion del usuario
+
+  Escenario: Credenciales incorrectas
+    Dado que existen credenciales incorrectas
+      | username    | password    |
+      | "operario1" | "wrongpass" |
+    Cuando intenta ingresar mediante POST /api/v1/users/signin
+    Entonces se deniega el acceso con codigo 401
+    Y se muestra un mensaje de credenciales invalidas
+
+  Escenario: Acceso con token JWT valido
+    Dado que el usuario tiene un token JWT valido
+    Cuando accede a un endpoint protegido con header Authorization: Bearer {token}
+    Entonces el sistema permite el acceso con codigo 200
+
+  Escenario: Acceso con token JWT expirado o invalido
+    Dado que el usuario tiene un token JWT expirado o invalido
+    Cuando intenta acceder a un endpoint protegido
+    Entonces se deniega el acceso con codigo 401
+
+  Escenario: Registro de operario sin farmToken valido
+    Dado que el administrador intenta registrar un operario sin farmToken
+    Cuando envia la solicitud mediante POST /api/v1/users/signup
+    Entonces se muestra un error con codigo 400
+```
+
+*equipment/farm-management.feature (US10, US11, US12 — Gestión de piscigranjas y estanques)*
+
+```gherkin
+Característica: Gestion de Piscigranjas y Estanques
+  Como administrador, deseo gestionar mis piscigranjas y estanques
+  para supervisar la produccion y optimizar recursos.
+  Relacionado: US10, US11, US12
+
+  Contexto:
+    Dado que el administrador esta autenticado con un token JWT valido
+
+  Escenario: Registro exitoso de piscigranja
+    Dado que el administrador ingresa datos validos de la piscigranja
+      | nombre               | ownerId | direccion              |
+      | "Piscigranja Andina" | 1       | "Valle Sagrado, Cusco" |
+    Cuando guarda la informacion mediante POST /api/v1/farms
+    Entonces se registra correctamente con codigo 201
+    Y la respuesta contiene un farmToken generado automaticamente
+    Y el nombre coincide con "Piscigranja Andina"
+
+  Escenario: Error por campos obligatorios incompletos en piscigranja
+    Dado que el administrador omite campos obligatorios como el nombre
+    Cuando intenta guardar la piscigranja mediante POST /api/v1/farms
+    Entonces el sistema responde con codigo 400
+    Y se muestra un mensaje de error de validacion
+
+  Escenario: Registro exitoso de estanque
+    Dado que el administrador ingresa los datos del estanque
+      | farmId | nombre       | especie   | volumen |
+      | 1      | "Estanque A" | "Tilapia" | 1000.0  |
+    Cuando guarda la informacion mediante POST /api/v1/ponds
+    Entonces se registra correctamente con codigo 201
+    Y el estanque tiene estado inicial "ACTIVE"
+
+  Escenario: Error por hardware duplicado en estanque
+    Dado que el ID del hardware ya existe en el sistema
+    Cuando intenta registrarlo mediante POST /api/v1/ponds
+    Entonces se muestra un mensaje de duplicidad con codigo 409
+
+  Escenario: Visualizar lista de estanques disponibles
+    Dado que el administrador accede al dashboard
+    Cuando carga la informacion mediante GET /api/v1/ponds
+    Entonces visualiza la lista de estanques con codigo 200
+    Y cada estanque incluye id, nombre, especie, volumen y estado
+
+  Escenario: Visualizar estanque por ID
+    Dado que existe un estanque con ID 1
+    Cuando consulta mediante GET /api/v1/ponds/1
+    Entonces visualiza los detalles del estanque con codigo 200
+
+  Escenario: Sin registros de estanques
+    Dado que no existen estanques registrados
+    Cuando accede mediante GET /api/v1/ponds
+    Entonces se muestra una lista vacia con codigo 200
+
+  Escenario: Visualizar estanques por piscigranja
+    Dado que existe una piscigranja con ID 1
+    Cuando consulta mediante GET /api/v1/farms/1/ponds
+    Entonces visualiza solo los estanques pertenecientes a esa piscigranja
+```
+
+*equipment/equipment-registration.feature (US31 — Registro de dispositivos IoT)*
+
+```gherkin
+@bdd-ready
+Característica: Registro de Dispositivos IoT
+  Como administrador, quiero registrar dispositivos IoT en el sistema
+  para poder asociarlos a estanques y recibir datos.
+  Relacionado: US31
+
+  Antecedentes:
+    Dado que el usuario esta autenticado con un token JWT valido de su granja
+
+  Escenario: Registro exitoso de equipo sensor individual
+    Cuando registro un equipo "SENSOR" con nombre "Sensor Temp-01" y codigo fisico "ST-001" mediante POST /api/v1/equipment
+    Entonces el modulo de equipos responde con codigo 201
+    Y el equipo registrado tiene estado inicial "AVAILABLE"
+
+  Escenario: Registro exitoso de nodo IoT completo
+    Cuando registro un nodo IoT con deviceId "NODE-REG-01" y nombre "Nodo Norte" mediante POST /api/v1/equipment/iot-device
+    Entonces el modulo de equipos responde con codigo 201
+    Y se crean los 4 componentes del nodo IoT en estado "AVAILABLE"
+
+  Escenario: Error por nodo IoT duplicado
+    Dado que ya existe un nodo IoT registrado con deviceId "NODE-DUP-01"
+    Cuando intento registrar nuevamente el nodo IoT con deviceId "NODE-DUP-01" mediante POST /api/v1/equipment/iot-device
+    Entonces el modulo de equipos responde con codigo 409
+
+  Escenario: Asociar dispositivo a estanque
+    Dado que existe un equipo disponible en la granja y un estanque disponible
+    Cuando vinculo el equipo al estanque mediante POST /api/v1/equipment/{equipmentId}/link/{pondId}
+    Entonces el modulo de equipos responde con codigo 200
+    Y el equipo cambia su estado a "LINKED" con el pondId correspondiente
+
+  Escenario: Visualizar lista de equipos
+    Dado que existen equipos registrados en la granja
+    Cuando consulto los equipos mediante GET /api/v1/equipment
+    Entonces el modulo de equipos responde con codigo 200
+    Y la lista contiene los equipos de la granja
+
+  Escenario: Eliminar equipo registrado
+    Dado que existe un equipo disponible en la granja
+    Cuando elimino el equipo mediante DELETE /api/v1/equipment/{id}
+    Entonces el modulo de equipos responde con codigo 204
+```
+
+*telemetry/telemetry-monitoring.feature (US05, US06, US07 — Monitoreo de telemetría de estanques)*
+
+```gherkin
+@bdd-ready
+Característica: Monitoreo de Telemetria de Estanques
+  Como piscicultor, deseo monitorear los parametros del agua en tiempo real
+  y visualizar el historial de lecturas para analizar tendencias.
+  Relacionado: US05, US06, US07
+
+  Antecedentes:
+    Dado que el usuario esta autenticado con un token JWT valido de su granja
+
+  Escenario: Visualizacion de parametros en tiempo real
+    Dado que el estanque de la granja tiene lecturas recientes registradas
+    Cuando consulta el estado en tiempo real mediante GET /api/v1/telemetry/ponds/{pondId}/status
+    Entonces la respuesta de telemetria tiene codigo 200
+    Y la respuesta de estado incluye lecturas de TEMPERATURE, TURBIDITY e ICA
+
+  Escenario: Visualizar historial de lecturas con filtro diario
+    Dado que existen agregados historicos recientes para el estanque
+    Cuando consulta los datos historicos con filtro "DAILY"
+    Entonces la respuesta de telemetria tiene codigo 200
+    Y la respuesta historica incluye valores minimos, maximos y promedios
+
+  Escenario: Visualizar historial de lecturas con filtro semanal
+    Dado que existen agregados historicos recientes para el estanque
+    Cuando consulta los datos historicos con filtro "WEEKLY"
+    Entonces la respuesta de telemetria tiene codigo 200
+    Y la respuesta historica incluye valores minimos, maximos y promedios
+
+  Escenario: Visualizar historial de lecturas con filtro mensual
+    Dado que existen agregados historicos recientes para el estanque
+    Cuando consulta los datos historicos con filtro "MONTHLY"
+    Entonces la respuesta de telemetria tiene codigo 200
+    Y la respuesta historica incluye valores minimos, maximos y promedios
+
+  Escenario: Sin registros historicos para estanque nuevo
+    Dado que existe un estanque en la granja sin registros historicos
+    Cuando consulta los datos historicos con filtro "DAILY"
+    Entonces la respuesta de telemetria tiene codigo 200
+    Y la lista historica devuelta esta vacia
+
+  Escenario: Ingesta manual agrupada de lecturas de sensor
+    Dado que existe un dispositivo IoT "DEV-MON-01" vinculado al estanque
+    Cuando envia lecturas agrupadas de temperatura 25.5, turbidez 4.0 e ICA 90.0 con firma valida
+    Entonces la respuesta de telemetria tiene codigo 200
+    Y las lecturas quedan persistidas para el estanque
+
+  Escenario: Ingesta con dispositivo no mapeado a ningun estanque
+    Dado que el dispositivo "DEV-UNLINKED" no esta vinculado a ningun estanque
+    Cuando envia lecturas agrupadas con firma valida para "DEV-UNLINKED"
+    Entonces la respuesta de telemetria tiene codigo 400
+```
+
+*notification/alert-system.feature (US15, US16, US22 — Sistema de alertas inteligentes)*
+
+```gherkin
+@bdd-ready
+Característica: Sistema de Alertas Inteligentes
+  Como usuario, deseo recibir alertas automaticas cuando los parametros del agua
+  superen los umbrales criticos para prevenir perdidas en la produccion.
+  Relacionado: US15, US16, US22
+
+  Antecedentes:
+    Dado que el usuario esta autenticado con un token JWT valido de su granja
+
+  Escenario: Alerta de advertencia por un parametro fuera de rango
+    Dado que existe un estanque de especie "TRUCHA" con umbrales configurados y dispositivo "DEV-ALT-01" vinculado
+    Cuando llega una lectura con temperatura 25.0 y turbidez 4.0 para "DEV-ALT-01"
+    Entonces se registra una notificacion de tipo "WARNING" para el operador del estanque
+
+  Escenario: Alerta critica por multiples parametros fuera de rango
+    Dado que existe un estanque de especie "TRUCHA" con umbrales configurados y dispositivo "DEV-ALT-02" vinculado
+    Cuando llega una lectura con temperatura 25.0 y turbidez 12.0 para "DEV-ALT-02"
+    Entonces se registra una notificacion de tipo "CRITICAL" para el administrador y el operador
+
+  Escenario: Configuracion exitosa de umbrales por especie
+    Dado que el administrador prepara umbrales validos para la especie "OTRO"
+    Cuando guarda la configuracion mediante POST /api/v1/telemetry/thresholds
+    Entonces el modulo de alertas responde con codigo 201
+    Y el umbral de la especie "OTRO" puede consultarse mediante GET /api/v1/telemetry/thresholds/OTRO
+
+  Escenario: Registro de token de dispositivo para notificaciones push
+    Dado que el usuario autenticado accede desde su dispositivo movil
+    Cuando registra su token FCM mediante POST /api/v1/users/{userId}/device-tokens
+    Entonces el modulo de alertas responde con codigo 201
+
+  Escenario: Visualizar notificaciones del usuario
+    Dado que el usuario autenticado tiene notificaciones registradas
+    Cuando consulta mediante GET /api/v1/users/{userId}/notifications
+    Entonces el modulo de alertas responde con codigo 200
+    Y cada notificacion incluye tipo, mensaje, destinatario y fecha de creacion
+
+  Escenario: Webhook de alerta externa recibido
+    Dado que un sistema externo envia una alerta por webhook
+    Cuando se recibe mediante POST /api/v1/webhooks/notifications
+    Entonces el modulo de alertas responde con codigo 201
+    Y se genera una notificacion interna para el usuario
+```
+
+*subscription/subscription-management.feature (US19 — Gestión de suscripciones)*
+
+```gherkin
+@bdd-ready
+Característica: Gestion de Suscripciones
+  Como administrador, deseo suscribirme a un plan y gestionar mi suscripcion
+  para acceder a los servicios de YakuControl.
+  Relacionado: US19
+
+  Antecedentes:
+    Dado que el usuario esta autenticado con un token JWT valido de su granja
+
+  Escenario: Visualizar lista de planes disponibles
+    Dado que existen planes registrados en el sistema
+    Cuando consulta los planes mediante GET /api/v1/plans
+    Entonces el modulo de suscripciones responde con codigo 200
+    Y la lista de planes no esta vacia
+
+  Escenario: Suscripcion exitosa a un plan
+    Dado que existe el plan "PREMIUM" de 30 dias disponible
+    Cuando confirma la suscripcion del usuario mediante POST /api/v1/subscriptions/{userId}
+    Entonces el modulo de suscripciones responde con codigo 200
+    Y el estado de la suscripcion devuelta es "ACTIVE"
+    Y el periodo de suscripcion corresponde a 30 dias desde hoy
+
+  Escenario: Visualizar suscripcion de un usuario
+    Dado que el usuario tiene una suscripcion activa al plan "FREE"
+    Cuando consulta la suscripcion mediante GET /api/v1/subscriptions/{userId}
+    Entonces el modulo de suscripciones responde con codigo 200
+    Y la respuesta incluye el nombre del plan y estado "ACTIVE"
+
+  Escenario: Cancelar suscripcion activa
+    Dado que el usuario tiene una suscripcion activa al plan "PREMIUM"
+    Cuando cancela la suscripcion mediante DELETE /api/v1/subscriptions/{userId}
+    Entonces el modulo de suscripciones responde con codigo 204
+    Y el estado persistido de la suscripcion cambia a "CANCELLED"
+
+  Escenario: Suscripcion a plan inexistente
+    Cuando intenta suscribir al usuario a un plan inexistente con ID 999999
+    Entonces el modulo de suscripciones responde con codigo 400
+```
+
 
 **Evidencia de ejecución.** Resultado de la ejecución de la suite en el backend, en el Edge y en la app:
 
-![Resultado de las pruebas del backend](./assets/images/sprint1/tests-backend.png)
+![Resultado de las pruebas del backend](/assets/sprint1/tests-backend.jpeg)
 
-![Resultado de las pruebas BDD (Cucumber)](./assets/images/sprint1/tests-bdd.png)
+![Resultado de las pruebas BDD (Cucumber)](/assets/sprint1/tests-bdd2.jpeg)
 
 ![Resultado de las pruebas del Edge (pytest)](./assets/images/sprint1/tests-edge.png)
 
@@ -4186,11 +4505,11 @@ En el Sprint 1 se ejecutaron y desplegaron la Landing Page, la Web App, la app m
 
 *TS01 — Lectura firmada aceptada.*
 
-![Backend: Lectura firmada aceptada](./assets/images/sprint1/exec-backend-ingest-ok.png)
+![Backend: Lectura firmada aceptada](./assets/sprint1/exec-backend-ingest-ok.jpeg)
 
 *TS04 — Lectura con firma inválida rechazada (401).*
 
-![Backend: Lectura con firma inválida rechazada (401)](./assets/images/sprint1/exec-backend-ingest-401.png)
+![Backend: Lectura con firma inválida rechazada (401)](./assets/sprint1/exec-backend-ingest-401.jpeg)
 
 *TS02 — Acceso a un recurso de otra granja rechazado (403).*
 
@@ -4221,13 +4540,27 @@ Los servicios del backend se documentan con OpenAPI y se publican con Swagger UI
 | Equipment | Gestionar estanques | POST / GET / PUT / DELETE | `/api/v1/ponds`, `/api/v1/ponds/{id}`, `/api/v1/ponds/farm/{farmId}` | Datos del estanque; JWT de administrador | Estanque creado, consultado o actualizado | US15 |
 | IAM | Registrarse e iniciar sesión | POST | `/api/v1/users/signup`, `/api/v1/users/signin` | Credenciales; token de granja en el registro | JWT con `userId`, `farmId` y rol; 401 si las credenciales son inválidas | US05, TS02 |
 
-![Swagger UI: endpoints de Telemetry](./assets/images/sprint1/swagger-telemetry.png)
+*Telemetry — Documentación de ingesta y consulta de lecturas.*
+
+![Swagger UI: endpoints de Telemetry](./assets/sprint1/swagger-telemetry.jpeg)
+
+*Telemetry — Ejemplo de request y response de la ingesta.*
+
+![Swagger UI: solicitud de ingesta y respuesta HTTP 200](./assets/sprint1/swagger-ingest-example.jpeg)
+
+*Equipment — Documentación de equipos y dispositivos IoT.*
+
+![Swagger UI: endpoints de Equipment](./assets/sprint1/swagger-other.jpeg)
+
+*IAM y Notification — Documentación de usuarios y registro de tokens FCM.*
+
+![Swagger UI: endpoints de IAM y Notification](./assets/sprint1/swagger-other2.jpeg)
 
 ![Swagger UI: ejemplo de request y response de la ingesta](./assets/images/sprint1/swagger-ingest-example.png)
 
 ![Swagger UI: endpoints de Notification, Equipment e IAM](./assets/images/sprint1/swagger-other.png)
 
-**URL de la documentación desplegada:** (pegar enlace de Swagger UI en Azure, ruta `/swagger-ui.html`). **Repositorio de Web Services:** https://github.com/1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend
+**URL de la documentación desplegada:** https://yaku-backend-hjbmb2btfzece4c0.brazilsouth-01.azurewebsites.net/swagger-ui.html. **Repositorio de Web Services:** https://github.com/1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend
 
 | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
