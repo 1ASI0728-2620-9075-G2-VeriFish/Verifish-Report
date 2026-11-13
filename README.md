@@ -33,8 +33,8 @@
 </div>
 
 <div style="text-align: center;">
-    <p>Proyecto</p>
-    <h4 style="text-align: center;"><b>YakuControl</b></h4>
+    <p>Producto</p>
+    <h4 style="text-align: center;"><b>YakuControl + YakuTrace</b></h4>
 </div>
 
 <br>
@@ -55,6 +55,7 @@
 
 <div style="text-align: center;">
     <h4 style="text-align: center;"><b>Período 202620</b></h4>
+    <p>Noviembre de 2026</p>
 </div>
 
 <div style="page-break-after: always;"></div>
@@ -74,6 +75,13 @@
 | **9.0** | 07/10/2026 | Sebastian Escobar | **TP1 – Arquitectura y diseño táctico:** diagramas C4 coherentes con el monolito modular, Ubiquitous Language en inglés, diseño táctico de los seis Bounded Contexts (capas, componentes, diagramas de clases y de base de datos), bibliografía y anexos. |
 | **10.0** | 08/10/2026 | Rúbens Bendezu | **TP1 – Diseño UX/UI:** guía de estilos, arquitectura de información, Landing Page desktop y móvil, pantallas de las aplicaciones en español con sus estados y wireflows con YakuTrace; fuentes editables, imágenes y evidencia escrita del Student Outcome 3. |
 | **11.0** | 09/10/2026 | S. Escobar, R. Bendezu, L. Choquehuanca, V. Cruz, R. Peralta | **TP1 – Integración:** revisión cruzada de los capítulos, unificación de terminología y de nombres de imágenes, tabla de contenido, Student Outcome, Project Report Collaboration Insights y limpieza de las notas internas del equipo. |
+| **12.0** | 28/10/2026 | Victor Cruz | **TB2 – Estructura y autocrítica:** actualización de la tabla de contenido con las secciones 6.4.3 a 6.4.5 y el Capítulo VII; corrección de los títulos de los wireflows (6.4.2), de la descripción de la app móvil (6.2.5) y de la numeración de los anexos; carátula completa; incorporación del Anexo C (mejora continua). |
+| **13.0** | 29/10/2026 | Victor Cruz, Ronald Peralta | **TB2 – Configuración y Sprint Planning:** secciones 7.1.1 a 7.1.4 (entorno, GitFlow, SemVer, Conventional Commits, guías de estilo y despliegue); Sprint Planning 1 con el alcance de 13 historias y 45 story points; Sprint Backlog 1 con la descomposición en work-items y sus responsables. |
+| **14.0** | 30/10/2026 | Luciana Choquehuanca, Rúbens Bendezu | **TB2 – Diseño de interacción:** mock-ups 1 a 28 (6.4.3), User Flow Diagrams 1 a 23 con sus caminos alternativos (6.4.4) y prototipos con videos de demostración (6.4.5). |
+| **15.0** | 30/10/2026 | Victor Cruz, Sebastian Escobar | **TB2 – Desarrollo y pruebas:** evidencia de desarrollo con la tabla de commits por repositorio (7.2.1.3) y suite de pruebas unitarias y BDD con sus archivos `.feature` (7.2.1.4). |
+| **16.0** | 31/10/2026 | Luciana Choquehuanca, Rúbens Bendezu, Ronald Peralta, Victor Cruz | **TB2 – Ejecución y despliegue:** evidencia de ejecución de los cinco productos (7.2.1.5), documentación OpenAPI/Swagger de los servicios (7.2.1.6) y evidencia de despliegue en Azure, Railway, Firebase y Netlify (7.2.1.7). |
+| **17.0** | 31/10/2026 | Sebastian Escobar, Luciana Choquehuanca | **TB2 – Validación:** diseño y registro de las entrevistas de validación, evaluaciones según heurísticas (7.3) y video About-the-Product (7.4). |
+| **18.0** | 01/11/2026 | S. Escobar, R. Bendezu, L. Choquehuanca, V. Cruz, R. Peralta | **TB2 – Integración:** Collaboration Insights del Sprint, Student Outcome, conclusiones y recomendaciones, video About-The-Team, bibliografía, Anexos B y C, revisión cruzada y verificación de la tabla de contenido. |
 
 <div style="page-break-after: always;"></div>
 
@@ -168,6 +176,52 @@ El repositorio se organizó con GitFlow. La rama `main` conserva solo versiones 
 <div style="text-align: center; margin-top: 1rem; margin-bottom: 1rem;">
 
 ![Insights TP1 - Network Graph](./assets/images/network.png)
+
+</div>
+
+<div style="page-break-after: always;"></div>
+
+## TB2
+
+**Tareas**
+
+Iniciando actividades el **28/10/2026**, el equipo distribuyó las responsabilidades del trabajo de la siguiente manera:
+
+| Integrantes | Tarea asignada |
+| :--- | :--- |
+| Escobar Palomino, Sebastian Matias | - Backend: validación de la firma HMAC de las lecturas, validación de la ingesta y registro de equipos <br> - Pruebas BDD con Cucumber y documentación OpenAPI/Swagger <br> - Limpieza de código residual |
+| Bendezu Navarro, Rúbens Fitzgerald | - Landing Page: formulario de ventas, sección YakuTrace y términos y condiciones <br> - Web App (Flutter Web): vistas de estanques y equipos, y despliegue en Firebase Hosting <br> - Despliegue de la Landing Page en Netlify <br> - Mock-ups 8 a 18 y prototipo de la Web App |
+| Choquehuanca Nuñez, Luciana Carolina | - App móvil (Flutter): pruebas, revisión de pantallas (lectura, alertas, token FCM y aireación) y distribución del APK en Firebase App Distribution <br> - Mock-ups 1 a 7, User Flows 1 a 10 y prototipo de la app móvil <br> - Video About-the-Product |
+| Cruz Ibarra, Victor Andres | - Backend: claim `farmId` y aislamiento por granja en el filtro JWT, steps BDD de seguridad <br> - Despliegue del backend y la base de datos en Azure, credenciales de Firebase <br> - Repositorios y GitFlow del Sprint, Sprint Planning y Sprint Backlog (Trello) <br> - Anexo C, integración del informe, keynote y video de exposición |
+| Peralta Chipa, Ronald Joel | - Edge API: firma de lecturas, cálculo del ICA, filtro de falsos positivos y simulador con comandos <br> - Pruebas unitarias del Edge (pytest) <br> - Despliegue del Edge en Railway |
+
+**Cómo se trabajó**
+
+Para el Sprint 1 el equipo reorganizó el trabajo por producto: cada integrante se hizo responsable de uno o más repositorios de código, de modo que las tareas pudieran avanzar en paralelo sin depender de la rama de otro compañero. El informe sigue GitFlow: `main` conserva solo las versiones entregables y `develop` integra el trabajo; cada integrante documentó su parte en una rama `feature/tb2-evidence-<integrante>` creada desde `develop` e integrada mediante Pull Request revisado por otro integrante. Los mensajes de commit siguen Conventional Commits. El 29/10 se realizó el Sprint Planning 1 y se acordó el alcance de 13 historias; del 29/10 al 31/10 cada integrante implementó, probó y desplegó su parte y recopiló sus evidencias; el 31/10 se hizo la integración de las secciones y el 01/11 la revisión cruzada final y la entrega. Las capturas de Insights de los repositorios de código se presentan en la sección 7.2.1.8.
+
+**GitHub Collaboration Insights**
+
+<div style="text-align: center; margin-top: 1rem; margin-bottom: 1rem;">
+
+![Insights TB2 - Contributors](./assets/images/insights-tb2-contributors.png)
+
+*Contributors: aportes de cada integrante al repositorio del informe durante TB2.*
+
+</div>
+
+<div style="text-align: center; margin-top: 1rem; margin-bottom: 1rem;">
+
+![Insights TB2 - Commits](./assets/images/insights-tb2-commits.png)
+
+*Commits: frecuencia de commits del repositorio del informe durante TB2.*
+
+</div>
+
+<div style="text-align: center; margin-top: 1rem; margin-bottom: 1rem;">
+
+![Insights TB2 - Network Graph](./assets/images/insights-tb2-network.png)
+
+*Network graph: ramas `feature/tb2-evidence-<integrante>` integradas en `develop`.*
 
 </div>
 
@@ -307,9 +361,39 @@ El repositorio se organizó con GitFlow. La rama `main` conserva solo versiones 
 - [6.4. Applications UX/UI Design](#64-applications-uxui-design)
   - [6.4.1. Applications Wireframes](#641-applications-wireframes)
   - [6.4.2. Applications Wireflow Diagrams](#642-applications-wireflow-diagrams)
+  - [6.4.3. Applications Mock-ups](#643-applications-mock-ups)
+  - [6.4.4. Applications User Flow Diagrams](#644-applications-user-flow-diagrams)
+  - [6.4.5. Applications Prototyping](#645-applications-prototyping)
+
+### Capítulo VII: Product Implementation, Validation & Deployment
+- [7.1. Software Configuration Management](#71-software-configuration-management)
+  - [7.1.1. Software Development Environment Configuration](#711-software-development-environment-configuration)
+  - [7.1.2. Source Code Management](#712-source-code-management)
+  - [7.1.3. Source Code Style Guide & Conventions](#713-source-code-style-guide--conventions)
+  - [7.1.4. Software Deployment Configuration](#714-software-deployment-configuration)
+- [7.2. Solution Implementation](#72-solution-implementation)
+  - [7.2.1. Sprint 1](#721-sprint-1)
+    - [7.2.1.1. Sprint Planning 1](#7211-sprint-planning-1)
+    - [7.2.1.2. Sprint Backlog 1](#7212-sprint-backlog-1)
+    - [7.2.1.3. Development Evidence for Sprint Review](#7213-development-evidence-for-sprint-review)
+    - [7.2.1.4. Testing Suite Evidence for Sprint Review](#7214-testing-suite-evidence-for-sprint-review)
+    - [7.2.1.5. Execution Evidence for Sprint Review](#7215-execution-evidence-for-sprint-review)
+    - [7.2.1.6. Services Documentation Evidence for Sprint Review](#7216-services-documentation-evidence-for-sprint-review)
+    - [7.2.1.7. Software Deployment Evidence for Sprint Review](#7217-software-deployment-evidence-for-sprint-review)
+    - [7.2.1.8. Team Collaboration Insights during Sprint](#7218-team-collaboration-insights-during-sprint)
+- [7.3. Validation Interviews](#73-validation-interviews)
+  - [7.3.1. Diseño de Entrevistas](#731-diseño-de-entrevistas)
+  - [7.3.2. Registro de Entrevistas](#732-registro-de-entrevistas)
+  - [7.3.3. Evaluaciones según heurísticas](#733-evaluaciones-según-heurísticas)
+- [7.4. Video About-the-Product](#74-video-about-the-product)
 - [Conclusiones](#conclusiones)
+  - [Conclusiones y recomendaciones](#conclusiones-y-recomendaciones)
+  - [Video About-The-Team](#video-about-the-team)
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)
+  - [Anexo A. Prototipo IoT](#anexo-a-prototipo-iot)
+  - [Anexo B. Videos de Exposiciones](#anexo-b-videos-de-exposiciones)
+  - [Anexo C. Mejora continua](#anexo-c-mejora-continua-autocrítica-y-cambios-respecto-de-entregas-anteriores)
 
 <div style="page-break-after: always;"></div>
 
@@ -325,8 +409,8 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 
 | Criterio específico | Acciones realizadas | Conclusiones |
 | :--- | :--- | :--- |
-| **Comunica oralmente sus ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería.** | **TB1**<br><br>**Escobar Palomino, Sebastian Matias**<br>Explicó oralmente al equipo y al docente el diseño de las entrevistas, los perfiles de usuario y el modelado de flujos de dominio, y sustentó el contexto Equipment, ajustando el lenguaje técnico a cada oyente.<br><br>**Bendezu Navarro, Rúbens Fitzgerald**<br>Presentó el Startup y Solution Profile, los segmentos objetivo y los competidores, y explicó el Context Mapping y el contexto Payment al equipo y al docente, adaptando el nivel de detalle a cada oyente.<br><br>**Choquehuanca Nuñez, Luciana Carolina**<br>Explicó el Product Backlog, las historias de usuario y el EventStorming, y justificó los límites del contexto Telemetry ante el equipo y el docente.<br><br>**Cruz Ibarra, Victor Andres**<br>Presentó la arquitectura de la solución (diagramas de contexto, contenedores y despliegue), la organización del repositorio y el contexto IAM, apoyándose en diagramas.<br><br>**Peralta Chipa, Ronald Joel**<br>Presentó los objetivos SMART, los Bounded Context Canvases y la organización del informe, y explicó al equipo cómo se documenta el Student Outcome.<br><br><br>**TP1**<br><br>**Escobar Palomino, Sebastian Matias**<br>Preparó el guion para explicar la arquitectura C4 y el diseño táctico de los seis contextos (clases y base de datos) a audiencias técnicas y no técnicas.<br><br>**Bendezu Navarro, Rúbens Fitzgerald**<br>Preparó un guion de sustentación apoyado en la landing, las pantallas y los wireflows para explicar el diseño a piscicultores, administradores, compradores y al equipo técnico. El material distingue acciones de campo, decisiones de negocio y estados del certificado.<br><br>**Choquehuanca Nuñez, Luciana Carolina**<br>Preparó la exposición de las entrevistas del Segmento 3, las User Personas y los escenarios, para transmitir la voz del comprador de supermercado al equipo técnico.<br><br>**Cruz Ibarra, Victor Andres**<br>Preparó la sustentación del diseño estratégico: requisitos priorizados, atributos de calidad, EventStorming y mapa de contextos con Traceability, y la explicación de la verificación por QR para un público no técnico.<br><br>**Peralta Chipa, Ronald Joel**<br>Preparó la exposición del modelo de negocio, el análisis competitivo y el Impact Mapping, y de cómo YakuTrace se conecta con los objetivos de la startup. | **TB1**<br>El equipo aprendió a explicar decisiones técnicas (arquitectura, contextos y requisitos) a oyentes con distinto nivel de detalle, apoyándose en diagramas y en ejemplos del dominio acuícola. Se comprobó que presentar primero el problema del piscicultor y después la solución facilita la comprensión del público.<br><br>**TP1**<br>Con YakuTrace la audiencia se amplió a piscicultores, administradores y compradores de supermercado, por lo que el equipo preparó mensajes distintos para cada uno y los apoyó con la landing, las pantallas y los wireflows. |
-| **Comunica en forma escrita ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería.** | **TB1**<br><br>**Escobar Palomino, Sebastian Matias**<br>Redactó el diseño y análisis de entrevistas, las User Personas, la Task Matrix, el Journey Mapping, el Empathy Mapping, el Domain Message Flow y el contexto Equipment.<br><br>**Bendezu Navarro, Rúbens Fitzgerald**<br>Redactó el Startup y Solution Profile, los segmentos objetivo, los competidores, el Ubiquitous Language, el Impact Mapping, el Context Mapping y el contexto Payment.<br><br>**Choquehuanca Nuñez, Luciana Carolina**<br>Redactó las User Stories, el Product Backlog, la documentación del EventStorming, el Candidate Context Discovery y el contexto Telemetry.<br><br>**Cruz Ibarra, Victor Andres**<br>Redactó los diagramas de arquitectura (contexto, contenedores y despliegue), configuró el repositorio y redactó el contexto IAM.<br><br>**Peralta Chipa, Ronald Joel**<br>Redactó el registro de versiones, los Collaboration Insights, el Student Outcome, los objetivos SMART, los Bounded Context Canvases y el contexto Notification.<br><br><br>**TP1**<br><br>**Escobar Palomino, Sebastian Matias**<br>Redactó y revisó los diagramas C4 coherentes con el monolito modular, el Ubiquitous Language en inglés, el diseño táctico de los seis contextos (capas, clases y base de datos), la bibliografía y los anexos.<br><br>**Bendezu Navarro, Rúbens Fitzgerald**<br>Documentó y revisó el capítulo VI: guía visual, arquitectura de información, landing desktop/móvil, pantallas principales, variantes responsive, estados alternativos y wireflows. Redibujó la interfaz en español y relacionó los recorridos con las historias de usuario. Incorporó fuentes editables, imágenes y controles de calidad que permiten al equipo reproducir y revisar el diseño.<br><br>**Choquehuanca Nuñez, Luciana Carolina**<br>Redactó el diseño y el análisis de las entrevistas del Segmento 3, las User Personas, el Empathy Mapping y los escenarios As-is y To-Be con el comprador de supermercado.<br><br>**Cruz Ibarra, Victor Andres**<br>Redactó las User Stories en Gherkin sin referencias a la interfaz, el Product Backlog, el ADD completo (QAS, constraints, drivers, decisiones y refinamientos), el EventStorming, los canvases y el Context Map con Traceability.<br><br>**Peralta Chipa, Ronald Joel**<br>Redactó la estructura del informe, el registro de versiones, los Collaboration Insights y el Student Outcome, además del Startup Profile, el Lean UX, los competidores y el Impact Mapping con objetivos SMART. | **TB1**<br>El informe de TB1 documentó de forma ordenada el problema, los requisitos y la arquitectura mediante tablas, diagramas y plantillas comunes, y el trabajo por capítulos en GitHub permitió que cada integrante comunicara por escrito su parte de manera coherente.<br><br>**TP1**<br>En TP1 el informe incorporó el segmento de compradores y la trazabilidad con blockchain. Para que lo entiendan lectores técnicos y no técnicos, las historias se redactaron en Gherkin sin referencias a la interfaz, el glosario se escribió en inglés con su equivalente en español y los diagramas C4 y UML se hicieron coherentes con la decisión de un monolito modular. Las revisiones cruzadas entre integrantes mejoraron la consistencia del documento. |
+| **Comunica oralmente sus ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería.** | **TB1**<br><br>**Escobar Palomino, Sebastian Matias**<br>Explicó oralmente al equipo y al docente el diseño de las entrevistas, los perfiles de usuario y el modelado de flujos de dominio, y sustentó el contexto Equipment, ajustando el lenguaje técnico a cada oyente.<br><br>**Bendezu Navarro, Rúbens Fitzgerald**<br>Presentó el Startup y Solution Profile, los segmentos objetivo y los competidores, y explicó el Context Mapping y el contexto Payment al equipo y al docente, adaptando el nivel de detalle a cada oyente.<br><br>**Choquehuanca Nuñez, Luciana Carolina**<br>Explicó el Product Backlog, las historias de usuario y el EventStorming, y justificó los límites del contexto Telemetry ante el equipo y el docente.<br><br>**Cruz Ibarra, Victor Andres**<br>Presentó la arquitectura de la solución (diagramas de contexto, contenedores y despliegue), la organización del repositorio y el contexto IAM, apoyándose en diagramas.<br><br>**Peralta Chipa, Ronald Joel**<br>Presentó los objetivos SMART, los Bounded Context Canvases y la organización del informe, y explicó al equipo cómo se documenta el Student Outcome.<br><br><br>**TP1**<br><br>**Escobar Palomino, Sebastian Matias**<br>Preparó el guion para explicar la arquitectura C4 y el diseño táctico de los seis contextos (clases y base de datos) a audiencias técnicas y no técnicas.<br><br>**Bendezu Navarro, Rúbens Fitzgerald**<br>Preparó un guion de sustentación apoyado en la landing, las pantallas y los wireflows para explicar el diseño a piscicultores, administradores, compradores y al equipo técnico. El material distingue acciones de campo, decisiones de negocio y estados del certificado.<br><br>**Choquehuanca Nuñez, Luciana Carolina**<br>Preparó la exposición de las entrevistas del Segmento 3, las User Personas y los escenarios, para transmitir la voz del comprador de supermercado al equipo técnico.<br><br>**Cruz Ibarra, Victor Andres**<br>Preparó la sustentación del diseño estratégico: requisitos priorizados, atributos de calidad, EventStorming y mapa de contextos con Traceability, y la explicación de la verificación por QR para un público no técnico.<br><br>**Peralta Chipa, Ronald Joel**<br>Preparó la exposición del modelo de negocio, el análisis competitivo y el Impact Mapping, y de cómo YakuTrace se conecta con los objetivos de la startup.<br><br><br>**TB2**<br><br>**Escobar Palomino, Sebastian Matias**<br>Explicó al equipo el diseño de la firma HMAC de las lecturas y de la ingesta del backend, y presentó la documentación Swagger a un público técnico.<br><br>**Bendezu Navarro, Rúbens Fitzgerald**<br>Presentó la Landing Page y la Web App desplegadas y explicó su propuesta de valor y sus planes a públicos técnicos y no técnicos.<br><br>**Choquehuanca Nuñez, Luciana Carolina**<br>Presentó la app móvil en funcionamiento (lectura del estanque, alerta y activación del aireador) y narró el video About-the-Product dirigido a piscicultores, administradores y compradores, adaptando el mensaje a cada audiencia.<br><br>**Cruz Ibarra, Victor Andres**<br>Sustentó ante el docente la arquitectura desplegada, la seguridad con JWT por granja y la decisión de alcance del Sprint 1, y preparó la exposición de la entrega.<br><br>**Peralta Chipa, Ronald Joel**<br>Explicó al equipo el flujo desde el sensor hasta la alerta (cola en Redis, firma, ICA y filtro de falsos positivos) y la demostración del Edge desplegado. | **TB1**<br>El equipo aprendió a explicar decisiones técnicas (arquitectura, contextos y requisitos) a oyentes con distinto nivel de detalle, apoyándose en diagramas y en ejemplos del dominio acuícola. Se comprobó que presentar primero el problema del piscicultor y después la solución facilita la comprensión del público.<br><br>**TP1**<br>Con YakuTrace la audiencia se amplió a piscicultores, administradores y compradores de supermercado, por lo que el equipo preparó mensajes distintos para cada uno y los apoyó con la landing, las pantallas y los wireflows.<br><br><br>**TB2**<br>La exposición del Sprint 1 exigió traducir el trabajo técnico (firma de lecturas, JWT, MQTT, despliegue en la nube) a un lenguaje comprensible para el docente, los usuarios entrevistados y los compradores. El video About-the-Product y las entrevistas de validación permitieron comprobar que el mensaje se entendía en cada segmento y ajustarlo cuando no era así. |
+| **Comunica en forma escrita ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería.** | **TB1**<br><br>**Escobar Palomino, Sebastian Matias**<br>Redactó el diseño y análisis de entrevistas, las User Personas, la Task Matrix, el Journey Mapping, el Empathy Mapping, el Domain Message Flow y el contexto Equipment.<br><br>**Bendezu Navarro, Rúbens Fitzgerald**<br>Redactó el Startup y Solution Profile, los segmentos objetivo, los competidores, el Ubiquitous Language, el Impact Mapping, el Context Mapping y el contexto Payment.<br><br>**Choquehuanca Nuñez, Luciana Carolina**<br>Redactó las User Stories, el Product Backlog, la documentación del EventStorming, el Candidate Context Discovery y el contexto Telemetry.<br><br>**Cruz Ibarra, Victor Andres**<br>Redactó los diagramas de arquitectura (contexto, contenedores y despliegue), configuró el repositorio y redactó el contexto IAM.<br><br>**Peralta Chipa, Ronald Joel**<br>Redactó el registro de versiones, los Collaboration Insights, el Student Outcome, los objetivos SMART, los Bounded Context Canvases y el contexto Notification.<br><br><br>**TP1**<br><br>**Escobar Palomino, Sebastian Matias**<br>Redactó y revisó los diagramas C4 coherentes con el monolito modular, el Ubiquitous Language en inglés, el diseño táctico de los seis contextos (capas, clases y base de datos), la bibliografía y los anexos.<br><br>**Bendezu Navarro, Rúbens Fitzgerald**<br>Documentó y revisó el capítulo VI: guía visual, arquitectura de información, landing desktop/móvil, pantallas principales, variantes responsive, estados alternativos y wireflows. Redibujó la interfaz en español y relacionó los recorridos con las historias de usuario. Incorporó fuentes editables, imágenes y controles de calidad que permiten al equipo reproducir y revisar el diseño.<br><br>**Choquehuanca Nuñez, Luciana Carolina**<br>Redactó el diseño y el análisis de las entrevistas del Segmento 3, las User Personas, el Empathy Mapping y los escenarios As-is y To-Be con el comprador de supermercado.<br><br>**Cruz Ibarra, Victor Andres**<br>Redactó las User Stories en Gherkin sin referencias a la interfaz, el Product Backlog, el ADD completo (QAS, constraints, drivers, decisiones y refinamientos), el EventStorming, los canvases y el Context Map con Traceability.<br><br>**Peralta Chipa, Ronald Joel**<br>Redactó la estructura del informe, el registro de versiones, los Collaboration Insights y el Student Outcome, además del Startup Profile, el Lean UX, los competidores y el Impact Mapping con objetivos SMART.<br><br><br>**TB2**<br><br>**Escobar Palomino, Sebastian Matias**<br>Redactó la evidencia de las pruebas BDD, la documentación de los servicios y la configuración del backend.<br><br>**Bendezu Navarro, Rúbens Fitzgerald**<br>Redactó la evidencia de la Landing Page y de la Web App y los mock-ups 8 a 18.<br><br>**Choquehuanca Nuñez, Luciana Carolina**<br>Redactó la evidencia de la app móvil, los mock-ups 1 a 7 y los User Flows 1 a 10, y el guion del video About-the-Product.<br><br>**Cruz Ibarra, Victor Andres**<br>Redactó el Sprint Planning, el Sprint Backlog, la configuración del despliegue en Azure, el Anexo C y la integración final del informe.<br><br>**Peralta Chipa, Ronald Joel**<br>Redactó la configuración del Edge, la evidencia de sus pruebas y de su despliegue en Railway. | **TB1**<br>El informe de TB1 documentó de forma ordenada el problema, los requisitos y la arquitectura mediante tablas, diagramas y plantillas comunes, y el trabajo por capítulos en GitHub permitió que cada integrante comunicara por escrito su parte de manera coherente.<br><br>**TP1**<br>En TP1 el informe incorporó el segmento de compradores y la trazabilidad con blockchain. Para que lo entiendan lectores técnicos y no técnicos, las historias se redactaron en Gherkin sin referencias a la interfaz, el glosario se escribió en inglés con su equivalente en español y los diagramas C4 y UML se hicieron coherentes con la decisión de un monolito modular. Las revisiones cruzadas entre integrantes mejoraron la consistencia del documento.<br><br><br>**TB2**<br>El informe pasó de documentar el diseño a documentar un producto en ejecución: cada resultado se respalda con una captura, un commit o un enlace verificable. Dividir la redacción por producto, con un formato común de tablas y nombres de imagen, mantuvo la coherencia entre secciones escritas por personas distintas. |
 
 <div style="page-break-after: always;"></div>
 
@@ -2915,7 +2999,7 @@ El flujo de navegación es coherente en todas las secciones, asegurando que los 
 
 **Mobile Application Navigation (Android):**
 
-La aplicación móvil nativa para Android utiliza un menú inferior (bottom navigation bar) como sistema de navegación principal, 
+La aplicación móvil (Flutter, con Android como plataforma principal) utiliza un menú inferior (bottom navigation bar) como sistema de navegación principal, 
 accesible en todo momento desde cualquier vista. Este patrón es el estándar recomendado por Material Design para aplicaciones móviles con entre 3 y 5 destinos principales, ya que permite el acceso con el pulgar sin necesidad de desplazar la mano.
 
 Las secciones accesibles desde el menú inferior son:
@@ -3207,7 +3291,7 @@ Las pantallas 19–28 están dibujadas en español y exportadas a PNG. Cada una 
 
 Los diagramas de wireflow ilustran el flujo de navegación combinado con la disposición de las pantallas. Este análisis permite validar la ruta que sigue el usuario para completar tareas críticas, como la configuración de umbrales de alerta o la activación remota de aireadores, asegurando una interacción fluida y lógica entre los distintos contextos del sistema.
 
-- *User Flow Diagrams para el Segmento 1: Piscicultores*
+- *Wireflow Diagrams para el Segmento 1: Piscicultores*
 
 | User Goal: Como Usuario. Deseo poder registrarme en la aplicación móvil para poder acceder a las funcionalidades del sistema |
 |----------------------------------|
@@ -3225,7 +3309,7 @@ Los diagramas de wireflow ilustran el flujo de navegación combinado con la disp
 |----------------------------------|
 | <img src="assets/images/cap6/wireflow4.png" alt="flow" /> |
 
-- *User Flow Diagrams para el Segmento 2: Administradores de Piscigranja*
+- *Wireflow Diagrams para el Segmento 2: Administradores de Piscigranja*
 
 | User Goal:  Como Usuario. Deseo poder registrarme en la aplicación web para obtener acceso a la plataforma  |
 |----------------------------------|
@@ -3383,7 +3467,1283 @@ Las rutas principales y alternativas se explican en cada diagrama. Los flujos 1�
 
 **Entrega y trazabilidad.** Las fuentes, sus PNG y la revisión técnica se versionan en el repositorio. La [revisión técnica del capítulo](design/package-e/REVISION_PAQUETE_E.md) distingue los entregables verificables, el material de sustentación y los pendientes externos. El [guion de sustentación](design/package-e/GUION_SUSTENTACION.md) organiza la explicación por audiencia.
 
+<div style="page-break-after: always;"></div>
+
+### 6.4.3. Applications Mock-ups
+
+Esta sección presenta los mock-ups de las aplicaciones de YakuControl + YakuTrace. Cada pantalla parte del wireframe del mismo número (sección 6.4.1) y le aplica la guía de estilos (sección 6.1): paleta Navy Deep, Cyan Electric y Aqua, tipografía Inter, espaciado en múltiplos de 8 px, botones y chips del Design System, y el sello de verificación de YakuTrace. La numeración 1–28 se mantiene en los wireframes, los mock-ups y los diagramas de las secciones 6.4.4 y 6.4.5.
+
+| Principio de diseño | Aplicación en los mock-ups |
+| :--- | :--- |
+| Jerarquía visual | El estado del estanque y el estado del certificado ocupan la parte superior, con tamaño y color semántico mayores que el resto del contenido. |
+| Consistencia | Los mismos componentes (botones, tarjetas, insignias, chips) y la misma terminología en la Web App, la app móvil y la Landing Page. |
+| Diseño inclusivo | Los estados se comunican con color, ícono y texto; los botones con texto blanco usan el cian accesible `#007EA8`; los controles miden al menos 48 px. |
+| Acción rápida | En la app móvil, la activación del aireador está a dos toques desde una alerta; las acciones destructivas piden confirmación. |
+| Arquitectura de información | Las etiquetas y los menús son los definidos en la sección 6.2: menú inferior en la app móvil, menú lateral en la Web App y recorrido lineal en la verificación pública. |
+
+**Historias cubiertas.** Los mock-ups 1–7 corresponden a US05–US09, US13 y US17 (piscicultor); 8–18 a US10–US16 (administrador); 19–28 a US18 y US19–US27 (YakuTrace).
+
+- *Mock-ups para Segmento 1 (App móvil)*
+
+| Mock-up 1 — Inicio de sesión |
+|----------------------------------|
+| <img src="assets/images/cap6/mockup1.png" alt="Mock-up 1: Inicio de sesión" /> |
+
+| Mock-up 2 — Crear cuenta |
+|----------------------------------|
+| <img src="assets/images/cap6/mockup2.png" alt="Mock-up 2: Crear cuenta" /> |
+
+| Mock-up 3 — Sección Inicio |
+|----------------------------------|
+| <img src="assets/images/cap6/mockup3.png" alt="Mock-up 3: Sección Inicio" /> |
+
+| Mock-up 4 — Inicio – Detalle de estanque |
+|----------------------------------|
+| <img src="assets/images/cap6/mockup4.png" alt="Mock-up 4: Inicio – Detalle de estanque" /> |
+
+| Mock-up 5 — Inicio – Historial de lecturas |
+|----------------------------------|
+| <img src="assets/images/cap6/mockup5.png" alt="Mock-up 5: Inicio – Historial de lecturas" /> |
+
+| Mock-up 6 — Sección Alertas |
+|----------------------------------|
+| <img src="assets/images/cap6/mockup6.png" alt="Mock-up 6: Sección Alertas" /> |
+
+| Mock-up 7 — Sección Perfil |
+|----------------------------------|
+| <img src="assets/images/cap6/mockup7.png" alt="Mock-up 7: Sección Perfil" /> |
+
+- *Mock-ups para Segmento 2 (Web App)*
+
+| Mock-up 8 — Inicio de sesión |
+|----------------------------------|
+| <img src="assets/images/cap6/mockup8.png" alt="Mock-up 8: Inicio de sesión" /> |
+
+| Mock-up 9 — Crear cuenta |
+|----------------------------------|
+| <img src="assets/images/cap6/mockup9.png" alt="Mock-up 9: Crear cuenta" /> |
+
+| Mock-up 10 — Registro de granja |
+|----------------------------------|
+| <img src="assets/images/cap6/mockup10.png" alt="Mock-up 10: Registro de granja" /> |
+
+| Mock-up 11 — Sección Inicio |
+|----------------------------------|
+| <img src="assets/images/cap6/mockup11.png" alt="Mock-up 11: Sección Inicio" /> |
+
+| Mock-up 12 — Sección Estanques |
+|----------------------------------|
+| <img src="assets/images/cap6/mockup12.png" alt="Mock-up 12: Sección Estanques" /> |
+
+| Mock-up 13 — Registrar estanque |
+|----------------------------------|
+| <img src="assets/images/cap6/mockup13.png" alt="Mock-up 13: Registrar estanque" /> |
+
+| Mock-up 14 — Registrar estanque – Detalle de estanque |
+|----------------------------------|
+| <img src="assets/images/cap6/mockup14.png" alt="Mock-up 14: Registrar estanque – Detalle de estanque" /> |
+
+| Mock-up 15 — Sección Equipos |
+|----------------------------------|
+| <img src="assets/images/cap6/mockup15.png" alt="Mock-up 15: Sección Equipos" /> |
+
+| Mock-up 16 — Sección Operadores |
+|----------------------------------|
+| <img src="assets/images/cap6/mockup16.png" alt="Mock-up 16: Sección Operadores" /> |
+
+| Mock-up 17 — Sección Notificaciones |
+|----------------------------------|
+| <img src="assets/images/cap6/mockup17.png" alt="Mock-up 17: Sección Notificaciones" /> |
+
+| Mock-up 18 — Sección Configuración |
+|----------------------------------|
+| <img src="assets/images/cap6/mockup18.png" alt="Mock-up 18: Sección Configuración" /> |
+
+- *Mock-ups para YakuTrace*
+
+| Mock-up 19 — Lotes (lista) |
+|----------------------------------|
+| <img src="assets/images/cap6/mockup19.png" alt="Mock-up 19: Lotes (lista), escritorio" width="720" /> |
+| <img src="assets/images/cap6/mockup19-mobile.png" alt="Mock-up 19: Lotes (lista), móvil" width="300" /> |
+
+| Mock-up 20 — Registrar lote |
+|----------------------------------|
+| <img src="assets/images/cap6/mockup20.png" alt="Mock-up 20: Registrar lote, escritorio" width="720" /> |
+| <img src="assets/images/cap6/mockup20-mobile.png" alt="Mock-up 20: Registrar lote, móvil" width="300" /> |
+
+| Mock-up 21 — Detalle del lote |
+|----------------------------------|
+| <img src="assets/images/cap6/mockup21.png" alt="Mock-up 21: Detalle del lote, escritorio" width="720" /> |
+| <img src="assets/images/cap6/mockup21-mobile.png" alt="Mock-up 21: Detalle del lote, móvil" width="300" /> |
+
+| Mock-up 22 — Registrar cosecha |
+|----------------------------------|
+| <img src="assets/images/cap6/mockup22.png" alt="Mock-up 22: Registrar cosecha, escritorio" width="720" /> |
+| <img src="assets/images/cap6/mockup22-mobile.png" alt="Mock-up 22: Registrar cosecha, móvil" width="300" /> |
+
+| Mock-up 23 — Resumen de calidad del lote |
+|----------------------------------|
+| <img src="assets/images/cap6/mockup23.png" alt="Mock-up 23: Resumen de calidad del lote, escritorio" width="720" /> |
+| <img src="assets/images/cap6/mockup23-mobile.png" alt="Mock-up 23: Resumen de calidad del lote, móvil" width="300" /> |
+
+| Mock-up 24 — Emitir certificado |
+|----------------------------------|
+| <img src="assets/images/cap6/mockup24.png" alt="Mock-up 24: Emitir certificado, escritorio" width="720" /> |
+| <img src="assets/images/cap6/mockup24-mobile.png" alt="Mock-up 24: Emitir certificado, móvil" width="300" /> |
+
+| Mock-up 25 — Certificados (lista) |
+|----------------------------------|
+| <img src="assets/images/cap6/mockup25.png" alt="Mock-up 25: Certificados (lista), escritorio" width="720" /> |
+| <img src="assets/images/cap6/mockup25-mobile.png" alt="Mock-up 25: Certificados (lista), móvil" width="300" /> |
+
+| Mock-up 26 — Plan TRACE |
+|----------------------------------|
+| <img src="assets/images/cap6/mockup26.png" alt="Mock-up 26: Plan TRACE, escritorio" width="720" /> |
+| <img src="assets/images/cap6/mockup26-mobile.png" alt="Mock-up 26: Plan TRACE, móvil" width="300" /> |
+
+| Mock-up 27 — Verificación pública – Verificado |
+|----------------------------------|
+| <img src="assets/images/cap6/mockup27.png" alt="Mock-up 27: Verificación pública – Verificado, escritorio" width="720" /> |
+| <img src="assets/images/cap6/mockup27-mobile.png" alt="Mock-up 27: Verificación pública – Verificado, móvil" width="300" /> |
+
+| Mock-up 28 — Verificación pública – No válido / Revocado / No encontrado |
+|----------------------------------|
+| <img src="assets/images/cap6/mockup28.png" alt="Mock-up 28: Verificación pública – No válido / Revocado / No encontrado, escritorio" width="720" /> |
+| <img src="assets/images/cap6/mockup28-mobile.png" alt="Mock-up 28: Verificación pública – No válido / Revocado / No encontrado, móvil" width="300" /> |
+
+Fuente editable de los mock-ups 1–18: [Figma](https://www.figma.com/design/FdwCU88zpBqlCuHjQ9iY69/YacuControl?node-id=0-1). Los mock-ups 19–28 se elaboran en Figma a partir de los wireframes 19–28.
+
+<div style="page-break-after: always;"></div>
+
+### 6.4.4. Applications User Flow Diagrams
+
+Esta sección presenta los User Flows de las aplicaciones. Cada flujo se deriva del wireflow del mismo número (sección 6.4.2) y tiene el mismo *user goal*; la diferencia es que los wireframes se reemplazan por los mock-ups de la sección 6.4.3 y que se dibujan tanto el camino esperado (*happy path*) como los caminos alternativos o de error (*unhappy paths*). Los diagramas se elaboraron con Figma y se exportaron a `assets/images/cap6/userflow<N>.png`.
+
+- *User Flow Diagrams para el Segmento 1: Piscicultores (App móvil)*
+
+| User Flow 1. Persona: Piscicultor. User goal: Como piscicultor, deseo registrarme en la aplicación móvil para acceder a las funcionalidades del sistema. |
+|----------------------------------|
+| <img src="assets/images/cap6/userflow1.png" alt="User flow 1: Registrarse en la app móvil" /> |
+
+**Explicación del flujo 1.** *Happy path:* Inicio → Registro con código de granja → Confirmación → Home. *Camino alternativo:* Código de granja inválido o datos incompletos: mensaje de error junto al campo y vuelta al formulario.
+
+| User Flow 2. Persona: Piscicultor. User goal: Como piscicultor, deseo visualizar la información básica de un estanque (pH, temperatura, turbidez y estado) para conocer su situación en tiempo real. |
+|----------------------------------|
+| <img src="assets/images/cap6/userflow2.png" alt="User flow 2: Ver la información básica de un estanque" /> |
+
+**Explicación del flujo 2.** *Happy path:* Home → Selección de estanque → Detalle con lecturas y estado. *Camino alternativo:* Sensor sin conexión: se muestra el último valor conocido con el aviso "sensor desconectado" (US06, escenario 2).
+
+| User Flow 3. Persona: Piscicultor. User goal: Como piscicultor, deseo visualizar las alertas con su prioridad y estado para actuar a tiempo. |
+|----------------------------------|
+| <img src="assets/images/cap6/userflow3.png" alt="User flow 3: Ver alertas y atenderlas" /> |
+
+**Explicación del flujo 3.** *Happy path:* Home → Alertas → Detalle de alerta → Atención (el piscicultor marca la alerta como atendida). *Camino alternativo:* Entrega no disponible: la alerta queda pendiente en el historial y se reintenta (US07, escenario 2).
+
+| User Flow 4. Persona: Piscicultor. User goal: Como piscicultor, deseo ver y editar mi perfil y cerrar sesión para administrar mi cuenta. |
+|----------------------------------|
+| <img src="assets/images/cap6/userflow4.png" alt="User flow 4: Ver y editar el perfil" /> |
+
+**Explicación del flujo 4.** *Happy path:* Home → Perfil → Edición → Guardado / Cierre de sesión. *Camino alternativo:* Datos inválidos: el sistema rechaza el guardado y muestra el error junto al campo.
+
+- *User Flow Diagrams para el Segmento 2: Administradores de Piscigranja (Web App)*
+
+| User Flow 5. Persona: Administrador. User goal: Como administrador, deseo registrarme en la aplicación web para obtener acceso a la plataforma. |
+|----------------------------------|
+| <img src="assets/images/cap6/userflow5.png" alt="User flow 5: Registrarse en la Web App" /> |
+
+**Explicación del flujo 5.** *Happy path:* Inicio → Registro → Registro de granja → Dashboard. *Camino alternativo:* Correo ya registrado o datos inválidos: el sistema indica el error y mantiene el formulario.
+
+| User Flow 6. Persona: Administrador. User goal: Como administrador, deseo registrar estanques de forma ordenada para ampliar mi capacidad productiva. |
+|----------------------------------|
+| <img src="assets/images/cap6/userflow6.png" alt="User flow 6: Crear estanques" /> |
+
+**Explicación del flujo 6.** *Happy path:* Estanques → Registrar estanque → Detalle → Confirmación. *Camino alternativo:* Identificador de hardware duplicado: el sistema rechaza la acción e informa la duplicidad (US15, escenario 2).
+
+| User Flow 7. Persona: Administrador. User goal: Como administrador, deseo visualizar y gestionar los equipos para asignarlos, agregarlos o eliminarlos de los estanques. |
+|----------------------------------|
+| <img src="assets/images/cap6/userflow7.png" alt="User flow 7: Gestionar equipos" /> |
+
+**Explicación del flujo 7.** *Happy path:* Equipos → Lista → Asignar o agregar → Confirmación. *Camino alternativo:* Equipo ya vinculado a otro estanque: el sistema indica el conflicto y no modifica la asignación.
+
+| User Flow 8. Persona: Administrador. User goal: Como administrador, deseo visualizar y editar la información de mis operadores para mantener actualizado al personal. |
+|----------------------------------|
+| <img src="assets/images/cap6/userflow8.png" alt="User flow 8: Gestionar operadores" /> |
+
+**Explicación del flujo 8.** *Happy path:* Operadores → Lista → Editar → Guardado. *Camino alternativo:* Datos inválidos: el sistema rechaza el cambio y muestra el error.
+
+| User Flow 9. Persona: Administrador. User goal: Como administrador, deseo ver las notificaciones filtradas por fecha, nombre y estado para conocer las últimas novedades de un estanque. |
+|----------------------------------|
+| <img src="assets/images/cap6/userflow9.png" alt="User flow 9: Ver notificaciones con filtros" /> |
+
+**Explicación del flujo 9.** *Happy path:* Notificaciones → Filtros (fecha, nombre, estado) → Lista filtrada. *Camino alternativo:* Filtros sin coincidencias: se muestra un estado vacío con la opción de limpiar los filtros.
+
+| User Flow 10. Persona: Administrador. User goal: Como administrador, deseo ver y editar mis datos personales para administrar mi cuenta de forma segura. |
+|----------------------------------|
+| <img src="assets/images/cap6/userflow10.png" alt="User flow 10: Ver y editar los datos personales" /> |
+
+**Explicación del flujo 10.** *Happy path:* Configuración → Edición → Guardado. *Camino alternativo:* Datos inválidos: el sistema rechaza el cambio y muestra el error.
+
+- *User Flow Diagrams de YakuTrace: trazabilidad, verificación y funciones complementarias*
+
+| User Flow 11. Persona: Administrador. User goal: Como administrador, deseo crear un lote y registrar sus hitos para llevar el historial del ciclo. |
+|----------------------------------|
+| <img src="assets/images/cap6/userflow11.png" alt="User flow 11: Crear un lote y registrar sus hitos" /> |
+
+**Explicación del flujo 11.** *Happy path:* Lotes → Registrar lote (estanque, fecha, cantidad, origen) → Confirmación → Detalle del lote con el hito de siembra → Registrar hito → Detalle actualizado. *Camino alternativo:* Si el estanque ya tiene un lote activo, se muestra el error y se vuelve al formulario.
+
+| User Flow 12. Persona: Administrador. User goal: Como administrador, deseo emitir un certificado de trazabilidad con QR para un lote cosechado. |
+|----------------------------------|
+| <img src="assets/images/cap6/userflow12.png" alt="User flow 12: Emitir un certificado con QR" /> |
+
+**Explicación del flujo 12.** *Happy path:* Detalle del lote → Registrar cosecha → Emitir certificado → Vista previa y requisitos cumplidos → Confirmar → Certificado emitido con QR (estado "Registro en proceso" → "Verificado"). *Camino alternativo:* Requisitos incompletos: se muestra el motivo y se bloquea la emisión. Red no disponible: se emite en estado "Registro en proceso".
+
+| User Flow 13. Persona: Comprador. User goal: Como comprador de supermercado, deseo verificar un lote escaneando su QR. |
+|----------------------------------|
+| <img src="assets/images/cap6/userflow13.png" alt="User flow 13: Verificar un lote por QR" /> |
+
+**Explicación del flujo 13.** *Happy path:* Escanear QR → Página de verificación (cargando) → Resultado "Verificado" con resumen e historial → Ver prueba de registro. *Camino alternativo:* Resultados "No válido", "Revocado" o "Código no encontrado", cada uno con su mensaje de estado.
+
+| User Flow 14. Persona: Administrador. User goal: Como administrador, deseo activar el complemento TRACE para emitir certificados. |
+|----------------------------------|
+| <img src="assets/images/cap6/userflow14.png" alt="User flow 14: Activar el plan TRACE" /> |
+
+**Explicación del flujo 14.** *Happy path:* Suscripción → Plan TRACE → Confirmar y pagar → Confirmación → TRACE activo. *Camino alternativo:* Suscripción inactiva: se indica que debe estar activa antes de contratar el complemento.
+
+| User Flow 15. Persona: Piscicultor. User goal: Como piscicultor, deseo registrar una novedad sobre un estanque para informar al administrador. |
+|----------------------------------|
+| <img src="assets/images/cap6/userflow15.png" alt="User flow 15: Registrar una novedad del estanque" /> |
+
+**Explicación del flujo 15.** *Happy path:* Estanque → Nueva novedad → Redactar → Guardar → Novedad registrada con fecha, hora y autor. *Camino alternativo:* Novedad vacía: el sistema no la registra y solicita contenido (US09, escenario 2).
+
+| User Flow 16. Persona: Administrador. User goal: Como administrador, deseo generar un reporte mensual de bajas para mis registros contables. |
+|----------------------------------|
+| <img src="assets/images/cap6/userflow16.png" alt="User flow 16: Generar un reporte de mortalidad" /> |
+
+**Explicación del flujo 16.** *Happy path:* Reportes → Mortalidad → Seleccionar mes → Generar → Documento con las bajas por lote. *Camino alternativo:* Mes sin bajas: el documento indica que no hay registros (US11, escenario 2).
+
+| User Flow 17. Persona: Administrador. User goal: Como administrador, deseo ver la evolución anual de los parámetros del agua para planificar el siguiente ciclo. |
+|----------------------------------|
+| <img src="assets/images/cap6/userflow17.png" alt="User flow 17: Consultar tendencias anuales" /> |
+
+**Explicación del flujo 17.** *Happy path:* Tendencias → Seleccionar periodo anual y parámetro → Gráfico de evolución. *Camino alternativo:* Periodo con gran volumen de datos: se presenta la evolución agregada por periodos (US12, escenario 2).
+
+| User Flow 18. Persona: Administrador. User goal: Como administrador, deseo definir los límites de alerta de un estanque para personalizar el control. |
+|----------------------------------|
+| <img src="assets/images/cap6/userflow18.png" alt="User flow 18: Configurar umbrales del estanque" /> |
+
+**Explicación del flujo 18.** *Happy path:* Estanque → Umbrales → Editar mínimo y máximo → Guardar → Límites aplicados. *Camino alternativo:* Mínimo mayor que el máximo: el sistema rechaza el cambio e informa la inconsistencia (US13, escenario 2).
+
+| User Flow 19. Persona: Administrador. User goal: Como administrador, deseo pagar mi suscripción para mantener el servicio activo. |
+|----------------------------------|
+| <img src="assets/images/cap6/userflow19.png" alt="User flow 19: Pagar la suscripción base" /> |
+
+**Explicación del flujo 19.** *Happy path:* Suscripción → Elegir plan → Pasarela de pago → Pago confirmado → Suscripción activa. *Camino alternativo:* Pago rechazado: la suscripción queda pendiente y se informa al administrador (US14, escenario 2).
+
+| User Flow 20. Persona: Administrador. User goal: Como administrador, deseo conocer el tiempo que tarda un operario en atender una alerta para evaluar la respuesta del equipo. |
+|----------------------------------|
+| <img src="assets/images/cap6/userflow20.png" alt="User flow 20: Auditar la respuesta a una alerta" /> |
+
+**Explicación del flujo 20.** *Happy path:* Notificaciones → Alerta atendida → Detalle con hora de alerta y hora de atención. *Camino alternativo:* Alerta atendida por el sistema: se indica "atendida por el sistema" (US16, escenario 2).
+
+| User Flow 21. Persona: Piscicultor. User goal: Como piscicultor, deseo activar los filtros de limpieza de un estanque para reducir la turbidez. |
+|----------------------------------|
+| <img src="assets/images/cap6/userflow21.png" alt="User flow 21: Activar la limpieza de un estanque" /> |
+
+**Explicación del flujo 21.** *Happy path:* Estanque → Limpieza → Activar → Confirmación del estado del equipo. *Camino alternativo:* Equipo sin energía: el sistema informa el error de hardware (US17, escenario 2).
+
+| User Flow 22. Persona: Administrador. User goal: Como administrador, deseo revocar un certificado emitido por error para evitar que se use como evidencia. |
+|----------------------------------|
+| <img src="assets/images/cap6/userflow22.png" alt="User flow 22: Revocar un certificado" /> |
+
+**Explicación del flujo 22.** *Happy path:* Certificados → Seleccionar certificado → Revocar con motivo → Confirmación → Estado "Revocado". *Camino alternativo:* Certificado ya revocado: el sistema lo indica y no repite la acción (US25, escenario 2).
+
+| User Flow 23. Persona: Administrador. User goal: Como administrador, deseo crear cuentas para mis operarios para delegarles el acceso. |
+|----------------------------------|
+| <img src="assets/images/cap6/userflow23.png" alt="User flow 23: Invitar a un operario" /> |
+
+**Explicación del flujo 23.** *Happy path:* Operadores → Invitar → Datos del operario → Enviar → Código de registro enviado por correo. *Camino alternativo:* Correo duplicado: el sistema indica que el usuario ya existe (US10, escenario 2).
+
+<div style="page-break-after: always;"></div>
+
+### 6.4.5. Applications Prototyping
+
+Esta sección presenta los prototipos de interfaz de las aplicaciones, con simulación de interacción y navegación según los User Flows de la sección 6.4.4. Las decisiones de interacción provienen del sistema de navegación definido en la sección 6.2.5 y se resumen a continuación.
+
+| Decisión de interacción | Aplicación en el prototipo | Relación con la arquitectura de información |
+| :--- | :--- | :--- |
+| Menú inferior de cuatro destinos (Inicio, Estanques, Alertas, Perfil) | App móvil | Acceso con el pulgar a las secciones principales (sección 6.2.5) |
+| Menú lateral fijo en escritorio y plegable en pantallas pequeñas | Web App | Organización por tema: Estanques, Equipos, Operadores, Lotes, Certificados |
+| Acción de emergencia a dos toques desde la alerta | App móvil | Prioridad de contenido: el estado y la acción antes que el historial |
+| Estados de confianza del certificado (Verificado, No válido, Revocado, En proceso) con color, ícono y texto | Verificación pública | Recorrido lineal del comprador: QR → estado → resumen → historial → prueba |
+| Confirmación antes de acciones irreversibles (emitir o revocar un certificado) | Web App | Retroalimentación y control del usuario |
+
+Para cada aplicación se grabó un video que demuestra y explica los principales flujos del prototipo.
+
+| Aplicación | Prototipo | Flujos demostrados | Video en Microsoft Stream |
+| :--- | :--- | :--- | :--- |
+| App móvil del piscicultor | [Prototipo en Figma](https://www.figma.com/design/FdwCU88zpBqlCuHjQ9iY69/YacuControl?node-id=0-1) | User Flows 1–4, 15 y 21: registro, estado del estanque, alertas con activación del aireador, perfil, novedades y limpieza | (pegar enlace) |
+| Web App del administrador | [Prototipo en Figma](https://www.figma.com/design/FdwCU88zpBqlCuHjQ9iY69/YacuControl?node-id=0-1) | User Flows 5–12, 14 y 16–20, 22–23: registro, estanques, equipos, operadores, notificaciones, lotes y certificados | (pegar enlace) |
+| Verificación pública (comprador) | (pegar enlace del prototipo) | User Flow 13: verificación de un lote por QR en sus cuatro resultados | (pegar enlace) |
+
+![Video del prototipo de la app móvil](./assets/images/cap6/prototype-mobile.png)
+
+![Video del prototipo de la Web App](./assets/images/cap6/prototype-web.png)
+
+![Video del prototipo de la verificación pública](./assets/images/cap6/prototype-verify.png)
+
+<div style="page-break-after: always;"></div>
+
+# Capítulo VII: Product Implementation, Validation & Deployment
+
+Este capítulo documenta la implementación, las pruebas, el despliegue y la validación de la primera versión de los productos digitales de YakuControl + YakuTrace: la Landing Page, la Web App, la aplicación móvil, el backend (monolito modular) y el Edge API. En esta entrega se cubre el **Sprint 1**, cuyo alcance son las 13 historias de mayor valor del Product Backlog (45 story points): la Landing Page, la autenticación, el registro de estanques, la ingesta firmada de telemetría desde el Edge, la lectura de sensores, las alertas con notificación push y la activación remota del aireador. El Sprint 1 parte de una versión inicial de los productos (publicada en septiembre de 2026 como primer commit de cada repositorio) y la lleva a una primera versión desplegada, completando lo que faltaba: la firma de lecturas, el aislamiento por granja, el cálculo del ICA, las pruebas BDD, la sección YakuTrace y el formulario de ventas de la Landing Page. La implementación de YakuTrace (lotes, certificados, anclaje en blockchain y verificación) y la integración de pagos quedan para el Sprint 2.
+
+## 7.1. Software Configuration Management
+
+Esta sección establece las herramientas, las convenciones y los procesos que mantienen la consistencia del proyecto durante su ciclo de vida: el entorno de desarrollo, el control del código fuente, las guías de estilo y la configuración del despliegue.
+
+### 7.1.1. Software Development Environment Configuration
+
+| Actividad | Producto | Propósito de uso en el proyecto | Ruta de referencia / descarga |
+| :--- | :--- | :--- | :--- |
+| Project Management | Trello | Product Backlog y Sprint Backlog | https://trello.com |
+| Requirements Management | UXPressia, Miro, LucidChart | User Personas, Empathy Maps, Impact Map y Scenario Maps | https://uxpressia.com · https://miro.com · https://lucid.app |
+| Product Design | Figma | Wireframes, mock-ups, User Flows y prototipos | https://www.figma.com |
+| Diagramas de arquitectura | Structurizr, LucidChart | C4 Model, UML y diseño de base de datos | https://structurizr.com · https://lucid.app |
+| Source Code Management | Git y GitHub | Repositorios, GitFlow y revisión de Pull Requests | https://github.com |
+| Software Development (backend) | IntelliJ IDEA, JDK 17, Maven, Spring Boot 3.4, Spring Modulith | Desarrollo del monolito modular | https://www.jetbrains.com/idea · https://spring.io/projects/spring-boot |
+| Software Development (Web App y app móvil) | Visual Studio Code, Android Studio, Flutter SDK (Dart) | Una sola base de código Flutter para la app móvil del piscicultor (Android) y la Web App del administrador (Flutter Web) | https://code.visualstudio.com · https://developer.android.com/studio · https://docs.flutter.dev |
+| Software Development (Landing Page) | Visual Studio Code, HTML5, CSS3 y JavaScript | Landing Page estática sin frameworks | https://code.visualstudio.com |
+| Software Development (Edge/IoT) | Python, Flask, Eclipse Mosquitto, Redis, Arduino IDE, Wokwi | Edge API con cola resiliente, broker MQTT y prototipo IoT | https://www.python.org · https://mosquitto.org · https://redis.io · https://wokwi.com |
+| Software Testing | JUnit 5, Cucumber, pytest, Flutter Test, Postman | Pruebas unitarias, de integración y BDD | https://junit.org · https://cucumber.io · https://pytest.org · https://www.postman.com |
+| Software Deployment | Azure, Railway, Netlify, Firebase (Hosting y App Distribution), GitHub Actions | Despliegue del backend, el Edge, la Landing Page, la Web App y la app móvil | https://portal.azure.com · https://railway.com · https://www.netlify.com · https://firebase.google.com |
+| Software Documentation | Swagger UI (springdoc OpenAPI), Markdown | Documentación de los servicios y del informe | https://swagger.io · https://www.markdownguide.org |
+
+### 7.1.2. Source Code Management
+
+El código fuente se gestiona en GitHub, en la organización del equipo, con un repositorio por producto digital. La Web App y la app móvil comparten el repositorio `VeriFish-Fronted`, porque ambas se construyen con Flutter:
+
+| Producto | Repositorio | Contenido |
+| :--- | :--- | :--- |
+| Informe del proyecto | https://github.com/1ASI0728-2620-9075-G2-VeriFish/Verifish-Report | Informe en Markdown, imágenes y fuentes de diseño |
+| Backend | https://github.com/1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | Monolito modular Spring Boot, documentación Swagger y pruebas (JUnit y `.feature`) |
+| Web App y app móvil | https://github.com/1ASI0728-2620-9075-G2-VeriFish/VeriFish-Fronted | App móvil del piscicultor y Web App del administrador (Flutter: Android y Web) |
+| Landing Page | https://github.com/1ASI0728-2620-9075-G2-VeriFish/Verifish-Landing | Landing Page (HTML5, CSS3 y JavaScript) |
+| Edge API | https://github.com/1ASI0728-2620-9075-G2-VeriFish/Verifish-Edge | Edge API (Python/Flask, Mosquitto, Redis) y simulador de sensores |
+
+**GitFlow.** El equipo aplica el modelo de ramas de Driessen (2010):
+
+| Rama | Convención de nombre | Uso |
+| :--- | :--- | :--- |
+| Principal | `main` | Solo versiones entregables (releases) |
+| Integración | `develop` | Integra el trabajo del equipo |
+| Funcionalidad | `feature/<tema>` (ej. `feature/telemetry-ingestion`) | Una por tarea o historia (ej. `feature/hmac-signature`); se crea desde `develop` y se integra por Pull Request con revisión de otro integrante |
+| Revisión | `feature/review-chapter-<n>` | Revisiones cruzadas del informe |
+| Evidencias | `feature/tb2-evidence-<integrante>` | Evidencias de cada integrante en el informe |
+| Release | `release/<MAJOR.MINOR.PATCH>` | Preparación de una entrega a `main` |
+| Hotfix | `hotfix/<descripción>` | Corrección urgente sobre `main` |
+
+**Semantic Versioning.** Los releases se nombran `MAJOR.MINOR.PATCH` (Preston-Werner, s. f.). La primera versión desplegada de cada producto se publica como `v0.1.0`, ya que la API pública aún puede cambiar durante el Sprint 2.
+
+**Conventional Commits.** Los mensajes de commit siguen el formato `<tipo>(<alcance>): <descripción>` (Conventional Commits, s. f.), con los tipos `feat`, `fix`, `docs`, `test`, `refactor`, `chore` y `ci`. Por ejemplo: `feat(telemetry): validate reading signature with the farm key`.
+
+### 7.1.3. Source Code Style Guide & Conventions
+
+Todo el código, los identificadores, los endpoints y los archivos `.feature` se escriben en **inglés**.
+
+| Lenguaje / artefacto | Guía adoptada | Reglas principales |
+| :--- | :--- | :--- |
+| Java (backend) | Google Java Style Guide (Google, s. f.-a) | Clases en `PascalCase`; métodos y variables en `camelCase`; paquetes en minúscula, uno por Bounded Context |
+| HTML, CSS y JavaScript (Landing Page) | Google HTML/CSS Style Guide (Google, s. f.-b) | Etiquetas semánticas en minúscula, clases en `kebab-case`, `camelCase` en JavaScript y atributos ARIA en los elementos interactivos |
+| Dart (Web App y app móvil) | Effective Dart (Dart Team, s. f.) | `UpperCamelCase` para tipos; `lowerCamelCase` para miembros; `snake_case` para archivos |
+| Python (Edge API) | PEP 8 (van Rossum et al., 2001) | `snake_case` para funciones y variables; `PascalCase` para clases |
+| Gherkin (`.feature`) | Gherkin reference (Cucumber, s. f.) | Un comportamiento por escenario; pasos en presente y tercera persona |
+| API REST | OpenAPI Specification (OpenAPI Initiative, s. f.) | Rutas en plural y `kebab-case` con prefijo `/api/v1/`; códigos HTTP estándar |
+| Commits | Conventional Commits | Ver sección 7.1.2 |
+
+### 7.1.4. Software Deployment Configuration
+
+El despliegue sigue lo definido en el diagrama de la sección 4.3.4. Cada producto se publica desde la rama `main` de su repositorio, una vez etiquetada la versión.
+
+| Producto | Plataforma | Pasos de despliegue | URL |
+| :--- | :--- | :--- | :--- |
+| Backend | Azure App Service (Java 17, Linux, plan B1, Brazil South) | 1) Crear el App Service `yaku-backend`. 2) Configurar las variables de entorno: `DB_URL`, `DB_USERNAME`, `DB_PASSWORD`, `JWT_SECRET`, `CORS_ALLOWED_ORIGINS`, `FIREBASE_CONFIG_PATH`, `MQTT_ENABLED`, `SERVER_PORT` y las de Stripe (claves de prueba). 3) Subir la cuenta de servicio de Firebase al almacenamiento persistente del App Service (`/home`) mediante Kudu, nunca al repositorio, y apuntar `FIREBASE_CONFIG_PATH` a `file:/home/firebase-service-account.json`. 4) Cargar el perfil de publicación como secreto `AZURE_WEBAPP_PUBLISH_PROFILE` en GitHub. 5) El workflow de GitHub Actions compila con Maven y publica el JAR en cada push a `develop`. 6) Comprobar `/swagger-ui.html`. | https://yaku-backend-hjbmb2btfzece4c0.brazilsouth-01.azurewebsites.net |
+| Base de datos | Azure Database for PostgreSQL (servidor flexible, B1ms, PostgreSQL 16, Brazil South) | 1) Crear el servidor flexible y la base `yaku`. 2) Permitir el acceso desde los servicios de Azure. 3) Cargar la cadena de conexión en las variables de entorno del App Service. 4) Dejar que el backend cree el esquema al iniciar. | — |
+| Edge API | Railway | 1) Crear el proyecto y enlazar el repositorio del Edge (con su `Dockerfile`). 2) Agregar los servicios de Redis y de Mosquitto. 3) Configurar `MQTT_BROKER`, `MQTT_PORT`, `REDIS_HOST`, `REDIS_PORT`, `API_URL`, `FARM_ID` y `FARM_TOKEN`. 4) Desplegar y revisar los registros. | (pegar enlace) |
+| Web App (Flutter Web) | Firebase Hosting | 1) `flutter build web --release --dart-define=API_BASE_URL=<URL del backend>/api`. 2) `firebase deploy --only hosting`. 3) Verificar que la URL de la Web App esté en `CORS_ALLOWED_ORIGINS`. | (pegar enlace) |
+| Landing Page | Netlify (hosting estático con CDN) | 1) Enlazar el repositorio de la Landing Page. 2) Publicar la carpeta raíz. 3) Verificar que los llamados a la acción enlacen con la Web App. | (pegar enlace) |
+| App móvil (Android) | Firebase App Distribution | 1) `flutter build apk --release --dart-define=API_BASE_URL=<URL del backend>/api`. 2) Subir el APK como versión `v0.1.0`. 3) Invitar a los testers por correo. | (pegar enlace de la invitación) |
+
+![Deployment Diagram](./assets/images/cap4/c4_deployment.png)
+
+<div style="page-break-after: always;"></div>
+
+## 7.2. Solution Implementation
+
+Esta sección registra el avance de la implementación por Sprint, en términos de producto y de trabajo colaborativo. En esta entrega se documenta el Sprint 1; el Sprint 2 se incorporará en la entrega final.
+
+### 7.2.1. Sprint 1
+
+#### 7.2.1.1. Sprint Planning 1
+
+El Sprint Planning 1 definió el alcance de la primera versión desplegada. Se eligieron las 13 historias de mayor valor del Product Backlog (posiciones 1 a 13 de la sección 3.4), que forman un recorrido completo desde la Landing Page hasta la acción sobre el equipo en el estanque, y se dejaron para el Sprint 2 las historias de YakuTrace y de pago.
+
+| **Sprint #** | Sprint 1 |
+| :--- | :--- |
+| **Sprint Planning Background** | |
+| Date | 2026-10-29 |
+| Time | 09:00 PM |
+| Location | Reunión virtual del equipo |
+| Prepared By | Cruz Ibarra, Victor Andres |
+| Attendees (to planning meeting) | Escobar Palomino, Sebastian Matias / Bendezu Navarro, Rúbens Fitzgerald / Choquehuanca Nuñez, Luciana Carolina / Cruz Ibarra, Victor Andres / Peralta Chipa, Ronald Joel |
+| Sprint 0 Review Summary | No aplica: es el primer Sprint. El punto de partida es el informe con el diseño estratégico, táctico y de experiencia de usuario hasta TP1 (Capítulos I a VI) y el prototipo IoT. |
+| Sprint 0 Retrospective Summary | No aplica: es el primer Sprint. |
+| **Sprint Goal & User Stories** | |
+| Sprint 1 Goal | Desplegar la primera versión del flujo de monitoreo de YakuControl: Landing Page, autenticación, registro de estanques, ingesta firmada de telemetría desde el Edge, lectura de sensores, alerta con notificación push y activación remota del aireador. Métrica de cumplimiento: las 13 historias seleccionadas (45 story points) en estado *Done*, con evidencia en los cinco productos. |
+| Sprint 1 Velocity | 45 story points |
+| Sum of Story Points | 45 |
+
+| # Orden | User Story Id | Título | Story Points |
+| :--- | :--- | :--- | :--- |
+| 1 | US01 | Propuesta de valor | 2 |
+| 2 | US02 | Catálogo de planes | 2 |
+| 3 | US04 | Formulario de ventas | 3 |
+| 4 | US18 | Sección YakuTrace para supermercados | 3 |
+| 5 | TS02 | Seguridad con JWT | 5 |
+| 6 | US05 | Autenticación en la app móvil | 3 |
+| 7 | US15 | Registro de estanque | 3 |
+| 8 | TS01 | API de ingesta de telemetría | 5 |
+| 9 | TS04 | Firma de lecturas del Edge | 3 |
+| 10 | US06 | Lectura de sensores | 3 |
+| 11 | US07 | Alertas de calidad del agua | 5 |
+| 12 | TS03 | Envío de alertas por push | 3 |
+| 13 | US08 | Control de aireación | 5 |
+
+Las historias de las posiciones 14 a 36 (YakuTrace, pagos y funciones administrativas) no forman parte de este Sprint. La documentación OpenAPI (TS09) se realiza como trabajo transversal de este Sprint, porque los servicios del Sprint 1 deben quedar documentados.
+
+#### 7.2.1.2. Sprint Backlog 1
+
+El objetivo del Sprint 1 es desplegar la primera versión del flujo de monitoreo de YakuControl. Las 13 historias se descompusieron en 32 work-items, con una estimación total de 97 horas, repartidos entre los cinco integrantes de modo que cada uno trabaja sobre su propio producto y repositorio.
+
+**Tablero del Sprint en Trello:** https://trello.com/invite/b/6ac7ef560e7a24aba89be174/ATTI780f9093bca7b5df991145c8fafa33f7BE95751C/verifish-sprint-1
+
+![Sprint 1 Backlog en Trello](./assets/images/sprint1/sprint1-backlog-trello.png)
+
+| Sprint # | Sprint 1 | | | | | | |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **User Story** | | **Work-Item / Task** | | | | | |
+| **Id** | **Title** | **Id** | **Title** | **Description** | **Estimation (Hours)** | **Assigned To** | **Status (To-do / In-Process / To-Review / Done)** |
+| US01 | Propuesta de valor | T01 | Ajuste de la propuesta de valor | Revisión de Hero y Problem Statement con las métricas del informe. | 2 | Bendezu, Rúbens | Done |
+|  |  | T02 | Términos y condiciones en el footer | Página de términos y condiciones y enlace desde el footer. | 2 | Bendezu, Rúbens | Done |
+| US02 | Catálogo de planes | T03 | Revisión de la sección de planes | Planes Starter, Professional y Enterprise, con mención del complemento TRACE. | 2 | Bendezu, Rúbens | Done |
+| US04 | Formulario de ventas | T04 | Formulario de ventas | Formulario comercial (nombre, empresa, cantidad de pozas, correo y teléfono) con validación y mensaje de confirmación. | 4 | Bendezu, Rúbens | Done |
+| US18 | Sección YakuTrace para supermercados | T05 | Sección YakuTrace | Sección para supermercados con el llamado a la acción "Verificar un lote". | 3 | Bendezu, Rúbens | Done |
+| TS02 | Seguridad con JWT | T06 | Claim `farmId` en el JWT | Incluir `farmId` en el token al iniciar sesión (para el ADMIN se resuelve desde la granja de la que es dueño) y retirar el claim residual `workshop_id`. | 3 | Cruz, Victor | Done |
+|  |  | T07 | Aislamiento por granja en el filtro de seguridad | `FarmAccessGuard` aplicado en los controladores de estanques, equipos y telemetría; 401 sin token válido (o con token alterado o vencido) y 403 para otra granja, sin revelar datos del recurso. | 5 | Cruz, Victor | Done |
+| US05 | Autenticación en la app móvil | T08 | Pruebas de modelos y de autenticación en la app | Pruebas unitarias de los modelos y del servicio de autenticación de la app (reemplazan el test de ejemplo). | 3 | Choquehuanca, Luciana | Done |
+| US15 | Registro de estanque | T09 | Registro de estanque y equipo | Rechazo de un `deviceId` duplicado en el registro del equipo IoT (409) y verificación del flujo estanque, equipo y vínculo. | 3 | Escobar, Sebastian | Done |
+|  |  | T10 | Vistas web de estanques y equipos | Revisión y ajuste en Flutter Web de las vistas de listado, registro de estanques y vínculo de equipos. | 3 | Bendezu, Rúbens | Done |
+| TS01 | API de ingesta de telemetría | T11 | Validación de la ingesta | Códigos de respuesta de `POST /api/v1/telemetry/manual-ingest` (datos incompletos y firma inválida). | 3 | Escobar, Sebastian | Done |
+| TS04 | Firma de lecturas del Edge | T12 | Validación de firma en el backend | Verificación HMAC-SHA256 de cada lectura con el token de la granja; registro de los intentos inválidos. | 5 | Escobar, Sebastian | Done |
+|  |  | T13 | Firma de lecturas en el Edge API | Firma de cada lectura con el token de la granja (cabeceras `X-Farm-Id` y `X-Signature`) antes de reenviarla. | 4 | Peralta, Ronald | Done |
+| US06 | Lectura de sensores | T14 | Verificación de endpoints de lectura | Estado actual e histórico del estanque; corrección de la columna reservada `value` en `SensorReading`. | 2 | Escobar, Sebastian | Done |
+|  |  | T15 | Revisión de las pantallas de lectura | Detalle del estanque con pH, temperatura, turbidez y gráficos de la app móvil. | 2 | Choquehuanca, Luciana | Done |
+| US07 | Alertas de calidad del agua | T16 | Pruebas de la detección de anomalías | Pruebas del evento de umbral superado con severidad WARNING y CRITICAL. | 2 | Escobar, Sebastian | Done |
+|  |  | T17 | ICA y filtro de falsos positivos en el Edge | Cálculo del Índice de Calidad del Agua y confirmación de la anomalía con una ventana de lecturas. | 6 | Peralta, Ronald | Done |
+|  |  | T18 | Revisión de la pantalla de alertas | Listado de alertas por severidad y marcado como leídas. | 2 | Choquehuanca, Luciana | Done |
+| TS03 | Envío de alertas por push | T19 | Credenciales Firebase en el despliegue | Cargar la cuenta de servicio de Firebase en el App Service (fuera del repositorio), fijar `FIREBASE_CONFIG_PATH` y verificar en el registro la inicialización del Firebase Admin SDK. | 2 | Cruz, Victor | Done |
+|  |  | T20 | Registro del token del dispositivo | Verificación del registro del token FCM desde la app móvil. | 1 | Choquehuanca, Luciana | Done |
+| US08 | Control de aireación | T21 | Simulador de sensores con respuesta a comandos | El simulador del Edge reacciona a `PUMP1_ON` y `PUMP2_ON` y resuelve el tópico por dispositivo. | 4 | Peralta, Ronald | Done |
+|  |  | T22 | Botón de aireación | Verificación del comando de activación remota desde la app móvil. | 1 | Choquehuanca, Luciana | Done |
+| — | Trabajo transversal | T23 | Repositorios y GitFlow | Rama `develop` creada desde `main` en los cuatro repositorios de código; eliminación del workflow de despliegue duplicado del backend; rama `feature/farm-isolation` integrada en `develop`. | 3 | Cruz, Victor | Done |
+|  |  | T24 | Limpieza de código residual y OpenAPI | Retirar referencias a "Autonexo" y completar la documentación OpenAPI del Sprint. | 2 | Escobar, Sebastian | Done |
+|  |  | T25 | Pruebas BDD con Cucumber | Dependencias de Cucumber y clases de steps para los `.feature` del backend. | 8 | Escobar, Sebastian | Done |
+|  |  | T26 | Pruebas BDD de seguridad y granjas | Steps de `authentication`, `farm-management` y `farm-isolation` sobre la configuración de Cucumber del backend. | 4 | Cruz, Victor | In-Process |
+|  |  | T27 | Pruebas unitarias del Edge | pytest para la firma, el ICA y el filtro de falsos positivos. | 3 | Peralta, Ronald | Done |
+|  |  | T28 | Despliegue del backend y la base de datos | Azure App Service y Azure Database for PostgreSQL con el flujo de GitHub Actions. | 4 | Cruz, Victor | Done |
+|  |  | T29 | Despliegue del Edge API | Dockerfile y servicio en Railway con Redis y broker Mosquitto. | 4 | Peralta, Ronald | Done |
+|  |  | T30 | Despliegue de la Landing Page | Hosting estático en Netlify. | 1 | Bendezu, Rúbens | Done |
+|  |  | T31 | Despliegue de la Web App | Flutter Web en Firebase Hosting. | 2 | Bendezu, Rúbens | Done |
+|  |  | T32 | Distribución de la app móvil | APK `v0.1.0` en Firebase App Distribution. | 2 | Choquehuanca, Luciana | Done |
+| | | | **Total** | | **97** | | |
+
+#### 7.2.1.3. Development Evidence for Sprint Review
+
+En el Sprint 1 se implementaron la Landing Page, la Web App, el backend, la app móvil y el Edge API. Cada producto tiene su repositorio (sección 7.1.2) y los commits siguen la convención Conventional Commits. La tabla incluye el commit de la versión inicial (13/09/2026) y los commits del Sprint 1, integrados mediante Pull Requests a `develop`. La primera versión desplegada de cada producto se etiquetó como `v0.1.0`.
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | main | fd9f7d6 | feat: initial clean release for organization | — | 2026-09-13 |
+| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | main | 9f6873b | Delete .github/workflows/develop_yaku-back.yml | — | 2026-10-30 |
+| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | develop | 212b75c | Merge pull request #1 from 1ASI0728-2620-9075-G2-VeriFish/main | Delete .github/workflows/develop_yaku-back.yml | 2026-10-30 |
+| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | feature/farm-isolation | 102f0b6 | feat(iam): add farmId claim support to JWT token service and sign-in | — | 2026-10-30 |
+| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | feature/farm-isolation | 9db1f63 | feat(iam): populate farmId in SecurityContext and return 401 on invalid JWT | — | 2026-10-30 |
+| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | feature/farm-isolation | 25c8e7b | feat(shared): add FarmAccessGuard and 403/401 exception handlers | — | 2026-10-30 |
+| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | feature/farm-isolation | 76d7631 | feat(equipment,telemetry): enforce farm isolation in Pond, Equipment, and Telemetry controllers | — | 2026-10-30 |
+| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | feature/farm-isolation | 478e1e8 | test(security): add unit and MockMvc integration tests for JWT farmId and farm isolation | — | 2026-10-30 |
+| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | feature/farm-isolation | b75f613 | feat(iam): resolve farmId from owned Farm for ADMIN users during sign-in | — | 2026-10-30 |
+| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | feature/farm-isolation | e977e42 | test(security): add ADMIN owner and OPERATOR farm isolation integration tests | — | 2026-10-30 |
+| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | develop | 5adbd05 | Merge feature/farm-isolation: JWT farmId and farm isolation (T06, T07) | — | 2026-10-30 |
+| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | feature/hmac-signature | f0aa752 | feat: add equipment command services, telemetry controllers, and device integration tests | — | 2026-11-12 |
+| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | feature/cucumber-bdd | 840f487 | test(bdd): configure Cucumber runner, Spring context, and step definitions for telemetry, alerts, equipment, and subscriptions | — | 2026-11-12 |
+| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | main | 2e61853 | Merge pull request #2 from 1ASI0728-2620-9075-G2-VeriFish/feature/cucumber-bdd | — | 2026-11-12 |
+| 1ASI0728-2620-9075-G2-VeriFish/VeriFish-Fronted | (pegar filas del `git log`) | | | | |
+| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Landing | (pegar filas del `git log`) | | | | |
+| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Edge | (pegar filas del `git log`) | | | | |
+
+#### 7.2.1.4. Testing Suite Evidence for Sprint Review
+
+Las pruebas automatizadas cubren los servicios del Sprint 1 en tres niveles: pruebas unitarias del dominio y de los handlers (JUnit y Mockito), pruebas de integración y de aceptación bajo BDD (Cucumber, con archivos `.feature` en Gherkin y *steps* en Java) y pruebas unitarias del Edge API (pytest).
+
+**Unit Tests.** El backend cuenta con 59 pruebas automatizadas en JUnit 5 (49 sobre los agregados y objetos de valor, 2 unitarias del claim `farmId` y 8 de integración del aislamiento por granja), que se ejecutan con una base H2 en memoria (`mvnw test`). En el Sprint 1 se agregaron las pruebas de la firma, del aislamiento por granja y de los componentes del Edge.
+
+| Prueba | Clase / comportamiento probado | Repositorio | Historia relacionada |
+| :--- | :--- | :--- | :--- |
+| `EquipmentTest`, `PondTest`, `FarmTest` | Reglas de los agregados de Equipment: registro, vínculo con el estanque y estados | Backend | US15, US08 |
+| `UserTest` | Reglas del agregado de usuario y de sus roles | Backend | TS02 |
+| `NotificationTest`, `RecipientInfoTest` | Creación de notificaciones y datos del destinatario | Backend | US07, TS03 |
+| `SubscriptionTest`, `SubscriptionPeriodTest` | Reglas de la suscripción y de su período | Backend | Sprint 2 (Payment) |
+| `YakuBackendApplicationTests` | Arranque del contexto de Spring con la base H2 | Backend | Transversal |
+| `ReadingSignatureValidatorTest` | Acepta la firma HMAC correcta y rechaza la incorrecta o ausente | Backend | TS04 |
+| `JwtFarmClaimTest` | El token generado incluye el claim `farmId` con su valor, ya no incluye `workshop_id`, y un token sin granja devuelve `farmId` nulo | Backend | TS02 |
+| `FarmIsolationIntegrationTest` | Con MockMvc y H2: 200 en un recurso de la propia granja, 401 sin token o con token alterado, 403 sin datos del recurso en otra granja; casos de ADMIN dueño de su granja y de OPERATOR | Backend | TS02 |
+| `ThresholdBreachTest` | Una lectura fuera de umbral genera el evento con severidad WARNING o CRITICAL | Backend | US07 |
+| `test_sign_reading.py` | Firma de la lectura con el token de la granja | Edge | TS04 |
+| `test_water_quality_index.py` | Cálculo del ICA con valores dentro y fuera de rango | Edge | US07 |
+| `test_false_positive_filter.py` | Una lectura aislada fuera de rango se descarta y una confirmada se envía | Edge | US07 |
+| `test/models_test.dart`, `test/auth_service_test.dart` | Conversión de las respuestas JSON a modelos y manejo de credenciales inválidas | Fronted | US05, US06 |
+
+**Acceptance Tests (BDD).** Los archivos `.feature` se ubican en `src/test/resources/features/` del repositorio del backend y se ejecutan con Cucumber. Sus escenarios reproducen los criterios de aceptación de las historias de la sección 3.2.
+
+| Archivo `.feature` | Historia relacionada | Steps (clase) |
+| :--- | :--- | :--- |
+| `iam/authentication.feature` | TS02, US05 | `AuthenticationSteps` |
+| `iam/farm-isolation.feature` | TS02 | `FarmIsolationSteps` |
+| `equipment/farm-management.feature` | US15 | `FarmManagementSteps` |
+| `equipment/equipment-registration.feature` | US15, US08 | `EquipmentRegistrationSteps` |
+| `telemetry/telemetry-monitoring.feature` | TS01, US06 | `TelemetryMonitoringSteps` |
+| `telemetry/reading-signature.feature` | TS04 | `ReadingSignatureSteps` |
+| `notification/alert-system.feature` | US07, TS03 | `AlertSystemSteps` |
+| `subscription/subscription-management.feature` | Sprint 2 (Payment) | `SubscriptionManagementSteps` |
+
+*telemetry/reading-signature.feature (TS04 — Firma de lecturas del Edge)*
+
+```gherkin
+Feature: Edge reading signature
+  As a developer
+  I want every reading to be signed with the farm key
+  So that forged readings are rejected
+
+  Scenario: Valid signature
+    Given a reading signed with the current farm key
+    When it reaches the API
+    Then the API accepts it
+
+  Scenario: Invalid signature
+    Given a reading with an incorrect signature
+    When it reaches the API
+    Then the API rejects it and records the attempt
+```
+
+*iam/farm-isolation.feature (TS02 — Seguridad con JWT)*
+
+```gherkin
+Feature: JWT security
+  As a developer
+  I want to protect the endpoints with tokens
+  So that unauthorized access is prevented and each farm's data is isolated
+
+  Scenario: Valid token
+    Given a request with a valid JWT
+    When it requests a resource of its farm
+    Then the API responds 200
+
+  Scenario: Unauthorized
+    Given a request without a token or with an expired token
+    When it requests a resource
+    Then the API responds 401
+
+  Scenario: Different farm
+    Given a valid JWT from another farm
+    When it requests a resource that belongs to a different farm
+    Then the API responds 403 without revealing information about the resource
+```
+*iam/authentication.feature (US17, US18 — Autenticación y registro de usuarios)*
+
+```gherkin
+Característica: Autenticacion y Registro de Usuarios
+  Como usuario, deseo autenticarme y registrarme en el sistema
+  para acceder a las funcionalidades de la plataforma.
+  Relacionado: US17, US18
+
+  Escenario: Registro exitoso de usuario
+    Dado que el administrador ingresa datos validos
+      | username    | email               | password      | firstName | lastName | rol        |
+      | "operario1" | "operario@yaku.com" | "password123" | "Juan"    | "Perez"  | "OPERATOR" |
+    Cuando registra al usuario mediante POST /api/v1/users/signup
+    Entonces se crea la cuenta con codigo 201
+    Y la respuesta contiene el ID del usuario creado
+    Y el usuario tiene el rol asignado correctamente
+
+  Escenario: Error por correo duplicado
+    Dado que el correo "operario@yaku.com" ya existe en el sistema
+    Cuando intenta registrarlo mediante POST /api/v1/users/signup
+    Entonces se muestra un error con codigo 400
+    Y el mensaje indica que el usuario ya existe
+
+  Escenario: Error por campos obligatorios vacios
+    Dado que el administrador deja campos obligatorios vacios como username o email
+    Cuando intenta registrar al usuario mediante POST /api/v1/users/signup
+    Entonces se muestra un error de validacion con codigo 400
+
+  Escenario: Autenticacion exitosa
+    Dado que existen credenciales validas
+      | username    | password      |
+      | "operario1" | "password123" |
+    Cuando inicia sesion mediante POST /api/v1/users/signin
+    Entonces accede al sistema con codigo 200
+    Y la respuesta contiene un token JWT valido
+    Y la respuesta contiene la informacion del usuario
+
+  Escenario: Credenciales incorrectas
+    Dado que existen credenciales incorrectas
+      | username    | password    |
+      | "operario1" | "wrongpass" |
+    Cuando intenta ingresar mediante POST /api/v1/users/signin
+    Entonces se deniega el acceso con codigo 401
+    Y se muestra un mensaje de credenciales invalidas
+
+  Escenario: Acceso con token JWT valido
+    Dado que el usuario tiene un token JWT valido
+    Cuando accede a un endpoint protegido con header Authorization: Bearer {token}
+    Entonces el sistema permite el acceso con codigo 200
+
+  Escenario: Acceso con token JWT expirado o invalido
+    Dado que el usuario tiene un token JWT expirado o invalido
+    Cuando intenta acceder a un endpoint protegido
+    Entonces se deniega el acceso con codigo 401
+
+  Escenario: Registro de operario sin farmToken valido
+    Dado que el administrador intenta registrar un operario sin farmToken
+    Cuando envia la solicitud mediante POST /api/v1/users/signup
+    Entonces se muestra un error con codigo 400
+```
+
+*equipment/farm-management.feature (US10, US11, US12 — Gestión de piscigranjas y estanques)*
+
+```gherkin
+Característica: Gestion de Piscigranjas y Estanques
+  Como administrador, deseo gestionar mis piscigranjas y estanques
+  para supervisar la produccion y optimizar recursos.
+  Relacionado: US10, US11, US12
+
+  Contexto:
+    Dado que el administrador esta autenticado con un token JWT valido
+
+  Escenario: Registro exitoso de piscigranja
+    Dado que el administrador ingresa datos validos de la piscigranja
+      | nombre               | ownerId | direccion              |
+      | "Piscigranja Andina" | 1       | "Valle Sagrado, Cusco" |
+    Cuando guarda la informacion mediante POST /api/v1/farms
+    Entonces se registra correctamente con codigo 201
+    Y la respuesta contiene un farmToken generado automaticamente
+    Y el nombre coincide con "Piscigranja Andina"
+
+  Escenario: Error por campos obligatorios incompletos en piscigranja
+    Dado que el administrador omite campos obligatorios como el nombre
+    Cuando intenta guardar la piscigranja mediante POST /api/v1/farms
+    Entonces el sistema responde con codigo 400
+    Y se muestra un mensaje de error de validacion
+
+  Escenario: Registro exitoso de estanque
+    Dado que el administrador ingresa los datos del estanque
+      | farmId | nombre       | especie   | volumen |
+      | 1      | "Estanque A" | "Tilapia" | 1000.0  |
+    Cuando guarda la informacion mediante POST /api/v1/ponds
+    Entonces se registra correctamente con codigo 201
+    Y el estanque tiene estado inicial "ACTIVE"
+
+  Escenario: Error por hardware duplicado en estanque
+    Dado que el ID del hardware ya existe en el sistema
+    Cuando intenta registrarlo mediante POST /api/v1/ponds
+    Entonces se muestra un mensaje de duplicidad con codigo 409
+
+  Escenario: Visualizar lista de estanques disponibles
+    Dado que el administrador accede al dashboard
+    Cuando carga la informacion mediante GET /api/v1/ponds
+    Entonces visualiza la lista de estanques con codigo 200
+    Y cada estanque incluye id, nombre, especie, volumen y estado
+
+  Escenario: Visualizar estanque por ID
+    Dado que existe un estanque con ID 1
+    Cuando consulta mediante GET /api/v1/ponds/1
+    Entonces visualiza los detalles del estanque con codigo 200
+
+  Escenario: Sin registros de estanques
+    Dado que no existen estanques registrados
+    Cuando accede mediante GET /api/v1/ponds
+    Entonces se muestra una lista vacia con codigo 200
+
+  Escenario: Visualizar estanques por piscigranja
+    Dado que existe una piscigranja con ID 1
+    Cuando consulta mediante GET /api/v1/farms/1/ponds
+    Entonces visualiza solo los estanques pertenecientes a esa piscigranja
+```
+
+*equipment/equipment-registration.feature (US31 — Registro de dispositivos IoT)*
+
+```gherkin
+@bdd-ready
+Característica: Registro de Dispositivos IoT
+  Como administrador, quiero registrar dispositivos IoT en el sistema
+  para poder asociarlos a estanques y recibir datos.
+  Relacionado: US31
+
+  Antecedentes:
+    Dado que el usuario esta autenticado con un token JWT valido de su granja
+
+  Escenario: Registro exitoso de equipo sensor individual
+    Cuando registro un equipo "SENSOR" con nombre "Sensor Temp-01" y codigo fisico "ST-001" mediante POST /api/v1/equipment
+    Entonces el modulo de equipos responde con codigo 201
+    Y el equipo registrado tiene estado inicial "AVAILABLE"
+
+  Escenario: Registro exitoso de nodo IoT completo
+    Cuando registro un nodo IoT con deviceId "NODE-REG-01" y nombre "Nodo Norte" mediante POST /api/v1/equipment/iot-device
+    Entonces el modulo de equipos responde con codigo 201
+    Y se crean los 4 componentes del nodo IoT en estado "AVAILABLE"
+
+  Escenario: Error por nodo IoT duplicado
+    Dado que ya existe un nodo IoT registrado con deviceId "NODE-DUP-01"
+    Cuando intento registrar nuevamente el nodo IoT con deviceId "NODE-DUP-01" mediante POST /api/v1/equipment/iot-device
+    Entonces el modulo de equipos responde con codigo 409
+
+  Escenario: Asociar dispositivo a estanque
+    Dado que existe un equipo disponible en la granja y un estanque disponible
+    Cuando vinculo el equipo al estanque mediante POST /api/v1/equipment/{equipmentId}/link/{pondId}
+    Entonces el modulo de equipos responde con codigo 200
+    Y el equipo cambia su estado a "LINKED" con el pondId correspondiente
+
+  Escenario: Visualizar lista de equipos
+    Dado que existen equipos registrados en la granja
+    Cuando consulto los equipos mediante GET /api/v1/equipment
+    Entonces el modulo de equipos responde con codigo 200
+    Y la lista contiene los equipos de la granja
+
+  Escenario: Eliminar equipo registrado
+    Dado que existe un equipo disponible en la granja
+    Cuando elimino el equipo mediante DELETE /api/v1/equipment/{id}
+    Entonces el modulo de equipos responde con codigo 204
+```
+
+*telemetry/telemetry-monitoring.feature (US05, US06, US07 — Monitoreo de telemetría de estanques)*
+
+```gherkin
+@bdd-ready
+Característica: Monitoreo de Telemetria de Estanques
+  Como piscicultor, deseo monitorear los parametros del agua en tiempo real
+  y visualizar el historial de lecturas para analizar tendencias.
+  Relacionado: US05, US06, US07
+
+  Antecedentes:
+    Dado que el usuario esta autenticado con un token JWT valido de su granja
+
+  Escenario: Visualizacion de parametros en tiempo real
+    Dado que el estanque de la granja tiene lecturas recientes registradas
+    Cuando consulta el estado en tiempo real mediante GET /api/v1/telemetry/ponds/{pondId}/status
+    Entonces la respuesta de telemetria tiene codigo 200
+    Y la respuesta de estado incluye lecturas de TEMPERATURE, TURBIDITY e ICA
+
+  Escenario: Visualizar historial de lecturas con filtro diario
+    Dado que existen agregados historicos recientes para el estanque
+    Cuando consulta los datos historicos con filtro "DAILY"
+    Entonces la respuesta de telemetria tiene codigo 200
+    Y la respuesta historica incluye valores minimos, maximos y promedios
+
+  Escenario: Visualizar historial de lecturas con filtro semanal
+    Dado que existen agregados historicos recientes para el estanque
+    Cuando consulta los datos historicos con filtro "WEEKLY"
+    Entonces la respuesta de telemetria tiene codigo 200
+    Y la respuesta historica incluye valores minimos, maximos y promedios
+
+  Escenario: Visualizar historial de lecturas con filtro mensual
+    Dado que existen agregados historicos recientes para el estanque
+    Cuando consulta los datos historicos con filtro "MONTHLY"
+    Entonces la respuesta de telemetria tiene codigo 200
+    Y la respuesta historica incluye valores minimos, maximos y promedios
+
+  Escenario: Sin registros historicos para estanque nuevo
+    Dado que existe un estanque en la granja sin registros historicos
+    Cuando consulta los datos historicos con filtro "DAILY"
+    Entonces la respuesta de telemetria tiene codigo 200
+    Y la lista historica devuelta esta vacia
+
+  Escenario: Ingesta manual agrupada de lecturas de sensor
+    Dado que existe un dispositivo IoT "DEV-MON-01" vinculado al estanque
+    Cuando envia lecturas agrupadas de temperatura 25.5, turbidez 4.0 e ICA 90.0 con firma valida
+    Entonces la respuesta de telemetria tiene codigo 200
+    Y las lecturas quedan persistidas para el estanque
+
+  Escenario: Ingesta con dispositivo no mapeado a ningun estanque
+    Dado que el dispositivo "DEV-UNLINKED" no esta vinculado a ningun estanque
+    Cuando envia lecturas agrupadas con firma valida para "DEV-UNLINKED"
+    Entonces la respuesta de telemetria tiene codigo 400
+```
+
+*notification/alert-system.feature (US15, US16, US22 — Sistema de alertas inteligentes)*
+
+```gherkin
+@bdd-ready
+Característica: Sistema de Alertas Inteligentes
+  Como usuario, deseo recibir alertas automaticas cuando los parametros del agua
+  superen los umbrales criticos para prevenir perdidas en la produccion.
+  Relacionado: US15, US16, US22
+
+  Antecedentes:
+    Dado que el usuario esta autenticado con un token JWT valido de su granja
+
+  Escenario: Alerta de advertencia por un parametro fuera de rango
+    Dado que existe un estanque de especie "TRUCHA" con umbrales configurados y dispositivo "DEV-ALT-01" vinculado
+    Cuando llega una lectura con temperatura 25.0 y turbidez 4.0 para "DEV-ALT-01"
+    Entonces se registra una notificacion de tipo "WARNING" para el operador del estanque
+
+  Escenario: Alerta critica por multiples parametros fuera de rango
+    Dado que existe un estanque de especie "TRUCHA" con umbrales configurados y dispositivo "DEV-ALT-02" vinculado
+    Cuando llega una lectura con temperatura 25.0 y turbidez 12.0 para "DEV-ALT-02"
+    Entonces se registra una notificacion de tipo "CRITICAL" para el administrador y el operador
+
+  Escenario: Configuracion exitosa de umbrales por especie
+    Dado que el administrador prepara umbrales validos para la especie "OTRO"
+    Cuando guarda la configuracion mediante POST /api/v1/telemetry/thresholds
+    Entonces el modulo de alertas responde con codigo 201
+    Y el umbral de la especie "OTRO" puede consultarse mediante GET /api/v1/telemetry/thresholds/OTRO
+
+  Escenario: Registro de token de dispositivo para notificaciones push
+    Dado que el usuario autenticado accede desde su dispositivo movil
+    Cuando registra su token FCM mediante POST /api/v1/users/{userId}/device-tokens
+    Entonces el modulo de alertas responde con codigo 201
+
+  Escenario: Visualizar notificaciones del usuario
+    Dado que el usuario autenticado tiene notificaciones registradas
+    Cuando consulta mediante GET /api/v1/users/{userId}/notifications
+    Entonces el modulo de alertas responde con codigo 200
+    Y cada notificacion incluye tipo, mensaje, destinatario y fecha de creacion
+
+  Escenario: Webhook de alerta externa recibido
+    Dado que un sistema externo envia una alerta por webhook
+    Cuando se recibe mediante POST /api/v1/webhooks/notifications
+    Entonces el modulo de alertas responde con codigo 201
+    Y se genera una notificacion interna para el usuario
+```
+
+*subscription/subscription-management.feature (US19 — Gestión de suscripciones)*
+
+```gherkin
+@bdd-ready
+Característica: Gestion de Suscripciones
+  Como administrador, deseo suscribirme a un plan y gestionar mi suscripcion
+  para acceder a los servicios de YakuControl.
+  Relacionado: US19
+
+  Antecedentes:
+    Dado que el usuario esta autenticado con un token JWT valido de su granja
+
+  Escenario: Visualizar lista de planes disponibles
+    Dado que existen planes registrados en el sistema
+    Cuando consulta los planes mediante GET /api/v1/plans
+    Entonces el modulo de suscripciones responde con codigo 200
+    Y la lista de planes no esta vacia
+
+  Escenario: Suscripcion exitosa a un plan
+    Dado que existe el plan "PREMIUM" de 30 dias disponible
+    Cuando confirma la suscripcion del usuario mediante POST /api/v1/subscriptions/{userId}
+    Entonces el modulo de suscripciones responde con codigo 200
+    Y el estado de la suscripcion devuelta es "ACTIVE"
+    Y el periodo de suscripcion corresponde a 30 dias desde hoy
+
+  Escenario: Visualizar suscripcion de un usuario
+    Dado que el usuario tiene una suscripcion activa al plan "FREE"
+    Cuando consulta la suscripcion mediante GET /api/v1/subscriptions/{userId}
+    Entonces el modulo de suscripciones responde con codigo 200
+    Y la respuesta incluye el nombre del plan y estado "ACTIVE"
+
+  Escenario: Cancelar suscripcion activa
+    Dado que el usuario tiene una suscripcion activa al plan "PREMIUM"
+    Cuando cancela la suscripcion mediante DELETE /api/v1/subscriptions/{userId}
+    Entonces el modulo de suscripciones responde con codigo 204
+    Y el estado persistido de la suscripcion cambia a "CANCELLED"
+
+  Escenario: Suscripcion a plan inexistente
+    Cuando intenta suscribir al usuario a un plan inexistente con ID 999999
+    Entonces el modulo de suscripciones responde con codigo 400
+```
+
+
+**Evidencia de ejecución.** Resultado de la ejecución de la suite en el backend, en el Edge y en la app:
+
+![Resultado de las pruebas del backend](/assets/sprint1/tests-backend.jpeg)
+
+![Resultado de las pruebas BDD (Cucumber)](/assets/sprint1/tests-bdd2.jpeg)
+
+![Resultado de las pruebas del Edge (pytest)](./assets/images/sprint1/tests-edge.png)
+
+![Resultado de las pruebas de la app (flutter test)](./assets/images/sprint1/tests-fronted.png)
+
+**Repositorios de pruebas:** https://github.com/1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend (carpeta `src/test`), https://github.com/1ASI0728-2620-9075-G2-VeriFish/Verifish-Edge (carpeta `tests`) y https://github.com/1ASI0728-2620-9075-G2-VeriFish/VeriFish-Fronted (carpeta `test`).
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | (pegar filas del `git log` de commits `test:`) | | | | |
+| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Edge | (pegar filas del `git log` de commits `test:`) | | | | |
+| 1ASI0728-2620-9075-G2-VeriFish/VeriFish-Fronted | (pegar filas del `git log` de commits `test:`) | | | | |
+
+#### 7.2.1.5. Execution Evidence for Sprint Review
+
+En el Sprint 1 se ejecutaron y desplegaron la Landing Page, la Web App, la app móvil, el backend y el Edge API. Las siguientes capturas muestran las principales vistas implementadas, organizadas por producto y por historia de usuario.
+
+**Landing Page**
+
+*US01 — Propuesta de valor.*
+
+![Landing Page: Propuesta de valor](./assets/images/sprint1/exec-landing-desktop.png)
+
+*US02 — Planes y precios.*
+
+![Landing Page: Planes y precios](./assets/images/sprint1/exec-landing-plans.png)
+
+*US04 — Formulario de ventas con validación.*
+
+![Landing Page: Formulario de ventas con validación](./assets/images/sprint1/exec-landing-contact.png)
+
+*US18 — Sección YakuTrace.*
+
+![Landing Page: Sección YakuTrace](./assets/images/sprint1/exec-landing-yakutrace.png)
+
+*US01 — Versión móvil y footer con términos y condiciones.*
+
+![Landing Page: Versión móvil y footer con términos y condiciones](./assets/images/sprint1/exec-landing-mobile.png)
+
+**Web App**
+
+*TS02 — Inicio de sesión del administrador.*
+
+![Web App: Inicio de sesión del administrador](./assets/images/sprint1/exec-web-login.png)
+
+*US15 — Listado de estanques.*
+
+![Web App: Listado de estanques](./assets/images/sprint1/exec-web-ponds.png)
+
+*US15 — Registro de un estanque.*
+
+![Web App: Registro de un estanque](./assets/images/sprint1/exec-web-register-pond.png)
+
+*US15 — Equipos vinculados a los estanques.*
+
+![Web App: Equipos vinculados a los estanques](./assets/images/sprint1/exec-web-equipment.png)
+
+*US07 — Notificaciones del administrador.*
+
+![Web App: Notificaciones del administrador](./assets/images/sprint1/exec-web-notifications.png)
+
+**App móvil**
+
+*US05 — Inicio de sesión.*
+
+![App móvil: Inicio de sesión](./assets/images/sprint1/exec-mobile-login.png)
+
+*US05 — Registro con código de granja.*
+
+![App móvil: Registro con código de granja](./assets/images/sprint1/exec-mobile-register.png)
+
+*US06 — Estanques asignados.*
+
+![App móvil: Estanques asignados](./assets/images/sprint1/exec-mobile-home.png)
+
+*US06 — Detalle del estanque con pH, temperatura, turbidez y gráficos.*
+
+![App móvil: Detalle del estanque con pH, temperatura, turbidez y gráficos](./assets/images/sprint1/exec-mobile-pond-detail.png)
+
+*US07 — Listado de alertas.*
+
+![App móvil: Listado de alertas](./assets/images/sprint1/exec-mobile-alerts.png)
+
+*TS03 — Notificación push recibida.*
+
+![App móvil: Notificación push recibida](./assets/images/sprint1/exec-mobile-push.png)
+
+*US08 — Activación del aireador.*
+
+![App móvil: Activación del aireador](./assets/images/sprint1/exec-mobile-aerator.png)
+
+**Edge API**
+
+*TS04 — Lectura recibida por MQTT y firmada.*
+
+![Edge API: Lectura recibida por MQTT y firmada](./assets/images/sprint1/exec-edge-signed-reading.png)
+
+*US07 — ICA y descarte de un falso positivo.*
+
+![Edge API: ICA y descarte de un falso positivo](./assets/images/sprint1/exec-edge-filter.png)
+
+*US08 — Comando de aireación recibido por el simulador.*
+
+![Edge API: Comando de aireación recibido por el simulador](./assets/images/sprint1/exec-edge-command.png)
+
+**Backend**
+
+*TS01 — Lectura firmada aceptada.*
+
+![Backend: Lectura firmada aceptada](./assets/sprint1/exec-backend-ingest-ok.jpeg)
+
+*TS04 — Lectura con firma inválida rechazada (401).*
+
+![Backend: Lectura con firma inválida rechazada (401)](./assets/sprint1/exec-backend-ingest-401.jpeg)
+
+*TS02 — Acceso a un recurso de otra granja rechazado (403).*
+
+![Backend: Acceso a un recurso de otra granja rechazado (403)](./assets/images/sprint1/exec-backend-403.png)
+
+**Videos de ejecución del Sprint 1**
+
+| Producto | Contenido | Enlace |
+| :--- | :--- | :--- |
+| Landing Page y Web App | Navegación por las secciones y registro de un estanque | (pegar enlace) |
+| App móvil | Inicio de sesión, lectura del estanque, alerta y activación del aireador | (pegar enlace) |
+| Edge API y backend | Lectura firmada desde el Edge hasta su persistencia | (pegar enlace) |
+
+#### 7.2.1.6. Services Documentation Evidence for Sprint Review
+
+Los servicios del backend se documentan con OpenAPI y se publican con Swagger UI (OpenAPI Initiative, s. f.). La siguiente tabla lista los endpoints del alcance del Sprint 1 y las acciones implementadas.
+
+| Endpoint (controlador) | Acción | Verbo | Sintaxis de llamada | Parámetros | Response | Historia |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Telemetry | Recibir lecturas firmadas del Edge | POST | `/api/v1/telemetry/manual-ingest` | Cabeceras `X-Farm-Id` y `X-Signature`; cuerpo JSON con las lecturas | Lectura procesada; 400 datos incompletos; 401 firma inválida o ausente | TS01, TS04 |
+| Telemetry | Consultar el estado actual del estanque | GET | `/api/v1/telemetry/ponds/{pondId}/status` | `pondId`; JWT | Últimas lecturas y estado del estanque | US06 |
+| Telemetry | Consultar el histórico | GET | `/api/v1/telemetry/ponds/{pondId}/historical` | `pondId`, `timeFilter`; JWT | Agregados por período | US06 |
+| Telemetry | Configurar y consultar umbrales por especie | POST / GET | `/api/v1/telemetry/thresholds`, `/api/v1/telemetry/thresholds/{species}` | Especie y rangos; JWT | Umbrales configurados | US07 |
+| Notification | Registrar el token FCM del dispositivo | POST | `/api/v1/users/{userId}/device-tokens` | `userId`; token; JWT | Token registrado | TS03 |
+| Notification | Listar y marcar como leídas las notificaciones | GET / PATCH | `/api/v1/users/{userId}/notifications`, `.../notifications/read` | `userId`; JWT | Notificaciones del usuario | US07 |
+| Equipment | Registrar un equipo IoT y vincularlo al estanque | POST | `/api/v1/equipment/iot-device`, `/api/v1/equipment/{equipmentId}/link/{pondId}` | Identificador del dispositivo; JWT de administrador | Equipo registrado y vinculado; 409 si el dispositivo ya existe | US15 |
+| Equipment | Enviar un comando a un actuador | POST | `/api/v1/equipment/{equipmentId}/command` | `equipmentId`; comando (`PUMP1_ON`, `PUMP2_ON`); JWT | Comando publicado por MQTT | US08 |
+| Equipment | Gestionar estanques | POST / GET / PUT / DELETE | `/api/v1/ponds`, `/api/v1/ponds/{id}`, `/api/v1/ponds/farm/{farmId}` | Datos del estanque; JWT de administrador | Estanque creado, consultado o actualizado | US15 |
+| IAM | Registrarse e iniciar sesión | POST | `/api/v1/users/signup`, `/api/v1/users/signin` | Credenciales; token de granja en el registro | JWT con `userId`, `farmId` y rol; 401 si las credenciales son inválidas | US05, TS02 |
+
+*Telemetry — Documentación de ingesta y consulta de lecturas.*
+
+![Swagger UI: endpoints de Telemetry](./assets/sprint1/swagger-telemetry.jpeg)
+
+*Telemetry — Ejemplo de request y response de la ingesta.*
+
+![Swagger UI: solicitud de ingesta y respuesta HTTP 200](./assets/sprint1/swagger-ingest-example.jpeg)
+
+*Equipment — Documentación de equipos y dispositivos IoT.*
+
+![Swagger UI: endpoints de Equipment](./assets/sprint1/swagger-other.jpeg)
+
+*IAM y Notification — Documentación de usuarios y registro de tokens FCM.*
+
+![Swagger UI: endpoints de IAM y Notification](./assets/sprint1/swagger-other2.jpeg)
+
+![Swagger UI: ejemplo de request y response de la ingesta](./assets/images/sprint1/swagger-ingest-example.png)
+
+![Swagger UI: endpoints de Notification, Equipment e IAM](./assets/images/sprint1/swagger-other.png)
+
+**URL de la documentación desplegada:** https://yaku-backend-hjbmb2btfzece4c0.brazilsouth-01.azurewebsites.net/swagger-ui.html. **Repositorio de Web Services:** https://github.com/1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | (pegar filas del `git log` de commits `docs:`) | | | | |
+
+#### 7.2.1.7. Software Deployment Evidence for Sprint Review
+
+En el Sprint 1 se crearon las cuentas y los recursos en los proveedores cloud y se desplegó cada producto de acuerdo con la sección 7.1.4. Cada paso se respalda con una captura.
+
+| Paso | Producto | Plataforma | Qué se hizo | Evidencia |
+| :--- | :--- | :--- | :--- | :--- |
+| 1 | Backend | Azure | App Service `yaku-backend` creado | ![Paso 1](./assets/images/sprint1/deploy-azure-1-appservice.png) |
+| 2 | Base de datos | Azure | Servidor de Azure Database for PostgreSQL creado | ![Paso 2](./assets/images/sprint1/deploy-azure-2-postgres.png) |
+| 3 | Backend | Azure | Variables de entorno configuradas (sin mostrar valores secretos) | ![Paso 3](./assets/images/sprint1/deploy-azure-3-settings.png) |
+| 4 | Backend | GitHub Actions | Ejecución exitosa del workflow de despliegue | ![Paso 4](./assets/images/sprint1/deploy-azure-4-workflow.png) |
+| 5 | Backend | Azure | Aplicación en ejecución y Swagger UI desplegado | ![Paso 5](./assets/images/sprint1/deploy-azure-5-running.png) |
+| 6 | Edge API | Railway | Proyecto con los servicios del Edge, Redis y Mosquitto | ![Paso 6](./assets/images/sprint1/deploy-railway-1-service.png) |
+| 7 | Edge API | Railway | Registros del despliegue y servicio activo | ![Paso 7](./assets/images/sprint1/deploy-railway-2-logs.png) |
+| 8 | Web App | Firebase Hosting | Despliegue publicado de Flutter Web | ![Paso 8](./assets/images/sprint1/deploy-firebase-hosting.png) |
+| 9 | Landing Page | Netlify | Sitio creado y despliegue publicado | ![Paso 9](./assets/images/sprint1/deploy-netlify-landing.png) |
+| 10 | App móvil | Firebase | Versión `v0.1.0` en App Distribution | ![Paso 10](./assets/images/sprint1/deploy-firebase-release.png) |
+| 11 | App móvil | Firebase | Invitación a testers | ![Paso 11](./assets/images/sprint1/deploy-firebase-testers.png) |
+
+#### 7.2.1.8. Team Collaboration Insights during Sprint
+
+La implementación se organizó por producto: cada integrante trabajó en su propio repositorio mediante ramas `feature/<tema>` creadas desde `develop`, con Pull Requests revisados por otro integrante y mensajes de commit según Conventional Commits. Victor Cruz trabajó en la seguridad y el despliegue del backend, Sebastian Escobar en la firma de lecturas, el estado de los equipos y las pruebas BDD del backend, Ronald Peralta en el Edge API, Rúbens Bendezu en la Landing Page y la Web App y Luciana Choquehuanca en la app móvil. Las capturas siguientes muestran los aportes de cada repositorio.
+
+![Insights Sprint 1 - Backend](./assets/images/sprint1/insights-backend.png)
+
+*Contributors del repositorio Verifish-Backend durante el Sprint 1.*
+
+![Insights Sprint 1 - Web App y app móvil](./assets/images/sprint1/insights-fronted.png)
+
+*Contributors del repositorio VeriFish-Fronted durante el Sprint 1.*
+
+![Insights Sprint 1 - Landing Page](./assets/images/sprint1/insights-landing.png)
+
+*Contributors del repositorio Verifish-Landing durante el Sprint 1.*
+
+![Insights Sprint 1 - Edge API](./assets/images/sprint1/insights-edge.png)
+
+*Contributors del repositorio Verifish-Edge durante el Sprint 1.*
+
+<div style="page-break-after: always;"></div>
+
+## 7.3. Validation Interviews
+
+Las entrevistas de validación evalúan con usuarios de cada segmento la Landing Page y las aplicaciones de YakuControl + YakuTrace. A diferencia de las entrevistas de la sección 2.2, que exploraron el problema, estas se enfocan en el producto: el usuario ejecuta tareas concretas sobre el prototipo y la Landing Page desplegada, y comenta lo que observa. Se realizó una sesión por segmento y la evaluación se hizo con las heurísticas de usabilidad de Nielsen (2024) y los criterios de diseño inclusivo y arquitectura de información del curso.
+
+### 7.3.1. Diseño de Entrevistas
+
+**Método.** Sesión individual de 15 a 20 minutos, con un moderador y un observador. El usuario ejecuta las tareas pensando en voz alta, sin que el moderador lo guíe, y al final responde las preguntas. La sesión se graba con el consentimiento del participante. Las sesiones usan el prototipo de Figma (sección 6.4.5) y la Landing Page desplegada (sección 7.1.4).
+
+| Segmento | Elementos a evaluar | Tareas (User Flows) | Preguntas principales |
+| :--- | :--- | :--- | :--- |
+| Piscicultores | Landing Page y app móvil | 1) Iniciar sesión (UF 1). 2) Consultar el estado de un estanque (UF 2). 3) Interpretar una alerta y activar el aireador (UF 3). | ¿Qué esperaba ver en cada pantalla? ¿En qué momento dudó? ¿Entendió el estado del estanque por los colores y los textos? ¿Reaccionar a una alerta le pareció rápido? ¿Qué cambiaría? ¿La usaría en el campo con poca señal? |
+| Administradores | Landing Page y Web App | 1) Registrarse y registrar la granja (UF 5). 2) Registrar un estanque y vincular su equipo (UF 6). 3) Revisar las notificaciones con filtros (UF 9). | ¿Encontró fácilmente cada sección del menú? ¿Los nombres de las opciones eran claros? ¿Qué información le faltó para decidir? ¿Cómo compara esto con lo que usa hoy? ¿Qué cambiaría? |
+| Compradores de supermercado | Landing Page (sección YakuTrace) y verificación pública | 1) Ubicar la sección YakuTrace en la Landing Page. 2) Verificar un lote con su código (UF 13). 3) Distinguir un certificado válido de uno revocado. | ¿Entendió qué significa "Verificado"? ¿Confiaría en este resultado para aceptar un lote? ¿Qué información adicional exigiría? ¿Entendió la prueba de registro? ¿Qué cambiaría? |
+
+### 7.3.2. Registro de Entrevistas
+
+Para cada segmento se registró una entrevista. Cada ficha incluye los datos del participante, un cuadro del video, el enlace al video en Microsoft Stream con el timing de la entrevista y un resumen de sus principales apreciaciones sobre las tareas asignadas.
+
+**Segmento 1: Piscicultores** · Video consolidado del segmento en Microsoft Stream: (pegar enlace)
+
+| | **Entrevistado 1 — Piscicultores** |
+| :--- | :--- |
+| **Nombres y apellidos** | (pegar) |
+| **Edad** | (pegar) |
+| **Distrito** | (pegar) |
+| **Fecha de entrevista** | (pegar) |
+| **Video (Stream)** | (pegar enlace) |
+| **Timing** | (mm:ss – mm:ss, duración) |
+| **Captura** | ![Entrevista de validación 1.1](./assets/images/validation/entrevista-1-1.png) |
+| **Resumen** | (pegar el resumen de las principales apreciaciones sobre las tareas asignadas) |
+
+**Segmento 2: Administradores** · Video consolidado del segmento en Microsoft Stream: (pegar enlace)
+
+| | **Entrevistado 1 — Administradores** |
+| :--- | :--- |
+| **Nombres y apellidos** | (pegar) |
+| **Edad** | (pegar) |
+| **Distrito** | (pegar) |
+| **Fecha de entrevista** | (pegar) |
+| **Video (Stream)** | (pegar enlace) |
+| **Timing** | (mm:ss – mm:ss, duración) |
+| **Captura** | ![Entrevista de validación 2.1](./assets/images/validation/entrevista-2-1.png) |
+| **Resumen** | (pegar el resumen de las principales apreciaciones sobre las tareas asignadas) |
+
+**Segmento 3: Compradores de supermercado** · Video consolidado del segmento en Microsoft Stream: (pegar enlace)
+
+| | **Entrevistado 1 — Compradores de supermercado** |
+| :--- | :--- |
+| **Nombres y apellidos** | (pegar) |
+| **Edad** | (pegar) |
+| **Distrito** | (pegar) |
+| **Fecha de entrevista** | (pegar) |
+| **Video (Stream)** | (pegar enlace) |
+| **Timing** | (mm:ss – mm:ss, duración) |
+| **Captura** | ![Entrevista de validación 3.1](./assets/images/validation/entrevista-3-1.png) |
+| **Resumen** | (pegar el resumen de las principales apreciaciones sobre las tareas asignadas) |
+
+### 7.3.3. Evaluaciones según heurísticas
+
+La evaluación sigue el formato del curso (Anexo D del enunciado) y se realiza por producto: la app móvil con los piscicultores, la Web App con los administradores y la verificación pública junto con la Landing Page con los compradores. Cada problema se clasifica con la escala de severidad del curso y con la heurística o el principio que se vulnera: usabilidad (Nielsen, 2024), diseño inclusivo (W3C, 2023) o arquitectura de información.
+
+**Escala de severidad**
+
+| Nivel | Descripción |
+| :--- | :--- |
+| 1 | Problema superficial: se supera fácilmente o ocurre muy poco. Solo se corrige si hay tiempo. |
+| 2 | Problema menor: ocurre algo más seguido o es más difícil de superar. Prioridad baja para el siguiente release. |
+| 3 | Problema mayor: ocurre frecuentemente o el usuario no puede resolverlo. Prioridad alta. |
+| 4 | Problema muy grave: impide continuar con el uso de la herramienta. Debe corregirse antes del lanzamiento. |
+
+**Evaluación 1: App móvil**
+
+| Campo | Valor |
+| :--- | :--- |
+| Carrera | Ingeniería de Software |
+| Curso | Arquitecturas de Software Emergentes |
+| Sección | NRC 9075 |
+| Profesor | Wilder Aurelio Vega Calero |
+| Auditor | Verifish (evaluador: (pegar evaluador)) |
+| Cliente | El piscicultor entrevistado (sección 7.3.2) |
+| Sitio o app a evaluar | App móvil |
+| Tareas evaluadas | Iniciar sesión; consultar el estado de un estanque; interpretar una alerta; activar el aireador |
+| Tareas no incluidas | Registro de novedades; reporte de mortalidad; configuración de umbrales |
+
+| # | Problema | Escala de severidad | Heurística / Principio violada(o) |
+| :--- | :--- | :--- | :--- |
+| 1 | (pegar el problema observado) | (1–4) | (criterio) |
+
+*Descripción de cada problema:* título, severidad, heurística violada, descripción con captura de pantalla y recomendación.
+
+(pegar la descripción de los problemas)
+
+**Evaluación 2: Web App**
+
+| Campo | Valor |
+| :--- | :--- |
+| Carrera | Ingeniería de Software |
+| Curso | Arquitecturas de Software Emergentes |
+| Sección | NRC 9075 |
+| Profesor | Wilder Aurelio Vega Calero |
+| Auditor | Verifish (evaluador: (pegar evaluador)) |
+| Cliente | El administrador entrevistado (sección 7.3.2) |
+| Sitio o app a evaluar | Web App |
+| Tareas evaluadas | Registrarse; registrar la granja; registrar un estanque y vincular su equipo; revisar notificaciones |
+| Tareas no incluidas | Gestión de lotes y certificados; pago de la suscripción |
+
+| # | Problema | Escala de severidad | Heurística / Principio violada(o) |
+| :--- | :--- | :--- | :--- |
+| 1 | (pegar el problema observado) | (1–4) | (criterio) |
+
+*Descripción de cada problema:* título, severidad, heurística violada, descripción con captura de pantalla y recomendación.
+
+(pegar la descripción de los problemas)
+
+**Evaluación 3: Verificación pública y Landing Page**
+
+| Campo | Valor |
+| :--- | :--- |
+| Carrera | Ingeniería de Software |
+| Curso | Arquitecturas de Software Emergentes |
+| Sección | NRC 9075 |
+| Profesor | Wilder Aurelio Vega Calero |
+| Auditor | Verifish (evaluador: (pegar evaluador)) |
+| Cliente | El comprador entrevistado (sección 7.3.2) |
+| Sitio o app a evaluar | Verificación pública y Landing Page |
+| Tareas evaluadas | Ubicar la sección YakuTrace; verificar un lote por código; distinguir un certificado válido de uno revocado; revisar los planes |
+| Tareas no incluidas | Emisión de certificados; anclaje en blockchain |
+
+| # | Problema | Escala de severidad | Heurística / Principio violada(o) |
+| :--- | :--- | :--- | :--- |
+| 1 | (pegar el problema observado) | (1–4) | (criterio) |
+
+*Descripción de cada problema:* título, severidad, heurística violada, descripción con captura de pantalla y recomendación.
+
+(pegar la descripción de los problemas)
+
+## 7.4. Video About-the-Product
+
+El video About-the-Product presenta a los visitantes de la Landing Page y a los usuarios de las aplicaciones el modelo de negocio, las características principales y los beneficios de YakuControl + YakuTrace. Tiene una duración de 1 a 3 minutos, una narración en el mismo tono cercano y claro del producto, y se apoya en el prototipo de las aplicaciones para mostrar tres escenas: el piscicultor que recibe una alerta y activa el aireador desde el celular, el administrador que revisa sus estanques desde la Web App y el comprador que verifica un lote escaneando el código QR. Incluye un breve testimonio de un usuario de cada segmento, tomado de las entrevistas de validación de la sección 7.3. La versión de YouTube se incrusta en la Landing Page.
+
+| Dato | Valor |
+| :--- | :--- |
+| Screenshot | ![Video About-the-Product](./assets/images/video-about-product.png) |
+| URL en Microsoft Stream | (pegar enlace) |
+| URL en YouTube (incrustado en la Landing Page) | (pegar enlace) |
+| Duración | (mm:ss) |
+
+<div style="page-break-after: always;"></div>
+
 # Conclusiones
+
+## Conclusiones y recomendaciones
 
 
 Se presenta Verifish y su solución YakuControl, una propuesta orientada al monitoreo inteligente de piscigranjas mediante IoT y servicios en la nube. Se aborda la problemática de la supervisión manual de la calidad del agua, los riesgos asociados a una detección tardía y la necesidad de contar con información en tiempo real. También se definen la propuesta de valor, el modelo SaaS, las hipótesis de Lean UX y los principales usuarios: piscicultores y administradores de piscigranjas.
@@ -3403,7 +4763,43 @@ En el diseño arquitectónico, la decisión de un **monolito modular** con seis 
 
 Como recomendaciones para las siguientes entregas se sugiere validar con compradores reales la utilidad y el contenido del certificado, confirmar el estado de las redes de prueba antes de implementar el contrato, evaluar un portal propio para compradores y definir con las piscigranjas piloto el precio del complemento TRACE.
 
+
+En esta entrega se pasó del diseño a la implementación: el Sprint 1 abarcó 13 historias de usuario (45 story points) y llevó a una primera versión desplegada el flujo de monitoreo de YakuControl: la Landing Page en Netlify, la Web App en Firebase Hosting, el backend y su base de datos en Azure, el Edge API en Railway y la app móvil distribuida con Firebase App Distribution. El flujo central del problema de la piscigranja quedó recorrible de extremo a extremo: una lectura de los sensores pasa por el Edge, que la firma y filtra los falsos positivos, el backend la valida y la persiste, el sistema confirma la anomalía, notifica al piscicultor y este puede activar el aireador desde el celular. Con ello se atiende directamente el *Problem Statement* de la detección tardía de la mortalidad por la baja calidad del agua.
+
+La decisión de acotar el Sprint 1 al recorrido de monitoreo y alertas, y de dejar para el Sprint 2 la trazabilidad con blockchain y los pagos, permitió entregar menos funciones pero completas, desplegadas y probadas. La firma de lecturas con el token de la granja, que en el diseño era solo una decisión, quedó implementada en el Edge y verificada en el backend, y el filtro de seguridad aísla los datos por granja, de modo que la base de la confianza de YakuTrace (datos cuyo origen se puede comprobar) ya existe. La suite de pruebas unitarias y BDD respalda los criterios de aceptación de las historias del Sprint y fija el comportamiento ante los casos de error: firma inválida, token de otra granja y credenciales inválidas.
+
+Durante la implementación se tomó una decisión que modifica el diseño: la Web App del administrador se construyó con Flutter Web, sobre la misma base de código que la app móvil, en lugar de Angular, lo que redujo el esfuerzo de mantener dos clientes con un equipo de cinco integrantes. Este cambio se registra como un refinamiento de la decisión AD-13 y de la restricción TC05 (Anexo C). Además, la comparación entre el informe y el código mostró que algunos elementos del diseño (la firma de lecturas, el `farmId` en el token y el ICA) no estaban implementados; se completaron en este Sprint, y el contexto de Traceability queda para el Sprint 2.
+
+Las entrevistas de validación con un usuario por segmento permitieron contrastar los supuestos de Lean UX con el producto en la mano, en especial la hipótesis de que una alerta con acción inmediata es más útil que un tablero de datos, y la de que el comprador confía más en un resultado de verificación claro que en un documento técnico. Los problemas encontrados se clasificaron por severidad en las evaluaciones heurísticas y alimentan el backlog del Sprint 2. Al ser una sola sesión por segmento, sus resultados son orientativos y deben confirmarse con más usuarios.
+
+En cuanto al trabajo en equipo, dividir el trabajo por producto redujo las dependencias entre ramas y permitió avanzar en paralelo. El costo fue la necesidad de acordar las interfaces entre productos (el formato de la lectura firmada, el contrato de la API y el token del servicio de mensajería) desde el Sprint Planning.
+
+Como recomendaciones para el Sprint 2 y la entrega final se sugiere: implementar el contexto de Traceability y el contrato inteligente `TraceabilityRegistry` en la red de prueba; completar la integración de pagos con Stripe; incorporar al backlog los problemas de severidad 3 y 4 de las evaluaciones heurísticas; separar la ingesta del Edge en un tópico por dispositivo; configurar la integración continua para ejecutar las pruebas en cada Pull Request en todos los repositorios; y repetir las entrevistas con más usuarios, en particular con compradores sobre el flujo completo de verificación.
+
+**Roadmap.** Sprint 2: historias 14 a 25 del Product Backlog (50 story points), con YakuTrace como eje. Entrega final: historias 26 a 36 (31 story points) según el avance, y la versión final de los siete capítulos del informe.
+
+## Video About-The-Team
+
+El video About-The-Team resume el proceso de trabajo del equipo Verifish durante el Sprint 1 con escenas de las sesiones de trabajo (planificación, desarrollo, pruebas, despliegue y revisión) y voz en off, e incluye el testimonio ante cámara de cada integrante sobre las actividades que realizó y sobre cómo estas contribuyen a las competencias y outcomes del curso. Dura cerca de diez minutos: unos cinco de retrospectiva y un minuto por testimonio.
+
+| Sección | Inicio (hh:mm:ss) |
+| :--- | :--- |
+| Retrospectiva del equipo: qué se hizo, qué funcionó, qué se mejora | 00:00:00 |
+| Testimonio de Escobar Palomino, Sebastian Matias | 00:05:00 |
+| Testimonio de Bendezu Navarro, Rúbens Fitzgerald | 00:06:00 |
+| Testimonio de Choquehuanca Nuñez, Luciana Carolina | 00:07:00 |
+| Testimonio de Cruz Ibarra, Victor Andres | 00:08:00 |
+| Testimonio de Peralta Chipa, Ronald Joel | 00:09:00 |
+
+![Video About-The-Team](./assets/images/video-about-team.png)
+
+- URL en Microsoft Stream: (pegar enlace privado)
+- URL en YouTube (incrustado en la Landing Page): (pegar enlace)
+
+<div style="page-break-after: always;"></div>
+
 # Bibliografía
+
 
 Actualidad Ambiental. (28 de mayo de 2025). *Huarochirí: mueren 200 mil truchas en piscigranja por posible contaminación en el río Santa Eulalia.* https://www.actualidadambiental.pe/huarochiri-mueren-200-mil-truchas-en-piscigranja-por-posible-contaminacion-en-el-rio-santa-eulalia/
 
@@ -3421,9 +4817,21 @@ Blaha, F., & Katafono, K. (2020). *Blockchain application in seafood value chain
 
 Computer Weekly. (2021). *Avances y progresos en el uso de blockchain en el Perú*. https://www.computerweekly.com/es/cronica/Avances-y-progresos-en-el-uso-de-blockchain-en-el-Peru
 
+Conventional Commits. (s. f.). *Conventional Commits 1.0.0*. https://www.conventionalcommits.org/
+
+Cucumber. (s. f.). *Gherkin reference*. https://cucumber.io/docs/gherkin/reference/
+
+Dart Team. (s. f.). *Effective Dart*. https://dart.dev/effective-dart
+
+Driessen, V. (2010, 5 de enero). *A successful Git branching model*. nvie.com. https://nvie.com/posts/a-successful-git-branching-model/
+
 El Búho. (2025, mayo). *Trucha producida en Puno es la más requerida en mercados del sur del país por su alta calidad*. https://elbuho.pe/2025/05/trucha-producida-en-puno-es-la-mas-requerida-en-mercados-del-sur-del-pais-por-su-alta-calidad/
 
 Global Dialogue on Seafood Traceability. (s. f.). *GDST standards*. https://traceability-dialogue.org/
+
+Google. (s. f.-a). *Google Java style guide*. https://google.github.io/styleguide/javaguide.html
+
+Google. (s. f.-b). *Google HTML/CSS style guide*. https://google.github.io/styleguide/htmlcssguide.html
 
 La Cámara. (2025). *Trucha peruana: potencial acuícola clave para diversificar la exportación*. https://lacamara.pe/?p=67270
 
@@ -3433,22 +4841,65 @@ Ministerio de Agricultura, Pesca y Alimentación. (2019). *El director general d
 
 Ministerio de la Producción. (2024). *Catastro Acuícola Nacional (referenciado en Informe de Evaluación de la Intervención de Extensionismo Acuícola).* Gobierno del Perú. https://www.producempresarial.pe/wp-content/uploads/2025/02/05-Informe-ER-Extensionismo-Acuicola_rev.pdf
 
+Nielsen, J. (2024, 30 de enero). *10 usability heuristics for user interface design*. Nielsen Norman Group. https://www.nngroup.com/articles/ten-usability-heuristics/
+
+OpenAPI Initiative. (s. f.). *OpenAPI Specification*. https://spec.openapis.org/oas/latest.html
+
 Organización para la Cooperación y el Desarrollo Económicos. (2025). *Políticas para el futuro de la pesca y la acuicultura en Perú.* OECD Publishing. https://www.oecd.org/es/publications/politicas-para-el-futuro-de-la-pesca-y-la-acuicultura-en-peru_712e7084-es/full-report/aquaculture-policies-in-peru_a47e9e62.html
 
 Perú Retail. (2026). *¿Cómo se está desarrollando el sector de supermercados en el Perú?* https://www.peru-retail.com/como-esta-desarrollando-sector-supermercados-peru/ 
 
 Powell, W., Foth, M., Cao, S., & Natanelov, V. (2021). *Garbage in garbage out: The precarious link between IoT and blockchain in food supply chains*. https://www.futurefoodsystems.com.au/resource/garbage-in-garbage-out-the-precarious-link-between-iot-and-blockchain-in-food-supply-chains/
 
+Preston-Werner, T. (s. f.). *Semantic Versioning 2.0.0*. https://semver.org/
+
+van Rossum, G., Warsaw, B., & Coghlan, A. (2001). *PEP 8 – Style guide for Python code*. Python Software Foundation. https://peps.python.org/pep-0008/
+
 Timescale. (s. f.). *Compare TimescaleDB editions*. Tiger Data Docs. https://www.tigerdata.com/docs/get-started/choose-your-path/timescaledb-editions
+
+World Wide Web Consortium (W3C). (2023). *Web Content Accessibility Guidelines (WCAG) 2.2*. https://www.w3.org/TR/WCAG22/
 
 World Fishing & Aquaculture. (2021). *Nueva Pescanova e IBM trabajan para rastrear sus productos en IBM Food Trust*. https://www.worldfishing.net/news101/industry-news/1400435.article
 
+<div style="page-break-after: always;"></div>
 # Anexos
 
-**Anexo A. Prototipo IoT**
+## Anexo A. Prototipo IoT
 
 - [Simulación en Wokwi](https://wokwi.com/projects/467186064937826305)
 
-**Anexo b. Videos de Exposiciones**
+## Anexo B. Videos de Exposiciones
 
 - [Link de la Exposición de TP1](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202125968_upc_edu_pe/IQCfmbv_fzrnToGVrxLg26ojAbX7Gt2nWWMgIejbg462N8Q?e=b7ouCh&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+- Link de la Exposición de TB2: (pegar enlace privado de Microsoft Stream)
+
+<div style="page-break-after: always;"></div>
+
+## Anexo C. Mejora continua: autocrítica y cambios respecto de entregas anteriores
+
+Ni TB1 ni TP1 recibieron retroalimentación formal por escrito del docente. Las mejoras provienen de la **autocrítica del equipo**, al contrastar el informe con el enunciado y la rúbrica, y de la incorporación del nuevo segmento de compradores y del módulo YakuTrace.
+
+| # | Observación (autocrítica) | Cambio aplicado | Sección |
+| :--- | :--- | :--- | :--- |
+| 1 | El Student Outcome correspondía a otro curso (ABET 7). | Se reemplazó por el ABET 3 con los criterios del enunciado. | Student Outcome |
+| 2 | Existía una sección de Objetivos SMART que el enunciado no pide. | Se eliminó; los objetivos pasaron al Impact Mapping. | 3.3 |
+| 3 | El Ubiquitous Language estaba en español y mezclaba términos técnicos. | Se reescribió con términos en inglés (español entre paréntesis) y solo del dominio. | 2.4 |
+| 4 | Se usó *User Journey Mapping* y el enunciado pide As-is Scenario Mapping. | Se rehicieron con las filas Phases, Doing, Thinking y Feeling. | 2.3.4 |
+| 5 | Faltaba el To-Be Scenario Mapping. | Se agregó para las tres personas. | 3.1 |
+| 6 | Épicas y User Stories estaban en cuadros separados y los criterios incluían detalles de interfaz. | Cuadro único; criterios en Gherkin, tiempo presente, sin UI y con más escenarios. | 3.2 |
+| 7 | El Product Backlog iniciaba con seguridad y autenticación. | Se reordenó por valor de negocio y se justificó el criterio. | 3.4 |
+| 8 | El Impact Mapping era solo una imagen. | Se agregaron objetivos SMART y la tabla Goal → Actor → Impact → Deliverable → Stories. | 3.3 |
+| 9 | Los constraints no eran Technical Stories y estaban desactualizados (nombre previo, 6 integrantes, Flutter para web). | Se reescribieron como TC01–TC12 y se corrigió la tecnología de la Web App. | 4.1.2.3 |
+| 10 | Drivers, decisiones y refinements no seguían el formato del enunciado. | Se rehicieron con las columnas exigidas, matriz de patrones y tablas de refinement. | 4.1.3 a 4.1.5 |
+| 11 | El Container Diagram hablaba de microservicios, API Gateway y bus de eventos, pero la decisión era un monolito modular. | Se rehicieron todos los diagramas C4 con una arquitectura coherente. | 4.3 |
+| 12 | Inconsistencias en los contextos (conteo de contextos, errores de escritura) y un párrafo duplicado en el Context Mapping. | Se corrigieron. | 4.2.2, 4.2.5 |
+| 13 | La introducción del análisis de entrevistas indicaba dos participantes cuando eran seis. | Se corrigió; con el Segmento 3, el análisis cubre nueve participantes (tres por segmento). | 2.2.3 |
+| 14 | El EventStorming aparecía duplicado en dos capítulos. | Se mantuvo solo en el diseño estratégico. | 4.2.1 |
+| 15 | No se consideraba al comprador del producto. | Se incorporó el Segmento 3 y el módulo YakuTrace con trazabilidad en blockchain. | 1.3, Cap. II a VI |
+| 16 | Los datos de los sensores podían ingresar sin autenticar su origen y blockchain no corrige datos erróneos. | Se agregó la firma de lecturas y la cobertura de datos en los resúmenes. | 4.1.4, 5.2 |
+| 17 | El diseño táctico y la experiencia de usuario no estaban desarrollados en este informe. | Se desarrollaron los Capítulos V y VI con diagramas y principios de Responsive Web Design. | Cap. V y VI |
+| 18 | Los subtítulos de los wireflows decían "User Flow Diagrams", artefacto distinto. | Se renombraron a Wireflow Diagrams; los User Flows se agregan con mock-ups en 6.4.4. | 6.4.2, 6.4.4 |
+| 19 | La app móvil se describía como "nativa para Android" aunque se desarrolla con Flutter. | Se corrigió la descripción. | 6.2.5 |
+| 20 | La carátula no incluía YakuTrace ni mes y año. | Se completó. | Carátula |
+| 21 | La Web App del informe se definió en Angular, pero se implementó con Flutter Web sobre la misma base de código de la app móvil. | Se documenta el cambio como refinamiento de AD-13 y TC05 (sección 7.1.1 y conclusiones). | 7.1.1, Conclusiones |
+| 22 | El informe describía la firma de lecturas, el `farmId` en el JWT y el ICA como implementados, pero el código no los incluía. | Se implementaron en el Sprint 1 y se documentan con pruebas. | 7.2.1 |
