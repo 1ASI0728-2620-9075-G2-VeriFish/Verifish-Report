@@ -1,0 +1,53 @@
+[
+  {
+    "case": "Usuario sin granja",
+    "status": 403,
+    "expected": 403,
+    "passed": true
+  },
+  {
+    "case": "Crear granja B",
+    "status": 201,
+    "expected": 201,
+    "passed": true
+  },
+  {
+    "case": "Granja propia B",
+    "status": 200,
+    "expected": 200,
+    "passed": true
+  },
+  {
+    "case": "Granja ajena A desde B",
+    "status": 403,
+    "expected": 403,
+    "passed": true
+  },
+  {
+    "case": "JWT anterior a crear granja",
+    "status": 403,
+    "expected": 403,
+    "passed": true
+  },
+  {
+    "case": "JWT invalido",
+    "status": 401,
+    "expected": 401,
+    "passed": true
+  },
+  {
+    "case": "CORS http://localhost:3000",
+    "status": 200,
+    "passed": true
+  },
+  {
+    "case": "CORS https://yakucontrol-v2.web.app",
+    "status": 403,
+    "passed": false
+  },
+  {
+    "case": "CORS https://yakucontrol-v2.firebaseapp.com",
+    "status": 403,
+    "passed": false
+  }
+]
