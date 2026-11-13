@@ -4067,10 +4067,315 @@ Feature: JWT security
     When it requests a resource that belongs to a different farm
     Then the API responds 403 without revealing information about the resource
 ```
+*iam/authentication.feature (US17, US18 — Autenticación y registro de usuarios)*
 
-Los demás archivos `.feature` se encuentran en el repositorio con su contenido completo:
+```gherkin
+Característica: Autenticacion y Registro de Usuarios
+  Como usuario, deseo autenticarme y registrarme en el sistema
+  para acceder a las funcionalidades de la plataforma.
+  Relacionado: US17, US18
 
-(pegar aquí el contenido de `authentication.feature`, `farm-management.feature`, `equipment-registration.feature`, `telemetry-monitoring.feature`, `alert-system.feature` y `subscription-management.feature`)
+  Escenario: Registro exitoso de usuario
+    Dado que el administrador ingresa datos validos
+      | username    | email               | password      | firstName | lastName | rol        |
+      | "operario1" | "operario@yaku.com" | "password123" | "Juan"    | "Perez"  | "OPERATOR" |
+    Cuando registra al usuario mediante POST /api/v1/users/signup
+    Entonces se crea la cuenta con codigo 201
+    Y la respuesta contiene el ID del usuario creado
+    Y el usuario tiene el rol asignado correctamente
+
+  Escenario: Error por correo duplicado
+    Dado que el correo "operario@yaku.com" ya existe en el sistema
+    Cuando intenta registrarlo mediante POST /api/v1/users/signup
+    Entonces se muestra un error con codigo 400
+    Y el mensaje indica que el usuario ya existe
+
+  Escenario: Error por campos obligatorios vacios
+    Dado que el administrador deja campos obligatorios vacios como username o email
+    Cuando intenta registrar al usuario mediante POST /api/v1/users/signup
+    Entonces se muestra un error de validacion con codigo 400
+
+  Escenario: Autenticacion exitosa
+    Dado que existen credenciales validas
+      | username    | password      |
+      | "operario1" | "password123" |
+    Cuando inicia sesion mediante POST /api/v1/users/signin
+    Entonces accede al sistema con codigo 200
+    Y la respuesta contiene un token JWT valido
+    Y la respuesta contiene la informacion del usuario
+
+  Escenario: Credenciales incorrectas
+    Dado que existen credenciales incorrectas
+      | username    | password    |
+      | "operario1" | "wrongpass" |
+    Cuando intenta ingresar mediante POST /api/v1/users/signin
+    Entonces se deniega el acceso con codigo 401
+    Y se muestra un mensaje de credenciales invalidas
+
+  Escenario: Acceso con token JWT valido
+    Dado que el usuario tiene un token JWT valido
+    Cuando accede a un endpoint protegido con header Authorization: Bearer {token}
+    Entonces el sistema permite el acceso con codigo 200
+
+  Escenario: Acceso con token JWT expirado o invalido
+    Dado que el usuario tiene un token JWT expirado o invalido
+    Cuando intenta acceder a un endpoint protegido
+    Entonces se deniega el acceso con codigo 401
+
+  Escenario: Registro de operario sin farmToken valido
+    Dado que el administrador intenta registrar un operario sin farmToken
+    Cuando envia la solicitud mediante POST /api/v1/users/signup
+    Entonces se muestra un error con codigo 400
+```
+
+*equipment/farm-management.feature (US10, US11, US12 — Gestión de piscigranjas y estanques)*
+
+```gherkin
+Característica: Gestion de Piscigranjas y Estanques
+  Como administrador, deseo gestionar mis piscigranjas y estanques
+  para supervisar la produccion y optimizar recursos.
+  Relacionado: US10, US11, US12
+
+  Contexto:
+    Dado que el administrador esta autenticado con un token JWT valido
+
+  Escenario: Registro exitoso de piscigranja
+    Dado que el administrador ingresa datos validos de la piscigranja
+      | nombre               | ownerId | direccion              |
+      | "Piscigranja Andina" | 1       | "Valle Sagrado, Cusco" |
+    Cuando guarda la informacion mediante POST /api/v1/farms
+    Entonces se registra correctamente con codigo 201
+    Y la respuesta contiene un farmToken generado automaticamente
+    Y el nombre coincide con "Piscigranja Andina"
+
+  Escenario: Error por campos obligatorios incompletos en piscigranja
+    Dado que el administrador omite campos obligatorios como el nombre
+    Cuando intenta guardar la piscigranja mediante POST /api/v1/farms
+    Entonces el sistema responde con codigo 400
+    Y se muestra un mensaje de error de validacion
+
+  Escenario: Registro exitoso de estanque
+    Dado que el administrador ingresa los datos del estanque
+      | farmId | nombre       | especie   | volumen |
+      | 1      | "Estanque A" | "Tilapia" | 1000.0  |
+    Cuando guarda la informacion mediante POST /api/v1/ponds
+    Entonces se registra correctamente con codigo 201
+    Y el estanque tiene estado inicial "ACTIVE"
+
+  Escenario: Error por hardware duplicado en estanque
+    Dado que el ID del hardware ya existe en el sistema
+    Cuando intenta registrarlo mediante POST /api/v1/ponds
+    Entonces se muestra un mensaje de duplicidad con codigo 409
+
+  Escenario: Visualizar lista de estanques disponibles
+    Dado que el administrador accede al dashboard
+    Cuando carga la informacion mediante GET /api/v1/ponds
+    Entonces visualiza la lista de estanques con codigo 200
+    Y cada estanque incluye id, nombre, especie, volumen y estado
+
+  Escenario: Visualizar estanque por ID
+    Dado que existe un estanque con ID 1
+    Cuando consulta mediante GET /api/v1/ponds/1
+    Entonces visualiza los detalles del estanque con codigo 200
+
+  Escenario: Sin registros de estanques
+    Dado que no existen estanques registrados
+    Cuando accede mediante GET /api/v1/ponds
+    Entonces se muestra una lista vacia con codigo 200
+
+  Escenario: Visualizar estanques por piscigranja
+    Dado que existe una piscigranja con ID 1
+    Cuando consulta mediante GET /api/v1/farms/1/ponds
+    Entonces visualiza solo los estanques pertenecientes a esa piscigranja
+```
+
+*equipment/equipment-registration.feature (US31 — Registro de dispositivos IoT)*
+
+```gherkin
+@bdd-ready
+Característica: Registro de Dispositivos IoT
+  Como administrador, quiero registrar dispositivos IoT en el sistema
+  para poder asociarlos a estanques y recibir datos.
+  Relacionado: US31
+
+  Antecedentes:
+    Dado que el usuario esta autenticado con un token JWT valido de su granja
+
+  Escenario: Registro exitoso de equipo sensor individual
+    Cuando registro un equipo "SENSOR" con nombre "Sensor Temp-01" y codigo fisico "ST-001" mediante POST /api/v1/equipment
+    Entonces el modulo de equipos responde con codigo 201
+    Y el equipo registrado tiene estado inicial "AVAILABLE"
+
+  Escenario: Registro exitoso de nodo IoT completo
+    Cuando registro un nodo IoT con deviceId "NODE-REG-01" y nombre "Nodo Norte" mediante POST /api/v1/equipment/iot-device
+    Entonces el modulo de equipos responde con codigo 201
+    Y se crean los 4 componentes del nodo IoT en estado "AVAILABLE"
+
+  Escenario: Error por nodo IoT duplicado
+    Dado que ya existe un nodo IoT registrado con deviceId "NODE-DUP-01"
+    Cuando intento registrar nuevamente el nodo IoT con deviceId "NODE-DUP-01" mediante POST /api/v1/equipment/iot-device
+    Entonces el modulo de equipos responde con codigo 409
+
+  Escenario: Asociar dispositivo a estanque
+    Dado que existe un equipo disponible en la granja y un estanque disponible
+    Cuando vinculo el equipo al estanque mediante POST /api/v1/equipment/{equipmentId}/link/{pondId}
+    Entonces el modulo de equipos responde con codigo 200
+    Y el equipo cambia su estado a "LINKED" con el pondId correspondiente
+
+  Escenario: Visualizar lista de equipos
+    Dado que existen equipos registrados en la granja
+    Cuando consulto los equipos mediante GET /api/v1/equipment
+    Entonces el modulo de equipos responde con codigo 200
+    Y la lista contiene los equipos de la granja
+
+  Escenario: Eliminar equipo registrado
+    Dado que existe un equipo disponible en la granja
+    Cuando elimino el equipo mediante DELETE /api/v1/equipment/{id}
+    Entonces el modulo de equipos responde con codigo 204
+```
+
+*telemetry/telemetry-monitoring.feature (US05, US06, US07 — Monitoreo de telemetría de estanques)*
+
+```gherkin
+@bdd-ready
+Característica: Monitoreo de Telemetria de Estanques
+  Como piscicultor, deseo monitorear los parametros del agua en tiempo real
+  y visualizar el historial de lecturas para analizar tendencias.
+  Relacionado: US05, US06, US07
+
+  Antecedentes:
+    Dado que el usuario esta autenticado con un token JWT valido de su granja
+
+  Escenario: Visualizacion de parametros en tiempo real
+    Dado que el estanque de la granja tiene lecturas recientes registradas
+    Cuando consulta el estado en tiempo real mediante GET /api/v1/telemetry/ponds/{pondId}/status
+    Entonces la respuesta de telemetria tiene codigo 200
+    Y la respuesta de estado incluye lecturas de TEMPERATURE, TURBIDITY e ICA
+
+  Escenario: Visualizar historial de lecturas con filtro diario
+    Dado que existen agregados historicos recientes para el estanque
+    Cuando consulta los datos historicos con filtro "DAILY"
+    Entonces la respuesta de telemetria tiene codigo 200
+    Y la respuesta historica incluye valores minimos, maximos y promedios
+
+  Escenario: Visualizar historial de lecturas con filtro semanal
+    Dado que existen agregados historicos recientes para el estanque
+    Cuando consulta los datos historicos con filtro "WEEKLY"
+    Entonces la respuesta de telemetria tiene codigo 200
+    Y la respuesta historica incluye valores minimos, maximos y promedios
+
+  Escenario: Visualizar historial de lecturas con filtro mensual
+    Dado que existen agregados historicos recientes para el estanque
+    Cuando consulta los datos historicos con filtro "MONTHLY"
+    Entonces la respuesta de telemetria tiene codigo 200
+    Y la respuesta historica incluye valores minimos, maximos y promedios
+
+  Escenario: Sin registros historicos para estanque nuevo
+    Dado que existe un estanque en la granja sin registros historicos
+    Cuando consulta los datos historicos con filtro "DAILY"
+    Entonces la respuesta de telemetria tiene codigo 200
+    Y la lista historica devuelta esta vacia
+
+  Escenario: Ingesta manual agrupada de lecturas de sensor
+    Dado que existe un dispositivo IoT "DEV-MON-01" vinculado al estanque
+    Cuando envia lecturas agrupadas de temperatura 25.5, turbidez 4.0 e ICA 90.0 con firma valida
+    Entonces la respuesta de telemetria tiene codigo 200
+    Y las lecturas quedan persistidas para el estanque
+
+  Escenario: Ingesta con dispositivo no mapeado a ningun estanque
+    Dado que el dispositivo "DEV-UNLINKED" no esta vinculado a ningun estanque
+    Cuando envia lecturas agrupadas con firma valida para "DEV-UNLINKED"
+    Entonces la respuesta de telemetria tiene codigo 400
+```
+
+*notification/alert-system.feature (US15, US16, US22 — Sistema de alertas inteligentes)*
+
+```gherkin
+@bdd-ready
+Característica: Sistema de Alertas Inteligentes
+  Como usuario, deseo recibir alertas automaticas cuando los parametros del agua
+  superen los umbrales criticos para prevenir perdidas en la produccion.
+  Relacionado: US15, US16, US22
+
+  Antecedentes:
+    Dado que el usuario esta autenticado con un token JWT valido de su granja
+
+  Escenario: Alerta de advertencia por un parametro fuera de rango
+    Dado que existe un estanque de especie "TRUCHA" con umbrales configurados y dispositivo "DEV-ALT-01" vinculado
+    Cuando llega una lectura con temperatura 25.0 y turbidez 4.0 para "DEV-ALT-01"
+    Entonces se registra una notificacion de tipo "WARNING" para el operador del estanque
+
+  Escenario: Alerta critica por multiples parametros fuera de rango
+    Dado que existe un estanque de especie "TRUCHA" con umbrales configurados y dispositivo "DEV-ALT-02" vinculado
+    Cuando llega una lectura con temperatura 25.0 y turbidez 12.0 para "DEV-ALT-02"
+    Entonces se registra una notificacion de tipo "CRITICAL" para el administrador y el operador
+
+  Escenario: Configuracion exitosa de umbrales por especie
+    Dado que el administrador prepara umbrales validos para la especie "OTRO"
+    Cuando guarda la configuracion mediante POST /api/v1/telemetry/thresholds
+    Entonces el modulo de alertas responde con codigo 201
+    Y el umbral de la especie "OTRO" puede consultarse mediante GET /api/v1/telemetry/thresholds/OTRO
+
+  Escenario: Registro de token de dispositivo para notificaciones push
+    Dado que el usuario autenticado accede desde su dispositivo movil
+    Cuando registra su token FCM mediante POST /api/v1/users/{userId}/device-tokens
+    Entonces el modulo de alertas responde con codigo 201
+
+  Escenario: Visualizar notificaciones del usuario
+    Dado que el usuario autenticado tiene notificaciones registradas
+    Cuando consulta mediante GET /api/v1/users/{userId}/notifications
+    Entonces el modulo de alertas responde con codigo 200
+    Y cada notificacion incluye tipo, mensaje, destinatario y fecha de creacion
+
+  Escenario: Webhook de alerta externa recibido
+    Dado que un sistema externo envia una alerta por webhook
+    Cuando se recibe mediante POST /api/v1/webhooks/notifications
+    Entonces el modulo de alertas responde con codigo 201
+    Y se genera una notificacion interna para el usuario
+```
+
+*subscription/subscription-management.feature (US19 — Gestión de suscripciones)*
+
+```gherkin
+@bdd-ready
+Característica: Gestion de Suscripciones
+  Como administrador, deseo suscribirme a un plan y gestionar mi suscripcion
+  para acceder a los servicios de YakuControl.
+  Relacionado: US19
+
+  Antecedentes:
+    Dado que el usuario esta autenticado con un token JWT valido de su granja
+
+  Escenario: Visualizar lista de planes disponibles
+    Dado que existen planes registrados en el sistema
+    Cuando consulta los planes mediante GET /api/v1/plans
+    Entonces el modulo de suscripciones responde con codigo 200
+    Y la lista de planes no esta vacia
+
+  Escenario: Suscripcion exitosa a un plan
+    Dado que existe el plan "PREMIUM" de 30 dias disponible
+    Cuando confirma la suscripcion del usuario mediante POST /api/v1/subscriptions/{userId}
+    Entonces el modulo de suscripciones responde con codigo 200
+    Y el estado de la suscripcion devuelta es "ACTIVE"
+    Y el periodo de suscripcion corresponde a 30 dias desde hoy
+
+  Escenario: Visualizar suscripcion de un usuario
+    Dado que el usuario tiene una suscripcion activa al plan "FREE"
+    Cuando consulta la suscripcion mediante GET /api/v1/subscriptions/{userId}
+    Entonces el modulo de suscripciones responde con codigo 200
+    Y la respuesta incluye el nombre del plan y estado "ACTIVE"
+
+  Escenario: Cancelar suscripcion activa
+    Dado que el usuario tiene una suscripcion activa al plan "PREMIUM"
+    Cuando cancela la suscripcion mediante DELETE /api/v1/subscriptions/{userId}
+    Entonces el modulo de suscripciones responde con codigo 204
+    Y el estado persistido de la suscripcion cambia a "CANCELLED"
+
+  Escenario: Suscripcion a plan inexistente
+    Cuando intenta suscribir al usuario a un plan inexistente con ID 999999
+    Entonces el modulo de suscripciones responde con codigo 400
+```
+
 
 **Evidencia de ejecución.** Resultado de la ejecución de la suite en el backend, en el Edge y en la app:
 
