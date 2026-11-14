@@ -1,0 +1,526 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Arquitectura Empresarial Verifish</title>
+<style>
+  :root {
+    --ink: #111;
+    --line: #8a8a6a;
+    --act-bg: #ffffb5;  --act-in: #fffff0;
+    --str-bg: #dcdcff;  --str-el: #c8c8ff;
+    --cap-bg: #f8f3e3;  --cap-el: #fdfaf0;
+    --dem-bg: #a9d3ff;
+    --ofe-bg: #ccffcc;
+    --neg-bg: #ffffd6;  --neg-in: #f2dba8;  --neg-el: #f7e7c2;
+    --app-bg: #ebebfa;  --app-in: #e0e0f8;  --app-el: #c9c9f5;
+    --dat-bg: #ccffff;  --dat-el: #e9ffff;
+    --tec-bg: #eef6e8;  --tec-el: #c6e5b3;
+    --bc-bg: #ffe2c6;   --bc-in: #ffd2a8;  --bc-el: #fff1e4;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: #fff; color: var(--ink); }
+  body { font-family: Arial, "Liberation Sans", Helvetica, sans-serif; }
+  #fit { width: 2200px; transform-origin: 0 0; }
+  .sheet {
+    width: 2200px; padding: 10px;
+    display: grid;
+    grid-template-columns: 250px minmax(0, 1fr) 290px 250px;
+    gap: 10px;
+  }
+  .band { border: 1px solid var(--line); border-radius: 6px; padding: 8px 12px 12px; position: relative; }
+  .band > h2, .box > h3 { margin: 0 0 8px; text-align: center; font-size: 19px; letter-spacing: .3px; }
+  .box > h3 { font-size: 15px; }
+  .left-title { text-align: left !important; }
+  .top { grid-column: 2 / 4; }
+
+  /* elementos */
+  .el {
+    position: relative; border: 1px solid var(--line); border-radius: 4px;
+    padding: 6px 22px 6px 8px; font-size: 12.5px; font-weight: bold; line-height: 1.25;
+    display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; min-height: 44px; min-width: 0; overflow-wrap: break-word; hyphens: manual;
+  }
+  .el small { display: block; font-weight: normal; font-size: 11px; margin-top: 2px; }
+  .el .t { display: block; }
+  .row { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
+  .row > .el { flex: 1 1 0; min-width: 0; }
+  .grid { display: grid; gap: 8px; }
+  .grid > *, .sheet > * { min-width: 0; }
+  .dashed { border-style: dashed; }
+  .rounded { border-radius: 14px; }
+  .big { font-size: 13px; min-height: 64px; padding-right: 18px; }
+
+  /* íconos de esquina */
+  .el::after, .box.ic::after, .band.ic::after {
+    content: ""; position: absolute; top: 4px; right: 4px; width: 14px; height: 14px;
+    background-repeat: no-repeat; background-size: contain; opacity: .85;
+  }
+  .i-actor::after { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14' fill='none' stroke='%23000' stroke-width='1.1'%3E%3Ccircle cx='7' cy='3' r='2'/%3E%3Cpath d='M7 5v4M3.5 6.5h7M7 9l-3 4M7 9l3 4'/%3E%3C/svg%3E"); }
+  .i-goal::after { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14' fill='none' stroke='%23000' stroke-width='1.1'%3E%3Ccircle cx='7' cy='7' r='6'/%3E%3Ccircle cx='7' cy='7' r='3.5'/%3E%3Ccircle cx='7' cy='7' r='1' fill='%23000'/%3E%3C/svg%3E"); }
+  .i-cap::after { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14' fill='none' stroke='%23000' stroke-width='1.1'%3E%3Cpath d='M1 13h12V1H9v4H5v4H1z'/%3E%3Cpath d='M9 5v8M5 9v4'/%3E%3C/svg%3E"); }
+  .i-svc::after { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14' fill='none' stroke='%23000' stroke-width='1.1'%3E%3Crect x='1' y='4' width='12' height='6' rx='3'/%3E%3C/svg%3E"); }
+  .i-proc::after { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14' fill='none' stroke='%23000' stroke-width='1.1'%3E%3Cpath d='M1 5h7V2l5 5-5 5V9H1z'/%3E%3C/svg%3E"); }
+  .i-func::after { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14' fill='none' stroke='%23000' stroke-width='1.1'%3E%3Cpath d='M1 3l3 4-3 4h9l3-4-3-4z'/%3E%3C/svg%3E"); }
+  .i-comp::after { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14' fill='none' stroke='%23000' stroke-width='1.1'%3E%3Crect x='4' y='1' width='9' height='12'/%3E%3Crect x='1.5' y='3.5' width='5' height='2.5' fill='%23fff'/%3E%3Crect x='1.5' y='8' width='5' height='2.5' fill='%23fff'/%3E%3C/svg%3E"); }
+  .i-data::after { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14' fill='none' stroke='%23000' stroke-width='1.1'%3E%3Crect x='1' y='2' width='12' height='10'/%3E%3Cpath d='M1 5h12'/%3E%3C/svg%3E"); }
+  .i-node::after { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14' fill='none' stroke='%23000' stroke-width='1.1'%3E%3Cpath d='M1 4h9v9H1zM1 4l3-3h9v9l-3 3M10 4l3-3'/%3E%3C/svg%3E"); }
+  .i-dev::after { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14' fill='none' stroke='%23000' stroke-width='1.1'%3E%3Crect x='2' y='1.5' width='10' height='7' rx='1'/%3E%3Cpath d='M1 12.5h12l-1.5-4h-9z'/%3E%3C/svg%3E"); }
+  .i-princ::after { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14' fill='none' stroke='%23000' stroke-width='1.1'%3E%3Crect x='1' y='1' width='12' height='12'/%3E%3Cpath d='M7 3v5M7 10v1'/%3E%3C/svg%3E"); }
+  .i-folder::after { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14' fill='none' stroke='%23000' stroke-width='1.1'%3E%3Cpath d='M1 3h5l1 2h6v7H1z'/%3E%3C/svg%3E"); }
+  .i-loc::after { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14' fill='none' stroke='%23000' stroke-width='1.1'%3E%3Cpath d='M7 13S2.5 8 2.5 5a4.5 4.5 0 0 1 9 0C11.5 8 7 13 7 13z'/%3E%3C/svg%3E"); }
+  .i-val::after { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14' fill='none' stroke='%23000' stroke-width='1.1'%3E%3Cellipse cx='7' cy='7' rx='6' ry='4'/%3E%3C/svg%3E"); }
+  .i-chain::after { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14' fill='none' stroke='%23000' stroke-width='1.2'%3E%3Crect x='1' y='4.5' width='6' height='5' rx='2.5'/%3E%3Crect x='7' y='4.5' width='6' height='5' rx='2.5'/%3E%3C/svg%3E"); }
+
+  .box { border: 1px solid var(--line); border-radius: 6px; padding: 8px 10px 10px; position: relative; }
+  .sub { font-size: 12px; text-align: center; margin: -4px 0 8px; }
+  .cap-tag { display: inline-block; font-size: 10px; font-weight: bold; border: 1px solid var(--line); border-radius: 8px; padding: 0 5px; margin-top: 3px; background: #fff; }
+
+  /* bandas superiores */
+  .actors { background: var(--act-bg); }
+  .actors .grp { background: var(--act-in); border: 1px solid var(--line); border-radius: 4px; padding: 4px 8px 8px; }
+  .actors .grp > .lab { text-align: center; font-size: 12px; margin-bottom: 4px; }
+  .actors .el { background: var(--act-in); }
+  .strategy { background: var(--str-bg); }
+  .strategy .el { background: var(--str-el); border-radius: 10px; }
+  .caps { background: var(--cap-bg); }
+  .caps .el { background: var(--cap-el); border-radius: 8px; }
+
+  /* laterales */
+  .side { grid-row: 4 / 8; display: flex; flex-direction: column; }
+  .demand { grid-column: 1; background: var(--dem-bg); }
+  .offer  { grid-column: 4; background: var(--ofe-bg); }
+  .note {
+    margin: auto 0; background: #fff; border: 1px solid #777; padding: 14px;
+    font-size: 17px; font-weight: bold; line-height: 1.35;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 16px), calc(100% - 16px) 100%, 0 100%);
+  }
+  .note p { margin: 0 0 10px; }
+  .note .src { font-size: 13px; font-weight: normal; }
+
+  /* capa de negocio */
+  .neg { grid-column: 2; grid-row: 4; background: var(--neg-bg); }
+  .neg .box { background: var(--neg-in); }
+  .neg .el { background: var(--neg-el); }
+  .neg-body { display: grid; grid-template-columns: 165px 165px minmax(0, 1fr) 190px; gap: 10px; }
+  .vstack { display: flex; flex-direction: column; gap: 10px; }
+  .proc .el.big { background: var(--neg-el); }
+
+  /* aplicaciones / datos / tecnología */
+  .app { grid-column: 2; grid-row: 5; background: var(--app-bg); }
+  .app .box { background: var(--app-in); }
+  .app .el { background: var(--app-el); }
+  .dat { grid-column: 2; grid-row: 6; background: var(--dat-bg); }
+  .dat .el { background: var(--dat-el); min-height: 62px; }
+  .tec { grid-column: 2; grid-row: 7; background: var(--tec-bg); }
+  .tec .el { background: var(--tec-el); border-radius: 10px; }
+  .tec .gov { background: var(--tec-el); }
+
+  /* capa lateral blockchain */
+  .bc-frame { grid-column: 3; grid-row: 4 / 8; background: var(--bc-bg); }
+  .bc-frame > h2 { font-size: 17px; }
+  .bc-cell { grid-column: 3; z-index: 1; padding: 0 10px 10px; display: flex; flex-direction: column; justify-content: center; }
+  .bc-cell.r4 { grid-row: 4; padding-top: 70px; }
+  .bc-cell.r5 { grid-row: 5; }
+  .bc-cell.r6 { grid-row: 6; }
+  .bc-cell.r7 { grid-row: 7; }
+  .bc-cell .box { background: var(--bc-in); }
+  .bc-cell .el { background: var(--bc-el); }
+
+  h2.layer { text-align: left; font-size: 19px; }
+  .cols-2 { grid-template-columns: 1fr 1fr; }
+  .cols-3 { grid-template-columns: repeat(3, 1fr); }
+  .cols-4 { grid-template-columns: repeat(4, 1fr); }
+  .cols-6 { grid-template-columns: repeat(6, 1fr); }
+  .cols-7 { grid-template-columns: repeat(7, 1fr); }
+  .mt { margin-top: 10px; }
+  .footer { grid-column: 1 / 5; font-size: 12px; color: #444; text-align: right; padding: 0 4px 4px; }
+</style>
+</head>
+<body>
+<div id="fit">
+<div class="sheet">
+
+  <!-- ===================== ACTORES ===================== -->
+  <section class="band actors top ic i-actor">
+    <h2>ACTORES</h2>
+    <div class="grid" style="grid-template-columns: 1.25fr 1fr 1fr; gap: 14px;">
+      <div class="grp ic">
+        <div class="lab">Externos (cadena comercial y mercado)</div>
+        <div class="row">
+          <div class="el i-actor">Comprador de supermercado<small>Compras y aseguramiento de calidad</small></div>
+          <div class="el i-actor">Consumidor final<small>Visitante que escanea el QR</small></div>
+          <div class="el i-actor">Cadenas de supermercados<small>Cencosud, Supermercados Peruanos, Tottus</small></div>
+        </div>
+      </div>
+      <div class="grp">
+        <div class="lab">Internos (piscigranja cliente)</div>
+        <div class="row">
+          <div class="el i-actor">Administrador de piscigranja<small>ROLE_ADMIN</small></div>
+          <div class="el i-actor">Piscicultor<small>Operario de campo</small></div>
+        </div>
+      </div>
+      <div class="grp">
+        <div class="lab">Proveedor de la solución y entorno</div>
+        <div class="row">
+          <div class="el i-actor">Equipo Verifish<small>Startup, 5 integrantes</small></div>
+          <div class="el i-actor">Proveedores de servicios<small>Stripe, Firebase, RPC</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ALINEAMIENTO ESTRATÉGICO ===================== -->
+  <section class="band strategy top ic i-goal">
+    <h2>ALINEAMIENTO ESTRATÉGICO</h2>
+    <div class="grid" style="grid-template-columns: 1fr 1fr 1fr; gap: 10px;">
+      <div class="grid">
+        <div class="el i-goal">MISIÓN<small>Transformación digital del sector acuícola con IoT de monitoreo y control, y trazabilidad verificable de cada lote</small></div>
+        <div class="el i-goal">VISIÓN 2030<small>Plataforma referente en monitoreo, analítica y trazabilidad verificable en la acuicultura de América Latina</small></div>
+      </div>
+      <div class="grid">
+        <div class="el i-goal">G1 · 50 estanques con monitoreo activo en 6 meses</div>
+        <div class="el i-goal">G2 · Reducir al menos 15% los eventos de mortalidad masiva</div>
+        <div class="el i-goal">G3 · Certificado verificable para el 100% de los lotes piloto</div>
+      </div>
+      <div class="grid">
+        <div class="el i-goal">G4 · 20% de las granjas piloto contrata el complemento TRACE</div>
+        <div class="el i-goal">G5 · Un supermercado verifica lotes reales en menos de 1 minuto</div>
+        <div class="el i-princ">MODELO DE NEGOCIO SaaS B2B<small>Suscripción mensual por estanque y complemento TRACE</small></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CAPACIDADES ===================== -->
+  <section class="band caps top ic i-cap">
+    <h2>CAPACIDADES DE VERIFISH</h2>
+    <div class="grid cols-7">
+      <div class="el i-cap">Monitoreo IoT en tiempo real</div>
+      <div class="el i-cap">Cálculo del Índice de Calidad del Agua (ICA)</div>
+      <div class="el i-cap">Alerta temprana y respuesta a emergencias</div>
+      <div class="el i-cap">Control remoto de actuadores</div>
+      <div class="el i-cap">Operación autónoma en el borde (Edge)</div>
+      <div class="el i-cap">Trazabilidad por lote</div>
+      <div class="el i-cap">Certificación verificable con blockchain</div>
+      <div class="el i-cap">Gestión de estanques y equipos</div>
+      <div class="el i-cap">Analítica histórica y reportes</div>
+      <div class="el i-cap">Gestión de suscripciones y cobros</div>
+      <div class="el i-cap">Seguridad y aislamiento por granja</div>
+      <div class="el i-cap">Interoperabilidad con terceros</div>
+      <div class="el i-cap">Experiencia del cliente (web, móvil, i18n)</div>
+      <div class="el i-cap">Integración y despliegue continuo</div>
+    </div>
+  </section>
+
+  <!-- ===================== DEMANDA ===================== -->
+  <aside class="band side demand ic i-loc">
+    <h2>DEMANDA</h2>
+    <div class="note">
+      <p>Las piscigranjas de trucha altoandinas sufren mortalidad masiva por cambios en la calidad del agua que se detectan tarde: el control es manual, esporádico y sin historial.</p>
+      <p>Un solo evento puede matar hasta 200 000 truchas y costar más de S/ 300 000.</p>
+      <p>Los supermercados no tienen evidencia verificable del origen ni de las condiciones de cría de cada lote.</p>
+      <p class="src">(Problemática 5W+2H, sección 1.2.1)</p>
+    </div>
+  </aside>
+
+  <!-- ===================== ARQUITECTURA DE NEGOCIO ===================== -->
+  <section class="band neg ic i-val">
+    <h2 class="layer">ARQUITECTURA DE NEGOCIO</h2>
+
+    <div class="box ic i-cap">
+      <h3>ALINEAMIENTO NORMATIVO / MARCOS DE REFERENCIA</h3>
+      <div class="row">
+        <div class="el dashed i-folder">Marcos para la trazabilidad<small>Estándar GDST (eventos críticos y datos clave) y GS1 EPCIS 2.0</small></div>
+        <div class="el dashed i-folder">Marcos para la certificación<small>Marca de Certificación SANIPES y ASC (complementarias)</small></div>
+        <div class="el dashed i-folder">Marcos para los procesos<small>Scrum por sprints, GitFlow, SemVer y Conventional Commits</small></div>
+        <div class="el dashed i-folder">Marcos para las aplicaciones<small>Material Design, i18n en_US / es_419 y ARIA (TC10)</small></div>
+        <div class="el dashed i-folder">Marcos para los datos<small>Solo hashes on-chain, nunca datos comerciales (TC08)</small></div>
+        <div class="el dashed i-folder">Marcos para la seguridad<small>JWT por granja, firma HMAC y pagos sin datos de tarjeta (TC06)</small></div>
+        <div class="el dashed i-folder">Marcos para la infraestructura<small>Bajo costo (TC01) y conectividad rural intermitente (TC03)</small></div>
+      </div>
+    </div>
+
+    <div class="neg-body mt">
+      <!-- Gestión del conocimiento -->
+      <div class="box ic i-goal">
+        <h3>GESTIÓN DEL CONOCIMIENTO</h3>
+        <div class="vstack">
+          <div class="el i-actor">Entrevistas a los 3 segmentos y User Personas</div>
+          <div class="el i-actor">Ubiquitous Language compartido</div>
+          <div class="el i-actor">EventStorming y Domain Message Flows</div>
+          <div class="el i-actor">Documentación OpenAPI y del informe en GitHub</div>
+        </div>
+      </div>
+
+      <!-- Gestión del cambio -->
+      <div class="box ic i-goal">
+        <h3>GESTIÓN DEL CAMBIO</h3>
+        <div class="vstack">
+          <div class="el i-actor">Del cuaderno y WhatsApp al registro digital</div>
+          <div class="el i-actor">Interfaz de campo en 2 toques (QA-09)</div>
+          <div class="el i-actor">Piloto con granjas y un supermercado</div>
+          <div class="el i-actor">Demostración con maqueta en ferias de PRODUCE</div>
+        </div>
+      </div>
+
+      <!-- Centro: estructura, servicios, procesos -->
+      <div class="vstack">
+        <div class="box ic i-actor">
+          <h3>ESTRUCTURA ORGANIZACIONAL</h3>
+          <div class="grid" style="grid-template-columns: 0.8fr 1.3fr 0.9fr; gap: 10px;">
+            <div class="box ic i-actor" style="background:#f7e7c2">
+              <h3 style="font-size:13px">PISCIGRANJA CLIENTE</h3>
+              <div class="sub">Granja → Estanques → Lotes</div>
+              <div class="grid">
+                <div class="el i-actor">Administrador<small>Planifica, paga y certifica</small></div>
+                <div class="el i-actor">Piscicultores<small>Rondas, alertas y equipos</small></div>
+                <div class="el i-actor">Estanques y lotes<small>Unidad de producción</small></div>
+              </div>
+            </div>
+            <div class="box ic i-actor" style="background:#f7e7c2">
+              <h3 style="font-size:13px">VERIFISH</h3>
+              <div class="sub">Áreas de trabajo del equipo</div>
+              <div class="grid cols-3">
+                <div class="el i-actor">Producto y UX</div>
+                <div class="el i-actor">Backend</div>
+                <div class="el i-actor">Web y móvil</div>
+                <div class="el i-actor">Edge / IoT</div>
+                <div class="el i-actor">Despliegue</div>
+              </div>
+            </div>
+            <div class="box ic i-actor" style="background:#f7e7c2">
+              <h3 style="font-size:13px">CANAL MODERNO</h3>
+              <div class="sub">316 supermercados en el Perú</div>
+              <div class="grid">
+                <div class="el i-actor">Cencosud<small>Wong, Metro</small></div>
+                <div class="el i-actor">Supermercados Peruanos<small>Plaza Vea, Vivanda, Mass</small></div>
+                <div class="el i-actor">Tottus</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box ic i-svc">
+          <h3>SERVICIOS DE NEGOCIO</h3>
+          <div class="grid" style="grid-template-columns: 1fr 2fr; gap: 10px;">
+            <div class="box ic i-svc" style="background:#f7e7c2">
+              <h3 style="font-size:13px">SERVICIOS EXTERNOS (públicos)</h3>
+              <div class="grid">
+                <div class="el rounded i-svc">Verificación de lotes por QR, sin cuenta</div>
+                <div class="el rounded i-svc">Catálogo de planes y contacto de ventas</div>
+                <div class="el rounded i-svc">Propuesta de valor, sección YakuTrace y FAQ</div>
+              </div>
+            </div>
+            <div class="box ic i-svc" style="background:#f7e7c2">
+              <h3 style="font-size:13px">SERVICIOS INTERNOS (para la piscigranja)</h3>
+              <div class="grid cols-4">
+                <div class="el rounded i-svc">Monitoreo de estanques</div>
+                <div class="el rounded i-svc">Alertas push y por correo</div>
+                <div class="el rounded i-svc">Control de aireador y filtros</div>
+                <div class="el rounded i-svc">Gestión de lotes e hitos</div>
+                <div class="el rounded i-svc">Emisión y revocación de certificados</div>
+                <div class="el rounded i-svc">Reportes, tendencias y auditoría de respuesta</div>
+                <div class="el rounded i-svc">Gestión de usuarios y estanques</div>
+                <div class="el rounded i-svc">Suscripción y plan TRACE</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box proc ic i-proc">
+          <h3>PROCESOS: CICLO PRODUCTIVO Y DE TRAZABILIDAD DEL LOTE</h3>
+          <div class="row">
+            <div class="el big i-func">SIEMBRA DEL LOTE</div>
+            <div class="el big i-func">MONITOREO Y RESPUESTA</div>
+            <div class="el big i-func">REGISTRO DE HITOS</div>
+            <div class="el big i-func">COSECHA</div>
+            <div class="el big i-func">CERTIFICACIÓN Y ANCLAJE</div>
+            <div class="el big i-func">VERIFICACIÓN DEL COMPRADOR</div>
+          </div>
+          <div class="el rounded i-func mt">SUSCRIPCIÓN Y FACTURACIÓN RECURRENTE (proceso transversal)</div>
+        </div>
+      </div>
+
+      <!-- Gestión y gobierno de datos -->
+      <div class="box ic i-goal">
+        <h3>GESTIÓN Y GOBIERNO DE DATOS</h3>
+        <div class="vstack">
+          <div class="el rounded i-goal">Recolección<small>pH, temperatura y turbidez</small></div>
+          <div class="el rounded i-goal">Validación<small>Firma HMAC y filtro de falsos positivos</small></div>
+          <div class="el rounded i-goal">Análisis<small>ICA y rangos óptimos por estanque</small></div>
+          <div class="el rounded i-goal">Consolidación<small>Resúmenes de calidad cerrados</small></div>
+          <div class="el rounded i-goal">Indicadores<small>% en rango, cobertura y tiempo de respuesta</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ARQUITECTURA DE APLICACIONES ===================== -->
+  <section class="band app ic i-comp">
+    <h2 class="layer">ARQUITECTURA DE APLICACIONES</h2>
+    <div class="grid" style="grid-template-columns: 2.3fr 1fr 1fr 1fr; gap: 10px;">
+      <div class="box ic i-comp">
+        <h3 class="left-title">YAKUCONTROL BACKEND · MONOLITO MODULAR <span style="font-weight:normal">(Spring Boot 3.4, Spring Modulith)</span></h3>
+        <div class="grid cols-3">
+          <div class="el i-comp">IAM<small>JWT, roles y Farm Key</small><span class="cap-tag">Generic</span></div>
+          <div class="el i-comp">Equipment<small>Estanques, sensores y actuadores</small><span class="cap-tag">Supporting</span></div>
+          <div class="el i-comp">Telemetry<small>Ingesta, ICA y resúmenes</small><span class="cap-tag">Core</span></div>
+          <div class="el i-comp">Notification<small>Alertas y acciones de emergencia</small><span class="cap-tag">Core</span></div>
+          <div class="el i-comp">Payment<small>Suscripción y add-on TRACE</small><span class="cap-tag">Generic</span></div>
+          <div class="el i-comp">Traceability<small>Lotes, hitos y certificados</small><span class="cap-tag">Core</span></div>
+        </div>
+        <div class="grid cols-3 mt">
+          <div class="el i-func" style="font-size:11px">QualitySummaryScheduler</div>
+          <div class="el i-func" style="font-size:11px">AnchorOutboxWorker</div>
+          <div class="el i-func" style="font-size:11px">NotificationDeliveryRetryJob</div>
+        </div>
+      </div>
+      <div class="box ic i-comp">
+        <h3>APLICACIONES CLIENTE</h3>
+        <div class="grid">
+          <div class="el i-comp">App móvil<small>Flutter (Android) · piscicultor</small></div>
+          <div class="el i-comp">Web App<small>Flutter Web · administrador y verificación pública</small></div>
+          <div class="el i-comp">Landing Page<small>HTML5, CSS3 y JavaScript</small></div>
+        </div>
+      </div>
+      <div class="box ic i-comp">
+        <h3>SERVICIOS DE TI</h3>
+        <div class="grid">
+          <div class="el i-svc">API REST + OpenAPI / Swagger</div>
+          <div class="el i-svc">Eventos de dominio en proceso</div>
+          <div class="el i-svc">Puertos y adaptadores (ACL)</div>
+          <div class="el i-comp">Edge API<small>Ingesta MQTT, ICA y firma</small></div>
+        </div>
+      </div>
+      <div class="box ic i-comp">
+        <h3>SOLUCIONES DE TERCEROS</h3>
+        <div class="grid">
+          <div class="el i-comp">Stripe<small>Pagos y webhooks firmados</small></div>
+          <div class="el i-comp">Firebase Cloud Messaging<small>Notificaciones push</small></div>
+          <div class="el i-comp">Servicio de correo</div>
+          <div class="el i-comp">API meteorológica</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ARQUITECTURA DE DATOS ===================== -->
+  <section class="band dat ic i-data">
+    <h2 class="layer">ARQUITECTURA DE DATOS</h2>
+    <div class="grid cols-7">
+      <div class="el i-data">Base operativa PostgreSQL 16<small>Un esquema por Bounded Context</small></div>
+      <div class="el i-data">Serie temporal de lecturas<small>TimescaleDB (hypertables)</small></div>
+      <div class="el i-data">Resúmenes de calidad<small>Cerrados por día, semana y mes</small></div>
+      <div class="el i-data">Datos de trazabilidad<small>Lotes, hitos y certificados</small></div>
+      <div class="el i-data">Suscripciones y facturas<small>Planes BASIC, PRO, ENTERPRISE</small></div>
+      <div class="el i-data">Cola resiliente del Edge<small>Redis</small></div>
+      <div class="el i-princ">GOBIERNO DE DATOS<small>Aislamiento por farmId en cada consulta</small></div>
+    </div>
+  </section>
+
+  <!-- ===================== ARQUITECTURA TECNOLÓGICA ===================== -->
+  <section class="band tec ic i-node">
+    <h2 class="layer">ARQUITECTURA TECNOLÓGICA</h2>
+    <div class="grid" style="grid-template-columns: 3fr 1fr; gap: 10px;">
+      <div class="grid">
+        <div class="grid cols-7">
+          <div class="el i-dev">Dispositivo IoT<small>Arduino UNO, sensores y actuadores</small></div>
+          <div class="el i-node">Edge en Railway<small>Flask, Mosquitto y Redis</small></div>
+          <div class="el i-node">Azure App Service<small>Java 17, Brazil South</small></div>
+          <div class="el i-node">Azure Database for PostgreSQL<small>Servidor flexible</small></div>
+          <div class="el i-node">Firebase Hosting y App Distribution</div>
+          <div class="el i-node">Netlify<small>Hosting estático con CDN</small></div>
+          <div class="el i-dev">Smartphone del piscicultor</div>
+        </div>
+        <div class="el i-svc">Gestión de riesgos · conectividad intermitente → Edge Computing (AD-01) · red caída → Outbox con reintentos (AD-10) · réplicas → bloqueo de procesos (AD-14)</div>
+        <div class="box ic i-svc" style="background: var(--tec-el)">
+          <h3 style="font-size:13px; font-weight:normal"><b>Seguridad de la información / Ciberseguridad</b></h3>
+          <div class="grid cols-4" style="padding: 0 40px;">
+            <div class="el i-svc" style="background:#e2f2d8">Autenticación JWT</div>
+            <div class="el i-svc" style="background:#e2f2d8">Autorización ROLE_ADMIN / OPERATOR</div>
+            <div class="el i-svc" style="background:#e2f2d8">Firma HMAC de lecturas (AD-12)</div>
+            <div class="el i-svc" style="background:#e2f2d8">Webhooks de Stripe validados</div>
+          </div>
+        </div>
+      </div>
+      <div class="box gov ic i-proc">
+        <h3 style="font-size:13px; font-weight:normal"><b>GOBERNANZA TECNOLÓGICA</b></h3>
+        <div class="grid">
+          <div class="el i-svc" style="background:#e2f2d8">GitHub y GitHub Actions (CI/CD)</div>
+          <div class="el i-svc" style="background:#e2f2d8">Pruebas JUnit, Cucumber y pytest</div>
+          <div class="el i-svc" style="background:#e2f2d8">Arquitectura hexagonal (AD-05)</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CAPA LATERAL BLOCKCHAIN ===================== -->
+  <aside class="band bc-frame ic i-chain">
+    <h2>CAPA DE CONFIANZA<br>BLOCKCHAIN · YakuTrace</h2>
+  </aside>
+  <div class="bc-cell r4">
+    <div class="box ic i-chain">
+      <h3>NEGOCIO</h3>
+      <div class="grid">
+        <div class="el rounded i-svc">Certificado verificable del lote<small>Registro inalterado, no garantía absoluta</small></div>
+        <div class="el rounded i-svc">Complemento TRACE</div>
+        <div class="el rounded i-svc">Estados: pendiente, anclado, revocado</div>
+      </div>
+    </div>
+  </div>
+  <div class="bc-cell r5">
+    <div class="box ic i-chain">
+      <h3>APLICACIONES</h3>
+      <div class="grid">
+        <div class="el i-comp">LedgerPort y adaptador<small>Aísla la red del dominio (AD-05, AD-09)</small></div>
+        <div class="el i-comp">Verificación pública en servidor<small>Recalcula y compara la huella (AD-11)</small></div>
+      </div>
+    </div>
+  </div>
+  <div class="bc-cell r6">
+    <div class="box ic i-chain">
+      <h3>DATOS</h3>
+      <div class="grid cols-2">
+        <div class="el i-data">Huella SHA-256<small>Del contenido canónico (AD-08)</small></div>
+        <div class="el i-data">anchor_outbox<small>tx hash, bloque y reintentos</small></div>
+      </div>
+    </div>
+  </div>
+  <div class="bc-cell r7">
+    <div class="box ic i-chain">
+      <h3>TECNOLOGÍA</h3>
+      <div class="grid">
+        <div class="el i-node">Smart contract (Solidity)<small>Solo el backend puede escribir</small></div>
+        <div class="el i-node">Red EVM de pruebas configurable</div>
+        <div class="el i-node">Proveedor RPC<small>JSON-RPC</small></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== OFERTA DE VALOR ===================== -->
+  <aside class="band side offer ic i-val">
+    <h2>OFERTA DE VALOR</h2>
+    <div class="note">
+      <p>Monitoreo preventivo del agua con alertas en menos de 10 segundos y control remoto de equipos, para reducir la mortalidad en las piscigranjas.</p>
+      <p>Certificado por lote con código QR, verificable en menos de 3 segundos y sin crear cuenta.</p>
+      <p>Todo mediante una suscripción SaaS accesible para pequeños y medianos productores.</p>
+    </div>
+  </aside>
+
+  <div class="footer">Verifish · YakuControl + YakuTrace · Arquitectura empresarial elaborada a partir del informe del proyecto (capítulos I a VII)</div>
+</div>
+</div>
+<script>
+  (function () {
+    var fit = document.getElementById('fit');
+    function resize() {
+      var s = Math.min(1, window.innerWidth / 2200);
+      fit.style.transform = 'scale(' + s + ')';
+      document.body.style.height = (fit.offsetHeight * s) + 'px';
+    }
+    window.addEventListener('resize', resize);
+    resize();
+  })();
+</script>
+</body>
+</html>
