@@ -34,8 +34,8 @@ El smoke test de navegador termina con código 1 porque detecta el fallo real de
 
 Se repitieron las cuatro pruebas de Landing y las siete de Flutter. Pasaron las dos suites. El recorrido administrativo verificó inicio de sesión contra Azure, alta y listado de estanques, registro y vínculo de un equipo, consulta de notificaciones y cierre de sesión. El registro repetido del mismo dispositivo devolvió 201. Se conserva el [resultado de la prueba](../assets/images/sprint1/web-browser-results-2026-11-13.json).
 
-- [Grabación de ejecución de Landing y Web](../assets/videos/exec-landing-web.mp4).
-- [Prototipo navegable](../design/tb2-web/index.html) y [video de las once pantallas](../assets/videos/prototype-web.mp4).
+- [Grabación de ejecución de Landing y Web en Microsoft Stream](https://upcedupe-my.sharepoint.com/personal/u20231d390_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu20231d390%5Fupc%5Fedu%5Fpe%2FDocuments%2Femergentes%20grupo%202%2Fexec%2Dlanding%2Dweb%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Eb6381168%2De5a4%2D4ae1%2D8ad6%2D62bf2b987f44) · [MP4](../assets/videos/exec-landing-web.mp4).
+- [Prototipo navegable](../design/tb2-web/index.html) y [video de las once pantallas en Microsoft Stream](https://upcedupe-my.sharepoint.com/personal/u20231d390_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu20231d390%5Fupc%5Fedu%5Fpe%2FDocuments%2Femergentes%20grupo%202%2Fprototype%2Dweb%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E426bc326%2Da187%2D4621%2Db87d%2Da65ebe3c57af) · [MP4](../assets/videos/prototype-web.mp4).
 - [Landing pública en Vercel](https://verifish-landing.vercel.app). La actualización de la Landing está en el PR #1.
 - [Web en Firebase Hosting](https://yakucontrol-v2.web.app), versión `b27c1e8c2210d609`.
 
@@ -45,7 +45,7 @@ Se crearon dos administradores y recursos de prueba con prefijo TB2 en Azure. Su
 
 Se verificó el inicio de sesión en Firebase, el registro y listado de un estanque, el registro de un nodo de prueba, su vínculo en estado `LINKED`, la consulta de notificaciones y el cierre de sesión. Las capturas `exec-web-*` del recorrido administrativo se actualizaron con esta ejecución. [Resultados](../assets/images/sprint1/web-production-results.json).
 
-Los videos de prototipo y ejecución incluyen narración en español. El recorrido de la Landing muestra las mejoras del PR #1.
+Los videos de prototipo y ejecución incluyen narración en español. Ambos están en la [carpeta compartida del Grupo 2](https://upcedupe-my.sharepoint.com/:f:/g/personal/u20231d390_upc_edu_pe/IgC7UHichIYUR5639OWt_hZMAd4oUOZgaFyUZTFPogeUp-4?e=56veGH). El recorrido de la Landing muestra las mejoras del PR #1.
 
 ## Evidencias
 

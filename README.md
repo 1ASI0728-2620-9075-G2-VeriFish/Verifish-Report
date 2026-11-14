@@ -3782,7 +3782,7 @@ La tabla reúne los prototipos y las grabaciones de sus recorridos.
 | Aplicación | Prototipo | Flujos demostrados | Video del recorrido |
 | :--- | :--- | :--- | :--- |
 | App móvil del piscicultor | [Prototipo en Figma](https://www.figma.com/design/FdwCU88zpBqlCuHjQ9iY69/YacuControl?node-id=0-1) | User Flows 1–4, 15 y 21: registro, estado del estanque, alertas con activación del aireador, perfil, novedades y limpieza | (pegar enlace) |
-| Web App del administrador | [Prototipo navegable](./design/tb2-web/index.html) · [Referencia en Figma](https://www.figma.com/design/FdwCU88zpBqlCuHjQ9iY69/YacuControl?node-id=0-1) | Inicio de sesión, registro, granja, inicio, estanques, equipos, operadores, notificaciones y configuración. | [Recorrido de los mock-ups 8–18](./assets/videos/prototype-web.mp4) |
+| Web App del administrador | [Prototipo navegable](./design/tb2-web/index.html) · [Referencia en Figma](https://www.figma.com/design/FdwCU88zpBqlCuHjQ9iY69/YacuControl?node-id=0-1) | Inicio de sesión, registro, granja, inicio, estanques, equipos, operadores, notificaciones y configuración. | [Recorrido de los mock-ups 8–18 en Microsoft Stream](https://upcedupe-my.sharepoint.com/personal/u20231d390_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu20231d390%5Fupc%5Fedu%5Fpe%2FDocuments%2Femergentes%20grupo%202%2Fprototype%2Dweb%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E426bc326%2Da187%2D4621%2Db87d%2Da65ebe3c57af) · [MP4](./assets/videos/prototype-web.mp4) |
 | Verificación pública (comprador) | (pegar enlace del prototipo) | User Flow 13: verificación de un lote por QR en sus cuatro resultados | (pegar enlace) |
 
 ![Video del prototipo de la app móvil](./assets/images/cap6/prototype-mobile.png)
@@ -4518,9 +4518,11 @@ Las siguientes capturas muestran la ejecución de los productos por historia de 
 
 | Producto | Contenido | Enlace |
 | :--- | :--- | :--- |
-| Landing Page y Web App | Propuesta, planes, YakuTrace, formulario y términos. Inicio de sesión, registro de estanque, vínculo de equipo y notificaciones. | [Recorrido explicado de Landing y Web](./assets/videos/exec-landing-web.mp4) |
+| Landing Page y Web App | Propuesta, planes, YakuTrace, formulario y términos. Inicio de sesión, registro de estanque, vínculo de equipo y notificaciones. | [Recorrido explicado de Landing y Web en Microsoft Stream](https://upcedupe-my.sharepoint.com/personal/u20231d390_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu20231d390%5Fupc%5Fedu%5Fpe%2FDocuments%2Femergentes%20grupo%202%2Fexec%2Dlanding%2Dweb%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Eb6381168%2De5a4%2D4ae1%2D8ad6%2D62bf2b987f44) · [MP4](./assets/videos/exec-landing-web.mp4) |
 | App móvil | Inicio de sesión, lectura del estanque, alerta y activación del aireador | (pegar enlace) |
 | Edge API y backend | Lectura firmada desde el Edge hasta su persistencia | (pegar enlace) |
+
+[Carpeta compartida de los videos del Grupo 2](https://upcedupe-my.sharepoint.com/:f:/g/personal/u20231d390_upc_edu_pe/IgC7UHichIYUR5639OWt_hZMAd4oUOZgaFyUZTFPogeUp-4?e=56veGH).
 
 #### 7.2.1.6. Services Documentation Evidence for Sprint Review
 
