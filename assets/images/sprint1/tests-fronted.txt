@@ -1,0 +1,9 @@
+00:00 +0: loading <workspace>/VeriFish-Fronted/test/web/admin_flows_test.dart
+00:00 +0: <workspace>/VeriFish-Fronted/test/widget_test.dart: placeholder test
+00:00 +1: <workspace>/VeriFish-Fronted/test/web/admin_flows_test.dart: a farm access failure is visible and can be retried
+00:00 +2: <workspace>/VeriFish-Fronted/test/web/admin_flows_test.dart: no farm shows guidance instead of an empty equipment list
+00:00 +3: <workspace>/VeriFish-Fronted/test/web/admin_flows_test.dart: invalid pond volume never reaches the backend
+00:01 +4: <workspace>/VeriFish-Fronted/test/web/admin_flows_test.dart: a duplicate device keeps the form open and shows the conflict
+00:01 +5: <workspace>/VeriFish-Fronted/test/web/admin_flows_test.dart: a notification error is not presented as no notifications
+00:01 +6: <workspace>/VeriFish-Fronted/test/web/admin_flows_test.dart: 401 clears session keys, preserves other preferences and notifies auth
+00:01 +7: All tests passed!
