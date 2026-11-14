@@ -307,6 +307,11 @@ El repositorio se organizó con GitFlow. La rama `main` conserva solo versiones 
 - [6.4. Applications UX/UI Design](#64-applications-uxui-design)
   - [6.4.1. Applications Wireframes](#641-applications-wireframes)
   - [6.4.2. Applications Wireflow Diagrams](#642-applications-wireflow-diagrams)
+  - [6.4.3. Applications Mock-ups](#643-applications-mock-ups)
+- [6.5. Applications Prototyping](#65-applications-prototyping)
+- [Capítulo VII: Product Implementation, Validation & Deployment](#capítulo-vii-product-implementation-validation--deployment)
+  - [Configuración de despliegue](#714-software-deployment-configuration)
+  - [Evidencias de ejecución](#7215-execution-evidence-for-sprint-review)
 - [Conclusiones](#conclusiones)
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)
@@ -3382,6 +3387,131 @@ Las rutas principales y alternativas se explican en cada diagrama. Los flujos 1�
 
 
 **Entrega y trazabilidad.** Las fuentes, sus PNG y la revisión técnica se versionan en el repositorio. La [revisión técnica del capítulo](design/package-e/REVISION_PAQUETE_E.md) distingue los entregables verificables, el material de sustentación y los pendientes externos. El [guion de sustentación](design/package-e/GUION_SUSTENTACION.md) organiza la explicación por audiencia.
+
+### 6.4.3. Applications Mock-ups
+
+| Mock-up 8 — Inicio de sesión |
+|----------------------------------|
+| <img src="assets/images/cap6/mockup8.png" alt="Mock-up 8: Inicio de sesión" /> |
+
+| Mock-up 9 — Crear cuenta |
+|----------------------------------|
+| <img src="assets/images/cap6/mockup9.png" alt="Mock-up 9: Crear cuenta" /> |
+
+| Mock-up 10 — Registro de granja |
+|----------------------------------|
+| <img src="assets/images/cap6/mockup10.png" alt="Mock-up 10: Registro de granja" /> |
+
+| Mock-up 11 — Sección Inicio |
+|----------------------------------|
+| <img src="assets/images/cap6/mockup11.png" alt="Mock-up 11: Sección Inicio" /> |
+
+| Mock-up 12 — Sección Estanques |
+|----------------------------------|
+| <img src="assets/images/cap6/mockup12.png" alt="Mock-up 12: Sección Estanques" /> |
+
+| Mock-up 13 — Registrar estanque |
+|----------------------------------|
+| <img src="assets/images/cap6/mockup13.png" alt="Mock-up 13: Registrar estanque" /> |
+
+| Mock-up 14 — Registrar estanque – Detalle de estanque |
+|----------------------------------|
+| <img src="assets/images/cap6/mockup14.png" alt="Mock-up 14: Registrar estanque – Detalle de estanque" /> |
+
+| Mock-up 15 — Sección Equipos |
+|----------------------------------|
+| <img src="assets/images/cap6/mockup15.png" alt="Mock-up 15: Sección Equipos" /> |
+
+| Mock-up 16 — Sección Operadores |
+|----------------------------------|
+| <img src="assets/images/cap6/mockup16.png" alt="Mock-up 16: Sección Operadores" /> |
+
+| Mock-up 17 — Sección Notificaciones |
+|----------------------------------|
+| <img src="assets/images/cap6/mockup17.png" alt="Mock-up 17: Sección Notificaciones" /> |
+
+| Mock-up 18 — Sección Configuración |
+|----------------------------------|
+| <img src="assets/images/cap6/mockup18.png" alt="Mock-up 18: Sección Configuración" /> |
+
+## 6.5. Applications Prototyping
+
+| Aplicación | Prototipo | Flujos demostrados | Video del recorrido |
+| :--- | :--- | :--- | :--- |
+| Web App del administrador | [Prototipo navegable](./design/tb2-web/index.html) · [Referencia en Figma](https://www.figma.com/design/FdwCU88zpBqlCuHjQ9iY69/YacuControl?node-id=0-1) | Inicio de sesión, registro, granja, inicio, estanques, equipos, operadores, notificaciones y configuración. | [Recorrido de los mock-ups 8–18 en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231d390_upc_edu_pe/IQDd08aITNSfRZsOJSvOA4saAYvfqAUMKf1V8xERv6j5a3w?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=vow8j4) · [MP4](./assets/videos/prototype-web.mp4) |
+
+![Vista de estanques en el prototipo web](./assets/images/cap6/prototype-web.png)
+
+# Capítulo VII: Product Implementation, Validation & Deployment
+
+## 7.1. Software Configuration Management
+
+### 7.1.4. Software Deployment Configuration
+
+| Producto | Hosting | Versión publicada | Enlaces |
+| :--- | :--- | :--- | :--- |
+| Landing Page | Vercel | Formulario comercial, YakuTrace y términos verificados en producción. | [Landing pública](https://verifish-landing.vercel.app) · [PR a main](https://github.com/1ASI0728-2620-9075-G2-VeriFish/Verifish-Landing/pull/2) |
+| Web App (Flutter Web) | Firebase Hosting | Versión `c8382db9d039d1d0`, compilada desde `main` (`8511df4`). | [YakuControl Web](https://yakucontrol-v2.web.app) · [PR a main](https://github.com/1ASI0728-2620-9075-G2-VeriFish/VeriFish-Fronted/pull/2) |
+
+## 7.2. Solution Implementation
+
+### 7.2.1. Sprint 1
+
+#### 7.2.1.4. Testing Suite Evidence for Sprint Review
+
+Pasaron cuatro pruebas de la Landing en producción y siete pruebas de Flutter. La compilación web en debug también pasó. En Firebase se verificaron la ruta directa `/estanques`, el inicio y cierre de sesión y la carga de Estanques, Equipos y Notificaciones. [Validación de Landing y Web](evidence/tb2-web-validation.md).
+
+#### 7.2.1.5. Execution Evidence for Sprint Review
+
+**Landing Page**
+
+*US01 — Propuesta de valor.*
+
+![Landing Page: Propuesta de valor](./assets/images/sprint1/exec-landing-desktop.png)
+
+*US02 — Planes y precios.*
+
+![Landing Page: Planes y precios](./assets/images/sprint1/exec-landing-plans.png)
+
+*US04 — Formulario de ventas con validación.*
+
+![Landing Page: Formulario de ventas con validación](./assets/images/sprint1/exec-landing-contact.png)
+
+*US18 — Sección YakuTrace.*
+
+![Landing Page: Sección YakuTrace](./assets/images/sprint1/exec-landing-yakutrace.png)
+
+*US01 — Versión móvil y footer con términos y condiciones.*
+
+![Landing Page: Versión móvil y footer con términos y condiciones](./assets/images/sprint1/exec-landing-mobile.png)
+
+**Web App**
+
+*TS02 — Inicio de sesión del administrador.*
+
+![Web App: Inicio de sesión del administrador](./assets/images/sprint1/exec-web-login.png)
+
+*US15 — Listado de estanques.*
+
+![Web App: Listado de estanques](./assets/images/sprint1/exec-web-ponds.png)
+
+*US15 — Registro de un estanque.*
+
+![Web App: Registro de un estanque](./assets/images/sprint1/exec-web-register-pond.png)
+
+*US15 — Equipos vinculados a los estanques.*
+
+![Web App: Equipos vinculados a los estanques](./assets/images/sprint1/exec-web-equipment.png)
+
+*US07 — Notificaciones del administrador.*
+
+![Web App: Notificaciones del administrador](./assets/images/sprint1/exec-web-notifications.png)
+
+| Producto | Contenido | Enlace |
+| :--- | :--- | :--- |
+| Landing Page y Web App | Propuesta, planes, YakuTrace, formulario y términos. Inicio de sesión, registro de estanque, vínculo de equipo y notificaciones. | [Recorrido explicado de Landing y Web en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231d390_upc_edu_pe/IQBCrw_jogCwRqb2DnDOljNnAVV8XtoNY_uGIyV8pdlFD3E?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=BaKHqq) · [MP4](./assets/videos/exec-landing-web.mp4) |
+
+[Carpeta compartida de los videos del Grupo 2](https://upcedupe-my.sharepoint.com/:f:/g/personal/u20231d390_upc_edu_pe/IgC7UHichIYUR5639OWt_hZMAd4oUOZgaFyUZTFPogeUp-4?e=56veGH).
 
 # Conclusiones
 

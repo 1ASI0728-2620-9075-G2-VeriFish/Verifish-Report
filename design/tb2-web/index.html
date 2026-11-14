@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>YakuControl · Prototipo web</title>
+  <style>
+    * { box-sizing: border-box }
+    body { margin: 0; background: #edf3f8; color: #142439; font: 16px/1.5 system-ui, sans-serif }
+    main { max-width: 1100px; margin: auto; padding: 20px }
+    h1 { margin: 0 0 12px; font-size: 24px }
+    nav { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px }
+    button { border: 1px solid #71869a; border-radius: 7px; padding: 7px 11px; background: white; color: #142439; cursor: pointer }
+    button[aria-current="step"], #next { background: #00685f; color: white; border-color: #00685f }
+    button:focus-visible { outline: 3px solid #1374cb; outline-offset: 2px }
+    #screen { display: block; width: 100%; height: min(63vh, 670px); object-fit: contain; background: white; border: 1px solid #bccad8; border-radius: 9px }
+    footer { display: flex; align-items: center; flex-wrap: wrap; justify-content: space-between; gap: 10px; margin-top: 12px }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>YakuControl · Prototipo web del administrador</h1>
+    <nav id="steps" aria-label="Pantallas del prototipo"></nav>
+    <img id="screen" alt="">
+    <footer>
+      <span id="caption" aria-live="polite"></span>
+      <button type="button" id="next">Continuar</button>
+    </footer>
+  </main>
+  <script>
+    const screens = [
+      [8, 'Iniciar sesión', 'Ingreso a la Web App'],
+      [9, 'Crear cuenta', 'Registro del administrador'],
+      [10, 'Crear granja', 'Registro de la granja'],
+      [11, 'Inicio', 'Vista general de la granja'],
+      [12, 'Estanques', 'Listado de estanques'],
+      [13, 'Nuevo estanque', 'Formulario de registro'],
+      [14, 'Detalle', 'Consulta del estanque registrado'],
+      [15, 'Equipos', 'Administración y vínculo de equipos'],
+      [16, 'Operadores', 'Administración de operadores'],
+      [17, 'Notificaciones', 'Consulta de avisos'],
+      [18, 'Configuración', 'Preferencias de la Web App'],
+    ];
+
+    const steps = document.querySelector('#steps');
+    const image = document.querySelector('#screen');
+    const caption = document.querySelector('#caption');
+    const next = document.querySelector('#next');
+    let current = 0;
+
+    const buttons = screens.map(([, name], index) => {
+      const button = document.createElement('button');
+      button.type = 'button';
+      button.textContent = name;
+      button.addEventListener('click', () => show(index));
+      steps.append(button);
+      return button;
+    });
+
+    function show(index) {
+      current = index;
+      const [id, name, description] = screens[index];
+      image.src = '../../assets/images/cap6/mockup' + id + '.png';
+      image.alt = name;
+      caption.textContent = (index + 1) + '/' + screens.length + ' · ' + description;
+      buttons.forEach((button, position) => {
+        if (position === index) button.setAttribute('aria-current', 'step');
+        else button.removeAttribute('aria-current');
+      });
+      next.textContent = index === screens.length - 1 ? 'Volver al inicio' : 'Continuar';
+    }
+
+    next.addEventListener('click', () => show((current + 1) % screens.length));
+    show(0);
+  </script>
+</body>
+</html>
