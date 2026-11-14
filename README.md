@@ -284,10 +284,11 @@ Para el Sprint 1 el equipo reorganizó el trabajo por producto: cada integrante 
   - [4.2.4. Bounded Context Canvases](#424-bounded-context-canvases)
   - [4.2.5. Context Mapping](#425-context-mapping)
 - [4.3. Software Architecture](#43-software-architecture)
-  - [4.3.1. Software Architecture System Landscape Diagram](#431-software-architecture-system-landscape-diagram)
-  - [4.3.2. Software Architecture Context Level Diagrams](#432-software-architecture-context-level-diagrams)
-  - [4.3.3. Software Architecture Container Level Diagrams](#433-software-architecture-container-level-diagrams)
-  - [4.3.4. Software Architecture Deployment Diagrams](#434-software-architecture-deployment-diagrams)
+  - [4.3.1. Arquitectura Empresarial](#431-arquitectura-empresarial)
+  - [4.3.2. Software Architecture System Landscape Diagram](#432-software-architecture-system-landscape-diagram)
+  - [4.3.3. Software Architecture Context Level Diagrams](#433-software-architecture-context-level-diagrams)
+  - [4.3.4. Software Architecture Container Level Diagrams](#434-software-architecture-container-level-diagrams)
+  - [4.3.5. Software Architecture Deployment Diagrams](#435-software-architecture-deployment-diagrams)
 
 ### Capítulo V: Tactical-Level Software Design
 - [5.1. Bounded Context: Telemetry Context](#51-bounded-context-telemetry-context)
@@ -2052,17 +2053,22 @@ Los pares Telemetry–Notification, Telemetry–Equipment y Payment–IAM se rel
 <div style="page-break-after: always;"></div>
 
 ## 4.3. Software Architecture
-### 4.3.1. Software Architecture System Landscape Diagram
+### 4.3.1. Arquitectura Empresarial
+Antes de descender a los niveles C4, se presenta la arquitectura empresarial de Verifish. Alinea la estrategia (misión, visión y objetivos), las capacidades, los procesos de negocio, las aplicaciones, los datos y la tecnología de la plataforma **YakuControl + YakuTrace**, e incluye la capa de confianza blockchain, la demanda del mercado y la oferta de valor.
+
+![Arquitectura Empresarial](./assets/arquitectura-empresarial/arquitectura-empresarial.jpg)
+
+### 4.3.2. Software Architecture System Landscape Diagram
 Este nivel ofrece una visión macroscópica del ecosistema de la piscigranja y de su cadena comercial. Muestra la plataforma **YakuControl + YakuTrace** junto a los actores (administrador, piscicultor, comprador de supermercado y consumidor final) y a los sistemas externos con los que interactúa: pasarela de pagos (Stripe), notificaciones push (Firebase), correo, servicios meteorológicos y la red blockchain. Permite comprender los flujos de información del negocio existan o no integraciones directas a nivel de código.
 
 ![Landscape Diagram](./assets/images/cap4/c0_system_landscape.png)
 
-### 4.3.2. Software Architecture Context Level Diagrams
+### 4.3.3. Software Architecture Context Level Diagrams
 El diagrama de contexto define las fronteras del sistema: un único recuadro central (YakuControl + YakuTrace) rodeado por sus usuarios directos —el administrador, el piscicultor, el comprador de supermercado y el consumidor final— y por los sistemas con los que se integra: Stripe, Firebase Cloud Messaging, el servicio de correo, la API meteorológica y la red blockchain con su proveedor RPC.
 
 ![Context Diagram](./assets/images/cap4/c1_yakucontrol_context.png)
 
-### 4.3.3. Software Architecture Container Level Diagrams
+### 4.3.4. Software Architecture Container Level Diagrams
 
 El diagrama de contenedores muestra los elementos de alto nivel de la solución y sus responsabilidades. La arquitectura del backend es un **monolito modular** (Spring Boot) con seis Bounded Contexts, desplegable como una sola unidad. Los contenedores son:
 
@@ -2081,7 +2087,7 @@ Los clientes se comunican con el backend por REST/JSON sobre HTTPS; el Edge API 
 
 ![Container Diagram](./assets/images/cap4/c2_yakucontrol_container.png)
 
-### 4.3.4. Software Architecture Deployment Diagrams
+### 4.3.5. Software Architecture Deployment Diagrams
 El diagrama de despliegue mapea la arquitectura lógica a la infraestructura. El **nodo IoT** se ubica en la granja con conectividad intermitente; el **Edge API** se ejecuta en un servicio PaaS (Railway); el **backend** y la **base de datos** se despliegan en Microsoft Azure (App Service y Azure Database for PostgreSQL); la **Landing Page** y la **Web App** se distribuyen como contenido estático con CDN; la **app móvil** se instala en el teléfono del piscicultor; y el **smart contract** se despliega en una red EVM de pruebas configurable.
 
 ![Deployment Diagram](./assets/images/cap4/c4_deployment.png)
@@ -3862,7 +3868,7 @@ Todo el código, los identificadores, los endpoints y los archivos `.feature` se
 
 ### 7.1.4. Software Deployment Configuration
 
-El despliegue sigue lo definido en el diagrama de la sección 4.3.4. Cada producto se publica desde la rama `main` de su repositorio, una vez etiquetada la versión.
+El despliegue sigue lo definido en el diagrama de la sección 4.3.5. Cada producto se publica desde la rama `main` de su repositorio, una vez etiquetada la versión.
 
 | Producto | Plataforma | Pasos de despliegue | URL |
 | :--- | :--- | :--- | :--- |
