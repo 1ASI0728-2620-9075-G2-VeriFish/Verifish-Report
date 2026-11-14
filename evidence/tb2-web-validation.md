@@ -17,7 +17,7 @@ Trabajo de Rúbens. Los cambios están en ramas feature y los PR apuntan a devel
 | Análisis final | 49 incidencias previas; ninguna nueva en las fuentes |
 | Compilación debug | Correcta con Azure como API_BASE_URL |
 | Compilación release | Correcta; publicada en Firebase Hosting |
-| Hosting público | Login carga y /estanques responde 200; el JavaScript coincide con el build release |
+| Hosting público | Inicio de sesión y recorrido administrativo verificados en Firebase. |
 | Login contra Azure | Correcto |
 | Crear granja y volver a ingresar | Correcto; el nuevo JWT obtiene farmId |
 | Registrar estanque y dispositivo IoT | Correcto |
@@ -41,10 +41,16 @@ Se repitieron las cuatro pruebas de Landing y las siete de Flutter. Pasaron las 
 
 Se crearon dos administradores y recursos de prueba con prefijo TB2 en Azure. Sus credenciales se guardaron fuera de los repositorios y no se incluyeron en las evidencias.
 
+## Recorrido de la Web publicada
+
+Se verificó el inicio de sesión en Firebase, el registro y listado de un estanque, el registro de un nodo de prueba, su vínculo en estado `LINKED`, la consulta de notificaciones y el cierre de sesión. Las capturas `exec-web-*` del recorrido administrativo se actualizaron con esta ejecución. [Resultados](../assets/images/sprint1/web-production-results.json).
+
+Los videos de prototipo y ejecución incluyen narración en español. El recorrido de la Landing muestra las mejoras del PR #1.
+
 ## Evidencias
 
 Los resultados crudos están en [assets/images/sprint1](../assets/images/sprint1/): `tests-fronted.txt`, `tests-landing.txt`, `analyze-before.txt`, `analyze-after.txt`, `build-web-debug.txt`, `build-web-release.txt`, `web-browser-results.json`, `web-browser-output.txt`, `api-integration-results.json` y `hosting-results.json`.
 
-Las capturas `exec-landing-*` y `exec-web-*` son ejecuciones locales. Las imágenes `tests-*` muestran la salida registrada de los comandos, no una ejecución nueva. Los archivos originales de diseño permanecen en assets/diseñoux; las copias solicitadas están en assets/images/cap6/mockup8.png hasta mockup18.png.
+Las capturas `exec-landing-*` muestran la rama de la Landing y las capturas administrativas `exec-web-*` muestran la Web publicada en Firebase. Las imágenes `tests-*` muestran la salida registrada de los comandos, no una ejecución nueva. Los archivos originales de diseño permanecen en assets/diseñoux; las copias solicitadas están en assets/images/cap6/mockup8.png hasta mockup18.png.
 
 ![Web publicada en Firebase Hosting](../assets/images/sprint1/deploy-firebase-hosting.png)

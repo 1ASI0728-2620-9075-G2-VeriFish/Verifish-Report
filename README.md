@@ -3869,7 +3869,7 @@ El despliegue sigue lo definido en el diagrama de la sección 4.3.4. Cada produc
 | Backend | Azure App Service (Java 17, Linux, plan B1, Brazil South) | 1) Crear el App Service `yaku-backend`. 2) Configurar las variables de entorno: `DB_URL`, `DB_USERNAME`, `DB_PASSWORD`, `JWT_SECRET`, `CORS_ALLOWED_ORIGINS`, `FIREBASE_CONFIG_PATH`, `MQTT_ENABLED`, `SERVER_PORT` y las de Stripe (claves de prueba). 3) Subir la cuenta de servicio de Firebase al almacenamiento persistente del App Service (`/home`) mediante Kudu, nunca al repositorio, y apuntar `FIREBASE_CONFIG_PATH` a `file:/home/firebase-service-account.json`. 4) Cargar el perfil de publicación como secreto `AZURE_WEBAPP_PUBLISH_PROFILE` en GitHub. 5) El workflow de GitHub Actions compila con Maven y publica el JAR en cada push a `develop`. 6) Comprobar `/swagger-ui.html`. | https://yaku-backend-hjbmb2btfzece4c0.brazilsouth-01.azurewebsites.net |
 | Base de datos | Azure Database for PostgreSQL (servidor flexible, B1ms, PostgreSQL 16, Brazil South) | 1) Crear el servidor flexible y la base `yaku`. 2) Permitir el acceso desde los servicios de Azure. 3) Cargar la cadena de conexión en las variables de entorno del App Service. 4) Dejar que el backend cree el esquema al iniciar. | — |
 | Edge API | Railway | 1) Crear el proyecto y enlazar el repositorio del Edge (con su `Dockerfile`). 2) Agregar los servicios de Redis y de Mosquitto. 3) Configurar `MQTT_BROKER`, `MQTT_PORT`, `REDIS_HOST`, `REDIS_PORT`, `API_URL`, `FARM_ID` y `FARM_TOKEN`. 4) Desplegar y revisar los registros. | (pegar enlace) |
-| Web App (Flutter Web) | Firebase Hosting | Versión `b27c1e8c2210d609`. Se verificaron la carga y el acceso por ruta directa. | [YakuControl Web](https://yakucontrol-v2.web.app) |
+| Web App (Flutter Web) | Firebase Hosting | Versión `b27c1e8c2210d609`. Se verificaron el inicio de sesión, el registro de estanques, el vínculo de equipos y la consulta de notificaciones. | [YakuControl Web](https://yakucontrol-v2.web.app) |
 | Landing Page | Vercel | Versión inicial en producción. El formulario comercial, YakuTrace y los términos se verificaron en la rama del PR #1. | [Landing pública](https://verifish-landing.vercel.app) · [PR de la actualización](https://github.com/1ASI0728-2620-9075-G2-VeriFish/Verifish-Landing/pull/1) |
 | App móvil (Android) | Firebase App Distribution | 1) `flutter build apk --release --dart-define=API_BASE_URL=<URL del backend>/api`. 2) Subir el APK como versión `v0.1.0`. 3) Invitar a los testers por correo. | (pegar enlace de la invitación) |
 
@@ -4518,7 +4518,7 @@ Las siguientes capturas muestran la ejecución de los productos por historia de 
 
 | Producto | Contenido | Enlace |
 | :--- | :--- | :--- |
-| Landing Page y Web App | Propuesta, planes, YakuTrace, formulario y términos. Inicio de sesión, registro de estanque, vínculo de equipo y notificaciones. | [Grabación de ejecución](./assets/videos/exec-landing-web.mp4) |
+| Landing Page y Web App | Propuesta, planes, YakuTrace, formulario y términos. Inicio de sesión, registro de estanque, vínculo de equipo y notificaciones. | [Recorrido explicado de Landing y Web](./assets/videos/exec-landing-web.mp4) |
 | App móvil | Inicio de sesión, lectura del estanque, alerta y activación del aireador | (pegar enlace) |
 | Edge API y backend | Lectura firmada desde el Edge hasta su persistencia | (pegar enlace) |
 
