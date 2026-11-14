@@ -3471,7 +3471,7 @@ Las rutas principales y alternativas se explican en cada diagrama. Los flujos 1�
 
 ### 6.4.3. Applications Mock-ups
 
-Esta sección presenta los mock-ups de las aplicaciones de YakuControl + YakuTrace. Cada pantalla parte del wireframe del mismo número (sección 6.4.1) y le aplica la guía de estilos (sección 6.1): paleta Navy Deep, Cyan Electric y Aqua, tipografía Inter, espaciado en múltiplos de 8 px, botones y chips del Design System, y el sello de verificación de YakuTrace. La numeración 1–28 se mantiene en los wireframes, los mock-ups y los diagramas de las secciones 6.4.4 y 6.4.5.
+Esta sección presenta los mock-ups de las aplicaciones de YakuControl + YakuTrace. Cada pantalla parte del wireframe del mismo número (sección 6.4.1) y aplica la guía de estilos (sección 6.1): paleta Navy Deep, Cyan Electric y Aqua, tipografía Inter, espaciado en múltiplos de 8 px, botones y chips del Design System, y el sello de verificación de YakuTrace.
 
 | Principio de diseño | Aplicación en los mock-ups |
 | :--- | :--- |
@@ -3483,37 +3483,37 @@ Esta sección presenta los mock-ups de las aplicaciones de YakuControl + YakuTra
 
 **Historias cubiertas.** Los mock-ups 1–7 corresponden a US05–US09, US13 y US17 (piscicultor); 8–18 a US10–US16 (administrador); 19–28 a US18 y US19–US27 (YakuTrace).
 
-- *Mock-ups para Segmento 1 (App móvil)*
+#### Mock-ups para el Segmento 1: Piscicultores (App móvil)
 
 | Mock-up 1 — Inicio de sesión |
 |----------------------------------|
-| <img src="assets/images/cap6/mockup1.png" alt="Mock-up 1: Inicio de sesión" /> |
+| <img src="assets/images/cap6/yakucontrol_mockup1.png" alt="Mock-up 1: Inicio de sesión de YakuControl" /> |
 
 | Mock-up 2 — Crear cuenta |
 |----------------------------------|
-| <img src="assets/images/cap6/mockup2.png" alt="Mock-up 2: Crear cuenta" /> |
+| <img src="assets/images/cap6/yakucontrol_mockup2.png" alt="Mock-up 2: Registro de usuario en YakuControl" /> |
 
 | Mock-up 3 — Sección Inicio |
 |----------------------------------|
-| <img src="assets/images/cap6/mockup3.png" alt="Mock-up 3: Sección Inicio" /> |
+| <img src="assets/images/cap6/yakucontrol_mockup3.png" alt="Mock-up 3: Pantalla principal de YakuControl" /> |
 
 | Mock-up 4 — Inicio – Detalle de estanque |
 |----------------------------------|
-| <img src="assets/images/cap6/mockup4.png" alt="Mock-up 4: Inicio – Detalle de estanque" /> |
+| <img src="assets/images/cap6/yakucontrol_mockup4.png" alt="Mock-up 4: Detalle del estanque" /> |
 
 | Mock-up 5 — Inicio – Historial de lecturas |
 |----------------------------------|
-| <img src="assets/images/cap6/mockup5.png" alt="Mock-up 5: Inicio – Historial de lecturas" /> |
+| <img src="assets/images/cap6/yakucontrol_mockup5.png" alt="Mock-up 5: Historial de lecturas" /> |
 
 | Mock-up 6 — Sección Alertas |
 |----------------------------------|
-| <img src="assets/images/cap6/mockup6.png" alt="Mock-up 6: Sección Alertas" /> |
+| <img src="assets/images/cap6/yakucontrol_mockup6.png" alt="Mock-up 6: Alertas del piscicultor" /> |
 
 | Mock-up 7 — Sección Perfil |
 |----------------------------------|
-| <img src="assets/images/cap6/mockup7.png" alt="Mock-up 7: Sección Perfil" /> |
+| <img src="assets/images/cap6/yakucontrol_mockup7.png" alt="Mock-up 7: Perfil del piscicultor" /> |
 
-- *Mock-ups para Segmento 2 (Web App)*
+#### Mock-ups para el Segmento 2: Administradores de Piscigranja (Web App)
 
 | Mock-up 8 — Inicio de sesión |
 |----------------------------------|
@@ -3541,7 +3541,7 @@ Esta sección presenta los mock-ups de las aplicaciones de YakuControl + YakuTra
 
 | Mock-up 14 — Registrar estanque – Detalle de estanque |
 |----------------------------------|
-| <img src="assets/images/cap6/mockup14.png" alt="Mock-up 14: Registrar estanque – Detalle de estanque" /> |
+| <img src="assets/images/cap6/mockup14.png" alt="Mock-up 14: Detalle de estanque" /> |
 
 | Mock-up 15 — Sección Equipos |
 |----------------------------------|
@@ -3559,12 +3559,12 @@ Esta sección presenta los mock-ups de las aplicaciones de YakuControl + YakuTra
 |----------------------------------|
 | <img src="assets/images/cap6/mockup18.png" alt="Mock-up 18: Sección Configuración" /> |
 
-- *Mock-ups para YakuTrace*
+#### Mock-ups para YakuTrace
 
 | Mock-up 19 — Lotes (lista) |
 |----------------------------------|
-| <img src="assets/images/cap6/mockup19.png" alt="Mock-up 19: Lotes (lista), escritorio" width="720" /> |
-| <img src="assets/images/cap6/mockup19-mobile.png" alt="Mock-up 19: Lotes (lista), móvil" width="300" /> |
+| <img src="assets/images/cap6/mockup19.png" alt="Mock-up 19: Lotes, escritorio" width="720" /> |
+| <img src="assets/images/cap6/mockup19-mobile.png" alt="Mock-up 19: Lotes, móvil" width="300" /> |
 
 | Mock-up 20 — Registrar lote |
 |----------------------------------|
@@ -3583,8 +3583,8 @@ Esta sección presenta los mock-ups de las aplicaciones de YakuControl + YakuTra
 
 | Mock-up 23 — Resumen de calidad del lote |
 |----------------------------------|
-| <img src="assets/images/cap6/mockup23.png" alt="Mock-up 23: Resumen de calidad del lote, escritorio" width="720" /> |
-| <img src="assets/images/cap6/mockup23-mobile.png" alt="Mock-up 23: Resumen de calidad del lote, móvil" width="300" /> |
+| <img src="assets/images/cap6/mockup23.png" alt="Mock-up 23: Resumen de calidad, escritorio" width="720" /> |
+| <img src="assets/images/cap6/mockup23-mobile.png" alt="Mock-up 23: Resumen de calidad, móvil" width="300" /> |
 
 | Mock-up 24 — Emitir certificado |
 |----------------------------------|
@@ -3593,8 +3593,8 @@ Esta sección presenta los mock-ups de las aplicaciones de YakuControl + YakuTra
 
 | Mock-up 25 — Certificados (lista) |
 |----------------------------------|
-| <img src="assets/images/cap6/mockup25.png" alt="Mock-up 25: Certificados (lista), escritorio" width="720" /> |
-| <img src="assets/images/cap6/mockup25-mobile.png" alt="Mock-up 25: Certificados (lista), móvil" width="300" /> |
+| <img src="assets/images/cap6/mockup25.png" alt="Mock-up 25: Certificados, escritorio" width="720" /> |
+| <img src="assets/images/cap6/mockup25-mobile.png" alt="Mock-up 25: Certificados, móvil" width="300" /> |
 
 | Mock-up 26 — Plan TRACE |
 |----------------------------------|
@@ -3603,193 +3603,208 @@ Esta sección presenta los mock-ups de las aplicaciones de YakuControl + YakuTra
 
 | Mock-up 27 — Verificación pública – Verificado |
 |----------------------------------|
-| <img src="assets/images/cap6/mockup27.png" alt="Mock-up 27: Verificación pública – Verificado, escritorio" width="720" /> |
-| <img src="assets/images/cap6/mockup27-mobile.png" alt="Mock-up 27: Verificación pública – Verificado, móvil" width="300" /> |
+| <img src="assets/images/cap6/mockup27.png" alt="Mock-up 27: Verificación pública, escritorio" width="720" /> |
+| <img src="assets/images/cap6/mockup27-mobile.png" alt="Mock-up 27: Verificación pública, móvil" width="300" /> |
 
 | Mock-up 28 — Verificación pública – No válido / Revocado / No encontrado |
 |----------------------------------|
-| <img src="assets/images/cap6/mockup28.png" alt="Mock-up 28: Verificación pública – No válido / Revocado / No encontrado, escritorio" width="720" /> |
-| <img src="assets/images/cap6/mockup28-mobile.png" alt="Mock-up 28: Verificación pública – No válido / Revocado / No encontrado, móvil" width="300" /> |
+| <img src="assets/images/cap6/mockup28.png" alt="Mock-up 28: Estados alternativos, escritorio" width="720" /> |
+| <img src="assets/images/cap6/mockup28-mobile.png" alt="Mock-up 28: Estados alternativos, móvil" width="300" /> |
 
 Fuente editable de los mock-ups 1–18: [Figma](https://www.figma.com/design/FdwCU88zpBqlCuHjQ9iY69/YacuControl?node-id=0-1). Los mock-ups 19–28 se elaboran en Figma a partir de los wireframes 19–28.
 
 <div style="page-break-after: always;"></div>
 
+
 ### 6.4.4. Applications User Flow Diagrams
 
-Esta sección presenta los User Flows de las aplicaciones. Cada flujo se deriva del wireflow del mismo número (sección 6.4.2) y tiene el mismo *user goal*; la diferencia es que los wireframes se reemplazan por los mock-ups de la sección 6.4.3 y que se dibujan tanto el camino esperado (*happy path*) como los caminos alternativos o de error (*unhappy paths*). Los diagramas se elaboraron con Figma y se exportaron a `assets/images/cap6/userflow<N>.png`.
+Esta sección presenta los diagramas de flujo de usuario (User Flow Diagrams) de YakuControl y YakuTrace. Los diagramas representan la navegación, las interacciones y las decisiones de los usuarios en la aplicación móvil y la aplicación web.
 
-- *User Flow Diagrams para el Segmento 1: Piscicultores (App móvil)*
+Los recorridos principales se identifican como *happy paths* y los recorridos alternativos como *unhappy paths*. Se utiliza el color verde para indicar el recorrido exitoso y el rojo para las decisiones o situaciones de error, cuando estas se encuentran representadas.
 
-| User Flow 1. Persona: Piscicultor. User goal: Como piscicultor, deseo registrarme en la aplicación móvil para acceder a las funcionalidades del sistema. |
+Los diagramas se encuentran almacenados en `assets/images/cap6/`. Los diez diagramas de YakuControl utilizan la nomenclatura `yakucontrol_userflow<N>.png`.
+
+**Correspondencia con los wireflows de la sección 6.4.2.** Los User Flows se identifican según la pantalla y el recorrido que efectivamente representan. Dado que la numeración de los diagramas gráficos actuales difiere de la numeración original de los wireflows, se establece la siguiente correspondencia para mantener la trazabilidad entre ambos artefactos.
+
+| Wireflow de 6.4.2 | Objetivo original | Diagrama de User Flow disponible | Cobertura |
+| :--- | :--- | :--- | :--- |
+| 1 | Registro móvil del piscicultor | User Flow 9 | Registro e inicio de sesión representados |
+| 2 | Consultar información de un estanque | User Flow 10 | Consulta e historial representados |
+| 3 | Visualizar y atender alertas | User Flow 8 | Visualización representada; atención pendiente |
+| 4 | Consultar y editar el perfil | User Flow 7 | Consulta y retorno representados; edición pendiente |
+| 5 | Registro web del administrador | User Flow 5 | Registro y validaciones representados parcialmente |
+| 6 | Registrar estanques | Pendiente | No se dispone del recorrido específico completo |
+| 7 | Gestionar equipos | User Flow 4 | Visualización representada; operaciones de gestión pendientes |
+| 8 | Gestionar operadores | User Flow 2 | Visualización representada; edición pendiente |
+| 9 | Consultar notificaciones con filtros | User Flow 3 | Consulta representada; aplicación de filtros pendiente |
+| 10 | Consultar y editar el perfil administrativo | User Flow 1 | Consulta representada; edición pendiente |
+
+El User Flow 6 disponible documenta la autenticación y verificación de acceso del administrador como recorrido complementario. La tabla diferencia los recorridos representados de aquellas interacciones pendientes de documentar visualmente.
+
+#### User Flow Diagrams para Administradores (Web App)
+
+| User Flow 1. Persona: Administrador. User goal: Como administrador, deseo acceder a la configuración de mi perfil para consultar mis datos personales y las opciones de seguridad de mi cuenta. |
 |----------------------------------|
-| <img src="assets/images/cap6/userflow1.png" alt="User flow 1: Registrarse en la app móvil" /> |
+| <img src="assets/images/cap6/yakucontrol_userflow1.png" alt="User Flow 1: Configuración del perfil del administrador" /> |
 
-**Explicación del flujo 1.** *Happy path:* Inicio → Registro con código de granja → Confirmación → Home. *Camino alternativo:* Código de granja inválido o datos incompletos: mensaje de error junto al campo y vuelta al formulario.
+**Explicación del flujo 1.** *Happy path:* Inicio → Dashboard → Selección de Configuración → Visualización de la configuración del perfil → Final. El administrador consulta sus datos personales, las opciones de seguridad y las preferencias disponibles.
 
-| User Flow 2. Persona: Piscicultor. User goal: Como piscicultor, deseo visualizar la información básica de un estanque (pH, temperatura, turbidez y estado) para conocer su situación en tiempo real. |
+| User Flow 2. Persona: Administrador. User goal: Como administrador, deseo visualizar la lista de operadores registrados para consultar su información y estado dentro de la plataforma. |
 |----------------------------------|
-| <img src="assets/images/cap6/userflow2.png" alt="User flow 2: Ver la información básica de un estanque" /> |
+| <img src="assets/images/cap6/yakucontrol_userflow2.png" alt="User Flow 2: Visualización de operadores" /> |
 
-**Explicación del flujo 2.** *Happy path:* Home → Selección de estanque → Detalle con lecturas y estado. *Camino alternativo:* Sensor sin conexión: se muestra el último valor conocido con el aviso "sensor desconectado" (US06, escenario 2).
+**Explicación del flujo 2.** *Happy path:* Inicio → Dashboard → Selección de Operadores → Visualización de la lista de operadores → Final. El administrador consulta los registros, su estado y las opciones disponibles en la interfaz.
 
-| User Flow 3. Persona: Piscicultor. User goal: Como piscicultor, deseo visualizar las alertas con su prioridad y estado para actuar a tiempo. |
+| User Flow 3. Persona: Administrador. User goal: Como administrador, deseo consultar las notificaciones del sistema para conocer los eventos y las alertas relacionados con la operación de la piscigranja. |
 |----------------------------------|
-| <img src="assets/images/cap6/userflow3.png" alt="User flow 3: Ver alertas y atenderlas" /> |
+| <img src="assets/images/cap6/yakucontrol_userflow3.png" alt="User Flow 3: Visualización de notificaciones del administrador" /> |
 
-**Explicación del flujo 3.** *Happy path:* Home → Alertas → Detalle de alerta → Atención (el piscicultor marca la alerta como atendida). *Camino alternativo:* Entrega no disponible: la alerta queda pendiente en el historial y se reintenta (US07, escenario 2).
+**Explicación del flujo 3.** *Happy path:* Inicio → Dashboard → Selección de Notificaciones → Visualización de la lista de notificaciones → Final. El administrador visualiza los avisos y eventos registrados por el sistema.
 
-| User Flow 4. Persona: Piscicultor. User goal: Como piscicultor, deseo ver y editar mi perfil y cerrar sesión para administrar mi cuenta. |
+| User Flow 4. Persona: Administrador. User goal: Como administrador, deseo visualizar la gestión de equipos para consultar los dispositivos registrados y supervisar su estado operativo. |
 |----------------------------------|
-| <img src="assets/images/cap6/userflow4.png" alt="User flow 4: Ver y editar el perfil" /> |
+| <img src="assets/images/cap6/yakucontrol_userflow4.png" alt="User Flow 4: Visualización de la gestión de equipos" /> |
 
-**Explicación del flujo 4.** *Happy path:* Home → Perfil → Edición → Guardado / Cierre de sesión. *Camino alternativo:* Datos inválidos: el sistema rechaza el guardado y muestra el error junto al campo.
+**Explicación del flujo 4.** *Happy path:* Inicio → Dashboard → Selección de Equipos → Visualización de los equipos registrados → Final. El administrador consulta los dispositivos y sus estados operativos.
 
-- *User Flow Diagrams para el Segmento 2: Administradores de Piscigranja (Web App)*
-
-| User Flow 5. Persona: Administrador. User goal: Como administrador, deseo registrarme en la aplicación web para obtener acceso a la plataforma. |
+| User Flow 5. Persona: Administrador. User goal: Como administrador, deseo completar un proceso de registro y validación de información en la plataforma web. |
 |----------------------------------|
-| <img src="assets/images/cap6/userflow5.png" alt="User flow 5: Registrarse en la Web App" /> |
+| <img src="assets/images/cap6/yakucontrol_userflow5.png" alt="User Flow 5: Registro y validación administrativa" /> |
 
-**Explicación del flujo 5.** *Happy path:* Inicio → Registro → Registro de granja → Dashboard. *Camino alternativo:* Correo ya registrado o datos inválidos: el sistema indica el error y mantiene el formulario.
+**Explicación del flujo 5.** *Happy path:* Inicio → Registro de información → Validación de datos iniciales → Carga de documentos → Validación de archivos → Confirmación de información → Revisión del registro → Validación final → Resumen del registro.
 
-| User Flow 6. Persona: Administrador. User goal: Como administrador, deseo registrar estanques de forma ordenada para ampliar mi capacidad productiva. |
+*Unhappy paths:*
+
+- Si los datos iniciales son inválidos, se muestra un error y se regresa a la etapa inicial.
+- Si los archivos son incorrectos o incompletos, se solicita corregir la carga.
+- Si el registro presenta observaciones, se informa el error y se retorna a la revisión.
+
+| User Flow 6. Persona: Administrador. User goal: Como administrador, deseo autenticarme mediante un código de verificación para acceder a la plataforma web. |
 |----------------------------------|
-| <img src="assets/images/cap6/userflow6.png" alt="User flow 6: Crear estanques" /> |
+| <img src="assets/images/cap6/yakucontrol_userflow6.png" alt="User Flow 6: Autenticación y verificación de acceso" /> |
 
-**Explicación del flujo 6.** *Happy path:* Estanques → Registrar estanque → Detalle → Confirmación. *Camino alternativo:* Identificador de hardware duplicado: el sistema rechaza la acción e informa la duplicidad (US15, escenario 2).
+**Explicación del flujo 6.** *Happy path:* Inicio → Ingreso de credenciales → Solicitud del código de verificación → Ingreso del código → Validación → Autorización de acceso → Dashboard → Final.
 
-| User Flow 7. Persona: Administrador. User goal: Como administrador, deseo visualizar y gestionar los equipos para asignarlos, agregarlos o eliminarlos de los estanques. |
+*Unhappy path:* Si la verificación es inválida, se muestra un mensaje de error y se permite volver a intentar el acceso.
+
+#### User Flow Diagrams para Piscicultores (App móvil)
+
+| User Flow 7. Persona: Piscicultor. User goal: Como piscicultor, deseo consultar mi perfil y regresar a la pantalla principal. |
 |----------------------------------|
-| <img src="assets/images/cap6/userflow7.png" alt="User flow 7: Gestionar equipos" /> |
+| <img src="assets/images/cap6/yakucontrol_userflow7.png" alt="User Flow 7: Consulta del perfil del piscicultor" /> |
 
-**Explicación del flujo 7.** *Happy path:* Equipos → Lista → Asignar o agregar → Confirmación. *Camino alternativo:* Equipo ya vinculado a otro estanque: el sistema indica el conflicto y no modifica la asignación.
+**Explicación del flujo 7.** *Happy path:* Inicio → Pantalla principal → Selección de Perfil → Visualización de la información personal → Final.
 
-| User Flow 8. Persona: Administrador. User goal: Como administrador, deseo visualizar y editar la información de mis operadores para mantener actualizado al personal. |
+*Recorrido de retorno:* Desde Perfil, el usuario puede seleccionar Inicio y regresar a la pantalla principal.
+
+| User Flow 8. Persona: Piscicultor. User goal: Como piscicultor, deseo visualizar las alertas para conocer las condiciones que requieren atención en los estanques. |
 |----------------------------------|
-| <img src="assets/images/cap6/userflow8.png" alt="User flow 8: Gestionar operadores" /> |
+| <img src="assets/images/cap6/yakucontrol_userflow8.png" alt="User Flow 8: Visualización de alertas" /> |
 
-**Explicación del flujo 8.** *Happy path:* Operadores → Lista → Editar → Guardado. *Camino alternativo:* Datos inválidos: el sistema rechaza el cambio y muestra el error.
+**Explicación del flujo 8.** *Happy path:* Inicio → Pantalla principal → Selección de Alertas → Visualización de alertas → Final.
 
-| User Flow 9. Persona: Administrador. User goal: Como administrador, deseo ver las notificaciones filtradas por fecha, nombre y estado para conocer las últimas novedades de un estanque. |
+*Recorrido de retorno:* El piscicultor selecciona Inicio para regresar a la pantalla principal.
+
+| User Flow 9. Persona: Piscicultor. User goal: Como piscicultor, deseo registrarme e iniciar sesión para acceder a la información de los estanques. |
 |----------------------------------|
-| <img src="assets/images/cap6/userflow9.png" alt="User flow 9: Ver notificaciones con filtros" /> |
+| <img src="assets/images/cap6/yakucontrol_userflow9.png" alt="User Flow 9: Registro e inicio de sesión móvil" /> |
 
-**Explicación del flujo 9.** *Happy path:* Notificaciones → Filtros (fecha, nombre, estado) → Lista filtrada. *Camino alternativo:* Filtros sin coincidencias: se muestra un estado vacío con la opción de limpiar los filtros.
+**Explicación del flujo 9.** *Happy path:* Inicio → Registro → Validación del registro → Inicio de sesión → Validación de credenciales → Pantalla principal → Final.
 
-| User Flow 10. Persona: Administrador. User goal: Como administrador, deseo ver y editar mis datos personales para administrar mi cuenta de forma segura. |
+*Unhappy paths:*
+
+- Si el registro contiene datos inválidos o el usuario ya existe, el sistema muestra el error y permite regresar al formulario.
+- Si las credenciales son incorrectas, se muestra el mensaje correspondiente y se regresa al inicio de sesión.
+
+| User Flow 10. Persona: Piscicultor. User goal: Como piscicultor, deseo consultar un estanque y acceder al historial completo de lecturas para supervisar sus condiciones. |
 |----------------------------------|
-| <img src="assets/images/cap6/userflow10.png" alt="User flow 10: Ver y editar los datos personales" /> |
+| <img src="assets/images/cap6/yakucontrol_userflow10.png" alt="User Flow 10: Consulta de estanques e historial de lecturas" /> |
 
-**Explicación del flujo 10.** *Happy path:* Configuración → Edición → Guardado. *Camino alternativo:* Datos inválidos: el sistema rechaza el cambio y muestra el error.
+**Explicación del flujo 10.** *Happy path:* Inicio → Pantalla principal → Selección de estanque → Detalle de lecturas y sensores → Ver historial completo → Historial de lecturas → Final.
 
-- *User Flow Diagrams de YakuTrace: trazabilidad, verificación y funciones complementarias*
+*Recorridos de retorno:*
 
-| User Flow 11. Persona: Administrador. User goal: Como administrador, deseo crear un lote y registrar sus hitos para llevar el historial del ciclo. |
-|----------------------------------|
-| <img src="assets/images/cap6/userflow11.png" alt="User flow 11: Crear un lote y registrar sus hitos" /> |
+- Desde el detalle del estanque, el piscicultor regresa a Inicio.
+- Desde el historial, el piscicultor regresa al detalle del estanque.
 
-**Explicación del flujo 11.** *Happy path:* Lotes → Registrar lote (estanque, fecha, cantidad, origen) → Confirmación → Detalle del lote con el hito de siembra → Registrar hito → Detalle actualizado. *Camino alternativo:* Si el estanque ya tiene un lote activo, se muestra el error y se vuelve al formulario.
+#### User Flow Diagrams de YakuTrace: trazabilidad y funciones complementarias
 
-| User Flow 12. Persona: Administrador. User goal: Como administrador, deseo emitir un certificado de trazabilidad con QR para un lote cosechado. |
-|----------------------------------|
-| <img src="assets/images/cap6/userflow12.png" alt="User flow 12: Emitir un certificado con QR" /> |
+Los siguientes recorridos se encuentran descritos funcionalmente en el proyecto y cuentan con wireflows correspondientes en la sección 6.4.2. Sus imágenes específicas de User Flow están pendientes de incorporación al directorio `assets/images/cap6/`.
 
-**Explicación del flujo 12.** *Happy path:* Detalle del lote → Registrar cosecha → Emitir certificado → Vista previa y requisitos cumplidos → Confirmar → Certificado emitido con QR (estado "Registro en proceso" → "Verificado"). *Camino alternativo:* Requisitos incompletos: se muestra el motivo y se bloquea la emisión. Red no disponible: se emite en estado "Registro en proceso".
+| User Flow | Persona | Objetivo | Recorrido principal | Recorrido alternativo |
+| :--- | :--- | :--- | :--- | :--- |
+| 11 | Administrador | Crear un lote y registrar hitos | Lotes → Registrar lote → Confirmación → Detalle → Registrar hito | Estanque con lote activo: se rechaza el registro |
+| 12 | Administrador | Emitir certificado de trazabilidad con QR | Detalle del lote → Cosecha → Emitir certificado → Confirmar | Requisitos incompletos o red no disponible |
+| 13 | Comprador | Verificar un lote mediante QR | Escanear QR → Verificación → Resultado → Historial | Código no encontrado, no válido o revocado |
+| 14 | Administrador | Activar el complemento TRACE | Suscripción → Plan TRACE → Pago → Activación | Suscripción inactiva |
+| 15 | Piscicultor | Registrar una novedad del estanque | Estanque → Nueva novedad → Redactar → Guardar | Novedad vacía |
+| 16 | Administrador | Generar reporte mensual de mortalidad | Reportes → Mortalidad → Mes → Generar | Periodo sin registros |
+| 17 | Administrador | Consultar tendencias anuales | Tendencias → Periodo → Parámetro → Gráfico | Gran volumen de datos: visualización agregada |
+| 18 | Administrador | Configurar umbrales del estanque | Estanque → Umbrales → Editar → Guardar | Mínimo superior al máximo |
+| 19 | Administrador | Pagar la suscripción | Suscripción → Plan → Pago → Activación | Pago rechazado |
+| 20 | Administrador | Auditar el tiempo de atención de una alerta | Notificaciones → Alerta atendida → Detalle | Atención automática |
+| 21 | Piscicultor | Activar la limpieza del estanque | Estanque → Limpieza → Activar → Confirmación | Equipo sin energía |
+| 22 | Administrador | Revocar un certificado | Certificados → Seleccionar → Revocar → Confirmación | Certificado previamente revocado |
+| 23 | Administrador | Crear cuentas para operarios | Operadores → Invitar → Datos → Enviar | Correo ya registrado |
 
-| User Flow 13. Persona: Comprador. User goal: Como comprador de supermercado, deseo verificar un lote escaneando su QR. |
-|----------------------------------|
-| <img src="assets/images/cap6/userflow13.png" alt="User flow 13: Verificar un lote por QR" /> |
-
-**Explicación del flujo 13.** *Happy path:* Escanear QR → Página de verificación (cargando) → Resultado "Verificado" con resumen e historial → Ver prueba de registro. *Camino alternativo:* Resultados "No válido", "Revocado" o "Código no encontrado", cada uno con su mensaje de estado.
-
-| User Flow 14. Persona: Administrador. User goal: Como administrador, deseo activar el complemento TRACE para emitir certificados. |
-|----------------------------------|
-| <img src="assets/images/cap6/userflow14.png" alt="User flow 14: Activar el plan TRACE" /> |
-
-**Explicación del flujo 14.** *Happy path:* Suscripción → Plan TRACE → Confirmar y pagar → Confirmación → TRACE activo. *Camino alternativo:* Suscripción inactiva: se indica que debe estar activa antes de contratar el complemento.
-
-| User Flow 15. Persona: Piscicultor. User goal: Como piscicultor, deseo registrar una novedad sobre un estanque para informar al administrador. |
-|----------------------------------|
-| <img src="assets/images/cap6/userflow15.png" alt="User flow 15: Registrar una novedad del estanque" /> |
-
-**Explicación del flujo 15.** *Happy path:* Estanque → Nueva novedad → Redactar → Guardar → Novedad registrada con fecha, hora y autor. *Camino alternativo:* Novedad vacía: el sistema no la registra y solicita contenido (US09, escenario 2).
-
-| User Flow 16. Persona: Administrador. User goal: Como administrador, deseo generar un reporte mensual de bajas para mis registros contables. |
-|----------------------------------|
-| <img src="assets/images/cap6/userflow16.png" alt="User flow 16: Generar un reporte de mortalidad" /> |
-
-**Explicación del flujo 16.** *Happy path:* Reportes → Mortalidad → Seleccionar mes → Generar → Documento con las bajas por lote. *Camino alternativo:* Mes sin bajas: el documento indica que no hay registros (US11, escenario 2).
-
-| User Flow 17. Persona: Administrador. User goal: Como administrador, deseo ver la evolución anual de los parámetros del agua para planificar el siguiente ciclo. |
-|----------------------------------|
-| <img src="assets/images/cap6/userflow17.png" alt="User flow 17: Consultar tendencias anuales" /> |
-
-**Explicación del flujo 17.** *Happy path:* Tendencias → Seleccionar periodo anual y parámetro → Gráfico de evolución. *Camino alternativo:* Periodo con gran volumen de datos: se presenta la evolución agregada por periodos (US12, escenario 2).
-
-| User Flow 18. Persona: Administrador. User goal: Como administrador, deseo definir los límites de alerta de un estanque para personalizar el control. |
-|----------------------------------|
-| <img src="assets/images/cap6/userflow18.png" alt="User flow 18: Configurar umbrales del estanque" /> |
-
-**Explicación del flujo 18.** *Happy path:* Estanque → Umbrales → Editar mínimo y máximo → Guardar → Límites aplicados. *Camino alternativo:* Mínimo mayor que el máximo: el sistema rechaza el cambio e informa la inconsistencia (US13, escenario 2).
-
-| User Flow 19. Persona: Administrador. User goal: Como administrador, deseo pagar mi suscripción para mantener el servicio activo. |
-|----------------------------------|
-| <img src="assets/images/cap6/userflow19.png" alt="User flow 19: Pagar la suscripción base" /> |
-
-**Explicación del flujo 19.** *Happy path:* Suscripción → Elegir plan → Pasarela de pago → Pago confirmado → Suscripción activa. *Camino alternativo:* Pago rechazado: la suscripción queda pendiente y se informa al administrador (US14, escenario 2).
-
-| User Flow 20. Persona: Administrador. User goal: Como administrador, deseo conocer el tiempo que tarda un operario en atender una alerta para evaluar la respuesta del equipo. |
-|----------------------------------|
-| <img src="assets/images/cap6/userflow20.png" alt="User flow 20: Auditar la respuesta a una alerta" /> |
-
-**Explicación del flujo 20.** *Happy path:* Notificaciones → Alerta atendida → Detalle con hora de alerta y hora de atención. *Camino alternativo:* Alerta atendida por el sistema: se indica "atendida por el sistema" (US16, escenario 2).
-
-| User Flow 21. Persona: Piscicultor. User goal: Como piscicultor, deseo activar los filtros de limpieza de un estanque para reducir la turbidez. |
-|----------------------------------|
-| <img src="assets/images/cap6/userflow21.png" alt="User flow 21: Activar la limpieza de un estanque" /> |
-
-**Explicación del flujo 21.** *Happy path:* Estanque → Limpieza → Activar → Confirmación del estado del equipo. *Camino alternativo:* Equipo sin energía: el sistema informa el error de hardware (US17, escenario 2).
-
-| User Flow 22. Persona: Administrador. User goal: Como administrador, deseo revocar un certificado emitido por error para evitar que se use como evidencia. |
-|----------------------------------|
-| <img src="assets/images/cap6/userflow22.png" alt="User flow 22: Revocar un certificado" /> |
-
-**Explicación del flujo 22.** *Happy path:* Certificados → Seleccionar certificado → Revocar con motivo → Confirmación → Estado "Revocado". *Camino alternativo:* Certificado ya revocado: el sistema lo indica y no repite la acción (US25, escenario 2).
-
-| User Flow 23. Persona: Administrador. User goal: Como administrador, deseo crear cuentas para mis operarios para delegarles el acceso. |
-|----------------------------------|
-| <img src="assets/images/cap6/userflow23.png" alt="User flow 23: Invitar a un operario" /> |
-
-**Explicación del flujo 23.** *Happy path:* Operadores → Invitar → Datos del operario → Enviar → Código de registro enviado por correo. *Camino alternativo:* Correo duplicado: el sistema indica que el usuario ya existe (US10, escenario 2).
-
-<div style="page-break-after: always;"></div>
 
 ### 6.4.5. Applications Prototyping
 
-Esta sección presenta los prototipos de interfaz de las aplicaciones, con simulación de interacción y navegación según los User Flows de la sección 6.4.4. Las decisiones de interacción provienen del sistema de navegación definido en la sección 6.2.5 y se resumen a continuación.
+Esta sección presenta los prototipos de YakuControl y YakuTrace, diseñados para demostrar la navegación y las interacciones de los usuarios en las aplicaciones móvil y web.
+
+Los prototipos se relacionan con los wireflows de la sección 6.4.2 y con los User Flow Diagrams de la sección 6.4.4. Su finalidad es validar la estructura de navegación, la distribución de la información y la secuencia de acciones previstas para cada tipo de usuario.
+
+#### Decisiones de interacción
 
 | Decisión de interacción | Aplicación en el prototipo | Relación con la arquitectura de información |
 | :--- | :--- | :--- |
-| Menú inferior de cuatro destinos (Inicio, Estanques, Alertas, Perfil) | App móvil | Acceso con el pulgar a las secciones principales (sección 6.2.5) |
-| Menú lateral fijo en escritorio y plegable en pantallas pequeñas | Web App | Organización por tema: Estanques, Equipos, Operadores, Lotes, Certificados |
-| Acción de emergencia a dos toques desde la alerta | App móvil | Prioridad de contenido: el estado y la acción antes que el historial |
-| Estados de confianza del certificado (Verificado, No válido, Revocado, En proceso) con color, ícono y texto | Verificación pública | Recorrido lineal del comprador: QR → estado → resumen → historial → prueba |
-| Confirmación antes de acciones irreversibles (emitir o revocar un certificado) | Web App | Retroalimentación y control del usuario |
+| Menú inferior con Inicio, Alertas y Perfil | App móvil del piscicultor | Permite acceder a las tres secciones principales; los estanques se consultan desde Inicio |
+| Menú lateral de navegación | Web App del administrador | Organiza el acceso a las funciones administrativas |
+| Visualización de lecturas de estanques | App móvil | Presenta temperatura, pH, oxígeno disuelto y estados operativos |
+| Alertas con prioridad visual | App móvil | Facilita la identificación de condiciones críticas y advertencias |
+| Acceso a datos y seguridad del perfil | App móvil y Web App | Permite consultar las opciones relacionadas con la cuenta |
+| Estados de verificación del certificado | YakuTrace | Comunica los resultados Verificado, No válido, Revocado y En proceso |
+| Confirmación antes de acciones irreversibles | Web App | Permite controlar operaciones como la emisión o revocación de certificados |
 
-La tabla reúne los prototipos y las grabaciones de sus recorridos.
+#### Prototipos disponibles y evidencias
 
-| Aplicación | Prototipo | Flujos demostrados | Video del recorrido |
+| Aplicación | Prototipo | Recorridos representados | Evidencia |
 | :--- | :--- | :--- | :--- |
-| App móvil del piscicultor | [Prototipo en Figma](https://www.figma.com/design/FdwCU88zpBqlCuHjQ9iY69/YacuControl?node-id=0-1) | User Flows 1–4, 15 y 21: registro, estado del estanque, alertas con activación del aireador, perfil, novedades y limpieza | (pegar enlace) |
-| Web App del administrador | [Prototipo navegable](./design/tb2-web/index.html) · [Referencia en Figma](https://www.figma.com/design/FdwCU88zpBqlCuHjQ9iY69/YacuControl?node-id=0-1) | Inicio de sesión, registro, granja, inicio, estanques, equipos, operadores, notificaciones y configuración. | [Recorrido de los mock-ups 8–18](./assets/videos/prototype-web.mp4) |
-| Verificación pública (comprador) | (pegar enlace del prototipo) | User Flow 13: verificación de un lote por QR en sus cuatro resultados | (pegar enlace) |
+| YakuControl — App móvil del piscicultor | [Diseño en Figma](https://www.figma.com/design/FdwCU88zpBqlCuHjQ9iY69/YacuControl?node-id=0-1) | Registro, inicio de sesión, consulta de estanques, historial de lecturas, alertas y perfil | Video de navegación pendiente de incorporar |
+| YakuControl — Web App del administrador | [Prototipo navegable](./design/tb2-web/index.html) | Autenticación, registro, equipos, operadores, notificaciones y configuración | [Video del prototipo web](./assets/videos/prototype-web.mp4) |
+| YakuTrace — Verificación pública | [Fuentes editables del diseño](./design/package-e/index.html) | Consulta del estado de verificación mediante QR y resultados alternativos | Video de verificación pública pendiente de incorporar |
 
-![Video del prototipo de la app móvil](./assets/images/cap6/prototype-mobile.png)
+#### Prototipo de la aplicación móvil
 
-![Vista de estanques en el prototipo web](./assets/images/cap6/prototype-web.png)
+El prototipo móvil permite visualizar el recorrido desde el acceso a YakuControl hasta la consulta de información de la piscigranja. La pantalla principal presenta los estanques y sus valores de monitoreo; desde ella se accede al detalle de las lecturas y al historial correspondiente.
 
-![Video del prototipo de la verificación pública](./assets/images/cap6/prototype-verify.png)
+Asimismo, la navegación inferior permite ingresar a Alertas y Perfil. Estas vistas muestran la información operativa y personal disponible para el piscicultor.
+
+**Estado de evidencia:** se encuentra pendiente la incorporación del video de navegación móvil y su respectivo enlace en esta sección.
+
+#### Prototipo de la aplicación web
+
+La Web App presenta una distribución orientada a tareas administrativas mediante un menú lateral de navegación. Los recorridos documentados incluyen la consulta de equipos y operadores, las notificaciones y la configuración del perfil.
+
+El recorrido de las pantallas puede consultarse en el siguiente recurso:
+
+[Ver video del prototipo web](./assets/videos/prototype-web.mp4)
+
+![Vista del prototipo web de YakuControl](./assets/images/cap6/prototype-web.png)
+
+#### Prototipo de verificación pública de YakuTrace
+
+La propuesta de YakuTrace contempla la verificación pública de lotes mediante códigos QR. La interfaz representa estados de confianza para comunicar el resultado de la consulta.
+
+Los diseños y estados se encuentran disponibles como fuentes editables en el repositorio:
+
+[Consultar fuentes de diseño de YakuTrace](./design/package-e/index.html)
+
+**Estado de evidencia:** pendiente de incorporar el enlace al prototipo público y su video de demostración.
+
+#### Evidencias pendientes de integración
+
+Para completar la evidencia de prototipado se requiere incorporar el video del recorrido de la aplicación móvil y la demostración de verificación pública de YakuTrace. Las rutas correspondientes deberán añadirse únicamente cuando los archivos o enlaces se encuentren disponibles.
 
 <div style="page-break-after: always;"></div>
 
