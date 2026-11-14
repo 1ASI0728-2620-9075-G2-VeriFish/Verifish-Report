@@ -1,0 +1,24 @@
+{
+  "url": "https://yakucontrol-v2.web.app",
+  "hostingVersion": "b27c1e8c2210d609",
+  "checks": [
+    {
+      "case": "Hosting carga login",
+      "passed": true
+    },
+    {
+      "case": "Ruta directa /estanques y protección sin sesión",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "case": "Login desde Firebase",
+      "passed": false,
+      "blocker": "CORS de Azure rechaza el origen de Firebase"
+    },
+    {
+      "case": "JavaScript publicado coincide con build release",
+      "passed": true
+    }
+  ]
+}
