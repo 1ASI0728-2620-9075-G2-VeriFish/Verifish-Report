@@ -3471,7 +3471,7 @@ Las rutas principales y alternativas se explican en cada diagrama. Los flujos 1�
 
 ### 6.4.3. Applications Mock-ups
 
-Esta sección presenta los mock-ups de las aplicaciones de YakuControl + YakuTrace. Cada pantalla parte del wireframe del mismo número (sección 6.4.1) y le aplica la guía de estilos (sección 6.1): paleta Navy Deep, Cyan Electric y Aqua, tipografía Inter, espaciado en múltiplos de 8 px, botones y chips del Design System, y el sello de verificación de YakuTrace. La numeración 1–28 se mantiene en los wireframes, los mock-ups y los diagramas de las secciones 6.4.4 y 6.4.5.
+Esta sección presenta los mock-ups de las aplicaciones de YakuControl + YakuTrace. Cada pantalla parte del wireframe del mismo número (sección 6.4.1) y aplica la guía de estilos (sección 6.1): paleta Navy Deep, Cyan Electric y Aqua, tipografía Inter, espaciado en múltiplos de 8 px, botones y chips del Design System, y el sello de verificación de YakuTrace.
 
 | Principio de diseño | Aplicación en los mock-ups |
 | :--- | :--- |
@@ -3483,37 +3483,37 @@ Esta sección presenta los mock-ups de las aplicaciones de YakuControl + YakuTra
 
 **Historias cubiertas.** Los mock-ups 1–7 corresponden a US05–US09, US13 y US17 (piscicultor); 8–18 a US10–US16 (administrador); 19–28 a US18 y US19–US27 (YakuTrace).
 
-- *Mock-ups para Segmento 1 (App móvil)*
+#### Mock-ups para el Segmento 1: Piscicultores (App móvil)
 
 | Mock-up 1 — Inicio de sesión |
 |----------------------------------|
-| <img src="assets/images/cap6/mockup1.png" alt="Mock-up 1: Inicio de sesión" /> |
+| <img src="assets/images/cap6/yakucontrol_mockup1.png" alt="Mock-up 1: Inicio de sesión de YakuControl" /> |
 
 | Mock-up 2 — Crear cuenta |
 |----------------------------------|
-| <img src="assets/images/cap6/mockup2.png" alt="Mock-up 2: Crear cuenta" /> |
+| <img src="assets/images/cap6/yakucontrol_mockup2.png" alt="Mock-up 2: Registro de usuario en YakuControl" /> |
 
 | Mock-up 3 — Sección Inicio |
 |----------------------------------|
-| <img src="assets/images/cap6/mockup3.png" alt="Mock-up 3: Sección Inicio" /> |
+| <img src="assets/images/cap6/yakucontrol_mockup3.png" alt="Mock-up 3: Pantalla principal de YakuControl" /> |
 
 | Mock-up 4 — Inicio – Detalle de estanque |
 |----------------------------------|
-| <img src="assets/images/cap6/mockup4.png" alt="Mock-up 4: Inicio – Detalle de estanque" /> |
+| <img src="assets/images/cap6/yakucontrol_mockup4.png" alt="Mock-up 4: Detalle del estanque" /> |
 
 | Mock-up 5 — Inicio – Historial de lecturas |
 |----------------------------------|
-| <img src="assets/images/cap6/mockup5.png" alt="Mock-up 5: Inicio – Historial de lecturas" /> |
+| <img src="assets/images/cap6/yakucontrol_mockup5.png" alt="Mock-up 5: Historial de lecturas" /> |
 
 | Mock-up 6 — Sección Alertas |
 |----------------------------------|
-| <img src="assets/images/cap6/mockup6.png" alt="Mock-up 6: Sección Alertas" /> |
+| <img src="assets/images/cap6/yakucontrol_mockup6.png" alt="Mock-up 6: Alertas del piscicultor" /> |
 
 | Mock-up 7 — Sección Perfil |
 |----------------------------------|
-| <img src="assets/images/cap6/mockup7.png" alt="Mock-up 7: Sección Perfil" /> |
+| <img src="assets/images/cap6/yakucontrol_mockup7.png" alt="Mock-up 7: Perfil del piscicultor" /> |
 
-- *Mock-ups para Segmento 2 (Web App)*
+#### Mock-ups para el Segmento 2: Administradores de Piscigranja (Web App)
 
 | Mock-up 8 — Inicio de sesión |
 |----------------------------------|
@@ -3541,7 +3541,7 @@ Esta sección presenta los mock-ups de las aplicaciones de YakuControl + YakuTra
 
 | Mock-up 14 — Registrar estanque – Detalle de estanque |
 |----------------------------------|
-| <img src="assets/images/cap6/mockup14.png" alt="Mock-up 14: Registrar estanque – Detalle de estanque" /> |
+| <img src="assets/images/cap6/mockup14.png" alt="Mock-up 14: Detalle de estanque" /> |
 
 | Mock-up 15 — Sección Equipos |
 |----------------------------------|
@@ -3559,12 +3559,12 @@ Esta sección presenta los mock-ups de las aplicaciones de YakuControl + YakuTra
 |----------------------------------|
 | <img src="assets/images/cap6/mockup18.png" alt="Mock-up 18: Sección Configuración" /> |
 
-- *Mock-ups para YakuTrace*
+#### Mock-ups para YakuTrace
 
 | Mock-up 19 — Lotes (lista) |
 |----------------------------------|
-| <img src="assets/images/cap6/mockup19.png" alt="Mock-up 19: Lotes (lista), escritorio" width="720" /> |
-| <img src="assets/images/cap6/mockup19-mobile.png" alt="Mock-up 19: Lotes (lista), móvil" width="300" /> |
+| <img src="assets/images/cap6/mockup19.png" alt="Mock-up 19: Lotes, escritorio" width="720" /> |
+| <img src="assets/images/cap6/mockup19-mobile.png" alt="Mock-up 19: Lotes, móvil" width="300" /> |
 
 | Mock-up 20 — Registrar lote |
 |----------------------------------|
@@ -3583,8 +3583,8 @@ Esta sección presenta los mock-ups de las aplicaciones de YakuControl + YakuTra
 
 | Mock-up 23 — Resumen de calidad del lote |
 |----------------------------------|
-| <img src="assets/images/cap6/mockup23.png" alt="Mock-up 23: Resumen de calidad del lote, escritorio" width="720" /> |
-| <img src="assets/images/cap6/mockup23-mobile.png" alt="Mock-up 23: Resumen de calidad del lote, móvil" width="300" /> |
+| <img src="assets/images/cap6/mockup23.png" alt="Mock-up 23: Resumen de calidad, escritorio" width="720" /> |
+| <img src="assets/images/cap6/mockup23-mobile.png" alt="Mock-up 23: Resumen de calidad, móvil" width="300" /> |
 
 | Mock-up 24 — Emitir certificado |
 |----------------------------------|
@@ -3593,8 +3593,8 @@ Esta sección presenta los mock-ups de las aplicaciones de YakuControl + YakuTra
 
 | Mock-up 25 — Certificados (lista) |
 |----------------------------------|
-| <img src="assets/images/cap6/mockup25.png" alt="Mock-up 25: Certificados (lista), escritorio" width="720" /> |
-| <img src="assets/images/cap6/mockup25-mobile.png" alt="Mock-up 25: Certificados (lista), móvil" width="300" /> |
+| <img src="assets/images/cap6/mockup25.png" alt="Mock-up 25: Certificados, escritorio" width="720" /> |
+| <img src="assets/images/cap6/mockup25-mobile.png" alt="Mock-up 25: Certificados, móvil" width="300" /> |
 
 | Mock-up 26 — Plan TRACE |
 |----------------------------------|
@@ -3603,13 +3603,13 @@ Esta sección presenta los mock-ups de las aplicaciones de YakuControl + YakuTra
 
 | Mock-up 27 — Verificación pública – Verificado |
 |----------------------------------|
-| <img src="assets/images/cap6/mockup27.png" alt="Mock-up 27: Verificación pública – Verificado, escritorio" width="720" /> |
-| <img src="assets/images/cap6/mockup27-mobile.png" alt="Mock-up 27: Verificación pública – Verificado, móvil" width="300" /> |
+| <img src="assets/images/cap6/mockup27.png" alt="Mock-up 27: Verificación pública, escritorio" width="720" /> |
+| <img src="assets/images/cap6/mockup27-mobile.png" alt="Mock-up 27: Verificación pública, móvil" width="300" /> |
 
 | Mock-up 28 — Verificación pública – No válido / Revocado / No encontrado |
 |----------------------------------|
-| <img src="assets/images/cap6/mockup28.png" alt="Mock-up 28: Verificación pública – No válido / Revocado / No encontrado, escritorio" width="720" /> |
-| <img src="assets/images/cap6/mockup28-mobile.png" alt="Mock-up 28: Verificación pública – No válido / Revocado / No encontrado, móvil" width="300" /> |
+| <img src="assets/images/cap6/mockup28.png" alt="Mock-up 28: Estados alternativos, escritorio" width="720" /> |
+| <img src="assets/images/cap6/mockup28-mobile.png" alt="Mock-up 28: Estados alternativos, móvil" width="300" /> |
 
 Fuente editable de los mock-ups 1–18: [Figma](https://www.figma.com/design/FdwCU88zpBqlCuHjQ9iY69/YacuControl?node-id=0-1). Los mock-ups 19–28 se elaboran en Figma a partir de los wireframes 19–28.
 
@@ -3617,41 +3617,41 @@ Fuente editable de los mock-ups 1–18: [Figma](https://www.figma.com/design/Fdw
 
 ### 6.4.4. Applications User Flow Diagrams
 
-Esta sección presenta los diagramas de flujo de usuario (User Flow Diagrams) de VeriFish, los cuales representan las interacciones de los usuarios con las interfaces de la aplicación móvil y la aplicación web.
+Esta sección presenta los diagramas de flujo de usuario (User Flow Diagrams) de YakuControl, los cuales representan las interacciones de los usuarios con las interfaces de la aplicación móvil y la aplicación web.
 
 Los diagramas permiten visualizar las pantallas involucradas, las acciones del usuario, las decisiones y, cuando corresponde, los recorridos alternativos. Se utiliza el color verde para identificar el recorrido principal o *happy path* y el color rojo para representar errores o recorridos alternativos (*unhappy paths*).
 
-Las imágenes se encuentran almacenadas en `assets/images/cap6/`, con la nomenclatura `userflow<N>.png`.
+Las imágenes se encuentran almacenadas en `assets/images/cap6/`. Los diagramas 1–10 utilizan la nomenclatura `yakucontrol_userflow<N>.png`.
 
 #### User Flow Diagrams para el Segmento 1: Administradores (Web App)
 
 | User Flow 1. Persona: Administrador. User goal: Como administrador, deseo acceder a la configuración de mi perfil para consultar mis datos personales y las opciones de seguridad de mi cuenta. |
 |----------------------------------|
-| <img src="assets/images/cap6/userflow1.png" alt="User Flow 1: Configuración del perfil del administrador" /> |
+| <img src="assets/images/cap6/yakucontrol_userflow1.png" alt="User Flow 1: Configuración del perfil del administrador" /> |
 
 **Explicación del flujo 1.** *Happy path:* Inicio → Dashboard → Selección de Configuración → Visualización de la configuración del perfil → Final. El administrador accede a sus datos personales, opciones de seguridad, preferencias y configuración de la cuenta.
 
 | User Flow 2. Persona: Administrador. User goal: Como administrador, deseo visualizar la lista de operadores registrados para consultar su información y estado dentro de la plataforma. |
 |----------------------------------|
-| <img src="assets/images/cap6/userflow2.png" alt="User Flow 2: Visualización de operadores" /> |
+| <img src="assets/images/cap6/yakucontrol_userflow2.png" alt="User Flow 2: Visualización de operadores" /> |
 
 **Explicación del flujo 2.** *Happy path:* Inicio → Dashboard → Selección de Operadores → Visualización de la lista de operadores → Final. El administrador consulta los registros disponibles y las opciones de búsqueda, filtrado y gestión.
 
 | User Flow 3. Persona: Administrador. User goal: Como administrador, deseo consultar las notificaciones del sistema para conocer los eventos y alertas relacionados con la operación de la piscigranja. |
 |----------------------------------|
-| <img src="assets/images/cap6/userflow3.png" alt="User Flow 3: Visualización de notificaciones del administrador" /> |
+| <img src="assets/images/cap6/yakucontrol_userflow3.png" alt="User Flow 3: Visualización de notificaciones del administrador" /> |
 
 **Explicación del flujo 3.** *Happy path:* Inicio → Dashboard → Selección de Notificaciones → Visualización de la lista de notificaciones → Final. El administrador puede consultar las alertas y los eventos registrados, así como identificar su información y estado.
 
 | User Flow 4. Persona: Administrador. User goal: Como administrador, deseo visualizar la gestión de equipos para consultar los dispositivos registrados y supervisar su estado operativo. |
 |----------------------------------|
-| <img src="assets/images/cap6/userflow4.png" alt="User Flow 4: Gestión de equipos" /> |
+| <img src="assets/images/cap6/yakucontrol_userflow4.png" alt="User Flow 4: Gestión de equipos" /> |
 
 **Explicación del flujo 4.** *Happy path:* Inicio → Dashboard → Selección de Equipos → Visualización de la gestión de equipos → Final. El administrador consulta los equipos disponibles, su información y sus estados, además de las opciones de gestión presentadas por la aplicación.
 
 | User Flow 5. Persona: Administrador. User goal: Como administrador, deseo completar el proceso de registro y validación de información para incorporar un nuevo registro a la plataforma. |
 |----------------------------------|
-| <img src="assets/images/cap6/userflow5.png" alt="User Flow 5: Registro y validación administrativa" /> |
+| <img src="assets/images/cap6/yakucontrol_userflow5.png" alt="User Flow 5: Registro y validación administrativa" /> |
 
 **Explicación del flujo 5.** *Happy path:* Inicio → Registro de información → Validación de datos iniciales → Carga de documentos → Validación de archivos → Confirmación de información → Revisión del registro → Validación final → Resumen del registro.
 
@@ -3663,7 +3663,7 @@ Las imágenes se encuentran almacenadas en `assets/images/cap6/`, con la nomencl
 
 | User Flow 6. Persona: Administrador. User goal: Como administrador, deseo autenticarme mediante un código de verificación para acceder de forma segura a la plataforma web. |
 |----------------------------------|
-| <img src="assets/images/cap6/userflow6.png" alt="User Flow 6: Autenticación y verificación de acceso" /> |
+| <img src="assets/images/cap6/yakucontrol_userflow6.png" alt="User Flow 6: Autenticación y verificación de acceso" /> |
 
 **Explicación del flujo 6.** *Happy path:* Inicio → Ingreso de credenciales → Solicitud de código de verificación → Ingreso del código → Validación de verificación → Autorización de acceso → Dashboard → Final.
 
@@ -3673,7 +3673,7 @@ Las imágenes se encuentran almacenadas en `assets/images/cap6/`, con la nomencl
 
 | User Flow 7. Persona: Piscicultor. User goal: Como piscicultor, deseo acceder a mi perfil para consultar mis datos personales y regresar a la pantalla principal cuando lo necesite. |
 |----------------------------------|
-| <img src="assets/images/cap6/userflow7.png" alt="User Flow 7: Visualización del perfil del piscicultor" /> |
+| <img src="assets/images/cap6/yakucontrol_userflow7.png" alt="User Flow 7: Visualización del perfil del piscicultor" /> |
 
 **Explicación del flujo 7.** *Happy path:* Inicio → Pantalla principal → Selección de Perfil → Visualización de información personal → Final.
 
@@ -3681,7 +3681,7 @@ Las imágenes se encuentran almacenadas en `assets/images/cap6/`, con la nomencl
 
 | User Flow 8. Persona: Piscicultor. User goal: Como piscicultor, deseo visualizar las alertas registradas para conocer las condiciones que requieren atención en los estanques. |
 |----------------------------------|
-| <img src="assets/images/cap6/userflow8.png" alt="User Flow 8: Visualización de alertas del piscicultor" /> |
+| <img src="assets/images/cap6/yakucontrol_userflow8.png" alt="User Flow 8: Visualización de alertas del piscicultor" /> |
 
 **Explicación del flujo 8.** *Happy path:* Inicio → Pantalla principal → Selección de Alertas → Visualización del listado de alertas → Final. El piscicultor puede consultar eventos críticos, advertencias y notificaciones operativas.
 
@@ -3689,7 +3689,7 @@ Las imágenes se encuentran almacenadas en `assets/images/cap6/`, con la nomencl
 
 | User Flow 9. Persona: Piscicultor. User goal: Como piscicultor, deseo registrarme e iniciar sesión en la aplicación móvil para acceder a la información de los estanques. |
 |----------------------------------|
-| <img src="assets/images/cap6/userflow9.png" alt="User Flow 9: Registro e inicio de sesión móvil" /> |
+| <img src="assets/images/cap6/yakucontrol_userflow9.png" alt="User Flow 9: Registro e inicio de sesión móvil" /> |
 
 **Explicación del flujo 9.** *Happy path:* Inicio → Registro → Validación del registro → Inicio de sesión → Validación de credenciales → Pantalla principal → Final.
 
@@ -3700,7 +3700,7 @@ Las imágenes se encuentran almacenadas en `assets/images/cap6/`, con la nomencl
 
 | User Flow 10. Persona: Piscicultor. User goal: Como piscicultor, deseo consultar la información de un estanque y acceder al historial completo de sus lecturas para supervisar su comportamiento. |
 |----------------------------------|
-| <img src="assets/images/cap6/userflow10.png" alt="User Flow 10: Consulta de estanques e historial de lecturas" /> |
+| <img src="assets/images/cap6/yakucontrol_userflow10.png" alt="User Flow 10: Consulta de estanques e historial de lecturas" /> |
 
 **Explicación del flujo 10.** *Happy path:* Inicio → Pantalla principal → Selección de un estanque → Visualización de lecturas y sensores → Selección de Ver historial completo → Visualización del historial de lecturas → Final.
 
