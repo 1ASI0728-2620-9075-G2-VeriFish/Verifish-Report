@@ -288,6 +288,7 @@ Para el Sprint 1 el equipo reorganizó el trabajo por producto: cada integrante 
   - [4.3.2. Software Architecture Context Level Diagrams](#432-software-architecture-context-level-diagrams)
   - [4.3.3. Software Architecture Container Level Diagrams](#433-software-architecture-container-level-diagrams)
   - [4.3.4. Software Architecture Deployment Diagrams](#434-software-architecture-deployment-diagrams)
+- [4.4. Enterprise Architecture](#44-enterprise-architecture)
 
 ### Capítulo V: Tactical-Level Software Design
 - [5.1. Bounded Context: Telemetry Context](#51-bounded-context-telemetry-context)
@@ -2085,6 +2086,13 @@ Los clientes se comunican con el backend por REST/JSON sobre HTTPS; el Edge API 
 El diagrama de despliegue mapea la arquitectura lógica a la infraestructura. El **nodo IoT** se ubica en la granja con conectividad intermitente; el **Edge API** se ejecuta en un servicio PaaS (Railway); el **backend** y la **base de datos** se despliegan en Microsoft Azure (App Service y Azure Database for PostgreSQL); la **Landing Page** y la **Web App** se distribuyen como contenido estático con CDN; la **app móvil** se instala en el teléfono del piscicultor; y el **smart contract** se despliega en una red EVM de pruebas configurable.
 
 ![Deployment Diagram](./assets/images/cap4/c4_deployment.png)
+
+## 4.4. Enterprise Architecture
+La arquitectura empresarial organiza **YakuControl + YakuTrace** en una sola lámina por capas. En la parte superior se ubican los actores, el alineamiento estratégico y las capacidades de Verifish. A la izquierda está el problema (la demanda) y a la derecha la oferta de valor. En el centro se muestran las capas de negocio, aplicaciones, datos y tecnología. Una capa lateral de blockchain atraviesa las cuatro y señala qué parte de cada una sostiene la trazabilidad verificable de YakuTrace.
+
+El contenido sale de los capítulos anteriores de este informe: los segmentos objetivo (1.3), el Impact Mapping (3.3), las decisiones arquitectónicas (4.1.4), los Bounded Contexts (4.2) y los diagramas de la sección 4.3.
+
+![Arquitectura Empresarial Verifish](./assets/arquitectura-empresarial/arquitectura-empresarial.jpg)
 
 <div style="page-break-after: always;"></div>
 
