@@ -4518,7 +4518,7 @@ Las siguientes capturas muestran la ejecución de los productos por historia de 
 
 | Producto | Contenido | Enlace |
 | :--- | :--- | :--- |
-| Landing Page y Web App | Propuesta, planes, YakuTrace, formulario y términos. Inicio de sesión, registro de estanque, vínculo de equipo y notificaciones. | [Recorrido explicado de Landing y Web en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231d390_upc_edu_pe/IQB7PqSFnYIKRbvnJTkh2gIPAbF8-mTa2nlIVgoxjxslmdQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=HTf3sk) · [MP4](./assets/videos/exec-landing-web.mp4) |
+| Landing Page y Web App | Propuesta, planes, YakuTrace, formulario y términos. Inicio de sesión, registro de estanque, vínculo de equipo y notificaciones. | [Recorrido explicado de Landing y Web en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231d390_upc_edu_pe/IQBCrw_jogCwRqb2DnDOljNnAVV8XtoNY_uGIyV8pdlFD3E?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=BaKHqq) · [MP4](./assets/videos/exec-landing-web.mp4) |
 | App móvil | Inicio de sesión, lectura del estanque, alerta y activación del aireador | (pegar enlace) |
 | Edge API y backend | Lectura firmada desde el Edge hasta su persistencia | (pegar enlace) |
 
