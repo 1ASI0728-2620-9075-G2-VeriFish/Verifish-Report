@@ -4885,6 +4885,7 @@ En el Sprint 1 se crearon las cuentas y los recursos en los proveedores cloud y 
 | 10 | App móvil | Firebase | Versión `v0.1.0` en App Distribution | ![Paso 10](./assets/images/sprint1/deploy-firebase-release.png) |
 | 11 | App móvil | Firebase | Invitación a testers | ![Paso 11](./assets/images/sprint1/deploy-firebase-testers.png) |
 
+
 #### 7.2.1.8. Team Collaboration Insights during Sprint
 
 La implementación se organizó por producto: cada integrante trabajó en su propio repositorio mediante ramas `feature/<tema>` creadas desde `develop`, con Pull Requests revisados por otro integrante y mensajes de commit según Conventional Commits. Victor Cruz trabajó en la seguridad y el despliegue del backend, Sebastian Escobar en la firma de lecturas, el estado de los equipos y las pruebas BDD del backend, Ronald Peralta en el Edge API, Rúbens Bendezu en la Landing Page y la Web App y Luciana Choquehuanca en la app móvil. Las capturas siguientes muestran los aportes de cada repositorio.
