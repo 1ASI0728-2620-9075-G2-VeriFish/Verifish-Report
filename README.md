@@ -3477,147 +3477,212 @@ Las rutas principales y alternativas se explican en cada diagrama. Los flujos 1�
 
 ### 6.4.3. Applications Mock-ups
 
-Esta sección presenta los mock-ups de las aplicaciones de YakuControl + YakuTrace. Cada pantalla parte del wireframe del mismo número (sección 6.4.1) y le aplica la guía de estilos (sección 6.1): paleta Navy Deep, Cyan Electric y Aqua, tipografía Inter, espaciado en múltiplos de 8 px, botones y chips del Design System, y el sello de verificación de YakuTrace. La numeración 1–28 se mantiene en los wireframes, los mock-ups y los diagramas de las secciones 6.4.4 y 6.4.5.
+Esta sección presenta los mock-ups de YakuControl y YakuTrace, desarrollados para representar visualmente las interfaces de las aplicaciones móvil y web. Los diseños aplican los lineamientos establecidos en la guía de estilos de la sección 6.1, considerando la identidad visual, la tipografía Inter, la jerarquía de contenidos, los componentes de interacción y la adaptación a diferentes dispositivos.
+
+Los mock-ups permiten visualizar la distribución de los elementos, la navegación y las funcionalidades principales desde la perspectiva de los usuarios. Su organización responde a los segmentos definidos en el proyecto: piscicultores, administradores de piscigranjas y usuarios de las funcionalidades de trazabilidad y verificación pública de YakuTrace.
 
 | Principio de diseño | Aplicación en los mock-ups |
 | :--- | :--- |
-| Jerarquía visual | El estado del estanque y el estado del certificado ocupan la parte superior, con tamaño y color semántico mayores que el resto del contenido. |
-| Consistencia | Los mismos componentes (botones, tarjetas, insignias, chips) y la misma terminología en la Web App, la app móvil y la Landing Page. |
-| Diseño inclusivo | Los estados se comunican con color, ícono y texto; los botones con texto blanco usan el cian accesible `#007EA8`; los controles miden al menos 48 px. |
-| Acción rápida | En la app móvil, la activación del aireador está a dos toques desde una alerta; las acciones destructivas piden confirmación. |
-| Arquitectura de información | Las etiquetas y los menús son los definidos en la sección 6.2: menú inferior en la app móvil, menú lateral en la Web App y recorrido lineal en la verificación pública. |
+| Jerarquía visual | La información relevante, como el estado de los estanques, las alertas, los indicadores de calidad y los certificados, se presenta de manera destacada para facilitar su identificación. |
+| Consistencia | Se emplean componentes visuales, colores, tipografía y patrones de navegación coherentes entre las distintas pantallas. |
+| Diseño inclusivo | Los estados del sistema se representan mediante etiquetas, íconos y colores que facilitan su interpretación. |
+| Usabilidad | Las funcionalidades se organizan mediante formularios, tarjetas, tablas, botones y controles que permiten identificar las acciones disponibles. |
+| Adaptabilidad | Los diseños consideran la visualización de información en interfaces móviles y de escritorio, según las necesidades de cada funcionalidad. |
+| Arquitectura de información | Las pantallas siguen la organización funcional definida en la sección 6.2, facilitando la navegación y el acceso a la información. |
 
-**Historias cubiertas.** Los mock-ups 1–7 corresponden a US05–US09, US13 y US17 (piscicultor); 8–18 a US10–US16 (administrador); 19–28 a US18 y US19–US27 (YakuTrace).
+**Historias de usuario relacionadas.** Los mock-ups 1–7 representan las interfaces principales del piscicultor; los mock-ups 8–18 corresponden a las funciones administrativas de la aplicación web; y los mock-ups 19–28 presentan las interfaces de trazabilidad, certificación y verificación pública de YakuTrace.
 
-- *Mock-ups para Segmento 1 (App móvil)*
+#### Mock-ups para el Segmento 1: Piscicultores (App móvil)
+
+Los siguientes mock-ups representan las interfaces de YakuControl utilizadas por los piscicultores para acceder al sistema, consultar el estado de los estanques, revisar las lecturas registradas y visualizar alertas e información personal.
 
 | Mock-up 1 — Inicio de sesión |
 |----------------------------------|
-| <img src="assets/images/cap6/mockup1.png" alt="Mock-up 1: Inicio de sesión" /> |
+| <img src="assets/images/cap6/yakucontrol_mockup1.png" alt="Mock-up 1: Inicio de sesión de YakuControl" /> |
+
+**Descripción.** Presenta la interfaz de autenticación de la aplicación móvil. Permite al piscicultor ingresar sus credenciales para acceder a las funcionalidades de YakuControl. Incluye los campos correspondientes al inicio de sesión y las opciones de acceso a la cuenta.
 
 | Mock-up 2 — Crear cuenta |
 |----------------------------------|
-| <img src="assets/images/cap6/mockup2.png" alt="Mock-up 2: Crear cuenta" /> |
+| <img src="assets/images/cap6/yakucontrol_mockup2.png" alt="Mock-up 2: Registro de usuario en YakuControl" /> |
+
+**Descripción.** Representa la pantalla de registro de usuarios de la aplicación móvil. Organiza los campos necesarios para ingresar la información solicitada y crear una cuenta, facilitando el acceso posterior al sistema.
 
 | Mock-up 3 — Sección Inicio |
 |----------------------------------|
-| <img src="assets/images/cap6/mockup3.png" alt="Mock-up 3: Sección Inicio" /> |
+| <img src="assets/images/cap6/yakucontrol_mockup3.png" alt="Mock-up 3: Pantalla principal de YakuControl" /> |
 
-| Mock-up 4 — Inicio – Detalle de estanque |
-|----------------------------------|
-| <img src="assets/images/cap6/mockup4.png" alt="Mock-up 4: Inicio – Detalle de estanque" /> |
+**Descripción.** Muestra la pantalla principal de la aplicación móvil, donde el piscicultor visualiza los estanques asociados a la piscigranja. Cada tarjeta presenta información relevante sobre las condiciones del estanque, incluyendo lecturas de monitoreo y estados operativos.
 
-| Mock-up 5 — Inicio – Historial de lecturas |
+| Mock-up 4 — Inicio: Detalle de estanque |
 |----------------------------------|
-| <img src="assets/images/cap6/mockup5.png" alt="Mock-up 5: Inicio – Historial de lecturas" /> |
+| <img src="assets/images/cap6/yakucontrol_mockup4.png" alt="Mock-up 4: Detalle del estanque" /> |
+
+**Descripción.** Presenta la información detallada de un estanque seleccionado. La interfaz permite consultar los parámetros de monitoreo, como temperatura, pH y oxígeno disuelto, así como la información de los sensores y sus condiciones operativas.
+
+| Mock-up 5 — Inicio: Historial de lecturas |
+|----------------------------------|
+| <img src="assets/images/cap6/yakucontrol_mockup5.png" alt="Mock-up 5: Historial de lecturas" /> |
+
+**Descripción.** Representa la consulta del historial de mediciones de un estanque. Incluye la visualización de registros anteriores y la evolución de los parámetros monitoreados, permitiendo al usuario revisar el comportamiento de las condiciones del agua durante diferentes periodos.
 
 | Mock-up 6 — Sección Alertas |
 |----------------------------------|
-| <img src="assets/images/cap6/mockup6.png" alt="Mock-up 6: Sección Alertas" /> |
+| <img src="assets/images/cap6/yakucontrol_mockup6.png" alt="Mock-up 6: Alertas del piscicultor" /> |
+
+**Descripción.** Muestra la sección de alertas de la aplicación móvil. Presenta las notificaciones relacionadas con condiciones críticas, advertencias y eventos operativos, diferenciadas mediante indicadores visuales de prioridad y estado.
 
 | Mock-up 7 — Sección Perfil |
 |----------------------------------|
-| <img src="assets/images/cap6/mockup7.png" alt="Mock-up 7: Sección Perfil" /> |
+| <img src="assets/images/cap6/yakucontrol_mockup7.png" alt="Mock-up 7: Perfil del piscicultor" /> |
 
-- *Mock-ups para Segmento 2 (Web App)*
+**Descripción.** Presenta la información del perfil del piscicultor y su vinculación con la piscigranja. Organiza los datos personales y las opciones relacionadas con la administración de la cuenta, la seguridad y el cierre de sesión.
+
+#### Mock-ups para el Segmento 2: Administradores de Piscigranja (Web App)
+
+Los siguientes diseños presentan las interfaces de administración de YakuControl. Estas pantallas permiten gestionar la información de la piscigranja, los estanques, los equipos y los operadores, así como consultar notificaciones y configurar la cuenta administrativa.
 
 | Mock-up 8 — Inicio de sesión |
 |----------------------------------|
-| <img src="assets/images/cap6/mockup8.png" alt="Mock-up 8: Inicio de sesión" /> |
+| <img src="assets/images/cap6/mockup8.png" alt="Mock-up 8: Inicio de sesión de la Web App" /> |
+
+**Descripción.** Representa la interfaz de autenticación del administrador en la aplicación web. Contiene los campos de acceso y los controles necesarios para ingresar a las funcionalidades administrativas.
 
 | Mock-up 9 — Crear cuenta |
 |----------------------------------|
-| <img src="assets/images/cap6/mockup9.png" alt="Mock-up 9: Crear cuenta" /> |
+| <img src="assets/images/cap6/mockup9.png" alt="Mock-up 9: Registro de administrador" /> |
+
+**Descripción.** Presenta el formulario de registro de una cuenta administrativa. La distribución de los campos permite ingresar la información requerida para establecer el acceso del administrador a la plataforma.
 
 | Mock-up 10 — Registro de granja |
 |----------------------------------|
-| <img src="assets/images/cap6/mockup10.png" alt="Mock-up 10: Registro de granja" /> |
+| <img src="assets/images/cap6/mockup10.png" alt="Mock-up 10: Registro de piscigranja" /> |
+
+**Descripción.** Muestra la interfaz destinada al registro de una piscigranja. Permite visualizar los campos relacionados con los datos de identificación y la información necesaria para asociar una granja a la cuenta administrativa.
 
 | Mock-up 11 — Sección Inicio |
 |----------------------------------|
-| <img src="assets/images/cap6/mockup11.png" alt="Mock-up 11: Sección Inicio" /> |
+| <img src="assets/images/cap6/mockup11.png" alt="Mock-up 11: Panel principal del administrador" /> |
+
+**Descripción.** Representa la pantalla principal de la aplicación web. Presenta un panel administrativo con información general de la piscigranja, indicadores operativos y accesos a las funcionalidades de gestión.
 
 | Mock-up 12 — Sección Estanques |
 |----------------------------------|
-| <img src="assets/images/cap6/mockup12.png" alt="Mock-up 12: Sección Estanques" /> |
+| <img src="assets/images/cap6/mockup12.png" alt="Mock-up 12: Gestión de estanques" /> |
+
+**Descripción.** Muestra la sección de consulta y administración de los estanques registrados. La interfaz organiza la información de cada estanque y facilita el acceso a las acciones disponibles para su gestión.
 
 | Mock-up 13 — Registrar estanque |
 |----------------------------------|
-| <img src="assets/images/cap6/mockup13.png" alt="Mock-up 13: Registrar estanque" /> |
+| <img src="assets/images/cap6/mockup13.png" alt="Mock-up 13: Formulario de registro de estanque" /> |
 
-| Mock-up 14 — Registrar estanque – Detalle de estanque |
+**Descripción.** Presenta el formulario de creación de un estanque. Incluye los campos para registrar su información y asociarlo con la piscigranja correspondiente, manteniendo una organización estructurada de los datos.
+
+| Mock-up 14 — Detalle de estanque |
 |----------------------------------|
-| <img src="assets/images/cap6/mockup14.png" alt="Mock-up 14: Registrar estanque – Detalle de estanque" /> |
+| <img src="assets/images/cap6/mockup14.png" alt="Mock-up 14: Detalle administrativo del estanque" /> |
+
+**Descripción.** Representa la pantalla de detalle de un estanque dentro de la aplicación web. Presenta su información registrada y los elementos relacionados con el seguimiento de sus condiciones y características operativas.
 
 | Mock-up 15 — Sección Equipos |
 |----------------------------------|
-| <img src="assets/images/cap6/mockup15.png" alt="Mock-up 15: Sección Equipos" /> |
+| <img src="assets/images/cap6/mockup15.png" alt="Mock-up 15: Gestión de equipos" /> |
+
+**Descripción.** Muestra la interfaz de administración de equipos. Organiza la información de los dispositivos registrados, sus estados y las acciones relacionadas con su consulta y gestión dentro de la piscigranja.
 
 | Mock-up 16 — Sección Operadores |
 |----------------------------------|
-| <img src="assets/images/cap6/mockup16.png" alt="Mock-up 16: Sección Operadores" /> |
+| <img src="assets/images/cap6/mockup16.png" alt="Mock-up 16: Gestión de operadores" /> |
+
+**Descripción.** Presenta la sección de operadores vinculados a la piscigranja. La interfaz permite visualizar su información y estado, además de identificar las opciones disponibles para administrar sus registros.
 
 | Mock-up 17 — Sección Notificaciones |
 |----------------------------------|
-| <img src="assets/images/cap6/mockup17.png" alt="Mock-up 17: Sección Notificaciones" /> |
+| <img src="assets/images/cap6/mockup17.png" alt="Mock-up 17: Notificaciones del administrador" /> |
+
+**Descripción.** Representa la pantalla de notificaciones de la aplicación web. Organiza las alertas y los eventos del sistema e incorpora controles que facilitan su consulta y filtrado.
 
 | Mock-up 18 — Sección Configuración |
 |----------------------------------|
-| <img src="assets/images/cap6/mockup18.png" alt="Mock-up 18: Sección Configuración" /> |
+| <img src="assets/images/cap6/mockup18.png" alt="Mock-up 18: Configuración del perfil administrativo" /> |
 
-- *Mock-ups para YakuTrace*
+**Descripción.** Muestra la interfaz de configuración de la cuenta del administrador. Presenta sus datos y opciones relacionadas con la información personal, las preferencias y la seguridad de acceso.
+
+#### Mock-ups para YakuTrace: Trazabilidad y Verificación Pública
+
+Los siguientes mock-ups representan las interfaces de YakuTrace orientadas al seguimiento del ciclo de producción, el registro de lotes, la evaluación de calidad, la emisión de certificados y su verificación pública. Cada funcionalidad se presenta mediante diseños de escritorio y móvil para visualizar su adaptación a diferentes dispositivos.
 
 | Mock-up 19 — Lotes (lista) |
 |----------------------------------|
-| <img src="assets/images/cap6/mockup19.png" alt="Mock-up 19: Lotes (lista), escritorio" width="720" /> |
-| <img src="assets/images/cap6/mockup19-mobile.png" alt="Mock-up 19: Lotes (lista), móvil" width="300" /> |
+| <img src="assets/images/cap6/mockup19.png" alt="Mock-up 19: Lista de lotes, escritorio" width="720" /> |
+| <img src="assets/images/cap6/mockup19-mobile.png" alt="Mock-up 19: Lista de lotes, móvil" width="300" /> |
+
+**Descripción.** Presenta la sección de lotes de producción registrados en YakuTrace. Permite visualizar información como la identificación del lote, el estanque asociado, las fechas relevantes y su estado. La interfaz incorpora opciones de consulta y acceso al registro de nuevos lotes.
 
 | Mock-up 20 — Registrar lote |
 |----------------------------------|
-| <img src="assets/images/cap6/mockup20.png" alt="Mock-up 20: Registrar lote, escritorio" width="720" /> |
-| <img src="assets/images/cap6/mockup20-mobile.png" alt="Mock-up 20: Registrar lote, móvil" width="300" /> |
+| <img src="assets/images/cap6/mockup20.png" alt="Mock-up 20: Registro de lote, escritorio" width="720" /> |
+| <img src="assets/images/cap6/mockup20-mobile.png" alt="Mock-up 20: Registro de lote, móvil" width="300" /> |
+
+**Descripción.** Representa el formulario de registro de un nuevo lote de producción. Organiza los campos relacionados con la identificación del lote, el estanque, la especie, la cantidad inicial y la fecha de siembra, permitiendo establecer la información inicial para su trazabilidad.
 
 | Mock-up 21 — Detalle del lote |
 |----------------------------------|
 | <img src="assets/images/cap6/mockup21.png" alt="Mock-up 21: Detalle del lote, escritorio" width="720" /> |
 | <img src="assets/images/cap6/mockup21-mobile.png" alt="Mock-up 21: Detalle del lote, móvil" width="300" /> |
 
+**Descripción.** Muestra la información detallada de un lote de producción. Presenta sus datos generales, el estado del ciclo de crianza y el historial de eventos registrados. La organización de la información permite consultar la evolución del lote y acceder a las acciones correspondientes a su seguimiento.
+
 | Mock-up 22 — Registrar cosecha |
 |----------------------------------|
-| <img src="assets/images/cap6/mockup22.png" alt="Mock-up 22: Registrar cosecha, escritorio" width="720" /> |
-| <img src="assets/images/cap6/mockup22-mobile.png" alt="Mock-up 22: Registrar cosecha, móvil" width="300" /> |
+| <img src="assets/images/cap6/mockup22.png" alt="Mock-up 22: Registro de cosecha, escritorio" width="720" /> |
+| <img src="assets/images/cap6/mockup22-mobile.png" alt="Mock-up 22: Registro de cosecha, móvil" width="300" /> |
+
+**Descripción.** Presenta la interfaz destinada al registro de la cosecha de un lote. Incluye campos relacionados con la fecha, la cantidad cosechada, el peso y las observaciones asociadas al proceso, facilitando la documentación del cierre del ciclo productivo.
 
 | Mock-up 23 — Resumen de calidad del lote |
 |----------------------------------|
 | <img src="assets/images/cap6/mockup23.png" alt="Mock-up 23: Resumen de calidad del lote, escritorio" width="720" /> |
 | <img src="assets/images/cap6/mockup23-mobile.png" alt="Mock-up 23: Resumen de calidad del lote, móvil" width="300" /> |
 
+**Descripción.** Representa la pantalla de consulta de indicadores de calidad del lote. Presenta información relacionada con las condiciones de monitoreo, los parámetros del agua y los controles registrados, permitiendo visualizar un resumen del comportamiento del lote durante su ciclo productivo.
+
 | Mock-up 24 — Emitir certificado |
 |----------------------------------|
-| <img src="assets/images/cap6/mockup24.png" alt="Mock-up 24: Emitir certificado, escritorio" width="720" /> |
-| <img src="assets/images/cap6/mockup24-mobile.png" alt="Mock-up 24: Emitir certificado, móvil" width="300" /> |
+| <img src="assets/images/cap6/mockup24.png" alt="Mock-up 24: Emisión de certificado, escritorio" width="720" /> |
+| <img src="assets/images/cap6/mockup24-mobile.png" alt="Mock-up 24: Emisión de certificado, móvil" width="300" /> |
+
+**Descripción.** Muestra la interfaz correspondiente a la emisión de certificados de trazabilidad. Presenta los requisitos de emisión y la información del lote, así como una vista previa de los datos asociados al certificado antes de confirmar la operación.
 
 | Mock-up 25 — Certificados (lista) |
 |----------------------------------|
-| <img src="assets/images/cap6/mockup25.png" alt="Mock-up 25: Certificados (lista), escritorio" width="720" /> |
-| <img src="assets/images/cap6/mockup25-mobile.png" alt="Mock-up 25: Certificados (lista), móvil" width="300" /> |
+| <img src="assets/images/cap6/mockup25.png" alt="Mock-up 25: Lista de certificados, escritorio" width="720" /> |
+| <img src="assets/images/cap6/mockup25-mobile.png" alt="Mock-up 25: Lista de certificados, móvil" width="300" /> |
+
+**Descripción.** Representa la sección de certificados de trazabilidad. Organiza los registros mediante información de identificación, fechas de emisión y estados de verificación, permitiendo consultar los certificados asociados a los lotes de producción.
 
 | Mock-up 26 — Plan TRACE |
 |----------------------------------|
-| <img src="assets/images/cap6/mockup26.png" alt="Mock-up 26: Plan TRACE, escritorio" width="720" /> |
-| <img src="assets/images/cap6/mockup26-mobile.png" alt="Mock-up 26: Plan TRACE, móvil" width="300" /> |
+| <img src="assets/images/cap6/mockup26.png" alt="Mock-up 26: Complemento TRACE, escritorio" width="720" /> |
+| <img src="assets/images/cap6/mockup26-mobile.png" alt="Mock-up 26: Complemento TRACE, móvil" width="300" /> |
 
-| Mock-up 27 — Verificación pública – Verificado |
+**Descripción.** Presenta la interfaz informativa del complemento TRACE. Expone las funcionalidades relacionadas con el historial de lotes, los resúmenes de calidad, la certificación y la verificación pública, así como los controles asociados a la contratación del servicio.
+
+| Mock-up 27 — Verificación pública: Verificado |
 |----------------------------------|
-| <img src="assets/images/cap6/mockup27.png" alt="Mock-up 27: Verificación pública – Verificado, escritorio" width="720" /> |
-| <img src="assets/images/cap6/mockup27-mobile.png" alt="Mock-up 27: Verificación pública – Verificado, móvil" width="300" /> |
+| <img src="assets/images/cap6/mockup27.png" alt="Mock-up 27: Verificación pública con resultado verificado, escritorio" width="720" /> |
+| <img src="assets/images/cap6/mockup27-mobile.png" alt="Mock-up 27: Verificación pública con resultado verificado, móvil" width="300" /> |
 
-| Mock-up 28 — Verificación pública – No válido / Revocado / No encontrado |
+**Descripción.** Muestra la interfaz de verificación pública de un certificado cuando el resultado corresponde al estado «Verificado». Presenta la identificación del lote, el resultado de la consulta y la información de trazabilidad disponible para el usuario que accede mediante el código QR.
+
+| Mock-up 28 — Verificación pública: No válido / Revocado / No encontrado |
 |----------------------------------|
-| <img src="assets/images/cap6/mockup28.png" alt="Mock-up 28: Verificación pública – No válido / Revocado / No encontrado, escritorio" width="720" /> |
-| <img src="assets/images/cap6/mockup28-mobile.png" alt="Mock-up 28: Verificación pública – No válido / Revocado / No encontrado, móvil" width="300" /> |
+| <img src="assets/images/cap6/mockup28.png" alt="Mock-up 28: Resultado alternativo de verificación pública, escritorio" width="720" /> |
+| <img src="assets/images/cap6/mockup28-mobile.png" alt="Mock-up 28: Resultado alternativo de verificación pública, móvil" width="300" /> |
 
-Fuente editable de los mock-ups 1–18: [Figma](https://www.figma.com/design/FdwCU88zpBqlCuHjQ9iY69/YacuControl?node-id=0-1). Los mock-ups 19–28 se elaboran en Figma a partir de los wireframes 19–28.
+**Descripción.** Representa los resultados alternativos de la verificación pública de certificados. La interfaz comunica situaciones en las que la información no coincide con el registro, el certificado ha sido revocado o el código consultado no se encuentra registrado, proporcionando mensajes que permiten identificar el resultado de la consulta.
+
+**Fuentes de diseño:** [Prototipos de YakuControl en Figma](https://www.figma.com/design/FdwCU88zpBqlCuHjQ9iY69/YacuControl?node-id=0-1) y [fuentes de diseño de YakuTrace](design/package-e/index.html).
 
 <div style="page-break-after: always;"></div>
 
