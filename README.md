@@ -3991,33 +3991,107 @@ Los siguientes diagramas representan los recorridos relacionados con la gestión
 
 <div style="page-break-after: always;"></div>
 
+
 ### 6.4.5. Applications Prototyping
 
-Esta sección presenta los prototipos de interfaz de las aplicaciones, con simulación de interacción y navegación según los User Flows de la sección 6.4.4. Las decisiones de interacción provienen del sistema de navegación definido en la sección 6.2.5 y se resumen a continuación.
+Esta sección presenta los prototipos de interfaz de YakuControl y YakuTrace, diseñados para representar la navegación, las interacciones y los procesos principales de las aplicaciones móvil y web. Los prototipos integran las pantallas desarrolladas en la sección 6.4.3 y los recorridos de usuario definidos en la sección 6.4.4.
 
-| Decisión de interacción | Aplicación en el prototipo | Relación con la arquitectura de información |
+El prototipado permite analizar la organización de las funcionalidades, la consistencia visual, la facilidad de navegación y la respuesta de las interfaces durante las diferentes interacciones. Asimismo, facilita la evaluación de la experiencia del usuario antes de la implementación definitiva del sistema.
+
+#### Decisiones de interacción
+
+| Decisión de interacción | Aplicación | Propósito |
 | :--- | :--- | :--- |
-| Menú inferior de cuatro destinos (Inicio, Estanques, Alertas, Perfil) | App móvil | Acceso con el pulgar a las secciones principales (sección 6.2.5) |
-| Menú lateral fijo en escritorio y plegable en pantallas pequeñas | Web App | Organización por tema: Estanques, Equipos, Operadores, Lotes, Certificados |
-| Acción de emergencia a dos toques desde la alerta | App móvil | Prioridad de contenido: el estado y la acción antes que el historial |
-| Estados de confianza del certificado (Verificado, No válido, Revocado, En proceso) con color, ícono y texto | Verificación pública | Recorrido lineal del comprador: QR → estado → resumen → historial → prueba |
-| Confirmación antes de acciones irreversibles (emitir o revocar un certificado) | Web App | Retroalimentación y control del usuario |
+| Menú inferior con Inicio, Alertas y Perfil | YakuControl móvil | Facilitar el acceso a las funcionalidades principales del piscicultor. |
+| Selección de estanques mediante tarjetas | YakuControl móvil | Permitir la consulta de parámetros de monitoreo y registros históricos. |
+| Alertas con indicadores visuales | YakuControl móvil | Facilitar la identificación de condiciones que requieren atención. |
+| Menú lateral de navegación | YakuControl web | Organizar el acceso a estanques, equipos, operadores, notificaciones y configuración. |
+| Formularios estructurados | YakuControl móvil y web | Facilitar el registro de información y la identificación de errores. |
+| Gestión de lotes de producción | YakuTrace | Organizar los registros correspondientes al ciclo productivo. |
+| Certificados con códigos QR | YakuTrace | Facilitar el acceso a la información de trazabilidad de los lotes. |
+| Estados de verificación diferenciados | YakuTrace | Comunicar la validez y condición de los certificados. |
+| Confirmación de operaciones críticas | YakuTrace | Permitir la revisión de información antes de emitir o revocar certificados. |
 
-La tabla reúne los prototipos y las grabaciones de sus recorridos.
+#### Prototipo para el Segmento 1: Piscicultores (App móvil)
 
-| Aplicación | Prototipo | Flujos demostrados | Video del recorrido |
-| :--- | :--- | :--- | :--- |
-| App móvil del piscicultor | [Prototipo en Figma](https://www.figma.com/design/FdwCU88zpBqlCuHjQ9iY69/YacuControl?node-id=0-1) | User Flows 1–4, 15 y 21: registro, estado del estanque, alertas con activación del aireador, perfil, novedades y limpieza | (pegar enlace) |
-| Web App del administrador | [Prototipo navegable](./design/tb2-web/index.html) · [Referencia en Figma](https://www.figma.com/design/FdwCU88zpBqlCuHjQ9iY69/YacuControl?node-id=0-1) | Inicio de sesión, registro, granja, inicio, estanques, equipos, operadores, notificaciones y configuración. | [Recorrido de los mock-ups 8–18 en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231d390_upc_edu_pe/IQDd08aITNSfRZsOJSvOA4saAYvfqAUMKf1V8xERv6j5a3w?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=vow8j4) · [MP4](./assets/videos/prototype-web.mp4) |
-| Verificación pública (comprador) | (pegar enlace del prototipo) | User Flow 13: verificación de un lote por QR en sus cuatro resultados | (pegar enlace) |
+El prototipo móvil de YakuControl representa las principales interacciones realizadas por el piscicultor durante la supervisión de sus estanques. El recorrido comienza en las pantallas de registro y autenticación, continúa con el acceso a la pantalla principal y permite consultar la información relacionada con las condiciones del agua.
 
-![Video del prototipo de la app móvil](./assets/images/cap6/prototype-mobile.png)
+La interfaz utiliza una barra de navegación inferior compuesta por Inicio, Alertas y Perfil. Desde Inicio, el piscicultor puede seleccionar un estanque para visualizar sus parámetros de monitoreo e historial de lecturas. La sección Alertas presenta los eventos registrados, mientras que Perfil permite consultar la información personal del usuario.
 
-![Vista de estanques en el prototipo web](./assets/images/cap6/prototype-web.png)
+**Recorridos representados:**
 
-![Video del prototipo de la verificación pública](./assets/images/cap6/prototype-verify.png)
+- User Flow 7: Consulta del perfil del piscicultor.
+- User Flow 8: Visualización de alertas.
+- User Flow 9: Registro e inicio de sesión.
+- User Flow 10: Consulta de estanques e historial de lecturas.
+
+**Prototipo de interfaz:**
+
+[Visualizar prototipo móvil de YakuControl en Figma](https://www.figma.com/design/FdwCU88zpBqlCuHjQ9iY69/YacuControl?node-id=0-1)
+
+#### Prototipo para el Segmento 2: Administradores de Piscigranja (Web App)
+
+El prototipo web de YakuControl representa las funcionalidades utilizadas por el administrador para supervisar y gestionar los recursos de la piscigranja.
+
+La interfaz se organiza mediante un menú lateral que facilita la navegación entre las secciones funcionales del sistema. Las pantallas integran tablas, formularios, tarjetas informativas y controles de consulta.
+
+El prototipo comprende los procesos de autenticación, registro, consulta del panel principal, visualización de equipos, administración de operadores, notificaciones y configuración del perfil.
+
+**Recorridos representados:**
+
+- User Flow 1: Configuración del perfil administrativo.
+- User Flow 2: Visualización de operadores.
+- User Flow 3: Visualización de notificaciones.
+- User Flow 4: Visualización de equipos.
+- User Flow 5: Registro y validación administrativa.
+- User Flow 6: Autenticación y verificación de acceso.
+
+**Prototipo web:**
+
+[Visualizar prototipo navegable de YakuControl](./design/tb2-web/index.html)
+
+**Video del recorrido de interfaces:**
+
+[Visualizar prototipo web de YakuControl](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231d390_upc_edu_pe/IQDd08aITNSfRZsOJSvOA4saAYvfqAUMKf1V8xERv6j5a3w?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJycmFsTW9kZSI6IldlYiIsInJlZmVycmFsTW9kZSI6IldlYiJ9&e=vow8j4)
+
+[Visualizar video MP4 del prototipo web](./assets/videos/prototype-web.mp4)
+
+| Prototipo web de YakuControl |
+|----------------------------------|
+| <img src="assets/images/cap6/prototype-web.png" alt="Vista del prototipo web de YakuControl" width="720" /> |
+
+#### Prototipo de YakuTrace: Trazabilidad y Verificación Pública
+
+El prototipo de YakuTrace representa las interfaces destinadas al seguimiento de los lotes de producción, el registro de hitos, la consulta del historial productivo y los procedimientos de emisión y verificación de certificados de trazabilidad.
+
+Desde la aplicación administrativa, el usuario puede consultar los lotes registrados, visualizar la información correspondiente al ciclo productivo y acceder a las opciones de certificación.
+
+La interfaz de verificación pública representa el recorrido realizado por el comprador al consultar un certificado mediante un código QR. El resultado permite identificar los estados Verificado, No válido, Revocado y En proceso.
+
+Las interfaces consideran la adaptación de los elementos visuales para su consulta desde dispositivos móviles y de escritorio.
+
+**Recorridos representados:**
+
+- User Flow 11: Crear lote y registrar hitos.
+- User Flow 12: Emitir certificado con QR.
+- User Flow 13: Verificar lote mediante QR.
+- User Flow 14: Activar complemento TRACE.
+- User Flow 22: Revocar certificado.
+
+**Prototipo de interfaces:**
+
+[Visualizar diseño de interfaces de YakuTrace](./design/package-e/index.html)
+
+#### Material audiovisual de YakuControl
+
+Como complemento a los prototipos de interfaz, se incorpora un recurso audiovisual relacionado con YakuControl. Este material permite presentar el concepto general de la solución, su aplicación al monitoreo de piscigranjas y las funcionalidades asociadas a la supervisión de las condiciones del agua.
+
+**Video de presentación de YakuControl:**
+
+[Visualizar video del producto YakuControl](https://drive.google.com/file/d/185wII1-DWI8-6AiyMYQJB6Q93Gg5fSAg/view?usp=sharing)
 
 <div style="page-break-after: always;"></div>
+
 
 # Capítulo VII: Product Implementation, Validation & Deployment
 
