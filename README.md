@@ -3687,315 +3687,307 @@ Los siguientes mock-ups representan las interfaces de YakuTrace orientadas al se
 <div style="page-break-after: always;"></div>
 
 
+
 ### 6.4.4. Applications User Flow Diagrams
 
-Esta sección presenta los diagramas de flujo de usuario (*User Flow Diagrams*) de YakuControl y YakuTrace, los cuales representan las interacciones de los usuarios con las interfaces de las aplicaciones móvil y web. Estos diagramas permiten visualizar las secuencias de navegación, las acciones realizadas y las decisiones que intervienen en el cumplimiento de los objetivos de cada usuario.
+Esta sección presenta los diagramas de flujo de usuario (*User Flow Diagrams*) de YakuControl y YakuTrace. Cada diagrama representa las pantallas recorridas, las acciones del usuario, las decisiones del sistema y los resultados de la interacción. Se distinguen el recorrido principal (*Happy Path*) y las rutas alternativas (*Unhappy Paths*).
 
-Los recorridos se estructuran a partir de los *User Goals* y las interfaces definidas en los mock-ups de la sección 6.4.3. Se distinguen los recorridos principales (*Happy Paths*), que describen la secuencia esperada para completar una tarea, y los recorridos alternativos (*Unhappy Paths*), asociados con errores, validaciones o condiciones particulares de interacción.
+Los diagramas se relacionan con las pantallas definidas en la sección 6.4.3 y con los objetivos de interacción documentados en el proyecto.
 
-| Elemento | Descripción |
-| :--- | :--- |
-| Persona | Identifica al usuario que interactúa con la aplicación. |
-| User Goal | Establece el objetivo que el usuario busca cumplir. |
-| Punto de inicio | Representa la pantalla desde la cual comienza el recorrido. |
-| Acciones | Identifican las operaciones que realiza el usuario durante la navegación. |
-| Decisiones | Representan las condiciones que determinan la continuación del recorrido. |
-| Happy Path | Describe la secuencia principal que permite alcanzar el objetivo. |
-| Unhappy Path | Representa las situaciones alternativas o de error y la respuesta correspondiente. |
-| Punto final | Representa el resultado obtenido al concluir la interacción. |
+#### User Flow Diagrams para Administradores de Piscigranja (Web App)
 
-#### User Flow Diagrams para el Segmento 1: Administradores de Piscigranja (Web App)
-
-Los siguientes diagramas representan los recorridos del administrador en la aplicación web de YakuControl. Comprenden el acceso a la configuración del perfil, la consulta de operadores, notificaciones y equipos, así como los procesos de registro y autenticación.
-
-| User Flow 1. Persona: Administrador. User Goal: Como administrador, deseo acceder a la configuración de mi perfil para consultar mis datos personales y las opciones de seguridad de mi cuenta. |
+| User Flow 1. Persona: Administrador. User Goal: Como administrador, deseo consultar la configuración de mi perfil para acceder a mis datos personales y opciones de seguridad. |
 |----------------------------------|
-| <img src="assets/images/cap6/yakucontrol_userflow1.png" alt="User Flow 1: Configuración del perfil del administrador" /> |
+| <img src="assets/images/cap6/yakucontrol_userflow1.png" alt="User Flow 1: Configuración del perfil administrativo" /> |
 
-**Explicación del flujo 1.** El recorrido comienza en el panel principal de la aplicación web. El administrador selecciona la opción Configuración desde el menú de navegación y accede a la pantalla que presenta la información de su perfil y las opciones relacionadas con la cuenta.
+**Explicación del flujo 1.** El administrador accede a las opciones de configuración desde el panel principal y consulta su información personal y las preferencias disponibles para la administración de su cuenta.
 
-**Happy Path:** Inicio → Dashboard → Configuración → Visualización del perfil → Final.
+**Happy Path:** Inicio → Dashboard → Configuración → Perfil.
 
-**Resultado:** El administrador consulta la información personal y las opciones de configuración disponibles.
+**Recorrido alternativo:** El administrador puede regresar al Dashboard mediante el menú de navegación.
 
-| User Flow 2. Persona: Administrador. User Goal: Como administrador, deseo visualizar la lista de operadores registrados para consultar su información y estado dentro de la plataforma. |
+**Resultado:** Visualización de la información del perfil administrativo.
+
+| User Flow 2. Persona: Administrador. User Goal: Como administrador, deseo consultar el listado de operadores registrados para conocer su información y estado dentro de la piscigranja. |
 |----------------------------------|
 | <img src="assets/images/cap6/yakucontrol_userflow2.png" alt="User Flow 2: Visualización de operadores" /> |
 
-**Explicación del flujo 2.** El administrador accede al Dashboard y selecciona la sección Operadores. La aplicación presenta la lista de usuarios asociados a la piscigranja, junto con su información y estado, facilitando la consulta de los registros disponibles.
+**Explicación del flujo 2.** El administrador ingresa a la sección Operadores desde el panel principal. La interfaz presenta los registros correspondientes al personal vinculado con la piscigranja, permitiendo consultar sus datos y estados.
 
-**Happy Path:** Inicio → Dashboard → Operadores → Visualización de la lista de operadores → Final.
+**Happy Path:** Inicio → Dashboard → Operadores → Lista de operadores.
 
-**Resultado:** El administrador accede a los registros de los operadores vinculados con la piscigranja.
+**Resultado:** Visualización de los operadores registrados y su información.
 
-| User Flow 3. Persona: Administrador. User Goal: Como administrador, deseo consultar las notificaciones del sistema para conocer los eventos y alertas relacionados con la operación de la piscigranja. |
+| User Flow 3. Persona: Administrador. User Goal: Como administrador, deseo consultar las notificaciones del sistema para conocer los eventos y alertas relacionados con la piscigranja. |
 |----------------------------------|
-| <img src="assets/images/cap6/yakucontrol_userflow3.png" alt="User Flow 3: Visualización de notificaciones del administrador" /> |
+| <img src="assets/images/cap6/yakucontrol_userflow3.png" alt="User Flow 3: Visualización de notificaciones" /> |
 
-**Explicación del flujo 3.** El recorrido inicia en el Dashboard del administrador. Al seleccionar la sección Notificaciones, el sistema presenta los mensajes y eventos registrados, incluyendo la información que permite reconocer su tipo y estado.
+**Explicación del flujo 3.** El administrador accede a la sección Notificaciones desde el Dashboard. La aplicación presenta los avisos y eventos registrados, organizados mediante información que permite reconocer sus características y estados.
 
-**Happy Path:** Inicio → Dashboard → Notificaciones → Visualización de notificaciones → Final.
+**Happy Path:** Inicio → Dashboard → Notificaciones → Lista de notificaciones.
 
-**Resultado:** El administrador consulta los avisos y eventos operativos registrados en la plataforma.
+**Resultado:** Consulta de las notificaciones y eventos disponibles.
 
-| User Flow 4. Persona: Administrador. User Goal: Como administrador, deseo visualizar los equipos registrados para consultar su información y supervisar su estado operativo. |
+| User Flow 4. Persona: Administrador. User Goal: Como administrador, deseo consultar los equipos registrados para supervisar sus características y estados operativos. |
 |----------------------------------|
-| <img src="assets/images/cap6/yakucontrol_userflow4.png" alt="User Flow 4: Consulta de equipos del administrador" /> |
+| <img src="assets/images/cap6/yakucontrol_userflow4.png" alt="User Flow 4: Visualización de equipos" /> |
 
-**Explicación del flujo 4.** El administrador accede al panel principal y selecciona la sección Equipos desde el menú lateral. La aplicación presenta los dispositivos vinculados con la piscigranja, su información y los elementos disponibles para su administración.
+**Explicación del flujo 4.** El administrador selecciona la sección Equipos desde el panel principal. La aplicación presenta los dispositivos registrados en la piscigranja y la información relacionada con sus características y estados.
 
-**Happy Path:** Inicio → Dashboard → Equipos → Visualización de equipos registrados → Final.
+**Happy Path:** Inicio → Dashboard → Equipos → Lista de equipos.
 
-**Resultado:** El administrador consulta la información y el estado operativo de los equipos.
+**Resultado:** Consulta de los equipos registrados y su información operativa.
 
-| User Flow 5. Persona: Administrador. User Goal: Como administrador, deseo completar el registro y la validación de información para incorporar los datos requeridos en la plataforma. |
+| User Flow 5. Persona: Administrador. User Goal: Como administrador, deseo completar el registro y la validación de información requerida por la plataforma. |
 |----------------------------------|
 | <img src="assets/images/cap6/yakucontrol_userflow5.png" alt="User Flow 5: Registro y validación administrativa" /> |
 
-**Explicación del flujo 5.** El diagrama representa un proceso de registro compuesto por etapas de validación. El administrador ingresa los datos iniciales, incorpora los documentos solicitados y revisa la información antes de confirmar el procedimiento. Las decisiones representadas permiten diferenciar las validaciones exitosas de las situaciones que requieren corregir los datos.
+**Explicación del flujo 5.** El recorrido representa un proceso de registro compuesto por diferentes etapas de validación. El administrador ingresa la información solicitada, incorpora los documentos correspondientes y revisa los datos antes de confirmar el procedimiento.
 
-**Happy Path:** Inicio → Registro de información → Validación de datos → Carga de documentos → Validación de archivos → Confirmación de información → Revisión del registro → Validación final → Resumen del registro.
+**Happy Path:** Inicio → Registrar datos → Validar información → Cargar documentos → Revisar datos → Confirmar registro.
 
 **Unhappy Paths:**
 
-- Si los datos iniciales son incorrectos o están incompletos, se presenta un mensaje de error y se retorna al formulario.
-- Si los documentos no cumplen las condiciones requeridas, se solicita corregir la carga.
-- Si durante la revisión se identifican observaciones, el usuario retorna a la etapa correspondiente para corregir la información.
+- Si los datos ingresados son incorrectos o incompletos, el sistema presenta un mensaje de error y solicita su corrección.
+- Si los documentos no cumplen las condiciones requeridas, se retorna a la etapa de carga.
+- Si la información presenta observaciones durante la revisión, el usuario debe corregir los datos antes de continuar.
 
-**Resultado:** El administrador completa el proceso de registro y validación.
+**Resultado:** Finalización del proceso de registro y validación administrativa.
 
-| User Flow 6. Persona: Administrador. User Goal: Como administrador, deseo autenticarme mediante un código de verificación para acceder de forma segura a la plataforma web. |
+| User Flow 6. Persona: Administrador. User Goal: Como administrador, deseo autenticarme y verificar mi acceso para ingresar de forma segura a la aplicación web. |
 |----------------------------------|
 | <img src="assets/images/cap6/yakucontrol_userflow6.png" alt="User Flow 6: Autenticación y verificación de acceso" /> |
 
-**Explicación del flujo 6.** El recorrido comienza en la pantalla de inicio de sesión. El administrador ingresa sus credenciales y continúa con la verificación de acceso. El sistema valida la información proporcionada para determinar si corresponde permitir el ingreso al panel administrativo.
+**Explicación del flujo 6.** El administrador ingresa sus credenciales en la pantalla de inicio de sesión y continúa con el proceso de verificación. El sistema comprueba la información proporcionada y determina si corresponde autorizar el ingreso al panel administrativo.
 
-**Happy Path:** Inicio → Ingreso de credenciales → Solicitud de código de verificación → Ingreso del código → Validación → Autorización de acceso → Dashboard → Final.
+**Happy Path:** Inicio → Ingreso de credenciales → Código de verificación → Validación → Dashboard.
 
-**Unhappy Path:** Si la verificación es inválida, se presenta un mensaje de error y el administrador puede regresar a la pantalla de autenticación para realizar un nuevo intento.
+**Unhappy Path:** Si las credenciales o el código de verificación son incorrectos, el sistema muestra un mensaje de error y permite realizar un nuevo intento.
 
-**Resultado:** El administrador accede al panel principal después de completar la autenticación.
+**Resultado:** Acceso al Dashboard de la aplicación web.
 
-#### User Flow Diagrams para el Segmento 2: Piscicultores (App móvil)
+#### User Flow Diagrams para Piscicultores (App móvil)
 
-Los siguientes diagramas representan los recorridos del piscicultor en YakuControl, incluyendo la consulta de información personal, la visualización de alertas, el registro e inicio de sesión y el monitoreo de estanques mediante la consulta de lecturas e historiales.
-
-| User Flow 7. Persona: Piscicultor. User Goal: Como piscicultor, deseo consultar mi perfil para acceder a mi información personal y regresar a la pantalla principal cuando lo necesite. |
+| User Flow 7. Persona: Piscicultor. User Goal: Como piscicultor, deseo visualizar mi perfil para consultar mis datos personales y acceder a las opciones de mi cuenta. |
 |----------------------------------|
-| <img src="assets/images/cap6/yakucontrol_userflow7.png" alt="User Flow 7: Visualización del perfil del piscicultor" /> |
+| <img src="assets/images/cap6/yakucontrol_userflow7.png" alt="User Flow 7: Consulta del perfil móvil" /> |
 
-**Explicación del flujo 7.** El recorrido inicia en la pantalla principal de la aplicación móvil. El piscicultor selecciona Perfil desde la barra de navegación inferior y accede a la pantalla que presenta su información personal y las opciones relacionadas con su cuenta.
+**Explicación del flujo 7.** El piscicultor accede a la sección Perfil mediante la navegación inferior de la aplicación móvil. En esta pantalla se presenta su información personal y las opciones disponibles para la administración de su cuenta.
 
-**Happy Path:** Inicio → Pantalla principal → Perfil → Visualización de información personal → Final.
+**Happy Path:** Inicio → Menú inferior → Perfil → Datos personales.
 
-**Recorrido alternativo:** Desde la pantalla Perfil, el usuario puede seleccionar Inicio para regresar a la pantalla principal.
+**Recorrido alternativo:** Desde la sección Perfil, el usuario puede regresar a la pantalla Inicio.
 
-**Resultado:** El piscicultor consulta su información personal y dispone de una ruta para continuar navegando por la aplicación.
+**Resultado:** Visualización de la información del perfil del piscicultor.
 
-| User Flow 8. Persona: Piscicultor. User Goal: Como piscicultor, deseo visualizar las alertas registradas para identificar las condiciones de los estanques que requieren atención. |
+| User Flow 8. Persona: Piscicultor. User Goal: Como piscicultor, deseo consultar las alertas relacionadas con los estanques para identificar las condiciones que requieren atención. |
 |----------------------------------|
-| <img src="assets/images/cap6/yakucontrol_userflow8.png" alt="User Flow 8: Visualización de alertas del piscicultor" /> |
+| <img src="assets/images/cap6/yakucontrol_userflow8.png" alt="User Flow 8: Visualización de alertas" /> |
 
-**Explicación del flujo 8.** El usuario accede a la sección Alertas desde la pantalla principal. La aplicación presenta los avisos relacionados con las condiciones de los estanques y los eventos operativos, organizados mediante información e indicadores visuales que permiten reconocer su importancia.
+**Explicación del flujo 8.** El piscicultor selecciona la sección Alertas desde la navegación principal de YakuControl. La aplicación presenta los avisos y estados relacionados con el monitoreo de los estanques.
 
-**Happy Path:** Inicio → Pantalla principal → Alertas → Visualización de alertas → Final.
+**Happy Path:** Inicio → Menú inferior → Alertas → Lista de alertas.
 
-**Recorrido alternativo:** El usuario selecciona Inicio para regresar a la pantalla principal.
+**Recorrido alternativo:** Desde la sección Alertas, el usuario puede regresar a Inicio.
 
-**Resultado:** El piscicultor consulta las alertas disponibles y reconoce los eventos que requieren seguimiento.
+**Resultado:** Visualización de las alertas registradas en la aplicación.
 
-| User Flow 9. Persona: Piscicultor. User Goal: Como piscicultor, deseo registrarme e iniciar sesión en YakuControl para acceder a la información de los estanques de mi piscigranja. |
+| User Flow 9. Persona: Piscicultor. User Goal: Como piscicultor, deseo registrarme e iniciar sesión en YakuControl para acceder a la información de mis estanques. |
 |----------------------------------|
-| <img src="assets/images/cap6/yakucontrol_userflow9.png" alt="User Flow 9: Registro e inicio de sesión del piscicultor" /> |
+| <img src="assets/images/cap6/yakucontrol_userflow9.png" alt="User Flow 9: Registro e inicio de sesión móvil" /> |
 
-**Explicación del flujo 9.** El diagrama representa el acceso inicial del piscicultor a la aplicación móvil. El usuario completa el formulario de registro y continúa hacia la pantalla de inicio de sesión. Posteriormente, ingresa sus credenciales y el sistema valida la información para permitir el acceso a la pantalla principal.
+**Explicación del flujo 9.** El diagrama presenta las pantallas de registro e inicio de sesión de YakuControl. El piscicultor completa sus datos, continúa con la autenticación y accede a la pantalla principal después de superar las validaciones correspondientes.
 
-**Happy Path:** Inicio → Registro → Validación de información → Inicio de sesión → Validación de credenciales → Pantalla principal → Final.
+**Happy Path:** Inicio → Registro → Validación de información → Inicio de sesión → Pantalla principal.
 
 **Unhappy Paths:**
 
-- Si los datos del registro son inválidos o están incompletos, se presenta un mensaje de error y se retorna al formulario.
-- Si las credenciales de acceso son incorrectas, el sistema informa el error y permite ingresar nuevamente la información.
+- Si el formulario de registro contiene información incorrecta o incompleta, se solicita corregir los datos.
+- Si las credenciales de acceso son incorrectas, el sistema informa el error y permite un nuevo intento.
 
-**Resultado:** El piscicultor completa el proceso de acceso a la aplicación móvil.
+**Resultado:** Acceso del piscicultor a la aplicación móvil.
 
-| User Flow 10. Persona: Piscicultor. User Goal: Como piscicultor, deseo consultar la información de un estanque y acceder a su historial de lecturas para supervisar las condiciones del agua. |
+| User Flow 10. Persona: Piscicultor. User Goal: Como piscicultor, deseo consultar la información de un estanque y su historial de lecturas para supervisar las condiciones del agua. |
 |----------------------------------|
-| <img src="assets/images/cap6/yakucontrol_userflow10.png" alt="User Flow 10: Consulta de estanques e historial de lecturas" /> |
+| <img src="assets/images/cap6/yakucontrol_userflow10.png" alt="User Flow 10: Consulta de estanques e historial" /> |
 
-**Explicación del flujo 10.** El recorrido comienza en la pantalla principal, donde se presentan los estanques asociados a la piscigranja. El usuario selecciona uno de ellos y accede a su detalle para consultar los parámetros de monitoreo. Desde esa pantalla puede visualizar el historial de lecturas registrado para el estanque.
+**Explicación del flujo 10.** El piscicultor selecciona un estanque desde la pantalla principal y accede a su información detallada. Posteriormente, consulta el historial para revisar los registros de los parámetros monitoreados.
 
-**Happy Path:** Inicio → Pantalla principal → Selección de estanque → Detalle de lecturas y sensores → Historial completo → Visualización de registros históricos → Final.
+**Happy Path:** Inicio → Selección de estanque → Detalle del estanque → Historial de lecturas.
 
 **Recorridos alternativos:**
 
-- Desde el detalle del estanque, el usuario puede regresar a la pantalla principal.
-- Desde el historial de lecturas, puede retornar a la pantalla de detalle del estanque.
+- Desde el detalle del estanque, el usuario puede regresar a Inicio.
+- Desde el historial, puede retornar a la pantalla de detalle.
 
-**Resultado:** El piscicultor consulta la información actual del estanque y sus mediciones históricas.
+**Resultado:** Consulta de las lecturas actuales e históricas del estanque.
 
 #### User Flow Diagrams de YakuTrace: Trazabilidad, Certificación y Funciones Complementarias
 
-Los siguientes diagramas representan los recorridos relacionados con el seguimiento de lotes de producción, el registro de información operativa, la generación de reportes, la administración de suscripciones y la verificación pública de certificados. Cada recorrido se estructura según las acciones necesarias para alcanzar el objetivo del usuario y las condiciones que determinan el resultado de la interacción.
+Los siguientes diagramas representan los recorridos relacionados con la gestión de lotes, certificación, verificación pública, monitoreo y administración de funcionalidades complementarias de YakuControl y YakuTrace.
 
-| User Flow 11. Persona: Administrador. User Goal: Como administrador, deseo crear un lote y registrar sus hitos para mantener el historial de su ciclo de producción. |
+| User Flow 11. Persona: Administrador. User Goal: Como administrador, deseo crear un lote y registrar sus hitos para mantener el historial del ciclo productivo. |
 |----------------------------------|
-| <img src="assets/images/cap6/userflow11.png" alt="User Flow 11: Crear un lote y registrar hitos" /> |
+| <img src="assets/images/cap6/yakutrace_userflow11.png" alt="User Flow 11: Crear lote y registrar hitos" /> |
 
-**Explicación del flujo 11.** El administrador accede a la sección Lotes, completa la información correspondiente al nuevo lote y confirma su registro. Posteriormente, ingresa al detalle del lote para registrar un hito asociado con el ciclo productivo.
+**Explicación del flujo 11.** El administrador accede al listado de lotes, ingresa la información requerida para registrar uno nuevo y confirma la operación. Posteriormente, consulta el detalle del lote e incorpora un hito al historial del ciclo de producción.
 
-**Happy Path:** Lotes → Registrar lote → Confirmar registro → Detalle del lote → Registrar hito → Historial actualizado.
+**Happy Path:** Lotes → Registrar lote → Confirmar registro → Detalle del lote → Registrar hito.
 
-**Unhappy Path:** Si el estanque ya tiene un lote activo, se informa el conflicto y se permite regresar al formulario.
+**Unhappy Path:** Si el estanque seleccionado ya cuenta con un lote activo, el sistema informa el conflicto y retorna al formulario.
 
-**Resultado:** El lote queda registrado con información que permite continuar el seguimiento de su ciclo de producción.
+**Resultado:** Registro de un lote con información de seguimiento de su ciclo productivo.
 
-| User Flow 12. Persona: Administrador. User Goal: Como administrador, deseo emitir un certificado de trazabilidad con código QR para un lote cosechado. |
+| User Flow 12. Persona: Administrador. User Goal: Como administrador, deseo emitir un certificado de trazabilidad mediante un código QR para un lote cosechado. |
 |----------------------------------|
-| <img src="assets/images/cap6/userflow12.png" alt="User Flow 12: Emitir certificado de trazabilidad con QR" /> |
+| <img src="assets/images/cap6/yakutrace_userflow12.png" alt="User Flow 12: Emitir certificado con QR" /> |
 
-**Explicación del flujo 12.** El administrador ingresa al detalle del lote, registra la cosecha y revisa el cumplimiento de los requisitos para emitir un certificado. Luego de confirmar la información, accede al resultado de la emisión y a los datos asociados al código QR.
+**Explicación del flujo 12.** El administrador ingresa al detalle del lote y continúa con el registro de cosecha. El sistema presenta los requisitos necesarios para la emisión del certificado y permite revisar la información antes de confirmar la operación.
 
 **Happy Path:** Detalle del lote → Registrar cosecha → Revisar requisitos → Confirmar emisión → Certificado con QR.
 
 **Unhappy Paths:**
 
-- Si los requisitos de emisión están incompletos, el sistema informa la condición y bloquea la operación.
-- Si no existe conectividad suficiente para completar el registro, se presenta el estado de procesamiento correspondiente.
+- Si los requisitos están incompletos, se informa la condición y se impide continuar con la emisión.
+- Si no existe conectividad suficiente, la operación presenta el estado correspondiente al procesamiento del registro.
 
-**Resultado:** El certificado queda asociado al lote y a su información de trazabilidad.
+**Resultado:** Emisión de un certificado asociado con la información de trazabilidad del lote.
 
 | User Flow 13. Persona: Comprador. User Goal: Como comprador, deseo verificar un lote mediante su código QR para consultar la información de trazabilidad. |
 |----------------------------------|
-| <img src="assets/images/cap6/userflow13.png" alt="User Flow 13: Verificar un lote mediante QR" /> |
+| <img src="assets/images/cap6/yakutrace_userflow13.png" alt="User Flow 13: Verificar lote por QR" /> |
 
-**Explicación del flujo 13.** El comprador escanea el código QR asociado con el certificado y accede a la interfaz de verificación pública. El sistema consulta el registro correspondiente y presenta el resultado junto con la información disponible del lote.
+**Explicación del flujo 13.** El comprador escanea el código QR de un certificado y accede a la interfaz de verificación pública. El sistema consulta el registro correspondiente y presenta el resultado junto con la información disponible del lote.
 
-**Happy Path:** Escanear código → Abrir verificación → Consultar registro → Estado Verificado → Ver historial.
+**Happy Path:** Escanear QR → Verificación pública → Consultar registro → Estado Verificado → Historial.
 
-**Unhappy Paths:** Cuando el certificado no supera la validación, está revocado o el código no se encuentra registrado, el sistema presenta el estado correspondiente.
+**Unhappy Paths:**
 
-**Resultado:** El comprador consulta el resultado de la verificación y la información de trazabilidad del lote.
+- Si el código no coincide con el registro, se muestra el estado No válido.
+- Si el certificado fue revocado, se comunica su estado.
+- Si el código no existe, se informa que el registro no fue encontrado.
 
-| User Flow 14. Persona: Administrador. User Goal: Como administrador, deseo activar el complemento TRACE para acceder a las funcionalidades de certificación. |
+**Resultado:** Consulta del estado de verificación y la información de trazabilidad del lote.
+
+| User Flow 14. Persona: Administrador. User Goal: Como administrador, deseo activar el complemento TRACE para acceder a las funcionalidades de trazabilidad y certificación. |
 |----------------------------------|
-| <img src="assets/images/cap6/userflow14.png" alt="User Flow 14: Activar complemento TRACE" /> |
+| <img src="assets/images/cap6/yakutrace_userflow14.png" alt="User Flow 14: Activar complemento TRACE" /> |
 
-**Explicación del flujo 14.** El administrador accede a la sección de suscripciones, selecciona el complemento TRACE y revisa las características del servicio. Posteriormente, continúa con la confirmación correspondiente para activar sus funcionalidades.
+**Explicación del flujo 14.** El administrador accede a la sección Suscripción y revisa la información correspondiente al complemento TRACE. Desde esta interfaz puede continuar con las acciones relacionadas con su contratación y activación.
 
-**Happy Path:** Suscripción → Seleccionar TRACE → Revisar plan → Confirmar → TRACE activo.
+**Happy Path:** Suscripción → Plan TRACE → Revisar contratación → Confirmar → TRACE activo.
 
-**Unhappy Path:** Si la suscripción base está inactiva, el sistema informa que debe regularizarse antes de continuar.
+**Unhappy Path:** Si la suscripción base está inactiva, el sistema informa que debe activarse antes de continuar.
 
-**Resultado:** El complemento TRACE queda asociado a la suscripción de la piscigranja.
+**Resultado:** Activación del complemento TRACE asociado a la piscigranja.
 
-| User Flow 15. Persona: Piscicultor. User Goal: Como piscicultor, deseo registrar una novedad sobre un estanque para informar al administrador. |
+| User Flow 15. Persona: Piscicultor. User Goal: Como piscicultor, deseo registrar una novedad sobre un estanque para informar al administrador de los eventos observados. |
 |----------------------------------|
-| <img src="assets/images/cap6/userflow15.png" alt="User Flow 15: Registrar novedad del estanque" /> |
+| <img src="assets/images/cap6/yakutrace_userflow15.png" alt="User Flow 15: Registrar novedad del estanque" /> |
 
-**Explicación del flujo 15.** El usuario selecciona un estanque y accede al formulario de registro de novedades. Ingresa la descripción del evento observado y confirma la operación para incorporar la información al historial correspondiente.
+**Explicación del flujo 15.** El piscicultor selecciona el estanque correspondiente y accede al formulario de novedades. Ingresa la descripción del evento observado y confirma el registro de la información.
 
-**Happy Path:** Seleccionar estanque → Nueva novedad → Describir evento → Guardar novedad → Registro creado.
+**Happy Path:** Estanque → Nueva novedad → Describir evento → Guardar → Novedad registrada.
 
-**Unhappy Path:** Si la descripción está vacía, se solicita completar la información antes de guardar.
+**Unhappy Path:** Si el formulario no contiene una descripción, se solicita completar la información antes de guardar.
 
-**Resultado:** La novedad se incorpora al registro del estanque.
+**Resultado:** Incorporación de la novedad al registro del estanque.
 
-| User Flow 16. Persona: Administrador. User Goal: Como administrador, deseo generar un reporte mensual de mortalidad para consultar las bajas registradas durante un periodo. |
+| User Flow 16. Persona: Administrador. User Goal: Como administrador, deseo generar un reporte mensual de mortalidad para consultar las bajas registradas en un periodo. |
 |----------------------------------|
-| <img src="assets/images/cap6/userflow16.png" alt="User Flow 16: Generar reporte mensual de mortalidad" /> |
+| <img src="assets/images/cap6/yakutrace_userflow16.png" alt="User Flow 16: Generar reporte mensual de mortalidad" /> |
 
-**Explicación del flujo 16.** El administrador ingresa a Reportes, selecciona la información de mortalidad y define el mes que desea consultar. El sistema procesa los registros correspondientes y presenta el reporte generado.
+**Explicación del flujo 16.** El administrador ingresa a la sección Reportes y selecciona la información de mortalidad. Posteriormente, establece el mes de consulta y solicita la generación del documento correspondiente.
 
-**Happy Path:** Reportes → Mortalidad → Seleccionar mes → Generar reporte → Ver documento.
+**Happy Path:** Reportes → Mortalidad → Seleccionar mes → Generar reporte → Documento.
 
-**Unhappy Path:** Si no existen registros para el periodo seleccionado, el documento informa que no se registraron bajas.
+**Unhappy Path:** Si el periodo seleccionado no contiene registros de mortalidad, el reporte indica que no existen bajas registradas.
 
-**Resultado:** El administrador obtiene un reporte de mortalidad del periodo consultado.
+**Resultado:** Visualización del reporte mensual de mortalidad.
 
 | User Flow 17. Persona: Administrador. User Goal: Como administrador, deseo consultar la evolución anual de los parámetros del agua para analizar su comportamiento durante el ciclo productivo. |
 |----------------------------------|
-| <img src="assets/images/cap6/userflow17.png" alt="User Flow 17: Consultar tendencias anuales" /> |
+| <img src="assets/images/cap6/yakutrace_userflow17.png" alt="User Flow 17: Consultar tendencias anuales" /> |
 
-**Explicación del flujo 17.** El administrador accede a la sección Tendencias, selecciona el periodo anual y el parámetro que desea analizar. La plataforma presenta la evolución de los registros mediante una representación gráfica.
+**Explicación del flujo 17.** El administrador accede a la sección Tendencias y selecciona el periodo anual y el parámetro que desea analizar. La aplicación presenta la evolución de las mediciones mediante una representación gráfica.
 
-**Happy Path:** Tendencias → Seleccionar periodo → Elegir parámetro → Consultar datos → Ver evolución.
+**Happy Path:** Tendencias → Elegir año → Seleccionar parámetro → Consultar datos → Gráfico de evolución.
 
-**Recorrido alternativo:** Cuando el volumen de información es elevado, los valores se agrupan por periodos para facilitar su visualización.
+**Recorrido alternativo:** Cuando existe una cantidad elevada de registros, la información se presenta mediante valores agrupados por periodos.
 
-**Resultado:** El administrador consulta la evolución temporal de los parámetros seleccionados.
+**Resultado:** Consulta de la evolución temporal de los parámetros seleccionados.
 
-| User Flow 18. Persona: Administrador. User Goal: Como administrador, deseo configurar los límites de alerta de un estanque para personalizar sus condiciones de monitoreo. |
+| User Flow 18. Persona: Administrador. User Goal: Como administrador, deseo configurar los límites mínimos y máximos de un estanque para personalizar las condiciones de alerta. |
 |----------------------------------|
-| <img src="assets/images/cap6/userflow18.png" alt="User Flow 18: Configurar umbrales del estanque" /> |
+| <img src="assets/images/cap6/yakutrace_userflow18.png" alt="User Flow 18: Configurar umbrales" /> |
 
-**Explicación del flujo 18.** El administrador selecciona un estanque y accede a la configuración de umbrales. Modifica los valores mínimos y máximos correspondientes, valida su coherencia y confirma los cambios.
+**Explicación del flujo 18.** El administrador selecciona el estanque correspondiente y accede a su configuración de umbrales. Modifica los valores mínimos y máximos, verifica su coherencia y confirma los cambios.
 
-**Happy Path:** Elegir estanque → Abrir umbrales → Editar límites → Validar valores → Guardar cambios.
+**Happy Path:** Estanque → Umbrales → Editar límites → Validar información → Guardar.
 
-**Unhappy Path:** Si el valor mínimo supera al máximo, el sistema rechaza la modificación y solicita corregir los datos.
+**Unhappy Path:** Si el valor mínimo supera al máximo, el sistema rechaza la configuración e informa la inconsistencia.
 
-**Resultado:** Los límites configurados quedan asociados al estanque seleccionado.
+**Resultado:** Aplicación de los límites de monitoreo establecidos para el estanque.
 
-| User Flow 19. Persona: Administrador. User Goal: Como administrador, deseo pagar mi suscripción para mantener activo el servicio. |
+| User Flow 19. Persona: Administrador. User Goal: Como administrador, deseo realizar el pago de mi suscripción para mantener activo el servicio de la plataforma. |
 |----------------------------------|
-| <img src="assets/images/cap6/userflow19.png" alt="User Flow 19: Pagar suscripción base" /> |
+| <img src="assets/images/cap6/yakutrace_userflow19.png" alt="User Flow 19: Pagar suscripción" /> |
 
-**Explicación del flujo 19.** El administrador ingresa a la sección de suscripciones, revisa las características del plan y continúa con el proceso de pago. La confirmación permite determinar el estado del servicio contratado.
+**Explicación del flujo 19.** El administrador accede a la sección Suscripción, selecciona el plan correspondiente y continúa con el proceso de pago. El sistema presenta el resultado de la operación y actualiza el estado de la suscripción.
 
-**Happy Path:** Suscripción → Elegir plan → Pasarela de pago → Confirmar pago → Plan activo.
+**Happy Path:** Suscripción → Seleccionar plan → Pago → Confirmación → Plan activo.
 
-**Unhappy Path:** Si el pago es rechazado, la suscripción permanece pendiente y se informa el resultado al administrador.
+**Unhappy Path:** Si el pago es rechazado, se informa el resultado y la suscripción permanece pendiente.
 
-**Resultado:** La suscripción queda activa cuando la operación de pago se completa correctamente.
+**Resultado:** Activación de la suscripción cuando se confirma el pago.
 
-| User Flow 20. Persona: Administrador. User Goal: Como administrador, deseo consultar el tiempo de atención de una alerta para evaluar la respuesta del equipo operativo. |
+| User Flow 20. Persona: Administrador. User Goal: Como administrador, deseo consultar los tiempos de atención de una alerta para evaluar la respuesta del personal operativo. |
 |----------------------------------|
-| <img src="assets/images/cap6/userflow20.png" alt="User Flow 20: Auditar atención de alertas" /> |
+| <img src="assets/images/cap6/yakutrace_userflow20.png" alt="User Flow 20: Auditar atención de alertas" /> |
 
-**Explicación del flujo 20.** El administrador accede a Notificaciones, selecciona una alerta atendida y consulta su detalle. La interfaz presenta la información relacionada con el momento de generación, la atención y el responsable de la respuesta.
+**Explicación del flujo 20.** El administrador accede al listado de notificaciones y selecciona una alerta atendida. Posteriormente, consulta el detalle que contiene la información de generación, atención y tiempo de respuesta.
 
-**Happy Path:** Notificaciones → Seleccionar alerta → Abrir detalle → Consultar tiempos → Auditoría.
+**Happy Path:** Notificaciones → Seleccionar alerta → Detalle → Tiempos de atención → Auditoría.
 
-**Recorrido alternativo:** Cuando la alerta fue atendida automáticamente, la información identifica que la atención fue realizada por el sistema.
+**Recorrido alternativo:** Si la atención fue automática, el sistema identifica que la operación fue realizada por el propio sistema.
 
-**Resultado:** El administrador consulta los datos correspondientes a la atención de una alerta.
+**Resultado:** Consulta de la información asociada con la atención de una alerta.
 
 | User Flow 21. Persona: Piscicultor. User Goal: Como piscicultor, deseo activar los filtros de limpieza de un estanque para reducir la turbidez del agua. |
 |----------------------------------|
-| <img src="assets/images/cap6/userflow21.png" alt="User Flow 21: Activar limpieza de estanque" /> |
+| <img src="assets/images/cap6/yakutrace_userflow21.png" alt="User Flow 21: Activar limpieza del estanque" /> |
 
-**Explicación del flujo 21.** El piscicultor selecciona un estanque y accede a las opciones de control del sistema de limpieza. Solicita la activación del equipo y consulta la respuesta operativa para confirmar el estado de la acción.
+**Explicación del flujo 21.** El piscicultor selecciona un estanque y accede a la sección de control de limpieza. Solicita la activación del equipo y consulta su respuesta para determinar el estado de la operación.
 
-**Happy Path:** Elegir estanque → Abrir limpieza → Solicitar activación → Comprobar equipo → Limpieza activa.
+**Happy Path:** Estanque → Limpieza → Activar filtro → Comprobar equipo → Confirmación.
 
-**Unhappy Path:** Si el equipo no dispone de energía, el sistema informa el fallo y no confirma la activación.
+**Unhappy Path:** Si el equipo no dispone de energía, el sistema presenta un mensaje de error e informa que la operación no pudo completarse.
 
-**Resultado:** El usuario consulta el estado de la operación de limpieza del estanque.
+**Resultado:** Confirmación del estado de activación del sistema de limpieza.
 
-| User Flow 22. Persona: Administrador. User Goal: Como administrador, deseo revocar un certificado emitido incorrectamente para evitar su utilización como evidencia válida. |
+| User Flow 22. Persona: Administrador. User Goal: Como administrador, deseo revocar un certificado emitido incorrectamente para evitar que continúe utilizándose como evidencia válida. |
 |----------------------------------|
-| <img src="assets/images/cap6/userflow22.png" alt="User Flow 22: Revocar certificado de trazabilidad" /> |
+| <img src="assets/images/cap6/yakutrace_userflow22.png" alt="User Flow 22: Revocar certificado" /> |
 
-**Explicación del flujo 22.** El administrador accede a la lista de certificados, selecciona el registro correspondiente e inicia su revocación. El sistema solicita un motivo y una confirmación antes de modificar el estado del certificado.
+**Explicación del flujo 22.** El administrador accede a la lista de certificados, selecciona el registro correspondiente e inicia el proceso de revocación. La interfaz solicita un motivo y una confirmación antes de modificar el estado del certificado.
 
-**Happy Path:** Certificados → Elegir certificado → Indicar motivo → Confirmar revocación → Estado Revocado.
+**Happy Path:** Certificados → Seleccionar certificado → Indicar motivo → Confirmar → Estado Revocado.
 
-**Unhappy Path:** Si el certificado ya se encuentra revocado, el sistema informa su condición e impide repetir la operación.
+**Unhappy Path:** Si el certificado ya se encuentra revocado, el sistema informa su estado e impide repetir la operación.
 
-**Resultado:** El certificado presenta el estado Revocado y deja de utilizarse como evidencia vigente de verificación.
+**Resultado:** Actualización del certificado al estado Revocado.
 
 | User Flow 23. Persona: Administrador. User Goal: Como administrador, deseo invitar a nuevos operarios para proporcionarles acceso a la plataforma. |
 |----------------------------------|
-| <img src="assets/images/cap6/userflow23.png" alt="User Flow 23: Invitar a un operario" /> |
+| <img src="assets/images/cap6/yakutrace_userflow23.png" alt="User Flow 23: Invitar a un operario" /> |
 
-**Explicación del flujo 23.** El administrador accede a Operadores y selecciona la opción para incorporar un nuevo usuario. Completa la información de la invitación y confirma el envío para iniciar el proceso de incorporación del operario.
+**Explicación del flujo 23.** El administrador accede a la sección Operadores y selecciona la opción de invitación. Ingresa la información necesaria para incorporar al nuevo usuario y confirma el envío.
 
-**Happy Path:** Operadores → Nueva invitación → Ingresar datos → Enviar invitación → Invitación enviada.
+**Happy Path:** Operadores → Nueva invitación → Completar datos → Enviar → Invitación enviada.
 
-**Unhappy Path:** Si el correo electrónico ya se encuentra registrado, el sistema informa la duplicidad y evita repetir la invitación.
+**Unhappy Path:** Si el correo electrónico ingresado ya existe, el sistema informa la duplicidad y solicita revisar la información.
 
-**Resultado:** La invitación queda registrada para que el operario continúe el proceso de acceso a la plataforma.
+**Resultado:** Registro del envío de la invitación al nuevo operario.
 
 <div style="page-break-after: always;"></div>
 
