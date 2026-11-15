@@ -4756,35 +4756,52 @@ Las siguientes capturas muestran la ejecución de los productos por historia de 
 
 ![Web App: Notificaciones del administrador](./assets/images/sprint1/exec-web-notifications.png)
 
+
 **App móvil**
 
+Las siguientes imágenes presentan las interfaces de referencia de YakuControl correspondientes a las historias de usuario US05, US06, US07 y US08, así como al escenario técnico TS03. Permiten ilustrar la estructura visual y los recorridos asociados con las funcionalidades de la aplicación móvil.
+
 *US05 — Inicio de sesión.*
+
+La interfaz de inicio de sesión permite al piscicultor ingresar sus credenciales para acceder a las funcionalidades de YakuControl.
 
 ![App móvil: Inicio de sesión](./assets/images/sprint1/exec-mobile-login.png)
 
 *US05 — Registro con código de granja.*
 
+La pantalla de registro presenta los campos necesarios para ingresar los datos del usuario y asociarlo con una piscigranja mediante un código de granja.
+
 ![App móvil: Registro con código de granja](./assets/images/sprint1/exec-mobile-register.png)
 
 *US06 — Estanques asignados.*
+
+La pantalla principal presenta los estanques vinculados con el usuario y permite acceder a la información de cada uno.
 
 ![App móvil: Estanques asignados](./assets/images/sprint1/exec-mobile-home.png)
 
 *US06 — Detalle del estanque con pH, temperatura, turbidez y gráficos.*
 
+La interfaz de detalle organiza los parámetros de monitoreo del estanque y presenta los elementos visuales destinados a consultar sus mediciones.
+
 ![App móvil: Detalle del estanque con pH, temperatura, turbidez y gráficos](./assets/images/sprint1/exec-mobile-pond-detail.png)
 
 *US07 — Listado de alertas.*
+
+La pantalla de alertas representa la organización de los avisos relacionados con los estanques y sus condiciones de monitoreo.
 
 ![App móvil: Listado de alertas](./assets/images/sprint1/exec-mobile-alerts.png)
 
 *TS03 — Notificación push recibida.*
 
-![App móvil: Notificación push recibida](./assets/images/sprint1/exec-mobile-push.png)
+El escenario TS03 contempla la recepción de notificaciones push en el dispositivo móvil. Su validación requiere comprobar la recepción de una notificación generada por el sistema.
+
+![Referencia de TS03: Notificación push](./assets/images/sprint1/exec-mobile-push.png)
 
 *US08 — Activación del aireador.*
 
-![App móvil: Activación del aireador](./assets/images/sprint1/exec-mobile-aerator.png)
+El escenario US08 contempla la activación del aireador desde la aplicación móvil. Su validación requiere comprobar el envío de la solicitud y la respuesta del dispositivo correspondiente.
+
+![Referencia de US08: Activación del aireador](./assets/images/sprint1/exec-mobile-aerator.png)
 
 **Edge API**
 
