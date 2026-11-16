@@ -191,7 +191,7 @@ Iniciando actividades el **28/10/2026**, el equipo distribuyó las responsabilid
 | :--- | :--- |
 | Escobar Palomino, Sebastian Matias | - Backend: validación de la firma HMAC de las lecturas, validación de la ingesta y registro de equipos <br> - Pruebas BDD con Cucumber y documentación OpenAPI/Swagger <br> - Limpieza de código residual |
 | Bendezu Navarro, Rúbens Fitzgerald | - Landing Page: formulario de ventas, sección YakuTrace y términos y condiciones <br> - Web App (Flutter Web): vistas de estanques y equipos, y despliegue en Firebase Hosting <br> - Despliegue de la Landing Page en Netlify <br> - Mock-ups 8 a 18 y prototipo de la Web App |
-| Choquehuanca Nuñez, Luciana Carolina | - App móvil (Flutter): pruebas, revisión de pantallas (lectura, alertas, token FCM y aireación) y distribución del APK en Firebase App Distribution <br> - Mock-ups 1 a 7, User Flows 1 a 10 y prototipo de la app móvil <br> - Video About-the-Product |
+| Choquehuanca Nuñez, Luciana Carolina | - App móvil (Flutter): pruebas, revisión de pantallas (lectura, alertas, token FCM y aireación) y distribución del APK en Firebase App Distribution <br> - Mock-ups 1 a 7, User Flows 1 a 10 y prototipo de la app móvil <br> |
 | Cruz Ibarra, Victor Andres | - Backend: claim `farmId` y aislamiento por granja en el filtro JWT, steps BDD de seguridad <br> - Despliegue del backend y la base de datos en Azure, credenciales de Firebase <br> - Repositorios y GitFlow del Sprint, Sprint Planning y Sprint Backlog (Trello) <br> - Anexo C, integración del informe, keynote y video de exposición |
 | Peralta Chipa, Ronald Joel | - Edge API: firma de lecturas, cálculo del ICA, filtro de falsos positivos y simulador con comandos <br> - Pruebas unitarias del Edge (pytest) <br> - Despliegue del Edge en Railway |
 
@@ -203,7 +203,7 @@ Para el Sprint 1 el equipo reorganizó el trabajo por producto: cada integrante 
 
 <div style="text-align: center; margin-top: 1rem; margin-bottom: 1rem;">
 
-![Insights TB2 - Contributors](./assets/images/insights-tb2-contributors.png)
+![Insights TB2 - Contributors](https://i.imgur.com/bNs2nOm.png)
 
 *Contributors: aportes de cada integrante al repositorio del informe durante TB2.*
 
@@ -211,7 +211,7 @@ Para el Sprint 1 el equipo reorganizó el trabajo por producto: cada integrante 
 
 <div style="text-align: center; margin-top: 1rem; margin-bottom: 1rem;">
 
-![Insights TB2 - Commits](./assets/images/insights-tb2-commits.png)
+![Insights TB2 - Commits](https://i.imgur.com/64WdDWa.png)
 
 *Commits: frecuencia de commits del repositorio del informe durante TB2.*
 
@@ -219,7 +219,7 @@ Para el Sprint 1 el equipo reorganizó el trabajo por producto: cada integrante 
 
 <div style="text-align: center; margin-top: 1rem; margin-bottom: 1rem;">
 
-![Insights TB2 - Network Graph](./assets/images/insights-tb2-network.png)
+![Insights TB2 - Network Graph](https://i.imgur.com/AMTUxBj.png)
 
 *Network graph: ramas `feature/tb2-evidence-<integrante>` integradas en `develop`.*
 
@@ -4168,10 +4168,10 @@ El despliegue sigue lo definido en el diagrama de la sección 4.3.5. Cada produc
 | :--- | :--- | :--- | :--- |
 | Backend | Azure App Service (Java 17, Linux, plan B1, Brazil South) | 1) Crear el App Service `yaku-backend`. 2) Configurar las variables de entorno: `DB_URL`, `DB_USERNAME`, `DB_PASSWORD`, `JWT_SECRET`, `CORS_ALLOWED_ORIGINS`, `FIREBASE_CONFIG_PATH`, `MQTT_ENABLED`, `SERVER_PORT` y las de Stripe (claves de prueba). 3) Subir la cuenta de servicio de Firebase al almacenamiento persistente del App Service (`/home`) mediante Kudu, nunca al repositorio, y apuntar `FIREBASE_CONFIG_PATH` a `file:/home/firebase-service-account.json`. 4) Cargar el perfil de publicación como secreto `AZURE_WEBAPP_PUBLISH_PROFILE` en GitHub. 5) El workflow de GitHub Actions compila con Maven y publica el JAR en cada push a `develop`. 6) Comprobar `/swagger-ui.html`. | https://yaku-backend-hjbmb2btfzece4c0.brazilsouth-01.azurewebsites.net |
 | Base de datos | Azure Database for PostgreSQL (servidor flexible, B1ms, PostgreSQL 16, Brazil South) | 1) Crear el servidor flexible y la base `yaku`. 2) Permitir el acceso desde los servicios de Azure. 3) Cargar la cadena de conexión en las variables de entorno del App Service. 4) Dejar que el backend cree el esquema al iniciar. | — |
-| Edge API | Railway | 1) Crear el proyecto y enlazar el repositorio del Edge (con su `Dockerfile`). 2) Agregar los servicios de Redis y de Mosquitto. 3) Configurar `MQTT_BROKER`, `MQTT_PORT`, `REDIS_HOST`, `REDIS_PORT`, `API_URL`, `FARM_ID` y `FARM_TOKEN`. 4) Desplegar y revisar los registros. | (pegar enlace) |
+| Edge API | Railway | 1) Crear el proyecto y enlazar el repositorio del Edge (con su `Dockerfile`). 2) Agregar los servicios de Redis y de Mosquitto. 3) Configurar `MQTT_BROKER`, `MQTT_PORT`, `REDIS_HOST`, `REDIS_PORT`, `API_URL`, `FARM_ID` y `FARM_TOKEN`. 4) Desplegar y revisar los registros. | |
 | Web App (Flutter Web) | Firebase Hosting | Versión `b27c1e8c2210d609`. Se verificaron el inicio de sesión, el registro de estanques, el vínculo de equipos y la consulta de notificaciones. | [YakuControl Web](https://yakucontrol-v2.web.app) |
 | Landing Page | Vercel | Versión inicial en producción. El formulario comercial, YakuTrace y los términos se verificaron en la rama del PR #1. | [Landing pública](https://verifish-landing.vercel.app) · [PR de la actualización](https://github.com/1ASI0728-2620-9075-G2-VeriFish/Verifish-Landing/pull/1) |
-| App móvil (Android) | Firebase App Distribution | 1) `flutter build apk --release --dart-define=API_BASE_URL=<URL del backend>/api`. 2) Subir el APK como versión `v0.1.0`. 3) Invitar a los testers por correo. | (pegar enlace de la invitación) |
+| App móvil (Android) | Firebase App Distribution | 1) `flutter build apk --release --dart-define=API_BASE_URL=<URL del backend>/api`. 2) Subir el APK como versión `v0.1.0`. 3) Invitar a los testers por correo. |  |
 
 ![Deployment Diagram](./assets/images/cap4/c4_deployment.png)
 
@@ -4894,19 +4894,19 @@ En el Sprint 1 se crearon las cuentas y los recursos en los proveedores cloud y 
 
 La implementación se organizó por producto: cada integrante trabajó en su propio repositorio mediante ramas `feature/<tema>` creadas desde `develop`, con Pull Requests revisados por otro integrante y mensajes de commit según Conventional Commits. Victor Cruz trabajó en la seguridad y el despliegue del backend, Sebastian Escobar en la firma de lecturas, el estado de los equipos y las pruebas BDD del backend, Ronald Peralta en el Edge API, Rúbens Bendezu en la Landing Page y la Web App y Luciana Choquehuanca en la app móvil. Las capturas siguientes muestran los aportes de cada repositorio.
 
-![Insights Sprint 1 - Backend](./assets/images/sprint1/insights-backend.png)
+![Insights Sprint 1 - Backend](https://i.imgur.com/mKi1jyy.png)
 
 *Contributors del repositorio Verifish-Backend durante el Sprint 1.*
 
-![Insights Sprint 1 - Web App y app móvil](./assets/images/sprint1/insights-fronted.png)
+![Insights Sprint 1 - Web App y app móvil](https://i.imgur.com/QkOSGAH.png)
 
 *Historial Git de los aportes de Rúbens a la Web App en la rama `feature/web-ponds-and-hosting`. [PR #1](https://github.com/1ASI0728-2620-9075-G2-VeriFish/VeriFish-Fronted/pull/1).*
 
-![Insights Sprint 1 - Landing Page](./assets/images/sprint1/insights-landing.png)
+![Insights Sprint 1 - Landing Page](https://i.imgur.com/Ftz1aB8.png)
 
 *Historial Git de los aportes de Rúbens a la Landing en la rama `feature/landing-sales-yakutrace`. [PR #1](https://github.com/1ASI0728-2620-9075-G2-VeriFish/Verifish-Landing/pull/1).*
 
-![Insights Sprint 1 - Edge API](./assets/images/sprint1/insights-edge.png)
+![Insights Sprint 1 - Edge API](https://i.imgur.com/tTtzApn.png)
 
 *Contributors del repositorio Verifish-Edge durante el Sprint 1.*
 
