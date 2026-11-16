@@ -4272,20 +4272,21 @@ La tabla registra los commits de la versión inicial y los aportes del Sprint 1.
 
 | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | main | fd9f7d6 | feat: initial clean release for organization | — | 2026-09-13 |
-| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | main | 9f6873b | Delete .github/workflows/develop_yaku-back.yml | — | 2026-10-30 |
-| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | develop | 212b75c | Merge pull request #1 from 1ASI0728-2620-9075-G2-VeriFish/main | Delete .github/workflows/develop_yaku-back.yml | 2026-10-30 |
-| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | feature/farm-isolation | 102f0b6 | feat(iam): add farmId claim support to JWT token service and sign-in | — | 2026-10-30 |
-| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | feature/farm-isolation | 9db1f63 | feat(iam): populate farmId in SecurityContext and return 401 on invalid JWT | — | 2026-10-30 |
-| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | feature/farm-isolation | 25c8e7b | feat(shared): add FarmAccessGuard and 403/401 exception handlers | — | 2026-10-30 |
-| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | feature/farm-isolation | 76d7631 | feat(equipment,telemetry): enforce farm isolation in Pond, Equipment, and Telemetry controllers | — | 2026-10-30 |
-| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | feature/farm-isolation | 478e1e8 | test(security): add unit and MockMvc integration tests for JWT farmId and farm isolation | — | 2026-10-30 |
-| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | feature/farm-isolation | b75f613 | feat(iam): resolve farmId from owned Farm for ADMIN users during sign-in | — | 2026-10-30 |
-| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | feature/farm-isolation | e977e42 | test(security): add ADMIN owner and OPERATOR farm isolation integration tests | — | 2026-10-30 |
-| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | develop | 5adbd05 | Merge feature/farm-isolation: JWT farmId and farm isolation (T06, T07) | — | 2026-10-30 |
-| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | feature/hmac-signature | f0aa752 | feat: add equipment command services, telemetry controllers, and device integration tests | — | 2026-11-12 |
-| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | feature/cucumber-bdd | 840f487 | test(bdd): configure Cucumber runner, Spring context, and step definitions for telemetry, alerts, equipment, and subscriptions | — | 2026-11-12 |
-| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | main | 2e61853 | Merge pull request #2 from 1ASI0728-2620-9075-G2-VeriFish/feature/cucumber-bdd | — | 2026-11-12 |
+| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | `main` | `fd9f7d6` | feat: initial clean release for organization | — | 2026-09-13 |
+| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | `main` | `9f6873b` | Delete .github/workflows/develop_yaku-back.yml | — | 2026-10-30 |
+| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | `develop` | `212b75c` | Merge pull request #1 from 1ASI0728-2620-9075-G2-VeriFish/main | Delete .github/workflows/develop_yaku-back.yml | 2026-10-30 |
+| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | `feature/farm-isolation` | `102f0b6` | feat(iam): add farmId claim support to JWT token service and sign-in | — | 2026-10-30 |
+| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | `feature/farm-isolation` | `9db1f63` | feat(iam): populate farmId in SecurityContext and return 401 on invalid JWT | — | 2026-10-30 |
+| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | `feature/farm-isolation` | `25c8e7b` | feat(shared): add FarmAccessGuard and 403/401 exception handlers | — | 2026-10-30 |
+| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | `feature/farm-isolation` | `76d7631` | feat(equipment,telemetry): enforce farm isolation in Pond, Equipment, and Telemetry controllers | — | 2026-10-30 |
+| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | `feature/farm-isolation` | `478e1e8` | test(security): add unit and MockMvc integration tests for JWT farmId and farm isolation | — | 2026-10-30 |
+| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | `feature/farm-isolation` | `b75f613` | feat(iam): resolve farmId from owned Farm for ADMIN users during sign-in | — | 2026-10-30 |
+| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | `feature/farm-isolation` | `e977e42` | test(security): add ADMIN owner and OPERATOR farm isolation integration tests | — | 2026-10-30 |
+| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | `feature/farm-isolation` | `e977e42` | test(security): add ADMIN owner and OPERATOR farm isolation integration tests | — | 2026-10-30 |
+| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | `develop` | `5adbd05` | Merge feature/farm-isolation: JWT farmId and farm isolation (T06, T07) | — | 2026-10-30 |
+| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | `feature/hmac-signature` | `f0aa752` | feat: add equipment command services, telemetry controllers, and device integration tests | — | 2026-11-12 |
+| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | `feature/cucumber-bdd` | `840f487` | test(bdd): configure Cucumber runner, Spring context, and step definitions for telemetry, alerts, equipment, and subscriptions | — | 2026-11-12 |
+| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend |`main` | `2e61853` | Merge pull request #2 from 1ASI0728-2620-9075-G2-VeriFish/feature/cucumber-bdd | — | 2026-11-12 |
 | 1ASI0728-2620-9075-G2-VeriFish/VeriFish-Fronted | `feature/web-ponds-and-hosting` | `206d206` | docs(web): record Firebase Hosting deployment | — | 2026-10-30 |
 | 1ASI0728-2620-9075-G2-VeriFish/VeriFish-Fronted | `feature/web-ponds-and-hosting` | `5c387ab` | fix(hosting): select the yakucontrol-v2 site explicitly | — | 2026-10-30 |
 | 1ASI0728-2620-9075-G2-VeriFish/VeriFish-Fronted | `feature/web-ponds-and-hosting` | `52e8f09` | test(web): wait for pond linking dialog to close | — | 2026-10-30 |
@@ -4294,7 +4295,7 @@ La tabla registra los commits de la versión inicial y los aportes del Sprint 1.
 | 1ASI0728-2620-9075-G2-VeriFish/Verifish-Landing | `feature/landing-sales-yakutrace` | `0cd1c75` | style(landing): format commercial section styles | — | 2026-10-30 |
 | 1ASI0728-2620-9075-G2-VeriFish/Verifish-Landing | `feature/landing-sales-yakutrace` | `8f37a92` | test(landing): cover contact validation and responsive navigation | — | 2026-10-30 |
 | 1ASI0728-2620-9075-G2-VeriFish/Verifish-Landing | `feature/landing-sales-yakutrace` | `c212ef1` | feat(landing): add sales contact, terms and YakuTrace overview | — | 2026-10-30 |
-| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Edge | (pegar filas del `git log`) | | | | |
+| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Edge | `feature/simulator-commands` | `aca0b3f`|feat(edge): add median filter for false positives | — | 2026-10-30 |
 
 #### 7.2.1.4. Testing Suite Evidence for Sprint Review
 
@@ -4695,17 +4696,9 @@ Característica: Gestion de Suscripciones
 
 ![Resultado de las pruebas BDD (Cucumber)](/assets/sprint1/tests-bdd2.jpeg)
 
-![Resultado de las pruebas del Edge (pytest)](./assets/images/sprint1/tests-edge.png)
-
 ![Resultado de las pruebas de la app (flutter test)](./assets/images/sprint1/tests-fronted.png)
 
 **Repositorios de pruebas:** https://github.com/1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend (carpeta `src/test`), https://github.com/1ASI0728-2620-9075-G2-VeriFish/Verifish-Edge (carpeta `tests`) y https://github.com/1ASI0728-2620-9075-G2-VeriFish/VeriFish-Fronted (carpeta `test`).
-
-| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | (pegar filas del `git log` de commits `test:`) | | | | |
-| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Edge | (pegar filas del `git log` de commits `test:`) | | | | |
-| 1ASI0728-2620-9075-G2-VeriFish/VeriFish-Fronted | (pegar filas del `git log` de commits `test:`) | | | | |
 
 #### 7.2.1.5. Execution Evidence for Sprint Review
 
@@ -4836,8 +4829,6 @@ El escenario US08 contempla la activación del aireador desde la aplicación mó
 | Producto | Contenido | Enlace |
 | :--- | :--- | :--- |
 | Landing Page y Web App | Propuesta, planes, YakuTrace, formulario y términos. Inicio de sesión, registro de estanque, vínculo de equipo y notificaciones. | [Recorrido explicado de Landing y Web en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20231d390_upc_edu_pe/IQBCrw_jogCwRqb2DnDOljNnAVV8XtoNY_uGIyV8pdlFD3E?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=BaKHqq) · [MP4](./assets/videos/exec-landing-web.mp4) |
-| App móvil | Inicio de sesión, lectura del estanque, alerta y activación del aireador | (pegar enlace) |
-| Edge API y backend | Lectura firmada desde el Edge hasta su persistencia | (pegar enlace) |
 
 [Carpeta compartida de los videos del Grupo 2](https://upcedupe-my.sharepoint.com/:f:/g/personal/u20231d390_upc_edu_pe/IgC7UHichIYUR5639OWt_hZMAd4oUOZgaFyUZTFPogeUp-4?e=56veGH).
 
@@ -4874,15 +4865,13 @@ Los servicios del backend se documentan con OpenAPI y se publican con Swagger UI
 
 ![Swagger UI: endpoints de IAM y Notification](./assets/sprint1/swagger-other2.jpeg)
 
-![Swagger UI: ejemplo de request y response de la ingesta](./assets/images/sprint1/swagger-ingest-example.png)
+**URL de la documentación desplegada:** https://yaku-backend-hjbmb2btfzece4c0.brazilsouth-01.azurewebsites.net/swagger-ui.html. 
 
-![Swagger UI: endpoints de Notification, Equipment e IAM](./assets/images/sprint1/swagger-other.png)
-
-**URL de la documentación desplegada:** https://yaku-backend-hjbmb2btfzece4c0.brazilsouth-01.azurewebsites.net/swagger-ui.html. **Repositorio de Web Services:** https://github.com/1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend
+**Repositorio de Web Services:** https://github.com/1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend
 
 | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | (pegar filas del `git log` de commits `docs:`) | | | | |
+| 1ASI0728-2620-9075-G2-VeriFish/Verifish-Backend | `feature/cucumber-bdd` | `2e61853` |test(bdd): configure Cucumber runner, Spring context, and step definitions for telemetry, alerts, equipment, and subscriptions|  |12-11-2026 |
 
 #### 7.2.1.7. Software Deployment Evidence for Sprint Review
 
@@ -4895,12 +4884,10 @@ En el Sprint 1 se crearon las cuentas y los recursos en los proveedores cloud y 
 | 3 | Backend | Azure | Variables de entorno configuradas (sin mostrar valores secretos) | ![Paso 3](./assets/images/sprint1/deploy-azure-3-settings.png) |
 | 4 | Backend | GitHub Actions | Ejecución exitosa del workflow de despliegue | ![Paso 4](./assets/images/sprint1/deploy-azure-4-workflow.png) |
 | 5 | Backend | Azure | Aplicación en ejecución y Swagger UI desplegado | ![Paso 5](./assets/images/sprint1/deploy-azure-5-running.png) |
-| 6 | Edge API | Railway | Proyecto con los servicios del Edge, Redis y Mosquitto | ![Paso 6](./assets/images/sprint1/deploy-railway-1-service.png) |
-| 7 | Edge API | Railway | Registros del despliegue y servicio activo | ![Paso 7](./assets/images/sprint1/deploy-railway-2-logs.png) |
-| 8 | Web App | Firebase Hosting | Despliegue publicado de Flutter Web | ![Paso 8](./assets/images/sprint1/deploy-firebase-hosting.png) |
-| 9 | Landing Page | Vercel | Versión inicial accesible en el dominio público. | ![Landing pública](./assets/images/sprint1/deploy-landing-vercel.png) |
-| 10 | App móvil | Firebase | Versión `v0.1.0` en App Distribution | ![Paso 10](./assets/images/sprint1/deploy-firebase-release.png) |
-| 11 | App móvil | Firebase | Invitación a testers | ![Paso 11](./assets/images/sprint1/deploy-firebase-testers.png) |
+| 6 | Web App | Firebase Hosting | Despliegue publicado de Flutter Web | ![Paso 8](./assets/images/sprint1/deploy-firebase-hosting.png) |
+| 7 | Landing Page | Vercel | Versión inicial accesible en el dominio público. | ![Landing pública](./assets/images/sprint1/deploy-landing-vercel.png) |
+| 8 | App móvil | Firebase | Versión `v0.1.0` en App Distribution | ![Paso 10](./assets/images/sprint1/deploy-firebase-release.png) |
+| 9 | App móvil | Firebase | Invitación a testers | ![Paso 11](./assets/images/sprint1/deploy-firebase-testers.png) |
 
 
 #### 7.2.1.8. Team Collaboration Insights during Sprint
@@ -4922,155 +4909,6 @@ La implementación se organizó por producto: cada integrante trabajó en su pro
 ![Insights Sprint 1 - Edge API](./assets/images/sprint1/insights-edge.png)
 
 *Contributors del repositorio Verifish-Edge durante el Sprint 1.*
-
-<div style="page-break-after: always;"></div>
-
-## 7.3. Validation Interviews
-
-Las entrevistas de validación evalúan con usuarios de cada segmento la Landing Page y las aplicaciones de YakuControl + YakuTrace. A diferencia de las entrevistas de la sección 2.2, que exploraron el problema, estas se enfocan en el producto: el usuario ejecuta tareas concretas sobre el prototipo y la Landing Page desplegada, y comenta lo que observa. Se realizó una sesión por segmento y la evaluación se hizo con las heurísticas de usabilidad de Nielsen (2024) y los criterios de diseño inclusivo y arquitectura de información del curso.
-
-### 7.3.1. Diseño de Entrevistas
-
-**Método.** Sesión individual de 15 a 20 minutos, con un moderador y un observador. El usuario ejecuta las tareas pensando en voz alta, sin que el moderador lo guíe, y al final responde las preguntas. La sesión se graba con el consentimiento del participante. Las sesiones usan el prototipo de Figma (sección 6.4.5) y la Landing Page desplegada (sección 7.1.4).
-
-| Segmento | Elementos a evaluar | Tareas (User Flows) | Preguntas principales |
-| :--- | :--- | :--- | :--- |
-| Piscicultores | Landing Page y app móvil | 1) Iniciar sesión (UF 1). 2) Consultar el estado de un estanque (UF 2). 3) Interpretar una alerta y activar el aireador (UF 3). | ¿Qué esperaba ver en cada pantalla? ¿En qué momento dudó? ¿Entendió el estado del estanque por los colores y los textos? ¿Reaccionar a una alerta le pareció rápido? ¿Qué cambiaría? ¿La usaría en el campo con poca señal? |
-| Administradores | Landing Page y Web App | 1) Registrarse y registrar la granja (UF 5). 2) Registrar un estanque y vincular su equipo (UF 6). 3) Revisar las notificaciones con filtros (UF 9). | ¿Encontró fácilmente cada sección del menú? ¿Los nombres de las opciones eran claros? ¿Qué información le faltó para decidir? ¿Cómo compara esto con lo que usa hoy? ¿Qué cambiaría? |
-| Compradores de supermercado | Landing Page (sección YakuTrace) y verificación pública | 1) Ubicar la sección YakuTrace en la Landing Page. 2) Verificar un lote con su código (UF 13). 3) Distinguir un certificado válido de uno revocado. | ¿Entendió qué significa "Verificado"? ¿Confiaría en este resultado para aceptar un lote? ¿Qué información adicional exigiría? ¿Entendió la prueba de registro? ¿Qué cambiaría? |
-
-### 7.3.2. Registro de Entrevistas
-
-Para cada segmento se registró una entrevista. Cada ficha incluye los datos del participante, un cuadro del video, el enlace al video en Microsoft Stream con el timing de la entrevista y un resumen de sus principales apreciaciones sobre las tareas asignadas.
-
-**Segmento 1: Piscicultores** · Video consolidado del segmento en Microsoft Stream: (pegar enlace)
-
-| | **Entrevistado 1 — Piscicultores** |
-| :--- | :--- |
-| **Nombres y apellidos** | (pegar) |
-| **Edad** | (pegar) |
-| **Distrito** | (pegar) |
-| **Fecha de entrevista** | (pegar) |
-| **Video (Stream)** | (pegar enlace) |
-| **Timing** | (mm:ss – mm:ss, duración) |
-| **Captura** | ![Entrevista de validación 1.1](./assets/images/validation/entrevista-1-1.png) |
-| **Resumen** | (pegar el resumen de las principales apreciaciones sobre las tareas asignadas) |
-
-**Segmento 2: Administradores** · Video consolidado del segmento en Microsoft Stream: (pegar enlace)
-
-| | **Entrevistado 1 — Administradores** |
-| :--- | :--- |
-| **Nombres y apellidos** | (pegar) |
-| **Edad** | (pegar) |
-| **Distrito** | (pegar) |
-| **Fecha de entrevista** | (pegar) |
-| **Video (Stream)** | (pegar enlace) |
-| **Timing** | (mm:ss – mm:ss, duración) |
-| **Captura** | ![Entrevista de validación 2.1](./assets/images/validation/entrevista-2-1.png) |
-| **Resumen** | (pegar el resumen de las principales apreciaciones sobre las tareas asignadas) |
-
-**Segmento 3: Compradores de supermercado** · Video consolidado del segmento en Microsoft Stream: (pegar enlace)
-
-| | **Entrevistado 1 — Compradores de supermercado** |
-| :--- | :--- |
-| **Nombres y apellidos** | (pegar) |
-| **Edad** | (pegar) |
-| **Distrito** | (pegar) |
-| **Fecha de entrevista** | (pegar) |
-| **Video (Stream)** | (pegar enlace) |
-| **Timing** | (mm:ss – mm:ss, duración) |
-| **Captura** | ![Entrevista de validación 3.1](./assets/images/validation/entrevista-3-1.png) |
-| **Resumen** | (pegar el resumen de las principales apreciaciones sobre las tareas asignadas) |
-
-### 7.3.3. Evaluaciones según heurísticas
-
-La evaluación sigue el formato del curso (Anexo D del enunciado) y se realiza por producto: la app móvil con los piscicultores, la Web App con los administradores y la verificación pública junto con la Landing Page con los compradores. Cada problema se clasifica con la escala de severidad del curso y con la heurística o el principio que se vulnera: usabilidad (Nielsen, 2024), diseño inclusivo (W3C, 2023) o arquitectura de información.
-
-**Escala de severidad**
-
-| Nivel | Descripción |
-| :--- | :--- |
-| 1 | Problema superficial: se supera fácilmente o ocurre muy poco. Solo se corrige si hay tiempo. |
-| 2 | Problema menor: ocurre algo más seguido o es más difícil de superar. Prioridad baja para el siguiente release. |
-| 3 | Problema mayor: ocurre frecuentemente o el usuario no puede resolverlo. Prioridad alta. |
-| 4 | Problema muy grave: impide continuar con el uso de la herramienta. Debe corregirse antes del lanzamiento. |
-
-**Evaluación 1: App móvil**
-
-| Campo | Valor |
-| :--- | :--- |
-| Carrera | Ingeniería de Software |
-| Curso | Arquitecturas de Software Emergentes |
-| Sección | NRC 9075 |
-| Profesor | Wilder Aurelio Vega Calero |
-| Auditor | Verifish (evaluador: (pegar evaluador)) |
-| Cliente | El piscicultor entrevistado (sección 7.3.2) |
-| Sitio o app a evaluar | App móvil |
-| Tareas evaluadas | Iniciar sesión; consultar el estado de un estanque; interpretar una alerta; activar el aireador |
-| Tareas no incluidas | Registro de novedades; reporte de mortalidad; configuración de umbrales |
-
-| # | Problema | Escala de severidad | Heurística / Principio violada(o) |
-| :--- | :--- | :--- | :--- |
-| 1 | (pegar el problema observado) | (1–4) | (criterio) |
-
-*Descripción de cada problema:* título, severidad, heurística violada, descripción con captura de pantalla y recomendación.
-
-(pegar la descripción de los problemas)
-
-**Evaluación 2: Web App**
-
-| Campo | Valor |
-| :--- | :--- |
-| Carrera | Ingeniería de Software |
-| Curso | Arquitecturas de Software Emergentes |
-| Sección | NRC 9075 |
-| Profesor | Wilder Aurelio Vega Calero |
-| Auditor | Verifish (evaluador: (pegar evaluador)) |
-| Cliente | El administrador entrevistado (sección 7.3.2) |
-| Sitio o app a evaluar | Web App |
-| Tareas evaluadas | Registrarse; registrar la granja; registrar un estanque y vincular su equipo; revisar notificaciones |
-| Tareas no incluidas | Gestión de lotes y certificados; pago de la suscripción |
-
-| # | Problema | Escala de severidad | Heurística / Principio violada(o) |
-| :--- | :--- | :--- | :--- |
-| 1 | (pegar el problema observado) | (1–4) | (criterio) |
-
-*Descripción de cada problema:* título, severidad, heurística violada, descripción con captura de pantalla y recomendación.
-
-(pegar la descripción de los problemas)
-
-**Evaluación 3: Verificación pública y Landing Page**
-
-| Campo | Valor |
-| :--- | :--- |
-| Carrera | Ingeniería de Software |
-| Curso | Arquitecturas de Software Emergentes |
-| Sección | NRC 9075 |
-| Profesor | Wilder Aurelio Vega Calero |
-| Auditor | Verifish (evaluador: (pegar evaluador)) |
-| Cliente | El comprador entrevistado (sección 7.3.2) |
-| Sitio o app a evaluar | Verificación pública y Landing Page |
-| Tareas evaluadas | Ubicar la sección YakuTrace; verificar un lote por código; distinguir un certificado válido de uno revocado; revisar los planes |
-| Tareas no incluidas | Emisión de certificados; anclaje en blockchain |
-
-| # | Problema | Escala de severidad | Heurística / Principio violada(o) |
-| :--- | :--- | :--- | :--- |
-| 1 | (pegar el problema observado) | (1–4) | (criterio) |
-
-*Descripción de cada problema:* título, severidad, heurística violada, descripción con captura de pantalla y recomendación.
-
-(pegar la descripción de los problemas)
-
-## 7.4. Video About-the-Product
-
-El video About-the-Product presenta a los visitantes de la Landing Page y a los usuarios de las aplicaciones el modelo de negocio, las características principales y los beneficios de YakuControl + YakuTrace. Tiene una duración de 1 a 3 minutos, una narración en el mismo tono cercano y claro del producto, y se apoya en el prototipo de las aplicaciones para mostrar tres escenas: el piscicultor que recibe una alerta y activa el aireador desde el celular, el administrador que revisa sus estanques desde la Web App y el comprador que verifica un lote escaneando el código QR. Incluye un breve testimonio de un usuario de cada segmento, tomado de las entrevistas de validación de la sección 7.3. La versión de YouTube se incrusta en la Landing Page.
-
-| Dato | Valor |
-| :--- | :--- |
-| Screenshot | ![Video About-the-Product](./assets/images/video-about-product.png) |
-| URL en Microsoft Stream | (pegar enlace) |
-| URL en YouTube (incrustado en la Landing Page) | (pegar enlace) |
-| Duración | (mm:ss) |
 
 <div style="page-break-after: always;"></div>
 
@@ -5110,24 +4948,6 @@ En cuanto al trabajo en equipo, dividir el trabajo por producto redujo las depen
 Como recomendaciones para el Sprint 2 y la entrega final se sugiere: implementar el contexto de Traceability y el contrato inteligente `TraceabilityRegistry` en la red de prueba; completar la integración de pagos con Stripe; incorporar al backlog los problemas de severidad 3 y 4 de las evaluaciones heurísticas; separar la ingesta del Edge en un tópico por dispositivo; configurar la integración continua para ejecutar las pruebas en cada Pull Request en todos los repositorios; y repetir las entrevistas con más usuarios, en particular con compradores sobre el flujo completo de verificación.
 
 **Roadmap.** Sprint 2: historias 14 a 25 del Product Backlog (50 story points), con YakuTrace como eje. Entrega final: historias 26 a 36 (31 story points) según el avance, y la versión final de los siete capítulos del informe.
-
-## Video About-The-Team
-
-El video About-The-Team resume el proceso de trabajo del equipo Verifish durante el Sprint 1 con escenas de las sesiones de trabajo (planificación, desarrollo, pruebas, despliegue y revisión) y voz en off, e incluye el testimonio ante cámara de cada integrante sobre las actividades que realizó y sobre cómo estas contribuyen a las competencias y outcomes del curso. Dura cerca de diez minutos: unos cinco de retrospectiva y un minuto por testimonio.
-
-| Sección | Inicio (hh:mm:ss) |
-| :--- | :--- |
-| Retrospectiva del equipo: qué se hizo, qué funcionó, qué se mejora | 00:00:00 |
-| Testimonio de Escobar Palomino, Sebastian Matias | 00:05:00 |
-| Testimonio de Bendezu Navarro, Rúbens Fitzgerald | 00:06:00 |
-| Testimonio de Choquehuanca Nuñez, Luciana Carolina | 00:07:00 |
-| Testimonio de Cruz Ibarra, Victor Andres | 00:08:00 |
-| Testimonio de Peralta Chipa, Ronald Joel | 00:09:00 |
-
-![Video About-The-Team](./assets/images/video-about-team.png)
-
-- URL en Microsoft Stream: (pegar enlace privado)
-- URL en YouTube (incrustado en la Landing Page): (pegar enlace)
 
 <div style="page-break-after: always;"></div>
 
