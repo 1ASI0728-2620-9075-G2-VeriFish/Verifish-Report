@@ -5024,7 +5024,7 @@ World Fishing & Aquaculture. (2021). *Nueva Pescanova e IBM trabajan para rastre
 ## Anexo B. Videos de Exposiciones
 
 - [Link de la Exposición de TP1](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202125968_upc_edu_pe/IQCfmbv_fzrnToGVrxLg26ojAbX7Gt2nWWMgIejbg462N8Q?e=b7ouCh&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
-- Link de la Exposición de TB2: (pegar enlace privado de Microsoft Stream)
+- [Link de la Exposición de TB2](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202125968_upc_edu_pe/IQA1URAFBq2BS7f-FRCZfJXWAXGPkmV3Md_piVz74LM4xxU?e=nMnLzp&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifSwicGxheWJhY2tPcHRpb25zIjp7fX0%3D)
 
 <div style="page-break-after: always;"></div>
 
