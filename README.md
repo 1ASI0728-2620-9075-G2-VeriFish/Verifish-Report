@@ -4800,15 +4800,15 @@ El escenario US08 contempla la activación del aireador desde la aplicación mó
 
 *TS04 — Lectura recibida por MQTT y firmada.*
 
-![Edge API: Lectura recibida por MQTT y firmada](./assets/images/sprint1/exec-edge-signed-reading.png)
+![Edge API: Lectura recibida por MQTT y firmada](./assets/sprint1/MQTT2.png)
 
 *US07 — ICA y descarte de un falso positivo.*
 
-![Edge API: ICA y descarte de un falso positivo](./assets/images/sprint1/exec-edge-filter.png)
+![Edge API: ICA y descarte de un falso positivo](./assets/sprint1/MQTT2.png)
 
 *US08 — Comando de aireación recibido por el simulador.*
 
-![Edge API: Comando de aireación recibido por el simulador](./assets/images/sprint1/exec-edge-command.png)
+![Edge API: Comando de aireación recibido por el simulador](./assets/sprint1/comandos%20de%20temperatura.png)
 
 **Backend**
 
